@@ -1,0 +1,27 @@
+
+# No previous file for Banten
+
+#BomjSBagetom Anbennar Submod
+#owner = R62
+#controller = R62
+#add_core = R62
+#add_core = R80
+
+owner = R79
+controller = R79
+add_core = R79
+
+culture = kamtarhid
+religion = high_philosophy
+
+hre = no
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+trade_goods = wool
+
+capital = ""
+
+is_city = yes

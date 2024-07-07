@@ -1,0 +1,22 @@
+
+# No previous file for Zazzau
+#BomjSBagetom Anbennar Submod
+owner = H56
+controller = H56
+add_core = H56
+
+culture = havoric
+religion = regent_court
+capital = ""
+
+hre = no
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+trade_goods = fur
+
+native_size = 20
+native_ferocity = 6
+native_hostileness = 6

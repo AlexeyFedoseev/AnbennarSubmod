@@ -1,0 +1,33 @@
+
+# No previous file for Wallis
+
+
+#BomjSBagetom Anbennar Submod
+owner = H33
+controller = H33
+add_core = H33
+culture = east_damerian
+religion = regent_court
+trade_goods = livestock
+is_city = yes
+trade_goods = cotton
+
+#culture = boek
+#religion = dotimism
+
+capital = ""
+hre = no
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+#base_tax = 1
+#base_production = 1
+#base_manpower = 1
+
+#trade_goods = unknown
+
+#native_size = 22
+#native_ferocity = 4
+#native_hostileness = 6

@@ -1,0 +1,684 @@
+dartaxagerdim_morale_bonus = {
+	land_morale = 0.1
+}
+
+command_early_game_debuff = {
+	vassal_forcelimit_bonus = -1.25
+	global_manpower = -10
+}
+
+slave_state_early_game_debuff = {
+	land_forcelimit = -11
+}
+
+recently_used_dominate_to_surrender = {
+
+}
+
+recently_used_transmutation_siege = {
+
+}
+
+recently_used_scrying_general_affairs = {
+
+}
+
+submod_forsight_effect = {
+	picture = "mages_loyalty_modifier"
+}
+
+the_draft_used = {
+
+}
+
+cyranvar_draft_used = {
+
+}
+
+emergency_impressment_act_used = {
+
+}
+
+1444_adventurer_boost = {
+	global_tax_income = 48 #Cost of a colonist
+	land_forcelimit = 5
+	global_manpower = 5
+	land_maintenance_modifier = -0.5
+}
+
+1444_adventurer_sea_boost = {
+	global_tax_income = 48 #Cost of a colonist
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_manpower = 5
+	global_sailors = 5000
+	land_maintenance_modifier = -0.5
+	naval_maintenance_modifier = -0.5
+	colonists = 1
+}
+
+sale_of_titles_tax_bonus = {
+	global_tax_modifier = 0.5
+}
+
+sale_of_titles_production_bonus = {
+	production_efficiency = 0.25
+}
+
+sale_of_titles_trade_bonus = {
+	trade_efficiency = 0.15
+}
+
+sale_of_titles_goods_bonus = {
+	global_trade_goods_size_modifier = 0.075
+}
+
+stagnant_dwarovar_claimer = {
+	land_maintenance_modifier = -0.5
+	global_manpower = 10
+	manpower_recovery_speed = 0.25
+	land_forcelimit = 10
+	land_morale = 0.15
+	global_supply_limit_modifier = 0.5
+}
+
+#---------------------AGES-STUFF--------------------
+ab_age_endurance_1 = {
+	defensiveness = 0.15
+	war_exhaustion = -0.025
+}
+
+ab_age_endurance_2 = {
+	defensiveness = 0.25
+	war_exhaustion = -0.05
+	hostile_attrition = 1
+}
+
+ab_age_endurance_3 = {
+	defensiveness = 0.25
+	war_exhaustion = -0.075
+	hostile_attrition = 2
+	max_hostile_attrition = 1
+	garrison_size = 0.15
+}
+
+ab_age_endurance_4 = {
+	defensiveness = 0.25
+	war_exhaustion = -0.1
+	hostile_attrition = 4
+	max_hostile_attrition = 2
+	garrison_size = 0.30
+}
+
+ab_age_trade_1 = {
+	merchants = 1
+	trade_efficiency = 0.05
+}
+
+ab_age_trade_2 = {
+	merchants = 1
+	trade_efficiency = 0.1
+	mercantilism_cost = -0.5
+}
+
+ab_age_trade_3 = {
+	merchants = 2
+	trade_efficiency = 0.1
+	mercantilism_cost = -0.6
+	trade_steering = 0.2
+}
+
+ab_age_trade_4 = {
+	merchants = 2
+	trade_efficiency = 0.2
+	mercantilism_cost = -0.6
+	trade_steering = 0.4
+}
+
+ab_age_culturalchange_1 = {
+	same_culture_advisor_cost = -0.05
+	culture_conversion_cost = -0.1
+	culture_conversion_time = -0.1
+}
+
+ab_age_culturalchange_2 = {
+	same_culture_advisor_cost = -0.1
+	culture_conversion_cost = -0.15
+	culture_conversion_time = -0.15
+}
+
+ab_age_culturalchange_3 = {
+	same_culture_advisor_cost = -0.15
+	culture_conversion_cost = -0.25
+	culture_conversion_time = -0.25
+	manpower_in_accepted_culture_provinces = 0.05
+}
+
+ab_age_culturalchange_4 = {
+	same_culture_advisor_cost = -0.2
+	culture_conversion_cost = -0.25
+	culture_conversion_time = -0.25
+	manpower_in_accepted_culture_provinces = 0.15
+}
+
+ab_age_diplomacy_1 = {
+	improve_relation_modifier = 0.2
+	spy_offence = 0.15
+	ae_impact = -0.1
+}
+
+ab_age_diplomacy_2 = {
+	improve_relation_modifier = 0.2
+	spy_offence = 0.3
+	ae_impact = -0.15
+	diplomats = 1
+}
+
+ab_age_diplomacy_3 = {
+	improve_relation_modifier = 0.2
+	spy_offence = 0.45
+	ae_impact = -0.2
+	diplomats = 2
+	global_spy_defence = 0.15
+}
+
+ab_age_diplomacy_4 = {
+	improve_relation_modifier = 0.2
+	spy_offence = 0.6
+	ae_impact = -0.25
+	diplomats = 3
+	global_spy_defence = 0.30
+}
+
+ab_age_court_1 = {
+	advisor_cost = -0.05
+	advisor_pool = 1
+	all_estate_loyalty_equilibrium = 0.05
+}
+
+ab_age_court_2 = {
+	advisor_cost = -0.075
+	advisor_pool = 2
+	all_estate_loyalty_equilibrium = 0.1
+}
+
+ab_age_court_3 = {
+	advisor_cost = -0.1
+	advisor_pool = 3
+	all_estate_loyalty_equilibrium = 0.1
+	loyalty_change_on_revoked = 0.05
+}
+
+ab_age_court_4 = {
+	advisor_cost = -0.15
+	advisor_pool = 3
+	all_estate_loyalty_equilibrium = 0.1
+	loyalty_change_on_revoked = 0.1
+}
+
+ab_age_colonization_1 = {
+	global_colonial_growth = 25
+	colony_cost_modifier = -0.15
+}
+
+ab_age_colonization_2 = {
+	global_colonial_growth = 30
+	colony_cost_modifier = -0.15
+	colonists = 1
+}
+
+ab_age_colonization_3 = {
+	global_colonial_growth = 35
+	colony_cost_modifier = -0.2
+	colonists = 1
+	colony_development_boost = 1
+}
+
+ab_age_colonization_4 = {
+	global_colonial_growth = 40
+	colony_cost_modifier = -0.25
+	colonists = 1
+	colony_development_boost = 3
+	manpower_recovery_speed = 0.15
+}
+
+ab_age_religion_1 = {
+	global_missionary_strength = 0.01
+	manpower_in_true_faith_provinces = 0.05
+	religious_unity = 0.1
+}
+
+ab_age_religion_2 = {
+	global_missionary_strength = 0.02
+	missionaries = 1
+	manpower_in_true_faith_provinces = 0.10
+	religious_unity = 0.2
+}
+
+ab_age_religion_3 = {
+	global_missionary_strength = 0.03
+	missionaries = 1
+	manpower_in_true_faith_provinces = 0.15
+	religious_unity = 0.3
+	monthly_church_power = 0.1
+	monthly_fervor_increase = 0.25
+	yearly_patriarch_authority = 0.1
+}
+
+ab_age_religion_4 = {
+	global_missionary_strength = 0.04
+	missionaries = 2
+	manpower_in_true_faith_provinces = 0.20
+	religious_unity = 0.4
+	monthly_church_power = 0.2
+	monthly_fervor_increase = 0.5
+	yearly_patriarch_authority = 0.2
+	warscore_cost_vs_other_religion = -0.15
+}
+
+ab_age_edicts_1 = {
+	governing_capacity = 75
+	state_maintenance_modifier = -0.25
+}
+
+ab_age_edicts_2 = {
+	governing_capacity = 125
+	state_maintenance_modifier = -0.25
+	administrative_efficiency = 0.025
+}
+
+ab_age_edicts_3 = {
+	governing_capacity = 175
+	state_maintenance_modifier = -0.50
+	administrative_efficiency = 0.025
+	free_policy = 1
+}
+
+ab_age_edicts_4 = {
+	governing_capacity = 200
+	state_maintenance_modifier = -0.50
+	administrative_efficiency = 0.025
+	free_policy = 1
+	possible_policy = 1
+}
+
+ab_age_siege_1 = {
+	siege_ability = 0.15
+}
+
+ab_age_siege_2 = {
+	siege_ability = 0.25
+	leader_siege = 1
+}
+
+ab_age_siege_3 = {
+	siege_ability = 0.25
+	leader_siege = 2
+	assault_fort_ability = 0.25
+	land_attrition = -0.05
+}
+
+ab_age_siege_4 = {
+	siege_ability = 0.25
+	leader_siege = 2
+	assault_fort_ability = 0.50
+	land_attrition = -0.1
+	max_general_siege = 1
+}
+
+ab_age_production_1 = {
+	production_efficiency = 0.05
+	global_monthly_devastation = -0.1
+	global_prosperity_growth = 0.125
+}
+
+ab_age_production_2 = {
+	production_efficiency = 0.05
+	global_monthly_devastation = -0.2
+	global_prosperity_growth = 0.25
+	global_trade_goods_size = 0.1
+}
+
+ab_age_production_3 = {
+	global_monthly_devastation = -0.3
+	global_prosperity_growth = 0.375
+	global_trade_goods_size = 0.2
+	global_trade_goods_size_modifier = 0.05
+}
+
+ab_age_production_4 = {
+	global_monthly_devastation = -0.3
+	global_prosperity_growth = 0.5
+	global_trade_goods_size = 0.3
+	global_trade_goods_size_modifier = 0.1
+}
+
+ab_age_navy_1 = {
+	naval_forcelimit_modifier = 0.05
+	global_sailors_modifier = 0.15
+}
+
+ab_age_navy_2 = {
+	naval_forcelimit_modifier = 0.1
+	global_sailors_modifier = 0.3
+}
+
+ab_age_navy_3 = {
+	naval_forcelimit_modifier = 0.15
+	global_sailors_modifier = 0.3
+	allowed_marine_fraction = 0.15
+}
+
+ab_age_navy_4 = {
+	naval_forcelimit_modifier = 0.20
+	global_sailors_modifier = 0.3
+	allowed_marine_fraction = 0.25
+	global_ship_recruit_speed = -0.1
+}
+
+ab_age_science_1 = {
+	yearly_innovativeness = 0.1
+	global_institution_spread = 0.5
+}
+
+ab_age_science_2 = {
+	yearly_innovativeness = 0.2
+	global_institution_spread = 0.7
+	idea_cost = -0.1
+}
+
+ab_age_science_3 = {
+	yearly_innovativeness = 0.3
+	global_institution_spread = 0.85
+	idea_cost = -0.1
+	technology_cost = -0.1
+}
+
+ab_age_science_4 = {
+	yearly_innovativeness = 0.4
+	global_institution_spread = 1
+	idea_cost = -0.1
+	technology_cost = -0.2
+}
+
+ab_age_autocracy_1 = {
+	reduced_liberty_desire = 10
+	diplomatic_annexation_cost = -0.1
+	core_creation = -0.05
+}
+
+ab_age_autocracy_2 = {
+	reduced_liberty_desire = 20
+	diplomatic_annexation_cost = -0.2
+	core_creation = -0.1
+}
+
+ab_age_autocracy_3 = {
+	reduced_liberty_desire = 25
+	diplomatic_annexation_cost = -0.2
+	core_creation = -0.1
+	max_absolutism = 15
+	max_absolutism_effect = 0.2
+}
+
+ab_age_autocracy_4 = {
+	reduced_liberty_desire = 25
+	diplomatic_annexation_cost = -0.2
+	core_creation = -0.1
+	max_absolutism = 25
+	max_absolutism_effect = 0.4
+}
+
+ab_age_mercenary_1 = {
+	mercenary_cost = -0.10
+	merc_maintenance_modifier = -0.05
+}
+
+ab_age_mercenary_2 = {
+	mercenary_cost = -0.15
+	merc_maintenance_modifier = -0.1
+	mercenary_manpower = 0.2
+}
+
+ab_age_mercenary_3 = {
+	mercenary_cost = -0.2
+	merc_maintenance_modifier = -0.15
+	mercenary_manpower = 0.3
+	mercenary_discipline = 0.05
+}
+
+ab_age_mercenary_4 = {
+	mercenary_cost = -0.3
+	merc_maintenance_modifier = -0.2
+	mercenary_manpower = 0.5
+	mercenary_discipline = 0.1
+}
+
+ab_age_reformism_1 = {
+	monthly_reform_progress = 0.2
+	interest = -0.25
+	legitimacy = 0.5
+	republican_tradition = 0.15
+	devotion = 0.5
+	horde_unity = 0.5
+	meritocracy = 0.5
+}
+
+ab_age_reformism_2 = {
+	monthly_reform_progress = 0.3
+	interest = -0.5
+	legitimacy = 1
+	republican_tradition = 0.3
+	devotion = 1
+	horde_unity = 1
+	meritocracy = 1
+}
+
+ab_age_reformism_3 = {
+	monthly_reform_progress = 0.4
+	interest = -1
+	legitimacy = 1.5
+	republican_tradition = 0.45
+	devotion = 1.5
+	horde_unity = 1.5
+	meritocracy = 1.5
+}
+
+ab_age_reformism_4 = {
+	monthly_reform_progress = 0.5
+	interest = -1
+	legitimacy = 1.5
+	republican_tradition = 0.45
+	devotion = 1.5
+	horde_unity = 1.5
+	meritocracy = 1.5
+	land_morale = 0.10
+}
+
+ab_age_quality_focus_1 = {
+    army_tradition_decay = -0.005
+    drill_gain_modifier = 0.5
+}
+
+ab_age_quality_focus_2 = {
+    army_tradition_decay = -0.005
+    drill_gain_modifier = 0.5
+    discipline = 0.02
+}
+
+ab_age_quality_focus_3 = {
+    army_tradition_decay = -0.01
+    drill_gain_modifier = 1
+    discipline = 0.035
+}
+
+ab_age_quality_focus_4 = {
+    army_tradition_decay = -0.01
+    drill_gain_modifier = 1
+    discipline = 0.05
+    recover_army_morale_speed = 0.15
+}
+
+ab_age_quantity_focus_1 = {
+    land_forcelimit = 5
+    land_maintenance_modifier = -0.1
+}
+
+ab_age_quantity_focus_2 = {
+    land_forcelimit = 15
+    global_manpower = 10
+    global_regiment_cost = -0.1
+}
+
+ab_age_quantity_focus_3 = {
+    land_forcelimit = 40
+    global_manpower = 20
+    global_regiment_cost = -0.1
+    reinforce_speed = 0.1
+}
+
+ab_age_quantity_focus_4 = {
+    land_forcelimit = 80
+    global_manpower = 50
+    global_regiment_cost = -0.1
+    reinforce_speed = 0.15
+    reserves_organisation = 0.25
+}
+
+ab_age_docile_1 = {
+    global_unrest = -2
+}
+
+ab_age_docile_2 = {
+    global_unrest = -3
+    stability_cost_modifier = -0.3
+}
+
+ab_age_docile_3 = {
+    global_unrest = -4
+    stability_cost_modifier = -0.3
+    yearly_corruption = -0.15
+}
+
+ab_age_docile_4 = {
+    global_unrest = -4
+    stability_cost_modifier = -0.3
+    yearly_corruption = -0.15
+    development_cost = -0.15
+}
+
+ab_age_TAXES_1 = {
+    global_tax_modifier = 0.2
+    vassal_income = 0.2
+}
+
+ab_age_TAXES_2 = {
+    global_tax_modifier = 0.5
+    vassal_income = 0.2
+    global_autonomy = -0.05
+}
+
+ab_age_TAXES_3 = {
+    global_tax_modifier = 0.75
+    vassal_income = 0.2
+    global_autonomy = -0.1
+    governing_cost = -0.025
+    min_autonomy = -5
+}
+
+ab_age_TAXES_4 = {
+    global_tax_modifier = 1.25
+    vassal_income = 0.2
+    global_autonomy = -0.1
+    governing_cost = -0.05
+    min_autonomy = -10
+}
+
+ab_age_architecture_1 = {
+    build_time = -0.1
+    monthly_splendor = 1
+    great_project_upgrade_cost = -0.1
+}
+
+ab_age_architecture_2 = {
+    build_time = -0.15
+    prestige = 1
+    monthly_splendor = 2
+    great_project_upgrade_cost = -0.2
+}
+
+ab_age_architecture_3 = {
+    build_time = -0.15
+    prestige = 1
+    monthly_splendor = 4
+    great_project_upgrade_cost = -0.3
+}
+
+ab_age_architecture_4 = {
+    build_time = -0.15
+    prestige = 1
+    monthly_splendor = 5
+    great_project_upgrade_cost = -0.4
+}
+
+age1_mercenary_group_modif = {
+	land_morale = 0.05
+	is_mercenary_modifier = yes
+}
+
+age1_Adshaw_bonus_modif = {
+	land_morale = 0.1
+}
+
+age2_Arbaran_bonus_modif = {
+	morale_damage_received = -0.15
+	prestige_decay = -0.02
+}
+
+age2_Blademarches_bonus_modif = {
+	max_general_shock = 2
+}
+
+age2_Azjakuma_bonus_modif = {
+	infantry_shock = 0.35
+}
+
+age2_Snotfinger_bonus_modif = {
+	diplomatic_reputation = 0.5
+	prestige = 0.5
+	development_cost = -0.05
+	shock_damage = 0.05
+	shock_damage_received = -0.05
+	global_unrest = -2
+	production_efficiency = -0.05
+}
+
+age3_Balrijin_bonus_modif = {
+	land_morale_constant = 0.5
+}
+
+age3_Gemradcurt_bonus_modif = {
+	development_cost = 0.2
+	production_efficiency = -0.2
+	global_tax_modifier = -0.2
+	global_monthly_devastation = 0.35
+}
+
+age3_VerkalDromak_bonus_modif = {
+	discipline = 0.2
+	is_marine_modifier = yes
+}
+
+ab_age4_Bulwar_bonus_modif = {
+	attack_bonus_in_capital_terrain = 3
+}
+
+ab_age4_UmojiBaashidi_bonus_modif = {
+	fire_damage_received = -0.33
+	is_marine_modifier = yes
+}
+
+age4_mercenary_group_modif = {
+	reserves_organisation = 1
+	is_mercenary_modifier = yes
+}

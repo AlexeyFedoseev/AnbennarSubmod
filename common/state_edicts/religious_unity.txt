@@ -1,0 +1,88 @@
+edict_religious_unity = {
+	potential = { #BomjSBagetom Anbennar Submod
+		NOT = {
+			AND = {
+				current_age = age_of_revolutions
+				has_country_flag = age_ability_age4_edicts_flag
+			}
+		}
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_missionary_strength = 0.01
+	}
+	
+	#ROOT - Country, FROM - Province, if all provinces in a state, that are owned by the country,
+	#	meet this requirement, the alert will appear.
+	
+	notify_trigger = {
+		FROM = {
+			has_owner_religion = yes
+		}
+	}
+	
+	color = { 117 38 143 }
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				has_missionary = no
+			}
+		}
+		modifier = {
+			factor = 3
+			any_province_in_state = {
+				has_missionary = yes
+			}
+		}
+	}
+}
+
+#BomjSBagetom Anbennar Submod
+edict_religious_unity_2 = {
+	potential = { 
+		current_age = age_of_revolutions
+		has_country_flag = age_ability_age4_edicts_flag
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_missionary_strength = 0.015
+	}
+	
+	#ROOT - Country, FROM - Province, if all provinces in a state, that are owned by the country,
+	#	meet this requirement, the alert will appear.
+	
+	notify_trigger = {
+		FROM = {
+			has_owner_religion = yes
+		}
+	}
+	
+	color = { 117 38 143 }
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				has_missionary = no
+			}
+		}
+		modifier = {
+			factor = 3
+			any_province_in_state = {
+				has_missionary = yes
+			}
+		}
+	}
+}

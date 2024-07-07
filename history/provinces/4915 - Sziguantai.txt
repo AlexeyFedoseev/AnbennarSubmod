@@ -1,0 +1,24 @@
+#BomjSBagetom Anbennar Submod
+#owner = Y17
+#controller = Y17
+#add_core = Y17
+
+#BomjSBagetom Anbennar Submod
+owner = Y13
+controller = Y13
+add_core = Y13
+
+culture = northern_yan
+religion = righteous_path
+
+hre = no
+
+base_tax = 5
+base_production = 3
+base_manpower = 3
+
+trade_goods = grain
+
+capital = ""
+
+is_city = yes

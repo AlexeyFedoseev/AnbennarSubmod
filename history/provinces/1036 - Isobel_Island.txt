@@ -1,0 +1,23 @@
+
+# No previous file for Kolyma
+#BomjSBagetom Anbennar Submod
+owner = G91
+controller = G91
+add_core = G91
+culture = roilsardi
+religion = regent_court
+trade_goods = sugar
+is_city = yes
+
+#culture = boek
+#religion = dotimism
+#capital = ""
+#tribal_owner = G41
+
+hre = no
+
+base_tax = 6
+base_production = 4
+base_manpower = 3
+
+center_of_trade = 1

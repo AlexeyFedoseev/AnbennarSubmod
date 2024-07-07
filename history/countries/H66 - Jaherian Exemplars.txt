@@ -1,0 +1,45 @@
+
+setup_vision = yes
+government = theocracy
+add_government_reform = aelantir_adventurer_reform
+government_rank = 1
+primary_culture = sun_elf
+religion = bulwari_sun_cult
+technology_group = tech_east_elven
+capital = 2333
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_religious }
+
+#BomjSBagetom Anbennar Submod
+#1430.1.1 = {
+#	monarch = {
+#		name = "Ilvisar"
+#		dynasty = "Rezanzuir"
+#		birth_date = 1422.11.30
+#		adm = 5
+#		dip = 5
+#		mil = 5
+#		culture = dawn_elf
+#	}
+#	add_ruler_personality = mage_personality
+#	exile_ruler_as = { name = ilvisar }
+#}
+
+#BomjSBagetom Anbennar Submod
+1444.11.11 = {
+	monarch = {
+		name = "Ecaris"
+		dynasty = "Ecarizuir"
+		adm = 2
+		dip = 4
+		mil = 5
+		birth_date = 1349.11.30
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = mage_personality 
+	set_ruler_flag = evocation_1
+	set_ruler_flag = evocation_2
+	set_ruler_flag = evocation_3
+	set_ruler_flag = abjuration_1
+	set_ruler_flag = abjuration_2
+}

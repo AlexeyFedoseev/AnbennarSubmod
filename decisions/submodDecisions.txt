@@ -1,0 +1,365 @@
+country_decisions = {
+
+	disable_colonials = {
+
+		color = { 128 0 128 }
+
+		potential = {
+			ai = no
+			NOT = { has_country_flag = no_colonial_nations  }
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			custom_tooltip = disable_colonials_tooltip
+			#custom_tooltip = disable_colonials_tooltip
+			set_country_flag = no_colonial_nations 
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	enable_colonials = {
+
+		color = { 128 0 128 }
+
+		potential = {
+			ai = no
+			has_country_flag = no_colonial_nations 
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			custom_tooltip = enable_colonials_tooltip
+			#custom_tooltip = enable_colonials_tooltip
+			clr_country_flag = no_colonial_nations 
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	dev_sum_clicks_decision = {
+
+		color = { 128 0 128 }
+
+		potential = {
+			ai = no
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		allow = {
+			always = no
+		}
+
+		effect = {
+			custom_tooltip = dev_sum_clicks_decision_tooltip
+		}
+	}
+
+	wexonard_nation = { #example - esmarian_nation Z46
+		major = yes
+		potential = {
+			primary_culture = wexonard
+			NOT = { has_country_flag = formed_wex_flag }
+			NOT = { tag = Z01 } #Empire of Anbennar
+			OR = {
+				ai = no
+				NOT = { exists = A30 }
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 294
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					province_id = 300
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					province_id = 306
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					province_id = 318
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					province_id = 919
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+			}
+		}
+		allow = {
+			owns_core_province = 294	# Magdalaire
+			owns_core_province = 300	# Bisan
+			owns_core_province = 306	# Wexkeep
+			owns_core_province = 318	# Stumpwood
+			owns_core_province = 919	# Rhinmond
+			hidden_trigger = {
+				primary_culture = wexonard
+			}
+			is_at_war = no
+			is_free_or_tributary_trigger = yes	
+			NOT = { exists = A30 }			
+		}
+		effect = {
+			306 = { #Wexkeep
+				move_capital_effect = yes
+			}
+			change_tag = A30
+			hidden_effect = { restore_country_name = yes }
+			swap_non_generic_missions = yes
+
+			the_borders_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = A30
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 10
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_wex_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	EoA_nation = { #example - esmarian_nation Z46
+		major = yes
+		potential = {
+			OR = {
+				culture_group = anbennarian
+				primary_culture = wexonard
+				primary_culture = vertesker
+				primary_culture = imperial_halfling
+				primary_culture = imperial_gnome
+				primary_culture = silver_dwarf
+				primary_culture = moon_elf
+			}
+			current_age = age_of_revolutions
+			NOT = { has_country_flag = formed_EoA_flag }
+			NOT = { tag = Z01 } #Empire of Anbennar
+			OR = {
+				ai = no
+				NOT = { exists = Z01 }
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			normal_or_historical_nations = yes
+			#was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					region = west_dameshead_region
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					region = east_dameshead_region
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					region = the_borders_region
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					region = damescrown_region
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					region = esmaria_region
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					area = eastern_winebay_area
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					area = arbaran_area
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					area = golden_plains_area
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					area = cestir_area
+					OR = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}
+			}
+		}
+		allow = {
+			#EoA
+			west_dameshead_region = {
+				owned_by = ROOT
+				type = all
+			}
+			east_dameshead_region = {
+				owned_by = ROOT
+				type = all
+			}
+			the_borders_region = {
+				owned_by = ROOT
+				type = all
+			}
+			damescrown_region = {
+				owned_by = ROOT
+				type = all
+			}
+			esmaria_region = {
+				owned_by = ROOT
+				type = all
+			}
+			#saloren
+			eastern_winebay_area = {
+				owned_by = ROOT
+				type = all
+			}
+			#Arbaran
+			arbaran_area = {
+				owned_by = ROOT
+				type = all
+			}
+			golden_plains_area = {
+				owned_by = ROOT
+				type = all
+			}
+			cestir_area = {
+				owned_by = ROOT
+				type = all
+			}
+
+			hidden_trigger = {
+				OR = {
+					culture_group = anbennarian
+					primary_culture = wexonard
+					primary_culture = vertesker
+					primary_culture = imperial_halfling
+					primary_culture = imperial_gnome
+					primary_culture = silver_dwarf
+					primary_culture = moon_elf
+				}
+			}
+			is_at_war = no
+			is_free_or_tributary_trigger = yes	
+			NOT = { exists = Z01 }
+			NOT = { hre_size = 1 }	
+		}
+		effect = {
+			8 = { #Anbenncost
+				move_capital_effect = yes
+			}
+			change_tag = Z01
+			hidden_effect = { restore_country_name = yes }
+			swap_non_generic_missions = yes
+
+			western_cannor_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = A30
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 100
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_EoA_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

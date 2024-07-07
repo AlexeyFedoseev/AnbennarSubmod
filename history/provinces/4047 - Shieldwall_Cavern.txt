@@ -1,0 +1,19 @@
+#BomjSBagetom Anbennar Submod
+owner = H96
+controller = H96
+add_core = H96
+
+
+
+
+culture = silver_dwarf
+religion = ancestor_worship
+trade_goods = mithril
+hre = no
+base_tax = 1 
+base_production = 2
+base_manpower = 1
+
+#native_size = 67 #BomjSBagetom Anbennar Submod
+#native_ferocity = 10 #BomjSBagetom Anbennar Submod
+#native_hostileness = 10 #BomjSBagetom Anbennar Submod

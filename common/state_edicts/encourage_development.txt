@@ -1,0 +1,54 @@
+edict_encourage_development = {
+	potential = { #BomjSBagetom Anbennar Submod
+		NOT = {
+			AND = {
+				current_age = age_of_revolutions
+				has_country_flag = age_ability_age4_edicts_flag
+			}
+		}
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	years_to_notify = 3 #specifies how many years an edict needs to be active to show an alert
+	
+	modifier = {
+		local_development_cost = -0.1
+	}
+	
+	color = {  244 184 12  }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+}
+
+#BomjSBagetom Anbennar Submod
+edict_encourage_development_2 = {
+	potential = { 
+		current_age = age_of_revolutions
+		has_country_flag = age_ability_age4_edicts_flag
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	years_to_notify = 3 #specifies how many years an edict needs to be active to show an alert
+	
+	modifier = {
+		local_development_cost = -0.15
+	}
+	
+	color = {  244 184 12  }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+}

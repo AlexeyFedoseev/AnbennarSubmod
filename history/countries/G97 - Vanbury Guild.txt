@@ -1,0 +1,28 @@
+
+setup_vision = yes
+government = republic
+add_government_reform = trade_company_government
+add_government_reform = nepotism_reform
+government_rank = 1
+primary_culture = esmari
+religion = regent_court
+technology_group = tech_cannorian
+capital = 2164 #Ricardsport
+mercantilism = 25
+historical_friend = A62 #Telgeir
+historical_rival = G98 #CLSTC
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_state }
+
+#BomjSBagetom Anbennar Submod
+1444.11.11 = {
+	monarch = {
+		name = "Vincen of Vanbury"
+		adm = 2
+		dip = 2
+		mil = 6
+		birth_date = 1405.11.4
+	}
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = malevolent_personality
+}

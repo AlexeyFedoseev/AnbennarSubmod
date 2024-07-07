@@ -1,0 +1,52 @@
+# Forts stuff:
+can_build_fort_trigger = {
+	OR = {
+		NOT = {
+			any_neighbor_province = {
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = fort_15th
+					has_construction = fort_15th
+					has_building = fort_16th
+					has_construction = fort_16th
+					has_building = fort_17th
+					has_construction = fort_17th
+					has_building = fort_18th
+					has_construction = fort_18th
+				}
+			}
+		}
+		OR = {
+			has_building = ramparts
+			has_construction = ramparts
+		}
+	}
+}
+
+can_keep_fort_trigger = {
+	OR = {
+		NOT = {
+			any_neighbor_province = {
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = fort_15th
+					has_construction = fort_15th
+					has_building = fort_16th
+					has_construction = fort_16th
+					has_building = fort_17th
+					has_construction = fort_17th
+					has_building = fort_18th
+					has_construction = fort_18th
+				}
+			}
+		}
+		OR = {
+			has_building = ramparts
+			has_construction = ramparts
+		}
+	}
+}

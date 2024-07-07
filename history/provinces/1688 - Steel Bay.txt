@@ -1,0 +1,5 @@
+
+# No previous file for Kuroshio Current
+
+#BomjSBagetom Anbennar Submod
+discovered_by = G97

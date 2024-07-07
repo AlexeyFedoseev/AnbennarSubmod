@@ -1,0 +1,4373 @@
+#Age of Greentide
+#FULL REWORK in BomjSBagetom Anbennar Submod
+#implemented by BomjSBagetom.
+#loca writing by ntao & BomjSBagetom.
+#discussed by BomjSBagetom, ntao, yarik_strateg, fenya9722, shayatero.
+
+age_of_discovery = {
+	start = 1400
+	
+	can_start = {
+		always = yes
+	}
+	
+	religious_conflicts = yes
+	
+
+	objectives = {
+		obj_age1_1_discover_aelantir = {
+			allow = {
+				capital_scope = {
+					OR = {
+						continent = europe
+						continent = asia
+						continent = africa
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = obj_discover_america_tooltip
+					OR = {
+						north_america = { has_discovered = ROOT }
+						south_america = { has_discovered = ROOT }
+						new_world = { has_discovered = ROOT }
+					}
+			}
+		}
+
+		obj_age1_1_have_2_holds = {
+			allow = {
+				capital_scope = { 
+					continent = serpentspine
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 2
+				OR = {
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+				}
+			}
+		}
+
+		obj_age1_1_have_150_dev = {
+			allow = {
+				NOT = {
+					capital_scope = { 
+						OR = {
+							continent = serpentspine
+							continent = europe
+							continent = asia
+							continent = africa
+						}
+					}
+				}
+			}
+			total_development = 150
+		}
+
+		obj_age1_2_have_3_CoT = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+					}
+					controlled_by = owner
+					is_core = ROOT
+				}
+				amount = 3
+			}
+		}
+
+		obj_age1_3_have_renaissance_in_all_prov = {
+			has_institution = renaissance
+			all_state_province = {
+				renaissance = 100
+			}
+		}
+
+		obj_age1_4_humiliate_rival = {
+			custom_trigger_tooltip = {
+				tooltip = obj_humiliate_rival_tooltip
+				has_country_flag = humiliated_rival
+			}
+		}
+
+		obj_age1_5_have_full_army_limit = {
+			army_size_percentage = 1
+		}
+
+		obj_age1_6_hire_2lvl_advisors = {
+			has_adm_advisor_2 = yes
+			has_dip_advisor_2 = yes
+			has_mil_advisor_2 = yes
+		}
+
+		obj_age1_7_have_damestear = {
+			allow = {
+				NOT = {
+					capital_scope = { 
+						continent = serpentspine
+					}
+				}
+			}
+			damestear = 1
+		}
+
+		obj_age1_7_have_mithril = {
+			allow = {
+				capital_scope = { 
+					continent = serpentspine
+				}
+			}
+			mithril = 1
+		}
+
+		obj_age1_8_30_development_city = {
+			custom_trigger_tooltip = {
+				tooltip = obj_30_development_city_tooltip
+				any_owned_province = {
+					is_core = ROOT
+					controlled_by = owner
+					development_discounting_tribal = 30
+				}
+			}
+		}
+
+		obj_age1_9_many_subjects = {
+			num_of_subjects = 2
+		}	
+
+		obj_age1_10_build_artillery_or_fleet = {
+			OR = {
+				num_of_artillery = 8
+				num_of_galley = 30
+				num_of_heavy_ship = 10
+			}
+		}
+	}		
+	
+	abilities = {
+		ab_age1_endurance_group_button = {
+			modifier = {
+				attack_bonus_in_capital_terrain = 1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = endurance abilityName = ab_age1_endurance_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 5
+					primary_culture = wood_elf
+				}
+			}
+		}
+
+		ab_age1_trade_group_button = {
+			modifier = {
+				global_trade_power = 0.1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = trade abilityName = ab_age1_trade_group }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_culturalchange_group_button = {
+			modifier = {
+				years_of_nationalism = -5
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = culturalchange abilityName = ab_age1_culturalchange_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_diplomacy_group_button = {
+			modifier = {
+				can_transfer_vassal_wargoal = yes
+				can_chain_claim = yes
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age1_diplomacy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_court_group_button = {
+			modifier = {
+				ae_impact = -0.1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = court abilityName = ab_age1_court_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_colonization_group_button = {
+			modifier = {
+				range = 0.2
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = colonization abilityName = ab_age1_colonization_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_religion_group_button = {
+			modifier = {
+				manpower_in_true_faith_provinces = 0.10
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = religion abilityName = ab_age1_religion_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_edicts_group_button = {
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = edicts abilityName = ab_age1_edicts_group_button }
+				custom_tooltip = feudal_de_jure_law
+				set_country_flag = feudal_de_jure_law
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_siege_group_button = {
+			modifier = {
+				land_attrition = -0.25
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = siege abilityName = ab_age1_siege_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_production_group_button = {
+			modifier = {
+				build_cost = -0.05
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = production abilityName = ab_age1_production_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_navy_group_button = {
+			modifier = {
+				naval_morale_damage_received = -0.05
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = navy abilityName = ab_age1_navy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_science_group_button = {
+			modifier = {
+				monthly_reform_progress_modifier = 0.05
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = science abilityName = ab_age1_science_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_autocracy_group_button = {
+			modifier = {
+				unjustified_demands = -0.2
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = autocracy abilityName = ab_age1_autocracy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_mercenary_group_button = {
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age1_mercenary_group_button }
+				set_country_flag = ab_age1_mercenary_group_flag
+				tooltip = {
+					add_country_modifier = {
+						name = age1_mercenary_group_modif
+						duration = -1
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_reformism_group_button = {
+			modifier = {
+				reelection_cost = -0.1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = reformism abilityName = ab_age1_reformism_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_quality_focus_group_button = {
+			allow = {
+				NOT = { has_age_ability = ab_age1_quantity_focus_group_button }
+			}
+			modifier = {
+				cav_to_inf_ratio = 0.2
+			}
+			effect = {
+				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
+				add_or_upgrade_age_bonus = { bonusName = quality_focus abilityName = ab_age1_quality_focus_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_quantity_focus_group_button = {
+			allow = {
+				NOT = { has_age_ability = ab_age1_quality_focus_group_button }
+			}
+			modifier = {
+				manpower_recovery_speed = 0.15
+			}
+			effect = {
+				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
+				add_or_upgrade_age_bonus = { bonusName = quantity_focus abilityName = ab_age1_quantity_focus_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_docile_group_button = {
+			modifier = {
+				reduced_liberty_desire = 12.5
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = docile abilityName = ab_age1_docile_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_TAXES_group_button = {
+			modifier = {
+				war_taxes_cost_modifier = -1.0
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = TAXES abilityName = ab_age1_TAXES_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_architecture_group_button = {
+			modifier = {
+				prestige_decay = -0.01
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age1_architecture_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age1_Venail_bonus_button = {
+			allow = {
+				OR = {
+					tag = A21
+					was_tag = A21
+				}
+			}
+			modifier = {
+				manpower_recovery_speed = 0.5
+				mercenary_manpower = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Deranne_bonus_button = {
+			allow = {
+				tag = A02
+			}
+			modifier = {
+				may_explore = yes
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_GreatOrding_bonus_button = {
+			allow = {
+				tag = A17
+			}
+			effect = {
+				capital_scope = {
+					cannorian_14_outriders = ROOT
+					cannorian_14_outriders = ROOT
+					cannorian_14_outriders = ROOT
+					cannorian_14_outriders = ROOT
+					cannorian_14_outriders = ROOT
+					cannorian_14_outriders = ROOT
+					cannorian_14_outriders = ROOT
+					cannorian_14_outriders = ROOT
+					cannorian_14_outriders = ROOT
+					cannorian_14_outriders = ROOT
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Reveria_bonus_button = {
+			allow = {
+				tag = A05
+			}
+			modifier = {
+				colonist_placement_chance = 0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Wesdam_bonus_button = {
+			allow = {
+				tag = A04
+			}
+			modifier = {
+				ae_impact = -0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Beepeck_bonus_button = {
+			allow = {
+				tag = A12
+			}
+			modifier = {
+				merchants = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Bennon_bonus_button = {
+			allow = {
+				tag = A39
+			}
+			modifier = {
+				defensiveness = 0.3
+				rival_border_fort_maintenance = -1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Estallen_bonus_button = {
+			allow = {
+				tag = A93
+			}
+			modifier = {
+				diplomatic_reputation = 1
+				diplomatic_upkeep = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Magisterium_bonus_button = {
+			allow = {
+				tag = A85
+			}
+			modifier = {
+				max_general_shock = 2
+				leader_land_shock = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Moonhaven_bonus_button = {
+			allow = {
+				tag = A31
+			}
+			modifier = {
+				range = 0.5
+				global_colonial_growth = 50
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Busilar_bonus_button = {
+			allow = {
+				tag = A29
+			}
+			modifier = {
+				enemy_core_creation = 0.5 
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Sugamber_bonus_button = {
+			allow = {
+				tag = A48
+			}
+			modifier = {
+				garrison_size = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Adshaw_bonus_button = {
+			allow = {
+				tag = Z26
+			}
+			effect = {
+				set_country_flag = ab_age1_Adshaw_bonus_flag
+				tooltip = {
+					custom_tooltip = ab_age1_Adshaw_bonus_tt
+					add_country_modifier = {
+						name = age1_Adshaw_bonus_modif
+						duration = -1
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Urviksten_bonus_button = {
+			allow = {
+				OR = {
+					tag = Z15
+					was_tag = Z15
+				}
+			}
+			modifier = {
+				coast_raid_range = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Rogieria_bonus_button = {
+			allow = {
+				tag = B37
+			}
+			modifier = {
+				can_claim_states = yes
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Newshire_bonus_button = {
+			allow = {
+				tag = B50
+			}
+			modifier = {
+				development_cost = -0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Ravenmarch_bonus_button = {
+			allow = {
+				tag = B48
+			}
+			modifier = {
+				spy_offence = 0.3
+				global_spy_defence = 0.3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Unguldavor_bonus_button = {
+			allow = {
+				tag = Z52
+			}
+			modifier = {
+				global_manpower_modifier = 0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Reuyel_bonus_button = {
+			allow = {
+				tag = U18
+			}
+			modifier = {
+				hostile_attrition = 3
+				max_hostile_attrition = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Ayarallen_bonus_button = {
+			allow = {
+				OR = {
+					tag = F27
+					was_tag = F27
+				}
+			}
+			modifier = {
+				infantry_power = 0.10
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Irrliam_bonus_button = {
+			allow = {
+				tag = F37
+			}
+			modifier = {
+				vassal_forcelimit_bonus = 1
+				vassal_income = 0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Varamhar_bonus_button = {
+			allow = {
+				tag = F42
+			}
+			effect = {
+				custom_tooltip = add_magic_study_modifier_25_tt
+				update_magic_study_experience_modifier = { value = 25 }
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Sareyand_bonus_button = {
+			allow = {
+				tag = F25
+			}
+			modifier = {
+				discipline = 0.05
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Elizna_bonus_button = {
+			allow = {
+				tag = U05
+			}
+			modifier = {
+				imperial_mandate = 0.25
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Tluukt_bonus_button = {
+			allow = {
+				tag = F28
+			}
+			effect = {
+				custom_tooltip = age_ability_monstrous_rule_flag_tt
+				set_country_flag = ab_age1_Tluukt_bonus_flag 
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		#ab_monstrous_rule = {
+		#	allow = {
+		#		custom_trigger_tooltip = {
+		#			tooltip = age_ability_monstrous_rule_tt
+		#			OR ={
+		#				culture = exodus_goblin
+		#				culture = firanyan_harpy
+		#				culture = siadunan_harpy
+		#				culture = naleni_harpy
+		#				culture = swamp_troll
+		#				culture_group = gnollish
+		#				culture_group = centaur
+		#			}
+		#		}
+		#		development_in_provinces = {
+		#			OR = {
+		#				culture_is_human = yes
+		#				culture_is_elven = yes
+		#			}
+		#			value = 100
+		#			country_or_subject_holds = ROOT
+		#		}
+		#	}
+		#	effect = {
+		#		custom_tooltip = age_ability_monstrous_rule_flag_tt
+		#	}
+		#	ai_will_do = {
+		#		factor = 10
+		#	}
+		#}
+
+		ab_age1_Jaddari_bonus_button = {
+			allow = {
+				tag = F46
+			}
+			modifier = {
+				manpower_in_true_faith_provinces= 0.50
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Nirat_bonus_button = {
+			allow = {
+				tag = U02
+			}
+			modifier = {
+				warscore_cost_vs_other_religion = -0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Rabhidaraj_bonus_button = {
+			allow = {
+				tag = R52
+			}
+			modifier = {
+				yearly_corruption = -1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Rajnadhaga_bonus_button = {
+			allow = {
+				tag = R07
+				NOT = {
+					exists = R62
+				}
+			}
+			effect = {
+				set_country_flag = ab_age1_Rajnadhaga_bonus_flag
+				custom_tooltip = ab_age1_Rajnadhaga_bonus_tt
+				hidden_effect = {
+					4397 = { add_province_triggered_modifier = rajnadhaga_wolf_army_maintenance }
+					4397 = { add_province_triggered_modifier = rajnadhaga_boar_army_maintenance }
+					4397 = { add_province_triggered_modifier = rajnadhaga_lion_army_maintenance }
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_OneXia_bonus_button = {
+			allow = {
+				tag = Y99
+			}
+			modifier = {
+				mercenary_manpower = 0.5
+				merc_maintenance_modifier = -0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_LotDekkhang_bonus_button = {
+			allow = {
+				tag = Y58
+			}
+			modifier = {
+				global_prov_trade_power_modifier = 0.25
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Jiangdu_bonus_button = {
+			allow = {
+				tag = Y13
+			}
+			modifier = {
+				leader_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Zongji_bonus_button = {
+			allow = {
+				tag = Y25
+			}
+			modifier = {
+				infantry_shock = 0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Jiantsiang_bonus_button = {
+			allow = {
+				tag = Y16
+			}
+			modifier = {
+				shock_damage_received = -0.10
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Pelomar_bonus_button = {
+			allow = {
+				tag = H08
+			}
+			modifier = {
+				tolerance_heretic = 5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Dearktir_bonus_button = {
+			allow = {
+				tag = H03
+			}
+			modifier = {
+				cavalry_power = 0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Arakeprun_bonus_button = {
+			allow = {
+				tag = H01
+			}
+			modifier = {
+				unjustified_demands = -1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Elchos_bonus_button = {
+			allow = {
+				tag = H04
+			}
+			modifier = {
+				global_institution_spread = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Arverynn_bonus_button = {
+			allow = {
+				tag = G35
+			}
+			modifier = {
+				vassal_forcelimit_bonus = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Eltikan_bonus_button = {
+			allow = {
+				tag = G60
+			}
+			modifier = {
+				cavalry_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_KheiosCityes_bonus_button = {
+			allow = {
+				OR = {
+					tag = G51
+					tag = G46
+					tag = G50
+					tag = G48
+					tag = G49
+				}
+			}
+			modifier = {
+				colony_development_boost = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Vyzemby_bonus_button = {
+			allow = {
+				technology_group = tech_vyzemby
+			}
+			modifier = {
+				global_defender_dice_roll_bonus = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+		
+		ab_age1_YezelMora_bonus_button = {
+			allow = {
+				tag = S70
+			}
+			effect = {
+				change_religion = shadow_pact
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_OvdalKanzad_bonus_button = {
+			allow = {
+				tag = H79
+			}
+			modifier = {
+				colony_development_boost = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_MireMaw_bonus_button = {
+			allow = {
+				tag = J32
+			}
+			modifier = {
+				may_establish_frontier = yes
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		ab_age1_ShatteredCrown_bonus_button = {
+			allow = {
+				tag = H72
+			}
+			modifier = {
+				morale_damage = 0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Railskulker_bonus_button = {
+			allow = {
+				tag = H75
+			}
+			modifier = {
+				global_colonial_growth = 70
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Spiderwretch_bonus_button = {
+			allow = {
+				tag = H90
+			}
+			modifier = {
+				cavalry_cost = -0.66
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_OvdalLodhum_bonus_button = {
+			allow = {
+				tag = H77
+			}
+			modifier = {
+				build_cost = -0.15
+				build_time = -0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_VerkalSkomdihr_bonus_button = {
+			allow = {
+				tag = I13
+			}
+			modifier = {
+				infantry_fire = 0.3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+	}
+}
+
+#Age of Unraveling
+age_of_reformation = {
+	start = 1530
+	
+	can_start = {
+		#is_religion_enabled = corinite
+		#After Greentide region is fine
+		if = { limit = { NOT = { has_global_flag = delete_cannor_region } }
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = castellos_is_dead_tooltip
+					has_global_flag = "castellos_is_dead"
+				}
+				is_year = 1560	#in case castellos never dies
+			}
+		}
+		else = {
+			is_year = 1530
+		}
+	}
+	#What if Ravelianism starts in Aelantir? if so in general they should rise from coastal provinces too and those facing west
+	#Ravelianism could be more popular with the urban class? Peasants like the simplicity of the gods but historically christianity liked peasants
+	
+	religious_conflicts = yes
+	papacy = 1.25
+	
+	objectives = {
+		
+		obj_age2_1_reformation_convert = {
+			allow = {
+				capital_scope = { 
+					OR = {
+						continent = europe
+						continent = serpentspine
+						superregion = rahen_superregion
+					}
+				}
+			}
+			OR = {
+				religion = corinite
+				religion = ravelian
+				religion = dalcabba
+				religion = dwarven_pantheon
+				religion = suhans_praxis
+				any_owned_province = {
+					has_province_modifier = ravelian_lodge
+				}
+			}
+		}
+
+		obj_age2_1_sun_cult_unity = {
+			allow = {
+				capital_scope = { 
+					superregion = bulwar_superregion 
+				}
+			}
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = obj_sun_cult_unity_jadd
+					AND = {
+						religion = the_jadd
+						has_global_flag = the_jadd_is_the_true_faith
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = obj_sun_cult_unity_nsc
+					AND = {
+						religion = bulwari_sun_cult
+						calc_true_if = {
+							amount = 4
+							is_incident_happened = incident_bulwar_under_threat
+							is_incident_happened = incident_naqtazan
+							is_incident_happened = incident_thirteenth_night
+							is_incident_happened = incident_death_of_taelarios
+							is_incident_happened = incident_summit_of_samartal
+							is_incident_happened = incident_call_of_aelantir
+							is_incident_happened = incident_silent_as_the_grave
+							is_incident_happened = incident_rise_of_artificery
+							is_incident_happened = incident_spread_of_ravelianism
+							is_incident_happened = incident_teachings_szal_fazil
+							is_incident_happened = incident_half_a_king
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = obj_sun_cult_unity_osc
+					AND = {
+						religion = old_bulwari_sun_cult
+						has_country_flag = osc_centralization_completed
+					}
+				}
+			}
+		}
+
+		obj_age2_1_religious_unity = {
+			allow = {
+				NOT = {
+					capital_scope = {
+						OR = {
+							continent = europe
+							continent = serpentspine
+							superregion = rahen_superregion
+							superregion = bulwar_superregion
+						}
+					}
+				}
+			}
+			religious_unity = 1
+		}
+
+		obj_age2_2_two_continents = {
+			num_of_continents = 2
+		}
+
+		obj_age2_3_build_temples = {
+			temple = 25
+		}
+
+		obj_age2_4_convert_15_provinces = {
+			custom_trigger_tooltip = {
+				tooltip = obj_age2_4_convert_15_provinces_tooltip
+				check_variable = { which = num_converted_religion value = 15 }
+			}
+		}
+
+		obj_age2_5_church_influence = {
+			allow = {
+				OR = {
+					has_estate = estate_church
+					has_estate = estate_shinukhorchi 
+				}
+			}
+			OR = {
+				estate_influence = {
+					estate = estate_church
+					influence = 60
+				}
+				estate_influence = {
+					estate = estate_shinukhorchi
+					influence = 60
+				}
+			}
+		}
+
+		obj_age2_5_high_innovativeness = {
+			allow = {
+				NOT = {
+					has_estate = estate_church
+					has_estate = estate_shinukhorchi 
+				}
+			}
+			OR = {
+				innovativeness = 14.88
+			}
+		}
+
+		obj_age2_6_audit_government = {
+			NOT = {
+				corruption = 0.1
+				num_of_loans = 1
+			}
+			stability = 3
+		}
+
+		obj_age2_7_sunset_invasion = {
+			allow = {
+				capital_scope = { 
+					OR = {
+						continent = north_america
+						continent = south_america 
+					}
+				}
+			}
+			OR = {
+				any_owned_province = {
+					NOT = {
+						continent = north_america
+						continent = south_america
+					}
+				}
+			}
+		}
+
+		obj_age2_7_dig_holds = { 
+			allow = {
+				capital_scope = { 
+					continent = serpentspine
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				has_dwarven_hold_2 = yes
+			}
+		}
+
+		obj_age2_7_foothold_in_aelantir = {
+			allow = {
+				NOT = {
+					capital_scope = { 
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = serpentspine
+						}
+					}
+				}
+			}
+			OR = {
+				any_owned_province = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+				}
+			}
+		}
+		
+		obj_age2_8_force_converted = {
+			custom_trigger_tooltip = {
+				tooltip = obj_force_converted_tooltip
+				has_country_flag = force_converted
+			}
+		}
+
+		obj_age2_9_racial_movements = {
+			OR = {
+				has_racial_focus = yes
+				NOT = { is_not_purging_any_race_trigger = yes }
+				NOT = { is_not_expelling_any_race_trigger = yes }
+			}
+		}
+
+		obj_age2_10_250_devclick = {
+			custom_trigger_tooltip = {
+				tooltip = obj_age2_10_250_devclick_tooltip
+				check_variable = { which = dev_sum_clicks value = 250 }
+			}
+		}
+		
+	}	
+	
+	abilities = {
+		ab_age2_endurance_group_button = {
+			modifier = {
+				fort_maintenance_modifier = -0.2
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = endurance abilityName = ab_age2_endurance_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_trade_group_button = {
+			modifier = {
+				global_ship_trade_power = 0.2
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = trade abilityName = ab_age2_trade_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_culturalchange_group_button = {
+			modifier = {
+				development_cost_in_primary_culture = -0.075
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = culturalchange abilityName = ab_age2_culturalchange_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_diplomacy_group_button = {
+			modifier = {
+				improve_relation_modifier = 0.5
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age2_diplomacy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_court_group_button = {
+			modifier = {
+				spy_offence = 0.15
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = court abilityName = ab_age2_court_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_colonization_group_button = {
+			modifier = {
+				colonists = 1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = colonization abilityName = ab_age2_colonization_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_religion_group_button = {
+			modifier = {
+				prestige_per_development_from_conversion = 0.3
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = religion abilityName = ab_age2_religion_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_edicts_group_button = {
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = edicts abilityName = ab_age2_edicts_group_button }
+				custom_tooltip = religion_enforced_edict
+				set_country_flag = religion_enforced_edict
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_siege_group_button = {
+			modifier = {
+				siege_blockade_progress = 2
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = siege abilityName = ab_age2_siege_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_production_group_button = {
+			modifier = {
+				inflation_reduction = 0.1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = production abilityName = ab_age2_production_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_navy_group_button = {
+			modifier = {
+				heavy_ship_cost = -0.5
+				light_ship_cost = -0.5
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = navy abilityName = ab_age2_navy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_science_group_button = {
+			modifier = {
+				institution_spread_from_true_faith = 0.5
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = science abilityName = ab_age2_science_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_autocracy_group_button = {
+			modifier = {
+				warscore_cost_vs_other_religion = -0.25
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = autocracy abilityName = ab_age2_autocracy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_mercenary_group_button = {
+			modifier = {
+				mercenary_discipline = 0.05
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age2_mercenary_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_reformism_group_button = {
+			modifier = {
+				centralize_state_cost = -0.3
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = reformism abilityName = ab_age2_reformism_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_quality_focus_group_button = {
+			allow = {
+				NOT = { has_age_ability = ab_age2_quantity_focus_group_button }
+			}
+			modifier = {
+				infantry_shock = 0.1
+				infantry_fire = 0.1
+			}
+			effect = {
+				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
+				add_or_upgrade_age_bonus = { bonusName = quality_focus abilityName = ab_age2_quality_focus_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_quantity_focus_group_button = {
+			allow = {
+				NOT = { has_age_ability = ab_age2_quality_focus_group_button }
+			}
+			modifier = {
+				regiment_manpower_usage = -0.141
+			}
+			effect = {
+				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
+				add_or_upgrade_age_bonus = { bonusName = quantity_focus abilityName = ab_age2_quantity_focus_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_docile_group_button = {
+			modifier = {
+				diplomatic_reputation = 3
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = docile abilityName = ab_age2_docile_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_TAXES_group_button = {
+			modifier = {
+				interest = -0.5
+				yearly_corruption = -0.15
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = TAXES abilityName = ab_age2_TAXES_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_architecture_group_button = {
+			modifier = {
+				expand_infrastructure_cost_modifier = -0.2
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age2_architecture_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age2_Eilisin_bonus_button = {
+			allow = {
+				tag = A15
+				has_country_modifier = undead_military
+			}
+			modifier = {
+				shock_damage = 0.2
+				fire_damage = 0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Roilsard_bonus_button = {
+			allow = {
+				tag = A78
+			}
+			modifier = {
+				global_trade_goods_size_modifier = 0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Kobildzan_bonus_button = {
+			allow = {
+				tag = Z38
+				custom_trigger_tooltip = {
+					tooltip = ab_age2_Kobildzan_bonus_button_tt
+					has_country_flag = kobold_dragon_path
+				}
+			}
+			modifier = {
+				fire_damage = 0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Vertesk_bonus_button = {
+			allow = {
+				tag = A23
+			}
+			modifier = {
+				mercenary_discipline = 0.075
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Arbaran_bonus_button = {
+			allow = {
+				tag = A46
+				custom_trigger_tooltip = {
+					tooltip = ab_age2_Arbaran_bonus_tt
+					NOT = {
+						any_country = {
+							same_continent = ROOT
+							is_evil = yes
+						}
+					}
+				}
+				A46 = {
+					is_not_evil = yes
+				}
+			}
+			effect = {
+				add_country_modifier = {
+					name = age2_Arbaran_bonus_modif
+					duration = -1
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Telgeir_bonus_button = {
+			allow = {
+				tag = A62
+			}
+			effect = {
+				set_country_flag = supporting_artificers
+				custom_tooltip = supporting_artificers_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Konwell_bonus_button = {
+			allow = {
+				tag = A35
+			}
+			modifier = {
+				idea_cost = -0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Istralore_bonus_button = {
+			allow = {
+				tag = A45
+			}
+			modifier = {
+				establish_order_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Verne_bonus_button = {
+			allow = {
+				tag = A33
+			}
+			modifier = {
+				amount_of_hussars = 40
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Asheniande_bonus_button = {
+			allow = {
+				tag = A60
+			}
+			modifier = {
+				global_tax_income = 240
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Bjarnrik_bonus_button = {
+			allow = {
+				tag = Z08
+			}
+			modifier = {
+				amount_of_carolean = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Corvuria_bonus_button = {
+			allow = {
+				tag = A59
+			}
+			effect = { #example flag+tt
+				set_country_flag = ab_age2_Corvuria_bonus_flag
+				custom_tooltip = ab_age2_Corvuria_bonus_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Cyranvar_bonus_button = {
+			allow = {
+				tag = I45
+				custom_trigger_tooltip = {
+					tooltip = ab_age2_Cyranvar_bonus_button_tt
+					has_country_flag = cyranvar_isolationist_path
+				}
+			}
+			modifier = {
+				yearly_army_professionalism = 0.015
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Adenica_bonus_button = {
+			allow = {
+				tag = B58
+			}
+			modifier = {
+				cav_to_inf_ratio = 0.25
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_TugundDarakh_bonus_button = {
+			allow = {
+				tag = I46
+			}
+			effect = {
+				custom_tooltip = ab_age2_TugundDarakh_bonus_tt
+				hidden_effect = { country_event = { id = cyranvar.7 } }
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Castellyr_bonus_button = {
+			allow = {
+				tag = B31
+			}
+			modifier = {
+				development_cost = -0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Esthil_bonus_button = {
+			allow = {
+				tag = B54
+			}
+			effect = {
+				set_country_flag = ab_age2_Esthil_bonus_flag
+				custom_tooltip = ab_age2_Esthil_bonus_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Corintar_bonus_button = {
+			allow = {
+				tag = B02
+				religion = corinite
+			}
+			modifier = {
+				shock_damage = 0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Luciande_bonus_button = {
+			allow = {
+				tag = B34
+				ruler_has_mage_personality = yes
+			}
+			effect = {
+				magic_study_level_up_all = yes
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Blademarches_bonus_button = {
+			allow = {
+				tag = B33
+				mission_completed = B33_imperial_blademarches
+			}
+			effect = {
+				add_country_modifier = {
+					name = age2_Blademarches_bonus_modif
+					duration = -1
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Khozrugan_bonus_button = {
+			allow = {
+				tag = Z51
+				num_of_owned_provinces_with = {
+					value = 30
+					superregion = western_cannor_superregion
+				}
+			}
+			modifier = {
+				discipline = 0.05
+				land_morale = 0.10
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_AzkaEvran_bonus_button = {
+			allow = {
+				tag = F34
+			}
+			modifier = {
+				morale_damage = 0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Dartaxagerdim_bonus_button = {
+			allow = {
+				tag = F22
+			}
+			effect = {
+				define_general = {
+					fire = 3
+					shock = 11
+					manuever = 4
+					siege = 7
+					trait = war_wizard_personality
+					name = "Dartaxes szel-Forramaz II"
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Birsartanses_bonus_button = {
+			allow = {
+				tag = F21
+			}
+			modifier = {
+				advisor_cost = -0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_AzkaSur_bonus_button = {
+			allow = {
+				tag = U20
+			}
+			modifier = {
+				manpower_in_true_faith_provinces= 0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Kheterata_bonus_button = {
+			allow = {
+				tag = U01
+			}
+			modifier = {
+				meritocracy = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Maghargma_bonus_button = {
+			allow = {
+				tag = I90
+			}
+			modifier = {
+				defensiveness = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Skurkokli_bonus_button = {
+			allow = {
+				tag = J47
+			}
+			modifier = {
+				country_admin_power = 1
+				country_diplomatic_power = 1
+				country_military_power = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Kalsyto_bonus_button = {
+			allow = {
+				tag = J33
+			}
+			modifier = {
+				all_power_cost = -0.075
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Vanrahar_bonus_button = {
+			allow = {
+				tag = R77
+			}
+			modifier = {
+				monarch_military_power = 6
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Dhugajir_bonus_button = {
+			allow = {
+				tag = R72
+			}
+			modifier = {
+				yearly_government_power = 3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Azjakuma_bonus_button = {
+			allow = {
+				tag = Y01
+				num_of_owned_provinces_with = {
+					value = 8
+					has_province_modifier = corrupted_temple_complex
+				}
+			}
+			effect = {
+				add_country_modifier = {
+					name = age2_Azjakuma_bonus_modif
+					duration = -1
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_VerkalOzovar_bonus_button = {
+			allow = {
+				tag = Y63
+			}
+			modifier = {
+				global_manpower = 50
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_BianfangDahui_bonus_button = {
+			allow = {
+				OR = {
+					tag = Y09
+					tag = Z66
+				}
+			}
+			modifier = {
+				governing_capacity_modifier = 0.25
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Yinquan_bonus_button = {
+			allow = {
+				tag = Y26
+			}
+			modifier = {
+				artillery_shock = 1.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_NuugdanTsaraiGuwaamud_bonus_button = {
+			allow = {
+				OR = {
+					tag = Y91
+					tag = Y96
+				}
+			}
+			modifier = {
+				cavalry_power = 0.2
+				land_maintenance_modifier = -0.1
+				land_forcelimit = 10
+				global_manpower = 15
+				reduced_liberty_desire = 30
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Malacnar_bonus_button = {
+			allow = {
+				tag = G32
+			}
+			modifier = {
+				leader_land_fire = 1
+				leader_land_manuever = 1
+				leader_land_shock = 1
+				leader_siege = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Amacimst_bonus_button = {
+			allow = {
+				OR = {
+					tag = G26
+					was_tag = G26
+				}
+				owns = 1171
+			}
+			effect = {
+				1171 = {
+					add_great_project_tier = {
+						type = ynnic_tranvit_hippodrome
+						tier = 3
+					}
+				}
+				custom_tooltip = castan_linebreak_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Boek_bonus_button = {
+			allow = {
+				tag = G01
+			}
+			modifier = {
+				global_colonial_growth = 75
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Mykx_bonus_button = {
+			allow = {
+				tag = G93
+			}
+			modifier = {
+				own_coast_naval_combat_bonus = 1.0
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_AnisikheionOktikheion_bonus_button = {
+			allow = {
+				OR = {
+					tag = G47
+					tag = G59
+				}
+			}
+			modifier = {
+				naval_morale = 0.1
+				galley_power = 0.25
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_AmgremosKeyolionEneion_bonus_button = {
+			allow = {
+				OR = {
+					tag = G62
+					tag = G58
+					tag = G55
+				}
+			}
+			modifier = {
+				shock_damage_received = -0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Fangaula_bonus_button = {
+			allow = {
+				tag = L23
+				has_heir = yes
+			}
+			effect = {
+				hidden_effect = {
+					set_heir_mage_effect = yes
+				}
+				custom_tooltip = ab_age2_Fangaula_bonus_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Khatalashya_bonus_button = {
+			allow = {
+				tag = S81
+			}
+			modifier = {
+				technology_cost = -0.3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Haraagtseda_bonus_button = {
+			allow = {
+				tag = F72
+			}
+			modifier = {
+				church_power_modifier = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_VerkalGulan_bonus_button = {
+			allow = {
+				tag = F47
+			}
+			effect = { 
+				set_country_flag = ab_age2_VerkalGulan_bonus_flag
+				custom_tooltip = ab_age2_VerkalGulan_bonus_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Snotfinger_bonus_button = {
+			allow = {
+				OR = {
+					tag = H89
+					was_tag = H89
+				}
+				mission_completed = H89_well_protected
+				mission_completed = H89_escann_dealers
+			}
+			effect = {
+				add_country_modifier = {
+					name = age2_Snotfinger_bonus_modif
+					duration = -1
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Mountainshark_bonus_button = {
+			allow = {
+				OR = {
+					tag = H84
+					was_tag = H84
+				}
+				mission_completed = H84_pinnacle_of_innovation
+			}
+			effect = {
+				mission_reward_artifice_points_5 = yes
+				mission_reward_artifice_points_5 = yes
+				mission_reward_artifice_points_5 = yes
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Shazstundihr_bonus_button = {
+			allow = {
+				tag = I11
+			}
+			modifier = {
+				core_creation = -0.33
+				years_of_nationalism = -10
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_GreedyGrin_bonus_button = {
+			allow = {
+				tag = H82
+			}
+			modifier = {
+				gold_depletion_chance_modifier = -1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+	}
+}
+
+age_of_absolutism = {
+	start = 1620
+	
+	can_start = {
+		is_institution_enabled = global_trade
+	}
+	
+	papacy = 1.5
+	
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2 #1.35
+		manual_seat_in_parliament = -2 #1.35
+		war_exhaustion = -1
+	}
+	
+	religious_conflicts = yes # Anbennar
+
+	objectives = {
+		obj_age3_1_universities = {
+			num_of_owned_provinces_with = {
+				has_building = university 
+				value = 50
+			}
+		}
+
+		obj_age3_2_great_general = {
+			has_commanding_three_star = yes
+		}
+
+		obj_age3_3_75_absolutism = {
+			absolutism = 75
+		}
+
+		obj_age3_4_witchking_or_666 = {
+			OR = {
+				has_ruler_modifier = witch_king_modifier
+				AND = {
+					adm = 6
+					dip = 6
+					mil = 6
+				}
+			}
+		}
+
+		obj_age3_5_emperor = {
+			OR = {	
+				is_emperor = yes
+				total_development = 2000
+				is_emperor_of_china = yes
+			}
+		}
+
+		obj_age3_6_mage_influence = {
+			estate_influence = {
+				estate = estate_mages
+				influence = 67
+			}
+		}
+
+		obj_age3_7_high_crownlands = {
+			crown_land_share = 75
+		}
+
+		obj_age3_8_have_relics = {
+			precursor_relics = 2
+		}
+
+		obj_age3_9_home_conquest = {
+			allow = {
+				capital_scope = { 
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 150
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
+
+		obj_age3_9_mountain_conquest = {
+			allow = {
+				capital_scope = { 
+					continent = serpentspine
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 6
+				OR = {
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 30
+				has_terrain = dwarven_road
+			}
+		}
+
+		obj_age3_9_aelantir_conquest = {
+			allow = {
+				NOT = {
+					capital_scope = { 
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = serpentspine
+						}
+					}
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 20
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
+
+		obj_age3_10_3_trade_companies = {
+			num_of_trade_companies = 3
+		}
+	}
+	
+	
+	
+	
+	abilities = {
+
+		ab_age3_endurance_group_button = {
+			modifier = {
+				fort_maintenance_modifier = -0.25
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = endurance abilityName = ab_age3_endurance_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_trade_group_button = {
+			modifier = {
+				trade_range_modifier = 1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = trade abilityName = ab_age3_trade_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_culturalchange_group_button = {
+			modifier = {
+				promote_culture_cost = -0.5
+				num_accepted_cultures = 2
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = culturalchange abilityName = ab_age3_trade_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_diplomacy_group_button = {
+			modifier = {
+				rival_change_cost = -1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age3_diplomacy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_court_group_button = {
+			modifier = {
+				yearly_absolutism = 1.5
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = court abilityName = ab_age3_court_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_colonization_group_button = {
+			modifier = {
+				colony_development_boost = 1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = colonization abilityName = ab_age3_colonization_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_religion_group_button = {
+			modifier = {
+				land_morale = 0.05
+				tolerance_own = 1
+				global_missionary_strength = 0.02
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = religion abilityName = ab_age3_religion_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_edicts_group_button = {
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = edicts abilityName = ab_age3_edicts_group_button }
+				custom_tooltip = edict_of_absolutism_tt
+				set_country_flag = edict_of_absolutism
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_siege_group_button = {
+			modifier = {
+				movement_speed = 0.2
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = siege abilityName = ab_age3_siege_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_production_group_button = {
+			modifier = {
+				global_trade_goods_size_modifier = 0.1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = production abilityName = ab_age3_production_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_navy_group_button = {
+			modifier = {
+				global_naval_engagement_modifier = 0.1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = navy abilityName = ab_age3_navy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_science_group_button = {
+			modifier = {
+				embracement_cost = -0.5
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = science abilityName = ab_age3_science_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_autocracy_group_button = {
+			modifier = {
+				autonomy_change_time = -0.5
+				global_autonomy = -0.05
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = autocracy abilityName = ab_age3_autocracy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_mercenary_group_button = {
+			modifier = {
+				merc_leader_army_tradition = 1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age3_mercenary_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_reformism_group_button = {
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = reformism abilityName = ab_age3_reformism_group_button }
+				custom_tooltip = age_ability_sun_cult_resurgence_flag_tt
+				set_country_flag = age_ability_sun_cult_resurgence_flag
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_quality_focus_group_button = {
+			allow = {
+				NOT = { has_age_ability = ab_age3_quantity_focus_group_button }
+			}
+			modifier = {
+				fire_damage = 0.075
+			}
+			effect = {
+				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
+				add_or_upgrade_age_bonus = { bonusName = quality_focus abilityName = ab_age3_quality_focus_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_quantity_focus_group_button = {
+			allow = {
+				NOT = { has_age_ability = ab_age3_quality_focus_group_button }
+			}
+			modifier = {
+				global_regiment_recruit_speed = -0.25
+				manpower_recovery_speed = 0.10
+			}
+			effect = {
+				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
+				add_or_upgrade_age_bonus = { bonusName = quantity_focus abilityName = ab_age3_quantity_focus_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_docile_group_button = {
+			modifier = {
+				harsh_treatment_cost = -0.5
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = docile abilityName = ab_age3_docile_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_TAXES_group_button = {
+			modifier = {
+				global_tax_modifier = 0.5
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = TAXES abilityName = ab_age3_TAXES_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_architecture_not_mountain_group_button = {
+			allow = {
+				NOT = {
+					capital_scope = { continent = serpentspine }
+				}
+			}
+			modifier = {
+				build_cost = -0.1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age3_architecture_not_mountain_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_architecture_mountain_group_button = {
+			allow = {
+				capital_scope = { continent = serpentspine }
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age3_TAXES_group_button }
+				custom_tooltip = ab_dwarven_reclamation_tooltip
+				set_country_flag = age_ability_dwarven_reclamation_flag
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age3_GnomishHierarchy_bonus_button = {
+			allow = {
+				tag = A79
+			}
+			modifier = {
+				special_unit_forcelimit = 0.4
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Dameria_bonus_button = {
+			allow = {
+				tag = A58
+			}
+			modifier = {
+				discipline = 0.075
+				mercenary_discipline = -0.05
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Ibevar_bonus_button = {
+			allow = {
+				tag = A32
+			}
+			modifier = {
+				discipline = 0.1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Esmaria_bonus_button = {
+			allow = {
+				tag = Z46
+			}
+			modifier = {
+				development_cost_in_primary_culture = -0.15
+				manpower_in_own_culture_provinces = 0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Wex_bonus_button = {
+			allow = {
+				tag = A30
+			}
+			modifier = {
+				imperial_authority_value = 2.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Eborthil_bonus_button = {
+			allow = {
+				tag = A47
+			}
+			modifier = {
+				max_flagships = 3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Arannen_bonus_button = {
+			allow = {
+				tag = A72
+			}
+			modifier = {
+				reinforce_speed = 0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_ObrtrolGerudaghot_bonus_button = {
+			allow = {
+				OR = {
+					tag = Z74
+					tag = Z17
+				}
+			}
+			modifier = {
+				country_admin_power = 2
+				country_diplomatic_power = 2
+				country_military_power = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Grombar_bonus_button = {
+			allow = {
+				tag = Z50
+				custom_trigger_tooltip = {
+					tooltip = ab_age3_Grombar_bonus_button_tt
+					has_country_flag = orc_grombar
+				}
+			}
+			modifier = {
+				land_attrition = -0.33
+				reinforce_speed = 0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Dostanor_bonus_button = {
+			allow = {
+				tag = Z07
+			}
+			modifier = {
+				monthly_splendor = 10
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Cyranvar_bonus_button = {
+			allow = {
+				tag = I45
+				custom_trigger_tooltip = {
+					tooltip = ab_age3_Cyranvar_bonus_button_tt
+					has_country_flag = cyranvar_open_path
+				}
+			}
+			modifier = {
+				movement_speed = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Elikhand_bonus_button = {
+			allow = {
+				tag = B38
+			}
+			modifier = {
+				land_morale = 0.15
+				recover_army_morale_speed = 0.4
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Hammerhome_bonus_button = {
+			allow = {
+				tag = Z36
+			}
+			modifier = {
+				fire_damage_received = -0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Marrhold_bonus_button = {
+			allow = {
+				tag = B36
+			}
+			modifier = {
+				cavalry_shock = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Barumand_bonus_button = {
+			allow = {
+				tag = Z53
+			}
+			effect = {
+				capital_scope = {
+					change_trade_goods = coal
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+		
+		ab_age3_Gelkalis_bonus_button = {
+			allow = {
+				OR = {
+					tag = F26
+					was_tag = F26
+				}
+			}
+			modifier = {
+				global_defender_dice_roll_bonus = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Siadan_bonus_button = {
+			allow = {
+				tag = F48
+			}
+			modifier = {
+				infantry_fire = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Mulen_bonus_button = {
+			allow = {
+				tag = F50
+			}
+			modifier = {
+				infantry_shock = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_PhoenixEmpire_bonus_button = {
+			allow = {
+				tag = F38
+			}
+			modifier = {
+				global_attacker_dice_roll_bonus = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Aakheta_bonus_button = {
+			allow = {
+				tag = U04
+			}
+			modifier = {
+				all_power_cost = -0.05
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_KhuraenUlaeg_bonus_button = {
+			allow = {
+				tag = I89
+			}
+			modifier = {
+				cavalry_fire = 0.75
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Ghankedhen_bonus_button = {
+			allow = {
+				tag = R74
+			}
+			modifier = {
+				global_trade_goods_size = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Nadimraj_bonus_button = {
+			allow = {
+				tag = R73
+			}
+			modifier = {
+				infantry_power = 0.20
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Thangoya_bonus_button = {
+			allow = {
+				tag = Z62
+			}
+			modifier = {
+				cav_to_inf_ratio = 0.10
+				cavalry_power = 0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_HonSai_bonus_button = {
+			allow = {
+				tag = Y66
+			}
+			modifier = {
+				fire_damage = 0.17
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Thidinkai_bonus_button = {
+			allow = {
+				OR = {
+					tag = Z63
+					tag = Y72
+				}
+			}
+			modifier = {
+				production_efficiency = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Arawkelin_bonus_button = {
+			allow = {
+				tag = Y65
+			}
+			modifier = {
+				trade_efficiency = 0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Balrijin_bonus_button = {
+			allow = {
+				tag = Y85
+				mission_completed = Y85_warming_a_lonely_heart
+			}
+			effect = {
+				add_country_modifier = {
+					name = age3_Balrijin_bonus_modif
+					duration = -1
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Feiten_bonus_button = {
+			allow = {
+				tag = Y20
+			}
+			modifier = {
+				infantry_fire = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Gemradcurt_bonus_button = {
+			allow = {
+				tag = H16
+			}
+			effect = {
+				set_country_flag = ab_age3_Gemradcurt_bonus_flag
+				custom_tooltip = ab_age3_Gemradcurt_bonus_button_tt
+				tooltip = {
+					add_country_modifier = {
+						name = age3_Gemradcurt_bonus_modif
+						duration = -1
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Brelar_bonus_button = {
+			allow = {
+				tag = G27
+			}
+			modifier = {
+				infantry_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Bosancovac_bonus_button = {
+			allow = {
+				tag = G33
+			}
+			modifier = {
+				trade_steering = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Freemarches_bonus_button = {
+			allow = {
+				tag = H51
+			}
+			modifier = {
+				development_cost = -0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_NewHavoral_bonus_button = {
+			allow = {
+				tag = H57
+			}
+			modifier = {
+				mercenary_discipline = 0.1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Plumstead_bonus_button = {
+			allow = {
+				tag = H61
+			}
+			modifier = {
+				cavalry_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Ameion_bonus_button = {
+			allow = {
+				tag = G52
+			}
+			modifier = {
+				ignore_coring_distance = yes
+				transport_attrition = -1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Saerraeg_bonus_button = {
+			allow = {
+				tag = H00
+			}
+			modifier = {
+				cav_to_inf_ratio = 0.3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Araya_bonus_button = {
+			allow = {
+				tag = G20
+			}
+			modifier = {
+				monthly_anb_effelai_attuned_resource = 3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Muhaqaar_bonus_button = {
+			allow = {
+				tag = F61
+			}
+			modifier = {
+				leader_land_shock = 3
+				max_general_shock = 3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Aramoole_bonus_button = {
+			allow = {
+				tag = F63
+			}
+			modifier = {
+				monthly_church_power = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Konolkhatep_bonus_button = {
+			allow = {
+				tag = F66
+			}
+			modifier = {
+				imperial_mandate = 0.4
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_VerkalDromak_bonus_button = {
+			allow = {
+				tag = I25
+			}
+			effect = {
+				set_country_flag = ab_age3_VerkalDromak_flag
+				custom_tooltip = ab_mention_primary_effect
+				tooltip = {
+					add_country_modifier = {
+						name = age3_VerkalDromak_bonus_modif
+						duration = -1
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_OrlazamAzDihr_bonus_button = {
+			allow = {
+				tag = I04
+				mission_completed = ramsteel_mecharam_prototypes
+			}
+			effect = {
+				set_country_flag = unlocked_artifice_invention_prototype_tanks
+				custom_tooltip = ab_age3_OrlazamAzDihr_bonus_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_HarazOrldhum_bonus_button = {
+			allow = {
+				tag = I08
+			}
+			modifier = {
+				max_absolutism_effect = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Mithradhum_bonus_button = {
+			allow = {
+				tag = I05
+			}
+			effect = {
+				set_country_flag = ab_age3_Mithradhum_bonus_flag
+				custom_tooltip = ab_age3_Mithradhum_bonus_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Truedagger_bonus_button = {
+			allow = {
+				OR = {
+					tag = H85
+					was_tag = H85
+				}
+			}
+			modifier = {
+				diplomats = 5
+				spy_offence = 0.3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Seghdihr_bonus_button = {
+			allow = {
+				tag = H78
+			}
+			modifier = {
+				global_foreign_trade_power = 0.4
+				trade_steering = 0.6
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Chaingrasper_bonus_button = {
+			allow = {
+				tag = H74
+				has_country_modifier = undead_military
+			}
+			modifier = {
+				reserves_organisation = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_HulAzKrakazol_bonus_button = {
+			allow = {
+				tag = I20
+			}
+			modifier = {
+				fire_damage_received = 0.10
+				shock_damage_received = 0.10
+				fire_damage = 0.30
+				shock_damage = 0.30
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Krakdhumvror_bonus_button = {
+			allow = {
+				tag = I02
+			}
+			modifier = {
+				shock_damage_received = -0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+	}
+}
+
+age_of_revolutions = {
+	start = 1710
+	
+	can_start = {
+		is_institution_enabled = enlightenment
+	}
+	
+	papacy = 2.0
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2 #1.35
+		manual_seat_in_parliament = -2 #1.35
+		war_exhaustion = -1
+	}
+	
+	
+	objectives = {
+
+		obj_age4_1_parliament = {
+			OR = {
+				has_parliament = yes
+				has_reform = amlharaz_reform
+			}
+		}
+
+		obj_age4_2_high_discipline = {
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.30
+				extra_shortcut = yes
+			}
+		}
+
+		obj_age4_3_huge_capital = {
+			capital_scope = {
+				development = 50
+			}
+		}
+
+		obj_age4_4_own_institution_origin = {
+			num_of_owned_and_controlled_institutions = 1
+		}
+		
+		obj_age4_5_4_furnace = {
+			furnace = 4
+		}
+		
+		obj_age4_6_65_artificers_loyalty = {
+			estate_loyalty = {
+				estate = state_artificers
+				loyalty = 65
+			}
+		}
+
+		obj_age4_7_be_revolutionary = {
+			is_revolutionary = yes
+		}
+	
+		obj_age4_8_90_professionalism = {
+			army_professionalism = 0.9
+		}
+
+		obj_age4_9_many_states = {
+			num_of_states = 65
+		}
+
+		obj_age4_10_full_hegemony = {
+			hegemon_strength = 100
+		}
+
+	}
+
+	abilities = {
+		ab_age4_endurance_group_button = {
+			modifier = {
+				force_march_free = yes
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = endurance abilityName = ab_age4_endurance_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_trade_group_button = {
+			modifier = {
+				global_ship_trade_power = 1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = trade abilityName = ab_age4_trade_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_culturalchange_group_button = {
+			modifier = {
+				development_cost_in_primary_culture = -0.2
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = culturalchange abilityName = ab_age4_culturalchange_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_diplomacy_group_button = {
+			modifier = {
+				envoy_travel_time = -0.7
+				diplomats = 3
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age4_diplomacy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_court_group_button = {
+			modifier = {
+				allow_free_estate_privilege_revocation = yes
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = court abilityName = ab_age4_court_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_colonization_group_button = {
+			modifier = {
+				ignore_coring_distance = yes
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = colonization abilityName = ab_age4_colonization_group_button }
+			}
+			ai_will_do = {
+				factor = 15
+				modifier = {
+					# AI peace code relies on being limited by coring range, or it will create crazy border gore where it can't reach its new lands
+					factor = 0
+					OR = {
+						is_subject = no
+						overlord = {
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+
+		ab_age4_religion_group_button = {
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = religion abilityName = ab_age4_religion_group_button }
+				custom_tooltip = ab_age4_religion_tooltip
+				set_country_flag = age_ability_age4_religion_flag
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_edicts_group_button = {
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = edicts abilityName = ab_age4_edicts_group_button }
+				custom_tooltip = ab_age4_edicts_tooltip
+				set_country_flag = age_ability_age4_edicts_flag
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_siege_group_button = {
+			modifier = {
+				artillery_levels_available_vs_fort = 3
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = siege abilityName = ab_age4_siege_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_production_group_button = {
+			modifier = {
+				production_efficiency = 0.33
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = production abilityName = ab_age4_production_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_navy_group_button = {
+			modifier = {
+				global_ship_repair = 0.15
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = navy abilityName = ab_age4_navy_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_science_group_button = {
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = science abilityName = ab_age4_science_group_button }
+				custom_tooltip = ab_age4_science_tooltip
+				set_country_flag = age_ability_age4_science_flag
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_autocracy_group_button = {
+			modifier = {
+				prestige = 5
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = autocracy abilityName = ab_age4_autocracy_group_button }
+				custom_tooltip = ab_age4_autocracy_tooltip
+				set_country_flag = age_ability_age4_autocracy_flag
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_mercenary_group_button = {
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age4_mercenary_group_button }
+				set_country_flag = ab_age4_mercenary_group_flag
+				tooltip = {
+					add_country_modifier = {
+						name = age4_mercenary_group_modif
+						duration = -1
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_reformism_group_button = {
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = reformism abilityName = ab_age4_reformism_group_button }
+				custom_tooltip = ab_age4_reformism_tooltip
+				set_country_flag = age_ability_age4_reformism_flag
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_quality_focus_group_button = {
+			allow = {
+				NOT = { has_age_ability = ab_age4_quantity_focus_group_button }
+			}
+			modifier = {
+				backrow_artillery_damage = 0.20
+			}
+			effect = {
+				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
+				add_or_upgrade_age_bonus = { bonusName = quality_focus abilityName = ab_age4_quality_focus_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_quantity_focus_focus_group_button = {
+			allow = {
+				NOT = { has_age_ability = ab_age4_quality_focus_group_button }
+			}
+			modifier = {
+				yearly_army_professionalism = 0.02
+			}
+			effect = {
+				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
+				add_or_upgrade_age_bonus = { bonusName = quantity_focus abilityName = ab_age4_quantity_focus_focus_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_docile_group_button = {
+			modifier = {
+				yearly_corruption = -2
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = docile abilityName = ab_age4_docile_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_TAXES_group_button = {
+			modifier = {
+				global_tax_income = 840
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = TAXES abilityName = ab_age4_TAXES_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_architecture_group_button = {
+			modifier = {
+				global_allowed_num_of_buildings = 1
+			}
+			effect = {
+				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age4_architecture_group_button }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_age4_Lorent_bonus_button = {
+			allow = {
+				tag = A01
+			}
+			effect = {
+				if = {
+					limit = { in_golden_age = yes }
+					extend_golden_age = 9999
+				} else = {
+					tooltip = {
+						extend_golden_age = 9999
+					}
+					hidden_effect = { reset_golden_age = yes }
+				}
+				custom_tooltip = castan_linebreak_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Kobildzan_bonus_button = {
+			allow = {
+				tag = Z38
+				custom_trigger_tooltip = {
+					tooltip = ab_age4_Kobildzan_bonus_button_tt
+					has_country_flag = kobold_artificier_path
+				}
+			}
+			modifier = {
+				allowed_rajput_fraction = 0.6
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_SmallCountry_bonus_button = {
+			allow = {
+				tag = A97
+			}
+			modifier = {
+				development_cost = -1
+				development_cost_modifier = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Gawed_bonus_button = {
+			allow = {
+				tag = A13
+				custom_trigger_tooltip = {
+					tooltip = ab_age4_Gawed_bonus_button_tt
+					has_country_flag = ab_age4_Gawed_bonus_flag
+				}
+			}
+			modifier = {
+				morale_damage_received = -0.2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_EmpireOfAnbennar_bonus_button = {
+			allow = {
+				tag = Z01
+			}
+			modifier = {
+				fire_damage_received = -0.25
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_RavelianState_bonus_button = {
+			allow = {
+				tag = Z97
+				hidden_trigger = {
+					ai = no
+				}
+			}
+			modifier = {
+				papal_influence = 30
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		ab_age4_Grombar_bonus_button = {
+			allow = {
+				tag = Z50
+				custom_trigger_tooltip = {
+					tooltip = ab_age4_Grombar_bonus_button_tt
+					has_country_flag = half_orc_grombar
+				}
+			}
+			modifier = {
+				development_cost = -0.3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_BlackCastanor_bonus_button = {
+			allow = {
+				tag = Z34
+			}
+			modifier = {
+				military_tactics = 0.3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Karakhanbar_bonus_button = {
+			allow = {
+				tag = Z54
+			}
+			modifier = {
+				country_admin_power = 1
+				country_diplomatic_power = 1
+				country_military_power = 1
+				all_power_cost = -0.025
+				global_manpower_modifier = 0.10
+				manpower_recovery_speed = 0.10
+				land_morale = 0.05
+				discipline = 0.05
+				global_trade_goods_size_modifier = 0.1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_BlackDemense_bonus_button = {
+			allow = {
+				tag = Z99
+				mission_completed = Z99_bringer_of_order
+			}
+			modifier = {
+				administrative_efficiency = 0.4
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Castanor_bonus_button = {
+			allow = {
+				tag = B32
+			}
+			modifier = {
+				reinforce_speed = 0.5
+				global_attacker_dice_roll_bonus = 1
+				global_defender_dice_roll_bonus = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Bulwar_bonus_button = {
+			allow = {
+				tag = F39
+			}
+			effect = {
+				custom_tooltip = ab_age4_Bulwar_bonus_button_tt
+				set_country_flag = ab_age4_Bulwar_bonus_flag
+				tooltip = {
+					add_country_modifier = {
+						name = ab_age4_Bulwar_bonus_modif
+						duration = -1
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_TheOverclan_bonus_button = {
+			allow = {
+				tag = F78
+			}
+			modifier = {
+				global_trade_goods_size = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Surakes_bonus_button = {
+			allow = {
+				tag = F52
+			}
+			effect = {
+				set_country_flag = ab_age4_Surakes_bonus_flag
+				custom_tooltip = ab_age4_Surakes_bonus_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_JaddEmpire_bonus_button = {
+			allow = {
+				tag = F51
+				custom_trigger_tooltip = {
+					tooltip = ab_age4_JaddEmpire_bonus_button_tt
+					has_country_flag = ab_age4_JaddEmpire_bonus_button_flag
+				}
+			}
+			modifier = {
+				extra_manpower_at_religious_war = yes
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Koroshesh_bonus_button = {
+			allow = {
+				tag = L28
+			}
+			modifier = {
+				build_time = -1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Zabutodask_bonus_button = {
+			allow = {
+				tag = J53
+			}
+			modifier = {
+				cavalry_fire = 1.5
+				allowed_cossack_fraction = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_HarimrajRahenraj_bonus_button = {
+			allow = {
+				OR = {
+					tag = R70
+					tag = R71
+				}
+				custom_trigger_tooltip = {
+					tooltip = ab_age4_HarimrajRahenraj_bonus_button_tt
+					has_country_flag = ab_age4_HarimrajRahenraj_bonus_button_flag
+				}
+			}
+			modifier = {
+				shock_damage = 0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_TheCommand_bonus_button = {
+			allow = {
+				tag = R62
+				custom_trigger_tooltip = {
+					tooltip = ab_age4_TheCommand_bonus_button_tt
+					has_country_flag = insubordination_complete
+				}
+			}
+			modifier = {
+				manpower_in_accepted_culture_provinces = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_AzkareSunriseEmpire_bonus_button = {
+			allow = {
+				OR = {
+					tag = Y86
+					tag = Y00
+				}
+			}
+			modifier = {
+				land_morale_constant = 0.75
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Beikdugang_bonus_button = {
+			allow = {
+				tag = Y15
+			}
+			effect = {
+				custom_tooltip = ab_age4_Beikdugang_bonus_tt
+				set_country_flag = ab_age4_Beikdugang_bonus_flag
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Yanzhong_bonus_button = {
+			allow = {
+				tag = Y08
+			}
+			modifier = {
+				diplomats = 7
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Daxugo_bonus_button = {
+			allow = {
+				tag = Y98
+			}
+			effect = {
+				set_country_flag = ab_age4_Daxugo_bonus_flag
+				custom_tooltip = ab_age4_Daxugo_bonus_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Yanshen_bonus_button = {
+			allow = {
+				tag = Z65
+			}
+			modifier = {
+				max_general_fire = 4
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Lianzhou_bonus_button = {
+			allow = {
+				tag = Z67
+			}
+			modifier = {
+				max_general_shock = 4
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Aelnar_bonus_button = {
+			allow = {
+				tag = Z43
+			}
+			modifier = {
+				regiment_disembark_speed = 1
+				transport_attrition = -0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Eordand_bonus_button = {
+			allow = {
+				tag = H21
+			}
+			modifier = {
+				governing_capacity_modifier = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_YnnicEmpire_bonus_button = {
+			allow = {
+				tag = H27
+			}
+			modifier = {
+				cavalry_shock = 1.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Isobelin_bonus_button = {
+			allow = {
+				tag = G91
+				owns_all_provinces = {
+					area = coast_of_isobel_area
+				}
+			}
+			effect = {
+				coast_of_isobel_area = {
+					add_base_tax = 15
+					add_base_production = 15
+					add_base_manpower = 15
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Cestirmark_bonus_button = {
+			allow = {
+				tag = H33
+			}
+			modifier = {
+				possible_policy = 2
+				free_policy = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_VanburyGuild_bonus_button = {
+			allow = {
+				tag = G97
+			}
+			effect = {
+				set_country_flag = ab_age4_VanburyGuild_bonus_flag
+				custom_tooltip = ab_age4_VanburyGuild_bonus_tt
+			}
+			modifier = {
+				max_flagships = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Rezankand_bonus_button = {
+			allow = {
+				tag = H67
+			}
+			modifier = {
+				development_cost_in_primary_culture = -0.35
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Kheios_bonus_button = {
+			allow = {
+				tag = H22
+			}
+			modifier = {
+				artillery_fire = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Theinos_bonus_button = {
+			allow = {
+				tag = U27
+			}
+			modifier = {
+				global_regiment_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Adzalan_bonus_button = {
+			allow = {
+				tag = L87
+			}
+			modifier = {
+				regiment_manpower_usage = -0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_UmojiBaashidi_bonus_button = {
+			allow = {
+				tag = S79
+			}
+			effect = {
+				set_country_flag = ab_age4_UmojiBaashidi_flag
+				custom_tooltip = ab_mention_primary_effect
+				tooltip = {
+					add_country_modifier = {
+						name = ab_age4_UmojiBaashidi_bonus_modif
+						duration = -1
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_VesUdzenklan_bonus_button = {
+			allow = {
+				tag = I98
+			}
+			modifier = {
+				artillery_cost = -0.7
+				artillery_power = 0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_AulDwarov_bonus_button = {
+			allow = {
+				tag = I24
+			}
+			modifier = {
+				state_governing_cost = -0.15
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_HarazDhumankon_bonus_button = {
+			allow = {
+				tag = I23
+			}
+			modifier = {
+				global_allowed_num_of_manufactories = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Roadwarrior_bonus_button = {
+			allow = {
+				tag = H91
+			}
+			modifier = {
+				can_bypass_forts = yes
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Amldihr_bonus_button = {
+			allow = {
+				tag = I01
+			}
+			modifier = {
+				vassal_forcelimit_bonus = 10
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_ErNatvir_bonus_button = {
+			allow = {
+				tag = I06
+			}
+			modifier = {
+				movement_speed = 3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Khugdihr_bonus_button = {
+			allow = {
+				tag = I07
+			}
+			modifier = {
+				interest = -3
+				inflation_reduction = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_GorBurad_bonus_button = {
+			allow = {
+				tag = I16
+			}
+			modifier = {
+				hostile_attrition = 5
+				max_hostile_attrition = 5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_Orlghelovar_bonus_button = {
+			allow = {
+				tag = I12
+			}
+			modifier = {
+				infantry_fire = 0.7
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_DurVazhatun_bonus_button = {
+			allow = {
+				tag = I03
+			}
+			modifier = {
+				siege_ability = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		#ab_aelantir_relics = {
+		#	allow = {
+		#		NOT = {
+		#			is_colonial_nation = yes 
+		#		}
+		#		capital_scope = {
+		#			OR = {
+		#				continent = north_america
+		#				continent = south_america
+		#			}
+		#		}
+		#		precursor_relics = 1
+		#	}
+		#	modifier = {
+		#	}
+		#	effect = {
+		#		custom_tooltip = aelantir_relics_tt
+		#	}
+		#	ai_will_do = {
+		#		factor = 100
+		#	}
+		#}
+	}
+}

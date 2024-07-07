@@ -1,0 +1,86 @@
+add_or_upgrade_age_bonus = {
+    if = {
+        # Add Bonus Level 1, replacing 0.
+        limit = {
+            OR = {
+                NOT = {
+                    has_country_modifier = ab_age_$bonusName$_1
+                    has_country_modifier = ab_age_$bonusName$_2
+                    has_country_modifier = ab_age_$bonusName$_3
+					has_country_modifier = ab_age_$bonusName$_4
+                }
+                AND = {
+                    has_country_modifier = ab_age_$bonusName$_1
+                    has_country_flag = flag_ab_purchased_$abilityName$
+                }
+            }
+        }
+		custom_tooltip = ab_mention_bonus_effect
+        add_country_modifier = { name = ab_age_$bonusName$_1 duration = -1 }
+        custom_tooltip = ab_mention_primary_effect
+        set_country_flag = flag_ab_purchased_$abilityName$
+    }
+
+    else_if = {
+        # Add Bonus Level 2, replacing 1.
+        limit = {
+            OR = {
+                NOT = {
+                    has_country_modifier = ab_age_$bonusName$_2
+                    has_country_modifier = ab_age_$bonusName$_3
+					has_country_modifier = ab_age_$bonusName$_4
+                }
+                AND = {
+                    has_country_modifier = ab_age_$bonusName$_2
+                    has_country_flag = flag_ab_purchased_$abilityName$
+                }
+            }
+        }
+        remove_country_modifier = ab_age_$bonusName$_1
+		custom_tooltip = ab_mention_bonus_effect
+        add_country_modifier = { name = ab_age_$bonusName$_2 duration = -1 }
+        custom_tooltip = ab_mention_primary_effect
+        set_country_flag = flag_ab_purchased_$abilityName$
+    }
+
+    else_if = {
+        # Add Bonus Level 3, replacing 2.
+        limit = {
+            OR = {
+                NOT = {
+                    has_country_modifier = ab_age_$bonusName$_3
+					has_country_modifier = ab_age_$bonusName$_4
+                }
+                AND = {
+                    has_country_modifier = ab_age_$bonusName$_3
+                    has_country_flag = flag_ab_purchased_$abilityName$
+                }
+            }
+        }
+		remove_country_modifier = ab_age_$bonusName$_2
+		custom_tooltip = ab_mention_bonus_effect
+        add_country_modifier = { name = ab_age_$bonusName$_3 duration = -1 }
+        custom_tooltip = ab_mention_primary_effect
+        set_country_flag = flag_ab_purchased_$abilityName$
+    }
+
+	else_if = {
+        # Add Bonus Level 4, replacing 3.
+        limit = {
+            OR = {
+                NOT = {
+                    has_country_modifier = ab_age_$bonusName$_4
+                }
+                AND = {
+                    has_country_modifier = ab_age_$bonusName$_4
+                    has_country_flag = flag_ab_purchased_$abilityName$
+                }
+            }
+        }
+		remove_country_modifier = ab_age_$bonusName$_3
+		custom_tooltip = ab_mention_bonus_effect
+        add_country_modifier = { name = ab_age_$bonusName$_4 duration = -1 }
+        custom_tooltip = ab_mention_primary_effect
+        set_country_flag = flag_ab_purchased_$abilityName$
+    }
+}

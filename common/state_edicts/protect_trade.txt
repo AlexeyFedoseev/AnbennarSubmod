@@ -1,0 +1,84 @@
+edict_protect_trade = {
+	potential = { #BomjSBagetom Anbennar Submod
+		NOT = {
+			AND = {
+				current_age = age_of_revolutions
+				has_country_flag = age_ability_age4_edicts_flag
+			}
+		}
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		province_trade_power_modifier = 0.50
+	}
+	
+	color = {  113 11 43 }
+	
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				NOT = { province_trade_power = 25 }
+			}
+		}
+		modifier = {
+			factor = 4
+			any_province_in_state = {
+				province_trade_power = 60
+			}
+		}
+		modifier = {
+			factor = 4
+			all_province_in_state = {
+				province_trade_power = 25
+			}
+		}
+	}
+}
+
+#BomjSBagetom Anbennar Submod
+edict_protect_trade_2 = {
+	potential = { 
+		current_age = age_of_revolutions
+		has_country_flag = age_ability_age4_edicts_flag
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		province_trade_power_modifier = 0.750
+	}
+	
+	color = {  113 11 43 }
+	
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				NOT = { province_trade_power = 25 }
+			}
+		}
+		modifier = {
+			factor = 4
+			any_province_in_state = {
+				province_trade_power = 60
+			}
+		}
+		modifier = {
+			factor = 4
+			all_province_in_state = {
+				province_trade_power = 25
+			}
+		}
+	}
+}

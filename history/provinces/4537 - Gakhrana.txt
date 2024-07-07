@@ -1,0 +1,27 @@
+
+# No previous file for Banten
+
+#BomjSBagetom Anbennar Submod
+#owner = R62
+#controller = R62
+#add_core = R62
+#add_core = R79
+
+owner = R80
+controller = R80
+add_core = R80
+
+culture = kamtarhid
+religion = high_philosophy
+
+hre = no
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+trade_goods = incense
+
+capital = ""
+
+is_city = yes

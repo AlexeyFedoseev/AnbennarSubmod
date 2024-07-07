@@ -1,0 +1,76 @@
+edict_centralization_effort = {
+	potential = { #BomjSBagetom Anbennar Submod
+		NOT = {
+			AND = {
+				current_age = age_of_revolutions
+				has_country_flag = age_ability_age4_edicts_flag
+			}
+		}
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_autonomy = -0.03
+	}
+	
+	color = {  220 178 155 }
+	
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				NOT = {
+					local_autonomy_above_min = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			all_province_in_state = {
+				local_autonomy_above_min = 10
+			}
+		}
+	}
+}
+
+#BomjSBagetom Anbennar Submod
+edict_centralization_effort_2 = {
+	potential = { 
+		current_age = age_of_revolutions
+		has_country_flag = age_ability_age4_edicts_flag
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_autonomy = -0.045
+	}
+	
+	color = {  220 178 155 }
+	
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				NOT = {
+					local_autonomy_above_min = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			all_province_in_state = {
+				local_autonomy_above_min = 10
+			}
+		}
+	}
+}

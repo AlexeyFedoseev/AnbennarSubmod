@@ -1,0 +1,23 @@
+
+setup_vision = yes
+government = republic
+add_government_reform = pirate_republic_reform
+government_rank = 1
+primary_culture = ruinscourge_gnoll
+religion = xhazobkult
+technology_group = tech_gnollish
+
+capital = 1077
+
+#BomjSBagetom Anbennar Submod
+1444.11.11 = {
+	monarch = {
+		name = "Mykx"
+		adm = 4
+		dip = 1
+		mil = 5
+		birth_date = 1407.11.4
+	}
+	set_ruler_flag = historical_pirate
+	add_ruler_personality = legendary_pirate_personality
+}

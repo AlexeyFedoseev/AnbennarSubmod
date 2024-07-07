@@ -1,0 +1,1435 @@
+devcost_nerf = {
+ 	potential = {
+ 		always = yes	
+ 	}
+
+ 	trigger = {
+		always = yes
+ 	}
+
+ 	development_cost = 1	
+}
+
+########################     SPLENDOR AND AGES      #########################
+
+splendor_decay = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		NOT = {	current_age = age_of_discovery  }
+	}
+	monthly_splendor = -2
+}
+
+splendor_ai_boost = {
+	potential = {
+		ai = yes	
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	monthly_splendor = 5
+}
+
+obj_age1_1_discover_aelantir_bonus = {
+	potential = {
+		current_age = age_of_discovery
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+				continent = africa
+			}
+		}
+	}
+
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = obj_discover_america_tooltip
+				OR = {
+					north_america = { has_discovered = ROOT }
+					south_america = { has_discovered = ROOT }
+					new_world = { has_discovered = ROOT }
+				}
+		}
+	}
+	navy_tradition = 0.25
+	
+}
+
+obj_age1_1_have_2_holds_bonus = {
+	potential = {
+		current_age = age_of_discovery
+		capital_scope = { 
+			continent = serpentspine
+		}
+	}
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 2
+			OR = {
+				has_terrain = dwarven_hold
+				has_terrain = dwarven_hold_surface
+			}
+		}
+	}
+	prestige = 0.25	
+}
+
+obj_age1_1_have_150_dev_bonus = {
+	potential = {
+		current_age = age_of_discovery
+		NOT = {
+			capital_scope = { 
+				OR = {
+					continent = serpentspine
+					continent = europe
+					continent = asia
+					continent = africa
+				}
+			}
+		}
+	}
+
+	trigger = {
+		total_development = 150
+	}
+	global_prosperity_growth = 0.15	
+}
+
+obj_age1_2_have_3_CoT_bonus = {
+	potential = {
+		current_age = age_of_discovery
+	}
+
+	trigger = {
+		calc_true_if = {
+			all_owned_province = {
+				OR = {
+					province_has_center_of_trade_of_level = 2
+					province_has_center_of_trade_of_level = 3
+				}
+				controlled_by = owner
+				is_core = ROOT
+			}
+			amount = 3
+		}
+	}
+	trade_efficiency = 0.025
+}
+
+obj_age1_3_have_renaissance_in_all_prov_bonus = {
+	potential = {
+		current_age = age_of_discovery
+	}
+	trigger = {
+		has_institution = renaissance
+		all_state_province = {
+			renaissance = 100
+		}
+	}
+	global_institution_spread = 0.05
+}
+
+obj_age1_4_humiliate_rival_bonus = {
+	potential = {
+		current_age = age_of_discovery
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = obj_humiliate_rival_tooltip
+			has_country_flag = humiliated_rival
+		}
+	}
+	war_exhaustion = -0.02
+}
+
+obj_age1_5_have_full_army_limit_bonus = {
+	potential = {
+		current_age = age_of_discovery
+	}
+	trigger = {
+		army_size_percentage = 1
+	}
+	army_tradition = 0.25
+}
+
+obj_age1_6_hire_2lvl_advisors_bonus = {
+	potential = {
+		current_age = age_of_discovery
+	}
+	trigger = {
+		has_adm_advisor_2 = yes
+		has_dip_advisor_2 = yes
+		has_mil_advisor_2 = yes
+	}
+	diplomatic_reputation = 1
+}
+
+obj_age1_7_have_damestear_bonus = {
+	potential = {
+		current_age = age_of_discovery
+		NOT = {
+			capital_scope = { 
+				continent = serpentspine
+			}
+		}
+	}
+	trigger = {
+		damestear = 1
+	}
+	production_efficiency = 0.025
+}
+
+obj_age1_7_have_mithril_bonus = {
+	potential = {
+		current_age = age_of_discovery
+		capital_scope = { 
+			continent = serpentspine
+		}
+	}
+	trigger = {
+		mithril = 1
+	}
+	production_efficiency = 0.025
+}
+
+obj_age1_8_30_development_city_bonus = {
+	potential = {
+		current_age = age_of_discovery
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = obj_30_development_city_tooltip
+			any_owned_province = {
+				is_core = ROOT
+				controlled_by = owner
+				development_discounting_tribal = 30
+			}
+		}
+	}
+	global_tax_modifier = 0.05
+}
+
+obj_age1_9_many_subjects_bonus = {
+	potential = {
+		current_age = age_of_discovery
+	}
+	trigger = {
+		num_of_subjects = 2
+	}
+	reduced_liberty_desire = 5
+}
+
+obj_age1_10_build_artillery_or_fleet_bonus = {
+	potential = {
+		current_age = age_of_discovery
+	}
+	trigger = {
+		OR = {
+			num_of_artillery = 8
+			num_of_galley = 30
+			num_of_heavy_ship = 10
+		}
+	}
+	land_morale = 0.025
+	naval_morale = 0.025
+}
+
+obj_age2_1_reformation_convert_bonus = {
+	potential = {
+		current_age = age_of_reformation
+		capital_scope = { 
+			OR = {
+				continent = europe
+				continent = serpentspine
+				superregion = rahen_superregion
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			religion = corinite
+			religion = ravelian
+			religion = dalcabba
+			religion = dwarven_pantheon
+			religion = suhans_praxis
+			any_owned_province = {
+				has_province_modifier = ravelian_lodge
+			}
+		}
+	}
+	global_missionary_strength = 0.01
+}
+
+obj_age2_1_sun_cult_unity_bonus = {
+	potential = {
+		current_age = age_of_reformation
+		capital_scope = { superregion = bulwar_superregion }
+	}
+	trigger = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = obj_sun_cult_unity_jadd
+				AND = {
+					religion = the_jadd
+					has_global_flag = the_jadd_is_the_true_faith
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = obj_sun_cult_unity_nsc
+				AND = {
+					religion = bulwari_sun_cult
+					calc_true_if = {
+						amount = 4
+						is_incident_happened = incident_bulwar_under_threat
+						is_incident_happened = incident_naqtazan
+						is_incident_happened = incident_thirteenth_night
+						is_incident_happened = incident_death_of_taelarios
+						is_incident_happened = incident_summit_of_samartal
+						is_incident_happened = incident_call_of_aelantir
+						is_incident_happened = incident_silent_as_the_grave
+						is_incident_happened = incident_rise_of_artificery
+						is_incident_happened = incident_spread_of_ravelianism
+						is_incident_happened = incident_teachings_szal_fazil
+						is_incident_happened = incident_half_a_king
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = obj_sun_cult_unity_osc
+				AND = {
+					religion = old_bulwari_sun_cult
+					has_country_flag = osc_centralization_completed
+				}
+			}
+		}
+	}
+	global_missionary_strength = 0.01
+}
+
+obj_age2_1_religious_unity_bonus = {
+	potential = {
+		current_age = age_of_reformation
+		NOT = {
+			capital_scope = {
+				OR = {
+					continent = europe
+					continent = serpentspine
+					superregion = rahen_superregion
+					superregion = bulwar_superregion
+				}
+			}
+		}
+	}
+	trigger = {
+		religious_unity = 1
+	}
+	stability_cost_modifier = -0.15
+}
+
+obj_age2_2_two_continents_bonus = {
+	potential = {
+		current_age = age_of_reformation
+	}
+	trigger = {
+		num_of_continents = 2
+	}
+	core_creation = -0.025
+}
+
+obj_age2_3_build_temples_bonus = {
+	potential = {
+		current_age = age_of_reformation
+	}
+	trigger = {
+		temple = 25
+	}
+	tax_income = 36
+}
+
+obj_age2_4_convert_15_provinces_bonus = {
+	potential = {
+		current_age = age_of_reformation
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = obj_age2_4_convert_15_provinces
+			check_variable = { which = num_converted_religion value = 15 }
+		}
+	}
+	tolerance_own = 2
+	
+}
+
+obj_age2_5_church_influence_bonus = {
+	potential = {
+		current_age = age_of_reformation
+		OR = {
+			has_estate = estate_church
+			has_estate = estate_shinukhorchi 
+		}
+	}
+	trigger = {
+		OR = {
+			estate_influence = {
+				estate = estate_church
+				influence = 60
+			}
+			estate_influence = {
+				estate = estate_shinukhorchi
+				influence = 60
+			}
+		}
+	}
+	country_diplomatic_power = 1
+}
+
+obj_age2_5_high_innovativeness_bonus = {
+	potential = {
+		current_age = age_of_reformation
+		NOT = {
+			has_estate = estate_church
+			has_estate = estate_shinukhorchi 
+		}
+	}
+	trigger = {
+		innovativeness = 14.88
+	}
+	country_diplomatic_power = 1
+}
+
+obj_age2_6_audit_government_bonus = {
+	potential = {
+		current_age = age_of_reformation
+	}
+	trigger = {
+		NOT = {
+			corruption = 0.1
+			num_of_loans = 1
+		}
+		stability = 3
+	}
+	advisor_cost = -0.05
+}
+
+obj_age2_7_sunset_invasion_bonus = {
+	potential = {
+		current_age = age_of_reformation
+		capital_scope = { 
+			OR = {
+				continent = north_america
+				continent = south_america 
+			}
+		}
+	}
+	trigger = {
+		any_owned_province = {
+			NOT = {
+				continent = north_america
+				continent = south_america
+			}
+		}
+	}
+	range = 0.1
+}
+
+obj_age2_7_dig_holds_bonus = {
+	potential = {
+		current_age = age_of_reformation
+		capital_scope = { 
+			continent = serpentspine
+		}
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 5
+			has_dwarven_hold_2 = yes
+		}
+	}
+	build_time = -0.05
+}
+
+obj_age2_7_foothold_in_aelantir_bonus = {
+	potential = {
+		current_age = age_of_reformation
+		NOT = {
+			capital_scope = { 
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = serpentspine
+				}
+			}
+		}
+	}
+	trigger = {
+		any_owned_province = {
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+		}
+	}
+	range = 0.1
+}
+
+obj_age2_8_force_converted_bonus = {
+	potential = {
+		current_age = age_of_reformation
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = obj_force_converted_tooltip
+			has_country_flag = force_converted
+		}
+	}
+	prestige = 0.5
+}
+
+obj_age2_9_racial_movements_bonus = {
+	potential = {
+		current_age = age_of_reformation
+	}
+	trigger = {
+		OR = {
+			has_racial_focus = yes
+			NOT = { is_not_purging_any_race_trigger = yes }
+			NOT = { is_not_expelling_any_race_trigger = yes }
+		}
+	}
+	global_manpower_modifier = 0.05
+}
+
+obj_age2_10_250_devclick_bonus = {
+	potential = {
+		current_age = age_of_reformation
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = obj_age2_10_250_devclick_tooltip
+			check_variable = { which = dev_sum_clicks value = 250 }
+		}
+	}
+	monthly_splendor = 1
+}
+
+obj_age3_1_universities_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			has_building = university 
+			value = 50
+		}
+	}
+	development_cost = -0.025
+}
+
+obj_age3_2_great_general_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_commanding_three_star = yes
+	}
+	global_manpower_modifier = 0.05
+	global_sailors_modifier = 0.05
+}
+
+obj_age3_3_75_absolutism_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		absolutism = 75
+	}
+	power_projection_from_insults = 1
+}
+
+obj_age3_4_witchking_or_666_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		OR = {
+			has_ruler_modifier = witch_king_modifier
+			AND = {
+				adm = 6
+				dip = 6
+				mil = 6
+			}
+		}
+	}
+	legitimacy = 1
+	republican_tradition = 0.3
+	devotion = 1
+	horde_unity = 1
+	meritocracy = 1
+}
+
+obj_age3_5_emperor_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		OR = {	
+			is_emperor = yes
+			total_development = 2000
+			is_emperor_of_china = yes
+		}
+	}
+	governing_capacity_modifier = 0.05
+}
+
+obj_age3_6_mage_influence_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		estate_influence = {
+			estate = estate_mages
+			influence = 67
+		}
+	}
+	all_power_cost = -0.01
+}
+
+obj_age3_7_high_crownlands_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		crown_land_share = 75
+	}
+	global_trade_goods_size_modifier = 0.05
+}
+
+obj_age3_8_have_relics_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		precursor_relics = 2
+	}
+	technology_cost = -0.025
+}
+
+obj_age3_9_home_conquest_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+		capital_scope = { 
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+		}
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 150
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+		}
+	}
+	build_cost = -0.025
+}
+
+obj_age3_9_mountain_conquest_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+		capital_scope = { 
+			continent = serpentspine
+		}
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 6
+			OR = {
+				has_terrain = dwarven_hold
+				has_terrain = dwarven_hold_surface
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 30
+			has_terrain = dwarven_road
+		}
+	}
+	movement_speed = 0.05
+}
+
+obj_age3_9_aelantir_conquest_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+		NOT = {
+			capital_scope = { 
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = serpentspine
+				}
+			}
+		}
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 20
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+		}
+	}
+	trade_efficiency = 0.05
+}
+
+obj_age3_10_3_trade_companies_bonus = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		num_of_trade_companies = 3
+	}
+	trade_company_investment_cost = -0.1
+}
+
+obj_age4_1_parliament_bonus = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		OR = {
+			has_parliament = yes
+			has_reform = amlharaz_reform
+		}
+	}
+	min_autonomy = -5
+}
+
+obj_age4_2_high_discipline_bonus = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_global_modifier_value = {
+			which = discipline
+			value = 0.30
+			extra_shortcut = yes
+		}
+	}
+	leader_cost = -0.10
+}
+
+obj_age4_3_huge_capital_bonus = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		capital_scope = {
+			development = 50
+		}
+	}
+	caravan_power = 0.1
+}
+
+obj_age4_4_own_institution_origin_bonus = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		num_of_owned_and_controlled_institutions = 1
+	}
+	prestige = 1
+}
+
+obj_age4_5_4_furnace_bonus = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		furnace = 4
+	}
+	production_efficiency = 0.1
+}
+
+obj_age4_6_65_artificers_loyalty_bonus = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		estate_loyalty = {
+			estate = state_artificers
+			loyalty = 65
+		}
+	}
+	technology_cost = -0.1
+}
+
+obj_age4_7_be_revolutionary_bonus = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		is_revolutionary = yes
+	}
+	special_unit_forcelimit = 0.10
+}
+
+obj_age4_8_90_professionalism_bonus = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		army_professionalism = 0.9
+	}
+	fire_damage_received = -0.03
+}
+
+obj_age4_9_many_states_bonus = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		num_of_states = 65
+	}
+	governing_capacity = 50
+}
+
+obj_age4_10_full_hegemony_bonus = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		num_of_states = 65
+	}
+	max_general_fire = 1
+}
+
+ab_age4_religion_triggered_mod1 = {
+	potential = {
+		current_age = age_of_revolutions
+		has_country_flag = age_ability_age4_religion_flag
+	}
+	trigger = {
+		is_in_war = {
+			defenders = ROOT
+		}
+	}
+	discipline = 0.05
+}
+
+ab_age4_religion_triggered_mod2 = {
+	potential = {
+		current_age = age_of_revolutions
+		has_country_flag = age_ability_age4_religion_flag
+	}
+	trigger = {
+		is_in_war = {
+			attackers = ROOT
+		}
+	}
+	land_morale = 0.15
+}
+
+ab_age3_Gemradcurt_triggered_mod = {
+	potential = {
+		current_age = age_of_absolutism
+		H16 = { has_country_flag = ab_age3_Gemradcurt_bonus_flag }
+	}
+	trigger = {
+		NOT = { tag = H16 }
+		OR = {
+			is_in_war = {
+				attackers = H16
+			}
+			is_in_war = {
+				defenders = H16
+			}
+		}
+		
+	}
+	development_cost = 0.2
+	production_efficiency = -0.2
+	global_tax_modifier = -0.2
+	global_monthly_devastation = 0.35
+}
+
+
+#############################     ADVISORS      #############################
+
+adm_advisor_price_increase_lvl_6 = {
+	potential = {
+		OR = {
+			AND = {
+				philosopher = 6
+				NOT = { philosopher = 7	}
+			}
+			AND = {
+				natural_scientist = 6
+				NOT = { natural_scientist = 7	}
+			}
+			AND = {
+				artist = 6
+				NOT = { artist = 7	}
+			}
+			AND = {
+				treasurer = 6
+				NOT = { treasurer = 7	}
+			}
+			AND = {
+				theologian = 6
+				NOT = { theologian = 7	}
+			}
+			AND = {
+				master_of_mint = 6
+				NOT = { master_of_mint = 7	}
+			}
+			AND = {
+				inquisitor = 6
+				NOT = { inquisitor = 7	}
+			}
+			AND = {
+				court_mage = 6
+				NOT = { court_mage = 7	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	adm_advisor_cost = 0.25
+}
+
+adm_advisor_price_increase_lvl_7 = {
+	potential = {
+		OR = {
+			AND = {
+				philosopher = 7
+				NOT = { philosopher = 8	}
+			}
+			AND = {
+				natural_scientist = 7
+				NOT = { natural_scientist = 8	}
+			}
+			AND = {
+				artist = 7
+				NOT = { artist = 8	}
+			}
+			AND = {
+				treasurer = 7
+				NOT = { treasurer = 8	}
+			}
+			AND = {
+				theologian = 7
+				NOT = { theologian = 8	}
+			}
+			AND = {
+				master_of_mint = 7
+				NOT = { master_of_mint = 8	}
+			}
+			AND = {
+				inquisitor = 7
+				NOT = { inquisitor = 8	}
+			}
+			AND = {
+				court_mage = 7
+				NOT = { court_mage = 8	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	adm_advisor_cost = 0.50
+}
+
+adm_advisor_price_increase_lvl_8 = {
+	potential = {
+		OR = {
+			AND = {
+				philosopher = 8
+				NOT = { philosopher = 9	}
+			}
+			AND = {
+				natural_scientist = 8
+				NOT = { natural_scientist = 9	}
+			}
+			AND = {
+				artist = 8
+				NOT = { artist = 9	}
+			}
+			AND = {
+				treasurer = 8
+				NOT = { treasurer = 9	}
+			}
+			AND = {
+				theologian = 8
+				NOT = { theologian = 9	}
+			}
+			AND = {
+				master_of_mint = 8
+				NOT = { master_of_mint = 9	}
+			}
+			AND = {
+				inquisitor = 8
+				NOT = { inquisitor = 9	}
+			}
+			AND = {
+				court_mage = 8
+				NOT = { court_mage = 9	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	adm_advisor_cost = 0.75
+}
+
+adm_advisor_price_increase_lvl_9 = {
+	potential = {
+		OR = {
+			AND = {
+				philosopher = 9
+				NOT = { philosopher = 10	}
+			}
+			AND = {
+				natural_scientist = 9
+				NOT = { natural_scientist = 10	}
+			}
+			AND = {
+				artist = 9
+				NOT = { artist = 10	}
+			}
+			AND = {
+				treasurer = 9
+				NOT = { treasurer = 10	}
+			}
+			AND = {
+				theologian = 9
+				NOT = { theologian = 10	}
+			}
+			AND = {
+				master_of_mint = 9
+				NOT = { master_of_mint = 10	}
+			}
+			AND = {
+				inquisitor = 9
+				NOT = { inquisitor = 10	}
+			}
+			AND = {
+				court_mage = 9
+				NOT = { court_mage = 10	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	adm_advisor_cost = 1
+}
+
+adm_advisor_price_increase_lvl_10 = {
+	potential = {
+		OR = {
+			philosopher = 10
+			natural_scientist = 10
+			artist = 10
+			treasurer = 10
+			theologian = 10
+			master_of_mint = 10
+			inquisitor = 10
+			court_mage = 10
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	adm_advisor_cost = 1.25
+}
+
+dip_advisor_price_increase_lvl_6 = {
+	potential = {
+		OR = {
+			AND = {
+				statesman = 6
+				NOT = { statesman = 7	}
+			}
+			AND = {
+				naval_reformer = 6
+				NOT = { naval_reformer = 7	}
+			}
+			AND = {
+				trader = 6
+				NOT = { trader = 7	}
+			}
+			AND = {
+				spymaster = 6
+				NOT = { spymaster = 7	}
+			}
+			AND = {
+				colonial_governor = 6
+				NOT = { colonial_governor = 7	}
+			}
+			AND = {
+				diplomat = 6
+				NOT = { diplomat = 7	}
+			}
+			AND = {
+				navigator = 6
+				NOT = { navigator = 7	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	dip_advisor_cost = 0.25
+}
+
+dip_advisor_price_increase_lvl_7 = {
+	potential = {
+		OR = {
+			AND = {
+				statesman = 7
+				NOT = { statesman = 8	}
+			}
+			AND = {
+				naval_reformer = 7
+				NOT = { naval_reformer = 8	}
+			}
+			AND = {
+				trader = 7
+				NOT = { trader = 8	}
+			}
+			AND = {
+				spymaster = 7
+				NOT = { spymaster = 8	}
+			}
+			AND = {
+				colonial_governor = 7
+				NOT = { colonial_governor = 8	}
+			}
+			AND = {
+				diplomat = 7
+				NOT = { diplomat = 8	}
+			}
+			AND = {
+				navigator = 7
+				NOT = { navigator = 8	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	dip_advisor_cost = 0.50
+}
+
+dip_advisor_price_increase_lvl_8 = {
+	potential = {
+		OR = {
+			AND = {
+				statesman = 8
+				NOT = { statesman = 9	}
+			}
+			AND = {
+				naval_reformer = 8
+				NOT = { naval_reformer = 9	}
+			}
+			AND = {
+				trader = 8
+				NOT = { trader = 9	}
+			}
+			AND = {
+				spymaster = 8
+				NOT = { spymaster = 9	}
+			}
+			AND = {
+				colonial_governor = 8
+				NOT = { colonial_governor = 9	}
+			}
+			AND = {
+				diplomat = 8
+				NOT = { diplomat = 9	}
+			}
+			AND = {
+				navigator = 8
+				NOT = { navigator = 9	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	dip_advisor_cost = 0.75
+}
+
+dip_advisor_price_increase_lvl_9 = {
+	potential = {
+		OR = {
+			AND = {
+				statesman = 9
+				NOT = { statesman = 10	}
+			}
+			AND = {
+				naval_reformer = 9
+				NOT = { naval_reformer = 10	}
+			}
+			AND = {
+				trader = 9
+				NOT = { trader = 10	}
+			}
+			AND = {
+				spymaster = 9
+				NOT = { spymaster = 10	}
+			}
+			AND = {
+				colonial_governor = 9
+				NOT = { colonial_governor = 10	}
+			}
+			AND = {
+				diplomat = 9
+				NOT = { diplomat = 10	}
+			}
+			AND = {
+				navigator = 9
+				NOT = { navigator = 10	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	dip_advisor_cost = 1
+}
+
+dip_advisor_price_increase_lvl_10 = {
+	potential = {
+		OR = {
+			statesman = 10
+			naval_reformer = 10
+			trader = 10
+			spymaster = 10
+			colonial_governor = 10
+			diplomat = 10
+			navigator = 10
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	dip_advisor_cost = 1.25
+}
+
+mil_advisor_price_increase_lvl_6 = {
+	potential = {
+		OR = {
+			AND = {
+				army_reformer = 6
+				NOT = { army_reformer = 7	}
+			}
+			AND = {
+				army_organiser = 6
+				NOT = { army_organiser = 7	}
+			}
+			AND = {
+				commandant = 6
+				NOT = { commandant = 7	}
+			}
+			AND = {
+				quartermaster = 6
+				NOT = { quartermaster = 7	}
+			}
+			AND = {
+				recruitmaster = 6
+				NOT = { recruitmaster = 7	}
+			}
+			AND = {
+				fortification_expert = 6
+				NOT = { fortification_expert = 7	}
+			}
+			AND = {
+				grand_captain = 6
+				NOT = { grand_captain = 7	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	mil_advisor_cost = 0.25
+}
+
+mil_advisor_price_increase_lvl_7 = {
+	potential = {
+		OR = {
+			AND = {
+				army_reformer = 7
+				NOT = { army_reformer = 8	}
+			}
+			AND = {
+				army_organiser = 7
+				NOT = { army_organiser = 8	}
+			}
+			AND = {
+				commandant = 7
+				NOT = { commandant = 8	}
+			}
+			AND = {
+				quartermaster = 7
+				NOT = { quartermaster = 8	}
+			}
+			AND = {
+				recruitmaster = 7
+				NOT = { recruitmaster = 8	}
+			}
+			AND = {
+				fortification_expert = 7
+				NOT = { fortification_expert = 8	}
+			}
+			AND = {
+				grand_captain = 7
+				NOT = { grand_captain = 8	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	mil_advisor_cost = 0.50
+}
+
+mil_advisor_price_increase_lvl_8 = {
+	potential = {
+		OR = {
+			AND = {
+				army_reformer = 8
+				NOT = { army_reformer = 9	}
+			}
+			AND = {
+				army_organiser = 8
+				NOT = { army_organiser = 9	}
+			}
+			AND = {
+				commandant = 8
+				NOT = { commandant = 9	}
+			}
+			AND = {
+				quartermaster = 8
+				NOT = { quartermaster = 9	}
+			}
+			AND = {
+				recruitmaster = 8
+				NOT = { recruitmaster = 9	}
+			}
+			AND = {
+				fortification_expert = 8
+				NOT = { fortification_expert = 9	}
+			}
+			AND = {
+				grand_captain = 8
+				NOT = { grand_captain = 9	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	mil_advisor_cost = 0.75
+}
+
+mil_advisor_price_increase_lvl_9 = {
+	potential = {
+		OR = {
+			AND = {
+				army_reformer = 9
+				NOT = { army_reformer = 10	}
+			}
+			AND = {
+				army_organiser = 9
+				NOT = { army_organiser = 10	}
+			}
+			AND = {
+				commandant = 9
+				NOT = { commandant = 10	}
+			}
+			AND = {
+				quartermaster = 9
+				NOT = { quartermaster = 10	}
+			}
+			AND = {
+				recruitmaster = 9
+				NOT = { recruitmaster = 10	}
+			}
+			AND = {
+				fortification_expert = 9
+				NOT = { fortification_expert = 10	}
+			}
+			AND = {
+				grand_captain = 9
+				NOT = { grand_captain = 10	}
+			}
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	mil_advisor_cost = 1
+}
+
+mil_advisor_price_increase_lvl_10 = {
+	potential = {
+		OR = {
+			army_reformer = 10
+			army_organiser = 10
+			commandant = 10
+			quartermaster = 10
+			recruitmaster = 10
+			fortification_expert = 10
+			grand_captain = 10
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	mil_advisor_cost = 1.25
+}

@@ -1,0 +1,6 @@
+
+# No previous file for Atacama Coast
+
+
+#BomjSBagetom Anbennar Submod
+discovered_by = H66

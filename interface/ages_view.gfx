@@ -1,0 +1,1943 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_age_base"
+		texturefile = "gfx/interface/ages/age_base.dds"
+	}
+
+	spriteType = { #1.35
+		name = "GFX_age_objective_bg"
+		texturefile = "gfx/interface/ages/entry_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_golden_age_banner"
+		texturefile = "gfx/interface/ages/golden_age_banner.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_golden_age_banner_tattered"
+		texturefile = "gfx/interface/ages/golden_age_banner_tattered.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_age_golden_age_button"
+		texturefile = "gfx/interface/ages/age_golden_age_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_1"
+		texturefile = "gfx/interface/ages/age_indicator_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_2"
+		texturefile = "gfx/interface/ages/age_indicator_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_3"
+		texturefile = "gfx/interface/ages/age_indicator_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_4"
+		texturefile = "gfx/interface/ages/age_indicator_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_of_absolutism"
+		texturefile = "gfx/interface/ages/age_of_absolutism.dds"
+	}
+	#Swapped discovery and reformation icons this one and _g ver
+	spriteType = {
+		name = "GFX_age_of_discovery"
+		texturefile = "gfx/interface/ages/age_of_discovery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_of_reformation"
+		texturefile = "gfx/interface/ages/age_of_discovery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_of_revolutions"
+		texturefile = "gfx/interface/ages/age_of_revolutions.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_age_can_unlock"
+		texturefile = "gfx/interface/ages/age_can_unlock.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_age_cannot_unlock"
+		texturefile = "gfx/interface/ages/age_cannot_unlock.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_alert_bg"
+		texturefile = "gfx/interface/ages/age_alert_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_banner_overlay"
+		texturefile = "gfx/interface/ages/age_banner_overlay.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_age_button"
+		texturefile = "gfx/interface/ages/age_button.dds"
+		transparencecheck = yes
+	}	
+
+	spriteType = {
+		name = "GFX_brown_bg"
+		texturefile = "gfx/interface/ages/brown_bg.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_age_frame_addon"
+		texturefile = "gfx/interface/ages/age_frame_addon.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_age_s"
+		texturefile = "gfx/interface/ages/icon_age_s.dds"
+		noOfFrames = 4
+	}	
+
+	spriteType = {
+		name = "GFX_icon_age_l"
+		texturefile = "gfx/interface/ages/icon_age_l.dds"
+		noOfFrames = 4
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_age_of_absolutism_g"
+		texturefile = "gfx/interface/ages/icon_age_of_absolutism_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_age_of_discovery_g"
+		texturefile = "gfx/interface/ages/icon_age_of_discovery_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_age_of_reformation_g"
+		texturefile = "gfx/interface/ages/icon_age_of_reformation_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_splendor_tiny"
+		texturefile = "gfx/interface/ages/icon_splendor_tiny.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_absolutism"
+		texturefile = "gfx/interface/icon_absolutism.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_max_absolutism"
+		texturefile = "gfx/interface/icon_max_absolutism.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_icon_religious"
+		texturefile = "gfx/interface/icon_religious.dds"
+	}	
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_topbar_liberty_overlay_golden"
+		texturefile = "gfx/interface/ages/topbar_liberty_overlay_golden.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_age_frame_addon_golden"
+		texturefile = "gfx/interface/ages/age_frame_addon_golden.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_age_button_golden"
+		texturefile = "gfx/interface/ages/age_button_golden.dds"
+		transparencecheck = yes
+	}		
+	
+	spriteType = {
+		name = "GFX_topbar_bg_golden"
+		texturefile = "gfx/interface/ages/topbar_UL_golden.dds"
+		transparencecheck = yes
+	}	
+	
+	spriteType = {
+		name = "GFX_topbar_portrait_value_bg_golden"
+		texturefile = "gfx/interface/ages/topbar_portrait_value_bg_golden.dds"
+	}	
+	
+
+	#BomjSBagetom Anbennar Submod
+	#ages full rework
+	#------------------OBJECTIVES-------------------------
+	#---------------------age1----------------------------
+	spriteType = {
+		name = "GFX_obj_age1_1_discover_aelantir"
+		texturefile = "gfx/interface/ages/obj_discover_america.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_1_have_2_holds"
+		texturefile = "gfx/interface/ages/obj_age1_1_have_2_holds.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_1_have_150_dev"
+		texturefile = "gfx/interface/ages/obj_100_development.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_2_have_3_CoT"
+		texturefile = "gfx/interface/ages/obj_5_centers_of_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_3_have_renaissance_in_all_prov"
+		texturefile = "gfx/interface/ages/obj_renaissance.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_4_humiliate_rival"
+		texturefile = "gfx/interface/ages/obj_humiliate_rival.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_5_have_full_army_limit"
+		texturefile = "gfx/interface/ages/obj_large_forcelimit.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_6_hire_2lvl_advisors"
+		texturefile = "gfx/interface/ages/obj_age1_6_hire_2lvl_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_7_have_damestear"
+		texturefile = "gfx/interface/ages/obj_age1_7_have_damestear.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_7_have_mithril"
+		texturefile = "gfx/interface/ages/obj_age1_7_have_mithril.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_8_30_development_city"
+		texturefile = "gfx/interface/ages/obj_30_development_city.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_9_many_subjects"
+		texturefile = "gfx/interface/ages/obj_many_vassals.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_10_build_artillery_or_fleet"
+		texturefile = "gfx/interface/ages/obj_age1_10_build_artillery_or_fleet.dds"
+	}
+	#---------------------age2----------------------------
+	spriteType = {
+		name = "GFX_obj_age2_1_reformation_convert"
+		texturefile = "gfx/interface/ages/obj_cannorian_convert.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_1_sun_cult_unity"
+		texturefile = "gfx/interface/ages/obj_age2_1_sun_cult_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_1_religious_unity"
+		texturefile = "gfx/interface/ages/obj_age2_1_religious_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_2_two_continents"
+		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_3_build_temples"
+		texturefile = "gfx/interface/ages/obj_age2_3_build_temples.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_4_convert_15_provinces"
+		texturefile = "gfx/interface/ages/obj_convert_10_provinces.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_5_church_influence"
+		texturefile = "gfx/interface/ages/obj_age2_5_church_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_5_high_innovativeness"
+		texturefile = "gfx/interface/ages/obj_age2_5_high_innovativeness.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_6_audit_government"
+		texturefile = "gfx/interface/ages/obj_age2_6_audit_government.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_7_sunset_invasion"
+		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_7_dig_holds"
+		texturefile = "gfx/interface/ages/obj_age2_7_dig_holds.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_7_foothold_in_aelantir"
+		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_8_force_converted"
+		texturefile = "gfx/interface/ages/obj_force_converted.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_9_racial_movements"
+		texturefile = "gfx/interface/ages/obj_age2_9_racial_movements.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_10_250_devclick"
+		texturefile = "gfx/interface/ages/obj_100_development.dds"
+	}
+	#---------------------age3----------------------------
+	spriteType = {
+		name = "GFX_obj_age3_1_universities"
+		texturefile = "gfx/interface/ages/obj_universities.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_2_great_general"
+		texturefile = "gfx/interface/ages/obj_great_general.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_3_75_absolutism"
+		texturefile = "gfx/interface/ages/obj_90_absolutism.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_4_witchking_or_666"
+		texturefile = "gfx/interface/ages/obj_age3_4_witchking_or_666.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_5_emperor"
+		texturefile = "gfx/interface/ages/obj_emperor.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_6_mage_influence"
+		texturefile = "gfx/interface/ages/obj_age3_6_mage_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_7_high_crownlands"
+		texturefile = "gfx/interface/ages/obj_age3_7_high_crownlands.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_8_have_relics"
+		texturefile = "gfx/interface/ages/obj_age3_8_have_relics.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_9_home_conquest"
+		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_9_mountain_conquest"
+		texturefile = "gfx/interface/ages/obj_age3_9_mountain_conquest.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_9_aelantir_conquest"
+		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age3_10_3_trade_companies"
+		texturefile = "gfx/interface/ages/obj_3_trade_companies.dds"
+	}
+	#---------------------age4----------------------------
+	spriteType = {
+		name = "GFX_obj_age4_1_parliament"
+		texturefile = "gfx/interface/ages/obj_parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age4_2_high_discipline"
+		texturefile = "gfx/interface/ages/obj_disc_army.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age4_3_huge_capital"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age4_4_own_institution_origin"
+		texturefile = "gfx/interface/ages/obj_two_institutions.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age4_5_4_furnace"
+		texturefile = "gfx/interface/ages/obj_age4_5_4_furnace.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age4_6_65_artificers_loyalty"
+		texturefile = "gfx/interface/ages/obj_age4_6_65_artificers_loyalty.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age4_7_be_revolutionary"
+		texturefile = "gfx/interface/ages/obj_age4_7_be_revolutionary.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age4_8_90_professionalism"
+		texturefile = "gfx/interface/ages/obj_age4_8_90_professionalism.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age4_9_many_states"
+		texturefile = "gfx/interface/ages/obj_age4_9_many_states.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age4_10_full_hegemony"
+		texturefile = "gfx/interface/ages/obj_age4_10_full_hegemony.dds"
+	}
+	#------------------ABILITES-------------------------
+	spriteType = {
+		name = "GFX_ab_age1_endurance_group_button"
+		texturefile = "gfx/interface/ages/ab_attack_bonus_in_capital_terrain.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_trade_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_culturalchange_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_diplomacy_group_button"
+		texturefile = "gfx/interface/ages/ab_transfer_vassal_wargoal.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_court_group_button"
+		texturefile = "gfx/interface/ages/ab_justified_wars.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_colonization_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_religion_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_edicts_group_button"
+		texturefile = "gfx/interface/ages/ab_allow_feudal_de_jure_law.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_siege_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_production_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_navy_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_science_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_autocracy_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_mercenary_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_reformism_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_quality_focus_group_button"
+		texturefile = "gfx/interface/ages/ab_cavalry_armies.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_quantity_focus_group_button"
+		texturefile = "gfx/interface/ages/ab_manpower_recovery_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_docile_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_TAXES_group_button"
+		texturefile = "gfx/interface/ages/ab_free_war_taxes.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age1_architecture_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_endurance_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_trade_group_button"
+		texturefile = "gfx/interface/ages/ab_ship_power_propagation.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_culturalchange_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_diplomacy_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_court_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_colonization_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_religion_group_button"
+		texturefile = "gfx/interface/ages/ab_prestige_per_development_from_conversion.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_edicts_group_button"
+		texturefile = "gfx/interface/ages/ab_allow_religion_enforced.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_siege_group_button"
+		texturefile = "gfx/interface/ages/ab_siege_blockades.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_production_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_navy_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_science_group_button"
+		texturefile = "gfx/interface/ages/ab_institution_spread_from_true_faith.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_autocracy_group_button"
+		texturefile = "gfx/interface/ages/ab_warscore_vs_religion.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_mercenary_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_reformism_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_quality_focus_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_quantity_focus_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_docile_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_TAXES_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age2_architecture_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_endurance_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_trade_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_culturalchange_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_diplomacy_group_button"
+		texturefile = "gfx/interface/ages/ab_rival_change.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_court_group_button"
+		texturefile = "gfx/interface/ages/ab_yearly_absolutism.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_colonization_group_button"
+		texturefile = "gfx/interface/ages/ab_colony_boost_development.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_religion_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_edicts_group_button"
+		texturefile = "gfx/interface/ages/ab_allow_edict_of_absolutism.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_siege_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_production_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_navy_group_button"
+		texturefile = "gfx/interface/ages/ab_more_ships_can_fire.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_science_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_autocracy_group_button"
+		texturefile = "gfx/interface/ages/ab_autonomy.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_mercenary_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_reformism_group_button"
+		texturefile = "gfx/interface/ages/ab_advisor_pool.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_quality_focus_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_quantity_focus_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_docile_group_button"
+		texturefile = "gfx/interface/ages/ab_harsh_treatment.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_TAXES_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_architecture_not_mountain_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age3_architecture_mountain_group_button"
+		texturefile = "gfx/interface/ages/ab_colonists.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_endurance_group_button"
+		texturefile = "gfx/interface/ages/ab_force_march.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_trade_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_culturalchange_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_diplomacy_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_court_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_colonization_group_button"
+		texturefile = "gfx/interface/ages/ab_no_distance_for_core.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_religion_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_edicts_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_siege_group_button"
+		texturefile = "gfx/interface/ages/ab_artillery_impact.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_production_group_button"
+		texturefile = "gfx/interface/ages/ab_production_efficiency.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_navy_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_science_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_autocracy_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_mercenary_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_reformism_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_quality_focus_group_button"
+		texturefile = "gfx/interface/ages/ab_backrow_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_quantity_focus_focus_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_docile_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_TAXES_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age4_architecture_group_button"
+		texturefile = "gfx/interface/ages/placeholder.dds"
+	}
+
+	#--------------UNIQUE-ABILITIES---------------------------
+	spriteType = {
+        name = "GFX_ab_age1_Venail_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Deranne_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_GreatOrding_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Reveria_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Wesdam_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Beepeck_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Bennon_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Estallen_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Magisterium_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Moonhaven_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Busilar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Sugamber_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Adshaw_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Urviksten_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Rogieria_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Newshire_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Ravenmarch_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Unguldavor_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Reuyel_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Ayarallen_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Irrliam_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Varamhar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Sareyand_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Elizna_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Tluukt_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Jaddari_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Nirat_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Rabhidaraj_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Rajnadhaga_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_OneXia_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_LotDekkhang_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Jiangdu_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Zongji_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Jiantsiang_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Pelomar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Dearktir_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Arakeprun_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Elchos_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Arverynn_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Eltikan_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_KheiosCityes_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Vyzemby_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_YezelMora_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_OvdalKanzad_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_MireMaw_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_ShatteredCrown_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Railskulker_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_Spiderwretch_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_OvdalLodhum_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age1_VerkalSkomdihr_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_ab_age2_Eilisin_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Roilsard_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Kobildzan_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Vertesk_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Arbaran_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Telgeir_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Konwell_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Istralore_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Verne_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Asheniande_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Bjarnrik_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Corvuria_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Cyranvar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Adenica_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_TugundDarakh_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Castellyr_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Esthil_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Corintar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Luciande_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Blademarches_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Khozrugan_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_AzkaEvran_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Dartaxagerdim_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Birsartanses_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_AzkaSur_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Kheterata_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Maghargma_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Skurkokli_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Kalsyto_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Vanrahar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Dhugajir_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Azjakuma_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_VerkalOzovar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_BianfangDahui_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Yinquan_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_NuugdanTsaraiGuwaamud_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Malacnar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Amacimst_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Boek_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Mykx_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_AnisikheionOktikheion_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_AmgremosKeyolionEneion_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Fangaula_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Khatalashya_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Haraagtseda_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_VerkalGulan_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Snotfinger_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Mountainshark_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_Shazstundihr_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age2_GreedyGrin_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+
+	spriteType = {
+        name = "GFX_ab_age3_GnomishHierarchy_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Dameria_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Ibevar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Esmaria_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Wex_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Eborthil_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Arannen_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_ObrtrolGerudaghot_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Grombar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Dostanor_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Cyranvar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Elikhand_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Hammerhome_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Marrhold_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Barumand_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Gelkalis_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Siadan_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Mulen_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_PhoenixEmpire_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Aakheta_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_KhuraenUlaeg_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Ghankedhen_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Nadimraj_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Thangoya_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_HonSai_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Thidinkai_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Arawkelin_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Balrijin_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Feiten_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Gemradcurt_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Brelar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Bosancovac_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Freemarches_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_NewHavoral_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Plumstead_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Ameion_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Saerraeg_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Araya_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Muhaqaar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Aramoole_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Konolkhatep_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_VerkalDromak_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_OrlazamAzDihr_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_HarazOrldhum_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Mithradhum_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Truedagger_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Seghdihr_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Chaingrasper_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_HulAzKrakazol_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age3_Krakdhumvror_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+
+	spriteType = {
+        name = "GFX_ab_age4_Lorent_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Kobildzan_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_SmallCountry_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Gawed_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_EmpireOfAnbennar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_RavelianState_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Grombar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_BlackCastanor_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Karakhanbar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_BlackDemense_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Castanor_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Bulwar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_TheOverclan_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Surakes_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_JaddEmpire_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Koroshesh_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Zabutodask_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_HarimrajRahenraj_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_TheCommand_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_AzkareSunriseEmpire_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Beikdugang_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Yanzhong_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Daxugo_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Yanshen_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Lianzhou_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Aelnar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Eordand_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_YnnicEmpire_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Isobelin_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Cestirmark_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_VanburyGuild_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Rezankand_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Kheios_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Theinos_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Adzalan_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_UmojiBaashidi_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_VesUdzenklan_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_AulDwarov_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_HarazDhumankon_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Roadwarrior_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Amldihr_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_ErNatvir_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Khugdihr_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_GorBurad_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_Orlghelovar_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+    spriteType = {
+        name = "GFX_ab_age4_DurVazhatun_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+
+
+	# NEW Abilities	
+	spriteType = {
+		name = "GFX_ab_cavalry_armies"
+		texturefile = "gfx/interface/ages/ab_cavalry_armies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_free_war_taxes"
+		texturefile = "gfx/interface/ages/ab_free_war_taxes.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_ab_mercenary_discipline"
+		texturefile = "gfx/interface/ages/ab_mercenary_discipline.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_siege_blockades"
+		texturefile = "gfx/interface/ages/ab_siege_blockades.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_ab_warscore_vs_religion"
+		texturefile = "gfx/interface/ages/ab_warscore_vs_religion.dds"
+	}
+
+
+	
+	
+	# Age of Discovery Abilities
+
+	
+	spriteType = {
+		name = "GFX_ab_claim_duration"
+		texturefile = "gfx/interface/ages/ab_claim_duration.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_transfer_vassal_wargoal"
+		texturefile = "gfx/interface/ages/ab_transfer_vassal_wargoal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_can_chain_claim"
+		texturefile = "gfx/interface/ages/ab_can_chain_claim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_free_exploration_maintenance"
+		texturefile = "gfx/interface/ages/ab_free_exploration_maintenance.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_colony_boost_development"
+		texturefile = "gfx/interface/ages/ab_colony_boost_development.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_attack_bonus_in_capital_terrain"
+		texturefile = "gfx/interface/ages/ab_attack_bonus_in_capital_terrain.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ab_ottoman_siege_ability"
+		texturefile = "gfx/interface/ages/ab_ottoman_siege_ability.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ab_portugal_colonial_growth"
+		texturefile = "gfx/interface/ages/ab_portugal_colonial_growth.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ab_venice_ship_trade"
+		texturefile = "gfx/interface/ages/ab_venice_ship_trade.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ab_denmark_reduced_lib_desire"
+		texturefile = "gfx/interface/ages/ab_denmark_reduced_lib_desire.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ab_justified_wars"
+		texturefile = "gfx/interface/ages/ab_justified_wars.dds"
+	}
+	
+	# Greentide abilities
+	spriteType = {
+		name = "GFX_ab_veterans_of_the_lilac_wars"
+		texturefile = "gfx/interface/ages/ab_manpower_recovery_speed.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_spoils_of_escann"
+		texturefile = "gfx/interface/ages/ab_available_province_loot.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_anbennar_decentralization_of_the_empire"
+		texturefile = "gfx/interface/ages/ab_ae_impact.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_eborthil_ship_trade"
+		texturefile = "gfx/interface/ages/ab_ship_trade_power.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_dwarovar_empire_breakers"
+		texturefile = "gfx/interface/ages/ab_artillery_impact.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_monstrous_rule"
+		texturefile = "gfx/interface/ages/ab_tributary_conversion_cost_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_ringlet_trade"
+		texturefile = "gfx/interface/ages/ab_ship_power_propagation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_nascent_civilization"
+		texturefile = "gfx/interface/ages/ab_reform_progress_growth.dds"
+	}
+	
+	# Age of Reformation Abilities
+	spriteType = {
+		name = "GFX_ab_allow_religion_enforced"
+		texturefile = "gfx/interface/ages/ab_allow_religion_enforced.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_culture_cost"
+		texturefile = "gfx/interface/ages/ab_culture_cost.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_cheaper_enforce_religion"
+		texturefile = "gfx/interface/ages/ab_cheaper_enforce_religion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_placed_merchants"
+		texturefile = "gfx/interface/ages/ab_placed_merchants.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_ship_power_propagation"
+		texturefile = "gfx/interface/ages/ab_ship_power_propagation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_institution_spread_from_true_faith"
+		texturefile = "gfx/interface/ages/ab_institution_spread_from_true_faith.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_prestige_per_development_from_conversion"
+		texturefile = "gfx/interface/ages/ab_prestige_per_development_from_conversion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_spain_tercio"
+		texturefile = "gfx/interface/ages/ab_spain_tercio.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_mughal_artillery"
+		texturefile = "gfx/interface/ages/ab_mughal_artillery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_polish_legitimacy"
+		texturefile = "gfx/interface/ages/ab_polish_legitimacy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_persia_reinforce"
+		texturefile = "gfx/interface/ages/ab_persia_reinforce.dds"
+	}
+	
+	# Unraveling abilities
+	spriteType = {
+		name = "GFX_ab_adventurer_armies"
+		texturefile = "gfx/interface/ages/ab_merc_maintenance_modifier.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_call_of_the_high_seas"
+		texturefile = "gfx/interface/ages/ab_global_ship_cost.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_aelantir_rush"
+		texturefile = "gfx/interface/ages/ab_global_colonial_growth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_hemantian_reforms"
+		texturefile = "gfx/interface/ages/ab_reform_progress_growth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_elven_reclaimers"
+		texturefile = "gfx/interface/ages/ab_local_colonial_growth.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_corinite_crusaders"
+		texturefile = "gfx/interface/ages/ab_shock_damage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_dwarovar_hold_redecorating"
+		texturefile = "gfx/interface/ages/ab_build_cost.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_ruinborn_empire"
+		texturefile = "gfx/interface/ages/ab_stability.dds"
+	}
+
+	# Age of Absolutism Abilities
+	spriteType = {
+		name = "GFX_ab_allow_edict_of_absolutism"
+		texturefile = "gfx/interface/ages/ab_allow_edict_of_absolutism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_rival_change"
+		texturefile = "gfx/interface/ages/ab_rival_change.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_rival_border_fort"
+		texturefile = "gfx/interface/ages/ab_rival_border_fort.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_autonomy"
+		texturefile = "gfx/interface/ages/ab_autonomy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_harsh_treatment"
+		texturefile = "gfx/interface/ages/ab_harsh_treatment.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_adm_efficiency"
+		texturefile = "gfx/interface/ages/ab_adm_efficiency.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_yearly_absolutism"
+		texturefile = "gfx/interface/ages/ab_yearly_absolutism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_france_fire_damage"
+		texturefile = "gfx/interface/ages/ab_france_fire_damage.dds"
+	}
+	
+	spriteType = { #1.35
+		name = "GFX_ab_french_absolutism"
+		texturefile = "gfx/interface/ages/ab_french_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_dutch_anti_corruption"
+		texturefile = "gfx/interface/ages/ab_dutch_anti_corruption.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_sweden_manpower"
+		texturefile = "gfx/interface/ages/ab_sweden_manpower.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_manchu_banner"
+		texturefile = "gfx/interface/ages/ab_manchu_banner.dds"
+	}	
+	
+
+	# Witch Kings abilities
+	spriteType = {
+		name = "GFX_ab_direct_rule_in_escann"
+		texturefile = "gfx/interface/ages/ab_max_absolutism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_decadent_web_of_lies"
+		texturefile = "gfx/interface/ages/ab_spy_offence.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_escanni_consolidation_wars"
+		texturefile = "gfx/interface/ages/ab_unjustified_demands.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_ravelian_zeal"
+		texturefile = "gfx/interface/ages/ab_missionary_strength.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_dwarven_reclamation"
+		texturefile = "gfx/interface/ages/ab_colonists.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_sun_cult_resurgence"
+		texturefile = "gfx/interface/ages/ab_advisor_pool.dds"
+	}
+	
+
+	spriteType = {
+		name = "GFX_ab_splintered_lands"
+		texturefile = "gfx/interface/ages/ab_justified_wars.dds"
+	}
+	
+	# Age of Revolutions Abilities
+	spriteType = {
+		name = "GFX_ab_allow_anti_revolutionary_zeal"
+		texturefile = "gfx/interface/ages/ab_allow_anti_revolutionary_zeal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_fortbreaker_inventions"
+		texturefile = "gfx/interface/ages/ab_artillery_impact.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_bypass_forts"
+		texturefile = "gfx/interface/ages/ab_bypass_forts.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_force_march"
+		texturefile = "gfx/interface/ages/ab_force_march.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_more_ships_can_fire"
+		texturefile = "gfx/interface/ages/ab_more_ships_can_fire.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_no_distance_for_core"
+		texturefile = "gfx/interface/ages/ab_no_distance_for_core.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_backrow_artillery"
+		texturefile = "gfx/interface/ages/ab_backrow_artillery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_same_contine_lib_desire"
+		texturefile = "gfx/interface/ages/ab_same_contine_lib_desire.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_pru_military"
+		texturefile = "gfx/interface/ages/ab_pru_military.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_gbr_fleet"
+		texturefile = "gfx/interface/ages/ab_gbr_fleet.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_russia_boost"
+		texturefile = "gfx/interface/ages/ab_russia_boost.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_austria_rep"
+		texturefile = "gfx/interface/ages/ab_austria_rep.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_ab_napoleonic_warfare"
+		texturefile = "gfx/interface/ages/ab_napoleonic_warfare.dds"
+	}
+
+
+	# Artificers
+
+	spriteType = {
+		name = "GFX_ab_surakesi_ersudarim"
+		texturefile = "gfx/interface/ages/ab_technology_cost.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_wide_plain_governance"
+		texturefile = "gfx/interface/ages/ab_local_colonial_growth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_camiran_consolidation"
+		texturefile = "gfx/interface/ages/ab_adm_efficiency.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_aelantir_relics"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+
+
+	# Witch Kings abilities
+	spriteType = {
+		name = "GFX_ab_artificer_machinations_of_war"
+		texturefile = "gfx/interface/ages/ab_fire_damage.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_magical_industrialization"
+		texturefile = "gfx/interface/ages/ab_production_efficiency.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_anbennarian_resurgence"
+		texturefile = "gfx/interface/ages/ab_fire_damage_recieved.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_orcish_nation"
+		texturefile = "gfx/interface/ages/ab_development_cost.dds"
+	}
+
+	
+}

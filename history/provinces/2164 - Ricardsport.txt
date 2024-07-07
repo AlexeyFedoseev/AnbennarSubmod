@@ -1,0 +1,23 @@
+
+# No previous file for Namning
+
+#BomjSBagetom Anbennar Submod
+owner = G97
+controller = G97
+add_core = G97
+culture = esmari
+religion = regent_court
+
+capital = ""
+trade_goods = livestock
+hre = no
+base_tax = 5
+base_production = 4
+base_manpower = 3
+native_size = 0
+native_ferocity = 0
+native_hostileness = 0
+
+center_of_trade = 1
+
+

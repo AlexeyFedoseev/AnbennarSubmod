@@ -1,0 +1,83 @@
+namespace = submod_custom_events
+
+country_event = {
+	id = sale_titles_event.1
+	title = sale_titles_event.1.t
+	desc = sale_titles_event.1.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sale_titles_event.1.a
+		
+		add_country_modifier = {
+			name = "sale_of_titles_tax_bonus"
+			duration = 1825
+		}
+	}
+
+    option = {
+		name = sale_titles_event.1.b
+		
+		add_country_modifier = {
+			name = "sale_of_titles_production_bonus"
+			duration = 1825
+		}
+	}
+
+    option = {
+		name = sale_titles_event.1.c
+		
+		add_country_modifier = {
+			name = "sale_of_titles_trade_bonus"
+			duration = 1825
+		}
+	}
+
+    option = {
+		name = sale_titles_event.1.e
+		
+		add_country_modifier = {
+			name = "sale_of_titles_goods_bonus"
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = devclick_counter_initalization
+	title = devclick_counter_initalization.t
+	desc = devclick_counter_initalization.d
+	picture = DIET_eventPicture
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {
+			which = dev_tax_clicks
+			value = 0
+		}
+		set_variable = {
+			which = dev_production_clicks
+			value = 0
+		}
+		set_variable = {
+			which = dev_manpower_clicks
+			value = 0
+		}
+		set_variable = {
+			which = dev_sum_clicks
+			value = 0
+		}
+	}
+
+	option ={
+		name = devclick_counter_initalization.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
