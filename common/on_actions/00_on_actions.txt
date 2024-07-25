@@ -15528,24 +15528,26 @@ on_new_age = {
 				random = 365
 			}
 		}
-		909 = { #Havorton
-			province_event = {
-				id = adventurerspawnables.9 #Havoral Band/New Havoral
-				random = 365
-			}
-		}
+		#BomjSBagetom Anbennar Submod
+		#909 = { #Havorton
+		#	province_event = {
+		#		id = adventurerspawnables.9 #Havoral Band/New Havoral
+		#		random = 365
+		#	}
+		#}
 		8 = { #Anbenncost
 			province_event = {
 				id = adventurerspawnables.10 #Chipped Tooth Company/Chippengard
 				random = 365
 			}
 		}
-		281 = { #Plumwall
-			province_event = {
-				id = adventurerspawnables.11 #Plumwall Expedition/Plumstead
-				random = 365
-			}
-		}
+		#BomjSBagetom Anbennar Submod
+		#281 = { #Plumwall
+		#	province_event = {
+		#		id = adventurerspawnables.11 #Plumwall Expedition/Plumstead
+		#		random = 365
+		#	}
+		#}
 		417 = { #TELLUM!
 			province_event = {
 				id = adventurerspawnables.13 #Bardswood Band/Tellumtir
