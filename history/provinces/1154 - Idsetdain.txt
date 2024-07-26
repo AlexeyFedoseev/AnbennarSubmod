@@ -8,14 +8,15 @@ add_core = H56
 culture = havoric
 religion = regent_court
 capital = ""
-
+is_city = yes
 hre = no
 
+#BomjSBagetom Anbennar Submod
 base_tax = 3
 base_production = 3
 base_manpower = 3
 
-trade_goods = fur
+trade_goods = fur #BomjSBagetom Anbennar Submod
 
 native_size = 20
 native_ferocity = 6

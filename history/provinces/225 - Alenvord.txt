@@ -27,3 +27,13 @@ center_of_trade = 1
 capital = ""
 
 is_city = yes
+
+
+
+
+
+
+
+
+
+

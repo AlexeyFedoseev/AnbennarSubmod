@@ -10,7 +10,7 @@ religion = regent_court
 capital = ""
 
 hre = no
-
+is_city = yes
 base_tax = 5
 base_production = 4
 base_manpower = 3

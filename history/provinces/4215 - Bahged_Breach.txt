@@ -8,6 +8,7 @@ add_core = H97
 culture = ruby_dwarf
 religion = ancestor_worship
 trade_goods = wool
+is_city = yes
 hre = no
 base_tax = 1 
 base_production = 1

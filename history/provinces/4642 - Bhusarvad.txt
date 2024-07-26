@@ -11,7 +11,7 @@ controller = R78
 add_core = R78
 
 culture = shamadhan
-religion = high_philosophy
+religion = lefthand_path
 
 hre = no
 

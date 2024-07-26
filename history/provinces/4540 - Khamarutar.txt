@@ -8,8 +8,8 @@
 owner = R64
 controller = R64
 add_core = R64
-add_core = R80
-add_core = R79
+#add_core = R80
+#add_core = R79
 
 #BomjSBagetom Anbennar Submod
 #culture = kamtarhid

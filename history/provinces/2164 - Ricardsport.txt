@@ -8,6 +8,7 @@ add_core = G97
 culture = esmari
 religion = regent_court
 
+is_city = yes
 capital = ""
 trade_goods = livestock
 hre = no

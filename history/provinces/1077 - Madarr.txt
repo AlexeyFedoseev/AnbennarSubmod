@@ -7,6 +7,7 @@ add_core = G93
 culture = ruinscourge_gnoll
 religion = xhazobkult
 
+is_city = yes
 capital = ""
 trade_goods = slaves
 hre = no

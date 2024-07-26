@@ -12,6 +12,7 @@ culture = quartz_dwarf
 religion = ancestor_worship
 trade_goods = serpentbloom
 
+is_city = yes
 hre = no
 base_tax = 1 
 base_production = 2

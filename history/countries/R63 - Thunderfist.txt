@@ -12,6 +12,8 @@ religion = old_dookan
 
 technology_group = tech_east_orcish
 
+national_focus = ADM
+
 #capital = 4521
 
 #BomjSBagetom Anbennar Submod
@@ -20,12 +22,19 @@ capital = 4519
 1421.1.1 = {
 
 	monarch = {
+
 		name = "Ordash"
+
 		dynasty = "Thunderfist"
+
 		birth_date = 1410.10.4
+
 		adm = 3
+
 		dip = 4
+
 		mil = 4
+
 	}
 
 }

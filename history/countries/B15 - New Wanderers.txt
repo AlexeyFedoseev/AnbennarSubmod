@@ -27,6 +27,7 @@ capital = 769
 	set_ruler_flag = evocation_1
 	set_ruler_flag = illusion_1
 	set_ruler_flag = transmutation_1
+	set_ruler_flag = initialized_magic_flags
 }
 
 1444.11.11 = { #BomjSBagetom Anbennar Submod

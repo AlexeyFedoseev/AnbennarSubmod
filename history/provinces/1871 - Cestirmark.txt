@@ -8,7 +8,6 @@ controller = H33
 add_core = H33
 culture = east_damerian
 religion = regent_court
-trade_goods = livestock
 is_city = yes
 trade_goods = cotton
 
@@ -16,6 +15,7 @@ trade_goods = cotton
 #religion = dotimism
 
 capital = ""
+
 hre = no
 
 base_tax = 3

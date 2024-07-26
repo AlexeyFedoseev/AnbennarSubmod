@@ -8,7 +8,7 @@ add_core = H50
 culture = half_orc
 religion = regent_court
 capital = ""
-
+is_city = yes
 hre = no
 
 base_tax = 3

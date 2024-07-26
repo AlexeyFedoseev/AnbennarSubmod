@@ -47,7 +47,7 @@ fort_15th = yes
 #}
 
 add_permanent_province_modifier = {
-	name = harimari_minority_coexisting_large
+	name = harimari_minority_coexisting_large #BomjSBagetom Anbennar Submod
 	duration = -1
 }
 

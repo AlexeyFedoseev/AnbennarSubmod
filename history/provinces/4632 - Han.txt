@@ -11,7 +11,7 @@ controller = R78
 add_core = R78
 
 culture = shamadhan
-religion = high_philosophy
+religion = righteous_path
 
 hre = no
 
@@ -32,6 +32,6 @@ is_city = yes
 #}
 
 add_permanent_province_modifier = {
-	name = harimari_minority_coexisting_small
+	name = harimari_minority_coexisting_small #BomjSBagetom Anbennar Submod
 	duration = -1
 }

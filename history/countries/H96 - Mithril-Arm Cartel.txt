@@ -24,7 +24,7 @@ capital = 4020 #Dur-Vazhatun
 		#mil = 3 #BomjSBagetom Anbennar Submod
 		mil = 2
 	}
-	add_ruler_personality = immortal_personality
+	set_ruler_flag = long_lived_ruler
 }
 
 #BomjSBagetom Anbennar Submod
