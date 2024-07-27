@@ -3,7 +3,7 @@
 owner = R62
 controller = R62
 add_core = R62
-add_core = R80
+#add_core = R80 #BomjSBagetom Anbennar Submod
 culture = khedarid
 religion = high_philosophy
 

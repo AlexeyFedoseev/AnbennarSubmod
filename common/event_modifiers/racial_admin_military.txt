@@ -919,7 +919,8 @@ hobgoblin_military = {				#Highly ordered military focused on drill
 	
 	#drawbacks
 	merc_maintenance_modifier = 0.5		#-2	They only rely on their own troops
-	mercenary_manpower = -0.75		#-3	Same thing^
+	#mercenary_manpower = -0.75		#-3	Same thing^ #BomjSBagetom Anbennar Submod
+	mercenary_manpower = -0.33	#BomjSBagetom Anbennar Submod
 	reinforce_speed = -0.15			#-0.75	They need to make sure everyone is battle ready before sending them out
 
 						#-2 - 3 - 0.75 = -5,75

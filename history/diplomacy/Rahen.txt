@@ -468,3 +468,12 @@ alliance = {
 	start_date = 1444.1.1
 	end_date = 1500.1.1
 }
+
+
+#BomjSBagetom Anbennar Submod
+alliance = {
+	first = R62
+	second = Y01
+	start_date = 1430.1.1
+	end_date = 1444.11.1
+}

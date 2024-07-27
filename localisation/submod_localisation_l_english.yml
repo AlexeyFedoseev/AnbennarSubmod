@@ -40,6 +40,7 @@
  submod_no_subs_in_hoardcurse_tt:0 "Forbidden to send subsidies to countries in the Hoardcurse"
  building_ramparts_desc:0 "Allow the construction of §YFortress in neighboring provinces§!\n"
  submod_no_alliance_to_big_ai:0 "An alliance with this country is prohibited as long as the function of the great OR mythical conquerors is turned off."
+ 
 
 
  #-----------------------ADVISORS----------------------

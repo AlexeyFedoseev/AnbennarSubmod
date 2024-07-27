@@ -22,9 +22,9 @@ historical_rival = R66 #Stolen Gem; To be removed in the "Warbringer Peacemaker"
 }
 
 #BomjSBagetom Anbennar Submod
-1444.11.11 = {
-	add_country_modifier = {
-		name = slave_state_early_game_debuff
-		duration = 7300
-	}
-}
+#1444.11.11 = {
+#	add_country_modifier = {
+#		name = slave_state_early_game_debuff
+#		duration = 7300
+#	}
+#}

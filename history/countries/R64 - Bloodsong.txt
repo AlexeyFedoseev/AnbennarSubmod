@@ -22,9 +22,9 @@ capital = 4540 #BomjSBagetom Anbennar Submod
 }
 
 #BomjSBagetom Anbennar Submod
-1444.11.11 = {
-	add_country_modifier = {
-		name = slave_state_early_game_debuff
-		duration = 7300
-	}
-}
+#1444.11.11 = {
+#	add_country_modifier = {
+#		name = slave_state_early_game_debuff
+#		duration = 7300
+#	}
+#}
