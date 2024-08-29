@@ -392,11 +392,11 @@ spriteTypes = {
 	#------------------ABILITES-------------------------
 	spriteType = {
 		name = "GFX_ab_age1_endurance_group_button"
-		texturefile = "gfx/interface/ages/ab_attack_bonus_in_capital_terrain.dds"
+		texturefile = "gfx/interface/ages/ab_age1_endurance_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_trade_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/placeholder4.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_culturalchange_group_button"
