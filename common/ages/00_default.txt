@@ -2680,6 +2680,7 @@ age_of_absolutism = {
 				NOT = {
 					capital_scope = { continent = serpentspine }
 				}
+				NOT = { has_age_ability = ab_age3_architecture_mountain_group_button }
 			}
 			modifier = {
 				build_cost = -0.1
@@ -2695,6 +2696,7 @@ age_of_absolutism = {
 		ab_age3_architecture_mountain_group_button = {
 			allow = {
 				capital_scope = { continent = serpentspine }
+				NOT = { has_age_ability = ab_age3_architecture_not_mountain_group_button }
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age3_TAXES_group_button }
@@ -3019,7 +3021,11 @@ age_of_absolutism = {
 
 		ab_age3_HonSai_bonus_button = {
 			allow = {
-				tag = Y66
+				OR = {
+					tag = Y66
+					was_tag = Y66
+				}
+				
 			}
 			modifier = {
 				fire_damage = 0.17

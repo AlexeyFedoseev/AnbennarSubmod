@@ -40,6 +40,7 @@
  submod_no_subs_in_hoardcurse_tt:0 "Forbidden to send subsidies to countries in the Hoardcurse"
  building_ramparts_desc:0 "Allow the construction of §YFortress in neighboring provinces§!\n"
  submod_no_alliance_to_big_ai:0 "An alliance with this country is prohibited as long as the function of the great OR mythical conquerors is turned off."
+ submod_no_command_wars_before_sir:0 "We can`t start any wars untill we deal with the Sir Revolt."
  
 
 
@@ -623,7 +624,7 @@
  ab_age3_Seghdihr_bonus_button: ""
  ab_age3_Chaingrasper_bonus_button: "Return of the Undead Military"
  ab_age3_HulAzKrakazol_bonus_button: "The drunken slayers"
- ab_age3_Krakdhumvror_bonus_button: ""
+ ab_age3_Krakdhumvror_bonus_button: "The powerfull ally with strong quality"
  
  ab_age4_Lorent_bonus_button: "The empire on which the sun never sets"
  ab_age4_Kobildzan_bonus_button: ""

@@ -543,6 +543,15 @@ declarewar = {
 	}
 
 	condition = {
+		tooltip = submod_no_command_wars_before_sir
+		potential = { tag = R62 }
+		allow = {
+			has_country_flag = command_sir_revolt_victory 
+		}
+	}
+	
+
+	condition = {
 		tooltip = COMMAND_ACTIVE_SUBORDINATION_CRISIS
 		potential = { tag = R62 }
 		allow = {
@@ -1684,7 +1693,6 @@ allianceaction = {
 				NOT = {
 					has_country_flag = simegasa_start_no_ally_flag
 				}
-				}
 			}
 		}
 	}
@@ -1708,7 +1716,29 @@ allianceaction = {
 						tag = R51
 						tag = Y28
 					}
-				 }
+				}
+			}
+		}
+	}
+	
+	#BomjSBagetom Anbennar Submod
+	condition = { 
+		tooltip = submod_no_alliance_to_big_ai
+		potential = { 
+			NOT = {
+				OR = {
+					has_global_flag = great_conqueror
+					has_global_flag = mythical_conqueror
+				}
+			}
+			OR = {
+				tag = R51
+				tag = Y28
+			}
+		} 
+		allow = { 
+			FROM = {
+				is_ai = yes
 			}
 		}
 	}

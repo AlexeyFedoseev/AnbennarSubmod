@@ -27,6 +27,11 @@ religious_school = unbroken_claw_school
 		dip = 0
 		mil = 2
 	}
+	add_truce_with = R12
+	add_truce_with = R78
+	add_truce_with = R79
+	add_truce_with = R80
+	add_truce_with = R85
 }
 
 

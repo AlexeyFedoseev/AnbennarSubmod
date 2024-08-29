@@ -28,6 +28,11 @@ religious_school = orange_sash_school
 		dip = 2
 		mil = 4
 	}
+	add_truce_with = R12
+	add_truce_with = R78
+	add_truce_with = R80
+	add_truce_with = R84
+	add_truce_with = R85
 }
 
 setup_caste_estates = yes

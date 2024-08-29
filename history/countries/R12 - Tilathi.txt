@@ -29,6 +29,11 @@ capital = 4509
 		mil = 4
 		culture = royal_harimari
 	}
+	add_truce_with = R78
+	add_truce_with = R79
+	add_truce_with = R80
+	add_truce_with = R84
+	add_truce_with = R85
 }
 
 setup_caste_estates = yes
