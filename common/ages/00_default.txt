@@ -3428,7 +3428,7 @@ age_of_revolutions = {
 		
 		obj_age4_6_65_artificers_loyalty = {
 			estate_loyalty = {
-				estate = state_artificers
+				estate = estate_artificers
 				loyalty = 65
 			}
 		}
