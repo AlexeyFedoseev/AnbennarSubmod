@@ -766,7 +766,7 @@ obj_age4_6_65_artificers_loyalty_bonus = {
 	}
 	trigger = {
 		estate_loyalty = {
-			estate = state_artificers
+			estate = estate_artificers
 			loyalty = 65
 		}
 	}
@@ -808,7 +808,7 @@ obj_age4_10_full_hegemony_bonus = {
 		current_age = age_of_revolutions
 	}
 	trigger = {
-		num_of_states = 65
+		hegemon_strength = 100
 	}
 	max_general_fire = 1
 }

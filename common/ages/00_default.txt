@@ -3647,7 +3647,7 @@ age_of_revolutions = {
 
 		ab_age4_quality_focus_group_button = {
 			allow = {
-				NOT = { has_age_ability = ab_age4_quantity_focus_group_button }
+				NOT = { has_age_ability = ab_age4_quantity_focus_focus_group_button }
 			}
 			modifier = {
 				backrow_artillery_damage = 0.20
