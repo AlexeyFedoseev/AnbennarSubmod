@@ -10,18 +10,60 @@ devcost_nerf = {
  	development_cost = 1	
 }
 
-########################     SPLENDOR AND AGES      #########################
-
-splendor_decay = {
+player_age2_debuff = {
 	potential = {
 		always = yes
+		ai = no
 	}
 
 	trigger = {
-		NOT = {	current_age = age_of_discovery  }
+		current_age = age_of_reformation
 	}
+
+	interest = 1
 	monthly_splendor = -2
 }
+
+player_age3_debuff = {
+	potential = {
+		always = yes
+		ai = no
+	}
+
+	trigger = {
+		current_age = age_of_absolutism
+	}
+	
+	interest = 2
+	monthly_splendor = -2
+}
+
+player_age4_debuff = {
+	potential = {
+		always = yes
+		ai = no
+	}
+
+	trigger = {
+		current_age = age_of_revolutions
+	}
+	
+	interest = 3
+	monthly_splendor = -2
+}
+
+########################     SPLENDOR AND AGES      #########################
+
+#splendor_decay = {
+#	potential = {
+#		always = yes
+#	}
+#
+#	trigger = {
+#		NOT = {	current_age = age_of_discovery }
+#	}
+#	monthly_splendor = -2
+#}
 
 splendor_ai_boost = {
 	potential = {

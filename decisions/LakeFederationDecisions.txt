@@ -361,6 +361,7 @@ country_decisions = {
 			}
 			NOT = { has_country_modifier = lake_federation_member }
 			has_country_modifier = human_administration
+			culture_group = triunic #BomjSBagetom Anbennar Submod
 			NOT = { exists = J33 }
 			NOT = { has_global_flag = lake_federation_disbanded }
 			#ai = yes

@@ -6273,7 +6273,7 @@ sugamber_lions_maw = {
 sugamber_lionsbane = {
 	imperial_authority = 0.1
 	land_morale = 0.1
-	prestige = 1
+	#prestige = 1 #BomjSBagetom Anbennar Submod
 }
 sugamber_busilar_conquered = {
 	trade_efficiency = 0.1

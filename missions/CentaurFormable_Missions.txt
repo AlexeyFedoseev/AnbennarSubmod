@@ -13,14 +13,15 @@ I89_1 = {
 		required_missions = { }
 		position = 1
 		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = win_battle_centaur_150_tooltip
-				check_variable = {
-					which = nbCharge
-					value = 150
-				}
-			}
+		trigger = { #BomjSBagetom Anbennar Submod
+			num_of_cities = 100
+			#custom_trigger_tooltip = {
+			#	tooltip = win_battle_centaur_150_tooltip
+			#	check_variable = {
+			#		which = nbCharge
+			#		value = 150
+			#	}
+			#}
 		}
 		
 		effect = {
@@ -38,14 +39,15 @@ I89_1 = {
 		}
 		position = 2
 		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = win_battle_centaur_225_tooltip
-				check_variable = {
-					which = nbCharge
-					value = 225
-				}
-			}
+		trigger = { #BomjSBagetom Anbennar Submod
+			num_of_cities = 200
+			#custom_trigger_tooltip = {
+			#	tooltip = win_battle_centaur_225_tooltip
+			#	check_variable = {
+			#		which = nbCharge
+			#		value = 225
+			#	}
+			#}
 		}
 		
 		effect = {
@@ -64,14 +66,15 @@ I89_1 = {
 		}
 		position = 3
 		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = win_battle_centaur_325_tooltip
-				check_variable = {
-					which = nbCharge
-					value = 325
-				}
-			}
+		trigger = { #BomjSBagetom Anbennar Submod
+			num_of_cities = 300
+			#custom_trigger_tooltip = {
+			#	tooltip = win_battle_centaur_325_tooltip
+			#	check_variable = {
+			#		which = nbCharge
+			#		value = 325
+			#	}
+			#}
 		}
 		
 		effect = {
@@ -90,14 +93,15 @@ I89_1 = {
 		}
 		position = 4
 		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = win_battle_centaur_450_tooltip
-				check_variable = {
-					which = nbCharge
-					value = 450
-				}
-			}
+		trigger = { #BomjSBagetom Anbennar Submod
+			num_of_cities = 400
+			#custom_trigger_tooltip = {
+			#	tooltip = win_battle_centaur_450_tooltip
+			#	check_variable = {
+			#		which = nbCharge
+			#		value = 450
+			#	}
+			#}
 		}
 		
 		effect = {
@@ -116,14 +120,15 @@ I89_1 = {
 		}
 		position = 5
 		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = win_battle_centaur_575_tooltip
-				check_variable = {
-					which = nbCharge
-					value = 575
-				}
-			}
+		trigger = { #BomjSBagetom Anbennar Submod
+			num_of_cities = 500
+			#custom_trigger_tooltip = {
+			#	tooltip = win_battle_centaur_575_tooltip
+			#	check_variable = {
+			#		which = nbCharge
+			#		value = 575
+			#	}
+			#}
 		}
 		
 		effect = {
@@ -142,14 +147,15 @@ I89_1 = {
 		}
 		position = 6
 		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = win_battle_centaur_750_tooltip
-				check_variable = {
-					which = nbCharge
-					value = 750
-				}
-			}
+		trigger = { #BomjSBagetom Anbennar Submod
+			num_of_cities = 550
+			#custom_trigger_tooltip = {
+			#	tooltip = win_battle_centaur_750_tooltip
+			#	check_variable = {
+			#		which = nbCharge
+			#		value = 750
+			#	}
+			#}
 		}
 		
 		effect = {
@@ -168,14 +174,15 @@ I89_1 = {
 		}
 		position = 7
 		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = win_battle_centaur_1000_tooltip
-				check_variable = {
-					which = nbCharge
-					value = 1000
-				}
-			}
+		trigger = { #BomjSBagetom Anbennar Submod
+			num_of_cities = 600
+			#custom_trigger_tooltip = {
+			#	tooltip = win_battle_centaur_1000_tooltip
+			#	check_variable = {
+			#		which = nbCharge
+			#		value = 1000
+			#	}
+			#}
 		}
 		
 		effect = {

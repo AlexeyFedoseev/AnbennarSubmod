@@ -646,9 +646,11 @@ orcish_military = {
 	manpower_recovery_speed = 0.1			#1 B / 
 	army_tradition_from_battle = 0.5		#1 D / WAR! What is it good for?
 
-	shock_damage = 0.15						#2 C they like fighting instead!
-	fire_damage_received = -0.05			#0.5 B /
-	shock_damage_received = -0.15			#1 C / 
+	#shock_damage = 0.15						#2 C they like fighting instead! #BomjSBagetom Anbennar Submod
+	shock_damage = 0.20 #BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05			#0.5 B / #BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.15			#1 C /  #BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod
 	
 	loot_amount = 0.33						#0.5 E / 
 	
@@ -656,7 +658,8 @@ orcish_military = {
 
 	
 	#Negatives
-	fire_damage = -0.1						#-1 A / dont really like shooting and prefer to get up close
+	#fire_damage = -0.1						#-1 A / dont really like shooting and prefer to get up close #BomjSBagetom Anbennar Submod
+	fire_damage = -0.15		#BomjSBagetom Anbennar Submod
 	artillery_power = -0.1					#1 A / killing enemies from afar is cowardly
 	defensiveness = -0.2					#1 B
 	fort_maintenance_modifier = 0.2			#-2 C / 
@@ -1059,6 +1062,7 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	
 	#reserves_organisation = 4 		# 4 D Unbreakable #BomjSBagetom Anbennar Submod
 	reserves_organisation = 0.5 # 	#BomjSBagetom Anbennar Submod
+	artillery_cost = -0.25 #BomjSBagetom Anbennar Submod
 	# morale_damage_received = -0.9 # 4 A Unbreakable
 	# shock_damage_received = -0.3
 	shock_damage = -0.3

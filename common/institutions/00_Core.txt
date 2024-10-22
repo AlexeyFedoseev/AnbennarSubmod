@@ -87,7 +87,9 @@ feudalism = {
 						tag = I42 #BomjSBagetom Anbennar Submod
 						tag = I43 #BomjSBagetom Anbennar Submod
 						tag = I44 #BomjSBagetom Anbennar Submod
-						
+						technology_group = tech_vyzemby #BomjSBagetom Anbennar Submod
+						tag = H74 #BomjSBagetom Anbennar Submod
+						tag = H75 #BomjSBagetom Anbennar Submod
 
 
 						#technology_group = high_american #Is listed below as High Americans get it regardless of if Nation Designer is used.

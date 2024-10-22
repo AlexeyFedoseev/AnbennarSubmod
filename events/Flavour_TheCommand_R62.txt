@@ -5689,17 +5689,33 @@ country_event = { #Sir revolt starts
 			R62 = {
 				add_manpower = -10
 			}
-			R78 = {
-				define_general = {
-					shock = 7
-					fire = 2
-					manuever = 1
-					siege = 3
-					female = yes
-					name = "Chiyi Kwaeng"
-					trait = war_wizard_personality
+			if = { #BomjSBagetom Anbennar Submod
+				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
+				R07 = {
+					define_general = {
+						shock = 7
+						fire = 2
+						manuever = 1
+						siege = 3
+						female = yes
+						name = "Chiyi Kwaeng"
+						trait = war_wizard_personality
+					}
 				}
 			}
+			else = {  #BomjSBagetom Anbennar Submod
+				R78 = {
+					define_general = {
+						shock = 7
+						fire = 2
+						manuever = 1
+						siege = 3
+						female = yes
+						name = "Chiyi Kwaeng"
+						trait = war_wizard_personality
+					}
+				}
+			}	
 		}
 		if = { #Ghatasak and Sarilavhan stuff
 			limit = { has_country_flag = command_sir_revolt_rebel_participation }
@@ -6181,6 +6197,9 @@ country_event = { #Sir revolt end - Command loss
 			4531 = {
 				add_core = R96
 			}
+			R07 = {  #BomjSBagetom Anbennar Submod
+				kill_leader = { type = "Chiyi Kwaeng" }
+			}
 			release_all_possible_countries = yes
 			release_all_subjects = yes
 			4532 = { #Looted from Sarilavhan
@@ -6440,6 +6459,9 @@ country_event = { #Sir revolt end - Command loss
 			4531 = {
 				add_core = R96
 			}
+			R07 = {  #BomjSBagetom Anbennar Submod
+				kill_leader = { type = "Chiyi Kwaeng" }
+			}
 			release_all_possible_countries = yes
 			release_all_subjects = yes
 			4532 = { #Looted from Sarilavhan
@@ -6693,6 +6715,9 @@ country_event = { #Sir revolt end - Command loss
 			4531 = {
 				add_core = R96
 			}
+			R07 = {  #BomjSBagetom Anbennar Submod
+				kill_leader = { type = "Chiyi Kwaeng" }
+			}
 			release_all_possible_countries = yes
 			release_all_subjects = yes
 			4532 = { #Looted from Sarilavhan
@@ -6945,6 +6970,9 @@ country_event = { #Sir revolt end - Command loss
 			}
 			4531 = {
 				add_core = R96
+			}
+			R07 = {  #BomjSBagetom Anbennar Submod
+				kill_leader = { type = "Chiyi Kwaeng" }
 			}
 			release_all_possible_countries = yes
 			release_all_subjects = yes
@@ -7302,6 +7330,9 @@ country_event = { #Sir Revolt End - Command Victory
 			add_treasury = 500
 			change_adm = 1 #BomjSBagetom Anbennar Submod
 			change_mil = 2 #BomjSBagetom Anbennar Submod
+			R07 = {  #BomjSBagetom Anbennar Submod
+				kill_leader = { type = "Chiyi Kwaeng" }
+			}
 			every_known_country = {
 				limit = {
 					NOT = { is_subject_of = R62 tag = Y01 }

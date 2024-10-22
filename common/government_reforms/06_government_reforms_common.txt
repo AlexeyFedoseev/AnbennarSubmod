@@ -2538,7 +2538,7 @@ anbennar_T5_generic_fodder = {
 	}
 	modifiers = {
 		cav_to_inf_ratio = 0.1
-		cavalry_cost = -0.1
+		cavalry_cost = -0.05 #BomjSBagetom Anbennar Submod
 	}
 	
 	ai = {
@@ -6551,6 +6551,18 @@ xhazobkult_sacrifices = {
 	trigger = {
 		religion = xhazobkult
 		has_country_modifier = monstrous_nation
+		if = { #BomjSBagetom Anbennar Submod
+			limit = {
+				has_reform = the_pirate_ways_reform
+			}
+			custom_trigger_tooltip = {
+				tooltip = had_the_pirate_ways_reform_tt
+				had_country_flag = {
+					flag = has_the_pirate_ways_reform
+					days = 3650
+				}
+			}
+		}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0

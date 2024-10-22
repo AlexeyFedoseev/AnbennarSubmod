@@ -528,6 +528,7 @@ pirate_republic_reform = {
 		state_governing_cost = 0.75
 		may_perform_slave_raid_on_same_religion = yes
 		allowed_marine_fraction = 0.5
+		landing_penalty = -2 #BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		OR = {
@@ -3971,7 +3972,7 @@ the_pirate_ways_reform = {
 	modifiers = {
 		privateer_efficiency = 0.25
 		land_morale = 0.1
-		naval_morale = 0.1
+		#naval_morale = 0.1 #BomjSBagetom Anbennar Submod
 		naval_maintenance_modifier = -0.10
 		republican_tradition = 1
 	}

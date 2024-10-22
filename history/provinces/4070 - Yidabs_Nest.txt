@@ -1,0 +1,16 @@
+
+
+
+
+#culture = crawler_goblin #BomjSBagetom Anbennar Submod
+#religion = goblinic_shamanism #BomjSBagetom Anbennar Submod
+culture = black_orc		#BomjSBagetom Anbennar Submod
+religion = old_dookan	#BomjSBagetom Anbennar Submod
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 84
+native_ferocity = 10
+native_hostileness = 10

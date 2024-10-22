@@ -2466,7 +2466,7 @@ age_of_absolutism = {
 				num_accepted_cultures = 2
 			}
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = culturalchange abilityName = ab_age3_trade_group_button }
+				add_or_upgrade_age_bonus = { bonusName = culturalchange abilityName = ab_age3_culturalchange_group_button }
 			}
 			ai_will_do = {
 				factor = 10

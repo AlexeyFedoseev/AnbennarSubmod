@@ -13,6 +13,10 @@
  command_early_game_debuff:0 "The Command early game debuff"
  slave_state_early_game_debuff:0 "The command subjects early game debuff"
  devcost_nerf:0 "Devcost Nerf"
+ umoji_colonist_bonus:0 "Umoji Baashidi Colonist bonus"
+ player_age2_debuff:0 "Age of reformation debuff"
+ player_age3_debuff:0 "Age of absolutism debuff"
+ player_age4_debuff:0 "Age of revolutions debuff"
  
 
  #--------------------SALE-OF-TITLES-------------------
@@ -41,6 +45,7 @@
  building_ramparts_desc:0 "Allow the construction of §YFortress in neighboring provinces§!\n"
  submod_no_alliance_to_big_ai:0 "An alliance with this country is prohibited as long as the function of the great OR mythical conquerors is turned off."
  submod_no_command_wars_before_sir:0 "We can`t start any wars untill we deal with the Sir Revolt."
+ submon_no_5_years_research:0 "This Priveledge available only in §YFull artificer§! mode."
  
 
 

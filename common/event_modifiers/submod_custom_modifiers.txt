@@ -82,6 +82,10 @@ stagnant_dwarovar_claimer = {
 	global_supply_limit_modifier = 0.5
 }
 
+umoji_colonist_bonus = {
+	colonists = 1
+}
+
 #---------------------AGES-STUFF--------------------
 ab_age_endurance_1 = {
 	defensiveness = 0.15

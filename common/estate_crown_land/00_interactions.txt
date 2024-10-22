@@ -221,10 +221,10 @@ interaction = { # Sale of Titles
 				NOT = { has_country_modifier = JY_LF_recent_trade }
 			}
 		}
-		NOT = { has_country_modifier = sale_of_titles_tax_bonus } #BomjSBagetom Anbennar Submod
-		NOT = { has_country_modifier = sale_of_titles_production_bonus } #BomjSBagetom Anbennar Submod
-		NOT = { has_country_modifier = sale_of_titles_trade_bonus } #BomjSBagetom Anbennar Submod
-		NOT = { has_country_modifier = sale_of_titles_goods_bonus } #BomjSBagetom Anbennar Submod
+		#NOT = { has_country_modifier = sale_of_titles_tax_bonus } #BomjSBagetom Anbennar Submod
+		#NOT = { has_country_modifier = sale_of_titles_production_bonus } #BomjSBagetom Anbennar Submod
+		#NOT = { has_country_modifier = sale_of_titles_trade_bonus } #BomjSBagetom Anbennar Submod
+		#NOT = { has_country_modifier = sale_of_titles_goods_bonus } #BomjSBagetom Anbennar Submod
     }
     effect = {
 
