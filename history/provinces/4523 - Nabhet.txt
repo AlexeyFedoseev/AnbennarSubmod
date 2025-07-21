@@ -8,18 +8,18 @@
 #culture = brown_orc
 #religion = old_dookan
 
+#BomjSBagetom Anbennar Submod
 owner = R12
 controller = R12
 add_core = R12
-
-culture = shamadhan
-religion = high_philosophy
+culture = shamadhan			#BomjSBagetom Anbennar Submod
+religion = high_philosophy	#BomjSBagetom Anbennar Submod
 
 hre = no
 
 base_tax = 3
 base_production = 2
-base_manpower = 3
+base_manpower = 2
 
 trade_goods = slaves
 

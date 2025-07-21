@@ -9,7 +9,6 @@
 owner = R80
 controller = R80
 add_core = R80
-
 culture = shamadhan
 religion = high_philosophy
 
@@ -17,7 +16,7 @@ hre = no
 
 base_tax = 4
 base_production = 4
-base_manpower = 4
+base_manpower = 3
 
 trade_goods = tea
 

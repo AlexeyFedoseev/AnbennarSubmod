@@ -48,6 +48,10 @@ DADV_1 = {
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					any_ally = { has_country_flag = dwarovar_remnant }
+				} 
 			random_known_country = {
 				limit = {
 					has_country_flag = dwarovar_remnant
@@ -59,6 +63,8 @@ DADV_1 = {
 					mutual = yes
 				}
 			}
+			}
+			else = { custom_tooltip = ally_remnant_effect_tooltip }
 		}
 	}
 

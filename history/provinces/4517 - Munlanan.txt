@@ -10,7 +10,6 @@
 owner = R84
 controller = R84
 add_core = R84
- 
 culture = khedarid
 religion = high_philosophy
 

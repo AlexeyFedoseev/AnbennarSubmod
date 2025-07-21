@@ -18,9 +18,9 @@ capital = ""
 
 hre = no
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 3			#BomjSBagetom Anbennar Submod
+base_production = 3		#BomjSBagetom Anbennar Submod
+base_manpower = 3		#BomjSBagetom Anbennar Submod
 
 #base_tax = 1
 #base_production = 1

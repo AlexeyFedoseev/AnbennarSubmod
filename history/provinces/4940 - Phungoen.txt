@@ -3,7 +3,7 @@ controller = Y60
 add_core = Y60
 add_core = Y86 #BomjSBagetom Anbennar Submod
 culture = sikai
-religion = righteous_path
+religion = transmutative_path
 
 hre = no
 

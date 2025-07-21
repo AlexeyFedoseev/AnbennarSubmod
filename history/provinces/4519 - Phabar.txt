@@ -9,18 +9,18 @@
 #culture = khedarid
 #religion = high_philosophy
 
+#BomjSBagetom Anbennar Submod
 owner = R63
 controller = R63
 add_core = R63
-
-culture = brown_orc
-religion = old_dookan
+culture = brown_orc		#BomjSBagetom Anbennar Submod
+religion = old_dookan	#BomjSBagetom Anbennar Submod
 
 hre = no
 
 base_tax = 2
 base_production = 2
-base_manpower = 3
+base_manpower = 2
 
 trade_goods = iron
 

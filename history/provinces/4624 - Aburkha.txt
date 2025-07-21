@@ -8,9 +8,8 @@
 owner = R85
 controller = R85
 add_core = R85
-
 culture = shamadhan
-religion = righteous_path
+religion = accretive_path
 
 hre = no
 

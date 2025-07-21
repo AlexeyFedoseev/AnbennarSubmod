@@ -9,7 +9,6 @@
 owner = R63
 controller = R63
 add_core = R63
-
 culture = wolf_command
 religion = godlost
 
@@ -17,7 +16,7 @@ hre = no
 
 base_tax = 1
 base_production = 1
-base_manpower = 4
+base_manpower = 3
 
 trade_goods = wool
 

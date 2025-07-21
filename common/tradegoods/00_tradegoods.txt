@@ -41,6 +41,7 @@ grain = {
 				has_terrain = jungle
 				has_terrain = ancient_forest
 				has_terrain = gladeway
+				has_terrain = bloodgroves
 			}
 		}
 		modifier = {
@@ -89,7 +90,6 @@ grain = {
 			factor = 1.2 # more grain for the grain gods
 			has_terrain = grasslands
 			OR = {
-				region = bloodgroves_region
 				region = trollsbay_region
 				region = dry_coast_region
 			}
@@ -104,6 +104,7 @@ grain = {
 			OR = {
 				province_id = 4236
 				province_id = 2978
+				province_id = 2914
 				region = moduk_region
 				area = somyonghon_area
 				continent = africa #chance is so low its not worth having as a possibility
@@ -165,6 +166,7 @@ wine = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 		modifier = {
@@ -174,6 +176,14 @@ wine = {
 		modifier = {
 			factor = 1.1
 			FROM = { culture_group = lencori }
+		}
+		modifier = {
+			factor = 8
+			region = bloodgroves_region
+		}
+		modifier = {
+			factor = 0.75
+			has_terrain = bloodgroves
 		}
 	}
 }
@@ -214,6 +224,7 @@ wool = {
 				has_terrain = woods
 				has_terrain = ancient_forest
 				has_terrain = gladeway
+				has_terrain = bloodgroves
 			}
 		}
 		modifier = {
@@ -246,6 +257,7 @@ wool = {
 			OR = {
 				province_id = 4236
 				province_id = 2978
+				province_id = 2914
 				region = mushroom_forest_region
 				area = westnest_area
 				area = eastnest_area
@@ -291,6 +303,7 @@ cloth = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 	}
@@ -349,7 +362,10 @@ fish = {
 		}
 		modifier = {
 			factor = 0
-			province_id = 4236
+			OR = {
+				province_id = 4236
+				province_id = 2914
+			}
 		}
 		modifier = {
 			factor = 0.4
@@ -450,11 +466,16 @@ fur = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 		modifier = {
 			factor = 2.0
 			FROM = { has_country_flag = encourage_cash_crops_flag }
+		}
+		modifier = {
+			factor = 0.75
+			region = bloodgroves_region
 		}
 	}
 }
@@ -503,6 +524,7 @@ salt = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 	}
@@ -577,6 +599,7 @@ naval_supplies = {
 				has_terrain = jungle
 				has_terrain = ancient_forest
 				has_terrain = gladeway
+				has_terrain = bloodgroves
 				region = dalaire_region # old frozen trees! 
 			}
 		}
@@ -585,6 +608,7 @@ naval_supplies = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 	}
@@ -621,6 +645,7 @@ copper = {
 				region = domandrod_region
 				province_id = 4236 #mithradhum
 				province_id = 2978 #Claxac's Abyss
+				province_id = 2914 #Verkal Gulan
 				region = dao_nako_region
 				AND = {
 					continent = africa
@@ -789,7 +814,10 @@ gold = {
 		}
 		modifier = {
 			factor = 1000	#dragon turtle's hoard
-			province_id = 2262
+			OR = {
+				province_id = 2262
+				province_id = 2914 #Verkal Gulan
+			}
 		}
 		modifier = {
 			factor = 0
@@ -851,6 +879,7 @@ iron = {
 				region = yezel_mora_region
 				province_id = 4236
 				province_id = 2978
+				province_id = 2914
 				AND = {
 					continent = africa
 					province_is_on_an_island = yes
@@ -958,6 +987,7 @@ slaves = {
 			OR = {
 				province_id = 4236
 				province_id = 2978
+				province_id = 2914
 				region = serpents_vale_region
 			}
 		}
@@ -1122,7 +1152,6 @@ tea = {
 		modifier = {
 			factor = 1.5 # new world plantations
 			OR = {
-				region = bloodgroves_region
 				region = trollsbay_region
 				region = severed_coast_region
 			}
@@ -1225,7 +1254,7 @@ spices = {
 				continent = europe
 				continent = serpentspine
 				superregion = forbidden_lands_superregion
-				superregion = north_haless_superregion
+				superregion = gozengun_superregion
 				superregion = yanshen_superregion
 			}
 		}
@@ -1607,7 +1636,7 @@ tobacco = {
 		}
 		modifier = {
 			factor = 1.1
-			FROM = { culture_group = halfling }
+			FROM = { is_cannorian_halfling_primary_culture = yes }
 		}
 	}
 }
@@ -1762,6 +1791,7 @@ dyes = {
 			NOT = { province_id = 2939 }
 			NOT = { region = bloodgroves_region }	#Blood-red sap
 			NOT = { continent = africa }
+			NOT = { area = corinsfield_area } #Corinspoppies
 		}
 		modifier = {
 			factor = 0
@@ -1775,6 +1805,7 @@ dyes = {
 			NOT = { province_id = 2939 }
 			NOT = { region = bloodgroves_region }
 			NOT = { continent = africa }
+			NOT = { area = corinsfield_area } #Corinspoppies
 		}
 		modifier = {
 			factor = 0
@@ -1810,6 +1841,10 @@ dyes = {
 		modifier = {
 			factor = 2.6
 			has_terrain = bloodgroves
+		}
+		modifier = {
+			factor = 2.0 #Corinspoppies
+			province_id = 2807
 		}
 	}
 }
@@ -1868,6 +1903,7 @@ tropical_wood = {
 			NOT = {
 				has_terrain = forest
 				has_terrain = woods
+				has_terrain = bloodgroves
 			}
 		}
 		modifier = {
@@ -1910,6 +1946,7 @@ livestock = {
 				has_terrain = city_terrain
 				has_terrain = ancient_forest
 				has_terrain = gladeway
+				has_terrain = bloodgroves
 				area = westnest_area
 				area = eastnest_area
 				region = yezel_mora_region
@@ -1970,6 +2007,7 @@ livestock = {
 			OR = {
 				province_id = 4236 #Mithradhum
 				province_id = 2978 #Claxac's Abyss
+				province_id = 2914
 			}
 		}
 	}
@@ -2019,6 +2057,7 @@ incense = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 		modifier = {
@@ -2028,6 +2067,10 @@ incense = {
 		modifier = {
 			factor = 2.0
 			FROM = { has_country_flag = encourage_cash_crops_flag }
+		}
+		modifier = {
+			factor = 3
+			has_terrain = bloodgroves
 		}
 	}
 }
@@ -2066,6 +2109,7 @@ glass = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 	}
@@ -2097,6 +2141,7 @@ paper = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 	}
@@ -2212,6 +2257,7 @@ gems = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 		modifier = {
@@ -2228,7 +2274,10 @@ gems = {
 		}
 		modifier = {
 			factor = 100
+			OR = {
 			province_id = 2948 #diamond quarry
+				province_id = 4338 #emerald spire
+			}
 		}
 		modifier = {
 			factor = 4
@@ -2439,11 +2488,17 @@ mithril = {
 		}
 		modifier = {
 			factor = 0
+			OR = {
 			province_id = 2978 #Claxac's Abyss
+				province_id = 2914 #Verkal Gulan
+			}
 		}
 		modifier = {
 			factor = 1000
-			province_id = 4236
+			OR = {
+				province_id = 4236 #Mithradhum
+				province_id = 4334 #Truesilver hollow
+			}
 		}
 		modifier = {
 			factor = 1000
@@ -2539,6 +2594,7 @@ fungi = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 		modifier = {
@@ -2587,6 +2643,7 @@ serpentbloom = {
 			OR = {
 			province_id = 4236
 				province_id = 2978
+				province_id = 2914
 			}
 		}
 		modifier = {

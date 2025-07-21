@@ -9,14 +9,13 @@
 owner = R80
 controller = R80
 add_core = R80
-
 culture = royal_harimari
 religion = high_philosophy
 
 hre = no
 
 base_tax = 4
-base_production = 4
+base_production = 3
 base_manpower = 3
 
 trade_goods = cotton

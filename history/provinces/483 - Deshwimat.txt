@@ -8,7 +8,6 @@ add_core = L26
 #BomjSBagetom Anbennar Submod
 #add_core = U01
 add_claim = U01 
-
 culture = irsmahapan
 religion = nirakhetist
 

@@ -9,13 +9,12 @@
 owner = R80
 controller = R80
 add_core = R80
-
 culture = khedarid
 religion = high_philosophy
 
 hre = no
 
-base_tax = 4
+base_tax = 3
 base_production = 3
 base_manpower = 3
 

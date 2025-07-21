@@ -270,7 +270,10 @@ country_event = {
 		random_list = {
 			30 = {
 				tooltip = {
-					change_controller = ROOT
+					add_province_modifier = {
+						name = siege_magic_instant_siege
+						duration = 3
+					}
 					add_devastation = 5
 				}
 			}
@@ -305,7 +308,10 @@ country_event = {
 		random_list = {
 			30 = {
 				tooltip = {
-					change_controller = ROOT
+					add_province_modifier = {
+						name = siege_magic_instant_siege
+						duration = 3
+					}
 					add_devastation = 5
 				}
 			}
@@ -346,7 +352,10 @@ country_event = {
 		}
 		custom_tooltip = magic_if_siege_magic_succeeds_tt
 		tooltip = {
-			change_controller = ROOT
+			add_province_modifier = {
+				name = siege_magic_instant_siege
+				duration = 3
+			}
 		}
 		custom_tooltip = magic_dominate_desc_tt
 	}
@@ -368,7 +377,10 @@ country_event = {
 		
 		custom_tooltip = magic_if_siege_magic_succeeds_tt
 		tooltip = {
-			change_controller = ROOT
+			add_province_modifier = {
+				name = siege_magic_instant_siege
+				duration = 3
+			}
 		}
 		custom_tooltip = magic_dominate_desc_tt
 	}
@@ -451,7 +463,10 @@ country_event = {
 		random_list = {
 			30 = {
 				tooltip = {
-					change_controller = ROOT
+					add_province_modifier = {
+						name = siege_magic_instant_siege
+						duration = 3
+					}
 					add_devastation = 10
 				}
 			}
@@ -486,7 +501,10 @@ country_event = {
 		random_list = {
 			30 = {
 				tooltip = {
-					change_controller = ROOT
+					add_province_modifier = {
+						name = siege_magic_instant_siege
+						duration = 3
+					}
 					add_devastation = 10
 				}
 			}
@@ -1539,15 +1557,31 @@ country_event = {
 		
 		#Spell
 		event_target:spell_target_province = { 
-			change_controller = ROOT
-			hidden_effect = { owner = { country_event = { id = magic_siege.120 } } }
+			add_province_modifier = {
+				name = siege_magic_instant_siege
+				duration = 3
+			}
+			hidden_effect = {
+				owner = { country_event = { id = magic_siege.120 } }
+				if = {
+					limit = {
+						OR = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+						}
 		}
-		
-		add_country_modifier = { #BomjSBagetom Anbennar Submod
+					add_province_modifier = {
+						name = siege_no_hold_damage
+						duration = 7
+						hidden = yes
+					}
+				}
+			}
+			add_country_modifier = { #BomjSBagetom Anbennar Submod
 			name = recently_used_dominate_to_surrender
 			duration = 2190
+			}
 		}
-
 	}
 	
 	after = {		
@@ -2755,8 +2789,10 @@ country_event = {
 			random_list = {
 				30 = {
 					event_target:spell_target_province = { 
-						change_controller = ROOT
-						add_devastation = 5
+						add_province_modifier = {
+							name = siege_magic_instant_siege
+							duration = 3
+						}
 					}
 				}
 				70 = {
@@ -2771,7 +2807,6 @@ country_event = {
 		}
 		
 		hidden_effect = { country_event = { id = magic_siege.108 } }
-		
 	}
 	
 	option = {
@@ -3114,7 +3149,10 @@ country_event = {
 			random_list = {
 				60 = {
 					event_target:spell_target_province = { 
-						change_controller = ROOT
+						add_province_modifier = {
+							name = siege_magic_instant_siege
+							duration = 3
+						}
 						add_devastation = 10
 					}
 				}
@@ -4544,7 +4582,10 @@ country_event = {
 		}
 		
 		event_target:spell_target_province = { 
-			change_controller = ROOT
+			add_province_modifier = {
+				name = siege_magic_instant_siege
+				duration = 3
+			}
 			add_devastation = 5
 		}
 
@@ -4590,7 +4631,10 @@ country_event = {
 		}
 		
 		event_target:spell_target_province = { 
-			change_controller = ROOT
+			add_province_modifier = {
+				name = siege_magic_instant_siege
+				duration = 3
+			}
 			add_devastation = 10
 		}
 		
@@ -4613,7 +4657,6 @@ country_event = {
 				duration = 14
 			}
 		}
-		
 	}
 } 
 

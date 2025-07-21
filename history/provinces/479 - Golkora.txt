@@ -8,7 +8,6 @@ add_core = U09
 #BomjSBagetom Anbennar Submod
 #add_core = U01
 add_claim = U01 
-
 culture = hapremiti
 religion = elikhetist
 

@@ -7,7 +7,6 @@
 owner = R14
 controller = R14
 add_core = R14
-
 culture = ghavaanaj
 religion = high_philosophy
 

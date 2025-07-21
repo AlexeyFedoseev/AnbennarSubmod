@@ -10,7 +10,7 @@
 owner = R80
 controller = R80
 add_core = R80
-
+add_core = R79
 culture = kamtarhid
 religion = high_philosophy
 

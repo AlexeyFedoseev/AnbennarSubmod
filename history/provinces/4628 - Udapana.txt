@@ -7,16 +7,16 @@ owner = R85
 controller = R85
 add_core = R85
 
+#BomjSBagetom Anbennar Submod
 #culture = brown_orc
 #religion = old_dookan
-
 culture = shamadhan
 religion = high_philosophy
 
 
 hre = no
 
-base_tax = 5
+base_tax = 4
 base_production = 4
 base_manpower = 4
 

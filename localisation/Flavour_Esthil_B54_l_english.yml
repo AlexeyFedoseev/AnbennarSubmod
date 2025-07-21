@@ -172,7 +172,7 @@
  B54_feast_of_the_dead_desc:0 "The bounty of the earth is reaped efficiently by armies of uncomplaining workers. Experiments in grafting and flesh stitching have lead to a never before seen abundance for our people."
 
  B54_many_silos_of_silvervord_title:0 "Silos of Silvervord"
- B54_many_silos_of_silvervord_desc:0 "With our 'innovations' in planting and harvesting, Esthíl is rapidly becoming the grain hub of Cannor. The other countries may complain that dead hands have touched their foods, but their people aren't, as the basic staple has become more avaliable then ever."
+ B54_many_silos_of_silvervord_desc:0 "With our 'innovations' in planting and harvesting, Esthíl is rapidly becoming the grain hub of Cannor. The other countries may complain that dead hands have touched their foods, but their people aren't, as the basic staple has become more avaliable than ever."
  
  B54_necronomics_title:0 "Necronomic Theory"
  B54_necronomics_desc:0 "First penned by a priest of Ara-turned-necromancer, the Necronomic Theory attempts to prove that the proper harnessing of the undead has risen the quality of life in Esthíl to never before seen levels. With the use of undead for menial labor, the living can pursue other past times and even live a life without worries - if, of course, they are subservient to the state."
@@ -245,7 +245,7 @@
  esthil_tt_4:0 "Provinces within Serpentsmarck, Steelhyl and Coalwoud areas change to §YIron§!, §YCopper§! or rarely §YGold§!.\n\nEach of the provinces has §Y-50% Production Efficiency§! and §Y+50% Development Cost§! for 5 years."
  esthil_tt_5:0 "Provinces within Nortmere and Southgate areas change to §YGrain§!, §YLivestock§! or rarely §YWine§! and §YTobacco§!\n\nEach of the provinces has §Y0.25 Goods Produced§!"
  esthil_tt_6:0 "Our Ruler has §GTalented Necromancy§! skill."
- esthil_tt_7:0 "Our §YMage Estate§! shall be replaced by a unique §PNecromancer Estate§!.\n\n§PNecromancer Estate§! also allow to use §YArmy of the Dead§! without necromancer-ruler."
+ esthil_tt_7:0 "Our §YMage Estate§! shall be replaced by a unique §PNecromancer Estate§!.\n\n§PNecromancer Estate§! also allow to use §YArmy of the Dead§! without necromancer-ruler."   #BomjSBagetom Anbennar Submod
  esthil_tt_8:0 "We have increased chance of success when studying Necromancy."
  esthil_tt_9:0 "Esthíl has Luciande as an ally or if Luciande does not exist, any other evil nation. This includes Witch-Kings, Liches and Vampires."
  esthil_tt_10:0 "Our Ruler has §BRenowned Necromancy§! skill."
