@@ -36,24 +36,22 @@ cyranvar_draft_in_the_army = {
 		#add_yearly_manpower = 6 #BomjSBagetom Anbennar Submod
 		add_yearly_manpower = 1.2 #BomjSBagetom Anbennar Submod
 		add_army_professionalism = -0.05
-
 		add_country_modifier = { #BomjSBagetom Anbennar Submod
 			name = cyranvar_draft_used
 			duration = 3650
 		}
-
 	}
 	
 	modifier = {
 		discipline = -0.025
-		modifier = { #BomjSBagetom Anbennar Submod
-			factor = 0
-			has_country_modifier = cyranvar_draft_used
-		}
 	}
 	
 	chance = {
 		factor = 1000
+		modifier = { #BomjSBagetom Anbennar Submod
+			factor = 0
+			has_country_modifier = cyranvar_draft_used
+		}
 	}
 
 	ai_will_do = {

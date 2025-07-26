@@ -4545,11 +4545,11 @@ country_event = { #Mage Revolt Leader Start (this is what shows up on-screen)
 		ai_chance = { factor = 1 }
 		custom_tooltip = command_shamans_revolt_hint_tt
 	}
-	option = {
-		name = the_command.82.b
-		ai_chance = { factor = 0 }
-		switch_tag = V98
-	}
+	#option = {	#BomjSBagetom Anbennar Submod
+	#	name = the_command.82.b
+	#	ai_chance = { factor = 0 }
+	#	switch_tag = V98
+	#}
 }
 country_event = { #Conquest of Temple from Shamans
 	id = the_command.83
@@ -5901,8 +5901,8 @@ country_event = { #Whispers From the Rivers
 
 	immediate = { #immediate so that timing doesn't screw up
 		#hidden_effect = { country_event = { id = the_command.111 days = 150 random = 60 } } #BomjSBagetom Anbennar Submod
-		#Y89 = { country_event = { id = yuanszi.1 } } submod TODO
-		#R11 = { country_event = { id = khadisrapur.0 days = 15 random = 30 } } submod TODO
+		Y89 = { country_event = { id = yuanszi.1 } }
+		R11 = { country_event = { id = khadisrapur.0 days = 15 random = 30 } }
 	}
 
 	option = {
@@ -5957,7 +5957,7 @@ country_event = { #Growing Concerns
 			#set_country_flag = command_sir_revolt_xia_participation #BomjSBagetom Anbennar Submod
 			set_country_flag = command_sir_revolt_oni_participation
 			set_country_flag = command_sir_revolt_rebel_participation
-			#set_country_flag = command_sir_revolt_khadisrapur_participation #BomjSBagetom Anbennar Submod
+			set_country_flag = command_sir_revolt_khadisrapur_participation
 			#set_country_flag = command_sir_revolt_sarnavan_participation #BomjSBagetom Anbennar Submod
 			#set_country_flag = command_sir_revolt_parraj_participation #BomjSBagetom Anbennar Submod
 			set_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation #BomjSBagetom Anbennar Submod
@@ -6038,12 +6038,12 @@ country_event = { #Emergency Meeting of the Kenu-Ike
 				limit = { has_country_flag = command_sir_revolt_oni_participation }
 				Y01 = { country_event = { id = the_command.115 } } #Azjakuma
 			}
-			#if = { #BomjSBagetom Anbennar Submod
-			#	limit = { has_country_flag = command_sir_revolt_khadisrapur_participation }
-			#	R11 = { country_event = { id = the_command.116 } } #Khadisrapur
-			#	R10 = { country_event = { id = the_command.116 } } #Sarnavan
-			#	R09 = { country_event = { id = the_command.116 } } #Parraj
-			#}
+			if = { 
+				limit = { has_country_flag = command_sir_revolt_khadisrapur_participation }
+				R11 = { country_event = { id = the_command.116 } } #Khadisrapur
+			#	R10 = { country_event = { id = the_command.116 } } #Sarnavan	#BomjSBagetom Anbennar Submod
+			#	R09 = { country_event = { id = the_command.116 } } #Parraj		#BomjSBagetom Anbennar Submod
+			}
 			if = { #BomjSBagetom Anbennar Submod
 				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
 				R07 = { country_event = { id = the_command.116 } } #Rajnadhaga
@@ -6203,7 +6203,7 @@ country_event = { #Sir asks for help from surviving Ruin Kingdoms
 		trigger_switch = {
 			on_trigger = tag
 			#BomjSBagetom Anbennar Submod
-			#R11 = { R62 = { clr_country_flag = command_sir_revolt_khadisrapur_participation } }
+			R11 = { R62 = { clr_country_flag = command_sir_revolt_khadisrapur_participation } }
 			#R10 = { R62 = { clr_country_flag = command_sir_revolt_sarnavan_participation } }
 			#R09 = { R62 = { clr_country_flag = command_sir_revolt_parraj_participation } }
 			R07 = { R62 = { clr_country_flag = command_sir_revolt_rajnadhaga_participation } }
@@ -6676,10 +6676,11 @@ country_event = { #Sir revolt starts
 			custom_tooltip = command_sir_revolt_ruin_kingdoms_participation_tt
 			if = {
 				limit = { has_country_flag = command_sir_revolt_khadisrapur_participation }
-				R11 = {
+				R11 = {	
 					create_alliance = R78
 					join_all_offensive_wars_of = R78
 					add_country_modifier = { name = command_revanchism duration = 3650 }
+					add_treasury = 1000		#BomjSBagetom Anbennar Submod
 				}
 			}
 			if = {
@@ -6699,7 +6700,7 @@ country_event = { #Sir revolt starts
 				}
 			}
 		}
-		if = { # TODO SUBMOD
+		if = {
 			limit = { has_country_flag = command_sir_revolt_yuanszi_participation }
 			Y89 = {
 				create_alliance = R78
@@ -7065,21 +7066,24 @@ country_event = { #Sir revolt end - Command loss
 			inherit = R64
 			set_capital = 4351 #intentional
 
-			# is that submod changes?? TODO protestit`
-			4516 = { cede_province = R11 }
+			#BomjSBagetom Anbennar Submod
+			4516 = { cede_province = R11 }	
 			4517 = { cede_province = R11 }
 			4518 = { cede_province = R11 }
 			4521 = { cede_province = R11 }
 			4522 = { cede_province = R11 }
+			4519 = { cede_province = R11 }
 
-			4523 = { cede_province = R12 }
-			4524 = { cede_province = R12 }
-			4513 = { cede_province = R12 }
-			4507 = { cede_province = R12 }
+			#BomjSBagetom Anbennar Submod
+			#4523 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4524 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4513 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4507 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
 
-			4624 = { cede_province = R85 }
-			4627 = { cede_province = R85 }
-			4628 = { cede_province = R85 }
+			#BomjSBagetom Anbennar Submod
+			#4624 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
+			#4627 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
+			#4628 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
 			every_owned_province = {
 				limit = { culture = boar_command }
 				add_core = R94
@@ -7133,12 +7137,15 @@ country_event = { #Sir revolt end - Command loss
 					OR = {
 						capital_scope = { region = shamakhad_region }
 						capital_scope = { region = jade_mines_region }
-						has_reform = wulin
+						#has_reform = wulin	#BomjSBagetom Anbennar Submod
 						tag = Y01
 					}
 					NOT = {
-						tag = R07
+						#tag = R07	#BomjSBagetom Anbennar Submod
 						tag = R08
+						tag = R10	#BomjSBagetom Anbennar Submod
+						tag = R09	#BomjSBagetom Anbennar Submod
+						tag = R34	#BomjSBagetom Anbennar Submod
 					}
 				}
 				every_known_country = {
@@ -7146,12 +7153,15 @@ country_event = { #Sir revolt end - Command loss
 						OR = {
 							capital_scope = { region = shamakhad_region }
 							capital_scope = { region = jade_mines_region }
-							has_reform = wulin
+							#has_reform = wulin	#BomjSBagetom Anbennar Submod
 							tag = Y01
 						}
 						NOT = {
-							tag = R07
+							#tag = R07	#BomjSBagetom Anbennar Submod
 							tag = R08
+							tag = R10	#BomjSBagetom Anbennar Submod
+							tag = R09	#BomjSBagetom Anbennar Submod
+							tag = R34	#BomjSBagetom Anbennar Submod
 						}
 					}
 					add_truce_with = PREV
@@ -7195,6 +7205,17 @@ country_event = { #Sir revolt end - Command loss
 				limit = { has_country_flag = command_sir_revolt_yuanszi_participation }
 				Y89 = { country_event = { id = the_command.125 } }
 			}
+			if = {		#BomjSBagetom Anbennar Submod
+				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
+				R07 = { country_event = { id = the_command.125 } }
+			}
+			if = {		#BomjSBagetom Anbennar Submod
+				limit = { has_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation }
+				R84 = { country_event = { id = the_command.125 } }
+				R12 = { country_event = { id = the_command.125 } }
+				R85 = { country_event = { id = the_command.125 } }
+			}
+			
 			R94 = {
 				define_ruler = {
 					name = "Zau"
@@ -7318,20 +7339,24 @@ country_event = { #Sir revolt end - Command loss
 			inherit = R64
 			set_capital = 4351 #intentional
 
-			4516 = { cede_province = R11 }
+			#BomjSBagetom Anbennar Submod
+			4516 = { cede_province = R11 }	
 			4517 = { cede_province = R11 }
 			4518 = { cede_province = R11 }
 			4521 = { cede_province = R11 }
 			4522 = { cede_province = R11 }
+			4519 = { cede_province = R11 }
 
-			4523 = { cede_province = R12 }
-			4524 = { cede_province = R12 }
-			4513 = { cede_province = R12 }
-			4507 = { cede_province = R12 }
+			#BomjSBagetom Anbennar Submod
+			#4523 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4524 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4513 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4507 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
 
-			4624 = { cede_province = R85 }
-			4627 = { cede_province = R85 }
-			4628 = { cede_province = R85 }
+			#BomjSBagetom Anbennar Submod
+			#4624 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
+			#4627 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
+			#4628 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
 			every_owned_province = {
 				limit = { culture = boar_command }
 				add_core = R94
@@ -7385,12 +7410,15 @@ country_event = { #Sir revolt end - Command loss
 					OR = {
 						capital_scope = { region = shamakhad_region }
 						capital_scope = { region = jade_mines_region }
-						has_reform = wulin
+						#has_reform = wulin	#BomjSBagetom Anbennar Submod
 						tag = Y01
 					}
 					NOT = {
-						tag = R07
+						#tag = R07	#BomjSBagetom Anbennar Submod
 						tag = R08
+						tag = R10	#BomjSBagetom Anbennar Submod
+						tag = R09	#BomjSBagetom Anbennar Submod
+						tag = R34	#BomjSBagetom Anbennar Submod
 					}
 				}
 				every_known_country = {
@@ -7398,12 +7426,15 @@ country_event = { #Sir revolt end - Command loss
 						OR = {
 							capital_scope = { region = shamakhad_region }
 							capital_scope = { region = jade_mines_region }
-							has_reform = wulin
+							#has_reform = wulin	#BomjSBagetom Anbennar Submod
 							tag = Y01
 						}
 						NOT = {
-							tag = R07
+							#tag = R07	#BomjSBagetom Anbennar Submod
 							tag = R08
+							tag = R10	#BomjSBagetom Anbennar Submod
+							tag = R09	#BomjSBagetom Anbennar Submod
+							tag = R34	#BomjSBagetom Anbennar Submod
 						}
 					}
 					add_truce_with = PREV
@@ -7446,6 +7477,16 @@ country_event = { #Sir revolt end - Command loss
 			if = {
 				limit = { has_country_flag = command_sir_revolt_yuanszi_participation }
 				Y89 = { country_event = { id = the_command.125 } }
+			}
+			if = {		#BomjSBagetom Anbennar Submod
+				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
+				R07 = { country_event = { id = the_command.125 } }
+			}
+			if = {		#BomjSBagetom Anbennar Submod
+				limit = { has_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation }
+				R84 = { country_event = { id = the_command.125 } }
+				R12 = { country_event = { id = the_command.125 } }
+				R85 = { country_event = { id = the_command.125 } }
 			}
 			R94 = {
 				define_ruler = {
@@ -7564,20 +7605,24 @@ country_event = { #Sir revolt end - Command loss
 			inherit = R64
 			set_capital = 4351 #intentional
 
-			4516 = { cede_province = R11 }
+			#BomjSBagetom Anbennar Submod
+			4516 = { cede_province = R11 }	
 			4517 = { cede_province = R11 }
 			4518 = { cede_province = R11 }
 			4521 = { cede_province = R11 }
 			4522 = { cede_province = R11 }
+			4519 = { cede_province = R11 }
 
-			4523 = { cede_province = R12 }
-			4524 = { cede_province = R12 }
-			4513 = { cede_province = R12 }
-			4507 = { cede_province = R12 }
+			#BomjSBagetom Anbennar Submod
+			#4523 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4524 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4513 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4507 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
 
-			4624 = { cede_province = R85 }
-			4627 = { cede_province = R85 }
-			4628 = { cede_province = R85 }
+			#BomjSBagetom Anbennar Submod
+			#4624 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
+			#4627 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
+			#4628 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
 			every_owned_province = {
 				limit = { culture = boar_command }
 				add_core = R94
@@ -7631,12 +7676,15 @@ country_event = { #Sir revolt end - Command loss
 					OR = {
 						capital_scope = { region = shamakhad_region }
 						capital_scope = { region = jade_mines_region }
-						has_reform = wulin
+						#has_reform = wulin	#BomjSBagetom Anbennar Submod
 						tag = Y01
 					}
 					NOT = {
-						tag = R07
+						#tag = R07	#BomjSBagetom Anbennar Submod
 						tag = R08
+						tag = R10	#BomjSBagetom Anbennar Submod
+						tag = R09	#BomjSBagetom Anbennar Submod
+						tag = R34	#BomjSBagetom Anbennar Submod
 					}
 				}
 				every_known_country = {
@@ -7644,12 +7692,15 @@ country_event = { #Sir revolt end - Command loss
 						OR = {
 							capital_scope = { region = shamakhad_region }
 							capital_scope = { region = jade_mines_region }
-							has_reform = wulin
+							#has_reform = wulin	#BomjSBagetom Anbennar Submod
 							tag = Y01
 						}
 						NOT = {
-							tag = R07
+							#tag = R07	#BomjSBagetom Anbennar Submod
 							tag = R08
+							tag = R10	#BomjSBagetom Anbennar Submod
+							tag = R09	#BomjSBagetom Anbennar Submod
+							tag = R34	#BomjSBagetom Anbennar Submod
 						}
 					}
 					add_truce_with = PREV
@@ -7692,6 +7743,16 @@ country_event = { #Sir revolt end - Command loss
 			if = {
 				limit = { has_country_flag = command_sir_revolt_yuanszi_participation }
 				Y89 = { country_event = { id = the_command.125 } }
+			}
+			if = {		#BomjSBagetom Anbennar Submod
+				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
+				R07 = { country_event = { id = the_command.125 } }
+			}
+			if = {		#BomjSBagetom Anbennar Submod
+				limit = { has_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation }
+				R84 = { country_event = { id = the_command.125 } }
+				R12 = { country_event = { id = the_command.125 } }
+				R85 = { country_event = { id = the_command.125 } }
 			}
 			R94 = {
 				define_ruler = {
@@ -7810,20 +7871,24 @@ country_event = { #Sir revolt end - Command loss
 			inherit = R64
 			set_capital = 4351 #intentional
 
-			4516 = { cede_province = R11 }
+			#BomjSBagetom Anbennar Submod
+			4516 = { cede_province = R11 }	
 			4517 = { cede_province = R11 }
 			4518 = { cede_province = R11 }
 			4521 = { cede_province = R11 }
 			4522 = { cede_province = R11 }
+			4519 = { cede_province = R11 }
 
-			4523 = { cede_province = R12 }
-			4524 = { cede_province = R12 }
-			4513 = { cede_province = R12 }
-			4507 = { cede_province = R12 }
+			#BomjSBagetom Anbennar Submod
+			#4523 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4524 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4513 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
+			#4507 = { if = { limit = { owned_by = ROOT } cede_province = R12 } }
 
-			4624 = { cede_province = R85 }
-			4627 = { cede_province = R85 }
-			4628 = { cede_province = R85 }
+			#BomjSBagetom Anbennar Submod
+			#4624 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
+			#4627 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
+			#4628 = { if = { limit = { owned_by = ROOT } cede_province = R85 } }
 			every_owned_province = {
 				limit = { culture = boar_command }
 				add_core = R94
@@ -7877,12 +7942,15 @@ country_event = { #Sir revolt end - Command loss
 					OR = {
 						capital_scope = { region = shamakhad_region }
 						capital_scope = { region = jade_mines_region }
-						has_reform = wulin
+						#has_reform = wulin	#BomjSBagetom Anbennar Submod
 						tag = Y01
 					}
 					NOT = {
-						tag = R07
+						#tag = R07	#BomjSBagetom Anbennar Submod
 						tag = R08
+						tag = R10	#BomjSBagetom Anbennar Submod
+						tag = R09	#BomjSBagetom Anbennar Submod
+						tag = R34	#BomjSBagetom Anbennar Submod
 					}
 				}
 				every_known_country = {
@@ -7890,12 +7958,15 @@ country_event = { #Sir revolt end - Command loss
 						OR = {
 							capital_scope = { region = shamakhad_region }
 							capital_scope = { region = jade_mines_region }
-							has_reform = wulin
+							#has_reform = wulin	#BomjSBagetom Anbennar Submod
 							tag = Y01
 						}
 						NOT = {
-							tag = R07
+							#tag = R07	BomjSBagetom Anbennar Submod
 							tag = R08
+							tag = R10	#BomjSBagetom Anbennar Submod
+							tag = R09	#BomjSBagetom Anbennar Submod
+							tag = R34	#BomjSBagetom Anbennar Submod
 						}
 					}
 					add_truce_with = PREV
@@ -7938,6 +8009,16 @@ country_event = { #Sir revolt end - Command loss
 			if = {
 				limit = { has_country_flag = command_sir_revolt_yuanszi_participation }
 				Y89 = { country_event = { id = the_command.125 } }
+			}
+			if = {		#BomjSBagetom Anbennar Submod
+				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
+				R07 = { country_event = { id = the_command.125 } }
+			}
+			if = {		#BomjSBagetom Anbennar Submod
+				limit = { has_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation }
+				R84 = { country_event = { id = the_command.125 } }
+				R12 = { country_event = { id = the_command.125 } }
+				R85 = { country_event = { id = the_command.125 } }
 			}
 			R94 = {
 				define_ruler = {
@@ -8124,6 +8205,7 @@ country_event = { #Everyone else victory notification
 				}
 				R11 = {
 					add_prestige = 25
+					add_treasury = 1000	#BomjSBagetom Anbennar Submod
 					add_country_modifier = { name = command_veterans_of_the_resistance duration = 9125 }
 				}
 				R10 = {
@@ -8151,7 +8233,21 @@ country_event = { #Everyone else victory notification
 					add_dip_power = 100
 					add_mil_power = 100
 				}
-				# submod TODO add rajnadhaga reward
+				R84 = { #BomjSBagetom Anbennar Submod
+					add_prestige = 25
+					add_country_modifier = { name = command_veterans_of_the_resistance duration = 9125 }
+				}
+				R12 = { #BomjSBagetom Anbennar Submod
+					add_prestige = 25
+					add_country_modifier = { name = command_veterans_of_the_resistance duration = 9125 }
+				}
+				R85 = { #BomjSBagetom Anbennar Submod
+					add_prestige = 25
+					add_country_modifier = { name = command_veterans_of_the_resistance duration = 9125 }
+				}
+				R07 = {	#BomjSBagetom Anbennar Submod
+					add_treasury = 1500
+				}
 			}
 		}
 	}

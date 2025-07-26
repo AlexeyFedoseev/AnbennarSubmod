@@ -4024,8 +4024,8 @@ artifice_invention_prototype_tanks = {
 	benefits = {
 		artificers_privilege_slots = 1
 		dragon_command_privilege_slots = 1
-		cavalry_fire = 2		#submod TODO
-		cavalry_shock = -1 #BomjSBagetom Anbennar Submod
+		cavalry_fire = 0.25
+		cavalry_power = 0.15
 		tec_brilliance_influence = 0.04
 	}
 	ai_will_do = {
@@ -4277,8 +4277,8 @@ artifice_invention_magic_missile_deployer = {
 	benefits = {
 		artificers_privilege_slots = 1
 		dragon_command_privilege_slots = 1
-		#shock_damage_received = -0.1 #BomjSBagetom Anbennar Submod
-		shock_damage_received = -0.05 #BomjSBagetom Anbennar Submod
+		#shock_damage_received = -0.1 	#BomjSBagetom Anbennar Submod
+		shock_damage = 0.075 			#BomjSBagetom Anbennar Submod
 		tec_technomancy_influence = 0.02
 	}
 	ai_will_do = {
@@ -4340,7 +4340,8 @@ artifice_invention_arithmatons = {
 		dragon_command_privilege_slots = 1
 		global_tax_modifier = 0.15
 		inflation_reduction = 0.1
-		interest = -0.5
+		#interest = -0.5		#BomjSBagetom Anbennar Submod
+		interest = -0.25		#BomjSBagetom Anbennar Submod
 		tec_mechanists_influence = 0.04
 	}
 	ai_will_do = {
@@ -4714,6 +4715,7 @@ artifice_invention_box_of_holding = {
 		#bonuses in paper provinces?
 		global_tariffs = 0.4
 		treasure_fleet_income = 0.1
+		colonist_placement_chance = 0.2		#BomjSBagetom Anbennar Submod
 		tec_technomancy_influence = 0.02
 	}
 	ai_will_do = {
@@ -12762,7 +12764,8 @@ artifice_invention_think_thought_transmitters  = {
 	benefits = {
 		artificers_privilege_slots = 1
 		dragon_command_privilege_slots = 1
-		improve_relation_modifier = 0.25
+		#improve_relation_modifier = 0.25	#BomjSBagetom Anbennar Submod
+		improve_relation_modifier = 1		#BomjSBagetom Anbennar Submod
 		tec_brilliance_influence = 0.04
 	}
 	ai_will_do = {

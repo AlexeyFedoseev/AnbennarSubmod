@@ -86,19 +86,16 @@ artifice_exo_arms = {
 	#reinforce_speed = -0.025
 }
 
-artifice_war_golems = {	#SUBMOD TODO
+artifice_war_golems = {
 	is_rajput_modifier = yes
 
-	shock_damage = 0.15		
-	#shock_damage_received = -0.15
-	fire_damage_received = -0.15 #BomjSBagetom Anbennar Submod
+	shock_damage = 0.25
 }
 
-artifice_war_golems_asra = {	#SUBMOD TODO
+artifice_war_golems_asra = {
 	is_rajput_modifier = yes
 
-	shock_damage = 0.2
-	shock_damage_received = -0.2
+	shock_damage = 0.35
 
 }
 
@@ -111,26 +108,23 @@ artifice_wandlocks = {
 	#reinforce_cost_modifier = 1
 }
 
-artifice_bioartificed_ascension = {	#SUBMOD TODO
+artifice_bioartificed_ascension = {
 	is_rajput_modifier = yes
 
-	fire_damage_received = -0.1
-	#morale_damage_received = -0.25 #BomjSBagetom Anbennar Submod
-	morale_damage_received = -0.20 #BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05
+	morale_damage_received = -0.15
 }
 
 artifice_personal_mageshields = {
 	is_rajput_modifier = yes
 
-	#shock_damage_received = -0.35 #BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.20 #BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.20
 }
 
 artifice_portable_turrets = {
 	is_rajput_modifier = yes
 
-	#shock_damage_received = -0.20 #BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.10 #BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.10
 }
 
 artifice_arcane_blaster = {
@@ -190,15 +184,15 @@ artifice_platinum_warsuit = {
 	discipline = 0.05
 }
 
-artifice_dragonscale_plating = {	#SUBMOD TODO
+artifice_dragonscale_plating = {
 	is_rajput_modifier = yes
 
-	shock_damage_received = -0.1
-	fire_damage_received = -0.1
+	shock_damage_received = -0.05
+	fire_damage_received = -0.05
 }
-artifice_giantshape_warframe = {	#SUBMOD TODO
+artifice_giantshape_warframe = {
 	is_rajput_modifier = yes
-	shock_damage_received = -0.2
+	shock_damage_received = -0.1
 	infantry_power = 0.1
 
 	#reinforce_speed = -0.075
@@ -206,7 +200,8 @@ artifice_giantshape_warframe = {	#SUBMOD TODO
 }
 
 artifice_arcane_battery_capital_complex = {
-	local_development_cost = -0.25
+	#local_development_cost = -0.25
+	local_development_cost = -0.35	#BomjSBagetom Anbennar Submod
 }
 
 artifice_veykoda_rune_protections = {

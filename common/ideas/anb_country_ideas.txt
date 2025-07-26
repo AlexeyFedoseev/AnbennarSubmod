@@ -29991,7 +29991,6 @@ L23_ideas = {
 		core_creation = -0.15
 	}
 	L23_gods_atoners = { #planetouched order that enforces empires will
-		discipline = 0.05 #BomjSBagetom Anbennar Submod	submod TODO
 		global_autonomy = -0.05
 	}
 	L23_aro_the_great = { #legendary founding
@@ -33537,7 +33536,7 @@ S81_ideas = {
 		burghers_loyalty_modifier = 0.05
 	}
 	S81_the_naga = { #The Naga have always been an important part of our society having a divine role in our religion. Sometimes however the interests of Naga clashed with the interests of our nobility causing unnecessary infighting. When our country united the Lizarfolk under one banner the status of naga was codified ending all disputes for good.
-		discipline = 0.05 #BomjSBagetom Anbennar Submod submod TODO
+		discipline = 0.05 #BomjSBagetom Anbennar Submod
 		missionaries = 1
 		global_unrest = -2
 	}
@@ -33552,7 +33551,6 @@ S81_ideas = {
 		fire_damage_received = -0.15
 	}
 	S81_enemies_within = { #Since the time our efforts to unite lizardfolk started we had not only had to face enemies in battlefields but a new enemy emerged. An enemy of our, the Hags manipulated our society since immemorial. The Hags use those who are foolish enough to bargain with them to further their own agenda- The Hags absolutely oppose a unified Lizardfolk state since it is a great threat for their influence in the rion and thus will do anything to stop us. We need to fight back, arrest those who bargain with them and guard our state from this terrible enemy.
-		land_morale = 0.15 #BomjSBagetom Anbennar Submod	submod TODO
 		global_spy_defence = 0.20
 		yearly_corruption = -0.1
 	}
@@ -45961,6 +45959,8 @@ Y96_ideas = { #Guwaamud
 		trade_steering = 0.2
 	}
 	bonus = {
+		cavalry_power = 0.1		#BomjSBagetom Anbennar Submod
+		cav_to_inf_ratio = 0.1	#BomjSBagetom Anbennar Submod
 		vassal_forcelimit_bonus = 1
 	}
 	Y96_guwaaduni_irredentism = {
