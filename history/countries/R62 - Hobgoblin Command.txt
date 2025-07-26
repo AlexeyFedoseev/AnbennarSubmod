@@ -19,6 +19,7 @@ historical_rival = R51 # Dhenijanraj
 	monarch = {
 		name = "Moguwon"
 		dynasty = "Wolfborn"
+		#BomjSBagetom Anbennar Submod
 		birth_date = 1414.2.8
 		adm = 3
 		dip = 4

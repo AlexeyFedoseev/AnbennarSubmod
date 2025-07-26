@@ -14,8 +14,7 @@ country_event = {
 	trigger = {
 		NOT = { has_country_flag = oak_flag }
 		has_reform = oak_monarchy_reform
-		NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-		NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+		NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 	}
 
 	immediate = {
@@ -44,11 +43,10 @@ country_event = {
 	#House X
 	option = {
 		name = cyranvar.1.a
-		ai_chance = { factor = 25 }	
+		ai_chance = { factor = 25 }
 		trigger = { 
 			has_country_flag = house_1
-			NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+			NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 		}
 		define_ruler = {
 			min_age = 121
@@ -76,11 +74,10 @@ country_event = {
 	#House X
 	option = {
 		name = cyranvar.1.b
-		ai_chance = { factor = 25 }	
+		ai_chance = { factor = 25 }
 		trigger = { 
 			has_country_flag = house_2
-			NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+			NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 		}
 		define_ruler = {
 			min_age = 121
@@ -108,11 +105,10 @@ country_event = {
 	#House X
 	option = {
 		name = cyranvar.1.c
-		ai_chance = { factor = 25 }	
+		ai_chance = { factor = 25 }
 		trigger = { 
 			has_country_flag = house_3
-			NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+			NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 		}
 		define_ruler = {
 			min_age = 121
@@ -140,11 +136,10 @@ country_event = {
 	#House X
 	option = {
 		name = cyranvar.1.e
-		ai_chance = { factor = 25 }	
+		ai_chance = { factor = 25 }
 		trigger = { 
 			has_country_flag = house_4
-			NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+			NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 		}
 		define_ruler = {
 			min_age = 121
@@ -172,11 +167,10 @@ country_event = {
 	#House X
 	option = {
 		name = cyranvar.1.f
-		ai_chance = { factor = 25 }	
+		ai_chance = { factor = 25 }
 		trigger = { 
 			has_country_flag = house_5
-			NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+			NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 		}
 		define_ruler = {
 			min_age = 121
@@ -204,11 +198,10 @@ country_event = {
 	#House X
 	option = {
 		name = cyranvar.1.g
-		ai_chance = { factor = 25 }	
+		ai_chance = { factor = 25 }
 		trigger = { 
 			has_country_flag = house_6
-			NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+			NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 		}
 		define_ruler = {
 			min_age = 121
@@ -236,11 +229,10 @@ country_event = {
 	#House X
 	option = {
 		name = cyranvar.1.h
-		ai_chance = { factor = 25 }	
+		ai_chance = { factor = 25 }
 		trigger = { 
 			has_country_flag = house_7
-			NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+			NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 		}
 		define_ruler = {
 			min_age = 121
@@ -268,11 +260,10 @@ country_event = {
 	#House X
 	option = {
 		name = cyranvar.1.i
-		ai_chance = { factor = 25 }	
+		ai_chance = { factor = 25 }
 		trigger = { 
 			has_country_flag = house_8
-			NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+			NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 		}
 		define_ruler = {
 			min_age = 121
@@ -300,11 +291,10 @@ country_event = {
 	#House Ghul
 	option = {
 		name = cyranvar.1.j
-		ai_chance = { factor = 25 }	
+		ai_chance = { factor = 25 }
 		trigger = { 
 			has_country_flag = house_9
-			NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+			NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 		}
 		define_ruler = {
 			min_age = 121
@@ -394,14 +384,20 @@ country_event = {
 				}
 			}
 		}
-		hidden_effect = { set_country_flag = cyranvar_isolationist_path }
+		hidden_effect = {
+			set_country_flag = cyranvar_isolationist_path
+			swap_non_generic_missions = yes #blocks the other path
+		}
 		custom_tooltip = cyranvar_isolationist_tooltip
 	}
 	#Open Border
 	option = {		
 		name = cyranvar.3.b
 		ai_chance = { factor = 60 }
-		hidden_effect = { set_country_flag = cyranvar_open_path }
+		hidden_effect = {
+			set_country_flag = cyranvar_open_path
+			swap_non_generic_missions = yes #blocks the other path
+		}
 		custom_tooltip = cyranvar_open_border_tooltip
 	}
 }
@@ -872,8 +868,7 @@ country_event = {
 		else = {
 			ruler_age = 200
 		}
-		NOT = { has_ruler_flag = is_a_vampire } #BomjSBagetom Anbennar Submod
-		NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
+		NOT = { ruler_can_revive = yes } #BomjSBagetom Anbennar Submod
 	}
 	
 	option = {

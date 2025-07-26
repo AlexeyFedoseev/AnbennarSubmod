@@ -856,6 +856,15 @@ country_decisions = {
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			
+			if = {
+				limit = {
+					NOT = {
+						capital = 1191
+					}
+				}
+				set_capital = 1191
+			}
+
 			add_prestige = 40
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -991,7 +1000,7 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
-	
+
 	discontinue_iosahar_system = {
 		major = yes
 		potential = {

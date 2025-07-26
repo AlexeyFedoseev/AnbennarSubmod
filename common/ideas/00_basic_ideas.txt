@@ -12,7 +12,7 @@
 aristocracy_ideas = {
 	category = MIL
 
-	bonus = {
+	bonus = { 
 		leader_siege = 1
 		nobles_loyalty_modifier = 0.1
 		#rajput_loyalty_modifier = 0.1
@@ -200,6 +200,7 @@ horde_gov_ideas = {
 			has_reform = centaur_settled
 			has_reform = great_centaur_horde
 			has_reform = pachyderm_masters
+			has_country_flag = rakkaz_unlocked_horde_gov_ideas #Rakkaz MT
 		}
 	}
 	
@@ -254,7 +255,7 @@ theocracy_gov_ideas = {
 	
 	trigger = {
 		OR = {
-		has_government_attribute = enables_divine_idea_group
+			has_government_attribute = enables_divine_idea_group
 			# ANBENNAR
 			has_country_flag = unlocked_theocracy_gov_ideas #Rakkaz MT
 		}
@@ -262,6 +263,8 @@ theocracy_gov_ideas = {
 	servants_of_god = {
 		devotion = 1
 		legitimacy = 0.5
+		horde_unity = 0.5
+		republican_tradition = 0.15
 		development_cost = -0.05
 	}
 	by_the_grace_of_god = {
@@ -496,6 +499,10 @@ religious_ideas = {
 		modifier = {
 			factor = 1.25
 			NOT = { religious_unity = 0.5 }
+		}
+		modifier = {
+			factor = 0
+			tag = R62
 		}
 		modifier = {
 			factor = 0.75
@@ -1623,9 +1630,9 @@ expansion_ideas = {
 			NOT = { has_idea_group = exploration_ideas }
 			NOT = { is_colonial_nation = yes }
 			OR = {
-			NOT = {
-				any_owned_province = {
-					has_empty_adjacent_province = yes
+				NOT = {
+					any_owned_province = {
+						has_empty_adjacent_province = yes
 					}
 				}
 				AND = {
@@ -2000,6 +2007,14 @@ court_ideas = { #1.35
 		modifier = {
 			factor = 0.75
 			NOT = { monthly_dip = 8 } 
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				is_emperor_of_china = yes
+				is_emperor = yes
+				has_reform = raja_reform
+			}
 		}
 	}
 }

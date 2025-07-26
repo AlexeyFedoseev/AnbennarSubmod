@@ -443,7 +443,7 @@ country_event = {
 		name = magic_ruler.1.dd
 		trigger = {
 			OR = {
-			has_ruler_flag = abjuration_3
+				has_ruler_flag = abjuration_3
 				AND = {
 					culture_group = mengi
 					any_owned_province = { #wezinmesig lvl diff
@@ -489,14 +489,14 @@ country_event = {
 				}
 			}
 			else = {
-			every_owned_province = {
-				limit = { is_in_capital_area = yes }
-				add_province_modifier = {
-					name = magic_realm_abjuration_field_of_freedom
-					duration = 1825
+				every_owned_province = {
+					limit = { is_in_capital_area = yes }
+					add_province_modifier = {
+						name = magic_realm_abjuration_field_of_freedom
+						duration = 1825
+					}
 				}
 			}
-		}
 		}
 		magic_field_adm_cost = yes
 		magic_casted_spell = yes
@@ -515,14 +515,14 @@ country_event = {
 				}
 			}
 			else = {
-			every_owned_province = {
-				limit = { is_in_capital_area = yes }
-				add_province_modifier = {
-					name = magic_realm_abjuration_field_of_freedom
-					duration = 1825
+				every_owned_province = {
+					limit = { is_in_capital_area = yes }
+					add_province_modifier = {
+						name = magic_realm_abjuration_field_of_freedom
+						duration = 1825
+					}
 				}
 			}
-		}
 		}
 		custom_tooltip = magic_field_effect_tt
 		tooltip = {
@@ -537,11 +537,11 @@ country_event = {
 				}
 			}
 			else ={
-			add_province_modifier = {
-				name = magic_realm_abjuration_field_of_freedom
-				duration = 1825
+				add_province_modifier = {
+					name = magic_realm_abjuration_field_of_freedom
+					duration = 1825
+				}
 			}
-		}
 		}
 
 		set_country_flag = abjuration_menu
@@ -622,7 +622,7 @@ country_event = {
 		name = magic_ruler.1.e
 		trigger = {
 			OR = {
-			has_ruler_flag = abjuration_3
+				has_ruler_flag = abjuration_3
 				AND = {
 					culture_group = mengi 
 					any_owned_province = { #wezinmesig lvl diff
@@ -670,14 +670,14 @@ country_event = {
 				}
 			}
 			else = {
-			every_owned_province = {
-				limit = { is_in_capital_area = yes controlled_by = ROOT }
-				add_province_modifier = {
-					name = magic_realm_abjuration_field_of_forbiddance
-					duration = 1825
+				every_owned_province = {
+					limit = { is_in_capital_area = yes controlled_by = ROOT }
+					add_province_modifier = {
+						name = magic_realm_abjuration_field_of_forbiddance
+						duration = 1825
+					}
 				}
 			}
-		}
 		}
 		custom_tooltip = magic_field_effect_tt
 		tooltip = {
@@ -692,11 +692,11 @@ country_event = {
 				}
 			}
 			else ={
-			add_province_modifier = {
-				name = magic_realm_abjuration_field_of_forbiddance
-				duration = 1825
+				add_province_modifier = {
+					name = magic_realm_abjuration_field_of_forbiddance
+					duration = 1825
+				}
 			}
-		}
 		}
 
 		set_country_flag = abjuration_menu
@@ -777,7 +777,7 @@ country_event = {
 		name = magic_ruler.1.f
 		trigger = {
 			OR = {
-			has_ruler_flag = abjuration_3
+				has_ruler_flag = abjuration_3
 				AND = {
 					culture_group = mengi
 					any_owned_province = { ##wezinmesig lvl diff
@@ -814,10 +814,10 @@ country_event = {
 					 culture_group = mengi
 					 any_owned_province = { has_great_project = { type = azmeras_wezinmesig tier = 2 } }
 				}
-			every_owned_province = {
-				limit = { is_in_capital_area = yes }
-				add_province_modifier = {
-					name = magic_realm_abjuration_field_of_fortification
+				every_owned_province = {
+					limit = { is_in_capital_area = yes } 
+					add_province_modifier = {
+						name = magic_realm_abjuration_field_of_fortification
 						duration = 3650
 					}
 					if = {
@@ -836,19 +836,19 @@ country_event = {
 					limit = { is_in_capital_area = yes }
 					add_province_modifier = {
 						name = magic_realm_abjuration_field_of_fortification
-					duration = 1825
-				}
-					if = { #Kheionai windward boost
-					limit = {
-						region = alecand_region
+						duration = 1825
 					}
-					add_temporary_windward_level = {
-						level = 1
-						length = 1825
+					if = { #Kheionai windward boost
+						limit = {
+							region = alecand_region
+						}
+						add_temporary_windward_level = {
+							level = 1
+							length = 1825
+						}
 					}
 				}
 			}
-		}
 		}
 		magic_field_adm_cost = yes
 		magic_casted_spell = yes
@@ -876,23 +876,23 @@ country_event = {
 				}
 			}
 			else = {
-			every_owned_province = {
-				limit = { is_in_capital_area = yes }
-				add_province_modifier = {
-					name = magic_realm_abjuration_field_of_fortification
-					duration = 1825
-				}
-				if = {
-					limit = {
-						region = alecand_region
+				every_owned_province = {
+					limit = { is_in_capital_area = yes }
+					add_province_modifier = {
+						name = magic_realm_abjuration_field_of_fortification
+						duration = 1825
 					}
-					add_temporary_windward_level = {
-						level = 1
-						length = 1825
+					if = {
+						limit = {
+							region = alecand_region
+						}
+						add_temporary_windward_level = {
+							level = 1
+							length = 1825
+						}
 					}
 				}
 			}
-		}
 		}
 		custom_tooltip = magic_field_effect_tt
 		tooltip = {
@@ -907,14 +907,14 @@ country_event = {
 				}
 			}
 			else ={
-			add_province_modifier = {
-				name = magic_realm_abjuration_field_of_fortification
-				duration = 1825
+				add_province_modifier = {
+					name = magic_realm_abjuration_field_of_fortification
+					duration = 1825
+				}
 			}
 		}
-		}
 		set_country_flag = abjuration_menu
-		hidden_effect = { country_event = { id = magic_ruler.9 } }
+			hidden_effect = { country_event = { id = magic_ruler.9 } }
 
 		custom_tooltip = magic_field_desc_tt
 	}
@@ -1695,6 +1695,7 @@ country_event = {
 			}
 			NOT = { has_ruler_flag = magic_project_summoning_complete }
 			NOT = { magical_project_in_progress = yes }
+			NOT = { is_or_was_tag = { tag = Y26 } }
 			adm_power = 50
 			dip_power = 50
 			mil_power = 50
@@ -1730,6 +1731,7 @@ country_event = {
 					}
 				}
 			}
+			NOT = { is_or_was_tag = { tag = Y26 } }
 		}
 		custom_tooltip = school_mastery_not_enough_summoning_tt
 
@@ -1766,6 +1768,7 @@ country_event = {
 				NOT = { dip_power = 50 }
 				NOT = { mil_power = 50 }
 			}
+			NOT = { is_or_was_tag = { tag = Y26 } }
 		}
 		if = { limit = { has_ruler_flag = magic_project_summoning_complete }
 			custom_tooltip = magic_project_already_done_tt
@@ -3214,6 +3217,7 @@ country_event = {
 			}
 			NOT = { has_ruler_flag = magic_project_summoning_complete }
 			NOT = { magical_project_in_progress = yes }
+			NOT = { is_or_was_tag = { tag = Y26 } }
 			adm_power = 50
 			dip_power = 50
 			mil_power = 50
@@ -3249,6 +3253,7 @@ country_event = {
 					}
 				}
 			}
+			NOT = { is_or_was_tag = { tag = Y26 } }
 		}
 		custom_tooltip = school_mastery_not_enough_summoning_tt
 
@@ -3285,6 +3290,7 @@ country_event = {
 				NOT = { dip_power = 50 }
 				NOT = { mil_power = 50 }
 			}
+			NOT = { is_or_was_tag = { tag = Y26 } }
 		}
 		if = { limit = { has_ruler_flag = magic_project_summoning_complete }
 			custom_tooltip = magic_project_already_done_tt
@@ -6473,7 +6479,17 @@ country_event = {
 		name = magic_ruler.5.cm	#unavailable - low mastery
 		trigger = {
 			ai = no
-			NOT = { has_ruler_flag = evocation_1 }
+			OR = {
+				AND = {
+					NOT = { tag = F29 }
+					NOT = { has_ruler_flag = evocation_1 }
+				}
+				AND = {
+					tag = F29
+					NOT = { has_ruler_flag = evocation_1 }
+					NOT = { has_ruler_flag = zokka_phoenix_flag }
+				}
+			}
 		}
 		set_country_flag = evocation_menu
 		clr_ruler_flag = magic_just_casted_spell
@@ -7613,6 +7629,7 @@ country_event = {
 			}
 			NOT = {
 				#BomjSBagetom Anbennar Submod
+				has_ruler_flag = illusion_2
 				#AND = {
 				#	has_ruler_flag = enchantment_1
 				#	OR = {
@@ -7626,7 +7643,6 @@ country_event = {
 				#		}
 				#	}
 				#}
-				has_ruler_flag = illusion_2
 			}
 			dip_power = 25
 			adm_power = 5
@@ -7660,19 +7676,18 @@ country_event = {
 		trigger = {
 			ai = no
 			NOT = {
-				#BomjSBagetom Anbennar Submod
-				#OR = {
-				#	has_ruler_flag = illusion_2
-				#	AND = {
-				#		has_ruler_flag = illusion_1
-				#		OR = {
-				#			has_ruler_flag = huli_jing_patron
-				#			has_ruler_flag = gumiho_patron
-				#		}
-				#	}
-				#}
-				has_ruler_flag = illusion_1
+				OR = {
+					has_ruler_flag = illusion_2
+					AND = {
+						has_ruler_flag = illusion_1
+						OR = {
+							has_ruler_flag = huli_jing_patron
+							has_ruler_flag = gumiho_patron
+						}
+					}
+				}
 			}
+			#BomjSBagetom Anbennar Submod
 			#NOT = {
 			#	AND = {
 			#		has_ruler_flag = enchantment_1
@@ -7689,21 +7704,19 @@ country_event = {
 			#	}
 			#}
 		}
-		#BomjSBagetom Anbennar Submod
-		custom_tooltip = school_mastery_not_talented_tt
-		#if = {
-		#	limit = {
-		#		OR = {
-		#			has_ruler_flag = huli_jing_patron
-		#			has_ruler_flag = gumiho_patron
-		#		}
-		#	}
-		#	custom_tooltip = school_mastery_not_talented_tt
-		#	custom_tooltip = magic_spell_available_by_patron_tt
-		#}
-		#else = {
-		#	custom_tooltip = school_mastery_not_renowned_tt
-		#}
+		if = {
+			limit = {
+				OR = {
+					has_ruler_flag = huli_jing_patron
+					has_ruler_flag = gumiho_patron
+				}
+			}
+			custom_tooltip = school_mastery_not_talented_tt
+			custom_tooltip = magic_spell_available_by_patron_tt
+		}
+		else = {
+			custom_tooltip = school_mastery_not_renowned_tt
+		}
 
 		set_country_flag = illusion_menu
 		clr_ruler_flag = magic_just_casted_spell
@@ -7726,34 +7739,31 @@ country_event = {
 		trigger = {
 			ai = no
 			OR = {
-				#BomjSBagetom Anbennar Submod
-				#has_ruler_flag = illusion_2
-				#AND = {
-				#	has_ruler_flag = illusion_1
-				#	OR = {
-				#		has_ruler_flag = huli_jing_patron
-				#		has_ruler_flag = gumiho_patron
-				#	}
-				#}
-				has_ruler_flag = illusion_1
-			}
-			NOT = {
-				#BomjSBagetom Anbennar Submod
-				#AND = {
-				#	has_ruler_flag = enchantment_1
-				#	OR = {
-				#		has_ruler_flag = illusion_2
-				#		AND = {
-				#			has_ruler_flag = illusion_1
-				#			OR = {
-				#				has_ruler_flag = huli_jing_patron
-				#				has_ruler_flag = gumiho_patron
-				#			}
-				#		}
-				#	}
-				#}
 				has_ruler_flag = illusion_2
+				AND = {
+					has_ruler_flag = illusion_1
+					OR = {
+						has_ruler_flag = huli_jing_patron
+						has_ruler_flag = gumiho_patron
+					}
+				}
 			}
+			#BomjSBagetom Anbennar Submod
+			#NOT = {
+			#	AND = {
+			#		has_ruler_flag = enchantment_1
+			#		OR = {
+			#			has_ruler_flag = illusion_2
+			#			AND = {
+			#				has_ruler_flag = illusion_1
+			#				OR = {
+			#					has_ruler_flag = huli_jing_patron
+			#					has_ruler_flag = gumiho_patron
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
 			OR = {
 				NOT = { dip_power = 25 }
 				NOT = { adm_power = 5 }
@@ -8972,8 +8982,7 @@ country_event = {
 		trigger = {
 			has_ruler_flag = necromancy_3
 			NOT = { magical_project_in_progress = yes }
-			NOT = { has_ruler_flag = is_a_vampire }
-			NOT = { has_ruler_flag = is_a_lich }
+			NOT = { ruler_is_immortal = yes }
 			NOT = { has_ruler_flag = xhazob_patron }
 			adm_power = 300
 			dip_power = 300
@@ -9040,8 +9049,7 @@ country_event = {
 			ai = no
 			has_ruler_flag = necromancy_3
 			OR = {
-				has_ruler_flag = is_a_vampire
-				has_ruler_flag = is_a_lich
+				ruler_is_immortal = yes
 				magical_project_in_progress = yes
 				NOT = { adm_power = 300 }
 				NOT = { dip_power = 300 }
@@ -9062,7 +9070,7 @@ country_event = {
 			else_if = { limit = { magical_project_in_progress = yes }
 				custom_tooltip = magic_other_project_in_progress_tt
 			}
-			else_if = { limit = { has_ruler_flag = is_a_vampire }
+			else_if = { limit = { ruler_is_vampire = yes }
                 custom_tooltip = magic_vampires_cant_be_liches_tt
             }
             else_if = { limit = { has_country_flag = gemradcurt_immariel_rules }
@@ -14469,6 +14477,7 @@ country_event = {
 		NOT = {
 			heir_has_mage_personality = yes
 			has_heir_flag = heir_consort_mage_personality
+			has_reform = peasants_theocracy_reform
 		}
 
 		NOT = { ruler_age = 60 }
@@ -14484,6 +14493,7 @@ country_event = {
 			}
 		}
 		NOT = { has_country_flag = disabled_heir_events }
+		NOT = { has_country_modifier = anb_heir_cannot_die }
 	}
 
 	mean_time_to_happen = {
@@ -14797,6 +14807,7 @@ country_event = {
 		NOT = {
 			heir_has_mage_personality = yes
 			has_heir_flag = heir_consort_mage_personality
+			has_reform = peasants_theocracy_reform
 		}
 
 		NOT = { heir_age = 16 }
@@ -14964,7 +14975,10 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		has_government_attribute = always_mage
+		OR = {
+			has_government_attribute = always_mage
+			has_country_flag = always_mage
+		}
 		NOT = { ruler_has_mage_personality = yes }
 	}
 	# fired from the on_new_monarch on_action

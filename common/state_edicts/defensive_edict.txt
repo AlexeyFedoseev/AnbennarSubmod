@@ -49,7 +49,7 @@ edict_defensive_edict = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		factor = 0
 	}

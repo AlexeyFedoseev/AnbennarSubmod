@@ -110,16 +110,15 @@ chien_1 = {
             }
         }
 
-        trigger = { 
+        trigger = {
+            manpower = 5
             #BomjSBagetom Anbennar Submod
-            #manpower = 5
             #thuongidut_area = {
             #    type = all
             #    owned_by = ROOT
             #    has_manpower_building_trigger = yes
             #}
-
-            manpower = 5
+            #BomjSBagetom Anbennar Submod
             OR = {
                 4729 = {
                     owned_by = ROOT
@@ -1653,7 +1652,7 @@ chien_4 = {
 
         trigger = {
             4955 = {
-                base_production = 10
+                base_production = 8
                 NOT = { devastation = 1 }
             }
 		}
@@ -1688,6 +1687,7 @@ chien_4 = {
                             renaissance = 100
                             province_has_center_of_trade_of_level = 2
                             infantry_in_province = 3
+                            has_any_ongoing_construction = no
                         }
                     }
                 }
@@ -1699,16 +1699,19 @@ chien_4 = {
                 renaissance = 100
                 province_has_center_of_trade_of_level = 2
                 infantry_in_province = 3
+				has_any_ongoing_construction = no
             }
             4731 = { #Kaisanthi
                 renaissance = 100
                 province_has_center_of_trade_of_level = 2
-                infantry_in_province = 3                
+                infantry_in_province = 3    
+				has_any_ongoing_construction = no          
             }
             4751 = { #Nirakvonkai
                 renaissance = 100
                 province_has_center_of_trade_of_level = 2
                 infantry_in_province = 3
+				has_any_ongoing_construction = no
             }
 		}
 

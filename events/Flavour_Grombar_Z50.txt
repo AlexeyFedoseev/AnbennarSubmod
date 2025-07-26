@@ -27,7 +27,7 @@ country_event = {
 		increase_ruler_mil_effect = yes
 		custom_tooltip = orc_grombar_tooltip
 		hidden_effect = { set_country_flag = orc_grombar }
-		swap_non_generic_missions = yes #BomjSBagetom Anbennar Submod
+		hidden_effect = { swap_non_generic_missions = yes }
 	}
 	
 	# Half-Orc Path
@@ -50,7 +50,7 @@ country_event = {
 		custom_tooltip = half_orc_grombar_tooltip
 		hidden_effect = { set_country_flag = half_orc_grombar }
 		hidden_effect = { set_ruler_flag = decrease_chance_of_ozarm_chadash }
-		swap_non_generic_missions = yes #BomjSBagetom Anbennar Submod
+		hidden_effect = { swap_non_generic_missions = yes }
 	}
 }
 
@@ -977,20 +977,20 @@ country_event = {
 			}
 			if = {
 				limit = { Z49 = { vassal_of = Z18 } }
-			Z49 = {
-				country_event = {
-					id = flavor_grombar.29
-					days = 1
+				Z49 = {
+					country_event = {
+						id = flavor_grombar.29
+						days = 1
+					}
 				}
-			}
 			}
 			if = {
 				limit = { Z48 = { vassal_of = Z18 } }
-			Z48 = {
-				country_event = {
-					id = flavor_grombar.29
-					days = 1
-				}
+				Z48 = {
+					country_event = {
+						id = flavor_grombar.29
+						days = 1
+					}
 				}
 			}
 		}
@@ -1309,10 +1309,10 @@ country_event = {
 			}
 			if = {
 				limit = { Z49 = { vassal_of = Z18 } }
-			Z49 = {
-				country_event = {
-					id = flavor_grombar.29
-					days = 1
+				Z49 = {
+					country_event = {
+						id = flavor_grombar.29
+						days = 1
 					}
 				}
 			}
@@ -1336,7 +1336,20 @@ country_event = {
 	
 	# Human realm once again
 	option = {
-		name = flavor_grombar.28.a
+		name = flavor_grombar.28.a	
+		#BomjSBagetom Anbennar Submod
+		#701 = {
+		#	add_core = ROOT
+		#}
+		#709 = {
+		#	add_core = ROOT
+		#}
+		#712 = {
+		#	add_core = ROOT
+		#}
+		#713 = {
+		#	add_core = ROOT
+		#}
 		declare_war_with_cb = {
 			casus_belli = cb_crovis_invasion
 			who = Z45
@@ -1351,6 +1364,18 @@ country_event = {
 				country_event = {
 					id = flavor_grombar.51
 					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = Z22
+			}
+			Z22 = {
+				country_event = {
+					id = flavour_celmaldor.19
+					days = 40
+					random = 20
 				}
 			}
 		}
@@ -1377,8 +1402,6 @@ country_event = {
 			}
 		}	
 		clr_country_flag = frozenmaw_reachman_vassal
-
-		
 		#BomjSBagetom Anbennar Submod
 		#Z18 = {
 		#	europe = {
@@ -1388,7 +1411,7 @@ country_event = {
 		#		}
 		#		add_core = Z18
 		#	}
-		#}
+		#}		
 		Z45 = {
 			vassalize = ROOT
 		}
@@ -1450,6 +1473,7 @@ country_event = {
 			truce_with = Z18
 			Z18 = { exists = no }
 		}	
+		NOT = { is_subject_of = Z88 }
 	}
 	
 	#Victory for Vrorenmarch
@@ -1538,29 +1562,29 @@ country_event = {
 			}
 			vassalize = Z48
 		}
-
+		
 		if = {
 			limit = { NOT = { exists = Z27 } }
-		release_with_religion_and_culture = { tag = Z27 religion = regent_court culture = white_reachman }
-		create_subject = {
-			subject_type = vassal
-			subject = Z27
-		}
+			release_with_religion_and_culture = { tag = Z27 religion = regent_court culture = white_reachman }
+			create_subject = {
+				subject_type = vassal
+				subject = Z27
+			}
 		}
 		if = {
 			limit = { NOT = { exists = Z48 } }
-		release_with_religion_and_culture = { tag = Z48 religion = regent_court culture = white_reachman }
-		create_subject = {
-			subject_type = vassal
-			subject = Z48
-		}
+			release_with_religion_and_culture = { tag = Z48 religion = regent_court culture = white_reachman }
+			create_subject = {
+				subject_type = vassal
+				subject = Z48
+			}
 		}
 		if = {
 			limit = { NOT = { exists = Z49 } }
-		release_with_religion_and_culture = { tag = Z49 religion = regent_court culture = white_reachman }
-		create_subject = {
-			subject_type = vassal
-			subject = Z49
+			release_with_religion_and_culture = { tag = Z49 religion = regent_court culture = white_reachman }
+			create_subject = {
+				subject_type = vassal
+				subject = Z49
 			}
 		}
 		hidden_effect = {
@@ -1949,9 +1973,9 @@ country_event = {
 				duration = 3650
 			}
 			hidden_effect = {
-			add_country_modifier = {
-				name = half_orcish_military
-				duration = -1
+				add_country_modifier = { 
+					name = half_orcish_military
+					duration = -1  
 					hidden = yes
 				}
 			}
@@ -1976,9 +2000,9 @@ country_event = {
 				duration = 3650
 			}
 			hidden_effect = {
-			add_country_modifier = {
-				name = half_orcish_military
-				duration = -1
+				add_country_modifier = { 
+					name = half_orcish_military
+					duration = -1  
 					hidden = yes
 				}
 			}
@@ -2017,6 +2041,7 @@ country_event = {
 		has_country_flag = half_orc_grombar
 		culture_is_half_orcish = yes
 		is_year = 1550
+		any_owned_province = { has_large_half_orcish_minority_trigger = yes }
 	}
 	
 	immediate = {
@@ -2071,10 +2096,7 @@ country_event = {
 	# Influx of Half-Orcs
 	option = {
 		name = flavor_grombar.24.a
-		if = {
-			limit = { has_country_flag = removing_monstrous }
-			decrease_monstrous_1 = yes
-		}
+		decrease_monstrous_1 = yes
 		event_target:grombar_migration_province = {
 			if = {
 				limit = { culture_is_half_orcish = yes }
@@ -2104,15 +2126,8 @@ country_event = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					owner = {
-						has_country_flag = removing_monstrous
-					}
-				}
-				owner = {
-					decrease_monstrous_1 = yes
-				}
+			owner = {
+				decrease_monstrous_1 = yes
 			}
 			add_province_modifier = {
 				name = grombar_escanni_half_orc_migrants
@@ -2235,12 +2250,7 @@ province_event = {
 	option = {
 		name = flavor_grombar.27.a
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = removing_monstrous
-				}
-				decrease_monstrous_2 = yes 
-			}
+			decrease_monstrous_2 = yes
 		}
 		add_colonysize = 1000
 		change_culture = half_orc
@@ -2821,9 +2831,9 @@ country_event = {
 				duration = 3650
 			}
 			hidden_effect = {
-			add_country_modifier = {
-				name = half_orcish_military
-				duration = -1
+				add_country_modifier = { 
+					name = half_orcish_military
+					duration = -1  
 					hidden = yes
 				}
 			}
@@ -2847,9 +2857,9 @@ country_event = {
 				duration = 3650
 			}
 			hidden_effect = {
-			add_country_modifier = {
-				name = half_orcish_military
-				duration = -1
+				add_country_modifier = { 
+					name = half_orcish_military
+					duration = -1  
 					hidden = yes
 				}
 			}
@@ -2870,10 +2880,7 @@ country_event = {
 			name = grombar_conversion_zeal_humanist
 			duration = 3650
 		}
-		if = {
-			limit = { has_country_flag = removing_monstrous }
-			decrease_monstrous_5 = yes
-		}
+		decrease_monstrous_5 = yes
 		if = {
 			limit = { ai = yes }
 			add_country_modifier = {
@@ -2994,10 +3001,7 @@ country_event = {
 			name = grombar_weak_religion
 			duration = -1
 		}
-		if = {
-			limit = { has_country_flag = removing_monstrous }
-			increase_monstrous_5 = yes
-		}
+		increase_monstrous_5 = yes
 		random_owned_province = {
 			limit = { 
 				culture_group = orcish
@@ -3119,10 +3123,7 @@ country_event = {
 			name = grombar_conversion_zeal
 			duration = -1
 		}
-		if = {
-			limit = { has_country_flag = removing_monstrous }
-			decrease_monstrous_5 = yes
-		}
+		decrease_monstrous_5 = yes
 	}
 	
 	# Stay Old Dookan
@@ -3148,10 +3149,7 @@ country_event = {
 			name = grombar_weak_religion
 			duration = -1
 		}
-		if = {
-			limit = { has_country_flag = removing_monstrous }
-			increase_monstrous_5 = yes
-		}
+		increase_monstrous_5 = yes
 	}
 }
 
@@ -3257,17 +3255,14 @@ country_event = {
 		}
 	}
 
-	option = {		# Support his assasination
+	option = {		# Support his assassination
 		name = flavor_grombar.101.a
 		ai_chance = {
 			factor = 50
 		}
 		reduce_stability_or_adm_power = yes
 		add_prestige = 25
-		if = {
-			limit = { has_country_flag = removing_monstrous }
-			increase_monstrous_2 = yes
-		}
+		increase_monstrous_2 = yes
 		every_owned_province = {
 			limit = {
 				has_province_flag = corinite_religious_rebels
@@ -3284,10 +3279,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		reduce_stability_or_adm_power = yes
 		add_prestige = -25
-		if = {
-			limit = { has_country_flag = removing_monstrous }
-			decrease_monstrous_2 = yes
-		}
+		decrease_monstrous_2 = yes
 		every_owned_province = {
 			limit = {
 				has_province_flag = old_dookan_religious_rebels
@@ -3420,166 +3412,166 @@ province_event = {
 	}
 }
 
-# The Assassination of the Gray King
-country_event = {
-	id = flavor_grombar.103
-	title = flavor_grombar.103.t
-	desc = flavor_grombar.103.d
-	picture = ASSASSINATION_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	trigger = {
-		had_country_flag = {
-			flag = grombar_wars_of_religion_active
-			days = 1825
-		}
-		has_disaster = grombar_wars_of_religion
-		government = monarchy
-		has_regency = no
-		is_subject = no
-		ruler_religion = corinite
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_saved_name = {
-				key = grombar_royal_assasin
-				type = advisor
-				scope = ROOT
-			}
-		}
-	}
-	
-	# Corinite Ruler
-	option = {
-		name = flavor_grombar.103.a
-		ai_chance = {
-			factor = 100
-		}
-		if = {
-			limit = {
-				has_heir = yes
-			}
-			kill_heir = { allow_new_heir = no }
-		}
-
-		if = {
-			limit = { primary_culture = grombar_half_orc }
-			define_heir = {
-				name = "Korz"
-				dynasty = "Frozenmaw"
-				age = 23
-				adm = 2
-				dip = 6
-				mil = 4
-				culture = grombar_half_orc
-				religion = corinite
-			}
-		}
-		else = {
-			define_heir = {
-				name = "Korz"
-				dynasty = "Frozenmaw"
-				age = 23
-				adm = 2
-				dip = 6
-				mil = 4
-				culture = half_orc
-				religion = corinite
-			}
-		kill_ruler = yes
-		reduce_stability_or_adm_power = yes
-		}
-		if = {
-			limit = { NOT = { religion = corinite } }
-			reduce_stability_or_adm_power = yes
-			change_religion = corinite
-			remove_country_modifier = grombar_weak_religion
-			add_country_modifier = {
-				name = grombar_conversion_zeal
-				duration = -1
-			}
-		}
-		set_ruler_flag = grombar_corinite_ruler
-		random_owned_province = {
-			limit = {
-				superregion = gerudia_superregion
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				leader = "Gunk"
-				leader_dynasty = "Doombringer"
-				size = 3
-			}
-		}
-	}
-	
-	# Old Dookan ruler
-	option = {
-		name = flavor_grombar.103.b
-		ai_chance = {
-			factor = 0
-		}
-		if = {
-			limit = {
-				has_heir = yes
-			}
-			kill_heir = { allow_new_heir = no }
-		}
-		if = {
-			limit = { primary_culture = grombar_half_orc }
-			define_heir = {
-				age = 27
-				name = "Gunk"
-				dynasty = "Doombringer"
-				religion = old_dookan
-				culture = grombar_half_orc
-				adm = 4
-				dip = 2
-				mil = 6
-			}
-		}
-		else = {
-			define_heir = {
-				age = 27
-				name = "Gunk"
-				dynasty = "Doombringer"
-				religion = old_dookan
-				culture = half_orc
-				adm = 4
-				dip = 2
-				mil = 6
-			}
-		}
-		kill_ruler = yes
-		reduce_stability_or_adm_power = yes
-		set_ruler_flag = grombar_old_dookan_ruler
-		if = {
-			limit = { NOT = { religion = old_dookan } }
-			reduce_stability_or_adm_power = yes
-			change_religion = old_dookan
-			remove_historical_friend = B02
-			remove_country_modifier = grombar_conversion_zeal
-			add_country_modifier = {
-				name = grombar_weak_religion
-				duration = -1
-			}
-		}
-		random_owned_province = {
-			limit = {
-				superregion = gerudia_superregion
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				leader = "Korz"
-				leader_dynasty = "Frozenmaw"
-				size = 3
-			}
-		}
-	}
-}
+# The Assassination of the Gray King, removed from the War of Religion disaster but preserved in comment for historical value
+#country_event = {
+#	id = flavor_grombar.103
+#	title = flavor_grombar.103.t
+#	desc = flavor_grombar.103.d
+#	picture = ASSASSINATION_eventPicture
+#	
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		had_country_flag = {
+#			flag = grombar_wars_of_religion_active
+#			days = 1825
+#		}
+#		has_disaster = grombar_wars_of_religion
+#		government = monarchy
+#		has_regency = no
+#		is_subject = no
+#		ruler_religion = corinite
+#	}
+#	
+#	immediate = {
+#		hidden_effect = {
+#			set_saved_name = {
+#				key = grombar_royal_assasin
+#				type = advisor
+#				scope = ROOT
+#			}
+#		}
+#	}
+#	
+#	# Corinite Ruler
+#	option = {
+#		name = flavor_grombar.103.a
+#		ai_chance = {
+#			factor = 100
+#		}
+#		if = {
+#			limit = {
+#				has_heir = yes
+#			}
+#			kill_heir = { allow_new_heir = no }
+#		}
+#
+#		if = {
+#			limit = { primary_culture = grombar_half_orc }
+#			define_heir = {
+#				name = "Korz"
+#				dynasty = "Frozenmaw"
+#				age = 23
+#				adm = 2
+#				dip = 6
+#				mil = 4
+#				culture = grombar_half_orc
+#				religion = corinite
+#			}
+#		}
+#		else = {
+#			define_heir = {
+#				name = "Korz"
+#				dynasty = "Frozenmaw"
+#				age = 23
+#				adm = 2
+#				dip = 6
+#				mil = 4
+#				culture = half_orc
+#				religion = corinite
+#			}
+#		kill_ruler = yes
+#		reduce_stability_or_adm_power = yes
+#		}
+#		if = {
+#			limit = { NOT = { religion = corinite } }
+#			reduce_stability_or_adm_power = yes
+#			change_religion = corinite
+#			remove_country_modifier = grombar_weak_religion
+#			add_country_modifier = {
+#				name = grombar_conversion_zeal
+#				duration = -1
+#			}
+#		}
+#		set_ruler_flag = grombar_corinite_ruler
+#		random_owned_province = {
+#			limit = {
+#				superregion = gerudia_superregion
+#			}
+#			spawn_rebels = {
+#				type = pretender_rebels
+#				leader = "Gunk"
+#				leader_dynasty = "Doombringer"
+#				size = 3
+#			}
+#		}
+#	}
+#	
+#	# Old Dookan ruler
+#	option = {
+#		name = flavor_grombar.103.b
+#		ai_chance = {
+#			factor = 0
+#		}
+#		if = {
+#			limit = {
+#				has_heir = yes
+#			}
+#			kill_heir = { allow_new_heir = no }
+#		}
+#		if = {
+#			limit = { primary_culture = grombar_half_orc }
+#			define_heir = {
+#				age = 27
+#				name = "Gunk"
+#				dynasty = "Doombringer"
+#				religion = old_dookan
+#				culture = grombar_half_orc
+#				adm = 4
+#				dip = 2
+#				mil = 6
+#			}
+#		}
+#		else = {
+#			define_heir = {
+#				age = 27
+#				name = "Gunk"
+#				dynasty = "Doombringer"
+#				religion = old_dookan
+#				culture = half_orc
+#				adm = 4
+#				dip = 2
+#				mil = 6
+#			}
+#		}
+#		kill_ruler = yes
+#		reduce_stability_or_adm_power = yes
+#		set_ruler_flag = grombar_old_dookan_ruler
+#		if = {
+#			limit = { NOT = { religion = old_dookan } }
+#			reduce_stability_or_adm_power = yes
+#			change_religion = old_dookan
+#			remove_historical_friend = B02
+#			remove_country_modifier = grombar_conversion_zeal
+#			add_country_modifier = {
+#				name = grombar_weak_religion
+#				duration = -1
+#			}
+#		}
+#		random_owned_province = {
+#			limit = {
+#				superregion = gerudia_superregion
+#			}
+#			spawn_rebels = {
+#				type = pretender_rebels
+#				leader = "Korz"
+#				leader_dynasty = "Frozenmaw"
+#				size = 3
+#			}
+#		}
+#	}
+#}
 
 # Tribal Uprising
 country_event = {
@@ -3594,7 +3586,10 @@ country_event = {
 		has_disaster = grombar_wars_of_religion
 		religion = corinite
 		any_owned_province = {
-			culture = gray_orc
+			OR = {
+				culture = gray_orc
+				culture = grombar_orc # adjustments, grombari orc provinces now also revolt in case the culture switch already happens
+			}
 			religion = old_dookan
 		}
 		NOT = { has_country_flag = grombar_orc_tribes_revolt }
@@ -3606,7 +3601,10 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					superregion = gerudia_superregion
-					culture = gray_orc
+					OR = {
+						culture = gray_orc
+						culture = grombar_orc # adjustments, grombari orc provinces now also revolt in case the culture switch already happens
+					}
 					religion = old_dookan
 				}
 				set_province_flag = grombar_old_dookan_tribes
@@ -3620,7 +3618,7 @@ country_event = {
 			limit = { has_province_flag = grombar_old_dookan_tribes }
 			spawn_rebels = {
 				type = old_dookan_rebels
-				size = 3
+				size = 1 # adjustments, reduced religious rebels size 3
 			}
 		}
 		set_country_flag = grombar_orc_tribes_revolt

@@ -52,17 +52,17 @@ DADV_1 = {
 				limit = {
 					any_ally = { has_country_flag = dwarovar_remnant }
 				} 
-			random_known_country = {
-				limit = {
-					has_country_flag = dwarovar_remnant
-					alliance_with = ROOT
+				random_known_country = {
+					limit = {
+						has_country_flag = dwarovar_remnant
+						alliance_with = ROOT
+					}
+					add_trust = {
+						who = ROOT
+						value = 25
+						mutual = yes
+					}
 				}
-				add_trust = {
-					who = ROOT
-					value = 25
-					mutual = yes
-				}
-			}
 			}
 			else = { custom_tooltip = ally_remnant_effect_tooltip }
 		}

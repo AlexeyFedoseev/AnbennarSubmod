@@ -74,7 +74,7 @@ alliance = {
 ### prabhii
 #Rabhidaraj
 dependency = {
-	subject_type = "great_daimyo_vassal"
+	subject_type = "vizier_vassal"
 	first = R51
 	second = R52
 	start_date = 1444.1.1
@@ -469,6 +469,14 @@ alliance = {
 	end_date = 1500.1.1
 }
 
+#Baihon Xinh - Phaetmen Di
+dependency = {
+	subject_type = tributary_state_anb
+	first = Y97
+	second = Y57
+	start_date = 1444.1.1
+	end_date = 1600.1.1
+}
 
 #BomjSBagetom Anbennar Submod
 alliance = {

@@ -86,15 +86,15 @@ artifice_exo_arms = {
 	#reinforce_speed = -0.025
 }
 
-artifice_war_golems = {
+artifice_war_golems = {	#SUBMOD TODO
 	is_rajput_modifier = yes
 
-	shock_damage = 0.15
+	shock_damage = 0.15		
 	#shock_damage_received = -0.15
 	fire_damage_received = -0.15 #BomjSBagetom Anbennar Submod
 }
 
-artifice_war_golems_asra = {
+artifice_war_golems_asra = {	#SUBMOD TODO
 	is_rajput_modifier = yes
 
 	shock_damage = 0.2
@@ -111,7 +111,7 @@ artifice_wandlocks = {
 	#reinforce_cost_modifier = 1
 }
 
-artifice_bioartificed_ascension = {
+artifice_bioartificed_ascension = {	#SUBMOD TODO
 	is_rajput_modifier = yes
 
 	fire_damage_received = -0.1
@@ -190,13 +190,13 @@ artifice_platinum_warsuit = {
 	discipline = 0.05
 }
 
-artifice_dragonscale_plating = {
+artifice_dragonscale_plating = {	#SUBMOD TODO
 	is_rajput_modifier = yes
 
 	shock_damage_received = -0.1
 	fire_damage_received = -0.1
 }
-artifice_giantshape_warframe = {
+artifice_giantshape_warframe = {	#SUBMOD TODO
 	is_rajput_modifier = yes
 	shock_damage_received = -0.2
 	infantry_power = 0.1
@@ -233,7 +233,7 @@ artifice_elemental_gunpowder = {
 	#reinforce_cost_modifier = 1
 }
 
-artifice_codorran_powered_exoskeleton = {
+artifice_coddorran_powered_exoskeleton = {
 	is_rajput_modifier = yes
 
 	infantry_power = 0.2
@@ -244,21 +244,21 @@ artifice_controlled_rage_serum = {
 	land_morale = 0.15
 }
 
-artifice_ageifier_bonus = {
+artifice_wine_ageifier = {
 	local_production_efficiency = 0.2
 }
 
-artifice_growthbeans_bonus = {
+artifice_growth_beans = {
 	local_production_efficiency = 0.15
 }
 
-artifice_superfast_elevators_bonus = {
+artifice_superfast_elevators = {
 	min_local_autonomy = -10
 	local_governing_cost = -0.25
 	trade_goods_size_modifier = 0.05
 }
 
-artifice_pearl_cultivator_bonus = {
+artifice_pearl_cultivators = {
 	local_tax_modifier = 0.15
 	trade_goods_size_modifier = 0.15
 }
@@ -281,6 +281,33 @@ artifice_bramble_burners = {
 	is_rajput_modifier = yes
 	fire_damage = 0.1
 	fire_damage_received = 0.05
+}
+
+artifice_wyvern_blood_tincture = {
+	is_rajput_modifier = yes
+	morale_damage = 0.2
+}
+
+artifice_gnollverns = {
+	is_rajput_modifier = yes
+	shock_damage_received = -0.15
+	fire_damage_received = -0.15
+}
+
+artifice_wyvern_reactive_mage_shield = {
+	is_hussars_modifier = yes
+	fire_damage_received = -0.10
+	fire_damage = 0.10
+}
+
+artifice_wyvern_mithril_scale_plating = {
+	is_hussars_modifier = yes
+	shock_damage_received = -0.15
+}
+
+artifice_wyvern_incendiary_nebulizers = {
+	is_hussars_modifier = yes
+	morale_damage = 0.10
 }
 
 artifice_research_temporarily_disabled = {

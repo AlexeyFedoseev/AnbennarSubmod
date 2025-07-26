@@ -44,7 +44,7 @@ feudalism = {
 						technology_group = tech_cannorian
 						technology_group = tech_halfling
 						technology_group = tech_gerudian
-						technology_group = tech_dwarven
+						technology_group = tech_west_dwarven
 						technology_group = tech_east_dwarven
 						technology_group = tech_elven
 						technology_group = tech_east_elven
@@ -102,7 +102,7 @@ feudalism = {
 						AND = {
 							technology_group = tech_lizardfolk
 							OR = {
-							government = monarchy
+								government = monarchy
 								tag = S83
 							}
 						}
@@ -302,6 +302,7 @@ renaissance = {
 		is_year = 1450
 		is_institution_enabled = feudalism
 		if = { limit = { NOT = { has_global_flag = delete_cannor_region } }
+			superregion = western_cannor_superregion
 			OR = {
 				region = lencenor_region
 				region = esmaria_region
@@ -463,6 +464,7 @@ renaissance = {
 			factor = 0.5
 			scale = yes
 			potential = {
+				superregion = western_cannor_superregion
 				OR = {
 					region = lencenor_region
 					region = esmaria_region
@@ -473,6 +475,7 @@ renaissance = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_lencenor_esmaria_dameshead
+				superregion = western_cannor_superregion
 				OR = {
 					region = lencenor_region
 					region = esmaria_region
@@ -721,12 +724,12 @@ new_world_i = {
 			limit = {
 				NOT = { has_global_flag = delete_cannor_region }
 			}
-		owner = { 
-			has_idea = quest_for_the_new_world 
-			OR = {
-				north_america = { has_discovered = PREV }
-				south_america = { has_discovered = PREV }
-				new_world = { has_discovered = PREV }
+			owner = { 
+				has_idea = quest_for_the_new_world 
+				OR = {
+					north_america = { has_discovered = PREV }
+					south_america = { has_discovered = PREV }
+					new_world = { has_discovered = PREV }
 				}
 			}
 		}
@@ -1929,6 +1932,12 @@ enlightenment = {
 					DIP = 5
 				}
 			}
+		}
+		if = {
+			limit = {
+				F66 = { mission_completed = konolkhatep_open_eyes }
+			}
+			is_capital_of = F66
 		}
 	}
 	start_chance = 10		#in 100 for when a province can_start

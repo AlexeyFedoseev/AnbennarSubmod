@@ -1809,24 +1809,22 @@ country_event = {
 			culture = bloodtooth_ogre
 			#BomjSBagetom Anbennar Submod
 			#adm = 3
-			#dip = 2 
-			#mil = 6
-
 			adm = 6
+			#dip = 2
 			dip = 6 
+			#mil = 6
 			mil = 6
-
 			age = 25
 		}
 		define_ruler_to_general = {
 			#BomjSBagetom Anbennar Submod
 			#fire = 1
-			#shock = 5
-			#manuever = 4
-			#siege = 3
 			fire = 4
+			#shock = 5
 			shock = 8
+			#manuever = 4
 			manuever = 4
+			#siege = 3
 			siege = 2
 			trait = hardy_warrior_personality
 		}

@@ -2390,6 +2390,8 @@ province_event = {
 				add_ruler_personality = strict_personality
 
 				country_event = { id = anb_miscevents.22 } # new country setup
+
+				harpy_roost_se_setup = yes
 			}
 		}
 		
@@ -2429,6 +2431,8 @@ province_event = {
 				add_ruler_personality = strict_personality
 
 				country_event = { id = anb_miscevents.22 } # new country setup
+
+				harpy_roost_se_setup = yes
 			}
 		}
 		

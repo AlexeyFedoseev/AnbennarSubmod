@@ -19,7 +19,7 @@ edict_encourage_development = {
 	}
 	
 	color = {  244 184 12  }
-	
+
 	on_state_edict_enacted = {
 		if = {
 			limit = {

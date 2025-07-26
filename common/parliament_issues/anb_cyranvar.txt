@@ -46,6 +46,10 @@ cyranvar_draft_in_the_army = {
 	
 	modifier = {
 		discipline = -0.025
+		modifier = { #BomjSBagetom Anbennar Submod
+			factor = 0
+			has_country_modifier = cyranvar_draft_used
+		}
 	}
 	
 	chance = {

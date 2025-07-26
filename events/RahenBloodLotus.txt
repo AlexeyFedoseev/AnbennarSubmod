@@ -608,17 +608,17 @@ country_event = { # Peace with the Blood Lotus: Upper Castes
 				}
 			}
 			tooltip = {
-			add_country_modifier = { 
-				name = harimari_military
-				duration = -1  
-			}
+				add_country_modifier = {
+					name = harimari_military
+					duration = -1
+				}
 			}
 			
 		}
 		
 		custom_tooltip = blood_lotus_rebellion_uppercastes_harimari_tt
 		add_race_to_caste = { race = harimari caste = upper }
-		remove_race_from_caste = { race = harimari caste = upper }
+		remove_race_from_caste = { race = human caste = upper }
 		
 		add_country_modifier = {
 			name = blood_lotus_powerful_government
@@ -687,9 +687,9 @@ country_event = { # Peace with the Blood Lotus: Upper Castes
 				duration = 3650
 			}
 			hidden_effect = {
-			add_country_modifier = { 
-				name = human_military
-				duration = -1  
+				add_country_modifier = { 
+					name = human_military
+					duration = -1  
 					hidden = yes
 				}
 			}
@@ -748,9 +748,9 @@ country_event = { # Peace with the Blood Lotus: Upper Castes
 				duration = 3650
 			}
 			hidden_effect = {
-			add_country_modifier = { 
-				name = human_military
-				duration = -1  
+				add_country_modifier = { 
+					name = human_military
+					duration = -1  
 					hidden = yes
 				}
 			}
