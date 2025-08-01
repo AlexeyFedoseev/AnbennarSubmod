@@ -45,39 +45,39 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = devclick_counter_initalization
-	title = devclick_counter_initalization.t
-	desc = devclick_counter_initalization.d
-	picture = DIET_eventPicture
-
-	hidden = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		set_variable = {
-			which = dev_tax_clicks
-			value = 0
-		}
-		set_variable = {
-			which = dev_production_clicks
-			value = 0
-		}
-		set_variable = {
-			which = dev_manpower_clicks
-			value = 0
-		}
-		set_variable = {
-			which = dev_sum_clicks
-			value = 0
-		}
-	}
-
-	option ={
-		name = devclick_counter_initalization.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
+#country_event = {
+#	id = devclick_counter_initalization
+#	title = devclick_counter_initalization.t
+#	desc = devclick_counter_initalization.d
+#	picture = DIET_eventPicture
+#
+#	hidden = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		set_variable = {
+#			which = dev_tax_clicks
+#			value = 0
+#		}
+#		set_variable = {
+#			which = dev_production_clicks
+#			value = 0
+#		}
+#		set_variable = {
+#			which = dev_manpower_clicks
+#			value = 0
+#		}
+#		set_variable = {
+#			which = dev_sum_clicks
+#			value = 0
+#		}
+#	}
+#
+#	option ={
+#		name = devclick_counter_initalization.a
+#		ai_chance = {
+#			factor = 1
+#		}
+#	}
+#}

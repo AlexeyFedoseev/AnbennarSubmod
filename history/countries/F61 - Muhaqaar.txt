@@ -18,8 +18,8 @@ historical_rival = F63 #Aramoole
 		birth_date = 1413.9.4
 		adm = 3
 		dip = 5
-		#mil = 4 #BomjSBagetom Anbennar Submod
-		mil = 1
+		#mil = 4	#BomjSBagetom Anbennar Submod
+		mil = 3		#BomjSBagetom Anbennar Submod
 	}
 	add_ruler_personality = mage_personality
 	set_ruler_flag = evocation_1

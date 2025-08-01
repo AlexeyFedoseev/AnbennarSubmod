@@ -896,7 +896,9 @@ new_world_i = {
 printing_press = {
 	
 	bonus = {
-		stability_cost_modifier = -0.05
+		#stability_cost_modifier = -0.05	#BomjSBagetom Anbennar Submod
+		missionaries = 1					#BomjSBagetom Anbennar Submod
+		global_missionary_strength = 0.005	#BomjSBagetom Anbennar Submod
 	}
 	
 	trade_company_efficiency = 0.8
@@ -1888,6 +1890,7 @@ enlightenment = {
 	
 	bonus = {
 		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.25		#BomjSBagetom Anbennar Submod
 	}
 	
 	trade_company_efficiency = 1.5

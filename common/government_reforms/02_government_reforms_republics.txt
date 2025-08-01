@@ -526,9 +526,11 @@ pirate_republic_reform = {
 		max_absolutism = 10
 		naval_forcelimit_modifier = 0.5
 		capture_ship_chance = 0.33
-		state_governing_cost = 0.75
+		state_governing_cost = 0.5		#BomjSBagetom Anbennar Submod
 		may_perform_slave_raid_on_same_religion = yes
-		allowed_marine_fraction = 0.5
+		global_manpower_modifier = -0.8		#BomjSBagetom Anbennar Submod
+		global_sailors_modifier = 0.5		#BomjSBagetom Anbennar Submod
+		allowed_marine_fraction = 1.5		#BomjSBagetom Anbennar Submod
 		landing_penalty = -2 #BomjSBagetom Anbennar Submod
 	}
 	trigger = {
@@ -7673,9 +7675,11 @@ matriarchal_pirate_republic = {
 		max_absolutism = -10
 		naval_forcelimit_modifier = 0.5
 		capture_ship_chance = 0.33
-		state_governing_cost = 0.75
+		state_governing_cost = 0.5		#BomjSBagetom Anbennar Submod
 		may_perform_slave_raid_on_same_religion = yes
-		allowed_marine_fraction = 0.5
+		global_manpower_modifier = -0.8		#BomjSBagetom Anbennar Submod
+		global_sailors_modifier = 0.5		#BomjSBagetom Anbennar Submod
+		allowed_marine_fraction = 1.5		#BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		OR = {

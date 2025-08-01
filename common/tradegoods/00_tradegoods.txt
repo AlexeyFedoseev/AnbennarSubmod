@@ -122,7 +122,8 @@ grain = {
 wine = {
 	color = { 0.36 0.13 0.28 }
 	modifier = {
-		global_unrest = -1
+		#global_unrest = -1						#BomjSBagetom Anbennar Submod
+		global_regiment_recruit_speed = -0.2	#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_unrest = -1
@@ -197,7 +198,8 @@ wine = {
 wool = {
 	color = { 0.83 0.83 0.83  }
 	modifier = {
-		global_ship_cost = -0.05
+		#global_ship_cost = -0.05		#BomjSBagetom Anbennar Submod
+		land_attrition = -0.15			#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_friendly_movement_speed = 0.10
@@ -387,7 +389,7 @@ fish = {
 fur = {
 	color = { 0.54 0.40 0.31 }
 	modifier = {
-		prestige = 0.5
+		prestige = 1		#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		province_trade_power_modifier = 0.10
@@ -489,7 +491,7 @@ fur = {
 salt = {
 	color = { 0.999 0.999 0.999 }
 	modifier = {
-		land_maintenance_modifier = -0.05
+		land_maintenance_modifier = -0.15		#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_defensiveness = 0.15
@@ -625,7 +627,8 @@ naval_supplies = {
 copper = {
 	color = { 0.85 0.46 0.15 }
 	modifier = {
-		global_regiment_recruit_speed = -0.2
+		#global_regiment_recruit_speed = -0.2	#BomjSBagetom Anbennar Submod
+		war_taxes_cost_modifier = -1			#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		regiment_recruit_speed = -0.2
@@ -870,7 +873,8 @@ gold = {
 iron = {
 	color = { 0.2 0.2 0.2 }
 	modifier = {
-		global_regiment_cost = -0.05
+		#global_regiment_cost = -0.05	#BomjSBagetom Anbennar Submod
+		country_military_power = 1		#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_build_time = -0.2
@@ -944,7 +948,8 @@ iron = {
 slaves = {
 	color = { 0.0 0.0 0.0 }
 	modifier = {
-		global_own_trade_power = 0.1
+		#global_own_trade_power = 0.1	#BomjSBagetom Anbennar Submod
+		colonists = 1					#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_missionary_strength = 0.01
@@ -1018,7 +1023,8 @@ slaves = {
 ivory = {
 	color = { 0.75 0.7 0.63 }
 	modifier = {
-		diplomatic_reputation = 2
+		#diplomatic_reputation = 2		#BomjSBagetom Anbennar Submod
+		country_diplomatic_power = 1	#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_state_maintenance_modifier = -0.2
@@ -1187,11 +1193,11 @@ tea = {
 chinaware = {
 	color = { 0.18 0.57 0.8 }
 	modifier = {
-		legitimacy = 0.25
-		devotion = 0.25
-		horde_unity = 0.25
-		republican_tradition = 0.12
-		meritocracy = 0.1
+		legitimacy = 0.5				#BomjSBagetom Anbennar Submod
+		devotion = 0.5					#BomjSBagetom Anbennar Submod
+		horde_unity = 0.5				#BomjSBagetom Anbennar Submod
+		republican_tradition = 0.24		#BomjSBagetom Anbennar Submod
+		meritocracy = 0.2				#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_autonomy = -0.1
@@ -1213,7 +1219,8 @@ chinaware = {
 spices = {
 	color = { 0.4 0.65 0.38 }
 	modifier = {
-		spy_offence = 0.25
+		#spy_offence = 0.25			#BomjSBagetom Anbennar Submod
+		global_trade_power = 0.1	#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_monthly_devastation = -0.1
@@ -1293,7 +1300,8 @@ spices = {
 coffee = {
 	color = { 0.22 0.15 0.09 }
 	modifier = {
-		global_institution_spread = 0.05
+		#global_institution_spread = 0.05	#BomjSBagetom Anbennar Submod
+		movement_speed = 0.15				#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_institution_spread = 0.1
@@ -1474,7 +1482,8 @@ cotton = {
 sugar = {
 	color = { 0.74 0.95 0.68 }
 	modifier = {
-		war_exhaustion_cost = -0.2
+		#war_exhaustion_cost = -0.2		#BomjSBagetom Anbennar Submod
+		development_cost = -0.05		#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_unrest = -1
@@ -1561,7 +1570,7 @@ sugar = {
 tobacco = {
 	color = { 0.33 0.56 0.38 }
 	modifier = {
-		global_spy_defence = 0.25
+		global_spy_defence = 0.4	#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		province_trade_power_modifier = 0.10
@@ -1648,7 +1657,7 @@ tobacco = {
 cocoa = {
 	color = { 0.45 0.21 0.09 }
 	modifier = {
-		manpower_recovery_speed = 0.05
+		manpower_recovery_speed = 0.075		#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_manpower_modifier = 0.10
@@ -1721,7 +1730,8 @@ cocoa = {
 silk = {
 	color = { 0.72 0.10 0.10 }
 	modifier = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1		#BomjSBagetom Anbennar Submod
+		country_admin_power = 1			#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		province_trade_power_value = 2
@@ -1778,7 +1788,8 @@ silk = {
 dyes = {
 	color = { 0.63 0.17 0.50 }
 	modifier = {
-		heir_chance = 0.33
+		#heir_chance = 0.33							#BomjSBagetom Anbennar Submod
+		global_trade_goods_size_modifier = 0.05		#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		province_trade_power_modifier = 0.10
@@ -1929,7 +1940,8 @@ tropical_wood = {
 livestock = {
 	color = { 0.72 0.49 0.44 }
 	modifier = {
-		cavalry_cost = -0.1
+		#cavalry_cost = -0.1		#BomjSBagetom Anbennar Submod
+		cav_to_inf_ratio = 0.10		#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		supply_limit_modifier = 0.5
@@ -2028,7 +2040,8 @@ livestock = {
 incense = {
 	color = { 0.89 0.79 0.47 }
 	modifier = {
-		tolerance_own = 0.5
+		#tolerance_own = 0.5			#BomjSBagetom Anbennar Submod
+		culture_conversion_cost = 0.1	#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		trade_value_modifier = 0.1
@@ -2090,7 +2103,8 @@ incense = {
 glass = {
 	color = { 0.0 0.60 0.45 }
 	modifier = {
-		dip_tech_cost_modifier = -0.05
+		#dip_tech_cost_modifier = -0.05		#BomjSBagetom Anbennar Submod
+		idea_cost = -0.1					#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_production_efficiency = 0.1
@@ -2130,7 +2144,8 @@ glass = {
 paper = {
 	color = { 0.9 0.86 0.71 }
 	modifier = {
-		adm_tech_cost_modifier = -0.05
+		#adm_tech_cost_modifier = -0.05			#BomjSBagetom Anbennar Submod
+		monthly_reform_progress_modifier = 0.2	#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_state_maintenance_modifier = -0.1
@@ -2162,7 +2177,8 @@ paper = {
 gems = {
 	color = { 0.96 0.78 0.78 }
 	modifier = {
-		inflation_reduction = 0.05
+		#inflation_reduction = 0.05			#BomjSBagetom Anbennar Submod
+		governing_capacity_modifier = 0.05	#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_tax_modifier = 0.15
@@ -2366,7 +2382,8 @@ coal = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	province = {
-		local_state_maintenance_modifier = -0.2
+		#local_state_maintenance_modifier = -0.2		#BomjSBagetom Anbennar Submod
+		movement_speed = 0.05							#BomjSBagetom Anbennar Submod
 	}
 	chance = {
 		factor = 1
@@ -2469,11 +2486,13 @@ mithril = {
 	color = { 220 238 251 }
 	# Trading bonus
 	modifier = {
-		prestige = 1
+		#prestige = 1			#BomjSBagetom Anbennar Submod
+		fire_damage = 0.05		#BomjSBagetom Anbennar Submod
 	}
 	province = {
-		shock_damage_received = -0.01
-		shock_damage = 0.02
+		#shock_damage_received = -0.01		#BomjSBagetom Anbennar Submod
+		shock_damage = 0.01					#BomjSBagetom Anbennar Submod
+		fire_damage = 0.01					#BomjSBagetom Anbennar Submod
 	}
 	chance = {
 		factor = 1
@@ -2625,7 +2644,8 @@ serpentbloom = {
 	color = { 82 15 106 }
 	# Trading bonus
 	modifier = {
-		global_supply_limit_modifier = 0.10
+		#global_supply_limit_modifier = 0.10		#BomjSBagetom Anbennar Submod
+		build_time = -0.1							#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		local_manpower_modifier = 0.10

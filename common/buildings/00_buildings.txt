@@ -3359,9 +3359,8 @@ ramparts = {
 	}
 	modifier = {
 		local_hostile_attrition = 1
-		#local_defensiveness = 0.15 #BomjSBagetom Anbennar Submod
+		local_defensiveness = 0.15
 		#local_defender_dice_roll_bonus = 1 #BomjSBagetom Anbennar Submod
-		local_defensiveness = 0.33 #BomjSBagetom Anbennar Submod
 		local_garrison_size = 0.2 #BomjSBagetom Anbennar Submod
 		custom_tooltip = ramparts_allows_neighbour_fortress #BomjSBagetom Anbennar Submod
 	}

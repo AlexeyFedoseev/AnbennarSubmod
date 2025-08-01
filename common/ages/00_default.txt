@@ -1105,7 +1105,7 @@ age_of_reformation = {
 					tooltip = castellos_is_dead_tooltip
 					has_global_flag = "castellos_is_dead"
 				}
-				is_year = 1560	#in case castellos never dies
+				is_year = 1530	#submod
 			}
 		}
 		else = {

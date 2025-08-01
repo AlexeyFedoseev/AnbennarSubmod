@@ -3820,6 +3820,47 @@ on_battle_won_country_effect = {
 			}
 		}
 	}
+	if = {		#BomjSBagetom Anbennar Submod
+		limit = {
+			ROOT = { has_country_modifier = harpy_military }
+		}
+		ROOT = {
+			multiply_variable = {
+				which = land_units_killed_var
+				value = 0.05
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = land_units_killed_var
+						value = 1000
+					}
+				}
+				subtract_variable = {
+					which = land_units_killed_var
+					value = 1000
+				}
+				add_manpower = 1
+			}
+			multiply_variable = {
+				which = land_units_killed_var
+				value = 1000
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = land_units_killed_var
+						value = 1000
+					}
+				}
+				subtract_variable = {
+					which = land_units_killed_var
+					value = 1000
+				}
+				add_manpower = 0.001
+			}
+		}
+	}
 	if = {
 		limit = { religion = goblinic_shamanism  NOT = { FROM = { OR = { tag = REB tag = NAT } } } }
 		FROM = { goblinic_shamanism_event = yes } # Fires events for a cult spreading upon winning a battle
@@ -9441,6 +9482,23 @@ startup_1444_effects = {
 		# STARTUP EFFECTS GO HERE #
 		###########################
 
+		#BomjSBagetom Anbennar Submod
+		set_variable = {	
+			which = dev_tax_clicks
+			value = 0
+		}
+		set_variable = {
+			which = dev_production_clicks
+			value = 0
+		}
+		set_variable = {
+			which = dev_manpower_clicks
+			value = 0
+		}
+		set_variable = {
+			which = dev_sum_clicks
+			value = 0
+		}
 
 		#ruler optimization
 

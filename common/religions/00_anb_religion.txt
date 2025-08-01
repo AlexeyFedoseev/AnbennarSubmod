@@ -3175,7 +3175,6 @@ orcish = {
 			land_morale = 0.1
 			prestige_from_land = 0.25
 			tolerance_heathen = -2
-			church_power_modifier = -0.33 #BomjSBagetom Anbennar Submod
 		}
 		country_as_secondary = {
 			infantry_shock = 0.15

@@ -1,0 +1,12 @@
+
+type = cavalry
+unit_type = tech_centaur
+
+maneuver = 2
+offensive_morale = 3
+defensive_morale = 0
+offensive_fire = 0
+defensive_fire = 1
+#offensive_shock = 3			#BomjSBagetom Anbennar Submod
+offensive_shock = 4				#BomjSBagetom Anbennar Submod
+defensive_shock = 3

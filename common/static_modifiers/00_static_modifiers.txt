@@ -922,7 +922,7 @@ army_tradition = {
 
 navy_tradition = {
 	recover_navy_morale_speed = 0.1
-	naval_morale = 0.25
+	#naval_morale = 0.25	#BomjSBagetom Anbennar Submod
 	#trade_steering = 1.0 	#BomjSBagetom Anbennar Submod
 	trade_steering = 0.5 	#BomjSBagetom Anbennar Submod
 	privateer_efficiency = 0.25
@@ -1204,7 +1204,7 @@ recovery_motivation = {
 	army_tradition = 1
 	navy_tradition = 1
 	global_unrest = -5
-	interest = -1
+	#interest = -1			#BomjSBagetom Anbennar Submod
 	horde_unity = 10
 	
 	#Anbennar

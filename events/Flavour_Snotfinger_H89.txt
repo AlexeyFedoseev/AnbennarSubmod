@@ -71,7 +71,8 @@ country_event = {
 		every_country = {
 			limit = {
 				capital_scope = {
-					region = inner_castanor_region
+					#region = inner_castanor_region		#BomjSBagetom Anbennar Submod
+					continent = europe					#BomjSBagetom Anbennar Submod
 				}
 				NOT = { culture_group = orcish }
 				NOT = { tag = ROOT } #BomjSBagetom Anbennar Submod
@@ -199,10 +200,11 @@ country_event = {
 		every_country = {
 			limit = {
 				capital_scope = {
-					OR = {
-						region = inner_castanor_region
-						region = south_castanor_region
-					}
+					#OR = {		#BomjSBagetom Anbennar Submod
+					#	region = inner_castanor_region
+					#	region = south_castanor_region
+					#}
+					continent = europe					#BomjSBagetom Anbennar Submod
 				}
 				NOT = { culture_group = orcish }
 				NOT = { tag = ROOT } #BomjSBagetom Anbennar Submod
@@ -262,10 +264,11 @@ country_event = {
 		every_country = {
 			limit = {
 				capital_scope = {
-					OR = {
-						region = inner_castanor_region
-						region = south_castanor_region
-					}
+					#OR = {		#BomjSBagetom Anbennar Submod
+					#	region = inner_castanor_region
+					#	region = south_castanor_region
+					#}
+					continent = europe					#BomjSBagetom Anbennar Submod
 				}
 				NOT = { culture_group = orcish }
 				NOT = { tag = ROOT } #BomjSBagetom Anbennar Submod
@@ -435,11 +438,12 @@ country_event = {
 		every_country = {
 			limit = {
 				capital_scope = {
-					OR = {
-						region = inner_castanor_region
-						region = south_castanor_region
-						region = west_castanor_region
-					}
+					#OR = {		#BomjSBagetom Anbennar Submod
+					#	region = inner_castanor_region
+					#	region = south_castanor_region
+					#	region = west_castanor_region
+					#}
+					continent = europe					#BomjSBagetom Anbennar Submod
 				}
 				NOT = { culture_group = orcish }
 				NOT = { tag = ROOT } #BomjSBagetom Anbennar Submod
@@ -499,11 +503,12 @@ country_event = {
 		every_country = {
 			limit = {
 				capital_scope = {
-					OR = {
-						region = inner_castanor_region
-						region = south_castanor_region
-						region = west_castanor_region
-					}
+					#OR = {		#BomjSBagetom Anbennar Submod
+					#	region = inner_castanor_region
+					#	region = south_castanor_region
+					#	region = west_castanor_region
+					#}
+					continent = europe					#BomjSBagetom Anbennar Submod
 				}
 				NOT = { culture_group = orcish }
 				NOT = { tag = ROOT } #BomjSBagetom Anbennar Submod

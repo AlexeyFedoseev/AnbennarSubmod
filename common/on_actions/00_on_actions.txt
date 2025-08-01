@@ -109,7 +109,6 @@ on_startup = {
 		aelantirspawnables.1202
 		aelantirspawnables.1402
 		aelantirspawnables.1802
-		#devclick_counter_initalization
 
 
 

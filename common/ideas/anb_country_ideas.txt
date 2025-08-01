@@ -747,7 +747,8 @@ A20_ideas = {
 A21_ideas = {
 	start = {
 		trade_range_modifier = 0.30
-		heavy_ship_power = 0.2
+		#heavy_ship_power = 0.2			#BomjSBagetom Anbennar Submod
+		global_colonial_growth = 15		#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		leader_naval_manuever = 1
@@ -767,7 +768,8 @@ A21_ideas = {
 		naval_attrition = -0.15
 	}
 	A21_hope_across_the_sea = {
-		global_colonial_growth = 15
+		#global_colonial_growth = 15	#BomjSBagetom Anbennar Submod
+		heavy_ship_power = 0.2			#BomjSBagetom Anbennar Submod
 		vassal_forcelimit_bonus = 0.1
 	}
 	A21_reintegrate_the_forgotten = {	#the forgotten are the falmer corrupted/mutated elves in Aelantir
@@ -1151,7 +1153,8 @@ A30_ideas = {
 		global_prov_trade_power_modifier = 0.1
 	}
 	A30_iron_within_iron_without = {		# S - The motto of House Robacard, lords of the Ironhill, and Grand Dukes of Wex following Camir Silmuna�s emperorship and removal of House s�l Wex in the 18th century. Wexonards� reputation as tough, grim, no-nonsense men of war means they can take a lot of punishment where others would falter in the face of incoming fire - but building a few defensive field fortifications never hurts either.
-		fire_damage_received = -0.1
+		fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+		fire_damage = 0.15					#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -2582,12 +2585,13 @@ Z07_ideas = {
 #Telgeir
 A62_ideas = {
 	start = {
-		infantry_power = 0.1
+		infantry_power = 0.15				#BomjSBagetom Anbennar Submod
 		land_maintenance_modifier = -0.1
 	}
 
 	bonus = {
 		diplomatic_upkeep = 1
+		allowed_rajput_fraction = 0.15			#BomjSBagetom Anbennar Submod
 	}
 
 	trigger = {
@@ -2602,8 +2606,8 @@ A62_ideas = {
 		shock_damage_received = -0.1
 	}
 	A62_standardized_arms_manufacturing = {
-		reinforce_speed = 0.1
-		reinforce_cost_modifier = -0.1
+		reinforce_speed = 0.15				#BomjSBagetom Anbennar Submod
+		reinforce_cost_modifier = -0.1		#BomjSBagetom Anbennar Submod
 	}
 	A62_vanbury_school_of_metallurgy = {
 		innovativeness_gain = 0.5
@@ -2623,8 +2627,8 @@ A62_ideas = {
 #Konwell
 A35_ideas = {
 	start = {
-		technology_cost = -0.1
-		development_cost = -0.1
+		technology_cost = -0.15			#BomjSBagetom Anbennar Submod
+		development_cost = -0.15		#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		defensiveness = 0.1
@@ -2636,7 +2640,8 @@ A35_ideas = {
 	free = yes
 
 	A35_the_konwell_press = {
-		embracement_cost = -0.2
+		#embracement_cost = -0.2		#BomjSBagetom Anbennar Submod
+		idea_cost = -0.15				#BomjSBagetom Anbennar Submod
 	}
 	A35_on_craftsmanship = {
 		production_efficiency = 0.1
@@ -2649,11 +2654,12 @@ A35_ideas = {
 		build_cost = -0.15
 	}
 	A35_the_drill_instructor_manual = {
-		land_morale = 0.05
-		naval_morale = 0.05
+		land_morale = 0.1			#BomjSBagetom Anbennar Submod
+		naval_morale = 0.1			#BomjSBagetom Anbennar Submod
 	}
 	A35_innovative_accademia = {
-		idea_cost = -0.1
+		#idea_cost = -0.1			#BomjSBagetom Anbennar Submod
+		embracement_cost = -0.2		#BomjSBagetom Anbennar Submod
 	}
 	A35_provincial_system = {
 		land_forcelimit_modifier = 0.15
@@ -2663,8 +2669,10 @@ A35_ideas = {
 #Giberd
 A81_ideas = {
 	start = {
-		infantry_power = 0.10
-		state_maintenance_modifier = -0.25
+		#infantry_power = 0.10					#BomjSBagetom Anbennar Submod
+		infantry_fire = 0.15					#BomjSBagetom Anbennar Submod
+		#state_maintenance_modifier = -0.25		#BomjSBagetom Anbennar Submod
+		improve_relation_modifier = 0.2			#BomjSBagetom Anbennar Submod
 	}
 
 	bonus = {
@@ -2683,7 +2691,8 @@ A81_ideas = {
 		diplomatic_reputation = 2
 	}
 	A81_institution_of_the_gibing_day = {
-		improve_relation_modifier = 0.2
+		#improve_relation_modifier = 0.2		#BomjSBagetom Anbennar Submod
+		state_maintenance_modifier = -0.25		#BomjSBagetom Anbennar Submod
 	}
 	A81_giberd_civil_engineering_academy = {
 		development_cost = -0.1
@@ -2696,7 +2705,8 @@ A81_ideas = {
 		production_efficiency = 0.15
 	}
 	A81_artificer_loading_exoskeleton_v1 = {
-		trade_steering = 0.15
+		#trade_steering = 0.15				#BomjSBagetom Anbennar Submod
+		trade_efficiency = 0.10				#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -2707,11 +2717,11 @@ A93_ideas = {
 		devotion = 1
 		republican_tradition = 0.3
 		horde_unity = 1
-		caravan_power = 0.2
+		caravan_power = 0.5			#BomjSBagetom Anbennar Submod
 	}
 
 	bonus = {
-		trade_efficiency = 0.1
+		trade_efficiency = 0.15		#BomjSBagetom Anbennar Submod
 	}
 
 	trigger = {
@@ -2730,13 +2740,14 @@ A93_ideas = {
 	A93_crossroads_of_the_empire = {
 		num_accepted_cultures = 1
 		envoy_travel_time = -0.25
+		merc_maintenance_modifier = -0.2		#BomjSBagetom Anbennar Submod
 	}
 	A93_water_garden_district = {
 		prestige = 1
 	}
 	A93_leaders_of_esmari_fashion = {	#trendsetters
 		global_own_trade_power = 0.1
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.15		#BomjSBagetom Anbennar Submod
 	}
 	A93_protectors_of_the_esmar = {
 		defensiveness = 0.1
@@ -2813,7 +2824,7 @@ A95_ideas = {
 	}
 	A95_themarennic_marines = {
 		shock_damage_received = -0.1
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.4	#BomjSBagetom Anbennar Submod
 	}
 	A95_floating_fortresses = {
 		defensiveness = 0.15
@@ -4385,6 +4396,7 @@ B38_ideas = {
 		global_trade_goods_size_modifier = 0.10
 	}
 	bonus = {
+		land_morale = 0.15 		#BomjSBagetom Anbennar Submod
 		diplomatic_upkeep = 1
 	}
 	trigger = {
@@ -4399,6 +4411,7 @@ B38_ideas = {
 		build_cost = -0.15
 	}
 	B38_pursuer_swarms = {
+		morale_damage = 0.05	#BomjSBagetom Anbennar Submod
 		cavalry_flanking = 0.5
 	}
 	B38_a_people_far_from_home = {
@@ -4408,7 +4421,7 @@ B38_ideas = {
 		trade_efficiency = 0.1
 	}
 	B38_resurgence_of_sickle_warfare = {
-		infantry_power = 0.10
+		infantry_power = 0.15		#BomjSBagetom Anbennar Submod
 	}
 	B38_land_of_the_pale_sun = {
 		prestige_decay = -0.01
@@ -4927,10 +4940,10 @@ B66_ideas = {
 		production_efficiency = 0.10
 	}
 	B66_the_riverlands = {
-		development_cost = -0.10
+		development_cost = -0.15	#BomjSBagetom Anbennar Submod
 	}
 	B66_never_to_fall_again = {
-		land_morale = 0.10
+		land_morale = 0.15			#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -5076,6 +5089,7 @@ A39_ideas = {
 	}
 	A39_esmairainey_champions = {
 		cavalry_power = 0.15
+		cav_to_inf_ratio = 0.2		#BomjSBagetom Anbennar Submod
 	}
 	A39_sir_frederic = {
 		prestige = 1
@@ -6761,10 +6775,12 @@ I11_ideas = {
 I12_ideas = {
 	start = {
 		prestige_decay = -0.01
-		embracement_cost = -0.2
+		#embracement_cost = -0.2		#BomjSBagetom Anbennar Submod
+		discipline = 0.05				#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		free_adm_policy = 1
+		possible_policy = 1 	#BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		tag = I12
@@ -6791,7 +6807,7 @@ I12_ideas = {
 		morale_damage_received = -0.1
 	}
 	I12_guntirhug = {
-		technology_cost = -0.05
+		technology_cost = -0.2			#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -10836,7 +10852,7 @@ A90_ideas = {
 	free = yes		#will be added at load.
 
 	A90_bardic_magic = {
-		recover_army_morale_speed = 0.10
+		recover_army_morale_speed = 0.15		#BomjSBagetom Anbennar Submod
 	}
 	A90_courtship_songs = {
 		diplomatic_upkeep = 1
@@ -10846,7 +10862,7 @@ A90_ideas = {
 		global_own_trade_power = 0.2
 	}
 	A90_seinathil_warsingers = {
-		land_morale = 0.1
+		land_morale = 0.2		#BomjSBagetom Anbennar Submod
 		may_recruit_female_generals = yes
 	}
 	A90_ryalan_song = {
@@ -14273,6 +14289,7 @@ G35_ideas = {
 	}
 	G35_the_vyrekynn_court = { #Use old imperial titles as a reward for nobles
 		reduced_liberty_desire = 10
+		merc_maintenance_modifier = -0.2		#BomjSBagetom Anbennar Submod
 	}
 	G35_great_fire_of_arverynn = { #Drozmagog once set Arverynn on fire but it was rebuilt
 		development_cost = -0.1
@@ -16845,7 +16862,8 @@ Y95_ideas = { #Kingdom of the Giteuni, the original people of Gowon, great arche
 #Daxugo
 Y98_ideas = { #Bird Rider Yanshen, big, beefy, expansionist empire, NotQing
 	start = {
-		cavalry_power = 0.2
+		#cavalry_power = 0.2	#BomjSBagetom Anbennar Submod
+		inafntry_shock = 0.33 	#BomjSBagetom Anbennar Submod
 		governing_capacity_modifier = 0.15
 	}
 	bonus = {
@@ -16859,7 +16877,7 @@ Y98_ideas = { #Bird Rider Yanshen, big, beefy, expansionist empire, NotQing
 
 	Y98_land_of_many = { #There's plenty of warm bodies for the military in Yanshen
 		land_forcelimit_modifier = 0.2
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.15	#BomjSBagetom Anbennar Submod
 	}
 	Y98_riches_of_yanshen = { #Yanshen is a wealthy land of exotic goods
 		global_trade_power = 0.1
@@ -16868,7 +16886,7 @@ Y98_ideas = { #Bird Rider Yanshen, big, beefy, expansionist empire, NotQing
 		state_maintenance_modifier = -0.2
 	}
 	Y98_the_diguomao = { #Imperial Spears, elite armies, membership is hereditary
-		yearly_army_professionalism = 0.0015
+		yearly_army_professionalism = 0.005	#BomjSBagetom Anbennar Submod
 		drill_decay_modifier = -0.25
 	}
 	Y98_the_third_conquest = { #Daxugo is the third empire to conquer Yanshen after Harimar's and Jaher's they don't intend on falling
@@ -16877,6 +16895,7 @@ Y98_ideas = { #Bird Rider Yanshen, big, beefy, expansionist empire, NotQing
 	}
 	Y98_xuezhe_caste = { #Scholarly caste funded by the imperial court
 		technology_cost = -0.05
+		development_cost = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Y98_siocain_sil_daxugo = { #Peace of Daxugo, finally bringing peace and stablity to Yanshen
 		prestige_decay = -0.01
@@ -17103,7 +17122,8 @@ B59_ideas = {
 
 	B59_friends_in_high_places = {
 		estate_interaction_cooldown_modifier = -0.1
-		adm_advisor_cost = -0.25
+		#adm_advisor_cost = -0.25		#BomjSBagetom Anbennar Submod
+		advisor_cost = -0.15			#BomjSBagetom Anbennar Submod
 	}
 	B59_damerian_renaissance = {
 		monthly_splendor = 1
@@ -17114,13 +17134,15 @@ B59_ideas = {
 	}
 	B59_blended_identity = {
 		free_policy = 1
+		possible_policy = 1		#BomjSBagetom Anbennar Submod
 	}
 	B59_cradle_of_ravelianism = {
 		institution_spread_from_true_faith = 0.2
 		papal_influence = 2
+		reduced_moral_damage_taken_by_reserves = 0.2	#BomjSBagetom Anbennar Submod
 	}
 	B59_birthplace_of_protest = {
-		land_morale = 0.1
+		land_morale = 0.15		#BomjSBagetom Anbennar Submod
 	}
 	B59_fallen_and_remembered = {
 		leader_land_shock = 1
@@ -20464,6 +20486,7 @@ Z65_ideas = {
 	}
 	Z65_tiande_tongyi = { #Day of Unity, celebrating the union of Yanshen
 		global_unrest = -2
+		backrow_artillery_damage = 0.15		#BomjSBagetom Anbennar Submod
 	}
 	Z65_growth_of_the_yanhe = { #Population boom causing the cities along the Yanhe to swiftly rise in population
 		development_cost = -0.1
@@ -20485,6 +20508,7 @@ Z66_ideas = {
 	}
 	bonus = {
 		global_regiment_cost = -0.2
+		reinforce_speed = 0.33		#BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		tag = Z66
@@ -20502,7 +20526,7 @@ Z66_ideas = {
 		advisor_pool = 2
 	}
 	Z66_longjudan = { #Imperial armies created in the vein of the old Phoenix Empire legions
-		discipline = 0.05
+		discipline = 0.1		#BomjSBagetom Anbennar Submod
 	}
 	Z66_house_of_the_tortoise = { #Imperial military academy
 		leader_land_manuever = 1
@@ -20522,11 +20546,11 @@ Z66_ideas = {
 #Di Yichan
 Z67_ideas = {
 	start = {
-		infantry_shock = 0.15
+		infantry_shock = 0.25					#BomjSBagetom Anbennar Submod
 		governing_capacity_modifier = 0.10
 	}
 	bonus = {
-		yearly_army_professionalism = 0.003
+		yearly_army_professionalism = 0.01		#BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		tag = Z67
@@ -20540,6 +20564,7 @@ Z67_ideas = {
 		stability_cost_modifier = -0.15
 	}
 	Z67_eunuch_administration = { #Using the eunuch caste as administrators
+		shock_damage = 0.2			#BomjSBagetom Anbennar Submod
 		state_maintenance_modifier = -0.2
 	}
 	Z67_sharpening_our_claws = { #Maintaining an extensively drilled army
@@ -21962,7 +21987,7 @@ A73_ideas = {
 		global_prov_trade_power_modifier = 0.20
 	}
 	bonus = {
-		artillery_power = 0.10
+		artillery_power = 0.15		#BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		tag = A73
@@ -21971,7 +21996,8 @@ A73_ideas = {
 
 	A73_Imperial_Center_of_Balgar_worship = {
 		church_loyalty_modifier = 0.1
-		production_efficiency = 0.05
+		#production_efficiency = 0.05		#BomjSBagetom Anbennar Submod
+		morale_damage = 0.1					#BomjSBagetom Anbennar Submod
 	}
 	A73_Iron_as_valuable_as_silver = {
 		trade_efficiency = 0.1
@@ -21987,6 +22013,7 @@ A73_ideas = {
 	}
 	A73_Silverforge_Hall_Drinking_Competitions = {
 		global_unrest = -1
+		artillery_shock = 2			#BomjSBagetom Anbennar Submod
 	}
 	A73_Guns_of_Strongbellow = {
 		mil_tech_cost_modifier = -0.1
@@ -24204,10 +24231,11 @@ L28_ideas = {
 A99_ideas = {
 	start = {
 		diplomatic_reputation = 1
-		development_cost = -0.1
+		#development_cost = -0.1	#BomjSBagetom Anbennar Submod
+		idea_cost = -0.15			#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
-		manpower_recovery_speed = 0.1
+		manpower_recovery_speed = 0.2		#BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		tag = A99
@@ -24215,10 +24243,12 @@ A99_ideas = {
 	free = yes #will be added at load
 
 	A99_academy_of_alchemy_herbalism_and_potioncraft = { # Varaine is home to the Academy of Alchemy, Herbalism and Potioncraft, which leads in the production of knowledge related to these areas
-		idea_cost = -0.1
+		#idea_cost = -0.1			#BomjSBagetom Anbennar Submod
+		development_cost = -0.15	#BomjSBagetom Anbennar Submod
 	}
 	A99_an_army_of_favors = { # Varaine's army is heavilly reliant on mercenaries and adventurers, the favor of whom they won by offering aid during the greentide
 		mercenary_cost = -0.2
+		mercenary_discipline = 0.05		#BomjSBagetom Anbennar Submod
 	}
 	A99_like_rabbits = { # Varaine produces many potions for the local populance, like fertility cures and some more recreative concoctions
 		heir_chance = 0.25
@@ -24233,9 +24263,10 @@ A99_ideas = {
 	A99_alchemical_exploration_corps = { # Once a group focused on exploring the world for potion ingredients, the Alchemical Exploration Corps became Varaine's main diplomatic institution
 		artificers_loyalty_modifier = 0.1
 		envoy_travel_time = -0.25
+		movement_speed = 0.15		#BomjSBagetom Anbennar Submod
 	}
 	A99_fine_powder = { # Due to the presence of the resources and an alchemical community, Varaine was forefront in the spread and development of Gunpowder in Cannor
-		fire_damage = 0.10
+		fire_damage = 0.15			#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -28352,7 +28383,8 @@ U01_ideas = {
 		land_morale = 0.1
 	}
 	U01_crodamic_camel_cavalry = {
-		cavalry_power = 0.15
+		#cavalry_power = 0.15		#BomjSBagetom Anbennar Submod
+		infantry_power = 0.1		#BomjSBagetom Anbennar Submod
 	}
 	U01_inland_sarhal_trade_nexus = {
 		caravan_power = 0.20
@@ -31721,8 +31753,8 @@ S19_ideas = {
 	}
 	free = yes
 	S19_victors_dagafita = {
-		#land_morale = 0.05 #BomjSBagetom Anbennar Submod
-		land_morale = 0.15
+		#land_morale = 0.05 	#BomjSBagetom Anbennar Submod
+		land_morale = 0.15		#BomjSBagetom Anbennar Submod
 		land_maintenance_modifier = -0.05
 	}
 	S19_great_ashamadiat = {
@@ -38921,6 +38953,7 @@ S84_BM_ideas = {
 
 	bonus = {
 		years_of_nationalism = -5
+		discipline = 0.05		#BomjSBagetom Anbennar Submod
 	}
 
 	trigger = {
@@ -39021,6 +39054,7 @@ S84_SP_ideas = {
 
 	bonus = {
 		years_of_nationalism = -5
+		discipline = 0.05		#BomjSBagetom Anbennar Submod
 	}
 
 	trigger = {
@@ -39071,6 +39105,7 @@ S84_RP_ideas = {
 
 	bonus = {
 		years_of_nationalism = -5
+		discipline = 0.05		#BomjSBagetom Anbennar Submod
 	}
 
 	trigger = {

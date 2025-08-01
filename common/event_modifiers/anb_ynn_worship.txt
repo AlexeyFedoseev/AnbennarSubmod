@@ -883,7 +883,7 @@ ynnic_iosahar_overlord_dam = {
 }
 
 ynn_diplo = {
-	#province_warscore_cost = 5.0 #BomjSBagetom Anbennar Submod
+	province_warscore_cost = 5.0
 	vassal_income = 0.3 #BomjSBagetom Anbennar Submod
 	vassal_forcelimit_bonus = 1 #BomjSBagetom Anbennar Submod
 	max_absolutism = -20
