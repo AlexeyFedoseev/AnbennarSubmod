@@ -323,7 +323,7 @@ guiTypes = {
 		{
 			name = "_entry_bg"
 			spriteType = "GFX_age_objective_bg"
-			position = { x=7 y=1 }
+			position = { x=7 y=3 }  # was 7 1
 			Orientation = "UPPER_LEFT"
 		}
 		###

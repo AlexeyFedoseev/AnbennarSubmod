@@ -1,14 +1,14 @@
-devcost_nerf = {
- 	potential = {
- 		always = yes	
- 	}
-
- 	trigger = {
-		always = yes
- 	}
-
- 	development_cost = 1	
-}
+#devcost_nerf = {
+#	potential = {
+#		always = yes	
+#	}
+#
+#	trigger = {
+#		always = yes
+#	}
+#
+#	development_cost = 1	
+#}
 
 player_age2_debuff = {
 	potential = {

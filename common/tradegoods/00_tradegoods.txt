@@ -828,6 +828,11 @@ gold = {
 				province_id = 2914 #Verkal Gulan
 			}
 		}
+		modifier = {	#BomjSBagetom Anbennar Submod
+			factor = 1000	
+			province_id = 1083 # island near Mykx
+		}
+		
 		modifier = {
 			factor = 0
 			OR = {

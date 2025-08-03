@@ -610,7 +610,8 @@ base_values = {
 	meritocracy = -1
 	governing_capacity = 200
 	num_accepted_cultures = 2
-	monthly_splendor = 1
+	#monthly_splendor = 1		#BomjSBagetom Anbennar Submod
+	development_cost = 1		#BomjSBagetom Anbennar Submod
 	artillery_levels_available_vs_fort = 5
 	cav_to_inf_ratio = 0.5
 	merc_maintenance_modifier = 0.1 #1.35
@@ -886,6 +887,7 @@ mercantilism = {
 	embargo_efficiency = 1 #1.35
 	burghers_loyalty_modifier = 0.1
 	#vaisyas_loyalty_modifier = 0.1
+	caravan_power = 1		#BomjSBagetom Anbennar Submod
 
 	#Anbennar
 	adv_fortune_seekers_influence = 0.2
