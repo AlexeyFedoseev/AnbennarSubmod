@@ -3014,7 +3014,8 @@ estate_adventurers_allclan_bestiary_shellback = {
 	}
 
 	benefits = {
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15		#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod
 	}
 
 	on_granted = {
@@ -7696,7 +7697,8 @@ estate_adventurers_kirin_trophy = {
 	}
 	penalties = {}
 	benefits = {
-		fire_damage_received = -0.025
+		#fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
 		monthly_splendor = 1
 	}
 	ai_will_do = { factor = 1 }
@@ -7715,7 +7717,8 @@ estate_adventurers_hydra_trophy = {
 	}
 	penalties = {}
 	benefits = {
-		shock_damage_received = -0.025
+		#shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
 		monthly_splendor = 1
 	}
 	ai_will_do = { factor = 1 }
@@ -8468,7 +8471,8 @@ estate_mages_grand_rune_dauth = {
 	}
 	benefits = {
 		morale_damage = 0.15
-		fire_damage_received = -0.05
+		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	}
 	on_granted = {
 		hidden_effect = {
@@ -10673,7 +10677,8 @@ estate_church_zansap_order_of_zenith = {
 	penalties = {
 	}
 	benefits = {
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
 	}
 
 	conditional_modifier = {    
@@ -14402,7 +14407,8 @@ estate_burghers_alashakan_mutation = {
 	penalties = {
 	}
 	benefits = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1			#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05			#BomjSBagetom Anbennar Submod
 		improve_relation_modifier = 0.20
 		envoy_travel_time = -0.25
 	}
@@ -14575,7 +14581,8 @@ estate_church_wishcatcher_mutation = {
 	}
 
 	benefits = {
-		shock_damage_received = -0.5
+		#shock_damage_received = -0.5		#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.25		#BomjSBagetom Anbennar Submod
 	}
 	conditional_modifier = {
 		trigger = {

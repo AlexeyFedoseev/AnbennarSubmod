@@ -44,6 +44,7 @@ emergency_impressment_act_used = {
 	land_forcelimit = 5
 	global_manpower = 5
 	land_maintenance_modifier = -0.5
+	global_colonial_growth = 150
 }
 
 1444_adventurer_sea_boost = {
@@ -55,6 +56,7 @@ emergency_impressment_act_used = {
 	land_maintenance_modifier = -0.5
 	naval_maintenance_modifier = -0.5
 	colonists = 1
+	global_colonial_growth = 150
 }
 
 sale_of_titles_tax_bonus = {

@@ -275,7 +275,8 @@ A05_ideas = {
 		improve_relation_modifier = 0.10
 	}
 	A05_poleaxe_mastery = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	A05_reaping_the_harvests = {
 		development_cost = -0.05
@@ -422,7 +423,8 @@ A12_ideas = {
 		global_trade_power = 0.1		
 	}
 	bonus = {
-        fire_damage_received = -0.1
+        #fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 
 	trigger = {
@@ -478,7 +480,8 @@ A13_ideas = {
 	}
 	A13_children_of_the_alen = { 
     	infantry_power = 0.1
-        shock_damage_received = -0.1
+        #shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	A13_great_lords = { 
 		governing_capacity_modifier = 0.15
@@ -1251,7 +1254,8 @@ A36_ideas = {
 		num_accepted_cultures = 1
 	}
 	bonus = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 
 	trigger = {
@@ -1462,7 +1466,8 @@ A43_ideas = {
 	}
 	free = yes
 	A43_the_order_of_the_unblemished_maiden = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	A43_the_ryalan_privilege = {
 		monarch_diplomatic_power = 1
@@ -1808,7 +1813,8 @@ A60_ideas = {
 		global_tax_modifier = 0.1
 	}
 	A60_memories_of_livergraves = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	A60_do_not_worry = {
 		war_exhaustion = -0.02
@@ -2042,7 +2048,8 @@ A92_ideas = {
 		devotion = 1
 	}
 	A92_the_stand_at_tendergrove = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	A92_sabalian_warfare = {
 		army_tradition = 0.5
@@ -2472,7 +2479,8 @@ U16_ideas = {
 		defensiveness = 0.15
 	}
 	U16_land_of_sentinel_lords = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	U16_between_escann_and_bulwar = {
 		global_trade_power = 0.1
@@ -2603,7 +2611,8 @@ A62_ideas = {
 		production_efficiency = 0.1
 	}
 	A62_telgieran_mass_plate = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	A62_standardized_arms_manufacturing = {
 		reinforce_speed = 0.15				#BomjSBagetom Anbennar Submod
@@ -2823,7 +2832,8 @@ A95_ideas = {
 		land_forcelimit_modifier = 0.15
 	}
 	A95_themarennic_marines = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		allowed_marine_fraction = 0.4	#BomjSBagetom Anbennar Submod
 	}
 	A95_floating_fortresses = {
@@ -3126,7 +3136,8 @@ Z15_ideas = {
 		land_maintenance_modifier = -0.10
 	}
 	Z15_ebonsteel_armory = {
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		shock_damage = 0.10
 	}
 	Z15_claims_of_castanor = {
@@ -3208,7 +3219,8 @@ Z18_ideas = {
 		leader_cost = -0.1
 	}
 	gray_orc_inscribing_mistakes = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	gray_orc_learning_the_hard_way = {
 		production_efficiency = 0.1
@@ -3248,7 +3260,8 @@ Z19_ideas = {
 		leader_cost = -0.1
 	}
 	gray_orc_inscribing_mistakes = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	gray_orc_learning_the_hard_way = {
 		production_efficiency = 0.1
@@ -3291,7 +3304,8 @@ Z47_ideas = {
 		leader_cost = -0.1
 	}
 	gray_orc_inscribing_mistakes = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	gray_orc_learning_the_hard_way = {
 		production_efficiency = 0.1
@@ -3356,7 +3370,8 @@ Z20_ideas = {
 		discipline = 0.05
 	}
 	goblin_sneaky_tactics = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Z20_mystery_in_the_depths = {
 		innovativeness_gain = 0.5
@@ -3528,7 +3543,8 @@ Z25_ideas = {
 		ae_impact = -0.1
 	}
 	Z25_war_against_the_woods = { # The Greatwoods are home to great beasts, those of Dinesk are well used to fighting and killing them
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Z25_petty_palace_of_dinesck = { # Dinesk has always sought to appear rich and prosperous, even if that is not the case. Some dude made a fancy palace.
 		prestige = 1
@@ -3773,7 +3789,8 @@ Z34_ideas = {
 	}
 	Z34_ebonsteel_foundries = {
 		production_efficiency = 0.10
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Z34_black_reaver_academy = {
 		army_tradition = 1.0
@@ -3832,7 +3849,8 @@ Z36_ideas = {
 	}
 
 	bonus = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 
 	trigger = {
@@ -3902,7 +3920,8 @@ Z37_ideas = {
 		diplomatic_reputation = 1
 	}
 	Z37_shieldcloak_infantry = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -4085,7 +4104,8 @@ Z55_ideas = {
 	free = yes
 
 	Z55_red_dragon_scions = { #we are the crimson children of nimrith the red, our scales and hearts are strong like his!
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Z55_treasure_hunters = { #an unmatched hoard, gathered from ancient dwarven vaults and ruins, all to honour nimrith! gathered by exceptional treasure hunters like us.
 		loot_amount = 0.5
@@ -4123,7 +4143,8 @@ Z56_ideas = {
 	free = yes
 
 	Z56_red_dragon_scions = { #we are the crimson children of nimrith the red, our scales and hearts are strong like his!
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Z56_treasure_hunters = { #an unmatched hoard, gathered from ancient dwarven vaults and ruins, all to honour nimrith! gathered by exceptional treasure hunters like us.
 		loot_amount = 0.5
@@ -4385,7 +4406,8 @@ B35_ideas = {
 		development_cost = -0.1
 	}
 	B35_march_of_the_5th_legion_of_valour = {
-		fire_damage_received = -0.15
+		#fire_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -4567,7 +4589,8 @@ B44_ideas = {
 		leader_siege = 1
 	}
 	goblin_sneaky_tactics = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	B44_the_firestarters = {
 		war_exhaustion = -0.03
@@ -4921,7 +4944,8 @@ B66_ideas = {
 	free = yes
 
 	B66_hard_as_havoral = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	B66_clans_of_the_mountain = {
 		global_manpower_modifier = 0.15
@@ -5209,7 +5233,8 @@ G04_ideas = {
 		development_cost = -0.1
 	}
 	G04_blood_monsters = { # Our bretheren are trained in fighting Cheshoshi, we fight Bloodfeeders who are scarier, so our braves are better (they're not)
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G04_survive_the_bloodfrenzy = { # During the bleed period (in the groves) the Bloodfeeders get more aggressive so they are forced to prepare traps, previously they'd have migrated away but they've learnt to prepare
 		hostile_attrition = 1
@@ -5295,7 +5320,8 @@ G06_ideas = {
 		vassal_income = 0.25
 	}
 	G06_black_legion = { # They see the Onyx legions as people trying to bring about the end of the world once again, had a fierce fight
-		fire_damage_received = -0.10
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G06_sacking_of_the_bone_citadel = { # Historical event where the Bone Palace was sacked, they rebuilt it to be more defensible
 		defensiveness = 0.15
@@ -5766,7 +5792,8 @@ G60_ideas = {
 		fort_maintenance_modifier = -0.10
 	}
 	G60_masters_of_bronze = { #masterwork bronze armor protects us
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G60_ghilti_kanvrenu = { #a grand war council is hosted every year so the best and brightest can get the king?s ear
 		mil_advisor_cost = -0.25
@@ -6172,7 +6199,8 @@ H67_ideas = {
 		tolerance_heathen = 2
 	}
 	bonus = {
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		tag = H67
@@ -6207,7 +6235,8 @@ H67_ideas = {
 #Nur Dhanaenn
 H63_ideas = {
 	start = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		prestige = 1
 	}
 	bonus = {
@@ -6392,7 +6421,8 @@ I02_ideas = {
 		defensiveness = 0.15
 	}
 	I02_forges_of_icesteel = {
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 	I02_meritocratic_administration = {
 		core_creation = -0.15
@@ -6489,7 +6519,8 @@ I04_ideas = {
 #Mithradhum - Mithril Dwarf
 I05_ideas = {
 	start = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		defensiveness = 0.15
 	}
 	bonus = {
@@ -6531,7 +6562,8 @@ I05_ideas = {
 #Er-Natvir - Dagrite Dwarf
 I06_ideas = {
 	start = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		state_maintenance_modifier = -0.25
 	}
 	bonus = {
@@ -6991,7 +7023,8 @@ I17_ideas = {
 		defensiveness = 0.2
 	}
 	I17_the_topaz_hold = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	I17_treason_of_the_segbandal = {
 		ae_impact = -0.1
@@ -7115,7 +7148,8 @@ I20_ideas = {
 		land_attrition = -0.2
 	}
 	I20_erigs_legacy = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -7485,7 +7519,8 @@ I28_ideas = {
 I29_ideas = {
 	start = {
 		movement_speed = 0.15
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		development_cost_in_primary_culture = -0.1
@@ -7576,7 +7611,8 @@ I31_ideas = {
 	free = yes
 	
 	I31_the_scotha_sidestep = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	I31_poisons_and_potions = {
 		spy_offence = 0.2
@@ -8323,7 +8359,8 @@ H78_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	H78_treachery_of_the_burned_empress = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	H78_the_citrine_code = {
 		legitimacy = 1
@@ -8344,7 +8381,8 @@ A77_ideas = {
 		global_spy_defence = 0.2
 	}
 	bonus = {
-		fire_damage_received = -0.10
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		tag = A77
@@ -8691,7 +8729,8 @@ R51_ideas = {
 		diplomatic_annexation_cost = -0.2
 	}
 	R51_the_imperial_guard = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	R51_the_creme_of_the_ministers = {
 		free_dip_policy = 1
@@ -8701,7 +8740,8 @@ R51_ideas = {
 #Endhuvi
 R36_ideas = {
 	start = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		tolerance_own = 2
 	}
 	bonus = {
@@ -8767,7 +8807,8 @@ R20_ideas = {
 		idea_cost = -0.1
 	}
 	R20_battle_of_elephant_gorge = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	R20_the_navanyodhi_culture = {
 		drill_gain_modifier = 0.25
@@ -8886,7 +8927,8 @@ R40_ideas = {
 		rebel_support_efficiency = 0.50
 	}
 	R40_claw_the_horse_at_its_leg = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	R40_kings_library = {
 		global_institution_spread = 0.2
@@ -9274,7 +9316,8 @@ R77_ideas = {
 		harsh_treatment_cost = -0.2
 	}
 	R77_adapt_to_firearms = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -9498,8 +9541,10 @@ R75_ideas = {
 		merchants = 1
 	}
 	river_city_mobile_walls = {
-		fire_damage_received = -0.1
-		shock_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	R75_expansion_of_the_fortress_cities = {
 		defensiveness = 0.1
@@ -9803,7 +9848,8 @@ R19_ideas = {
 #Vanbury Guild Ideas
 G97_ideas = {
 	start = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		production_efficiency = 0.1
 	}
 	bonus = {
@@ -10236,7 +10282,8 @@ A75_ideas = {
 Z45_ideas = {
 	start = {
 		build_cost = -0.15
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		liberty_desire_from_subject_development = -0.25
@@ -10933,7 +10980,8 @@ H43_ideas = {
 	free = yes
 
 	H43_onyx_legacy = { # Legacy of the Legion
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	H43_cleansing_the_cathedral_of_bones = { # They make a huge temple to Nerat in the Bone Citadel, removing all the Death Cult of Cheshosh stuff (including the priests) and turn it into a temple and a courthouse
 		stability_cost_modifier = -0.15
@@ -11015,7 +11063,8 @@ H47_ideas = {
 		colonists = 1
 	}
 	J33_joglik_ut_drill_sergeants = {
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 	J33_trade_guilds = {
 		merchants = 1
@@ -11400,7 +11449,8 @@ H47_ideas = {
 	free = yes		#will be added at load.
 
 	J09_the_forge_of_the_north = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	J09_hearts_of_bronze = {
 		land_morale = 0.05
@@ -11409,7 +11459,8 @@ H47_ideas = {
 		reinforce_cost_modifier = -0.2
 	}
 	J09_bronzeguard = {
-		fire_damage_received = -0.075
+		#fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.0375	#BomjSBagetom Anbennar Submod
 	}
 	J09_trigger_discipline = {
 		fire_damage = 0.05
@@ -11765,7 +11816,8 @@ H47_ideas = {
 		global_own_trade_power = 0.1
 	}
 	J19_holding_our_own = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	J19_market_garden = {
 		improve_relation_modifier = 0.2
@@ -11872,7 +11924,8 @@ H47_ideas = {
 		prestige_decay = -0.01
 	}
 	J22_witch_hunters = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	J22_jewel_of_the_heartland = {
 		global_trade_goods_size_modifier = 0.05
@@ -11983,7 +12036,8 @@ H47_ideas = {
 	free = yes		#will be added at load.
 
 	J25_home_of_the_joglik_ut = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	J25_life_on_the_frontline = {
 		reinforce_cost_modifier = -0.1
@@ -12179,7 +12233,8 @@ H47_ideas = {
 		fort_maintenance_modifier = -0.1
 	}
 	J30_battle_for_the_west = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	J30_fording_the_crossing = {
 		colonists = 1
@@ -12399,7 +12454,8 @@ H47_ideas = {
 J53_ideas = {
 	start = {
 		global_regiment_cost = -0.1
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		reduced_liberty_desire = 10
@@ -12588,7 +12644,8 @@ J53_ideas = {
 		manpower_in_own_culture_provinces = 0.2
 	}
 	J37_mountains_of_metal = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -13175,7 +13232,8 @@ J53_ideas = {
 		production_efficiency = 0.1
 	}
 	I95_do_they_bleed = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	I95_forever_enduring_always_ready = {
 		cavalry_power = 0.33
@@ -13444,7 +13502,8 @@ G79_ideas = { # by Taka, original ideas by Sai
     }
     G79_olorises_the_great = { # A controversial figure, Olorises Pulojith was a bastard prince born to Alvardip Tailarudu and an Ambhen concubine, who would rule Vuls Tenvach from the 1470s to the early 1500s. Owing to his heritage, Olorises believed that Vuls Tenvach must adapt the ways of the Kheionai to survive � seeing his siblings as foolish for their traditionalism, Olorises staged a coup to usurp the throne from his half-sister, and soon set himself to reforming his kingdom along Ambhen lines. On land, Olorises pioneered the Tenvacha Phalanx, relentlessly drilling his troops in the unwieldy but powerful formation. Despite his abrasive and stubborn personality alienating him from the ageing Emperor Erankar, his military reforms would prove their worth at the legendary Battle of Gena, where the Tenvacha pikemen would defeat Ameion�s own in a fair fight, driving them from the field in a stunning victory. Though a lack of Larankarha support meant Olorises was unable to decisively follow up on his successes, his many victories would earn Olorises the official designation by the Ambhen Synkletos as an �Enemy of Ameion� � a badge of honour for any Free Taychendi.
 		mil_tech_cost_modifier = -0.05  	 
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
     }
     G79_deyodeikakaupos_and_the_bag_of_winds = { # As the Ambhen navy learnt from the lessons Alvardip taught it, and set its sights once more on gaining naval supremacy, Olorises Pulojith knew that he needed to find a new edge against Ameion � and in the Bag of Winds, he found it. Said to be powered by a captured air elemental, the legendary Bag of Winds could propel a single normal sized ship forwards at great speed � or, of course, propel a single colossal ship forwards when physics would otherwise prevent it. Looking to the massive galleys of the Alecandi Kheions for inspiration, over 5 years Olorises built the Deyod�ikakaupos, a warship so large it had 20 tiers of oars, required 8000 rowers to move, even alongside the Bag of Winds, and was said to have a complement of 5000 archers and 5000 marines. No matter the exact numbers, the ship guaranteed Vuls Tenvach�s safety at sea. After Olorises death and the fall of Vuls Tenvach, it would be seized by Ameion, serving as the flagship of their navy. Eventually, it would meet its end fighting a titanic battle against the Exemplar�s Diranhria, blown to pieces by its rival ship�s precursor weaponry � though not before its ram narrowly missed cleaving the Precursor warship in two.
 		flagship_cost = -0.25
@@ -13970,7 +14029,8 @@ G36_ideas = {
 		unjustified_demands = -0.1
 	}
 	G36_bows_versus_muskets = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G36_erandil_poison_arrow = {
 		leader_land_fire = 1
@@ -14051,7 +14111,8 @@ H25_ideas = {
 		manpower_recovery_speed = 0.1
 	}
 	H25_the_cycle_of_arkanvyr = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	H25_knights_oathkeeper = {
 		global_autonomy = -0.025
@@ -14066,7 +14127,8 @@ H25_ideas = {
 G84_ideas = {
 	start = {
 		war_exhaustion = -0.03
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		navy_tradition = 1
@@ -14225,7 +14287,8 @@ G37_ideas = {
 #Vels Fadhecai Ideas
 G38_ideas = {
 	start = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		same_culture_advisor_cost = -0.15
 	}
 	bonus = {
@@ -14450,7 +14513,8 @@ U69_ideas = {
 		reinforce_speed = 0.10
 	}
 	U69_battle_of_nizamsto = {	#Early battle against Cannorians where the Sarda got aided by rain making the Cannorians' guns useless
-		fire_damage_received = -0.10
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	U69_a_cannorian_dell = {	#Sarda is the region of the Ynn most open to Cannorians
 		num_accepted_cultures = 1
@@ -14838,7 +14902,8 @@ F56_ideas = {
 		galley_power = 0.1
 	}
 	F56_legacy_of_kerusah = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	F56_unyielding = {
 		war_exhaustion = -0.02
@@ -14951,7 +15016,8 @@ H37_ideas = {
 	}
 	H37_northern_marines = { #Many of the founders of Themaria were Themarennic marines
 		allowed_marine_fraction = 0.25
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	H37_arctic_hospitality = { #People as cold and bitter as their homeland
 		war_exhaustion = -0.02
@@ -15280,7 +15346,8 @@ Z26_ideas = {
 		stability_cost_modifier = -0.15
 	}
 	Z26_lessons_of_coldmarket = { #The Battle of Coldmarket was where Adshaw was defeated by elven archers during the Reachman Rebellion
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Z26_every_man_a_warrior = { #Tradition dating back to the Greatwood tribes, every able man is required to take up arms to defend Adshaw
 		land_forcelimit_modifier = 0.1
@@ -15295,7 +15362,8 @@ Z26_ideas = {
 H90_ideas = {
 	start = {
 		cav_to_inf_ratio = 0.50
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		cavalry_cost = -0.1
@@ -15335,7 +15403,8 @@ H90_ideas = {
 H89_ideas = {
 	start = {
 		land_morale = 0.1
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		land_maintenance_modifier = -0.1
@@ -15559,7 +15628,8 @@ H87_ideas = {
 	free = yes
 
 	H87_idea_1 = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	H87_idea_2 = {
 		land_attrition = -0.15
@@ -15761,7 +15831,8 @@ H93_ideas = {
 	free = yes
 
 	tos_goblins_kanzad_war = {
-		fire_damage_received = -0.05
+		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		reinforce_speed = 0.05
 	}
 	tos_goblins_history = {
@@ -15806,7 +15877,8 @@ H88_ideas = {
 	free = yes
 
 	tos_goblins_kanzad_war = {
-		fire_damage_received = -0.05
+		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		reinforce_speed = 0.05
 	}
 	tos_goblins_history = {
@@ -15851,7 +15923,8 @@ H92_ideas = {
 	free = yes
 
 	tos_goblins_kanzad_war = {
-		fire_damage_received = -0.05
+		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		reinforce_speed = 0.05
 	}
 	tos_goblins_history = {
@@ -16118,7 +16191,8 @@ A52_ideas = {
 		defensiveness = 0.1
 	}
 	A52_scalemail = { #They flay kobolds and use their scales to make armor
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	A52_a_wartorn_land = { #The lands of Eaglecrest are frequently caught in the crossfire between powerful empires, people are used to this shit
 		war_exhaustion = -0.02
@@ -16564,7 +16638,8 @@ Y07_ideas = { #The oldest city of the Yanszin. After Harimar's conquest of the r
 		prestige_decay = -0.01
 	}
 	Y07_bend_with_the_wind = { #All of the Yanszin know that the best way to survive is to know when to concede and know when to resist. Like a stalk of bamboo they bend until their energy is unleashed and they slap back. The Lanxin have adopted this in their martial training and it has become a staple of Jiushui combat.
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Y07_guru_suhan={#Guru Suhan was an Eastern Harimari from the city of Guhe. At a young age, he travelled through Haless for spiritual reasons, meeting practitioners of the different schools of High Philosophy and seeking out their way of life. Beginning to meditate upon the different schools, on their strengths and flaws, he found much to admire but also saw the myopia that arose from focusing on a single aspect of mortal existence. He reached the conclusion that the path of the High Gods requires focus on all moral aspects instead of on the perfection of one, a belief that would give rise to Suhan's Praxis in the late fifteenth century. 
 		global_missionary_strength = 0.02
@@ -16976,7 +17051,8 @@ Y63_ideas = {
 		shock_damage = 0.1
 	}
 	Y63_viridescent_legion = { #Legion of dorfs wearing elaborate enchanted Nephrite armor
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -17021,7 +17097,8 @@ Y27_ideas = {
 #Zhinqian
 Y14_ideas = {
 	start = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		global_manpower_modifier = 0.1
 	}
 
@@ -17420,7 +17497,8 @@ Y02_ideas = {
 		stability_cost_modifier = -0.15
 	}
 	Y02_dayingsi = { #Shadow Silk Cloaks, enchanted silk garments from Jinqiu that has the strength of iron and has magic resisting properties
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Y02_voracious_scholars = { #The scholars of Jinqiu seek knowledge and power no matter the consequences
 		technology_cost = -0.05
@@ -17785,7 +17863,8 @@ Y22_ideas = {
 		merchants = 1
 	}
 	Y22_personal_spirits = { #It's said that every citizen of the city has a personal guardian that protects them from harm
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Y22_hollow_eyes = { #Some of the adminstrators seem to have solid black eyes that greatly unnerve others
 		global_unrest = -1
@@ -18291,7 +18370,8 @@ Y39_ideas = {
 		improve_relation_modifier = 0.2
 	}
 	Y39_the_divine_wind = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -18343,7 +18423,8 @@ Y73_ideas = {
 #Liuhexingzhe
 Y35_ideas = {
 	start = {
-		shock_damage_received = -0.1 #the techniques that the soldiers use are extremely hard to fight against traditionally
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod #the techniques that the soldiers use are extremely hard to fight against traditionally
 		land_maintenance_modifier = -0.1 #Liuhexingzhe's fighting style is relatively simple to use and simply requires a special alcohol, which leads to less costs when it comes to equipping their warriors
 	}
 	bonus = {
@@ -18481,8 +18562,10 @@ Y33_ideas = {
 		idea_cost = -0.1
 	}
 	Y33_school_of_deep_fog = { #With their unique martial art, the Vidvakhokan warriors are able to disorient an army by creating illusions of soldiers made of their own tobacco smoke.
-		shock_damage_received = -0.05
-		fire_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	}
 	Y33_the_laws_of_destiny = { #The people of Vidvakhoka believe that no one can escape their destiny, and instead of fighting against inevitability, one must do their lot in life and settle for the present.
 		stability_cost_modifier = -0.2
@@ -18680,7 +18763,8 @@ H11_ideas = {
 	free = yes
 
 	H11_copperhearth = { #monopoly on copper allows for ostentatious displays of armaments
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	H11_praisegranting = { #birthplace of the praisegranting holiday
 		diplomatic_reputation = 1
@@ -19053,7 +19137,8 @@ G94_ideas = {
 		production_efficiency = 0.1
 	}
 	G94_made_in_argezvale = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G94_veykodan_districts = {
 		tolerance_heathen = 2
@@ -19133,7 +19218,8 @@ A55_ideas = {
 		mercenary_cost = -0.2
 	}
 	A55_arcane_wards = { #Positioned between holdings of the rival Orda Aldresia and the Magisterium, developed personal anti-magic wards to protect the city and the guard during the Wars of Rule
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	A55_bridgewine_and_boar = { #Wine brewed in Menibor, popular among adventurers and goes well with boar or sausage
 		production_efficiency = 0.1
@@ -19496,7 +19582,8 @@ F30_ideas = {
 		recover_army_morale_speed = 0.10
 	}
 	F30_discovery_at_the_ruins_of_karqaslu = { #an old mysterious helmet irradiating magical power has been discovered in the ruins of Karqa?lu, those who wear it gain magical abilities, particularly resistance to magic. but wearers often hear strange voices, particularly that of a mysterious, ancient sorcerer.
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -20024,7 +20111,8 @@ F43_ideas = {
 		global_own_trade_power = 0.1 #lots of rivers, good for trading
 	}
 	bonus = {
-		shock_damage_received = -0.10 #used to fighting monsters
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod #used to fighting monsters
 	}
 
 	trigger = {
@@ -20369,7 +20457,8 @@ Z62_ideas = {
 		land_attrition = -0.1
 	}
 	Z62_silver_shields = { #Disciplined and unwavering infantry unit from Lo Ngoen
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Z62_heart_of_haless = { #On the border of Thidinkai, Bomdan, and the Xianjie
 		idea_cost = -0.1
@@ -20660,7 +20749,8 @@ Y72_ideas = {
 		horde_unity = 0.5
 	}
 	Y72_encrusted_lamellar_armor = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -20694,7 +20784,8 @@ Y46_ideas = {
 		caravan_power = 0.2
 	}
 	Y46_the_secret_of_korashi = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Y46_temple_of_a_hundred_schools = {
 		num_accepted_cultures = 2
@@ -20946,7 +21037,8 @@ H19_ideas = {
 		garrison_size = 0.25
 	}
 	H19_autumns_grave = { #Hibernal Crusade shattered by the intervention of Strutmar. Hibernal armies congregated at Tuathmarr (Oathfield) to ensure loyalty of the continued struggle, but were ambushed by the Strutmari and the crusade shattered
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	H19_coldwoods_council = { #the Peitar of Strutmar maintain few permanent settlements other than Dungat, to evade marauding Tuathak and Snecboth. Thrice yearly representatives of each clan meet to plan their movements and their contributions to ensuring the safety of the winter gate
 		movement_speed = 0.075
@@ -20999,7 +21091,8 @@ H20_ideas = {
 		yearly_corruption = -0.1
 	}
 	H20_desert_mirage = { #ambush style warfare
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	H20_sweetdew_and_bluewool = { #naturally fizzy dew water and blue woolenware from shaggy livestock are seen as curiousities by foreign traders
 		trade_efficiency = 0.1
@@ -21156,7 +21249,8 @@ Z74_ideas = {
 		stability_cost_modifier = -0.2
 	}
 	Z74_nifltrolleri = {
-		fire_damage_received = -0.10
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Z74_recipes_of_every_race = {
 		global_unrest = -2
@@ -21200,7 +21294,8 @@ G22_ideas = {
 		artificers_loyalty_modifier = 0.05
 	}
 	G22_steel_dragons_of_svemel = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -21282,8 +21377,10 @@ H30_ideas = {
 		land_attrition = -0.1
 	}
 	H30_gnomish_artificery = {
-		fire_damage_received = -0.075
-		shock_damage_received = -0.075
+		#fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.0375	#BomjSBagetom Anbennar Submod
+		#shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.0375	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -21390,7 +21487,8 @@ R61_ideas = {
 	}
 	R61_mountain_climbing_and_desert_running = { #the land outside of Rayavhashapal is kinda shit, and so our adventurers are trained to survive the rough wilderness of the Paravimvata Mountains and the Marutha Desert
 		drill_gain_modifier = 0.5
-        shock_damage_received = -0.1
+        #shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	R61_nests_of_pasiragha = { #While we got off on the wrong talon at first, harpies are now valued citizens of Pasiragha. they make good scouts, and allowed to make their nests in our cities
 		leader_land_manuever = 1
@@ -21496,7 +21594,8 @@ R67_ideas = {
 #Elephant Command
 R68_ideas = {
 	start = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		fort_maintenance_modifier = -0.15
 	}
 	bonus = {
@@ -21688,7 +21787,8 @@ H51_ideas = {
 		same_culture_advisor_cost = -0.15
 	}
 	H51_the_bond_breaker = {
-		shock_damage_received = -0.1 
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -21818,7 +21918,8 @@ H91_ideas = {
 #Black Demesne
 Z99_ideas = {
 	start = {
-		shock_damage_received = -0.2
+		#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
 		siege_ability = 0.2
 	}
 	bonus = {
@@ -21857,7 +21958,8 @@ Z99_ideas = {
 #Acolytes Dominions
 acolytes_ideas = {
 	start = {
-		shock_damage_received = -0.2
+		#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
 		siege_ability = 0.2
 	}
 	bonus = {
@@ -22482,7 +22584,8 @@ F50_ideas = {
 		province_warscore_cost = -0.15
 	}
 	F50_bulwark_against_the_northern_raiders = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	F50_trills_of_the_past = {
 		global_unrest = -2
@@ -22831,7 +22934,8 @@ U22_ideas = { #veykodan formable
 		stability_cost_modifier = -0.15
 	}
 	U22_rune_tattoo_armour = { # With guns being introduced to the battlefield, the heavy plate the Ynnic knights use becomes impractical and useless to stop a bullet. Our infantry uses perfected rune tattoo magic to protect themselves instead
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	U22_proliferation_of_rune_tattoos = { # The Veykodan custom of magical tattoos has spread even to the Ynnics. While not nearly as effective on them as on those who have Veykodan blood, it still helps enhance their abilities and lets them work more effectively
 		production_efficiency = 0.10
@@ -23000,7 +23104,8 @@ Y48_ideas = {
 		global_spy_defence = 0.5
 	}
 	Y48_cloaks_of_the_night = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Y48_secret_complexes = {
 		build_cost = -0.1
@@ -23220,7 +23325,8 @@ Y75_ideas = {
 Y81_ideas = {
 	start = {
        	hostile_attrition = 1
-        shock_damage_received = -0.1
+       	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	
 	bonus = {
@@ -23295,7 +23401,8 @@ Y70_ideas = {
 		stability_cost_modifier = -0.2
 	}
 	Y70_copper_horse_armor = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Y70_outriders_of_baihon_xinh = {
 		harsh_treatment_cost = -0.2
@@ -23426,7 +23533,8 @@ Y97_ideas = {
 Y54_ideas = {
 	start = {
 		reform_progress_growth = 0.15
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		leader_siege = 1
@@ -23559,7 +23667,8 @@ Y60_ideas = {
 	free = yes
 
 	Y60_the_silver_shields = { #The Silver shields is the elite bodyguard of the Lord, funded by the mines and each given a silver decorated towershield(I just realised this is a tangoya idea, but it can just be copied over imo)
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Y60_trade_with_the_dwarves = { #The Dwarves export many goods along the Teleni, and we are their first stop. We have learned to convert this position into better deals many a times.
 		caravan_power = 0.2
@@ -23611,7 +23720,8 @@ H80_ideas = {
 		discipline = 0.05
 	}
 	H80_the_new_vanguard = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	H80_repurposing_dwarven_forges = {
 		production_efficiency = 0.1
@@ -24291,7 +24401,8 @@ G23_ideas = {
 	}
 	G23_halberds = {
 		infantry_shock = 0.05
-		shock_damage_received = -0.075
+		#shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.0375	#BomjSBagetom Anbennar Submod
 	}
 	G23_mixed_ancestry = {
 		num_accepted_cultures = 2
@@ -24468,7 +24579,8 @@ H29_ideas = {
 		province_warscore_cost = -0.15
 	}
 	H29_pierce_through_adversity = {
-		shock_damage_received = -0.075
+		#shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.0375	#BomjSBagetom Anbennar Submod
 		shock_damage = 0.075
 	}
 	H29_the_forefront_of_cultural_exchange = {
@@ -24561,7 +24673,8 @@ G30_ideas = {
 U23_ideas = {
 	start = {
 		defensiveness = 0.15 #fortress against Epednar has stood for centuries
-		shock_damage_received = -0.1 #practice fighting Epednar shock cavalry
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod #practice fighting Epednar shock cavalry
 	}
 	bonus = {
 		num_accepted_cultures = 2 #relative integration of Epednar and Ynnsmen into society
@@ -24790,7 +24903,8 @@ H57_ideas = {
 	}
 	H57_all_terrain_poachers = { #Lot of skilled poachers from the old Havoral Band that also are part of military
 		prestige = 0.5
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	H57_ivory_wars = { #Long drawn out guerrilla war with native veykodans. Good at staying in long conflicts as result
 		war_exhaustion = -0.03
@@ -24897,7 +25011,8 @@ G55_ideas = { #Made by @Ottokard#1942
 		native_assimilation = 0.50
 	}
 	bonus = {
-		fire_damage_received = -0.10
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		tag = G55
@@ -25228,7 +25343,8 @@ Z04_ideas = {
 		republican_tradition = 0.3
 	}
 	Z04_indels_legend = { #namesake of indlebury, cool story about a guy that single-handedly held off a bandit raid or something.
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Z04_shroom_sniffers = { #the halflings of indlebury are often pig farmers, one tradition they have is using pigs to hunt for expensive shrooms, especially truffles.
 		global_trade_goods_size_modifier = 0.1
@@ -25556,7 +25672,8 @@ G02_ideas = {
 		global_missionary_strength = 0.02
 	}
 	G02_behind_a_kalun_mask = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G02_the_wrestling_bands = {
 		mercenary_cost = -0.10
@@ -25836,7 +25953,8 @@ F72_ideas = {
 		missionaries = 1
 	}
 	F72_ironpelts = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	F72_unconventional_artificers = { #Creating new technologies out of waste and junk materials
 		technology_cost = -0.05
@@ -25860,7 +25978,8 @@ F68_ideas = {
 	F68_under_the_gnollish_claw = {
 		female_advisor_chance = 0.5
 		may_recruit_female_generals = yes
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	F68_in_the_shadow_of_the_swamp = {
 		tolerance_heretic = 2
@@ -26076,7 +26195,8 @@ L06_ideas = {
 L04_ideas = {
 	start = { #Slaves and defensive experience
 		fort_maintenance_modifier = -0.20
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = { #Greater control of clans
 		war_exhaustion_cost = -0.20
@@ -26762,7 +26882,8 @@ S17_ideas = {
 		advisor_cost = -0.1
 	}
 	S17_studying_tactics = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	S17_far_flung_diplomacy = {
 		diplomats = 1
@@ -26844,7 +26965,8 @@ S20_ideas = {
 		trade_efficiency = 0.1
 	}
 	S20_the_daughters_of_xawla = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		may_recruit_female_generals = yes
 	}
 	S20_kunbakh_dawaalhag = {
@@ -26899,7 +27021,8 @@ S21_ideas = {
 S22_ideas = {
 	start = {
 		defensiveness = 0.2
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		legitimacy = 1
@@ -27242,7 +27365,8 @@ R47_ideas = {
 	}
 	R47_mahouts_of_the_setar = { #to counter the dhukaruved horsemen, they developed a strategy of screening their front lines with elephants. Some of the best elephant riders in the south.
 		cavalry_power = 0.1
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	}
 	R47_bloody_reprisal = { #reputation for ruthlessness, only exacerbated by their conduct during the brothers war.
 		global_unrest = -1
@@ -27536,7 +27660,8 @@ L75_ideas = {
 		fort_maintenance_modifier = -0.15 #Fortifying is easier because that's all they do
 	}
 	L75_the_veins_of_adamant = {
-		fire_damage_received = -0.1 #Their capital is the largest adamant mine
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod #Their capital is the largest adamant mine
 	}
 	L75_the_cleansing_of_lake_adgur = {
 		global_supply_limit_modifier = 0.25	#Use bardic magic to cleanse Lake Adgur from Yezel Mora influence.
@@ -28192,7 +28317,8 @@ L07_ideas = {
 #Binwarji
 L22_ideas = {
 	start = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		vassal_income = 0.25
 	}
 	bonus = {
@@ -28291,7 +28417,8 @@ F60_ideas = {
 		global_unrest = -2
 	}
 	F60_guards_of_the_free = { #elite regiments to defend the borders
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	F60_gold_metal_and_jewels = { #We got a lot of it
 		production_efficiency = 0.1
@@ -28464,7 +28591,8 @@ F64_ideas = {
 		leader_land_manuever = 1
 	}
 	F64_holding_back_the_darkness = {
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 	F64_elikhets_decree_on_magic = {
 		all_power_cost = -0.025
@@ -28496,7 +28624,8 @@ L14_ideas = {
 		production_efficiency = 0.10
 	}
 	L14_legacy_of_the_dendugma_conquest = { #good at fighting guerillas
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	L14_village_democracy = { #freedomTM
 		legitimacy = 1
@@ -28983,7 +29112,8 @@ L03_ideas = {
 		global_spy_defence = 0.25
 	}
 	L03_scale_hunters = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	L03_the_great_ambition = {
 		core_creation = -0.1
@@ -29048,7 +29178,8 @@ L77_ideas = {
 		global_trade_goods_size_modifier = 0.05
 	}
 	L77_blood_bound_warriors = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	L77_trial_of_artisans = {
 		global_institution_spread = 0.15
@@ -29484,7 +29615,8 @@ L67_ideas = {
 		diplomats = 1
 	}
 	L67_bulwark_of_the_holy_land = { #They see themselves as a bulwark against the Tanizu and Dakinshi, have managed to fend them off from the holy land time after time.
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	L67_submerged_shamans = { #Water is Amilak's blessing as it appears to come directly from him (the sky), they have made their home in his water and are holier for it. Therefore, those who immerse themselves in the swamps are the holiest of all. Holy men in Kidsit Yitsi live fully in the swamps and lakes, travelling through them between villages and towns, living off the fish and wild Sorghum found in the waterways of the Kingdom.
 		global_missionary_strength = 0.02
@@ -29644,7 +29776,8 @@ S24_ideas = {
 		power_projection_from_insults = 1
 	}
 	S24_beast_breakers = { #constant clashes with averilibet, was once owned by them. Fuulmana beat them in a humiliating battle at some point in the past
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	S24_the_crossroads = { #fuulmana is in the heart of the mengi, with a big route/road between the keygas and yet passing thru fuulmana. Uses its position as a crossroads for toll purposes.
 		global_tax_modifier = 0.15
@@ -29773,7 +29906,8 @@ L56_ideas = { #Dakmender
 
 L57_ideas = { #Boyebareti
 	start = {
-		shock_damage_received = -0.10 #heavily armored in iron
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod #heavily armored in iron
 		global_regiment_cost = -0.10
 	}
 	bonus = {
@@ -29998,7 +30132,8 @@ L89_ideas = {
 		land_forcelimit_modifier = 0.15 
 	}
 	L89_lazanic_shellplate = {
-		fire_damage_received = -0.10
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -30058,7 +30193,8 @@ L24_ideas = {
 	free = yes
 
 	L24_the_northern_homeland= { # the Nenfi people have not forgotten how the Three Mothers led the Mantimatu people to freedom from the brutal krah. they yearn to return to the north
-		shock_damage_received = -0.1 # moved shock damage here to distinguish it from Jagab Faru
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod # moved shock damage here to distinguish it from Jagab Faru
 
 	}
 	
@@ -30311,7 +30447,8 @@ S51_ideas = {
 		state_maintenance_modifier = -0.33
 	}
 	S51_the_last_stand_of_denkaret = { #last stand of a free Metobesebi. Braveheart vibes. Maybe a cool speech here?
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	S51_exile_recipes = { #the exiled families spread throughout the mengi lands, introducing Metobesebi s recipes to outsiders. Their descendants become cool chefs
 		prestige = 1
@@ -30753,7 +30890,8 @@ S68_ideas = {
 	}
 
 	 S68_twice_scaled = { 
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 
 	 S68_shegfarasu = { 
@@ -30784,7 +30922,8 @@ S59_ideas = {
 		garrison_size = 0.20
 	}
 	S59_azmera_the_unbreakable = { #cool story about Wezinmesig s founding as originally built around a powerful abjuration mage s workshop named Azmera. He invented a way to mass produce clothing that provides moderate protection from blades. This is produced by Wezinmesig, but the most high quality magic clothing is reserved for Wezingoa s soldiers.
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	S59_tempering_our_ambitions = { #wezingoa expected to have reunited meretgeban by now, but havent, and now have to focus on long term governance as a separate kingdom
 		adm_advisor_cost = -0.25
@@ -30831,7 +30970,8 @@ S62_ideas = {
 		improve_relation_modifier = 0.2
 	}
 	S62_silver_fleece = {
-		fire_damage_received = -0.10
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	S62_mastery_over_weaving = {
 		land_maintenance_modifier = -0.10
@@ -30853,7 +30993,8 @@ S55_ideas = {
 	free = yes
 
 	S55_woodchopper_kings = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	S55_crowned_by_great_kings = {
 		legitimacy = 1
@@ -30970,7 +31111,8 @@ L49_ideas = {
 	free = yes
 	
 	L49_lich_hunters = { #Taking time to examine their past, they incorporate Adaru sentinels into an elite anti-mage force to hunt necromancers, but they're skilled against all spellcasters.
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		morale_damage_received = -0.05
 	}
 	L49_the_banni = { #Kaino loyalists who, inspired by the Bokiya, believe that the Kaino should take the name of Banni rather than of Kaino as Banni redeemed them by slaying the great evil that was the 2nd Fangaulan Empire.
@@ -31133,7 +31275,8 @@ L72_ideas = {
 		defensiveness = 0.05
 	}
 	L72_hardened_by_ashhana = { #Zatsuti people spend centuries, fighting vile ashhana. Battle-hardened, over centuries local tribes gained natural armour to protect them against claws and weapons
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	L72_birth_of_new_great_city = { #New rising power attracted many settlers who are willing to contribute to building Nazhni
 		build_cost = -0.1
@@ -31239,7 +31382,8 @@ L84_ideas = {
 F63_ideas = {
 	start = {
 		global_autonomy = -0.05 #rule with a magic iron fist
-		shock_damage_received = -0.1 #abjuration spells
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod #abjuration spells
 	}
 	bonus = {
 		discipline = 0.05 #an army led by battlemages is discliplined
@@ -31547,7 +31691,8 @@ S45_ideas = {
 #Blodfjell Ideas
 Z83_ideas = {
 	start = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		land_attrition = -0.1
 	}
 	bonus = {
@@ -31721,8 +31866,10 @@ S64_ideas = {
 		mil_advisor_cost = -0.25
 	}
 	S64_fight_for_your_lives = {
-		shock_damage_received = -0.05
-		fire_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	}
 	S64_all_for_an_eye = {
 		unjustified_demands = -0.2
@@ -31822,7 +31969,8 @@ Z90_ideas = {
 L11_ideas = {
 	start = {
 		global_ship_cost = -0.1
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		diplomats = 1
@@ -31937,7 +32085,8 @@ L31_ideas = {
 #Jagab Faru 
 L02_ideas = {
 	start = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		leader_land_manuever = 1
 	}
 	bonus = {
@@ -32169,7 +32318,8 @@ U29_ideas = {
 		global_unrest = -1 #Kaiineloo do both war songs before battles to give courage to the troops and tours around the country acting as entertainers for the people.
 	}
 	U29_goblin_foes = {
-		fire_damage_received = -0.1 #History about how the goblins of Mestikardu are kinda awful towards the Kooras and push Kaiinpi out of their ancestral territory.
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod #History about how the goblins of Mestikardu are kinda awful towards the Kooras and push Kaiinpi out of their ancestral territory.
 	}
 }
 
@@ -32319,7 +32469,8 @@ G17_ideas = {
 		trade_range_modifier = 0.5
 	}
 	G17_inhospitable_habitation = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G17_lifebloom_healers = {
 		manpower_recovery_speed = 0.05
@@ -32361,7 +32512,8 @@ G18_ideas = {
 		trade_range_modifier = 0.5
 	}
 	G18_inhospitable_habitation = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G18_bone_bound = {
 		infantry_shock = 0.15
@@ -32401,7 +32553,8 @@ G19_ideas = {
 		trade_range_modifier = 0.5
 	}
 	G19_inhospitable_habitation = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G19_a_jungle_metropolis = {
 		development_cost = -0.1
@@ -32486,7 +32639,8 @@ S47_ideas = {
 		production_efficiency = 0.15
 	}
 	S47_dark_bark_shields = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	S47_the_long_way = {
 		trade_steering = 0.20
@@ -32517,7 +32671,8 @@ S48_ideas = {
 	}
 
 	S48_home_of_the_deathsworns = {			
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 
 	S48_halkan_laaltuu = {
@@ -32750,7 +32905,8 @@ A08_ideas = {
 R82_ideas = {
 	start = {
 		defensiveness = 0.15
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		war_exhaustion = -0.03 
@@ -32970,7 +33126,8 @@ G66_ideas = { #Made by DichoMire
 		available_province_loot = 0.2
 	}
 	G66_a_polearm_a_day = { # Clematar specialises in anti-shock warfare
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 	G66_crossroad_between_realms = { # Perhaps the most important trading port connecting Taychend with Kheionai
 		global_trade_power = 0.1
@@ -33003,7 +33160,8 @@ J75_ideas = {
 	free = yes
 
 	J75_brotherhood_of_the_bloody_cloak = {
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 	J75_bulwark_of_the_west = {
 		garrison_size = 0.2
@@ -33449,7 +33607,8 @@ L55_ideas = { #Naleni Ideas
 		naval_tradition_from_battle = 0.25
 	}
 	L55_sirens_song = { # the harpies of Naleni are renowned for their singing, even sparking stories of sirens. They have used their skills to great effect in combat, luring in unsuspecting opponents and lowering their guard.
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	L55_prosperous_racket = { #The Harpies of Naleni have built a league of trading factors throughout the ringlet sea. They double as both merchants and strong arms, negotiating the 'protection fees' to do business in the local ports, as well as reminding people how cheap the price of their protection is, versus almost guaranteed plundering from eager pirates.
 		placed_merchant_power = 5
@@ -33580,7 +33739,8 @@ S81_ideas = {
 		governing_capacity_modifier = 0.15
 	}
 	S81_many_mutations = { #Lizardfolk have many mutations. Many of them can be really useful on the battlefield.
-		fire_damage_received = -0.15
+		#fire_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 	S81_enemies_within = { #Since the time our efforts to unite lizardfolk started we had not only had to face enemies in battlefields but a new enemy emerged. An enemy of our, the Hags manipulated our society since immemorial. The Hags use those who are foolish enough to bargain with them to further their own agenda- The Hags absolutely oppose a unified Lizardfolk state since it is a great threat for their influence in the rion and thus will do anything to stop us. We need to fight back, arrest those who bargain with them and guard our state from this terrible enemy.
 		global_spy_defence = 0.20
@@ -33702,7 +33862,8 @@ L27_ideas = {
 		navy_tradition = 1
 	}
 	L27_dajasay = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		army_tradition = 0.5
 	}
 }
@@ -34143,7 +34304,8 @@ L92_ideas = {
 		horde_unity = 1
 	}
 	L92_low_profile = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -34319,7 +34481,8 @@ B43_ideas = {
 		cavalry_cost = -0.20
 	}
 	goblin_sneaky_tactics = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	B43_rabid_campaigns = {
 		ae_impact = -0.1
@@ -34487,7 +34650,8 @@ F82_ideas = {
 	}
 	F82_the_sebsadi_orcs = { #description
 		shock_damage = 0.075
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	}
 	F82_gifts_of_firanyalen= { #description
 		production_efficiency = 0.10
@@ -34777,7 +34941,8 @@ L93_ideas = {
 		army_tradition = 0.5
 	}
 	L93_all_but_silenced = { 
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		global_unrest = -1
 	}
 }
@@ -34942,7 +35107,8 @@ L32_ideas = {
 	}
 	L32_tale_of_the_dead_parrot_society = {
 		sailors_recovery_speed = 0.1
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -35055,7 +35221,8 @@ R86_ideas = {
 		manpower_in_true_faith_provinces = 0.15
 	}
 	R86_the_maiden_enlightenment = {
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		infantry_power = 0.05
 	}
 	R86_the_flow_of_the_yanhe = {
@@ -35148,7 +35315,8 @@ U33_ideas = {
 		nobles_loyalty_modifier = 0.1
 	}
 	U33_istralorian_square = { #When large parts of Vizkaladr converted to corinite, the nobility struck back hard. The Istralorian preaches provided the converts with weapons and training, teaching them to quickly form up squares of pikes and muskets against the heavy cavalry. While the corinites lost in the end, the tactics stuck with the Rzentur and became a key part of the Dragon Dominions wars against the Dolindhans.
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -35246,7 +35414,8 @@ J76_ideas = {
 
 	J76_shieldmasters_of_banderuttai = {
 		production_efficiency = 0.05
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	}
 	J76_dhusan_the_man_fort = {
 		hostile_attrition = 1
@@ -35605,7 +35774,8 @@ B25_ideas = {
 	}
 	
     B25_the_blade_eater_forge = { #Massive old forge they repurposed to melt scrap and loot into new equipment.
-        shock_damage_received = -0.05
+        #shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
         available_province_loot = 0.2
     }
 	
@@ -36429,7 +36599,8 @@ G80_ideas = {
 		harsh_treatment_cost = -0.25
     }
     G80_a_kingdom_on_edge = { # thou hath very evil karma
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
     }
     G80_dealings_with_the_dark = { # oooh spooky usp
 		hostile_attrition = 1
@@ -36446,7 +36617,8 @@ G80_ideas = {
 Y80_ideas = {
 	start = {
 		hostile_attrition = 1 #Yanglam shared tradition
-      	shock_damage_received = -0.1 #Yanglam shared tradition
+      	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod #Yanglam shared tradition
 	}
 	
 	bonus = {
@@ -36826,7 +36998,8 @@ B24_ideas = {
 #Misharallen
 F90_ideas = {
 	start = {
-	fire_damage_received = -0.1 # S (baseline)
+	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod # S (baseline)
 	stability_cost_modifier = -0.1 # B (baseline)
 	}
 		bonus = {
@@ -37069,7 +37242,8 @@ F95_ideas = {
 S82_ideas = {
 	start = {
 		land_forcelimit_modifier = 0.15
-		fire_damage_received = -0.10
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	
 	bonus = {
@@ -37279,7 +37453,8 @@ V11_ideas = {
 R87_ideas = {
 	start = {
 		hostile_attrition = 1 
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		advisor_cost = -0.1 
@@ -37524,7 +37699,8 @@ F96_ideas = {
     }
     
     F96_way_of_the_suncrown = { 
-        shock_damage_received = -0.1
+        #shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
         tolerance_own = 1
     }
     
@@ -37604,7 +37780,8 @@ B41_ideas = {
 	} 
 	 
 	goblin_sneaky_tactics = { 
-		shock_damage_received = -0.10 
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	} 
  
 	B41_tone_deaf = { 
@@ -37693,7 +37870,8 @@ G77_ideas = {
     
     G77_armadillo_spears = { 
         infantry_power = 0.1   	
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 
     }
     
@@ -38123,7 +38301,8 @@ G87_ideas = {
 		tolerance_heathen = 1
 	}
 	G87_wings_of_war = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G87_winds_of_change = {
 		diplomatic_reputation = 1
@@ -38205,7 +38384,8 @@ J92_ideas = {
 	}
 	
 	J92_anti_magic_sentiment = { 
-		shock_damage_received = -0.10	
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	
 	J92_port_of_carginden = { 
@@ -38479,7 +38659,8 @@ Y40_ideas = {
     }
 
 	Y40_bhai_xhou_armour = {
-        fire_damage_received = -0.1
+        #fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
     }
 }
 
@@ -38555,7 +38736,8 @@ Y36_ideas = {
     }
 
 	Y36_shapes_of_a_shield = {
-        shock_damage_received = -0.1
+        #shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
     }
 
     Y36_shield_is_a_tool = {
@@ -38579,7 +38761,8 @@ Y36_ideas = {
 Y34_ideas = {
     start = {
         reinforce_cost_modifier = -0.1
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
     }
 
     bonus = {
@@ -38723,7 +38906,8 @@ Y11_ideas = {
     }
 	free = yes
     Y11_archer_monks = {
-        shock_damage_received = -0.1
+        #shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 
     Y11_true_aim_path = {
@@ -38869,7 +39053,8 @@ B46_ideas = {
 	} 
 	 
 	goblin_sneaky_tactics = { 
-		shock_damage_received = -0.10 
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod 
 	} 
  
 	B46_investation = { 
@@ -39450,7 +39635,8 @@ U40_ideas = {
     }
 
     U40_ancient_beasts = {
-        shock_damage_received = -0.1
+        #shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
     }
 
     U40_rebuild_drisleak = {
@@ -39740,7 +39926,8 @@ I52_ideas = {
 		army_tradition = 0.5
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -39781,7 +39968,8 @@ I53_ideas = {
 		army_tradition = 0.5
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -39822,7 +40010,8 @@ I54_ideas = {
 		army_tradition = 0.5
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -40025,7 +40214,8 @@ I59_ideas = {
 		army_tradition = 0.5
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -40268,7 +40458,8 @@ I65_ideas = {
 		global_unrest = -2
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -40309,7 +40500,8 @@ I66_ideas = {
 		army_tradition = 0.5
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -40350,7 +40542,8 @@ I67_ideas = {
 		army_tradition = 0.5
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -40514,7 +40707,8 @@ I72_ideas = {
 		defensiveness = 0.10
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -40596,7 +40790,8 @@ I74_ideas = {
 		army_tradition = 0.5
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -40718,7 +40913,8 @@ I78_ideas = {
 		army_tradition = 0.5
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -40866,7 +41062,8 @@ I82_ideas = {
 	free = yes
 	
 	I82_sunrise_warriors = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	chosen_of_irdaeos = {
 		land_morale = 0.1
@@ -40881,7 +41078,8 @@ I82_ideas = {
 		global_unrest = -2
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -40921,7 +41119,8 @@ I83_ideas = {
 		global_unrest = -2
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -41043,7 +41242,8 @@ I86_ideas = {
 		army_tradition = 0.5
 	}
 	the_coglinh_clugeal = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	the_copper_pass_exchange = {
 		church_power_modifier = 0.1
@@ -41554,7 +41754,8 @@ J87_ideas = {
 		defensiveness = 0.15
 	}
 	J87_preserve_our_men = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	J87_forever_self_sufficient = {
 		prestige = 1
@@ -41598,7 +41799,8 @@ J89_ideas = {
 	}
 	
 	J89_give_them_shell = { 
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 
 	J89_clamweavers = { 
@@ -41623,7 +41825,8 @@ V13_ideas = {
 	free = yes
 
 	V13_the_dragon_and_the_eagle = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 
 	V13_hikari_banbe_the_great_eagle = {
@@ -41759,7 +41962,8 @@ V07_ideas = {
 	}
     
 	V07_mines_of_the_red_wastes = {
-    	shock_damage_received = -0.1
+    	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
     
 	V07_those_that_wander_alone = {
@@ -41833,7 +42037,8 @@ V18_ideas = {
 Y77_ideas = {
 	start = {
 		hostile_attrition = 1 #Yanglam shared tradition
-      	shock_damage_received = -0.1 #Yanglam shared tradition
+      	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod #Yanglam shared tradition
 	}
 	
 	bonus = {
@@ -41875,7 +42080,8 @@ Y77_ideas = {
 Y79_ideas = {
 	start = {
 		hostile_attrition = 1
-        shock_damage_received = -0.1
+        #shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	bonus = {
 		manpower_in_accepted_culture_provinces = 0.15
@@ -42027,7 +42233,8 @@ J88_ideas = {
 		morale_damage = 0.1
 	}
 	J88_visage_of_discipline = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	J88_wood_trade = {
 		global_trade_power = 0.1	
@@ -42045,7 +42252,8 @@ H39_ideas = {
     } 
  
     bonus = { 
-        fire_damage_received = -0.1 
+        #fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
     } 
  
     trigger = { 
@@ -42122,7 +42330,8 @@ B86_ideas = {
 F53_ideas = {
 	start = {
 		all_power_cost = -0.05		
-		fire_damage_received = -0.1	
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	
 	bonus = {
@@ -42167,7 +42376,8 @@ F53_ideas = {
 F26_ideas = {
 	start = {
 		war_exhaustion = -0.03
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	
 	bonus = {
@@ -42366,7 +42576,8 @@ G51_ideas = {
 		may_recruit_female_generals = yes # female war mages but no kylakes
 	}
 	G51_the_zopedan_phalanx = { # after gunpowder proliferates through Alecand, Arpedif�r develops the Zopedan Phalanx to counter them, creating heavily warded armour and shields to counteract gunfire. Though the phalanx formation as a whole would nonetheless later become obsolete, Arpedif�r-made Zopedan equipment would become standard for the Kheionai�s elite heavy infantry.
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	G51_weaponising_the_deathwinds = { # after the deathwind of 1772, and the Nekheis� declaration of independence, the kheions formed the Second Alebhen League to reclaim Devand. As the war effort stalled, Arpedifer would deploy the first Kaydhano weaponry to devastating effect, creating an arms race that would see the creation of both offensive and defensive uses of Kaydhano deathsand.
 		mil_tech_cost_modifier = -0.1 # military innovation
@@ -42486,7 +42697,8 @@ U36_ideas = {
 		vassal_forcelimit_bonus = 0.5
 	}
 	U36_an_apocryphal_schism = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 #Lokemeion Ideas (reworked by Blaziy and Takasaki, original by runehawk)
@@ -42684,7 +42896,8 @@ U42_ideas = {
 		reform_progress_growth = 0.15
 	}
 	U42_smogbane_tactics = {	#Fighting off the artificers
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 }
 
@@ -42721,7 +42934,8 @@ L54_ideas = {
 	}
 	
       L54_the_regiment_of_the_hills = { 
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	
 	L54_an_open_land = { 
@@ -42870,7 +43084,8 @@ Z05_ideas = {
 Y84_ideas = { 
 	start = { 
 		hostile_attrition = 1 
-        shock_damage_received = -0.1 
+        #shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	} 
 	bonus = { 
 		land_forcelimit_modifier = 0.25 
@@ -43011,7 +43226,8 @@ U48_ideas = {
 Y82_ideas = { 
 	start = { 
 		hostile_attrition = 1 
-        shock_damage_received = -0.1 
+        #shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	} 
 	bonus = { 
 		num_accepted_cultures = 2
@@ -43492,7 +43708,8 @@ U43_ideas = {
         global_unrest = -2 #Explanation of the origin of the Fograc and how they aren't fond of fey.  
 	}  
     U43_leatherskin_armors = {   
-        shock_damage_received = -0.1  
+        #shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		land_attrition = -0.1 #Fograc have leathery, elephant-like skin, that serves as a natural armor.  
 	}  
     U43_united_in_harshness = {  
@@ -43506,7 +43723,8 @@ U43_ideas = {
 		tolerance_own = 2 #Cool lore exposition about the Raeldaeriach religion.  
 	}  
 	U43_struggle_for_the_peninsula = {  
-        fire_damage_received = -0.05  
+        #fire_damage_received = -0.05  	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.025  	#BomjSBagetom Anbennar Submod
 		war_exhaustion = -0.02 #In the late 1700s, the Vanbury Guild seizes the Fograc peninsula from Murdkather. Fograc mostly support Murdkather, and they aren't content with Vanbury rule at all.  
     }  
 }
@@ -43692,7 +43910,8 @@ U44_ideas = {
 	}#Having been forced to be stuck nearest the dromandrodd and through interaction with our Eordellon overlord we learned to make the most of the local fauna to help with our works and befriended local feys
     
 	U44_resisting_gnomes = {
-    		fire_damage_received = -0.1
+    		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+			fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}#Gnomes colonized us after everyone else, which shall punt their evil colonial asses back to cannor
 }
 
@@ -44025,7 +44244,8 @@ U72_ideas = {
 	} 
 	U72_lighting_the_forges = { #Dalaire has many mountains ripe with iron for mining and making armor. With the mines up in the mountains and the forges in the valleys, the kobolds created a system of sledges to quickly transport the ore down the slopes. 
 		production_efficiency = 0.1 
-		shock_damage_received = -0.05 
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	} 
 	U72_forest_flanking = { #Life in Dalaire and skirmishes with cursed ones have made the kobolds more hardy and skilled in fighting, splitting into groups and using coordinated tactics to take down cursed ones quickly 
 		infantry_power = 0.1 
@@ -44432,7 +44652,8 @@ B96_ideas = {
 	free = yes        #will be added at load.
 
 	B96_borders_of_empires = { 
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	}
 	B96_rule_over_the_divide = { 
 		all_estate_loyalty_equilibrium = 0.10
@@ -44824,7 +45045,8 @@ M05_ideas = {
 	}
 	
 	M05_gifts_of_lord_fire = {
-		fire_damage_received = -0.10
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	
 	M05_children_of_vortzo_liezmo = {
@@ -45100,7 +45322,8 @@ S97_ideas = {
 	}
 	
 	S97_the_cursed_blessing = {
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	
 	S97_the_unkown_masters = {
@@ -45132,7 +45355,8 @@ S97_ideas = {
 # Jinnakah
 S92_ideas = {
 	start = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		idea_cost = -0.1
 	}
 
@@ -45583,7 +45807,8 @@ H99_ideas = {
 		nobles_loyalty_modifier = 0.1
 	}
 	H99_bane_of_the_fey = { #Talks about how the Feyslicer clan got its name. Their vision of the Greentide has warped into a Feytide: they’re talented fey-slayers and used to their trickery; hunt, pillage and enslave their way through the Feyrealm, laying waste on countless settlements.
-		shock_damage_received = -0.10
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		available_province_loot = 0.25
 	}
 	H99_chained_together_in_faith = { #In an effort of the now-dominant goblin clans to make the orcs more co-operative, Feyslicers syncretised Goblinic Shamanism with Great Dookanism, most notably by incorporating Dookan into their pantheon.
@@ -45616,7 +45841,8 @@ Y88_ideas = {
 	free = yes
 
 	Y88_hykhlo = {
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 
 	Y88_edicts_of_terracing = {
@@ -45684,7 +45910,8 @@ R00_ideas = {
 		core_creation = -0.2
 	}
 	R00_northern_steel = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	R00_rebuild_the_hall_of_eternal_divines = {
 		global_missionary_strength = 0.02
@@ -45759,7 +45986,8 @@ Y90_ideas = { #Tsuista Khul
 		yearly_corruption = -0.1
 	}
 	Y90_ulaans_might = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	}
 	Y90_kuuldaari_archers = {
 		infantry_fire = 0.1

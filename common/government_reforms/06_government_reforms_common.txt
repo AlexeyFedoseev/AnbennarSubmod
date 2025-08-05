@@ -3108,8 +3108,10 @@ anbennar_T5_human_ogre = {
 	}
 	modifiers = {
 		#Positive
-		shock_damage_received = -0.1
-		fire_damage_received = -0.05
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		#Negative
 		infantry_cost = 0.1
 		reinforce_cost_modifier = 0.1
@@ -3368,8 +3370,10 @@ anbennar_T5_ruinborn_inf_quality = {
 	}
 	modifiers = {
 		#Positive
-		fire_damage_received = -0.05
-		shock_damage_received = -0.1
+		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		drill_gain_modifier = 1
 		drill_decay_modifier = -0.25
 		#Negative

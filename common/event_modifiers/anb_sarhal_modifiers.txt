@@ -192,7 +192,8 @@ dakinshi_supressed_population_provmod = {
 }
 
 dakinshi_mwasagores_warrior_training = {
-	shock_damage_received = -0.10
+	#shock_damage_received = -0.10		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
 }
 
 dakinshi_akaliza_spared = {
@@ -682,7 +683,8 @@ adeen_harpy_modifier = {
 }
 adeen_traditional_modifier = {
 	is_marine_modifier = yes
-	shock_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 adeen_payments_modifier = {
@@ -1361,7 +1363,8 @@ rinta_magical_purity = {
 }
 rinta_hell_rising = {
 	shock_damage = 0.1
-	shock_damage_received = -0.15
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 }
 alefisol_early_disorganization = {
 	local_hostile_movement_speed = -0.75

@@ -73,8 +73,10 @@ corinite_cult_of_personality = {
 corinite_defensive_war_dogma = {
 	fire_damage = -0.05
 	shock_damage = -0.05
-	shock_damage_received = -0.05
-	fire_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 
 corinite_offensive_war_dogma = {
@@ -398,7 +400,8 @@ dookans_guidance_war = {
 	land_morale = 0.15
 	army_tradition_from_battle = 1
 	shock_damage = 0.1
-	shock_damage_received = -0.1 
+	#shock_damage_received = -0.1 	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05 	#BomjSBagetom Anbennar Submod
 	development_cost = 0.2
 }
 dookans_guidance_peace = {
@@ -484,8 +487,10 @@ hunt_clarity_cd = {
 # Kvangahga
 ancestral_armaments = {
 	shock_damage = 0.1
-	shock_damage_received = -0.05
-	fire_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 repurposed_relics = {
 	global_heretic_missionary_strength = 0.04
@@ -673,7 +678,8 @@ harmonized_eltibhen = {
 }
 
 harmonized_amadian = {
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	religion = yes
 }
 
@@ -1674,7 +1680,8 @@ nsc_kazam_keys = { }
 nsc_medinavan_harp = { }
 
 nsc_arzdigil_armor = {
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	monarch_lifespan = 0.15
 }
 
@@ -2259,8 +2266,10 @@ mountains_peace_aspect = {
 }
 
 honor_ekelas_aspect = {
-	fire_damage_received = -0.1
-	shock_damage_received = -0.1
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
 }
 
 ekelas_fort_aspect = {
@@ -2308,12 +2317,14 @@ fey_court_seelie_bane = {
 
 fey_court_unseelie_modifier_1_early_game = {
 	reinforce_speed = 0.15
-	shock_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 fey_court_unseelie_modifier_1_late_game = {
 	reinforce_speed = 0.15
-	fire_damage_received = -0.1
+	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 fey_court_unseelie_modifier_2 = {
@@ -2540,7 +2551,8 @@ anjita_charge = {
 
 anjita_body_and_will = {
 	land_morale = 0.05
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 
 anjita_strike_fast = {

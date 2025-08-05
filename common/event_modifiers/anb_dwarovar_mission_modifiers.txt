@@ -69,22 +69,28 @@ krak_icecraft_equipment_3 = {
 krak_icecraft_equipment_4 = {
 	fire_damage = 0.025
 	shock_damage = 0.025
-	fire_damage_received = -0.025
-	shock_damage_received = -0.025
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
 	reinforce_cost_modifier = 0.75
 }
 krak_icecraft_equipment_5 = {
 	fire_damage = 0.05
 	shock_damage = 0.05
-	fire_damage_received = -0.05
-	shock_damage_received = -0.05
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
 	reinforce_cost_modifier = 0.75
 }
 krak_icecraft_equipment_6 = {
 	fire_damage = 0.1
 	shock_damage = 0.1
-	fire_damage_received = -0.1
-	shock_damage_received = -0.1
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
 	reinforce_cost_modifier = 1
 }
 krak_icecraft_drills_1 = {
@@ -901,7 +907,8 @@ ramsteel_fire_2 = {
 }
 ramsteel_fire_3 = {
 	cavalry_fire = 0.75
-	fire_damage_received = -0.025
+	#fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
 	cav_to_inf_ratio = 0.25
 	cavalry_power = 0.05
 }
@@ -922,14 +929,16 @@ ramsteel_shock_3 = {
 ramsteel_mecharam_1 = {
 	cavalry_flanking = 0.75
 	cavalry_fire = 1
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	movement_speed = 0.1
 	cavalry_power = 0.15
 }
 ramsteel_mecharam_2 = {
 	cavalry_flanking = 0.75
 	cavalry_fire = 1
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	cavalry_cost = -0.1
 	cavalry_power = 0.15
 }
@@ -948,14 +957,16 @@ ramsteel_mecharam_4 = {
 ramsteel_mecharam_5 = {
 	cav_to_inf_ratio = 0.50
 	cavalry_fire = 1
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	movement_speed = 0.1
 	cavalry_power = 0.15
 }
 ramsteel_mecharam_6 = {
 	cav_to_inf_ratio = 0.50
 	cavalry_fire = 1
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	cavalry_cost = -0.1
 	cavalry_power = 0.15
 }
@@ -989,8 +1000,10 @@ ovdalkanzad_the_uzthrun_forge = {
 	trade_goods_size = 3
 }
 ovdalkanzad_defense_is_the_best_offense = {
-	shock_damage_received = -0.025
-	fire_damage_received = -0.025
+	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
 }
 ovdalkanzad_a_new_god_of_the_battlefield = {
 	fire_damage = 0.05
@@ -1181,8 +1194,10 @@ mithradhum_tactics = {
 	idea_cost = -0.1
 }
 mithradhum_mithril_armory = {
-	shock_damage_received = -0.1
-	fire_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	reserves_organisation = 0.1
 }
 mithradhum_grandiose = {
@@ -1323,8 +1338,10 @@ lodhum_elf_lessons = {
 	movement_speed = 0.05
 }
 lodhum_dwarf_lessons = {
-	fire_damage_received = -0.05
-	shock_damage_received = -0.05
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
 }
 lodhum_tolerance_modifier = {
 	tolerance_heathen = 3
@@ -1664,7 +1681,8 @@ orldhum_polished_regiments = {
 	infantry_power = 0.1
 }
 orldhum_platinum_augments = {
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	fire_damage = 0.05
 }
 orldhum_world_class_warsuits = {
@@ -1973,11 +1991,13 @@ seghdihr_tenacity_attrition = {
 	global_regiment_cost = 0.05
 }
 seghdihr_tenacity_fire = {
-	fire_damage_received = -0.15
+	#fire_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	global_regiment_cost = 0.05
 }
 seghdihr_tenacity_shock = {
-	shock_damage_received = -0.15
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	global_regiment_cost = 0.05
 }
 seghdihr_segamlavad_gulan_modifier = {
@@ -2347,8 +2367,10 @@ krakazol_drinking_province_debuff_3 = {
 krakazol_drinking_iron_perm = {
 	land_morale = 0.1
 	defensiveness = 0.25
-	fire_damage_received = -0.075
-	shock_damage_received = -0.075
+	#fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.0375	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0375	#BomjSBagetom Anbennar Submod
 }
 krakazol_drinking_dark_perm = {
 	idea_cost = -0.15
@@ -2425,20 +2447,26 @@ krakazol_drinking_iron_4 = {
 krakazol_drinking_iron_5 = {
 	land_morale = 0.08
 	defensiveness = 0.15
-	fire_damage_received = -0.025
-	shock_damage_received = -0.025
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
 }
 krakazol_drinking_iron_6 = {
 	land_morale = 0.1
 	defensiveness = 0.18
-	fire_damage_received = -0.05
-	shock_damage_received = -0.05
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
 }
 krakazol_drinking_iron_7 = {
 	land_morale = 0.1
 	defensiveness = 0.25
-	fire_damage_received = -0.075
-	shock_damage_received = -0.075
+	#fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.0375		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0375		#BomjSBagetom Anbennar Submod
 }
 krakazol_drinking_dark_1 = {
 	idea_cost = -0.025
@@ -3179,28 +3207,38 @@ roadwarrior_training_5 = {
 }
 roadwarrior_portable_arena_1 = {
 	army_tradition = 0.05
-	shock_damage_received = -0.005
-	fire_damage_received = -0.005
+	#shock_damage_received = -0.005	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.005	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0025	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.0025	#BomjSBagetom Anbennar Submod
 }
 roadwarrior_portable_arena_2 = {
 	army_tradition = 0.1
-	shock_damage_received = -0.01
-	fire_damage_received = -0.01
+	#shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.01	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.005	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.005	#BomjSBagetom Anbennar Submod
 }
 roadwarrior_portable_arena_3 = {
 	army_tradition = 0.2
-	shock_damage_received = -0.015
-	fire_damage_received = -0.015
+	#shock_damage_received = -0.015	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.015	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0075	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.0075	#BomjSBagetom Anbennar Submod
 }
 roadwarrior_portable_arena_4 = {
 	army_tradition = 0.5
-	shock_damage_received = -0.02
-	fire_damage_received = -0.02
+	#shock_damage_received = -0.02	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.02	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.01	#BomjSBagetom Anbennar Submod
 }
 roadwarrior_portable_arena_5 = {
 	army_tradition = 1
-	shock_damage_received = -0.025
-	fire_damage_received = -0.025
+	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
 }
 roadwarrior_breaker_1 = {
 	siege_ability = 0.05
@@ -3778,7 +3816,8 @@ orlghelovar_adapting_to_weapons = {
 	discipline = -0.05
 }
 orlghelovar_protective_gear = {
-	fire_damage_received = -0.10
+	#fire_damage_received = -0.10	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 orlghelovar_adapting_to_gear = {
 	army_tradition_decay = 0.05
@@ -3802,7 +3841,8 @@ orlghelovar_university_filling = {
 	all_power_cost = 0.05
 }
 orlghelovar_appease_mages = {
-	shock_damage_received = -0.10
+	#shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 orlghelovar_uprising_prevented = {
 	mages_influence_modifier = -0.10
@@ -3818,7 +3858,8 @@ orlghelovar_future_research = {
 	idea_cost = 0.20
 }
 orlghelovar_black_damestear_facility = {
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 orlghelovar_researching_damestear = {
 	global_trade_goods_size_modifier = -0.10
@@ -3894,7 +3935,8 @@ orlghelovar_drained_supply = {
 	trade_goods_size_modifier = -10
 }
 orlghelovar_secured_damestear = {
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 orlghelovar_lad = {
 	prestige = 1
@@ -3910,7 +3952,8 @@ orlghelovar_early_medicine = {
 	manpower_recovery_speed = 0.10
 }
 orlghelovar_shatterproof_armor = {
-	fire_damage_received = -0.10
+	#fire_damage_received = -0.10	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	is_rajput_modifier = yes
 }
 orlghelovar_advanced_laser_research = {
@@ -4236,7 +4279,8 @@ shaz_anbenncost_div = {
 }
 
 shaz_port_jaher_div = {
-	fire_damage_received = -0.1
+	#fire_damage_received = -0.10	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	global_ship_cost = -0.1
 }
 
@@ -4469,7 +4513,8 @@ chaingrasper_plentiful_food = {
 }
 
 chaingrasper_magical_support_battalions = {
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 
 chaingrasper_sustained_wards = {
@@ -4584,7 +4629,8 @@ truedagger_to_amldihr = {
 	land_morale = 0.15
 }
 truedagger_nothing_more_than_orcs = {
-	shock_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 truedagger_blood_games = {
 	global_unrest = -1
@@ -5001,7 +5047,8 @@ H89_reconstruction_efforts = {
 }
 
 H89_dwarven_armor = {
-	shock_damage_received = -0.025
+	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
 }
 
 H89_illegal_drugs = {
@@ -5483,7 +5530,8 @@ I98_dealers_point = {
 I98_freezeflame = {
 	is_rajput_modifier = yes
 	infantry_fire = 0.2
-	fire_damage_received = -0.1
+	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 I98_province_nuked = {
@@ -5613,7 +5661,8 @@ I98_new_and_improved = {
 
 I98_mithril_tempering = {
 	is_rajput_modifier = yes
-	shock_damage_received = -0.15
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 }
 
 I98_rail_logistics = {
@@ -6698,7 +6747,8 @@ miremaw_bird_meals = {
 
 miremaw_orcish_ferocity = {
 	infantry_power = 0.1
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 
 miremaw_feasted_on_dwarves = {
@@ -6822,7 +6872,8 @@ H76_sponsoring_artisans = {
 
 H76_blinding_brilliance = {
 	morale_damage = 0.1
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 
 H76_inward_perfection = {
@@ -6893,7 +6944,8 @@ H76_grim_resolve = {
 	land_forcelimit = 60
 	land_maintenance_modifier = -0.5
 	land_morale = 0.2
-	shock_damage_received = -0.2
+	#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
 }
 
 H76_the_last_eastern_hold = {
@@ -6999,8 +7051,10 @@ skewered_drake_reignited_industry = {
 }
 
 skewered_drake_blackened_armor = {
-	fire_damage_received = -0.1
-	shock_damage_received = -0.1
+	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	land_maintenance_modifier = 0.25
 	is_hussars_modifier = yes
 }
@@ -7208,7 +7262,8 @@ undergrowth_green_gate = {
 
 spiderwretch_lightland_claimer = {
 	land_morale = 0.1
-	shock_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	manpower_recovery_speed = 0.5
 	global_manpower = 10
 	land_forcelimit = 10
@@ -7309,7 +7364,8 @@ spiderwretch_spidersilk_connections = {
 }
 
 spiderwretch_ogre_spider_collab = {
-	shock_damage_received = -0.15
+	#shock_damage_received = -0.15		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod
 	land_forcelimit_modifier = 0.1
 	manpower_recovery_speed = 0.1
 }
@@ -7379,7 +7435,8 @@ spiderwretch_caravanserais = {
 }
 
 spiderwretch_hardened_silk = {
-	shock_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 spiderwretch_toxic_webtraps = {

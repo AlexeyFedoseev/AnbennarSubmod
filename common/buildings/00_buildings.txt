@@ -717,7 +717,8 @@ coastal_defence = {
 		gronstunad_building_authority_effect = { value = 1 }
 	}
 	modifier = {
-		blockade_force_required = 0.5
+		#blockade_force_required = 0.5	#BomjSBagetom Anbennar Submod
+		blockade_force_required = 0.25	#BomjSBagetom Anbennar Submod
 		hostile_disembark_speed = 1.0
 		block_slave_raid = yes
 	}
@@ -1249,7 +1250,8 @@ naval_battery = {
 		}
 	}
 	modifier = {
-		blockade_force_required = 1.0
+		#blockade_force_required = 1.0	#BomjSBagetom Anbennar Submod
+		blockade_force_required = 0.5	#BomjSBagetom Anbennar Submod
 		hostile_disembark_speed = 2.0
 		hostile_fleet_attrition = 5
 		block_slave_raid = yes

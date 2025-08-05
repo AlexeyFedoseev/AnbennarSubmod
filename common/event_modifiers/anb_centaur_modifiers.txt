@@ -216,7 +216,8 @@ centaur_battle_ogre = {
 }
 
 centaur_battle_gnome = {
-	fire_damage_received = -0.1
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
 }
 
 centaur_battle_elf = {
@@ -228,7 +229,8 @@ centaur_battle_kobold = {
 }
 
 centaur_battle_dwarf = {
-	shock_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 centaur_battle_harimari = {
@@ -241,7 +243,8 @@ centaur_battle_human = {
 }
 
 centaur_battle_hobgoblin = {
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 
 centaur_zeal_timer = {

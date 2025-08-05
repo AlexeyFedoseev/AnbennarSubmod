@@ -10976,8 +10976,10 @@ artifice_invention_varaine_trollskin_potions = {
 	benefits = {
 		artificers_privilege_slots = 1
 		#foo
-		shock_damage_received = -0.1
-		fire_damage_received = -0.05
+		#shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod
+		#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
 	}
 	ai_will_do = {
 		factor = 5
@@ -14388,7 +14390,8 @@ artifice_invention_rezankand_colossus = {
 		cavalry_fire = 0.25
 		morale_damage = 0.05
 		cavalry_power = 0.15
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	}
 
 	ai_will_do = {

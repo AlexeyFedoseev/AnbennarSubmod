@@ -4829,7 +4829,8 @@ jadd_empire = {
 			cavalry_shock = 0.25
 		}
 		ogre = {
-			shock_damage_received = -0.1
+			#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+			shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		}
 		triunic = {
 			improve_relation_modifier = 0.2
@@ -13772,7 +13773,8 @@ clouded_eye_oakbreaker_dynasty_reform = {
 
 	modifiers = {
 		colonists = 1
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		land_morale = 0.1
 		improve_relation_modifier = 0.2
 		diplomatic_reputation = 2
@@ -14657,7 +14659,8 @@ imperial_aquamarine_court = {
 		}
 	}
 	modifiers = {
-		shock_damage_received = -0.05
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		naval_morale_damage = 0.1
 	}	
 	effect = {

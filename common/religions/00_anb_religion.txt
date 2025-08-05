@@ -3272,7 +3272,8 @@ orcish = {
 		}
 		country_as_secondary = {
 			morale_damage_received = -0.1
-			shock_damage_received = -0.10
+			#shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod
+			shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		}
 
 		uses_church_power = yes				# Uses church power/aspect mechanics
@@ -4693,7 +4694,8 @@ ynnic = {
 		}
 		country_as_secondary = {
 			fire_damage = 0.1
-			fire_damage_received = -0.05
+			#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+			fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		}
 
 		on_convert = {
@@ -8086,8 +8088,10 @@ giantkin = {
 			defensiveness = 0.15
 		}
 		country_as_secondary = {
-			shock_damage_received = -0.1
-			fire_damage_received = -0.05
+			#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+			#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+			shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+			fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		}
 
 		province = {
@@ -8128,7 +8132,8 @@ giantkin = {
 		icon = 128
 		country = {
 			infantry_power = 0.1
-			shock_damage_received = -0.1
+			#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+			shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		}
 		country_as_secondary = {
 			stability_cost_modifier = -0.05
@@ -8360,7 +8365,8 @@ centaur_religion = {
 			invite_scholar_modifier_display = malukhuga_scholar_modifier
 			picture = "GFX_icon_centaur_religion_malukhuga_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			shock_damage_received = -0.05
+			#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+			shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 		}
 	}
 

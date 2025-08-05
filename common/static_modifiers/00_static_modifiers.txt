@@ -2249,7 +2249,8 @@ zaidi_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	shock_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 #High Philosophy schools
@@ -2376,7 +2377,8 @@ malukhuga_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 
 #Lizard Schools
@@ -2563,11 +2565,13 @@ banner_regiment = {
 
 streltsy_regiment = { #1.35
 	fire_damage = 0.1
-	fire_damage_received = -0.1
+	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 tercio_regiment = { #1.35
-	shock_damage_received = -0.3
+	#shock_damage_received = -0.3	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
 }
 
 musketeer_regiment = { #1.35
@@ -2581,7 +2585,8 @@ samurai_regiment = { #1.35
 }
 
 qizilbash_regiment = {
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	land_maintenance_modifier = -0.25
 }
 
@@ -2635,21 +2640,26 @@ voc_indiamen_ship = { #1.35
 
 
 cossacks_regiment = {
-    shock_damage_received = -0.10
+    #shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 carolean_regiment = {
 	morale_damage = 0.05
-	fire_damage_received = -0.15
-	shock_damage_received = -0.10
+	#fire_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	reinforce_speed = -0.5
 	land_maintenance_modifier = 0.75
 	regiment_manpower_usage = -0.25
 }
 
 revolutionary_guard_regiment = {
-	fire_damage_received = -0.1
-	shock_damage_received = -0.1
+	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	drill_gain_modifier = 1.0
 	drill_decay_modifier = -0.5
 }

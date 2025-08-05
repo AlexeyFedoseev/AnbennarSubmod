@@ -2492,7 +2492,8 @@ acolyte_excellent_ruler = {
  }
 
 arosha_oakbreaker_modifier1 = {
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	infantry_power = 0.05
 }
 arosha_oakbreaker_modifier2 = {
@@ -3441,7 +3442,8 @@ rakkaz_fighting_pit_more_cav_upgrade = {
 
 rakkaz_demonflare_enchantment = {
 	cavalry_shock = 0.5
-	fire_damage_received = -0.2
+	#fire_damage_received = -0.2		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.1			#BomjSBagetom Anbennar Submod
 	land_maintenance_modifier = 0.25
 	is_hussars_modifier = yes
 }
@@ -3475,7 +3477,8 @@ rakkaz_demoncollar_hordes = {
 
 rakkaz_witherling_army = {
 	morale_damage_received = -0.1
-	fire_damage_received = -0.15
+	#fire_damage_received = -0.15		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod
 }
 
 rakkaz_scorching_flames = {

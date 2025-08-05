@@ -207,7 +207,8 @@ artifice_arcane_battery_capital_complex = {
 artifice_veykoda_rune_protections = {
 	is_rajput_modifier = yes
 
-	fire_damage_received = -0.15
+	#fire_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 
 	#reinforce_speed = -0.05
 	#reinforce_cost_modifier = 1
@@ -285,19 +286,23 @@ artifice_wyvern_blood_tincture = {
 
 artifice_gnollverns = {
 	is_rajput_modifier = yes
-	shock_damage_received = -0.15
-	fire_damage_received = -0.15
+	#shock_damage_received = -0.15		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.15		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod
 }
 
 artifice_wyvern_reactive_mage_shield = {
 	is_hussars_modifier = yes
-	fire_damage_received = -0.10
+	#fire_damage_received = -0.10	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 	fire_damage = 0.10
 }
 
 artifice_wyvern_mithril_scale_plating = {
 	is_hussars_modifier = yes
-	shock_damage_received = -0.15
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod
 }
 
 artifice_wyvern_incendiary_nebulizers = {

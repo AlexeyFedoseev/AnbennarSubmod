@@ -1560,7 +1560,8 @@ estate_church_for_the_faith = {
 		modifier = {
 			church_loyalty_modifier = 0.1
 			land_morale = 0.05
-			shock_damage_received = -0.1
+			#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+			shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 		}
 	}
 	conditional_modifier = {
@@ -3850,7 +3851,8 @@ estate_church_U10_charms_of_protection = {
 	benefits = {
 		church_privilege_slots = 1
 		morale_damage_received = -0.1
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod
+		fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
 	}
 	on_invalid = {
 		khetarchs_curse_increase_effect = yes

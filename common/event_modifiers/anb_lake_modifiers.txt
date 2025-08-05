@@ -345,7 +345,8 @@ lake_mage_grey_3_cooldown = {
 }
 
 lake_mage_defensive_enchantment = {
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 	global_tax_modifier = -0.1
 }
 

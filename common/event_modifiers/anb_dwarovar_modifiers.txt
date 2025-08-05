@@ -305,8 +305,10 @@ hold_foundry_2 = {
 magma_forge = {
 	trade_goods_size = 1
 	global_trade_goods_size_modifier = 0.025
-	fire_damage_received = -0.025
-	shock_damage_received = -0.025
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
 	prestige = 0.5
 	picture = "hold_magma_forge"
 }
@@ -803,7 +805,8 @@ shadow_of_the_hoardcurse = {
 
 legacy_of_goblinsbane = {
 	land_morale = 0.1
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
 }
 
 amlharaz_autonomy = {
@@ -1534,7 +1537,8 @@ dwarovar_halannas_breath = {
 
 dwarovar_ancient_restored_golem = {
 	shock_damage = 0.025
-	shock_damage_received = -0.025
+	#shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
 }
 
 dwarovar_venerated_statue = {
@@ -1778,7 +1782,8 @@ blorc_weapons_of_old = {
 
 blorc_dookan_extreme_favour = {
 	discipline = 0.10
-	shock_damage_received = -0.25
+	#shock_damage_received = -0.25		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.125		#BomjSBagetom Anbennar Submod
 }
 
 blorc_dookan_ruler_extreme_favour = {
@@ -2010,7 +2015,8 @@ runefather_dwarovrod_purges = {
 
 runefather_mic = {
 	production_efficiency = 0.1
-	fire_damage_received = -0.1
+	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 runefather_bad_dwarves = {
@@ -2019,11 +2025,13 @@ runefather_bad_dwarves = {
 }
 
 runefather_bad_goblins = {
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
 }
 
 runefather_bad_orcs = {
-	shock_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
 }
 
 runefather_bad_kobolds = {

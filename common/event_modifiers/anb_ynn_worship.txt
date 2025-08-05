@@ -176,7 +176,8 @@ ynn_not_merc_competition = {
 }
 
 ynn_horc_training = {
-	shock_damage_received = -0.1
+	#shock_damage_received = -0.1	 #BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05	 #BomjSBagetom Anbennar Submod
 }
 
 ynn_cheap_horc_mercs = {
@@ -325,11 +326,13 @@ ynn_whitetail_residence = {
 }
 
 ynn_water_lynx_protection = {	#Cheeky, water protects you from fire, thunder from shock
-    fire_damage_received = -0.1
+    #fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
 }
 
 ynn_thunderbird_protection = {
-    shock_damage_received = -0.1
+    #shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod
+	shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
 }
 
 ynn_wild_antler_horse_prestige = {
