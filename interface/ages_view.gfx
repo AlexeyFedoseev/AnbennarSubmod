@@ -396,323 +396,323 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ab_age1_trade_group_button"
-		texturefile = "gfx/interface/ages/placeholder4.dds"
+		texturefile = "gfx/interface/ages/ab_age1_trade_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_culturalchange_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_culturalchange_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_diplomacy_group_button"
-		texturefile = "gfx/interface/ages/ab_transfer_vassal_wargoal.dds"
+		texturefile = "gfx/interface/ages/ab_age1_diplomacy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_court_group_button"
-		texturefile = "gfx/interface/ages/ab_justified_wars.dds"
+		texturefile = "gfx/interface/ages/ab_age1_court_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_colonization_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_colonization_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_religion_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_religion_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_edicts_group_button"
-		texturefile = "gfx/interface/ages/ab_allow_feudal_de_jure_law.dds"
+		texturefile = "gfx/interface/ages/ab_age1_edicts_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_siege_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_siege_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_production_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_production_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_navy_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_navy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_science_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_science_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_autocracy_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_autocracy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_mercenary_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_mercenary_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_reformism_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_reformism_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_quality_focus_group_button"
-		texturefile = "gfx/interface/ages/ab_cavalry_armies.dds"
+		texturefile = "gfx/interface/ages/ab_age1_quality_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_quantity_focus_group_button"
-		texturefile = "gfx/interface/ages/ab_manpower_recovery_speed.dds"
+		texturefile = "gfx/interface/ages/ab_age1_quantity_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_docile_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_docile_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_TAXES_group_button"
-		texturefile = "gfx/interface/ages/ab_free_war_taxes.dds"
+		texturefile = "gfx/interface/ages/ab_age1_TAXES_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age1_architecture_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age1_architecture_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_endurance_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_endurance_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_trade_group_button"
-		texturefile = "gfx/interface/ages/ab_ship_power_propagation.dds"
+		texturefile = "gfx/interface/ages/ab_age2_trade_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_culturalchange_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_culturalchange_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_diplomacy_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_diplomacy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_court_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_court_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_colonization_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_colonization_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_religion_group_button"
-		texturefile = "gfx/interface/ages/ab_prestige_per_development_from_conversion.dds"
+		texturefile = "gfx/interface/ages/ab_age2_religion_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_edicts_group_button"
-		texturefile = "gfx/interface/ages/ab_allow_religion_enforced.dds"
+		texturefile = "gfx/interface/ages/ab_age2_edicts_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_siege_group_button"
-		texturefile = "gfx/interface/ages/ab_siege_blockades.dds"
+		texturefile = "gfx/interface/ages/ab_age2_siege_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_production_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_production_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_navy_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_navy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_science_group_button"
-		texturefile = "gfx/interface/ages/ab_institution_spread_from_true_faith.dds"
+		texturefile = "gfx/interface/ages/ab_age2_science_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_autocracy_group_button"
-		texturefile = "gfx/interface/ages/ab_warscore_vs_religion.dds"
+		texturefile = "gfx/interface/ages/ab_age2_autocracy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_mercenary_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_mercenary_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_reformism_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_reformism_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_quality_focus_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_quality_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_quantity_focus_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_quantity_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_docile_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_docile_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_TAXES_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_TAXES_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age2_architecture_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age2_architecture_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_endurance_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_endurance_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_trade_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_trade_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_culturalchange_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_culturalchange_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_diplomacy_group_button"
-		texturefile = "gfx/interface/ages/ab_rival_change.dds"
+		texturefile = "gfx/interface/ages/ab_age3_diplomacy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_court_group_button"
-		texturefile = "gfx/interface/ages/ab_yearly_absolutism.dds"
+		texturefile = "gfx/interface/ages/ab_age3_court_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_colonization_group_button"
-		texturefile = "gfx/interface/ages/ab_colony_boost_development.dds"
+		texturefile = "gfx/interface/ages/ab_age3_colonization_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_religion_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_religion_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_edicts_group_button"
-		texturefile = "gfx/interface/ages/ab_allow_edict_of_absolutism.dds"
+		texturefile = "gfx/interface/ages/ab_age3_edicts_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_siege_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_siege_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_production_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_production_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_navy_group_button"
-		texturefile = "gfx/interface/ages/ab_more_ships_can_fire.dds"
+		texturefile = "gfx/interface/ages/ab_age3_navy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_science_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_science_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_autocracy_group_button"
-		texturefile = "gfx/interface/ages/ab_autonomy.dds"
+		texturefile = "gfx/interface/ages/ab_age3_autocracy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_mercenary_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_mercenary_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_reformism_group_button"
-		texturefile = "gfx/interface/ages/ab_advisor_pool.dds"
+		texturefile = "gfx/interface/ages/ab_age3_reformism_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_quality_focus_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_quality_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_quantity_focus_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_quantity_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_docile_group_button"
-		texturefile = "gfx/interface/ages/ab_harsh_treatment.dds"
+		texturefile = "gfx/interface/ages/ab_age3_docile_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_TAXES_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_TAXES_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_architecture_not_mountain_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age3_architecture1_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age3_architecture_mountain_group_button"
-		texturefile = "gfx/interface/ages/ab_colonists.dds"
+		texturefile = "gfx/interface/ages/ab_age3_architecture2_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_endurance_group_button"
-		texturefile = "gfx/interface/ages/ab_force_march.dds"
+		texturefile = "gfx/interface/ages/ab_age4_endurance_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_trade_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_trade_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_culturalchange_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_culturalchange_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_diplomacy_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_diplomacy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_court_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_court_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_colonization_group_button"
-		texturefile = "gfx/interface/ages/ab_no_distance_for_core.dds"
+		texturefile = "gfx/interface/ages/ab_age4_colonization_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_religion_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_religion_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_edicts_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_edicts_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_siege_group_button"
-		texturefile = "gfx/interface/ages/ab_artillery_impact.dds"
+		texturefile = "gfx/interface/ages/ab_age4_siege_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_production_group_button"
-		texturefile = "gfx/interface/ages/ab_production_efficiency.dds"
+		texturefile = "gfx/interface/ages/ab_age4_production_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_navy_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_navy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_science_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_science_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_autocracy_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_autocracy_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_mercenary_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_mercenary_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_reformism_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_reformism_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_quality_focus_group_button"
-		texturefile = "gfx/interface/ages/ab_backrow_artillery.dds"
+		texturefile = "gfx/interface/ages/ab_age4_quality_group_icon.dds"
 	}
 	spriteType = {
-		name = "GFX_ab_age4_quantity_focus_focus_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		name = "GFX_ab_age4_quantity_focus_group_button"
+		texturefile = "gfx/interface/ages/ab_age4_quantity_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_docile_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_docile_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_TAXES_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_TAXES_group_icon.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_age4_architecture_group_button"
-		texturefile = "gfx/interface/ages/placeholder.dds"
+		texturefile = "gfx/interface/ages/ab_age4_architecture_group_icon.dds"
 	}
 
 	#--------------UNIQUE-ABILITIES---------------------------

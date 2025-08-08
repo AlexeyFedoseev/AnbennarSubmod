@@ -7566,6 +7566,22 @@ on_monthly_pulse = {
 	}
 
 	#BomjSBagetom Anbennar Submod
+	if = { 
+		limit = { 
+			has_country_flag = ab_age1_navy_group_flag  
+		}
+		if = {
+			limit = {
+				current_age = age_of_discovery
+			}
+			add_country_modifier = { name = age1_navy_group_modif duration = -1 }
+		}
+		else = {
+			remove_country_modifier = age1_navy_group_modif
+		}
+	}
+
+	#BomjSBagetom Anbennar Submod
 	if = {
 		limit = {
 			has_country_flag = ab_age1_Adshaw_bonus_flag
@@ -7579,6 +7595,22 @@ on_monthly_pulse = {
 		}
 		else = {
 			remove_country_modifier = age1_Adshaw_bonus
+		}
+	}
+
+	#BomjSBagetom Anbennar Submod
+	if = { 
+		limit = { 
+			has_country_flag = ab_age3_navy_group_flag  
+		}
+		if = {
+			limit = {
+				current_age = age_of_absolutism
+			}
+			add_country_modifier = { name = age3_navy_group_modif duration = -1 }
+		}
+		else = {
+			remove_country_modifier = age3_navy_group_modif
 		}
 	}
 
@@ -7627,6 +7659,22 @@ on_monthly_pulse = {
 		}
 		else = {
 			remove_country_modifier = age4_mercenary_group_modif
+		}
+	}
+
+	#BomjSBagetom Anbennar Submod
+	if = { 
+		limit = { 
+			has_country_flag = ab_age4_navy_group_flag  
+		}
+		if = {
+			limit = {
+				current_age = age_of_revolutions
+			}
+			add_country_modifier = { name = age4_navy_group_modif duration = -1 }
+		}
+		else = {
+			remove_country_modifier = age4_navy_group_modif
 		}
 	}
 

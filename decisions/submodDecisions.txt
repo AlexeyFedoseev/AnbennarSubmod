@@ -69,6 +69,31 @@ country_decisions = {
 		}
 	}
 
+	old_proffesionalism_decision = {
+
+		major = yes
+
+		potential = {
+			has_country_flag = ab_age4_quantity_group_flag
+			current_age = age_of_revolutions 
+		}
+		
+		allow = {
+			NOT = { has_country_modifier = slackening_modifier }
+			NOT = { manpower_percentage = 0.95 }
+			army_professionalism = 0.05
+		}
+		
+		effect = {
+			add_yearly_manpower = 2 
+			add_army_professionalism = -0.05
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	wexonard_nation = { #example - esmarian_nation Z46
 		major = yes
 		potential = {

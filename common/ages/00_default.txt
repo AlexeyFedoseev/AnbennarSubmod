@@ -195,7 +195,7 @@ age_of_discovery = {
 				can_chain_claim = yes
 			}
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age1_diplomacy_group_button }
+				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age1_diplomacy_group_button clearAE = yes }
 			}
 			ai_will_do = {
 				factor = 10
@@ -250,10 +250,11 @@ age_of_discovery = {
 		}
 
 		ab_age1_siege_group_button = {
-			modifier = {
-				land_attrition = -0.25
-			}
 			effect = {
+				create_general = {
+					tradition = 60
+					add_siege = 3
+				}
 				add_or_upgrade_age_bonus = { bonusName = siege abilityName = ab_age1_siege_group_button }
 			}
 			ai_will_do = {
@@ -274,11 +275,15 @@ age_of_discovery = {
 		}
 
 		ab_age1_navy_group_button = {
-			modifier = {
-				naval_morale_damage_received = -0.05
-			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = navy abilityName = ab_age1_navy_group_button }
+				set_country_flag = ab_age1_navy_group_flag
+				tooltip = {
+					add_country_modifier = {
+						name = age1_navy_group_modif
+						duration = -1
+					}
+				}
 			}
 			ai_will_do = {
 				factor = 10
@@ -287,7 +292,7 @@ age_of_discovery = {
 
 		ab_age1_science_group_button = {
 			modifier = {
-				monthly_reform_progress_modifier = 0.05
+				embracement_cost = -0.5
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = science abilityName = ab_age1_science_group_button }
@@ -299,7 +304,7 @@ age_of_discovery = {
 
 		ab_age1_autocracy_group_button = {
 			modifier = {
-				unjustified_demands = -0.2
+				unjustified_demands = -0.5
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = autocracy abilityName = ab_age1_autocracy_group_button }
@@ -311,7 +316,7 @@ age_of_discovery = {
 
 		ab_age1_mercenary_group_button = {
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age1_mercenary_group_button }
+				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age1_mercenary_group_button noAPLossOnMerc = yes }
 				set_country_flag = ab_age1_mercenary_group_flag
 				tooltip = {
 					add_country_modifier = {
@@ -342,7 +347,8 @@ age_of_discovery = {
 				NOT = { has_age_ability = ab_age1_quantity_focus_group_button }
 			}
 			modifier = {
-				cav_to_inf_ratio = 0.2
+				infantry_power = 0.05
+				cavalry_flanking = 0.5
 			}
 			effect = {
 				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
@@ -371,7 +377,7 @@ age_of_discovery = {
 
 		ab_age1_docile_group_button = {
 			modifier = {
-				reduced_liberty_desire = 12.5
+				autonomy_change_time = -0.33
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = docile abilityName = ab_age1_docile_group_button }
@@ -1336,7 +1342,7 @@ age_of_reformation = {
 	abilities = {
 		ab_age2_endurance_group_button = {
 			modifier = {
-				fort_maintenance_modifier = -0.2
+				leader_land_manuever = 2
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = endurance abilityName = ab_age2_endurance_group_button }
@@ -1348,7 +1354,7 @@ age_of_reformation = {
 
 		ab_age2_trade_group_button = {
 			modifier = {
-				global_ship_trade_power = 0.2
+				light_ship_cost = -0.5
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = trade abilityName = ab_age2_trade_group_button }
@@ -1360,7 +1366,7 @@ age_of_reformation = {
 
 		ab_age2_culturalchange_group_button = {
 			modifier = {
-				development_cost_in_primary_culture = -0.075
+				manpower_in_own_culture_provinces = 0.2
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = culturalchange abilityName = ab_age2_culturalchange_group_button }
@@ -1372,10 +1378,10 @@ age_of_reformation = {
 
 		ab_age2_diplomacy_group_button = {
 			modifier = {
-				improve_relation_modifier = 0.5
+				warscore_cost_vs_other_religion = -0.25
 			}
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age2_diplomacy_group_button }
+				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age2_diplomacy_group_button clearAE = yes }
 			}
 			ai_will_do = {
 				factor = 10
@@ -1455,8 +1461,7 @@ age_of_reformation = {
 
 		ab_age2_navy_group_button = {
 			modifier = {
-				heavy_ship_cost = -0.5
-				light_ship_cost = -0.5
+				global_naval_barrage_cost = -0.5
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = navy abilityName = ab_age2_navy_group_button }
@@ -1480,7 +1485,7 @@ age_of_reformation = {
 
 		ab_age2_autocracy_group_button = {
 			modifier = {
-				warscore_cost_vs_other_religion = -0.25
+				overextension_impact_modifier = -0.4
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = autocracy abilityName = ab_age2_autocracy_group_button }
@@ -1495,7 +1500,7 @@ age_of_reformation = {
 				mercenary_discipline = 0.05
 			}
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age2_mercenary_group_button }
+				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age2_mercenary_group_button noAPLossOnMerc = yes }
 			}
 			ai_will_do = {
 				factor = 10
@@ -1561,8 +1566,7 @@ age_of_reformation = {
 
 		ab_age2_TAXES_group_button = {
 			modifier = {
-				interest = -0.5
-				yearly_corruption = -0.15
+				yearly_corruption = -0.44
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = TAXES abilityName = ab_age2_TAXES_group_button }
@@ -1574,7 +1578,7 @@ age_of_reformation = {
 
 		ab_age2_architecture_group_button = {
 			modifier = {
-				expand_infrastructure_cost_modifier = -0.2
+				expand_infrastructure_cost_modifier = -0.1
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age2_architecture_group_button }
@@ -2450,7 +2454,7 @@ age_of_absolutism = {
 
 		ab_age3_trade_group_button = {
 			modifier = {
-				trade_range_modifier = 1
+				trade_steering = 0.5
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = trade abilityName = ab_age3_trade_group_button }
@@ -2478,7 +2482,7 @@ age_of_absolutism = {
 				rival_change_cost = -1
 			}
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age3_diplomacy_group_button }
+				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age3_diplomacy_group_button clearAE = yes }
 			}
 			ai_will_do = {
 				factor = 10
@@ -2511,9 +2515,9 @@ age_of_absolutism = {
 
 		ab_age3_religion_group_button = {
 			modifier = {
-				land_morale = 0.05
 				tolerance_own = 1
-				global_missionary_strength = 0.02
+				global_missionary_strength = 0.03
+				years_of_nationalism = -10
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = religion abilityName = ab_age3_religion_group_button }
@@ -2559,11 +2563,15 @@ age_of_absolutism = {
 		}
 
 		ab_age3_navy_group_button = {
-			modifier = {
-				global_naval_engagement_modifier = 0.1
-			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = navy abilityName = ab_age3_navy_group_button }
+				set_country_flag = ab_age3_navy_group_flag
+				tooltip = {
+					add_country_modifier = {
+						name = age3_navy_group_modif
+						duration = -1
+					}
+				}
 			}
 			ai_will_do = {
 				factor = 10
@@ -2572,7 +2580,7 @@ age_of_absolutism = {
 
 		ab_age3_science_group_button = {
 			modifier = {
-				embracement_cost = -0.5
+				monthly_reform_progress_modifier = 0.1
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = science abilityName = ab_age3_science_group_button }
@@ -2600,7 +2608,7 @@ age_of_absolutism = {
 				merc_leader_army_tradition = 1
 			}
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age3_mercenary_group_button }
+				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age3_mercenary_group_button noAPLossOnMerc = yes }
 			}
 			ai_will_do = {
 				factor = 10
@@ -2610,8 +2618,9 @@ age_of_absolutism = {
 		ab_age3_reformism_group_button = {
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = reformism abilityName = ab_age3_reformism_group_button }
-				custom_tooltip = age_ability_sun_cult_resurgence_flag_tt
-				set_country_flag = age_ability_sun_cult_resurgence_flag
+				change_adm = 1
+				change_dip = 1
+				change_mil = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -2699,7 +2708,7 @@ age_of_absolutism = {
 				NOT = { has_age_ability = ab_age3_architecture_not_mountain_group_button }
 			}
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age3_TAXES_group_button }
+				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age3_architecture_mountain_group_button }
 				custom_tooltip = ab_dwarven_reclamation_tooltip
 				set_country_flag = age_ability_dwarven_reclamation_flag
 			}
@@ -3466,7 +3475,7 @@ age_of_revolutions = {
 
 		ab_age4_trade_group_button = {
 			modifier = {
-				global_ship_trade_power = 1
+				caravan_power = 5
 			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = trade abilityName = ab_age4_trade_group_button }
@@ -3494,7 +3503,7 @@ age_of_revolutions = {
 				diplomats = 3
 			}
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age4_diplomacy_group_button }
+				add_or_upgrade_age_bonus = { bonusName = diplomacy abilityName = ab_age4_diplomacy_group_button clearAE = yes }
 			}
 			ai_will_do = {
 				factor = 10
@@ -3582,11 +3591,15 @@ age_of_revolutions = {
 		}
 
 		ab_age4_navy_group_button = {
-			modifier = {
-				global_ship_repair = 0.15
-			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = navy abilityName = ab_age4_navy_group_button }
+				set_country_flag = ab_age4_navy_group_flag
+				tooltip = {
+					add_country_modifier = {
+						name = age4_navy_group_modif
+						duration = -1
+					}
+				}
 			}
 			ai_will_do = {
 				factor = 10
@@ -3594,10 +3607,11 @@ age_of_revolutions = {
 		}
 
 		ab_age4_science_group_button = {
+			modifier = {
+				technology_cost = -0.3
+			}
 			effect = {
 				add_or_upgrade_age_bonus = { bonusName = science abilityName = ab_age4_science_group_button }
-				custom_tooltip = ab_age4_science_tooltip
-				set_country_flag = age_ability_age4_science_flag
 			}
 			ai_will_do = {
 				factor = 10
@@ -3620,7 +3634,7 @@ age_of_revolutions = {
 
 		ab_age4_mercenary_group_button = {
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age4_mercenary_group_button }
+				add_or_upgrade_age_bonus = { bonusName = mercenary abilityName = ab_age4_mercenary_group_button noAPLossOnMerc = yes }
 				set_country_flag = ab_age4_mercenary_group_flag
 				tooltip = {
 					add_country_modifier = {
@@ -3665,12 +3679,11 @@ age_of_revolutions = {
 			allow = {
 				NOT = { has_age_ability = ab_age4_quality_focus_group_button }
 			}
-			modifier = {
-				yearly_army_professionalism = 0.02
-			}
 			effect = {
 				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
 				add_or_upgrade_age_bonus = { bonusName = quantity_focus abilityName = ab_age4_quantity_focus_focus_group_button }
+				set_country_flag = ab_age4_quantity_group_flag
+				custom_tooltip = age4_quantity_toolptip
 			}
 			ai_will_do = {
 				factor = 10

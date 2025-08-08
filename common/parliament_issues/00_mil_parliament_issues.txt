@@ -502,6 +502,10 @@ the_draft = {
 			factor = 0
 			has_country_modifier = the_draft_used
 		}
+		modifier = {
+			factor = 10000
+			has_country_flag = ab_age4_quantity_group_flag
+		}
 	}
 
 	ai_will_do = {

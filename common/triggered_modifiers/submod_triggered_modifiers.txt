@@ -86,6 +86,7 @@ ab_age4_religion_triggered_mod1 = {
 		is_in_war = {
 			defenders = ROOT
 		}
+		NOT = {	has_country_modifier = ab_age4_religion_triggered_mod2 }
 	}
 	discipline = 0.05
 }
@@ -99,8 +100,9 @@ ab_age4_religion_triggered_mod2 = {
 		is_in_war = {
 			attackers = ROOT
 		}
+		NOT = {	has_country_modifier = ab_age4_religion_triggered_mod1 }
 	}
-	land_morale = 0.15
+	land_morale = 0.10
 }
 
 ab_age3_Gemradcurt_triggered_mod = {

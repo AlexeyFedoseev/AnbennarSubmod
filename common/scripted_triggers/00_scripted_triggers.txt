@@ -2814,6 +2814,8 @@ has_not_free_mercs_trait = {
 	NOT = { has_government_attribute = mercs_do_not_cost_army_professionalism }
 	NOT = { mission_completed = reign_in_the_knight_errants }
 	NOT = { has_country_flag = fra_free_mercs_bargain_sale_flag } #1.35
+	NOT = {	has_country_modifier = ab_age_mercenary_3 }		#BomjSBagetom Anbennar Submod
+	NOT = {	has_country_modifier = ab_age_mercenary_4 }		#BomjSBagetom Anbennar Submod
 }
 
 mal_target_country_exists_in_region = {
