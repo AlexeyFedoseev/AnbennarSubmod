@@ -36,6 +36,8 @@ country_event = {
 		
 		has_regency = no
 		
+		NOT = {	has_country_flag = magic_artificery_artificery_only } #BomjSBagetom Anbennar Submod
+		NOT = {	has_country_flag = magic_artificery_mixed } #BomjSBagetom Anbennar Submod
 	}
 	
 	# immediate = {

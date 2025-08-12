@@ -18,11 +18,7 @@ age_of_discovery = {
 		obj_age1_1_discover_aelantir = {
 			allow = {
 				capital_scope = {
-					OR = {
-						continent = europe
-						continent = asia
-						continent = africa
-					}
+					continent = europe
 				}
 			}
 			custom_trigger_tooltip = {
@@ -35,35 +31,101 @@ age_of_discovery = {
 			}
 		}
 
-		obj_age1_1_have_2_holds = {
+		obj_age1_1_2_expeditions = {
 			allow = {
 				capital_scope = { 
 					continent = serpentspine
 				}
 			}
-			num_of_owned_provinces_with = {
+			check_variable = { expeditions_completed_var = 2 }
+		}
+		
+		obj_age1_1_suran_temples = {
+			allow = {
+				capital_scope = { superregion = bulwar_superregion }
+			}
+			601 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			631 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			643 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		obj_age1_1_sarhal_monuments = {
+			allow = {
+				capital_scope = {
+					continent = africa
+					NOT = { superregion = bulwar_superregion }
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 2
-				OR = {
-					has_terrain = dwarven_hold
-					has_terrain = dwarven_hold_surface
+				continent = africa
+				has_great_project = { type = any tier = 0}
+			}
+		}
+
+		obj_age1_1_precursor_relics = {
+			allow = {
+				capital_scope = { 
+					OR = { 
+						continent = north_america 
+						continent = south_america 
+					} 
+				}
+			}
+			development_in_provinces = {
+				value = 20
+				trade_goods = precursor_relics
+			}
+		}
+		
+		obj_age1_1_high_temples = {
+			allow = {
+				capital_scope = { 
+					continent = asia 
+					NOT = { superregion = forbidden_lands_superregion }
+					NOT = { superregion = gozengun_superregion }
+				} 
+			}
+			if = {
+				limit = { ai = no }
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 3
+					province_group = temple_province_group
+				}
+			}
+			else = {
+				has_country_flag = owns_high_temple
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 3
+					province_group = temple_province_group
 				}
 			}
 		}
 
-		obj_age1_1_have_150_dev = {
+		obj_age1_1_be_at_war = {
 			allow = {
 				NOT = {
 					capital_scope = { 
-						OR = {
-							continent = serpentspine
+						OR = { 
 							continent = europe
-							continent = asia
+							continent = serpentspine
 							continent = africa
+							continent = north_america 
+							continent = south_america
+							superregion = rahen_superregion
+							superregion = vimdatrong_superregion
+							superregion = yanshen_superregion
 						}
 					}
 				}
 			}
-			total_development = 150
+			is_at_war = yes
 		}
 
 		obj_age1_2_have_3_CoT = {
@@ -82,9 +144,6 @@ age_of_discovery = {
 
 		obj_age1_3_have_renaissance_in_all_prov = {
 			has_institution = renaissance
-			all_state_province = {
-				renaissance = 100
-			}
 		}
 
 		obj_age1_4_humiliate_rival = {
@@ -94,8 +153,8 @@ age_of_discovery = {
 			}
 		}
 
-		obj_age1_5_have_full_army_limit = {
-			army_size_percentage = 1
+		obj_age1_5_have_20_professionalism = {
+			army_professionalism = 0.2
 		}
 
 		obj_age1_6_hire_2lvl_advisors = {
@@ -825,11 +884,6 @@ age_of_discovery = {
 			effect = {
 				set_country_flag = ab_age1_Rajnadhaga_bonus_flag
 				custom_tooltip = ab_age1_Rajnadhaga_bonus_tt
-				hidden_effect = {
-					4397 = { add_province_triggered_modifier = rajnadhaga_wolf_army_maintenance }
-					4397 = { add_province_triggered_modifier = rajnadhaga_boar_army_maintenance }
-					4397 = { add_province_triggered_modifier = rajnadhaga_lion_army_maintenance }
-				}
 			}
 			ai_will_do = {
 				factor = 1000
@@ -1132,7 +1186,10 @@ age_of_reformation = {
 					OR = {
 						continent = europe
 						continent = serpentspine
+						continent = north_america 
+						continent = south_america
 						superregion = rahen_superregion
+						superregion = forbidden_lands_superregion
 					}
 				}
 			}
@@ -1140,8 +1197,22 @@ age_of_reformation = {
 				religion = corinite
 				religion = ravelian
 				religion = dalcabba
-				religion = dwarven_pantheon
+				religion = bulgu_orazan
+				religion = soise_vio
+				religion = nur_dahvaraesa
+				religion = gods_of_the_taychend_reformed
+				religion = ynn_river_reformed
+				religion = oren_nayiru_reformed
 				religion = suhans_praxis
+				religion = reformed_feast_of_the_gods
+				religion = kalyin_worshippers
+				religion = runefather_worship
+				AND = {
+					religion = dwarven_pantheon
+					capital_scope = {
+						continent = serpentspine
+					}
+				}
 				any_owned_province = {
 					has_province_modifier = ravelian_lodge
 				}
@@ -1199,7 +1270,10 @@ age_of_reformation = {
 						OR = {
 							continent = europe
 							continent = serpentspine
+							continent = north_america 
+							continent = south_america
 							superregion = rahen_superregion
+							superregion = forbidden_lands_superregion
 							superregion = bulwar_superregion
 						}
 					}
@@ -1208,12 +1282,15 @@ age_of_reformation = {
 			religious_unity = 1
 		}
 
-		obj_age2_2_two_continents = {
-			num_of_continents = 2
+		obj_age2_2_be_great_power = {
+			is_great_power = yes
 		}
 
-		obj_age2_3_build_temples = {
-			temple = 25
+		obj_age2_3_build_manufactories = {
+			num_of_owned_provinces_with = {
+				value = 20
+				has_manufactory_trigger = yes
+			}
 		}
 
 		obj_age2_4_convert_15_provinces = {
@@ -1223,35 +1300,8 @@ age_of_reformation = {
 			}
 		}
 
-		obj_age2_5_church_influence = {
-			allow = {
-				OR = {
-					has_estate = estate_church
-					has_estate = estate_shinukhorchi 
-				}
-			}
-			OR = {
-				estate_influence = {
-					estate = estate_church
-					influence = 60
-				}
-				estate_influence = {
-					estate = estate_shinukhorchi
-					influence = 60
-				}
-			}
-		}
-
 		obj_age2_5_high_innovativeness = {
-			allow = {
-				NOT = {
-					has_estate = estate_church
-					has_estate = estate_shinukhorchi 
-				}
-			}
-			OR = {
-				innovativeness = 14.88
-			}
+			innovativeness = 32.2
 		}
 
 		obj_age2_6_audit_government = {
@@ -1262,22 +1312,29 @@ age_of_reformation = {
 			stability = 3
 		}
 
-		obj_age2_7_sunset_invasion = {
+		obj_age2_7_foothold_in_aelantir = {
 			allow = {
-				capital_scope = { 
-					OR = {
-						continent = north_america
-						continent = south_america 
+				NOT = {
+					capital_scope = { 
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = serpentspine
+							continent = asia
+							superregion = escann_superregion
+						}
 					}
 				}
 			}
 			OR = {
-				any_owned_province = {
-					NOT = {
+				num_of_owned_provinces_with = {
+					value = 5
+					OR = {
 						continent = north_america
 						continent = south_america
 					}
 				}
+				colony = 1
 			}
 		}
 
@@ -1293,27 +1350,59 @@ age_of_reformation = {
 			}
 		}
 
-		obj_age2_7_foothold_in_aelantir = {
+		obj_age2_7_trading_relics = {
 			allow = {
-				NOT = {
-					capital_scope = { 
-						OR = {
-							continent = north_america
-							continent = south_america
-							continent = serpentspine
-						}
-					}
-				}
-			}
-			OR = {
-				any_owned_province = {
+				capital_scope = { 
 					OR = {
 						continent = north_america
-						continent = south_america
+						continent = south_america 
 					}
 				}
 			}
+			trading_bonus = {
+				trade_goods = precursor_relics
+				value = yes
+			}
 		}
+
+		obj_age2_7_repair_high_temples = {
+			allow = {
+				capital_scope = { 
+					continent = asia 
+					NOT = { superregion = forbidden_lands_superregion }
+					NOT = { superregion = gozengun_superregion }
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 4
+				has_province_modifier = temple_complex
+			}
+		}
+
+		obj_age2_7_won_100_battles = {
+			allow = {
+				capital_scope = {
+					OR = {
+						superregion = forbidden_lands_superregion
+						superregion = gozengun_superregion
+					}
+				}
+			}
+			num_of_battles = { amount = 100 }
+		}
+
+		obj_age2_7_have_50_prov_in_escann = {
+			allow = {
+				capital_scope = {
+					superregion = escann_superregion
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 50
+				superregion = escann_superregion
+			}
+		}
+		
 		
 		obj_age2_8_force_converted = {
 			custom_trigger_tooltip = {
@@ -1324,9 +1413,83 @@ age_of_reformation = {
 
 		obj_age2_9_racial_movements = {
 			OR = {
-				has_racial_focus = yes
-				NOT = { is_not_purging_any_race_trigger = yes }
-				NOT = { is_not_expelling_any_race_trigger = yes }
+				custom_trigger_tooltip = {
+					tooltip = obj_age2_9_racial_tolerance_tt
+					calc_true_if = {
+						high_tolerance_dwarven_race_trigger = yes
+						high_tolerance_elven_race_trigger = yes
+						high_tolerance_halfling_race_trigger = yes
+						high_tolerance_gnomish_race_trigger = yes
+						high_tolerance_half_orcish_race_trigger = yes
+						high_tolerance_kobold_race_trigger = yes
+						high_tolerance_orcish_race_trigger = yes
+						high_tolerance_human_race_trigger = yes
+						high_tolerance_gnollish_race_trigger = yes
+						high_tolerance_ruinborn_race_trigger = yes
+						high_tolerance_goblin_race_trigger = yes
+						high_tolerance_harpy_race_trigger = yes
+						high_tolerance_troll_race_trigger = yes
+						high_tolerance_half_elven_race_trigger = yes
+						high_tolerance_ogre_race_trigger = yes
+						high_tolerance_harimari_race_trigger = yes
+						high_tolerance_centaur_race_trigger = yes
+						high_tolerance_hobgoblin_race_trigger = yes
+						high_tolerance_lizardfolk_race_trigger = yes
+						high_tolerance_mechanim_race_trigger = yes
+						amount = 5
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = obj_age2_9_racial_purity_tt
+					calc_true_if = {
+						high_tolerance_dwarven_race_trigger = yes
+						high_tolerance_elven_race_trigger = yes
+						high_tolerance_halfling_race_trigger = yes
+						high_tolerance_gnomish_race_trigger = yes
+						high_tolerance_half_orcish_race_trigger = yes
+						high_tolerance_kobold_race_trigger = yes
+						high_tolerance_orcish_race_trigger = yes
+						high_tolerance_human_race_trigger = yes
+						high_tolerance_gnollish_race_trigger = yes
+						high_tolerance_ruinborn_race_trigger = yes
+						high_tolerance_goblin_race_trigger = yes
+						high_tolerance_harpy_race_trigger = yes
+						high_tolerance_troll_race_trigger = yes
+						high_tolerance_half_elven_race_trigger = yes
+						high_tolerance_ogre_race_trigger = yes
+						high_tolerance_harimari_race_trigger = yes
+						high_tolerance_centaur_race_trigger = yes
+						high_tolerance_hobgoblin_race_trigger = yes
+						high_tolerance_lizardfolk_race_trigger = yes
+						high_tolerance_mechanim_race_trigger = yes
+						amount = 1
+					}
+					NOT = {
+						calc_true_if = {
+							high_tolerance_dwarven_race_trigger = yes
+							high_tolerance_elven_race_trigger = yes
+							high_tolerance_halfling_race_trigger = yes
+							high_tolerance_gnomish_race_trigger = yes
+							high_tolerance_half_orcish_race_trigger = yes
+							high_tolerance_kobold_race_trigger = yes
+							high_tolerance_orcish_race_trigger = yes
+							high_tolerance_human_race_trigger = yes
+							high_tolerance_gnollish_race_trigger = yes
+							high_tolerance_ruinborn_race_trigger = yes
+							high_tolerance_goblin_race_trigger = yes
+							high_tolerance_harpy_race_trigger = yes
+							high_tolerance_troll_race_trigger = yes
+							high_tolerance_half_elven_race_trigger = yes
+							high_tolerance_ogre_race_trigger = yes
+							high_tolerance_harimari_race_trigger = yes
+							high_tolerance_centaur_race_trigger = yes
+							high_tolerance_hobgoblin_race_trigger = yes
+							high_tolerance_lizardfolk_race_trigger = yes
+							high_tolerance_mechanim_race_trigger = yes
+							amount = 2
+						}
+					}
+				}
 			}
 		}
 
@@ -2324,9 +2487,8 @@ age_of_absolutism = {
 
 	objectives = {
 		obj_age3_1_universities = {
-			num_of_owned_provinces_with = {
-				has_building = university 
-				value = 50
+			all_owned_province = {
+				has_building = university
 			}
 		}
 
@@ -2334,8 +2496,11 @@ age_of_absolutism = {
 			has_commanding_three_star = yes
 		}
 
-		obj_age3_3_75_absolutism = {
-			absolutism = 75
+		obj_age3_3_court_and_country = {
+			custom_trigger_tooltip = {
+				tooltip = abj_age3_3_finish_court_and_country_tt
+				has_country_modifier = crushed_local_authority
+			}
 		}
 
 		obj_age3_4_witchking_or_666 = {
@@ -2352,83 +2517,69 @@ age_of_absolutism = {
 		obj_age3_5_emperor = {
 			OR = {	
 				is_emperor = yes
-				total_development = 2000
+				total_development = 3000
 				is_emperor_of_china = yes
 			}
 		}
 
 		obj_age3_6_mage_influence = {
+			allow = {
+				has_estate = estate_mages
+			}
 			estate_influence = {
 				estate = estate_mages
 				influence = 67
 			}
 		}
 
-		obj_age3_7_high_crownlands = {
-			crown_land_share = 75
-		}
-
-		obj_age3_8_have_relics = {
-			precursor_relics = 2
-		}
-
-		obj_age3_9_home_conquest = {
-			allow = {
-				capital_scope = { 
-					OR = {
-						continent = north_america
-						continent = south_america
-					}
-				}
-			}
-			num_of_owned_provinces_with = {
-				value = 150
-				OR = {
-					continent = north_america
-					continent = south_america
-				}
-			}
-		}
-
-		obj_age3_9_mountain_conquest = {
-			allow = {
-				capital_scope = { 
-					continent = serpentspine
-				}
-			}
-			num_of_owned_provinces_with = {
-				value = 6
-				OR = {
-					has_terrain = dwarven_hold
-					has_terrain = dwarven_hold_surface
-				}
-			}
-			num_of_owned_provinces_with = {
-				value = 30
-				has_terrain = dwarven_road
-			}
-		}
-
-		obj_age3_9_aelantir_conquest = {
+		obj_age3_6_artificers_capacity = {
 			allow = {
 				NOT = {
-					capital_scope = { 
-						OR = {
-							continent = north_america
-							continent = south_america
-							continent = serpentspine
-						}
-					}
+					has_estate = estate_mages
+				}
+				has_estate = estate_artificers
+			}
+			check_variable = { which = MaxArtificePoints value = 100 }
+		}
+
+		obj_age3_6_manage_cultures = {
+			allow = {
+				NOT = {
+					has_estate = estate_mages
+				}
+				NOT = {
+					has_estate = estate_artificers
 				}
 			}
-			num_of_owned_provinces_with = {
-				value = 20
+			all_owned_province = {
 				OR = {
-					continent = north_america
-					continent = south_america
+					has_owner_accepted_culture = yes
+					has_owner_culture = yes
 				}
 			}
 		}
+
+		obj_age3_7_low_unrest = {
+			NOT = {
+				any_owned_province = {
+					unrest = 0
+				}
+			}
+		}
+
+		obj_age3_8_have_15k = {
+			treasury = 15000
+			NOT = {
+				num_of_loans = 1
+			}
+		}
+
+		obj_age3_9_low_autonomy = {
+			NOT = {
+				average_autonomy = 5
+			}
+		}
+
 
 		obj_age3_10_3_trade_companies = {
 			num_of_trade_companies = 3
@@ -3421,9 +3572,27 @@ age_of_revolutions = {
 			}
 		}
 
-		obj_age4_3_huge_capital = {
-			capital_scope = {
-				development = 50
+		obj_age4_3_4_manufactories = {
+			custom_trigger_tooltip = {
+				tooltip = obj_age4_3_4_manufactories_tt
+				capital_scope = {
+					calc_true_if = {
+						has_building = wharf
+						has_building = weapons
+						has_building = textile
+						has_building = tradecompany
+						has_building = farm_estate
+						has_building = mills
+						has_building = furnace
+						has_building = plantations
+						has_building = ramparts
+						has_building = soldier_households
+						has_building = impressment_offices
+						has_building = state_house
+						has_building = mage_tower
+						amount = 4
+					}
+				}
 			}
 		}
 
@@ -3435,10 +3604,34 @@ age_of_revolutions = {
 			furnace = 4
 		}
 		
-		obj_age4_6_65_artificers_loyalty = {
-			estate_loyalty = {
-				estate = estate_artificers
-				loyalty = 65
+		obj_age4_6_10_lvl_advisors = {
+			OR = {
+				army_reformer = 10
+				army_organiser = 10
+				commandant = 10
+				quartermaster = 10
+				recruitmaster = 10
+				fortification_expert = 10
+				grand_captain = 10
+			}
+			OR = {
+				statesman = 10
+				naval_reformer = 10
+				trader = 10
+				spymaster = 10
+				colonial_governor = 10
+				diplomat = 10
+				navigator = 10
+			}
+			OR = {
+				philosopher = 10
+				natural_scientist = 10
+				artist = 10
+				treasurer = 10
+				theologian = 10
+				master_of_mint = 10
+				inquisitor = 10
+				court_mage = 10
 			}
 		}
 
@@ -3446,12 +3639,14 @@ age_of_revolutions = {
 			is_revolutionary = yes
 		}
 	
-		obj_age4_8_90_professionalism = {
-			army_professionalism = 0.9
+		obj_age4_8_havent_allies = {
+			NOT = {
+				num_of_allies = 1
+			}
 		}
 
-		obj_age4_9_many_states = {
-			num_of_states = 65
+		obj_age4_9_many_provinces = {
+			num_of_cities = 250
 		}
 
 		obj_age4_10_full_hegemony = {

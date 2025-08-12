@@ -12,7 +12,8 @@ country_decisions = {
 				ruler_has_personality = mythical_conqueror_personality
 			}
 			NOT = { tag = S79 }
-			
+			NOT = { exists = S79 }					#BomjSBagetom Anbennar Submod
+			was_never_end_game_tag_trigger = yes	#BomjSBagetom Anbennar Submod
 		}
 		provinces_to_highlight = {
 			OR = {

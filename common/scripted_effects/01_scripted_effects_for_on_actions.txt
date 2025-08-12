@@ -9500,6 +9500,51 @@ startup_1444_effects = {
 			value = 0
 		}
 
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				capital_scope = {
+					continent = serpentspine
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						region = west_dwarovar_region
+					}
+				}
+				west_dwarovar_region = {
+					discover_country = ROOT
+				}
+			} else_if = {
+				limit = {
+					capital_scope = {
+						region = serpentreach_region
+					}
+				}
+				serpentreach_region = {
+					discover_country = ROOT
+				}
+			} else_if = {
+				limit = {
+					capital_scope = {
+						region = middle_dwarovar_region
+					}
+				}
+				middle_dwarovar_region = {
+					discover_country = ROOT
+				}
+			} else_if = {
+				limit = {
+					capital_scope = {
+						region = tree_of_stone_region
+					}
+				}
+				tree_of_stone_region = {
+					discover_country = ROOT
+				}
+			} 
+		}
+
 		#ruler optimization
 
 		if = {

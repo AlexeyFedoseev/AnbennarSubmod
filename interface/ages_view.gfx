@@ -191,12 +191,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_discover_america.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age1_1_have_2_holds"
-		texturefile = "gfx/interface/ages/obj_age1_1_have_2_holds.dds"
+		name = "GFX_obj_age1_1_2_expeditions"
+		texturefile = "gfx/interface/ages/obj_age1_1_2_expeditions.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age1_1_have_150_dev"
-		texturefile = "gfx/interface/ages/obj_100_development.dds"
+		name = "GFX_obj_age1_1_suran_temples"
+		texturefile = "gfx/interface/ages/obj_30_development_city.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_1_sarhal_monuments"
+		texturefile = "gfx/interface/ages/obj_sarhal_monuments.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_1_precursor_relics"
+		texturefile = "gfx/interface/ages/obj_precursor_relics.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_1_high_temples"
+		texturefile = "gfx/interface/ages/obj_high_temples.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age1_1_be_at_war"
+		texturefile = "gfx/interface/ages/obj_age1_1_be_at_war.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_age1_2_have_3_CoT"
@@ -211,8 +227,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_humiliate_rival.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age1_5_have_full_army_limit"
-		texturefile = "gfx/interface/ages/obj_large_forcelimit.dds"
+		name = "GFX_obj_age1_5_have_20_professionalism"
+		texturefile = "gfx/interface/ages/obj_age1_5_have_20_professionalism.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_age1_6_hire_2lvl_advisors"
@@ -252,12 +268,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_age2_1_religious_unity.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age2_2_two_continents"
-		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+		name = "GFX_obj_age2_2_be_great_power"
+		texturefile = "gfx/interface/ages/obj_age2_2_be_great_power.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age2_3_build_temples"
-		texturefile = "gfx/interface/ages/obj_age2_3_build_temples.dds"
+		name = "GFX_obj_age2_3_build_manufactories"
+		texturefile = "gfx/interface/ages/obj_age2_3_build_manufactories.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_age2_4_convert_15_provinces"
@@ -276,7 +292,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_age2_6_audit_government.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age2_7_sunset_invasion"
+		name = "GFX_obj_age2_7_foothold_in_aelantir"
 		texturefile = "gfx/interface/ages/obj_two_continents.dds"
 	}
 	spriteType = {
@@ -284,8 +300,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_age2_7_dig_holds.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age2_7_foothold_in_aelantir"
-		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+		name = "GFX_obj_age2_7_trading_relics"
+		texturefile = "gfx/interface/ages/obj_precursor_relics.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_7_repair_high_temples"
+		texturefile = "gfx/interface/ages/obj_high_temples.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_7_won_100_battles"
+		texturefile = "gfx/interface/ages/obj_age2_7_won_100_battles.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_age2_7_have_50_prov_in_escann"
+		texturefile = "gfx/interface/ages/obj_age2_7_have_50_prov_in_escann.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_age2_8_force_converted"
@@ -309,7 +337,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_great_general.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age3_3_75_absolutism"
+		name = "GFX_obj_age3_3_court_and_country"
 		texturefile = "gfx/interface/ages/obj_90_absolutism.dds"
 	}
 	spriteType = {
@@ -325,24 +353,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_age3_6_mage_influence.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age3_7_high_crownlands"
-		texturefile = "gfx/interface/ages/obj_age3_7_high_crownlands.dds"
+		name = "GFX_obj_age3_6_artificers_capacity"
+		texturefile = "gfx/interface/ages/obj_age4_6_65_artificers_loyalty.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age3_8_have_relics"
-		texturefile = "gfx/interface/ages/obj_age3_8_have_relics.dds"
+		name = "GFX_obj_age3_6_manage_cultures"
+		texturefile = "gfx/interface/ages/obj_age3_6_manage_cultures.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age3_9_home_conquest"
-		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+		name = "GFX_obj_age3_7_low_unrest"
+		texturefile = "gfx/interface/ages/obj_age3_7_low_unrest.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age3_9_mountain_conquest"
-		texturefile = "gfx/interface/ages/obj_age3_9_mountain_conquest.dds"
+		name = "GFX_obj_age3_8_have_15k"
+		texturefile = "gfx/interface/ages/obj_age3_8_have_15k.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age3_9_aelantir_conquest"
-		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+		name = "GFX_obj_age3_9_low_autonomy"
+		texturefile = "gfx/interface/ages/obj_age3_9_low_autonomy.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_age3_10_3_trade_companies"
@@ -358,8 +386,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_disc_army.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age4_3_huge_capital"
-		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+		name = "GFX_obj_age4_3_4_manufactories"
+		texturefile = "gfx/interface/ages/obj_age2_3_build_manufactories.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_age4_4_own_institution_origin"
@@ -370,19 +398,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_age4_5_4_furnace.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age4_6_65_artificers_loyalty"
-		texturefile = "gfx/interface/ages/obj_age4_6_65_artificers_loyalty.dds"
+		name = "GFX_obj_age4_6_10_lvl_advisors"
+		texturefile = "gfx/interface/ages/obj_age1_6_hire_2lvl_advisors.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_age4_7_be_revolutionary"
 		texturefile = "gfx/interface/ages/obj_age4_7_be_revolutionary.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age4_8_90_professionalism"
-		texturefile = "gfx/interface/ages/obj_age4_8_90_professionalism.dds"
+		name = "GFX_obj_age4_8_havent_allies"
+		texturefile = "gfx/interface/ages/obj_age4_8_havent_allies.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age4_9_many_states"
+		name = "GFX_obj_age4_9_many_provinces"
 		texturefile = "gfx/interface/ages/obj_age4_9_many_states.dds"
 	}
 	spriteType = {

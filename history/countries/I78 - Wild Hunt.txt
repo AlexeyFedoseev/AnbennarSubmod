@@ -1,0 +1,16 @@
+
+setup_vision = yes
+government = tribal
+add_government_reform = centaur_horde
+primary_culture = plain_centaur
+religion = irdaeos_worship
+religious_school = filustkhuga_school
+technology_group = tech_centaur
+capital = 5136
+
+1444.11.11 = {
+	add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		name = monstrous_nation
+		duration = -1
+	}
+}

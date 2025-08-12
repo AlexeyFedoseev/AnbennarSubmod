@@ -45,6 +45,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.1.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_castellos_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_castellos_t_a
 			hidden = yes
@@ -73,6 +76,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.1.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_castellos_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_castellos_t_b
 			hidden = yes
@@ -200,6 +206,9 @@ country_event = {
 	# emulate aspect 1
 	option = {
 		name = "favored_RC.4.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_dame_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_dame_t_a
 			hidden = yes
@@ -228,6 +237,9 @@ country_event = {
 	# emulate aspect 2
 	option = {
 		name = "favored_RC.4.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_dame_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_dame_t_b
 			hidden = yes
@@ -373,6 +385,9 @@ country_event = {
 	# emulate aspect 1
 	option = {
 		name = "favored_RC.7.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_esmaryal_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_esmaryal_t_a
 			duration = -1
@@ -401,6 +416,9 @@ country_event = {
 	# emulate aspect 2
 	option = {
 		name = "favored_RC.7.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_esmaryal_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_esmaryal_t_b
 			hidden = yes
@@ -537,6 +555,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.10.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_falah_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_falah_t_a
 			hidden = yes
@@ -565,6 +586,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.10.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_falah_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_falah_t_b
 			hidden = yes
@@ -706,6 +730,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.13.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_nerat_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_nerat_t_a
 			hidden = yes
@@ -734,6 +761,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.13.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_nerat_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_nerat_t_b
 			hidden = yes
@@ -872,6 +902,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.16.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_adean_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_adean_t_a
 			hidden = yes
@@ -900,6 +933,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.16.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_adean_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_adean_t_b
 			hidden = yes
@@ -1038,6 +1074,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.19.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_ryala_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_ryala_t_a
 			hidden = yes
@@ -1066,6 +1105,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.19.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_ryala_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_ryala_t_b
 			hidden = yes
@@ -1210,6 +1252,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.22.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_balgar_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_balgar_t_a
 			hidden = yes
@@ -1238,6 +1283,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.22.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_balgar_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_balgar_t_b
 			hidden = yes
@@ -1372,6 +1420,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.25.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_ara_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_ara_t_a
 			hidden = yes
@@ -1400,6 +1451,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.25.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_ara_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_ara_t_b
 			hidden = yes
@@ -1544,6 +1598,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.28.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_munas_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_munas_t_a
 			hidden = yes
@@ -1572,6 +1629,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.28.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_munas_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_munas_t_b
 			hidden = yes
@@ -1702,6 +1762,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.31.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_nathalyne_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_nathalyne_t_a
 			hidden = yes
@@ -1730,6 +1793,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.31.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_nathalyne_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_nathalyne_t_b
 			hidden = yes
@@ -1871,6 +1937,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.34.a"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_minara_1 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_minara_t_a
 			hidden = yes
@@ -1899,6 +1968,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.34.b"
+		trigger = {	#BomjSBagetom Anbennar Submod
+			NOT = { has_country_modifier = RC_emulant_minara_2 }
+		}
 		add_ruler_modifier = {
 			name = favored_RC_minara_t_b
 			hidden = yes
@@ -2036,7 +2108,10 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.37.a"
-		trigger = { NOT = { has_ruler_modifier = corintar_lothane_bluetusk } }
+		trigger = { 
+			NOT = { has_ruler_modifier = corintar_lothane_bluetusk }
+			NOT = { has_country_modifier = RC_emulant_corin_1 }	#BomjSBagetom Anbennar Submod
+		}
 		add_ruler_modifier = {
 			name = favored_RC_corin_t_a
 			hidden = yes
@@ -2065,7 +2140,10 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.37.b"
-		trigger = { NOT = { has_ruler_modifier = corintar_lothane_bluetusk } }
+		trigger = { 
+			NOT = { has_ruler_modifier = corintar_lothane_bluetusk } 
+			NOT = { has_country_modifier = RC_emulant_corin_2 }	#BomjSBagetom Anbennar Submod
+		}
 		add_ruler_modifier = {
 			name = favored_RC_corin_t_b
 			hidden = yes
@@ -2103,7 +2181,10 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.37.al"
-		trigger = { has_ruler_modifier = corintar_lothane_bluetusk }
+		trigger = { 
+			has_ruler_modifier = corintar_lothane_bluetusk
+			NOT = { has_country_modifier = RC_emulant_corin_1 }	#BomjSBagetom Anbennar Submod
+		}
 		add_ruler_modifier = {
 			name = favored_RC_corin_t_a
 			hidden = yes
@@ -2132,7 +2213,10 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.37.bl"
-		trigger = { has_ruler_modifier = corintar_lothane_bluetusk }
+		trigger = { 
+			has_ruler_modifier = corintar_lothane_bluetusk 
+			NOT = { has_country_modifier = RC_emulant_corin_2 }	#BomjSBagetom Anbennar Submod
+		}
 		add_ruler_modifier = {
 			name = favored_RC_corin_t_b
 			hidden = yes
@@ -2331,6 +2415,9 @@ country_event = {
 	# Emulate aspect 1
 	option = {
 		name = "favored_RC.40.a"
+		trigger = {
+			NOT = { has_country_modifier = RC_emulant_begga_1 }	#BomjSBagetom Anbennar Submod
+		}
 		add_ruler_modifier = {
 			name = favored_RC_begga_t_a
 			hidden = yes
@@ -2359,6 +2446,9 @@ country_event = {
 	# Emulate aspect 2
 	option = {
 		name = "favored_RC.40.b"
+		trigger = {
+			NOT = { has_country_modifier = RC_emulant_begga_2 }	#BomjSBagetom Anbennar Submod
+		}
 		add_ruler_modifier = {
 			name = favored_RC_begga_t_b
 			hidden = yes

@@ -73,13 +73,13 @@ country_decisions = {
 		}
 		allow = {
 			owns_core_province = 840	#North Citadel
-			OR = {
-				adm_tech = 7
-				custom_trigger_tooltip = {
-					tooltip = cl_castellyr_early_tt
-					has_country_flag = cl_early_castellyr
-				}
-			}
+			#OR = {	#BomjSBagetom Anbennar Submod
+			#	adm_tech = 7
+			#	custom_trigger_tooltip = {
+			#		tooltip = cl_castellyr_early_tt
+			#		has_country_flag = cl_early_castellyr
+			#	}
+			#}
 			government_rank = 1
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -940,7 +940,7 @@ country_decisions = {
 		
 		allow = {
 			owns_core_province = 777	#Escin
-			adm_tech = 7
+			#adm_tech = 7	#BomjSBagetom Anbennar Submod
 			government_rank = 1
 			is_free_or_tributary_trigger = yes
 			is_at_war = no

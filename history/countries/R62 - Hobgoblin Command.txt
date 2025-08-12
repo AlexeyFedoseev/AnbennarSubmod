@@ -46,6 +46,10 @@ historical_rival = R51 # Dhenijanraj
 		name = command_rule_of_the_wolf
 		duration = -1
 	}
+	add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		name = monstrous_nation
+		duration = -1
+	}
 	#BomjSBagetom Anbennar Submod
 	#add_ruler_modifier = {
 	#	name = command_exemplary_leadership

@@ -708,8 +708,12 @@ estate_adeen_choice_of_mounts = {
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = {
+		OR = {
+			tag = R38	#BomjSBagetom Anbennar Submod
+			tag = S79	#BomjSBagetom Anbennar Submod
+		}
 		NOT = {
-			tag = R38
+			#tag = R38	#BomjSBagetom Anbennar Submod
 			has_country_flag = adeen_emulating_adasa_flag
 			has_estate_privilege = estate_adeen_adeen_curtailed
 			has_estate_privilege = estate_adeen_adeen_integrated
@@ -772,6 +776,12 @@ estate_adeen_open_the_coffers = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0
 	influence = 0.1
+	is_valid = {
+		OR = {
+			tag = R38	#BomjSBagetom Anbennar Submod
+			tag = S79	#BomjSBagetom Anbennar Submod
+		}
+	}
 	can_select = {
 		if = {
 			limit = { NOT = { tag = R38 has_country_flag = adeen_emulating_adasa_flag } }
@@ -956,6 +966,12 @@ estate_adeen_professional_supply = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0
 	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = R38	#BomjSBagetom Anbennar Submod
+			tag = S79	#BomjSBagetom Anbennar Submod
+		}
+	}
 	can_select = {
 		if = {
 			limit = { NOT = { tag = R38 has_country_flag = adeen_emulating_adasa_flag } }
@@ -1015,6 +1031,10 @@ estate_adeen_adeen_armories = {
 	loyalty = 0
 	influence = 0.1
 	is_valid = {
+		OR = {
+			tag = R38	#BomjSBagetom Anbennar Submod
+			tag = S79	#BomjSBagetom Anbennar Submod
+		}
 		NOT = {
 			has_estate_privilege = estate_adeen_adeen_curtailed
 			has_estate_privilege = estate_adeen_adeen_integrated

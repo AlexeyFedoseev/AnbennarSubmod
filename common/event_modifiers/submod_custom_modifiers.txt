@@ -39,6 +39,14 @@ emergency_impressment_act_used = {
 
 }
 
+emergency_impressment_act_used = {
+
+}
+
+hierarchy_spoils_of_reconstruction = {
+	artificers_research_time = -0.15
+}
+
 1444_adventurer_boost = {
 	global_tax_income = 48 #Cost of a colonist
 	land_forcelimit = 5
@@ -88,6 +96,60 @@ umoji_colonist_bonus = {
 	colonists = 1
 }
 
+rajnadhaga_break_the_chimera = {
+	land_morale = 0.1
+}
+
+interest_bankruptcy_penalty_1 = {
+	interest = 0.5
+}
+
+interest_bankruptcy_penalty_2 = {
+	interest = 1
+}
+
+interest_bankruptcy_penalty_3 = {
+	interest = 1.5
+}
+
+interest_bankruptcy_penalty_4 = {
+	interest = 2
+}
+
+interest_bankruptcy_penalty_5 = {
+	interest = 2.5
+}
+
+interest_bankruptcy_penalty_6 = {
+	interest = 3
+}
+
+interest_bankruptcy_penalty_7 = {
+	interest = 3.5
+}
+
+interest_bankruptcy_penalty_8 = {
+	interest = 4
+}
+
+interest_bankruptcy_penalty_9 = {
+	interest = 4.5
+}
+
+interest_bankruptcy_penalty_10 = {
+	interest = 5
+}
+
+cultural_shift_penalty_1 = { }
+cultural_shift_penalty_2 = { }
+cultural_shift_penalty_3 = { }
+cultural_shift_penalty_4 = { }
+cultural_shift_penalty_5 = { }
+cultural_shift_penalty_6 = { }
+cultural_shift_penalty_7 = { }
+cultural_shift_penalty_8 = { }
+cultural_shift_penalty_9 = { }
+cultural_shift_penalty_10 = { }
 #---------------------AGES-STUFF--------------------
 ab_age_endurance_1 = {
 	defensiveness = 0.15
@@ -272,7 +334,7 @@ ab_age_religion_3 = {
 	missionaries = 1
 	manpower_in_true_faith_provinces = 0.15
 	religious_unity = 0.3
-	monthly_church_power = 0.1
+	church_power_modifier = 0.1
 	monthly_fervor_increase = 0.25
 	yearly_patriarch_authority = 0.1
 }
@@ -282,7 +344,7 @@ ab_age_religion_4 = {
 	missionaries = 2
 	manpower_in_true_faith_provinces = 0.20
 	religious_unity = 0.4
-	monthly_church_power = 0.2
+	church_power_modifier = 0.2
 	monthly_fervor_increase = 0.5
 	yearly_patriarch_authority = 0.2
 	warscore_cost_vs_other_religion = -0.10

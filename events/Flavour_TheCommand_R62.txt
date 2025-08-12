@@ -8246,7 +8246,8 @@ country_event = { #Everyone else victory notification
 					add_country_modifier = { name = command_veterans_of_the_resistance duration = 9125 }
 				}
 				R07 = {	#BomjSBagetom Anbennar Submod
-					add_treasury = 1500
+					add_treasury = 2000
+					add_country_modifier = { name = rajnadhaga_break_the_chimera duration = 5475 } # 15 years
 				}
 			}
 		}

@@ -1032,6 +1032,7 @@ country_event = {
 		}
 		
 		set_ruler_flag = is_a_lich
+		artifice_magic_switch_to_magic_only_mode = yes	#BomjSBagetom Anbennar Submod
 		set_ruler_flag = is_a_secret_lich
 		set_ruler_flag = true_immortal_ruler
 		
@@ -1251,6 +1252,7 @@ country_event = {
 		set_heir = old_heir
 		
 		set_ruler_flag = is_a_lich
+		artifice_magic_switch_to_magic_only_mode = yes	#BomjSBagetom Anbennar Submod
 		set_ruler_flag = new_lich_setup
 		clr_country_flag = interregnum
 

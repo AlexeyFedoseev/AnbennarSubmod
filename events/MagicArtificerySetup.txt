@@ -43,6 +43,7 @@ country_event = {
 			artificery_locked_mage_mode = no
 			artificery_locked_mixed_mode = no
 			artificery_tag_needs_mages = no
+			NOT = { ruler_is_vampire = yes }	#BomjSBagetom Anbennar Submod
 		}
 		artifice_magic_switch_to_artificery_only_mode = yes
 		hidden_effect = {
@@ -76,6 +77,7 @@ country_event = {
 		trigger = {
 			hidden_trigger = {
 				has_country_flag = unlock_mixed_mode
+				NOT = { has_ruler_flag = is_a_lich } #BomjSBagetom Anbennar Submod
 			}
 		}
 		custom_tooltip = mixed_tt
@@ -102,6 +104,7 @@ country_event = {
 				has_country_flag = witch_king_flag
 				}
 			}
+			NOT = { ruler_is_vampire = yes }	#BomjSBagetom Anbennar Submod
 		}
 		custom_tooltip = artificers_only_tt
 		custom_tooltip = unlocked_mode_tt
