@@ -30,6 +30,11 @@ capital = 6659
 #	
 #}
 
+add_adm_tech = 1	#BomjSBagetom Anbennar Submod
+add_dip_tech = 1	#BomjSBagetom Anbennar Submod
+add_mil_tech = 1	#BomjSBagetom Anbennar Submod
+change_innovativeness = -12	#BomjSBagetom Anbennar Submod
+
 1444.1.1 = {
 	monarch = {
 		name = "Bimogíre"

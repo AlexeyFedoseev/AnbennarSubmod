@@ -237,8 +237,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			has_country_modifier = centaur_administration
-			#NOT = { has_global_flag = great_khan_formed } #BomjSBagetom Anbennar Submod
-			NOT = { exists = I89 } #BomjSBagetom Anbennar Submod
+			#NOT = { has_global_flag = great_khan_formed } 	#BomjSBagetom Anbennar Submod
+			NOT = { exists = I89 } 							#BomjSBagetom Anbennar Submod
 			was_never_end_game_tag_trigger = yes
 			NOT = {
 				tag = J54
@@ -253,7 +253,7 @@ country_decisions = {
 				has_country_modifier = centaur_administration
 			}
 			is_subject = no
-			is_year = 1500
+			#is_year = 1500		#BomjSBagetom Anbennar Submod
 			mission_completed = CENTAUR_valorous_caehnate
 			OR = {
 				total_development = 300
@@ -274,7 +274,8 @@ country_decisions = {
 			}
 			is_at_war = no
 			capital_scope = { superregion = forbidden_lands_superregion }
-			NOT = { is_year = 1600 }
+			#NOT = { is_year = 1600 }		#BomjSBagetom Anbennar Submod
+			has_reform = centaur_horde		#BomjSBagetom Anbennar Submod
 		}
 		effect = {
 			change_tag = I89

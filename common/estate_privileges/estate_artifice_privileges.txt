@@ -1891,11 +1891,14 @@ estate_artificers_trained_mage_hunters = {
 				war_with = root
 			}
 		}
-		modifier = {
-			land_morale = 0.1
-			naval_morale = 0.1
-			discipline = 0.05
-			shock_damage_received = -0.1
+		modifier = {	
+			#land_morale = 0.1					#BomjSBagetom Anbennar Submod
+			#naval_morale = 0.1					#BomjSBagetom Anbennar Submod
+			#discipline = 0.05					#BomjSBagetom Anbennar Submod
+			#shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod
+			global_unrest = -2					#BomjSBagetom Anbennar Submod
+			global_autonomy = -0.1				#BomjSBagetom Anbennar Submod
+			war_exhaustion = -0.10				#BomjSBagetom Anbennar Submod
 		}
 	}
 	conditional_modifier = {

@@ -8466,6 +8466,12 @@ country_event = { #Sir Revolt End - Command Victory
 							cede_province = R62 add_permanent_claim = R62 add_permanent_province_modifier = { name = command_legacy_of_the_revolt duration = 365 }
 						}
 					}
+					4516 = {		#BomjSBagetom Anbennar Submod
+						if = {
+							limit = { owner = { is_in_war = { casus_belli = cb_revolt_of_the_north } } }
+							cede_province = R62 add_permanent_claim = R62 add_permanent_province_modifier = { name = command_legacy_of_the_revolt duration = 365 }
+						}
+					}
 				}
 			}
 			if = {

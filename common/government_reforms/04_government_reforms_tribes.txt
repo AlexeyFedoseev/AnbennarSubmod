@@ -937,8 +937,10 @@ centaur_horde = {
 	modifiers = {
 		loot_amount = 0.50
 		reform_progress_growth = -0.40
+		cavalry_cost = -0.2 			#BomjSBagetom Anbennar Submod
 	}
 	custom_attributes = {
+		locked_government_type = yes	#BomjSBagetom Anbennar Submod
 		ai_migration = yes
 		disables_estate_nomadic_tribes = yes
 		centaur_nomadism_attribute = yes
@@ -961,6 +963,7 @@ centaur_settled = {
 		reform_progress_growth = -0.33
 	}
 	custom_attributes = {
+		locked_government_type = yes	#BomjSBagetom Anbennar Submod
 		locked_government_type = no
 		disables_estate_nomadic_tribes = yes
 		centaur_nomadism_attribute = yes
@@ -993,6 +996,7 @@ great_centaur_horde = {
 		# tiger_bane
 	# }
 	custom_attributes = {
+		locked_government_type = yes	#BomjSBagetom Anbennar Submod
 		locked_government_type = yes
 		disables_estate_nomadic_tribes = yes
 		centaur_nomadism_attribute = yes

@@ -9500,6 +9500,58 @@ startup_1444_effects = {
 			value = 0
 		}
 
+		if = { #BomjSBagetom Anbennar Submod
+			limit = {
+				technology_group = tech_lizardfolk
+				NOT = {
+					tag = L95 # Rayaz - tech 2
+				}
+				NOT = {
+					tag = S83 #tech 3
+				}
+				NOT = {
+					tag = S12 #tech 3
+				}
+				NOT = {
+					tag = L82 #tech 3
+				}
+				NOT = {
+					tag = S11 #tech 3
+				}
+			}
+			add_adm_tech = 1
+			add_dip_tech = 1
+			add_mil_tech = 1
+			change_innovativeness = -12
+		}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				capital_scope = {
+					continent = serpentspine
+				}
+				#NOT = {
+				#	capital_scope = {
+				#		has_terrain = dwarven_hold_surface
+				#	}
+				#}
+				#NOT = {
+				#	capital_scope = {
+				#		has_terrain = dwarven_hold
+				#	}
+				#}
+				ai = no
+			}
+			random_empty_neighbor_province = {
+				limit = { 
+					can_spawn_expedition = yes
+					is_city = yes 
+					NOT = { province_group = hold_province }
+				}
+				spawn_expedition = yes
+				generate_expedition = { base_floor = 2 base_danger = 2 }
+			}
+		}
+
 		if = {	#BomjSBagetom Anbennar Submod
 			limit = {
 				capital_scope = {

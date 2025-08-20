@@ -2046,7 +2046,7 @@ incense = {
 	color = { 0.89 0.79 0.47 }
 	modifier = {
 		#tolerance_own = 0.5			#BomjSBagetom Anbennar Submod
-		culture_conversion_cost = 0.1	#BomjSBagetom Anbennar Submod
+		culture_conversion_cost = -0.1	#BomjSBagetom Anbennar Submod
 	}
 	province = {
 		trade_value_modifier = 0.1

@@ -3856,7 +3856,7 @@ age_of_revolutions = {
 
 		ab_age4_quality_focus_group_button = {
 			allow = {
-				NOT = { has_age_ability = ab_age4_quantity_focus_focus_group_button }
+				NOT = { has_age_ability = ab_age4_quantity_focus_group_button }
 			}
 			modifier = {
 				backrow_artillery_damage = 0.20
@@ -3870,13 +3870,13 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_quantity_focus_focus_group_button = {
+		ab_age4_quantity_focus_group_button = {
 			allow = {
 				NOT = { has_age_ability = ab_age4_quality_focus_group_button }
 			}
 			effect = {
 				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
-				add_or_upgrade_age_bonus = { bonusName = quantity_focus abilityName = ab_age4_quantity_focus_focus_group_button }
+				add_or_upgrade_age_bonus = { bonusName = quantity_focus abilityName = ab_age4_quantity_focus_group_button }
 				set_country_flag = ab_age4_quantity_group_flag
 				custom_tooltip = age4_quantity_toolptip
 			}

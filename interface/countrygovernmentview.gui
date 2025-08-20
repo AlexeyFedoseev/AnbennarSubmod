@@ -1070,7 +1070,7 @@ guiTypes = {
 		#  Raj rework
 		windowType = { # Raj screen
 			name = "raj_window_screen"
-			position = { x = 550 y = 0 }
+			position = { x = 550 y = 300 }	#BomjSBagetom Anbennar Submod
 			moveable = 1
 			Orientation = "UPPER_LEFT"
 			scripted = yes

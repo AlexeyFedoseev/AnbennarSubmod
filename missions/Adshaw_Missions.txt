@@ -963,6 +963,7 @@ adshaw_2_missions_s = {
 			#BomjSBagetom Anbennar Submod
 			add_truce_with = Z18
 			add_truce_with = Z08
+			add_truce_with = A23
 
 			add_country_modifier = {
 				name = adshaw_deland_loan

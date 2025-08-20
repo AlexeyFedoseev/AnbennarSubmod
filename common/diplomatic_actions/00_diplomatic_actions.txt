@@ -483,7 +483,7 @@ declarewar = {
 		tooltip = submod_no_command_wars_before_sir
 		potential = { tag = R62 }
 		allow = {
-			has_country_flag = command_sir_revolt_victory 
+			has_country_flag = command_sir_revolt_started 
 		}
 	}
 	
@@ -4180,13 +4180,14 @@ warsubsidy = {
 		tooltip = submod_no_subs_in_hoardcurse_tt
 		potential = { 
 			FROM = {
-				NOT = {
-					has_disaster = hoardcurse
+				capital_scope = {
+					continent = serpentspine
 				}
+				culture_group = dwarven
 			} 
 		}
 		allow = { 
-			always = no
+			has_country_flag = hoardcurse_happened
 		}
 	}
 }

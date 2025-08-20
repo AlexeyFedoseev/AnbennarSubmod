@@ -578,7 +578,9 @@ left_trade_company = {
 
 scorched_earth = {
 	local_hostile_movement_speed = -0.50
-	local_monthly_devastation = 0.25
+	#local_monthly_devastation = 0.25	#BomjSBagetom Anbennar Submod
+	local_monthly_devastation = 0.50	#BomjSBagetom Anbennar Submod
+	local_defensiveness = -0.15 		#BomjSBagetom Anbennar Submod
 }
 
 ##########################################################################

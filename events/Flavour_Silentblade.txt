@@ -170,6 +170,7 @@ country_event = {
 			change_mil = 6
 			force_add_ruler_personality = { personality = mage_personality }
 			add_ruler_modifier = {
+				name = emerald_orc_fey_blessing
 				#duration = -1	#BomjSBagetom Anbennar Submod
 				duration = 9125	#BomjSBagetom Anbennar Submod
 			}
