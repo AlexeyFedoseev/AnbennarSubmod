@@ -188,6 +188,20 @@ temple = {
 			limit = { FROM = { has_government_attribute = learning_by_doing_reform_effect } }
 			FROM = { change_government_reform_progress = 4 }
 		}
+		#Drozma Tur
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				owner = {
+					religion = drozma_tur
+					has_church_aspect = aspire_wisdom_aspect_dip
+				}
+			}
+			owner = {
+				add_church_power = 5
+				change_government_reform_progress = 2
+			}
+		}
+
 		if = {
 			limit = {
 				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
@@ -279,6 +293,19 @@ temple = {
 			type = tax
 			value = 1
 		}
+		#Drozma Tur
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				owner = {
+					religion = drozma_tur
+					has_church_aspect = aspire_wisdom_aspect_dip
+				}
+			}
+			owner = {
+				add_church_power = -5
+				change_government_reform_progress = -2
+			}
+		}
 		if = {
 			limit = {
 				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
@@ -359,6 +386,19 @@ barracks = {
 
 		#Anbennar
 		anbennar_building_effect = yes
+		#Drozma Tur
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				owner = {
+					religion = drozma_tur
+					has_church_aspect = aspire_power_aspect_dip
+				}
+			}
+			add_base_manpower = 1
+			owner = {
+				add_church_power = 5
+			}
+		}
 		if = {
 			limit = { FROM = { has_estate_privilege = estate_boar_command_war_room_rights } }
 			FROM = { add_legitimacy = 0.5 }
@@ -399,6 +439,19 @@ barracks = {
 				# add_manpower = -1
 			# }
 		# }
+		#Drozma Tur
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				owner = {
+					religion = drozma_tur
+					has_church_aspect = aspire_power_aspect_dip
+				}
+			}
+			add_base_manpower = -1
+			owner = {
+				add_church_power = -5
+			}
+		}
 		remove_development_from_building = {
 			building = barracks
 			type = manpower

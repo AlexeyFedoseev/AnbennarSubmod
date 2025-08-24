@@ -2892,7 +2892,7 @@ wood_elf_salla = {
 		nobles_loyalty_modifier = 0.05
 		global_spy_defence = 0.15
 		global_institution_spread = -0.15
-		governing_capacity_modifier = -0.3
+		#governing_capacity_modifier = -0.3	#BomjSBagetom Anbennar Submod
 	}
 	effect = {
 		hidden_effect = {
