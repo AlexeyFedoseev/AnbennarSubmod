@@ -310,11 +310,14 @@ age_of_discovery = {
 
 		ab_age1_siege_group_button = {
 			effect = {
-				create_general = {
-					tradition = 60
-					add_siege = 3
-				}
 				add_or_upgrade_age_bonus = { bonusName = siege abilityName = ab_age1_siege_group_button }
+				custom_tooltip = ab_age1_siege_tt
+				hidden_effect = {
+					create_general = {
+						tradition = 60
+						add_siege = 3
+					}
+				}
 			}
 			ai_will_do = {
 				factor = 10
@@ -609,18 +612,6 @@ age_of_discovery = {
 			}
 		}
 
-		ab_age1_Busilar_bonus_button = {
-			allow = {
-				tag = A29
-			}
-			modifier = {
-				enemy_core_creation = 0.5 
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age1_Sugamber_bonus_button = {
 			allow = {
 				tag = A48
@@ -890,19 +881,6 @@ age_of_discovery = {
 			}
 		}
 
-		ab_age1_OneXia_bonus_button = {
-			allow = {
-				tag = Y99
-			}
-			modifier = {
-				mercenary_manpower = 0.5
-				merc_maintenance_modifier = -0.2
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age1_LotDekkhang_bonus_button = {
 			allow = {
 				tag = Y58
@@ -951,54 +929,6 @@ age_of_discovery = {
 			}
 		}
 
-		ab_age1_Pelomar_bonus_button = {
-			allow = {
-				tag = H08
-			}
-			modifier = {
-				tolerance_heretic = 5
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age1_Dearktir_bonus_button = {
-			allow = {
-				tag = H03
-			}
-			modifier = {
-				cavalry_power = 0.2
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age1_Arakeprun_bonus_button = {
-			allow = {
-				tag = H01
-			}
-			modifier = {
-				unjustified_demands = -1
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age1_Elchos_bonus_button = {
-			allow = {
-				tag = H04
-			}
-			modifier = {
-				global_institution_spread = 1
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age1_Arverynn_bonus_button = {
 			allow = {
 				tag = G35
@@ -1023,42 +953,12 @@ age_of_discovery = {
 			}
 		}
 
-		ab_age1_KheiosCityes_bonus_button = {
-			allow = {
-				OR = {
-					tag = G51
-					tag = G46
-					tag = G50
-					tag = G48
-					tag = G49
-				}
-			}
-			modifier = {
-				colony_development_boost = 1
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age1_Vyzemby_bonus_button = {
 			allow = {
 				technology_group = tech_vyzemby
 			}
 			modifier = {
 				global_defender_dice_roll_bonus = 1
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-		
-		ab_age1_YezelMora_bonus_button = {
-			allow = {
-				tag = S70
-			}
-			effect = {
-				change_religion = shadow_pact
 			}
 			ai_will_do = {
 				factor = 1000
@@ -1689,6 +1589,8 @@ age_of_reformation = {
 			modifier = {
 				infantry_shock = 0.1
 				infantry_fire = 0.1
+				cavalry_shock = 0.05
+				cavalry_fire = 0.05
 			}
 			effect = {
 				custom_tooltip = ab_only_one_from_quality_or_quantity_tt
@@ -1893,18 +1795,6 @@ age_of_reformation = {
 			}
 		}
 
-		ab_age2_Bjarnrik_bonus_button = {
-			allow = {
-				tag = Z08
-			}
-			modifier = {
-				amount_of_carolean = 0.5
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age2_Corvuria_bonus_button = {
 			allow = {
 				tag = A59
@@ -1928,18 +1818,6 @@ age_of_reformation = {
 			}
 			modifier = {
 				yearly_army_professionalism = 0.015
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Adenica_bonus_button = {
-			allow = {
-				tag = B58
-			}
-			modifier = {
-				cav_to_inf_ratio = 0.25
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2292,90 +2170,6 @@ age_of_reformation = {
 			}
 			modifier = {
 				global_colonial_growth = 75
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Mykx_bonus_button = {
-			allow = {
-				tag = G93
-			}
-			modifier = {
-				own_coast_naval_combat_bonus = 1.0
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_AnisikheionOktikheion_bonus_button = {
-			allow = {
-				OR = {
-					tag = G47
-					tag = G59
-				}
-			}
-			modifier = {
-				naval_morale = 0.1
-				galley_power = 0.25
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_AmgremosKeyolionEneion_bonus_button = {
-			allow = {
-				OR = {
-					tag = G62
-					tag = G58
-					tag = G55
-				}
-			}
-			modifier = {
-				shock_damage_received = -0.15
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Fangaula_bonus_button = {
-			allow = {
-				tag = L23
-				has_heir = yes
-			}
-			effect = {
-				hidden_effect = {
-					set_heir_mage_effect = yes
-				}
-				custom_tooltip = ab_age2_Fangaula_bonus_tt
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Khatalashya_bonus_button = {
-			allow = {
-				tag = S81
-			}
-			modifier = {
-				technology_cost = -0.3
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Haraagtseda_bonus_button = {
-			allow = {
-				tag = F72
-			}
-			modifier = {
-				church_power_modifier = 0.5
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2868,18 +2662,6 @@ age_of_absolutism = {
 			}
 		}
 
-		ab_age3_GnomishHierarchy_bonus_button = {
-			allow = {
-				tag = A79
-			}
-			modifier = {
-				special_unit_forcelimit = 0.4
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age3_Dameria_bonus_button = {
 			allow = {
 				tag = A58
@@ -2936,18 +2718,6 @@ age_of_absolutism = {
 			}
 			modifier = {
 				max_flagships = 3
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age3_Arannen_bonus_button = {
-			allow = {
-				tag = A72
-			}
-			modifier = {
-				reinforce_speed = 0.33
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3210,18 +2980,6 @@ age_of_absolutism = {
 			}
 		}
 
-		ab_age3_Arawkelin_bonus_button = {
-			allow = {
-				tag = Y65
-			}
-			modifier = {
-				trade_efficiency = 0.33
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age3_Balrijin_bonus_button = {
 			allow = {
 				tag = Y85
@@ -3360,31 +3118,6 @@ age_of_absolutism = {
 			}
 			modifier = {
 				monthly_anb_effelai_attuned_resource = 3
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age3_Muhaqaar_bonus_button = {
-			allow = {
-				tag = F61
-			}
-			modifier = {
-				leader_land_shock = 3
-				max_general_shock = 3
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age3_Aramoole_bonus_button = {
-			allow = {
-				tag = F63
-			}
-			modifier = {
-				monthly_church_power = 2
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3942,22 +3675,6 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_Kobildzan_bonus_button = {
-			allow = {
-				tag = Z38
-				custom_trigger_tooltip = {
-					tooltip = ab_age4_Kobildzan_bonus_button_tt
-					has_country_flag = kobold_artificier_path
-				}
-			}
-			modifier = {
-				allowed_rajput_fraction = 0.6
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age4_SmallCountry_bonus_button = {
 			allow = {
 				tag = A97
@@ -4011,22 +3728,6 @@ age_of_revolutions = {
 			}
 			ai_will_do = {
 				factor = 0
-			}
-		}
-
-		ab_age4_Grombar_bonus_button = {
-			allow = {
-				tag = Z50
-				custom_trigger_tooltip = {
-					tooltip = ab_age4_Grombar_bonus_button_tt
-					has_country_flag = half_orc_grombar
-				}
-			}
-			modifier = {
-				development_cost = -0.3
-			}
-			ai_will_do = {
-				factor = 1000
 			}
 		}
 
@@ -4108,18 +3809,6 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_TheOverclan_bonus_button = {
-			allow = {
-				tag = F78
-			}
-			modifier = {
-				global_trade_goods_size = 1
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age4_Surakes_bonus_button = {
 			allow = {
 				tag = F52
@@ -4155,19 +3844,6 @@ age_of_revolutions = {
 			}
 			modifier = {
 				build_time = -1
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age4_Zabutodask_bonus_button = {
-			allow = {
-				tag = J53
-			}
-			modifier = {
-				cavalry_fire = 1.5
-				allowed_cossack_fraction = 0.5
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4299,18 +3975,6 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_Eordand_bonus_button = {
-			allow = {
-				tag = H21
-			}
-			modifier = {
-				governing_capacity_modifier = 0.5
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age4_YnnicEmpire_bonus_button = {
 			allow = {
 				tag = H27
@@ -4371,48 +4035,12 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_Rezankand_bonus_button = {
-			allow = {
-				tag = H67
-			}
-			modifier = {
-				development_cost_in_primary_culture = -0.35
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age4_Kheios_bonus_button = {
 			allow = {
 				tag = H22
 			}
 			modifier = {
 				artillery_fire = 2
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age4_Theinos_bonus_button = {
-			allow = {
-				tag = U27
-			}
-			modifier = {
-				global_regiment_cost = -0.5
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age4_Adzalan_bonus_button = {
-			allow = {
-				tag = L87
-			}
-			modifier = {
-				regiment_manpower_usage = -0.33
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4463,18 +4091,6 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_HarazDhumankon_bonus_button = {
-			allow = {
-				tag = I23
-			}
-			modifier = {
-				global_allowed_num_of_manufactories = 1
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age4_Roadwarrior_bonus_button = {
 			allow = {
 				tag = H91
@@ -4493,18 +4109,6 @@ age_of_revolutions = {
 			}
 			modifier = {
 				vassal_forcelimit_bonus = 10
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age4_ErNatvir_bonus_button = {
-			allow = {
-				tag = I06
-			}
-			modifier = {
-				movement_speed = 3
 			}
 			ai_will_do = {
 				factor = 1000

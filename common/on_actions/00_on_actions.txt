@@ -7720,10 +7720,10 @@ on_monthly_pulse = {
 				current_age = age_of_discovery
 				at_war_with_religious_enemy = yes
 			}
-			add_country_modifier = { name = age1_Adshaw_bonus duration = -1 }
+			add_country_modifier = { name = age1_Adshaw_bonus_modif duration = -1 }
 		}
 		else = {
-			remove_country_modifier = age1_Adshaw_bonus
+			remove_country_modifier = age1_Adshaw_bonus_modif
 		}
 	}
 
