@@ -2652,7 +2652,7 @@ carolean_regiment = {
 	#shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod
 	fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
 	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	reinforce_speed = -0.5
+	#reinforce_speed = -0.5			#BomjSBagetom Anbennar Submod
 	land_maintenance_modifier = 0.75
 	regiment_manpower_usage = -0.25
 }

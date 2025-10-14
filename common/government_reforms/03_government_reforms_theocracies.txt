@@ -1763,7 +1763,8 @@ oracular_order_reform = {
 		prestige_decay = -0.02
 		all_power_cost = -0.1
 		core_creation = 1
-		enemy_core_creation = 1
+		#enemy_core_creation = 1		#BomjSBagetom Anbennar Submod
+		enemy_core_creation = 1.01		#BomjSBagetom Anbennar Submod
 		governing_capacity = -150
 	}
 	valid_for_nation_designer = yes
@@ -3806,6 +3807,7 @@ theocratic_democracy_reform = {
 		NOT = { has_reform = haraagtsedi_league_reform }
 		NOT = { have_had_reform = ameion_parliamentary_reform }
 		NOT = { has_government_attribute = enables_corrivalry }
+		NOT = { has_reform = tagharoghi_reform }			#BomjSBagetom Anbennar Submod
 	}
 	trigger = {
 		NOT = { has_government_attribute = monastic_order }

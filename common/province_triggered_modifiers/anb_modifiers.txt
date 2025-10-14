@@ -2216,6 +2216,7 @@ raheni_school_origin_unbroken_claw = {
 	}
 	#BomjSBagetom Anbennar Submod
 	#war_exhaustion = -0.02
+	land_morale = 0.075
 	shock_damage_received = -0.1
 }
 
@@ -2262,31 +2263,41 @@ raheni_school_origin_radiant_sun = {
 	global_manpower_modifier = 0.15
 }
 
-raheni_school_origin_synthetic_truth = {
+raheni_school_origin_synthetic_truth = { # #BomjSBagetom Anbennar Submod
 	potential = {
 		always = yes
 	}
-	trigger = {
+	trigger = { 
 		owner = {
-			religious_school = {
-				group = raheni
-				school = synthetic_truth_school
-			}
+			#BomjSBagetom Anbennar Submod
+			religion_group = raheni
+
+			#religious_school = {
+			#	group = raheni
+			#	school = synthetic_truth_school
+			#}
 		}
+		religion_group = raheni #BomjSBagetom Anbennar Submod
 	}
-	tolerance_own = 2
+	#BomjSBagetom Anbennar Submod
+	#tolerance_own = 2
+	core_creation = -0.1
 }
 raheni_school_origin_final_paradigm = {
 	potential = {
 		always = yes
 	}
-	trigger = {
+	trigger = { 
 		owner = {
-			religious_school = {
-				group = raheni
-				school = final_paradigm_school
-			}
+			#BomjSBagetom Anbennar Submod
+			religion_group = raheni
+
+			#religious_school = {
+			#	group = raheni
+			#	school = final_paradigm_school
+			#}
 		}
+		religion_group = raheni #BomjSBagetom Anbennar Submod
 	}
 	tolerance_own = 2
 }
@@ -2294,15 +2305,21 @@ raheni_school_origin_piercing_fang = {
 	potential = {
 		always = yes
 	}
-	trigger = {
+	trigger = { 
 		owner = {
-			religious_school = {
-				group = raheni
-				school = piercing_fang_school
-			}
+			#BomjSBagetom Anbennar Submod
+			religion_group = raheni
+
+			#religious_school = {
+			#	group = raheni
+			#	school = piercing_fang_school
+			#}
 		}
+		religion_group = raheni #BomjSBagetom Anbennar Submod
 	}
-	tolerance_own = 2
+	#BomjSBagetom Anbennar Submod
+	#tolerance_own = 2
+	shock_damage_received = -0.075
 }
 
 black_the_black_mark_damescrown = {

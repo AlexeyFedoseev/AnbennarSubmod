@@ -3927,6 +3927,13 @@ on_new_monarch = {
 	# or using a trigger switch                                   #
 	###############################################################
 	
+	if = {	#BomjSBagetom Anbennar Submod
+		limit = {
+			has_government_attribute = generals_become_rulers
+		}
+		
+	}
+
 	if = { # Balrijin new heir.
 		limit = { has_reform = balrijin_sage_council_reform }
 		trigger_switch = {
@@ -4181,7 +4188,7 @@ on_monarch_death = {
 		flavor_azjakuma.34	#removes magic study modifier
 		flavor_dhenijanraj.10 #Bim Lau Restoration Burial
 		flavour_tluukt.50 #Death of Tluukt
-		flavor_luciande.38 #death of lucian
+		#flavor_luciande.38 #death of lucian	#BomjSBagetom Anbennar Submod
 		flavour_amacimst.55	#Amacimst ruler dies jousting
 		flavour_amacimst.57 #Foreign ruler dies jousting in Amacimst
 		flavor_gemradcurt.2 # Immariel dies without achieving shit
@@ -9080,7 +9087,7 @@ on_bi_yearly_pulse_3 = {
 		limit = {
 			#has_age_ability = ab_monstrous_rule #BomjSBagetom Anbennar Submod
 			#BomjSBagetom Anbennar Submod
-			has_country_flag = ab_age1_Tluukt_bonus_flag
+			has_country_flag = ab_age1_TluuktZokka_bonus_flag
 			current_age = age_of_discovery
 
 			num_of_provinces_owned_or_owned_by_subjects_with = {

@@ -746,173 +746,249 @@ spriteTypes = {
 	#--------------UNIQUE-ABILITIES---------------------------
 	spriteType = {
         name = "GFX_ab_age1_Venail_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Venail_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Deranne_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Deranne_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_GreatOrding_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_GreatOrding_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Reveria_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Reveria_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Wineport_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Wineport_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Wesdam_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Wesdam_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Beepeck_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Beepeck_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Bennon_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Bennon_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Estallen_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Estallen_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Silverforge_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Silverforge_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Magisterium_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Magisterium_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Moonhaven_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Moonhaven_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_OrdaAldressia_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_OrdaAldressia_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Sugamber_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Sugamber_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Celmaldor_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Celmaldor_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Adshaw_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Adshaw_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Urviksten_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Urviksten_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Adenica_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Adenica_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Rogieria_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Rogieria_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Newshire_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Newshire_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Ravenmarch_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Ravenmarch_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Unguldavor_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Unguldavor_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Crathanor_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Crathanor_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_OvdalTungr_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_OvdalTungr_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Reuyel_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Reuyel_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Ayarallen_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Ayarallen_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Irrliam_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Irrliam_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Varamhar_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Varamhar_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Sareyand_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Sareyand_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Elizna_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Elizna_bonus_icon.dds"
     }
     spriteType = {
-        name = "GFX_ab_age1_Tluukt_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        name = "GFX_ab_age1_TluuktZokka_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_TluuktZokka_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Jaddari_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Jaddari_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Viakkoc_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Viakkoc_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Brrtekuh_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Brrtekuh_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Nirat_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Nirat_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Rakkaz_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Rakkaz_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Kartakhet_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Kartakhet_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Vyzemby_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Vyzemby_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_BwaDakinshi_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_BwaDakinshi_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Vandipha_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Vandipha_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Sunijalla_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Sunijalla_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Rabhidaraj_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Rabhidaraj_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Rajnadhaga_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Rajnadhaga_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Khadisrapur_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Khadisrapur_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_LotDekkhang_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_LotDekkhang_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Jiangdu_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Jiangdu_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Zongji_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Zongji_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Jiantsiang_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Jiantsiang_bonus_icon.dds"
     }
     spriteType = {
+        name = "GFX_ab_age1_Gushuokguan_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Gushuokguan_bonus_icon.dds"
+    }
+	spriteType = {
         name = "GFX_ab_age1_Arverynn_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Arverynn_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_Mykx_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_Mykx_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_EffelaiTribes_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_EffelaiTribes_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Eltikan_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
-    }
-    spriteType = {
-        name = "GFX_ab_age1_Vyzemby_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
-    }
-    spriteType = {
-        name = "GFX_ab_age1_OvdalKanzad_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Eltikan_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_MireMaw_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_MireMaw_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_ShatteredCrown_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_ShatteredCrown_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Railskulker_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Railskulker_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_Spiderwretch_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_Spiderwretch_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_MaskedButcher_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_MaskedButcher_bonus_icon.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age1_VerkalSkomdihr_bonus_button"
+        texturefile = "gfx/interface/ages/ab_age1_VerkalSkomdihr_bonus_icon.dds"
     }
     spriteType = {
         name = "GFX_ab_age1_OvdalLodhum_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+        texturefile = "gfx/interface/ages/ab_age1_OvdalLodhum_bonus_icon.dds"
     }
-    spriteType = {
-        name = "GFX_ab_age1_VerkalSkomdihr_bonus_button"
-        texturefile = "gfx/interface/ages/placeholder2.dds"
+	spriteType = {
+        name = "GFX_ab_age1_OvdalKanzad_bonus_button"
+        texturefile = "gfx/interface/age/ab_age1_OvdalKanzad_bonus_icon.dds"
     }
-	
+
 	spriteType = {
         name = "GFX_ab_age2_Eilisin_bonus_button"
         texturefile = "gfx/interface/ages/placeholder2.dds"

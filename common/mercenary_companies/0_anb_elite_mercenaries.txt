@@ -1410,7 +1410,8 @@ merc_command_lion_army = {
 		}
 		 
 	}
-	cost_modifier = 0.01
+	#cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
+	cost_modifier = 0.5		#BomjSBagetom Anbennar Submod
 	modifier = {
 		land_morale = 0.2
 		recover_army_morale_speed = 0.2

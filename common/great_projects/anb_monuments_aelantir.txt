@@ -3751,7 +3751,8 @@ tunnels_of_renewal = {
 
 		country_modifiers = {
 			technology_cost = -0.025
-			build_time = -0.15
+			#build_time = -0.15	#BomjSBagetom Anbennar Submod
+			build_time = -0.1	#BomjSBagetom Anbennar Submod
 		}
 
 		on_upgraded = {
@@ -3783,7 +3784,8 @@ tunnels_of_renewal = {
 
 		country_modifiers = {
 			technology_cost = -0.05
-			build_time = -0.2
+			#build_time = -0.2	#BomjSBagetom Anbennar Submod
+			build_time = -0.1	#BomjSBagetom Anbennar Submod
 		}
 
 		
@@ -3827,7 +3829,8 @@ tunnels_of_renewal = {
 		
 		country_modifiers = {
 			technology_cost = -0.075
-			build_time = -0.3
+			#build_time = -0.3	#BomjSBagetom Anbennar Submod
+			build_time = -0.1	#BomjSBagetom Anbennar Submod
 			build_cost = -0.1
 		}
 		

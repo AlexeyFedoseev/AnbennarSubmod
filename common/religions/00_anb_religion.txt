@@ -2261,7 +2261,8 @@ gnollish = {
 			}
 
 			invocation_of_blood = {
-				war_exhaustion = -0.05
+				#war_exhaustion = -0.05		#BomjSBagetom Anbennar Submod
+				land_morale = 0.1 			#BomjSBagetom Anbennar Submod
 				manpower_recovery_speed = 0.1
 
 				allow = {

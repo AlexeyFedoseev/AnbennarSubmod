@@ -4003,9 +4003,20 @@ artifice_magic_switch_to_artificery_only_mode = {
 			clr_country_flag = magic_artificery_mixed
 		
 			#bans the mages
-			country_event = { 
-				id = magic_artificery_setup.3
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					NOT = {
+						tag = R62
+					}
+				}
+				country_event = { 
+					id = magic_artificery_setup.3
+				}
 			}
+			#country_event = { 
+			#	id = magic_artificery_setup.3
+			#}
+			
 			#unlocks artificery if you havent by now
 			if = {
 				limit = { 

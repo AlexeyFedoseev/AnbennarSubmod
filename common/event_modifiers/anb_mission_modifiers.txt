@@ -5487,7 +5487,8 @@ konwell_diplo_rep = {
 	diplomatic_reputation = 1
 }
 konwell_scholar_kings = {
-	free_adm_policy = 1
+	#free_adm_policy = 1	#BomjSBagetom Anbennar Submod
+	possible_policy = 2		#BomjSBagetom Anbennar Submod
 }
 konwell_writing_magical_treatise = {
 	country_admin_power = -1
@@ -11107,6 +11108,7 @@ Y91_desert_birds = {
 }
 
 Y91_desert_birds2 = {
+	cavalry_shock = 0.2		#BomjSBagetom Anbennar Submod
 	cavalry_cost = -0.15
 	cav_to_inf_ratio = 0.10
 	army_tradition_from_battle = 0.2
@@ -28959,27 +28961,22 @@ warscore_cost_vs_other_religion = -0.10
 }
 
 L03_scale_armored_1 = {
-#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	- dont touch!!!!
 }
 
 L03_scale_armored_2 = {
-#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	- dont touch!!!!
 }
 
 L03_scale_armored_3 = {
-#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	- dont touch!!!!
 recover_army_morale_speed = 0.05
 }
 
 L03_scale_armored_4 = {
-#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	- dont touch!!!!
 recover_army_morale_speed = 0.05
-#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod	- dont touch!!!!
 }
 
 L03_true_to_our_word = {

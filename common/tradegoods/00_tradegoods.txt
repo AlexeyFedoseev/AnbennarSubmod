@@ -1569,6 +1569,10 @@ sugar = {
 			factor = 4.0
 			FROM = { has_reform = G58_agronomers_association_reform }
 		}
+		modifier = {	#BomjSBagetom Anbennar Submod
+			factor = 10000000
+			province_id = 2594	# Caxap
+		}
 	}
 }
 

@@ -9544,7 +9544,6 @@ startup_1444_effects = {
 			random_empty_neighbor_province = {
 				limit = { 
 					can_spawn_expedition = yes
-					is_city = yes 
 					NOT = { province_group = hold_province }
 				}
 				spawn_expedition = yes

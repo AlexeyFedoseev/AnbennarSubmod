@@ -16938,7 +16938,7 @@ Y95_ideas = { #Kingdom of the Giteuni, the original people of Gowon, great arche
 Y98_ideas = { #Bird Rider Yanshen, big, beefy, expansionist empire, NotQing
 	start = {
 		#cavalry_power = 0.2	#BomjSBagetom Anbennar Submod
-		inafntry_shock = 0.33 	#BomjSBagetom Anbennar Submod
+		infantry_shock = 0.33 	#BomjSBagetom Anbennar Submod
 		governing_capacity_modifier = 0.15
 	}
 	bonus = {

@@ -100,6 +100,23 @@ rajnadhaga_break_the_chimera = {
 	land_morale = 0.1
 }
 
+daxugo_military_reform_zeal = {
+	land_morale = 0.1
+}
+
+daxugo_disaster_reward_1 = {
+	cavalry_power = 0.1
+}
+
+daxugo_disaster_reward_2 = {
+	infantry_power = 0.1
+}
+
+daxugo_disaster_reward_3 = {
+	development_cost = -0.1
+	global_trade_goods_size_modifier = 0.1
+}
+
 interest_bankruptcy_penalty_1 = {
 	interest = 0.5
 }
@@ -665,7 +682,7 @@ ab_age_TAXES_3 = {
     global_autonomy = -0.1
     governing_cost = -0.025
     min_autonomy = -5
-	min_autonomy_in_territories = -5
+	min_autonomy_in_territories = -0.05
 }
 
 ab_age_TAXES_4 = {
@@ -674,7 +691,7 @@ ab_age_TAXES_4 = {
     global_autonomy = -0.1
     governing_cost = -0.05
     min_autonomy = -10
-	min_autonomy_in_territories = -10
+	min_autonomy_in_territories = -0.1
 }
 
 ab_age_architecture_1 = {

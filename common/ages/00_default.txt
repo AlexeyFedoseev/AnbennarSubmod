@@ -481,8 +481,11 @@ age_of_discovery = {
 				}
 			}
 			modifier = {
-				manpower_recovery_speed = 0.5
-				mercenary_manpower = 0.5
+				colony_development_boost = 1
+			}
+			effect = {
+				todo_tt
+				# TODO  - open 2 mercs
 			}
 			ai_will_do = {
 				factor = 1000
@@ -495,6 +498,7 @@ age_of_discovery = {
 			}
 			modifier = {
 				may_explore = yes
+				colonists = 1
 			}
 			ai_will_do = {
 				factor = 1000
@@ -506,18 +510,8 @@ age_of_discovery = {
 				tag = A17
 			}
 			effect = {
-				capital_scope = {
-					cannorian_14_outriders = ROOT
-					cannorian_14_outriders = ROOT
-					cannorian_14_outriders = ROOT
-					cannorian_14_outriders = ROOT
-					cannorian_14_outriders = ROOT
-					cannorian_14_outriders = ROOT
-					cannorian_14_outriders = ROOT
-					cannorian_14_outriders = ROOT
-					cannorian_14_outriders = ROOT
-					cannorian_14_outriders = ROOT
-				}
+				todo_tt
+				# TODO - create merc
 			}
 			ai_will_do = {
 				factor = 1000
@@ -527,9 +521,26 @@ age_of_discovery = {
 		ab_age1_Reveria_bonus_button = {
 			allow = {
 				tag = A05
+				#todo - explore dalaire and no countries on colonized provinces
 			}
 			modifier = {
-				colonist_placement_chance = 0.2
+				todo_tt
+				#todo - colonize 4 provinces in dalaire
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Wineport_bonus_button = {
+			allow = {
+				tag = A16
+			}
+			modifier = {
+				prestige_decay = -100
+			}
+			effect = {
+				add_prestige = 200
 			}
 			ai_will_do = {
 				factor = 1000
@@ -539,9 +550,16 @@ age_of_discovery = {
 		ab_age1_Wesdam_bonus_button = {
 			allow = {
 				tag = A04
+				#todo - finished last quest, wex emperor, wex is not a player
 			}
-			modifier = {
-				ae_impact = -0.2
+			effect = {
+				todo_tt
+				#todo - steal emperorship
+				add_prestige = 100
+				add_power_projection = {
+					type = 25_permanent_power_projection
+					amount = 25
+				}
 			}
 			ai_will_do = {
 				factor = 1000
@@ -551,9 +569,15 @@ age_of_discovery = {
 		ab_age1_Beepeck_bonus_button = {
 			allow = {
 				tag = A12
+				#todo - 200 relationship, 100 thrust with emperor
 			}
-			modifier = {
-				merchants = 2
+			effect = {
+				todo_tt
+				#todo - outher countries cant declare war on you
+				# add modifier with 
+				# development_cost = -0.2
+				# trade_efficiency = 0.2
+				# also lost this modifier, when DoW someone
 			}
 			ai_will_do = {
 				factor = 1000
@@ -563,10 +587,11 @@ age_of_discovery = {
 		ab_age1_Bennon_bonus_button = {
 			allow = {
 				tag = A39
+				#todo - country has 15 cities
 			}
-			modifier = {
-				defensiveness = 0.3
-				rival_border_fort_maintenance = -1
+			effect = {
+				todo_tt
+				# todo - clear all ae
 			}
 			ai_will_do = {
 				factor = 1000
@@ -580,6 +605,22 @@ age_of_discovery = {
 			modifier = {
 				diplomatic_reputation = 1
 				diplomatic_upkeep = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Silverforge_bonus_button = {
+			allow = {
+				tag = A73
+			}
+			modifier = {
+				artillery_cost = -0.5
+			}
+			effect = {
+				todo_tt
+				#todo - spawn 10 cannons
 			}
 			ai_will_do = {
 				factor = 1000
@@ -612,12 +653,39 @@ age_of_discovery = {
 			}
 		}
 
+		ab_age1_OrdaAldressia_bonus_button = {
+			allow = {
+				tag = A77
+			}
+			effect = {
+				todo_tt
+				#todo - enables forcemarch untill the end of the game
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age1_Sugamber_bonus_button = {
 			allow = {
 				tag = A48
 			}
-			modifier = {
-				garrison_size = 0.5
+			effect = {
+				todo_tt
+				#todo - all forts upgrades to lvl 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Celmaldor_bonus_button = {
+			allow = {
+				tag = A48
+			}
+			effect = {
+				todo_tt
+				#todo - gain bonusses according of current focus(adm, dip, mil), only for this age
 			}
 			ai_will_do = {
 				factor = 1000
@@ -629,14 +697,8 @@ age_of_discovery = {
 				tag = Z26
 			}
 			effect = {
-				set_country_flag = ab_age1_Adshaw_bonus_flag
-				tooltip = {
-					custom_tooltip = ab_age1_Adshaw_bonus_tt
-					add_country_modifier = {
-						name = age1_Adshaw_bonus_modif
-						duration = -1
-					}
-				}
+				todo_tt
+				#every province with old alenic culture will get 1 mil and 1 dip dev
 			}
 			ai_will_do = {
 				factor = 1000
@@ -650,8 +712,24 @@ age_of_discovery = {
 					was_tag = Z15
 				}
 			}
-			modifier = {
-				coast_raid_range = 2
+			effect = {
+				todo_tt
+				#todo - gain cores on central escann
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Adenica_bonus_button = {
+			allow = {
+				tag = B58
+				#todo - do all knights swears
+			}
+			effect = {
+				todo_tt
+				#todo all swears bonuses untill the end of the game
+				#also check what u dont loot same bonus twice
 			}
 			ai_will_do = {
 				factor = 1000
@@ -675,7 +753,7 @@ age_of_discovery = {
 				tag = B50
 			}
 			modifier = {
-				development_cost = -0.15
+				development_cost = -0.25
 			}
 			ai_will_do = {
 				factor = 1000
@@ -685,10 +763,11 @@ age_of_discovery = {
 		ab_age1_Ravenmarch_bonus_button = {
 			allow = {
 				tag = B48
+				#todo - vampires does not exist in cannor
 			}
-			modifier = {
-				spy_offence = 0.3
-				global_spy_defence = 0.3
+			effect = {
+				todo_tt
+				#todo 20 morale untill the end of the game
 			}
 			ai_will_do = {
 				factor = 1000
@@ -701,6 +780,31 @@ age_of_discovery = {
 			}
 			modifier = {
 				global_manpower_modifier = 0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Crathanor_bonus_button = {
+			allow = {
+				tag = U17
+			}
+			modifier = {
+				allowed_marine_fraction = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_OvdalTungr_bonus_button = {
+			allow = {
+				tag = F23
+			}
+			effect = {
+				todo_tt
+				# todo - 1 flagman untill the end of the game
 			}
 			ai_will_do = {
 				factor = 1000
@@ -726,9 +830,11 @@ age_of_discovery = {
 					tag = F27
 					was_tag = F27
 				}
+				# todo - have 200 church power
 			}
-			modifier = {
-				infantry_power = 0.10
+			effect = {
+				todo_tt
+				# todo - gain 1500 gold, -200 church power, 100 devastation in all sosednie provki
 			}
 			ai_will_do = {
 				factor = 1000
@@ -738,10 +844,11 @@ age_of_discovery = {
 		ab_age1_Irrliam_bonus_button = {
 			allow = {
 				tag = F37
+				#todo - start ruler alive, starting incident finished on max points
 			}
-			modifier = {
-				vassal_forcelimit_bonus = 1
-				vassal_income = 0.2
+			effect = {
+				todo_tt
+				# todo - integrate all starting vassals
 			}
 			ai_will_do = {
 				factor = 1000
@@ -764,9 +871,11 @@ age_of_discovery = {
 		ab_age1_Sareyand_bonus_button = {
 			allow = {
 				tag = F25
+				#todo - 99 army traditions
 			}
-			modifier = {
-				discipline = 0.05
+			effect = {
+				todo_tt
+				#todo - adm advisor cost not scaled with lvl higher than 5
 			}
 			ai_will_do = {
 				factor = 1000
@@ -785,13 +894,16 @@ age_of_discovery = {
 			}
 		}
 
-		ab_age1_Tluukt_bonus_button = {
+		ab_age1_TluuktZokka_bonus_button = {
 			allow = {
-				tag = F28
+				OR = {
+					tag = F28
+					tag = F29
+				}
 			}
 			effect = {
 				custom_tooltip = age_ability_monstrous_rule_flag_tt
-				set_country_flag = ab_age1_Tluukt_bonus_flag 
+				set_country_flag = ab_age1_TluuktZokka_bonus_flag 
 			}
 			ai_will_do = {
 				factor = 1000
@@ -834,7 +946,32 @@ age_of_discovery = {
 				tag = F46
 			}
 			modifier = {
-				manpower_in_true_faith_provinces= 0.50
+				todo_tt
+				#todo - discussed
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Viakkoc_bonus_button = {
+			allow = {
+				tag = U07
+			}
+			modifier = {
+				coast_raid_range = 2
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Brrtekuh_bonus_button = {
+			allow = {
+				tag = U10
+			}
+			modifier = {
+				core_creation = -0.2
 			}
 			ai_will_do = {
 				factor = 1000
@@ -853,12 +990,90 @@ age_of_discovery = {
 			}
 		}
 
+		ab_age1_Rakkaz_bonus_button = {
+			allow = {
+				tag = F71
+			}
+			effect = {
+				todo_tt
+				#todo - afted dev exploit gain 5% local missionary str on 5 years
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Kartakhet_bonus_button = {
+			allow = {
+				tag = L29
+			}
+			effect = {
+				todo_tt
+				#todo - -2 army tradition decay untull the end of the game
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Vyzemby_bonus_button = {
+			allow = {
+				technology_group = tech_vyzemby
+			}
+			effect = {
+				todo_tt
+				#todo - unlock sunchaser ships untill the end of the game
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_BwaDakinshi_bonus_button = {
+			allow = {
+				tag = S84
+			}
+			effect = {
+				todo_tt
+				#todo - devclick in gold provinces make twice
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Vandipha_bonus_button = {
+			allow = {
+				tag = L62
+			}
+			effect = {
+				add_treasury = 5000
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Sunijalla_bonus_button = {
+			allow = {
+				tag = J50
+			}
+			effect = {
+				change_government_reform_progress = 200
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age1_Rabhidaraj_bonus_button = {
 			allow = {
 				tag = R52
+				#todo - be a raja
 			}
-			modifier = {
-				yearly_corruption = -1
+			effect = {
+				todo_tt
+				#todo - completeion raja disaster, -30 dip annex cost, annexion does not taken dip rep, +1 diplomat
 			}
 			ai_will_do = {
 				factor = 1000
@@ -881,12 +1096,24 @@ age_of_discovery = {
 			}
 		}
 
+		ab_age1_Khadisrapur_bonus_button = {
+			allow = {
+				tag = R11
+			}
+			modifier = {
+				global_trade_goods_size_modifier = 0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age1_LotDekkhang_bonus_button = {
 			allow = {
 				tag = Y58
 			}
 			modifier = {
-				global_prov_trade_power_modifier = 0.25
+				placed_merchant_power = 50
 			}
 			ai_will_do = {
 				factor = 1000
@@ -896,9 +1123,11 @@ age_of_discovery = {
 		ab_age1_Jiangdu_bonus_button = {
 			allow = {
 				tag = Y13
+				#todo - 100 professionalism
 			}
-			modifier = {
-				leader_cost = -0.5
+			effect = {
+				todo_tt
+				#todo - +1 every max general pips
 			}
 			ai_will_do = {
 				factor = 1000
@@ -920,9 +1149,23 @@ age_of_discovery = {
 		ab_age1_Jiantsiang_bonus_button = {
 			allow = {
 				tag = Y16
+				#todo - finished last quest
+			}
+			effect = {
+				todo_tt
+				# todo - gains new ruler - HARIMAR 6-6-6 immortal strict
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_Gushuokguan_bonus_button = {
+			allow = {
+				tag = Y17
 			}
 			modifier = {
-				shock_damage_received = -0.10
+				mercenary_cost = -0.25
 			}
 			ai_will_do = {
 				factor = 1000
@@ -941,36 +1184,61 @@ age_of_discovery = {
 			}
 		}
 
+		ab_age1_Mykx_bonus_button = {
+			allow = {
+				tag = G93
+			}
+			modifier = {
+				colony_cost_modifier = -0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_EffelaiTribes_bonus_button = {
+			allow = {
+				OR = {
+					tag = G15
+					tag = G16
+					tag = G17
+					tag = G18
+					tag = G19
+				}
+			}
+			modifier = {
+				great_project_upgrade_cost = -0.75
+			}
+			effect = {
+				add_splendor = 500
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age1_Eltikan_bonus_button = {
 			allow = {
 				tag = G60
+				#todo - generates 13 mana of every type each mounth
 			}
-			modifier = {
-				cavalry_cost = -0.5
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age1_Vyzemby_bonus_button = {
-			allow = {
-				technology_group = tech_vyzemby
-			}
-			modifier = {
-				global_defender_dice_roll_bonus = 1
+			effect = {
+				todo_tt
+				#todo - 20 cav to inf ration untill the end of the game
 			}
 			ai_will_do = {
 				factor = 1000
 			}
 		}
 
-		ab_age1_OvdalKanzad_bonus_button = {
+		ab_age1_ShatteredCrown_bonus_button = {
 			allow = {
-				tag = H79
+				tag = H72
+				#todo - no dwarf countries in west dwarowar
 			}
-			modifier = {
-				colony_development_boost = 2
+			effect = {
+				todo_tt
+				#todo 15 morale damage until the end of the game
 			}
 			ai_will_do = {
 				factor = 1000
@@ -988,19 +1256,7 @@ age_of_discovery = {
 				factor = 0
 			}
 		}
-
-		ab_age1_ShatteredCrown_bonus_button = {
-			allow = {
-				tag = H72
-			}
-			modifier = {
-				morale_damage = 0.15
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
+		
 		ab_age1_Railskulker_bonus_button = {
 			allow = {
 				tag = H75
@@ -1018,7 +1274,35 @@ age_of_discovery = {
 				tag = H90
 			}
 			modifier = {
-				cavalry_cost = -0.66
+				tax_income = 180
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_MaskedButcher_bonus_button = {
+			allow = {
+				tag = H81
+				#todo - have 50k mp
+			}
+			effect = {
+				todo_tt
+				#todo - +2 vampires priveledge slots untill the end of the game, -50k mp
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age1_VerkalSkomdihr_bonus_button = {
+			allow = {
+				tag = I13
+				#todo - have 25 prov in deepwoods
+			}
+			effect = {
+				todo_tt
+				#todo - 0.3 infantry fire, 10 inf power until the end of the game
 			}
 			ai_will_do = {
 				factor = 1000
@@ -1031,19 +1315,19 @@ age_of_discovery = {
 			}
 			modifier = {
 				build_cost = -0.15
-				build_time = -0.15
+				build_time = -0.25
 			}
 			ai_will_do = {
 				factor = 1000
 			}
 		}
 
-		ab_age1_VerkalSkomdihr_bonus_button = {
+		ab_age1_OvdalKanzad_bonus_button = {
 			allow = {
-				tag = I13
+				tag = H79
 			}
 			modifier = {
-				infantry_fire = 0.3
+				colony_development_boost = 2
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2043,7 +2327,17 @@ age_of_reformation = {
 				tag = R72
 			}
 			modifier = {
-				yearly_government_power = 3
+				monthly_tribal_allegiance = 0.25
+			}
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_reform = ghavaanaj_tribes
+						}
+					}
+				}
+				custom_tooltip = ab_age2_Dhugajir_bonus_tt
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2157,7 +2451,6 @@ age_of_reformation = {
 						tier = 3
 					}
 				}
-				custom_tooltip = castan_linebreak_tt
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2640,7 +2933,7 @@ age_of_absolutism = {
 				build_cost = -0.1
 			}
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age3_architecture_not_mountain_group_button }
+				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age3_architecture_group_button }
 			}
 			ai_will_do = {
 				factor = 10
@@ -2653,7 +2946,7 @@ age_of_absolutism = {
 				NOT = { has_age_ability = ab_age3_architecture_not_mountain_group_button }
 			}
 			effect = {
-				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age3_architecture_mountain_group_button }
+				add_or_upgrade_age_bonus = { bonusName = architecture abilityName = ab_age3_architecture_group_button }
 				custom_tooltip = ab_dwarven_reclamation_tooltip
 				set_country_flag = age_ability_dwarven_reclamation_flag
 			}
@@ -3668,7 +3961,6 @@ age_of_revolutions = {
 					}
 					hidden_effect = { reset_golden_age = yes }
 				}
-				custom_tooltip = castan_linebreak_tt
 			}
 			ai_will_do = {
 				factor = 1000

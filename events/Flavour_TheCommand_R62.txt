@@ -6192,6 +6192,7 @@ country_event = { #Sir asks for help from surviving Ruin Kingdoms
 	option = {
 		name = the_command.116.a
 		ai_chance = { factor = 1 }
+		custom_tooltip = submod_enterance_to_sir_rebellion_tt	#BomjSBagetom Anbennar Submod
 		custom_tooltip = command_sir_revolt_ruin_kingdoms_tt
 		add_splendor = 25
 	}
@@ -6199,6 +6200,7 @@ country_event = { #Sir asks for help from surviving Ruin Kingdoms
 		name = the_command.116.b
 		ai_chance = { factor = 0 }
 
+		custom_tooltip = submod_no_enterance_to_sir_rebellion_tt	#BomjSBagetom Anbennar Submod
 		add_prestige = -2.5
 		trigger_switch = {
 			on_trigger = tag

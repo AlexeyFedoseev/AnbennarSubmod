@@ -184,7 +184,7 @@ hold_has_parliament = {
 gold_hold = {
 	local_gold_depletion_chance_modifier = -1
 	#trade_goods_size_modifier = -0.2 #BomjSBagetom Anbennar Submod
-	trade_goods_size_modifier = -0.4
+	trade_goods_size_modifier = -0.35
 	picture = "gold_hold"
 }
 

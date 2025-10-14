@@ -7616,33 +7616,29 @@ country_event = {
 		name = magic_ruler.6.dd
 		trigger = {
 			OR = {
-				#BomjSBagetom Anbennar Submod
-				#has_ruler_flag = illusion_2
-				#AND = {
-				#	has_ruler_flag = illusion_1
-				#	OR = {
-				#		has_ruler_flag = huli_jing_patron
-				#		has_ruler_flag = gumiho_patron
-				#	}
-				#}
-				has_ruler_flag = illusion_1
+				has_ruler_flag = illusion_2
+				AND = {
+					has_ruler_flag = illusion_1
+					OR = {
+						has_ruler_flag = huli_jing_patron
+						has_ruler_flag = gumiho_patron
+					}
+				}
 			}
 			NOT = {
-				#BomjSBagetom Anbennar Submod
-				has_ruler_flag = illusion_2
-				#AND = {
-				#	has_ruler_flag = enchantment_1
-				#	OR = {
-				#		has_ruler_flag = illusion_2
-				#		AND = {
-				#			has_ruler_flag = illusion_1
-				#			OR = {
-				#				has_ruler_flag = huli_jing_patron
-				#				has_ruler_flag = gumiho_patron
-				#			}
-				#		}
-				#	}
-				#}
+				AND = {
+					has_ruler_flag = enchantment_1
+					OR = {
+						has_ruler_flag = illusion_2
+						AND = {
+							has_ruler_flag = illusion_1
+							OR = {
+								has_ruler_flag = huli_jing_patron
+								has_ruler_flag = gumiho_patron
+							}
+						}
+					}
+				}
 			}
 			dip_power = 25
 			adm_power = 5
@@ -7676,33 +7672,20 @@ country_event = {
 		trigger = {
 			ai = no
 			NOT = {
-				OR = {
-					has_ruler_flag = illusion_2
-					AND = {
-						has_ruler_flag = illusion_1
-						OR = {
-							has_ruler_flag = huli_jing_patron
-							has_ruler_flag = gumiho_patron
+				AND = {
+					has_ruler_flag = enchantment_1
+					OR = {
+						has_ruler_flag = illusion_2
+						AND = {
+							has_ruler_flag = illusion_1
+							OR = {
+								has_ruler_flag = huli_jing_patron
+								has_ruler_flag = gumiho_patron
+							}
 						}
 					}
 				}
 			}
-			#BomjSBagetom Anbennar Submod
-			#NOT = {
-			#	AND = {
-			#		has_ruler_flag = enchantment_1
-			#		OR = {
-			#			has_ruler_flag = illusion_2
-			#			AND = {
-			#				has_ruler_flag = illusion_1
-			#				OR = {
-			#					has_ruler_flag = huli_jing_patron
-			#					has_ruler_flag = gumiho_patron
-			#				}
-			#			}
-			#		}
-			#	}
-			#}
 		}
 		if = {
 			limit = {
@@ -7738,32 +7721,21 @@ country_event = {
 		name = magic_ruler.6.ddx
 		trigger = {
 			ai = no
-			OR = {
-				has_ruler_flag = illusion_2
+			NOT = {
 				AND = {
-					has_ruler_flag = illusion_1
+					has_ruler_flag = enchantment_1
 					OR = {
-						has_ruler_flag = huli_jing_patron
-						has_ruler_flag = gumiho_patron
+						has_ruler_flag = illusion_2
+						AND = {
+							has_ruler_flag = illusion_1
+							OR = {
+								has_ruler_flag = huli_jing_patron
+								has_ruler_flag = gumiho_patron
+							}
+						}
 					}
 				}
 			}
-			#BomjSBagetom Anbennar Submod
-			#NOT = {
-			#	AND = {
-			#		has_ruler_flag = enchantment_1
-			#		OR = {
-			#			has_ruler_flag = illusion_2
-			#			AND = {
-			#				has_ruler_flag = illusion_1
-			#				OR = {
-			#					has_ruler_flag = huli_jing_patron
-			#					has_ruler_flag = gumiho_patron
-			#				}
-			#			}
-			#		}
-			#	}
-			#}
 			OR = {
 				NOT = { dip_power = 25 }
 				NOT = { adm_power = 5 }
@@ -7810,36 +7782,33 @@ country_event = {
 	option = {	#available
 		name = magic_ruler.6.e
 		trigger = {
-			#BomjSBagetom Anbennar Submod
-			has_ruler_flag = illusion_2
-			NOT = { has_ruler_flag = illusion_3 }
-			#OR = {
-			#	has_ruler_flag = illusion_2
-			#	AND = {
-			#		has_ruler_flag = illusion_1
-			#		OR = {
-			#			has_ruler_flag = huli_jing_patron
-			#			has_ruler_flag = gumiho_patron
-			#		}
-			#	}
-			#}
-			#has_ruler_flag = enchantment_1
-			#NOT = {
-			#	OR = {
-			#		AND = {
-			#			has_ruler_flag = illusion_3
-			#			has_ruler_flag = enchantment_2
-			#		}
-			#		AND = {
-			#			has_ruler_flag = illusion_2
-			#			has_ruler_flag = enchantment_1
-			#			OR = {
-			#				has_ruler_flag = huli_jing_patron
-			#				has_ruler_flag = gumiho_patron
-			#			}
-			#		}
-			#	}
-			#}
+			OR = {
+				has_ruler_flag = illusion_2
+				AND = {
+					has_ruler_flag = illusion_1
+					OR = {
+						has_ruler_flag = huli_jing_patron
+						has_ruler_flag = gumiho_patron
+					}
+				}
+			}
+			has_ruler_flag = enchantment_1
+			NOT = {
+				OR = {
+					AND = {
+						has_ruler_flag = illusion_3
+						has_ruler_flag = enchantment_2
+					}
+					AND = {
+						has_ruler_flag = illusion_2
+						has_ruler_flag = enchantment_1
+						OR = {
+							has_ruler_flag = huli_jing_patron
+							has_ruler_flag = gumiho_patron
+						}
+					}
+				}
+			}
 			dip_power = 25
 			adm_power = 5
 			NOT = { has_ruler_modifier = magic_realm_illusion_glamour }
@@ -7880,39 +7849,37 @@ country_event = {
 		name = magic_ruler.6.em
 		trigger = {
 			ai = no
-			#BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = illusion_2 }
-			#NOT = {
-			#	AND = {
-			#		OR = {
-			#			has_ruler_flag = illusion_2
-			#			AND = {
-			#				has_ruler_flag = illusion_1
-			#				OR = {
-			#					has_ruler_flag = huli_jing_patron
-			#					has_ruler_flag = gumiho_patron
-			#				}
-			#			}
-			#		}
-			#		has_ruler_flag = enchantment_1
-			#	}
-			#}
-			#NOT = {
-			#	OR = {
-			#		AND = {
-			#			has_ruler_flag = illusion_3
-			#			has_ruler_flag = enchantment_2
-			#		}
-			#		AND = {
-			#			has_ruler_flag = illusion_2
-			#			has_ruler_flag = enchantment_1
-			#			OR = {
-			#				has_ruler_flag = huli_jing_patron
-			#				has_ruler_flag = gumiho_patron
-			#			}
-			#		}
-			#	}
-			#}
+			NOT = {
+				AND = {
+					OR = {
+						has_ruler_flag = illusion_2
+						AND = {
+							has_ruler_flag = illusion_1
+							OR = {
+								has_ruler_flag = huli_jing_patron
+								has_ruler_flag = gumiho_patron
+							}
+						}
+					}
+					has_ruler_flag = enchantment_1
+				}
+			}
+			NOT = {
+				OR = {
+					AND = {
+						has_ruler_flag = illusion_3
+						has_ruler_flag = enchantment_2
+					}
+					AND = {
+						has_ruler_flag = illusion_2
+						has_ruler_flag = enchantment_1
+						OR = {
+							has_ruler_flag = huli_jing_patron
+							has_ruler_flag = gumiho_patron
+						}
+					}
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -7953,36 +7920,33 @@ country_event = {
 		name = magic_ruler.6.ex
 		trigger = {
 			ai = no
-			#BomjSBagetom Anbennar Submod
-			has_ruler_flag = illusion_2
-			NOT = { has_ruler_flag = illusion_3 }
-			#OR = {
-			#	has_ruler_flag = illusion_2
-			#	AND = {
-			#		has_ruler_flag = illusion_1
-			#		OR = {
-			#			has_ruler_flag = huli_jing_patron
-			#			has_ruler_flag = gumiho_patron
-			#		}
-			#	}
-			#}
-			#has_ruler_flag = enchantment_1
-			#NOT = {
-			#	OR = {
-			#		AND = {
-			#			has_ruler_flag = illusion_3
-			#			has_ruler_flag = enchantment_2
-			#		}
-			#		AND = {
-			#			has_ruler_flag = illusion_2
-			#			has_ruler_flag = enchantment_1
-			#			OR = {
-			#				has_ruler_flag = huli_jing_patron
-			#				has_ruler_flag = gumiho_patron
-			#			}
-			#		}
-			#	}
-			#}
+			OR = {
+				has_ruler_flag = illusion_2
+				AND = {
+					has_ruler_flag = illusion_1
+					OR = {
+						has_ruler_flag = huli_jing_patron
+						has_ruler_flag = gumiho_patron
+					}
+				}
+			}
+			has_ruler_flag = enchantment_1
+			NOT = {
+				OR = {
+					AND = {
+						has_ruler_flag = illusion_3
+						has_ruler_flag = enchantment_2
+					}
+					AND = {
+						has_ruler_flag = illusion_2
+						has_ruler_flag = enchantment_1
+						OR = {
+							has_ruler_flag = huli_jing_patron
+							has_ruler_flag = gumiho_patron
+						}
+					}
+				}
+			}
 			OR = {
 				NOT = { dip_power = 25 }
 				NOT = { adm_power = 5 }
@@ -8105,23 +8069,21 @@ country_event = {
 	option = {	#available
 		name = magic_ruler.6.g
 		trigger = {
-			#BomjSBagetom Anbennar Submod
-			has_ruler_flag = illusion_3
-			#OR = {
-			#	has_ruler_flag = illusion_3
-			#	AND = {
-			#		has_ruler_flag = illusion_3
-			#		has_ruler_flag = enchantment_2
-			#	}
-			#	AND = {
-			#		has_ruler_flag = illusion_2
-			#		has_ruler_flag = enchantment_1
-			#		OR = {
-			#			has_ruler_flag = huli_jing_patron
-			#			has_ruler_flag = gumiho_patron
-			#		}
-			#	}
-			#}
+			OR = {
+				has_ruler_flag = illusion_3
+				AND = {
+					has_ruler_flag = illusion_3
+					has_ruler_flag = enchantment_2
+				}
+				AND = {
+					has_ruler_flag = illusion_2
+					has_ruler_flag = enchantment_1
+					OR = {
+						has_ruler_flag = huli_jing_patron
+						has_ruler_flag = gumiho_patron
+					}
+				}
+			}
 			dip_power = 25
 			adm_power = 5
 			NOT = { has_ruler_modifier = magic_realm_illusion_glamour }
@@ -8162,25 +8124,23 @@ country_event = {
 		name = magic_ruler.6.gm
 		trigger = {
 			ai = no
-			#BomjSBagetom Anbennar Submod
-			NOT = { has_ruler_flag = illusion_3 }
-			#NOT = {
-			#	OR = {
-			#		has_ruler_flag = illusion_3
-			#		AND = {
-			#			has_ruler_flag = illusion_3
-			#			has_ruler_flag = enchantment_2
-			#		}
-			#		NOT = {
-			#			has_ruler_flag = illusion_2
-			#			has_ruler_flag = enchantment_1
-			#			OR = {
-			#				has_ruler_flag = huli_jing_patron
-			#				has_ruler_flag = gumiho_patron
-			#			}
-			#		}
-			#	}
-			#}
+			NOT = {
+				OR = {
+					has_ruler_flag = illusion_3
+					AND = {
+						has_ruler_flag = illusion_3
+						has_ruler_flag = enchantment_2
+					}
+					NOT = {
+						has_ruler_flag = illusion_2
+						has_ruler_flag = enchantment_1
+						OR = {
+							has_ruler_flag = huli_jing_patron
+							has_ruler_flag = gumiho_patron
+						}
+					}
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -8226,23 +8186,21 @@ country_event = {
 		name = magic_ruler.6.gx
 		trigger = {
 			ai = no
-			#BomjSBagetom Anbennar Submod
-			has_ruler_flag = illusion_3
-			#OR = {
-			#	has_ruler_flag = illusion_3
-			#	AND = {
-			#		has_ruler_flag = illusion_3
-			#		has_ruler_flag = enchantment_2
-			#	}
-			#	AND = {
-			#		has_ruler_flag = illusion_2
-			#		has_ruler_flag = enchantment_1
-			#		OR = {
-			#			has_ruler_flag = huli_jing_patron
-			#			has_ruler_flag = gumiho_patron
-			#		}
-			#	}
-			#}
+			OR = {
+				has_ruler_flag = illusion_3
+				AND = {
+					has_ruler_flag = illusion_3
+					has_ruler_flag = enchantment_2
+				}
+				AND = {
+					has_ruler_flag = illusion_2
+					has_ruler_flag = enchantment_1
+					OR = {
+						has_ruler_flag = huli_jing_patron
+						has_ruler_flag = gumiho_patron
+					}
+				}
+			}
 			OR = {
 				NOT = { dip_power = 25 }
 				NOT = { adm_power = 5 }

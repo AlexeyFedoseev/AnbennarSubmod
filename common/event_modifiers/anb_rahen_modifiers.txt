@@ -55,6 +55,7 @@ high_philosophy_school_origin_final_paradigm = {
 }
 high_philosophy_school_origin_piercing_fang = {
 	#picture = "hp_piercing_fang_origin"
+	picture = "hp_unbroken_claw_origin"	#BomjSBagetom Anbennar Submod - temp picture
 	local_missionary_strength = -0.01
 	local_institution_spread = 0.1
 	province_trade_power_modifier = 0.05
@@ -405,10 +406,12 @@ command_rule_of_the_boar = {
 }
 command_rule_of_the_lion = {
 	lion_command_loyalty_modifier = 0.1
-	idea_cost = 0.1
+	#idea_cost = 0.1		#BomjSBagetom Anbennar Submod
 		
 	leader_land_shock = 1
-	land_morale = 0.05
+	#land_morale = 0.05		#BomjSBagetom Anbennar Submod
+	land_morale = 0.1		#BomjSBagetom Anbennar Submod
+	reserves_organisation = -0.20	#BomjSBagetom Anbennar Submod
 }
 command_rule_of_the_dragon = {
 	dragon_command_loyalty_modifier = 0.1

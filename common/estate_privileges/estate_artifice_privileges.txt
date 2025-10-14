@@ -71,7 +71,7 @@ estate_artificers_organization_international_gommo = {
 				stability = 2
 			}
 			custom_trigger_tooltip = { #BomjSBagetom Anbennar Submod
-				tooltip = submon_no_5_years_research
+				tooltip = submod_no_5_years_research
 				NOT = { has_country_flag = magic_artificery_mixed } 
 			}
 		}

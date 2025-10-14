@@ -1,0 +1,30 @@
+
+#302 - Tambow
+
+#owner = A92		#BomjSBagetom Anbennar Submod
+#controller = A92	#BomjSBagetom Anbennar Submod
+#add_core = A92		#BomjSBagetom Anbennar Submod
+owner = A99			#BomjSBagetom Anbennar Submod
+controller = A99	#BomjSBagetom Anbennar Submod
+add_core = A99		#BomjSBagetom Anbennar Submod
+culture = esmari
+religion = regent_court
+
+hre = yes
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+trade_goods = grain
+
+capital = ""
+
+is_city = yes
+
+
+
+
+
+
+
