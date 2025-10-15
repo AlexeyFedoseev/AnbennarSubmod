@@ -53,7 +53,7 @@ add_or_upgrade_age_bonus = {
                     add_aggressive_expansion = { who = ROOT value = -90 apply_calc = no }
                 }
             }
-            custom_tooltip = ab_ae_lost_on_diplomacy_age_bonus_1
+            custom_tooltip = ab_ae_lost_on_diplomacy_age_bonus_2
         ]
         custom_tooltip = ab_mention_primary_effect
         set_country_flag = flag_ab_purchased_$abilityName$
@@ -85,7 +85,7 @@ add_or_upgrade_age_bonus = {
                     add_aggressive_expansion = { who = ROOT value = -270 apply_calc = no }
                 }
             }
-            custom_tooltip = ab_ae_lost_on_diplomacy_age_bonus_1
+            custom_tooltip = ab_ae_lost_on_diplomacy_age_bonus_3
         ]
         custom_tooltip = ab_mention_primary_effect
         set_country_flag = flag_ab_purchased_$abilityName$

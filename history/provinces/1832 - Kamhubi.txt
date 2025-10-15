@@ -1,0 +1,25 @@
+
+# No previous file for Yamato
+#BomjSBagetom Anbennar Submod
+owner = H44
+controller = H44
+add_core = H44
+
+
+culture = crownsman			#BomjSBagetom Anbennar Submod
+religion = regent_court		#BomjSBagetom Anbennar Submod
+capital = ""
+
+is_city = yes				#BomjSBagetom Anbennar Submod
+
+hre = no
+
+base_tax = 4				#BomjSBagetom Anbennar Submod
+base_production = 4			#BomjSBagetom Anbennar Submod
+base_manpower = 3			#BomjSBagetom Anbennar Submod
+
+trade_goods = cotton		#BomjSBagetom Anbennar Submod
+
+#native_size = 20			#BomjSBagetom Anbennar Submod
+#native_ferocity = 10		#BomjSBagetom Anbennar Submod
+#native_hostileness = 10	#BomjSBagetom Anbennar Submod

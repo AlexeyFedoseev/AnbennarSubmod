@@ -678,11 +678,6 @@ country_event = {
 				}
 			}
 		}
-		capital_scope = { #BomjSBagetom Anbennar Submod
-			build_to_forcelimit = { 
-				infantry = 0.25
-			}
-		}
 	}
 }	
 
@@ -715,11 +710,6 @@ country_event = {
 			manuever = 3
 			siege = 2
 		}
-		capital_scope = { #BomjSBagetom Anbennar Submod
-			build_to_forcelimit = { 
-				infantry = 0.25
-			}
-		}
 	}
 }
 
@@ -751,11 +741,6 @@ country_event = {
 				spawn_expedition = yes
 			}
 		}
-		capital_scope = { #BomjSBagetom Anbennar Submod
-			build_to_forcelimit = { 
-				infantry = 0.25
-			}
-		}
 	}
 }
 
@@ -783,11 +768,6 @@ country_event = {
 		}
 		capital_scope = {
 			add_building = fort_15th
-		}
-		capital_scope = { #BomjSBagetom Anbennar Submod
-			build_to_forcelimit = { 
-				infantry = 0.25
-			}
 		}
 	}
 }

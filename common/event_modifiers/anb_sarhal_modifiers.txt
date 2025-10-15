@@ -286,13 +286,15 @@ kazakesh_ananoma_boon = {
 }
 
 lel_shrine = {
-	improve_relation_modifier = 0.075
+	#improve_relation_modifier = 0.075		#BomjSBagetom Anbennar Submod
+	diplomatic_annexation_cost = -0.1		#BomjSBagetom Anbennar Submod
 	religion = yes
 	picture = "shrine_icon"
 }
 
 kolo_shrine = {
-	cavalry_power = 0.05
+	#cavalry_power = 0.05			#BomjSBagetom Anbennar Submod
+	cavalry_power = 0.15			#BomjSBagetom Anbennar Submod
 	religion = yes
 	picture = "shrine_icon"
 }
@@ -304,43 +306,50 @@ the_nakazy_shrine = {
 }
 
 turozi_shrine = {
-	prestige_from_land = 1
+	#prestige_from_land = 1		#BomjSBagetom Anbennar Submod
+	prestige = 1				#BomjSBagetom Anbennar Submod
 	religion = yes
 	picture = "shrine_icon"
 }
 
 yuye_shrine = {
-	army_tradition = 0.25
+	#army_tradition = 0.25		#BomjSBagetom Anbennar Submod
+	army_tradition = 0.5		#BomjSBagetom Anbennar Submod
 	religion = yes
 	picture = "shrine_icon"
 }
 
 ozamdi_shrine = {
-	reinforce_speed = 0.10
+	#reinforce_speed = 0.10			#BomjSBagetom Anbennar Submod
+	reinforce_speed = 0.20			#BomjSBagetom Anbennar Submod
 	religion = yes
 	picture = "shrine_icon"
 }
 
 jyva_shrine = {
-	siege_ability = 0.05
+	#siege_ability = 0.05		#BomjSBagetom Anbennar Submod
+	siege_ability = 0.15		#BomjSBagetom Anbennar Submod
 	religion = yes
 	picture = "shrine_icon"
 }
 
 ytrai_shrine = {
-	global_trade_goods_size_modifier = 0.025
+	#global_trade_goods_size_modifier = 0.025		#BomjSBagetom Anbennar Submod
+	global_trade_goods_size_modifier = 0.1			#BomjSBagetom Anbennar Submod
 	religion = yes
 	picture = "shrine_icon"
 }
 
 drongray_shrine = {
-	land_attrition = -0.075
+	#land_attrition = -0.075		#BomjSBagetom Anbennar Submod
+	land_attrition = -0.1			#BomjSBagetom Anbennar Submod
 	religion = yes
 	picture = "shrine_icon"
 }
 
 elinao_shrine = {
-	navy_tradition = 0.25
+	#navy_tradition = 0.25		#BomjSBagetom Anbennar Submod
+	navy_tradition = 1			#BomjSBagetom Anbennar Submod
 	religion = yes
 	picture = "shrine_icon"
 }

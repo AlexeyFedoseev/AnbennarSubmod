@@ -2211,7 +2211,18 @@ sedentarization_on_province_owner_change = {
 		# Add the mitigating modifier for centaurs.
 		if = {
 			limit = {
-				owner = { culture_is_centaur = yes }
+				#owner = { culture_is_centaur = yes }	#BomjSBagetom Anbennar Submod
+				owner = {	#BomjSBagetom Anbennar Submod
+					OR = {
+						culture_is_centaur = yes
+						primary_culture = fathide_ogre
+						tag = J49
+						tag = J50
+						tag = J51
+						tag = J52
+						tag = J53
+					}
+				}
 			}
 			add_province_modifier = {
 				name = sed_entrenched_centaur_nomadism

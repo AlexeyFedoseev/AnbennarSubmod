@@ -706,6 +706,9 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { was_tag = Z67 } #Di Yichan
 			NOT = { tag = Y00 } #Sunrise Empire
 			NOT = { was_tag = Y00 } #Sunrise Empire
+			#BomjSBagetom Anbennar Submod
+			NOT = { tag = Y86 }		#Azkare
+			NOT = { was_tag = Y86 } #Azkare
 			NOT = { tag = V23 } #Luzhong
 			NOT = { was_tag = V23 } #Luzhong
 			

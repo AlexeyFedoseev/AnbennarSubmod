@@ -446,12 +446,11 @@ country_decisions = {
 			is_at_war = no
 			NOT = { has_country_modifier = monstrous_nation }
 			
-			OR = { #BomjSBagetom Anbennar Submod
-				if = {
-					limit = { has_adventurer_reform = yes }
-					has_reform = found_our_nation
-					has_reform = local_administration
-				}
+			if = {
+				limit = { has_adventurer_reform = yes }
+				has_reform = found_our_nation
+				has_reform = local_administration
+			} else = {
 				culture_group = escanni	#BomjSBagetom Anbennar Submod
 			}
 			

@@ -97,15 +97,17 @@ on_startup = {
 
 
 		#BomjSBagetom Anbennar Submod
-		diggy_spawnable.8 
-		diggy_spawnable.9 
-		diggy_spawnable.10 
-		diggy_spawnable.11 
+		diggy_spawnable.8
+		diggy_spawnable.9
+		diggy_spawnable.10
+		diggy_spawnable.11
+		adventurerspawnables.302
 		adventurerspawnables.602
 		adventurerspawnables.902
 		adventurerspawnables.1102
 		adventurerspawnables.1402
 		aelantirspawnables.402
+		aelantirspawnables.602
 		aelantirspawnables.1202
 		aelantirspawnables.1402
 		aelantirspawnables.1802
@@ -966,6 +968,30 @@ on_religion_change = {
 		remove_country_modifier = favoured_IC_canturian_t_b
 		remove_country_modifier = favoured_IC_mesner_t_a
 		remove_country_modifier = favoured_IC_mesner_t_b
+	}
+	every_owned_province = {
+		remove_province_modifier = chi_wellspring_1
+		remove_province_modifier = chi_wellspring_2
+		remove_province_modifier = chi_wellspring_3
+		remove_province_modifier = chi_wellspring_4
+		remove_province_modifier = chi_wellspring_5
+	}
+	if = {
+		limit = {
+			NOT = { religion = bulwari_sun_cult }
+		}
+		remove_province_modifier = nsc_defensive_tactics
+		remove_province_modifier = nsc_mobility_tactics
+
+
+		remove_province_modifier = nsc_assault_tactics
+		remove_province_modifier = nsc_cavalry_focus
+		remove_province_modifier = nsc_specialised_focus
+		remove_province_modifier = nsc_mass_focus
+		remove_province_modifier = nsc_leader_training
+		remove_province_modifier = nsc_rigorous_training
+		remove_province_modifier = nsc_fast_training
+		remove_province_modifier = nsc_army_reformed
 	}
 }
 
@@ -11232,7 +11258,8 @@ on_four_year_pulse_3 = {
 		100 = ancestor_worship.100	#New Ancestor
 		100 = ancestor_worship.101	#Ancient Knowledge unearthed
 		100 = ancestor_worship.102	#Conflicting Records lead to conflict
-		100 = ancestor_worship.103	#Krummul Stories Inspire Warriors
+		#100 = ancestor_worship.103	#Krummul Stories Inspire Warriors		#BomjSBagetom Anbennar Submod
+		400 = ancestor_worship.103	#Krummul Stories Inspire Warriors			#BomjSBagetom Anbennar Submod
 		100 = ancestor_worship.104	#Balgar stories inspire architects
 		100 = ancestor_worship.105	#Quila Stories inspire farming
 		100 = ancestor_worship.106	#Urist Stories inspire spelunkers
@@ -17162,109 +17189,6 @@ on_primary_culture_changed = {
 		escanni_wars.200 # Joined Escanni wars
 	}
 
-	#BomjSBagetom Anbennar Submod
-	if = {
-		limit = {
-			has_country_modifier = cultural_shift_penalty_10
-		}
-		add_dip_power = -2000
-	} else_if = {
-		limit = {
-			has_country_modifier = cultural_shift_penalty_9
-		}
-		remove_country_modifier = cultural_shift_penalty_9
-		add_country_modifier = {
-			name = cultural_shift_penalty_10
-			duration = -1
-		}
-		add_dip_power = -1800
-	} else_if = {
-		limit = {
-			has_country_modifier = cultural_shift_penalty_8
-		}
-		remove_country_modifier = cultural_shift_penalty_8
-		add_country_modifier = {
-			name = cultural_shift_penalty_8
-			duration = -1
-		}
-		add_dip_power = -1600
-	} else_if = {
-		limit = {
-			has_country_modifier = cultural_shift_penalty_7
-		}
-		remove_country_modifier = cultural_shift_penalty_7
-		add_country_modifier = {
-			name = cultural_shift_penalty_8
-			duration = -1
-		}
-		add_dip_power = -1400
-	} else_if = {
-		limit = {
-			has_country_modifier = cultural_shift_penalty_6
-		}
-		remove_country_modifier = cultural_shift_penalty_6
-		add_country_modifier = {
-			name = cultural_shift_penalty_7
-			duration = -1
-		}
-		add_dip_power = -1200
-	} else_if = {
-		limit = {
-			has_country_modifier = cultural_shift_penalty_5
-		}
-		remove_country_modifier = cultural_shift_penalty_5
-		add_country_modifier = {
-			name = cultural_shift_penalty_6
-			duration = -1
-		}
-		add_dip_power = -1000
-	} else_if = {
-		limit = {
-			has_country_modifier = cultural_shift_penalty_4
-		}
-		remove_country_modifier = cultural_shift_penalty_4
-		add_country_modifier = {
-			name = cultural_shift_penalty_5
-			duration = -1
-		}
-		add_dip_power = -800
-	} else_if = {
-		limit = {
-			has_country_modifier = cultural_shift_penalty_3
-		}
-		remove_country_modifier = cultural_shift_penalty_3
-		add_country_modifier = {
-			name = cultural_shift_penalty_4
-			duration = -1
-		}
-		add_dip_power = -600
-	} else_if = {
-		limit = {
-			has_country_modifier = cultural_shift_penalty_2
-		}
-		remove_country_modifier = cultural_shift_penalty_2
-		add_country_modifier = {
-			name = cultural_shift_penalty_3
-			duration = -1
-		}
-		add_dip_power = -400
-	} else_if = {
-		limit = {
-			has_country_modifier = cultural_shift_penalty_1
-		}
-		remove_country_modifier = cultural_shift_penalty_1
-		add_country_modifier = {
-			name = cultural_shift_penalty_2
-			duration = -1
-		}
-		add_dip_power = -200
-	} else = {
-		add_country_modifier = {
-			name = cultural_shift_penalty_1
-			duration = -1
-		}
-	}
-
 	###############################################################
 	# EFFECTS BELOW HERE DO NOT WORK PROPERLY IN SCRIPTED EFFECTS #
 	# most common causes are:                                     #
@@ -20439,6 +20363,8 @@ on_country_creation = {
 		initialize_kheionism_variables = yes
 		country_event = { id = kheionism.3 } #Set your deity
 	}
+
+	remove_country_modifier = wielding_calindal #BomjSBagetom Anbennar Submod
 }
 
 # ROOT = country, FROM = country they fled from

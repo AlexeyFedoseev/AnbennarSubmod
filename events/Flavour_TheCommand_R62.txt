@@ -75,6 +75,7 @@ country_event = { #Startup Event
 			factor = 1
 		}
 		#add_army_professionalism = 0.2 #BomjSBagetom Anbennar Submod
+		country_event = { id = the_command_submod.0 } #BomjSBagetom Anbennar Submod
 		add_country_modifier = { name = no_slacken_mod duration = -1 desc = until_end_of_halessi_magic }
 		
 		custom_tooltip = command_mechanics_hint_tt
@@ -5901,8 +5902,10 @@ country_event = { #Whispers From the Rivers
 
 	immediate = { #immediate so that timing doesn't screw up
 		#hidden_effect = { country_event = { id = the_command.111 days = 150 random = 60 } } #BomjSBagetom Anbennar Submod
-		Y89 = { country_event = { id = yuanszi.1 } }
-		R11 = { country_event = { id = khadisrapur.0 days = 15 random = 30 } }
+		hidden_effect = {
+			Y89 = { country_event = { id = yuanszi.1 } }
+			R11 = { country_event = { id = khadisrapur.0 days = 15 random = 30 } }
+		}
 	}
 
 	option = {
@@ -5961,7 +5964,6 @@ country_event = { #Growing Concerns
 			#set_country_flag = command_sir_revolt_sarnavan_participation #BomjSBagetom Anbennar Submod
 			#set_country_flag = command_sir_revolt_parraj_participation #BomjSBagetom Anbennar Submod
 			set_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation #BomjSBagetom Anbennar Submod
-			set_country_flag = command_sir_revolt_rajnadhaga_participation #BomjSBagetom Anbennar Submod
 		}
 	}
 
@@ -6043,10 +6045,6 @@ country_event = { #Emergency Meeting of the Kenu-Ike
 				R11 = { country_event = { id = the_command.116 } } #Khadisrapur
 			#	R10 = { country_event = { id = the_command.116 } } #Sarnavan	#BomjSBagetom Anbennar Submod
 			#	R09 = { country_event = { id = the_command.116 } } #Parraj		#BomjSBagetom Anbennar Submod
-			}
-			if = { #BomjSBagetom Anbennar Submod
-				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
-				R07 = { country_event = { id = the_command.116 } } #Rajnadhaga
 			}
 			if = { #BomjSBagetom Anbennar Submod
 				limit = { has_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation }
@@ -6208,7 +6206,6 @@ country_event = { #Sir asks for help from surviving Ruin Kingdoms
 			R11 = { R62 = { clr_country_flag = command_sir_revolt_khadisrapur_participation } }
 			#R10 = { R62 = { clr_country_flag = command_sir_revolt_sarnavan_participation } }
 			#R09 = { R62 = { clr_country_flag = command_sir_revolt_parraj_participation } }
-			R07 = { R62 = { clr_country_flag = command_sir_revolt_rajnadhaga_participation } }
 			R84 = { R62 = { clr_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation } }
 			R12 = { R62 = { clr_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation } }
 			R85 = { R62 = { clr_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation } }
@@ -6593,8 +6590,8 @@ country_event = { #Sir revolt starts
 				add_manpower = -10
 			}
 			if = { #BomjSBagetom Anbennar Submod
-				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
-				R07 = {
+				limit = { has_country_flag = command_sir_revolt_khadisrapur_participation }
+				R11 = {
 					define_general = {
 						fire = 2
 						shock = 8
@@ -6705,15 +6702,6 @@ country_event = { #Sir revolt starts
 		if = {
 			limit = { has_country_flag = command_sir_revolt_yuanszi_participation }
 			Y89 = {
-				create_alliance = R78
-				join_all_offensive_wars_of = R78
-			}
-		}
-
-		#BomjSBagetom Anbennar Submod
-		if = { #rajnadhaga stuff submod comm
-			limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
-			R07 = {
 				create_alliance = R78
 				join_all_offensive_wars_of = R78
 			}
@@ -7113,7 +7101,7 @@ country_event = { #Sir revolt end - Command loss
 			4531 = {
 				add_core = R96
 			}
-			R07 = {  #BomjSBagetom Anbennar Submod
+			R11 = {  #BomjSBagetom Anbennar Submod
 				kill_leader = { type = "Chiyi Kwaeng" }
 			}
 			release_all_possible_countries = yes
@@ -7143,7 +7131,7 @@ country_event = { #Sir revolt end - Command loss
 						tag = Y01
 					}
 					NOT = {
-						#tag = R07	#BomjSBagetom Anbennar Submod
+						tag = R07
 						tag = R08
 						tag = R10	#BomjSBagetom Anbennar Submod
 						tag = R09	#BomjSBagetom Anbennar Submod
@@ -7159,7 +7147,7 @@ country_event = { #Sir revolt end - Command loss
 							tag = Y01
 						}
 						NOT = {
-							#tag = R07	#BomjSBagetom Anbennar Submod
+							tag = R07
 							tag = R08
 							tag = R10	#BomjSBagetom Anbennar Submod
 							tag = R09	#BomjSBagetom Anbennar Submod
@@ -7206,10 +7194,6 @@ country_event = { #Sir revolt end - Command loss
 			if = {
 				limit = { has_country_flag = command_sir_revolt_yuanszi_participation }
 				Y89 = { country_event = { id = the_command.125 } }
-			}
-			if = {		#BomjSBagetom Anbennar Submod
-				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
-				R07 = { country_event = { id = the_command.125 } }
 			}
 			if = {		#BomjSBagetom Anbennar Submod
 				limit = { has_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation }
@@ -7386,7 +7370,7 @@ country_event = { #Sir revolt end - Command loss
 			4531 = {
 				add_core = R96
 			}
-			R07 = {  #BomjSBagetom Anbennar Submod
+			R11 = {  #BomjSBagetom Anbennar Submod
 				kill_leader = { type = "Chiyi Kwaeng" }
 			}
 			release_all_possible_countries = yes
@@ -7416,7 +7400,7 @@ country_event = { #Sir revolt end - Command loss
 						tag = Y01
 					}
 					NOT = {
-						#tag = R07	#BomjSBagetom Anbennar Submod
+						tag = R07
 						tag = R08
 						tag = R10	#BomjSBagetom Anbennar Submod
 						tag = R09	#BomjSBagetom Anbennar Submod
@@ -7432,7 +7416,7 @@ country_event = { #Sir revolt end - Command loss
 							tag = Y01
 						}
 						NOT = {
-							#tag = R07	#BomjSBagetom Anbennar Submod
+							tag = R07
 							tag = R08
 							tag = R10	#BomjSBagetom Anbennar Submod
 							tag = R09	#BomjSBagetom Anbennar Submod
@@ -7479,10 +7463,6 @@ country_event = { #Sir revolt end - Command loss
 			if = {
 				limit = { has_country_flag = command_sir_revolt_yuanszi_participation }
 				Y89 = { country_event = { id = the_command.125 } }
-			}
-			if = {		#BomjSBagetom Anbennar Submod
-				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
-				R07 = { country_event = { id = the_command.125 } }
 			}
 			if = {		#BomjSBagetom Anbennar Submod
 				limit = { has_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation }
@@ -7652,7 +7632,7 @@ country_event = { #Sir revolt end - Command loss
 			4531 = {
 				add_core = R96
 			}
-			R07 = {  #BomjSBagetom Anbennar Submod
+			R11 = {  #BomjSBagetom Anbennar Submod
 				kill_leader = { type = "Chiyi Kwaeng" }
 			}
 			release_all_possible_countries = yes
@@ -7682,7 +7662,7 @@ country_event = { #Sir revolt end - Command loss
 						tag = Y01
 					}
 					NOT = {
-						#tag = R07	#BomjSBagetom Anbennar Submod
+						tag = R07
 						tag = R08
 						tag = R10	#BomjSBagetom Anbennar Submod
 						tag = R09	#BomjSBagetom Anbennar Submod
@@ -7698,7 +7678,7 @@ country_event = { #Sir revolt end - Command loss
 							tag = Y01
 						}
 						NOT = {
-							#tag = R07	#BomjSBagetom Anbennar Submod
+							tag = R07
 							tag = R08
 							tag = R10	#BomjSBagetom Anbennar Submod
 							tag = R09	#BomjSBagetom Anbennar Submod
@@ -7745,10 +7725,6 @@ country_event = { #Sir revolt end - Command loss
 			if = {
 				limit = { has_country_flag = command_sir_revolt_yuanszi_participation }
 				Y89 = { country_event = { id = the_command.125 } }
-			}
-			if = {		#BomjSBagetom Anbennar Submod
-				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
-				R07 = { country_event = { id = the_command.125 } }
 			}
 			if = {		#BomjSBagetom Anbennar Submod
 				limit = { has_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation }
@@ -7918,7 +7894,7 @@ country_event = { #Sir revolt end - Command loss
 			4531 = {
 				add_core = R96
 			}
-			R07 = {  #BomjSBagetom Anbennar Submod
+			R11 = {  #BomjSBagetom Anbennar Submod
 				kill_leader = { type = "Chiyi Kwaeng" }
 			}
 			release_all_possible_countries = yes
@@ -7948,7 +7924,7 @@ country_event = { #Sir revolt end - Command loss
 						tag = Y01
 					}
 					NOT = {
-						#tag = R07	#BomjSBagetom Anbennar Submod
+						tag = R07
 						tag = R08
 						tag = R10	#BomjSBagetom Anbennar Submod
 						tag = R09	#BomjSBagetom Anbennar Submod
@@ -7964,7 +7940,7 @@ country_event = { #Sir revolt end - Command loss
 							tag = Y01
 						}
 						NOT = {
-							#tag = R07	BomjSBagetom Anbennar Submod
+							tag = R07
 							tag = R08
 							tag = R10	#BomjSBagetom Anbennar Submod
 							tag = R09	#BomjSBagetom Anbennar Submod
@@ -8011,10 +7987,6 @@ country_event = { #Sir revolt end - Command loss
 			if = {
 				limit = { has_country_flag = command_sir_revolt_yuanszi_participation }
 				Y89 = { country_event = { id = the_command.125 } }
-			}
-			if = {		#BomjSBagetom Anbennar Submod
-				limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
-				R07 = { country_event = { id = the_command.125 } }
 			}
 			if = {		#BomjSBagetom Anbennar Submod
 				limit = { has_country_flag = command_sir_revolt_phabar_tilathi_udapana_participation }
@@ -8247,10 +8219,6 @@ country_event = { #Everyone else victory notification
 					add_prestige = 25
 					add_country_modifier = { name = command_veterans_of_the_resistance duration = 9125 }
 				}
-				R07 = {	#BomjSBagetom Anbennar Submod
-					add_treasury = 2000
-					add_country_modifier = { name = rajnadhaga_break_the_chimera duration = 5475 } # 15 years
-				}
 			}
 		}
 	}
@@ -8300,7 +8268,7 @@ country_event = { #Sir Revolt End - Command Victory
 			add_treasury = 500
 			change_adm = 1 #BomjSBagetom Anbennar Submod
 			change_mil = 2 #BomjSBagetom Anbennar Submod
-			R07 = {  #BomjSBagetom Anbennar Submod
+			R11 = {  #BomjSBagetom Anbennar Submod
 				kill_leader = { type = "Chiyi Kwaeng" }
 			}
 			add_ae_for_known_countries_with_limit = {
@@ -8629,11 +8597,6 @@ country_event = { #Sir Revolt End - Command Victory
 				add_dip_power = 100
 				add_mil_power = 100
 			}
-		}
-
-		if = { #BomjSBagetom Anbennar Submod
-			limit = { has_country_flag = command_sir_revolt_rajnadhaga_participation }
-			add_treasury = 500
 		}
 
 		if = { #BomjSBagetom Anbennar Submod

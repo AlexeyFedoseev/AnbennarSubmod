@@ -191,6 +191,8 @@ gnollish_administration = {
 	
 	female_advisor_chance = 0.4				#matriarchs
 	may_recruit_female_generals = yes		#matriarchs
+
+	no_stability_loss_on_monarch_death = yes  #BomjSBagetom Anbennar Submod
 	
 	#0.3 + 0.3 + 1 + 0.2 + 1 + 1 + 0.2 + 0.5 = 4.5
 	
@@ -1156,7 +1158,8 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	
 	#5 + 0.6 + 4 + 3.3  + 10 + 0.66 + 2 - 7.5 - 0.5 = 17.56
 	
-	movement_speed = -0.4 #-7.5 B
+	#movement_speed = -0.4 #-7.5 B		#BomjSBagetom Anbennar Submod
+	movement_speed = -0.2 				#BomjSBagetom Anbennar Submod
  	drill_gain_modifier = -0.75 #-0.5 B
 	
  	# infantry_power = -0.2
@@ -1175,7 +1178,6 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	recover_navy_morale_speed = 0.5
 	
 	#reserves_organisation = 4 		# 4 D Unbreakable #BomjSBagetom Anbennar Submod
-	reserves_organisation = 0.5 # 	#BomjSBagetom Anbennar Submod
 	artillery_cost = -0.25 #BomjSBagetom Anbennar Submod
 	# morale_damage_received = -0.9 # 4 A Unbreakable
 	# shock_damage_received = -0.3

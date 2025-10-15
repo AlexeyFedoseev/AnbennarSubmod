@@ -1614,7 +1614,8 @@ estate_adventurers_organization_land_of_adventure = {
 	penalties = {
 	}
 	benefits = {
-		mercenary_manpower = 0.25
+		#mercenary_manpower = 0.25 #BomjSBagetom Anbennar Submod
+		mercenary_manpower = 0.075 #BomjSBagetom Anbennar Submod
 	}
 	ai_will_do = {
 		factor = 0

@@ -9456,7 +9456,8 @@ R72_ideas = {
 		prestige = 1
 	}
 	R72_perfect_technique = {
-		cavalry_power = 0.33
+		#cavalry_power = 0.33	#BomjSBagetom Anbennar Submod
+		cavalry_power = 0.15	#BomjSBagetom Anbennar Submod
 	}
 	ghavaanaj_festival_of_colours = {
 		stability_cost_modifier = -0.2
@@ -46222,11 +46223,12 @@ Y96_ideas = { #Guwaamud
 		trade_steering = 0.2
 	}
 	bonus = {
-		cavalry_power = 0.1		#BomjSBagetom Anbennar Submod
+		cavalry_power = 0.2		#BomjSBagetom Anbennar Submod
 		cav_to_inf_ratio = 0.1	#BomjSBagetom Anbennar Submod
 		vassal_forcelimit_bonus = 1
 	}
 	Y96_guwaaduni_irredentism = {
+		global_manpower_modifier = 0.15		#BomjSBagetom Anbennar Submod
 		liberty_desire_from_subject_development = -0.25
 	}
 	Y96_great_khaashegate = {

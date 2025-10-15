@@ -291,156 +291,196 @@ province_event = {
 }
 
 #Shining Circle - Ynn west
-province_event = {
-	id = adventurerspawnables.3
+#province_event = {		#BomjSBagetom Anbennar Submod
+#	id = adventurerspawnables.3
+#	title = adventurerspawnables.3.t
+#	desc = adventurerspawnables.3.d
+#	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+#	goto = spawn_province
+#	
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		has_global_flag = new_world_discovered
+#		current_age = age_of_reformation
+#		NOT = { has_global_flag = delete_north_aelantir_region }
+#		OR = {
+#			epednan_expanse_region = {
+#				is_empty = yes
+#				#has_discovered = ROOT
+#				has_empty_adjacent_province = yes
+#			}
+#			ynn_western_lands = {
+#				is_empty = yes
+#				#has_discovered = ROOT
+#				has_empty_adjacent_province = yes
+#			}
+#		}
+#	}
+#	
+#	immediate = {
+#		hidden_effect = {
+#			random_province = {
+#				limit = {
+#					OR = {
+#						region = epednan_expanse_region
+#						province_group = ynn_western_lands
+#					}
+#					is_empty = yes
+#					has_empty_adjacent_province = yes
+#				}
+#				save_event_target_as = spawn_province
+#			}
+#			random_province = {
+#				limit = {
+#					OR = { 
+#						area = nizelynn_area
+#						area = atawakitsu_area
+#						area = yanudahna_area
+#					}
+#					is_empty = yes
+#					has_empty_adjacent_province = yes
+#				}
+#				save_event_target_as = spawn_province
+#			}
+#			random_province = {
+#				limit = {
+#					province_id = 1832 #Kamhubi
+#					is_empty = yes
+#					has_empty_adjacent_province = yes
+#				}
+#				save_event_target_as = spawn_province
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = adventurerspawnables.1.a 
+#		
+#		H44 = {
+#			event_target:spawn_province = {
+#				create_colony = 1000
+#				add_core = H44
+#			}
+#		}
+#		
+#		hidden_effect = {
+#			234 = { discover_country = H44 }
+#			H44 = {
+#				country_event = { 
+#					id = anb_miscevents.8
+#					days = 7
+#				}
+#				define_ruler = {
+#					name = "Matilda"
+#					dynasty = "Silverlocks"
+#					adm = 5
+#					dip = 4
+#					mil = 1
+#					age = 37
+#					female = yes
+#					claim = 95
+#					culture = imperial_halfling
+#				}
+#				add_ruler_personality = benevolent_personality
+#				add_ruler_personality = midas_touched_personality
+#
+#				country_event = { id = anb_miscevents.22 } # new country setup
+#			}
+#
+#			1133 = { owner = { country_event = { id = ynn_events.22 } } } #Cannorian traders in Adbrabohvi
+#		}
+#		
+#		owner = { adventurer_spawnable_starting_bonus = { tag = H44 } }
+#	}
+#	
+#	option = { # play as the adventurers
+#		name = adventurerspawnables.1.b
+#		H44 = {
+#			event_target:spawn_province = {
+#				create_colony = 1000
+#				add_core = H44
+#			}
+#		}
+#		
+#		hidden_effect = {
+#			234 = { discover_country = H44 }
+#			H44 = {
+#				country_event = { 
+#					id = anb_miscevents.8
+#					days = 7
+#				}
+#				define_ruler = {
+#					name = "Matilda"
+#					dynasty = "Silverlocks"
+#					adm = 5
+#					dip = 4
+#					mil = 1
+#					age = 37
+#					female = yes
+#					claim = 95
+#					culture = imperial_halfling
+#				}
+#				add_ruler_personality = benevolent_personality
+#				add_ruler_personality = midas_touched_personality
+#
+#				country_event = { id = anb_miscevents.22 } # new country setup
+#			}
+#
+#			1133 = { owner = { country_event = { id = ynn_events.22 } } } #Cannorian traders in Adbrabohvi
+#		}
+#		
+#		owner = { 
+#			adventurer_spawnable_starting_bonus = { tag = H44 }
+#			switch_tag = H44
+#		}
+#	}
+#
+#	after = { 
+#		hidden_effect = { owner = { country_event = { id = anb_price.53 days = 15 } } }
+#	}
+#}
+
+country_event = { #BomjSBagetom Anbennar Submod
+	id = adventurerspawnables.302
 	title = adventurerspawnables.3.t
 	desc = adventurerspawnables.3.d
 	picture = CARIBBEAN_PIRATE_FORT_eventPicture
-	goto = spawn_province
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
+	#hidden = yes
 	
 	trigger = {
-		has_global_flag = new_world_discovered
-		current_age = age_of_reformation
-		NOT = { has_global_flag = delete_north_aelantir_region }
-		OR = {
-			epednan_expanse_region = {
-				is_empty = yes
-				#has_discovered = ROOT
-				has_empty_adjacent_province = yes
-			}
-			ynn_western_lands = {
-				is_empty = yes
-				#has_discovered = ROOT
-				has_empty_adjacent_province = yes
-			}
+		NOT = {
+			is_year = 1445
 		}
+		tag = H44
 	}
-	
-	immediate = {
-		hidden_effect = {
-			random_province = {
-				limit = {
-					OR = {
-						region = epednan_expanse_region
-						province_group = ynn_western_lands
-					}
-					is_empty = yes
-					has_empty_adjacent_province = yes
-				}
-				save_event_target_as = spawn_province
-			}
-			random_province = {
-				limit = {
-					OR = { 
-						area = nizelynn_area
-						area = atawakitsu_area
-						area = yanudahna_area
-					}
-					is_empty = yes
-					has_empty_adjacent_province = yes
-				}
-				save_event_target_as = spawn_province
-			}
-			random_province = {
-				limit = {
-					province_id = 1832 #Kamhubi
-					is_empty = yes
-					has_empty_adjacent_province = yes
-				}
-				save_event_target_as = spawn_province
-			}
-		}
-	}
-	
-	option = {
+
+	option = { 
 		name = adventurerspawnables.1.a 
-		
-		H44 = {
-			event_target:spawn_province = {
-				create_colony = 1000
-				add_core = H44
-			}
+		ai_chance = { factor = 50 }
+		234 = { discover_country = H44 }
+		hidden_effect = { country_event = { id = anb_price.53 days = 3650 random = 36500 } }
+		create_conquistador = {
+			tradition = 50
 		}
-		
-		hidden_effect = {
-			234 = { discover_country = H44 }
-			H44 = {
-				country_event = { 
-					id = anb_miscevents.8
-					days = 7
-				}
-				define_ruler = {
-					name = "Matilda"
-					dynasty = "Silverlocks"
-					adm = 5
-					dip = 4
-					mil = 1
-					age = 37
-					female = yes
-					claim = 95
-					culture = imperial_halfling
-				}
-				add_ruler_personality = benevolent_personality
-				add_ruler_personality = midas_touched_personality
-
-				country_event = { id = anb_miscevents.22 } # new country setup
-			}
-
-			1133 = { owner = { country_event = { id = ynn_events.22 } } } #Cannorian traders in Adbrabohvi
+		add_government_power = {
+			mechanic_type = anb_adventurer_unity
+			power_type = adventurer_unity 
+			value = 50
 		}
-		
-		owner = { adventurer_spawnable_starting_bonus = { tag = H44 } }
-	}
-	
-	option = { # play as the adventurers
-		name = adventurerspawnables.1.b
-		H44 = {
-			event_target:spawn_province = {
-				create_colony = 1000
-				add_core = H44
-			}
+		add_country_modifier = { 
+			name = 1444_adventurer_boost
+			duration = 7300 #20 years
 		}
-		
-		hidden_effect = {
-			234 = { discover_country = H44 }
-			H44 = {
-				country_event = { 
-					id = anb_miscevents.8
-					days = 7
-				}
-				define_ruler = {
-					name = "Matilda"
-					dynasty = "Silverlocks"
-					adm = 5
-					dip = 4
-					mil = 1
-					age = 37
-					female = yes
-					claim = 95
-					culture = imperial_halfling
-				}
-				add_ruler_personality = benevolent_personality
-				add_ruler_personality = midas_touched_personality
-
-				country_event = { id = anb_miscevents.22 } # new country setup
-			}
-
-			1133 = { owner = { country_event = { id = ynn_events.22 } } } #Cannorian traders in Adbrabohvi
-		}
-		
-		owner = { 
-			adventurer_spawnable_starting_bonus = { tag = H44 }
-			switch_tag = H44
-		}
+		add_treasury = 50
 	}
 
-	after = { 
-		hidden_effect = { owner = { country_event = { id = anb_price.53 days = 15 } } }
-	}
 }
+
 
 #Istralorian Crusaders - Ynn north
 province_event = {

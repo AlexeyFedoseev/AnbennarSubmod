@@ -1,0 +1,27 @@
+
+government = theocracy
+add_government_reform = aelantir_adventurer_reform
+government_rank = 1
+primary_culture = crownsman
+religion = regent_court
+technology_group = tech_ynnsmen
+#capital = 2854	#BomjSBagetom Anbennar Submod
+capital = 1832	#BomjSBagetom Anbennar Submod
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+1444.11.11 = {	#BomjSBagetom Anbennar Submod
+	monarch = {
+		name = "Matilda"
+		dynasty = "Silverlocks"
+		adm = 5
+		dip = 4
+		mil = 1
+		age = 37
+		female = yes
+		claim = 95
+		culture = imperial_halfling
+	}
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = midas_touched_personality
+}

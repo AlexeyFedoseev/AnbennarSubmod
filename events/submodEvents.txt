@@ -45,6 +45,59 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = the_command_submod.0
+	title = the_command_submod.0.t
+	desc = the_command_submod.0.desc
+	picture = LAND_MILITARY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = the_command_submod.0.a
+
+		set_country_flag = R62_unlocked_wolf_merc
+		custom_tooltip = the_command_submod.0.a_tt
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = the_command_submod.0.b
+
+		set_country_flag = R62_unlocked_boar_merc
+		custom_tooltip = the_command_submod.0.b_tt
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = the_command_submod.0.c
+
+		set_country_flag = R62_unlocked_lion_merc
+		custom_tooltip = the_command_submod.0.c_tt
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = the_command_submod.0.d
+
+		trigger = {
+			ai = yes
+		}
+
+		#nothing
+
+		ai_chance = {
+			factor = 100000
+		}
+	}
+}
+
 #country_event = {
 #	id = devclick_counter_initalization
 #	title = devclick_counter_initalization.t

@@ -305,7 +305,8 @@ modern_firearm_techniques = {
 		full_idea_group = quality_ideas
 	}
 	
-	infantry_power = 0.15
+	#infantry_power = 0.15	#BomjSBagetom Anbennar Submod
+	infantry_power = 0.2	#BomjSBagetom Anbennar Submod
 
 	effect = {}
 	removed_effect = {}
@@ -1935,5 +1936,28 @@ black_chamber_act = {		#BomjSBagetom Anbennar Submod
 	removed_effect = {}
 	ai_will_do = {
 		factor = 0.6
+	}
+}
+
+the_education_act = {		#BomjSBagetom Anbennar Submod
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = innovativeness_ideas
+		has_idea_group = plutocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = innovativeness_ideas
+		full_idea_group = plutocracy_ideas
+	}
+
+	infantry_shock = 0.1
+	infantry_fire = 0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.8
 	}
 }

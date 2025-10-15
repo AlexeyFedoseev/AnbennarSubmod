@@ -42,11 +42,3 @@ fixed_capital = 4208
 	#	share = -5
 	#}
 }
-
-#BomjSBagetom Anbennar Submod
-1444.11.1 = {
-	add_country_modifier = {
-		name = stagnant_dwarovar_claimer 
-		duration = 18250 # 50 years
-	}
-}

@@ -4028,6 +4028,10 @@ artifice_magic_switch_to_artificery_only_mode = {
 					days = 1
 				}
 			}
+			#BomjSBagetom Anbennar Submod
+			kill_adm_homunculus = yes
+			kill_dip_homunculus = yes
+			kill_mil_homunculus = yes
 		}
 	}
 }
@@ -4074,6 +4078,7 @@ artifice_magic_switch_to_mixed_mode = {
 			set_country_flag = magic_artificery_mixed
 
 			update_magic_study_experience_modifier = { value = -25 } #BomjSBagetom Anbennar Submod
+			remove_country_modifier = witch_king_modifier			 #BomjSBagetom Anbennar Submod
 
 			#reinviting the mages into the governement if they are gone
 			if = {

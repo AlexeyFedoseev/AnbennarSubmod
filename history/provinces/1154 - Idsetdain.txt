@@ -18,6 +18,6 @@ base_manpower = 3
 
 trade_goods = fur #BomjSBagetom Anbennar Submod
 
-native_size = 20
-native_ferocity = 6
-native_hostileness = 6
+#native_size = 20
+#native_ferocity = 6
+#native_hostileness = 6

@@ -6023,7 +6023,8 @@ dwarven_pantheon_auirikus_secondary_effects = {
 		custom_tooltip = dwarven_pantheon_ritual_has_dolurazan_tooltip
 		if = {
 			limit = { has_estate = estate_nobles }
-			add_estate_influence_modifier = { estate = estate_nobles influence = -5 duration = 1825 desc = auirikus_dolurazan_modifier }
+			#add_estate_influence_modifier = { estate = estate_nobles influence = -5 duration = 1825 desc = auirikus_dolurazan_modifier }	#BomjSBagetom Anbennar Submod
+			add_estate_influence_modifier = { estate = all influence = -10 duration = 1825 desc = auirikus_dolurazan_modifier }	#BomjSBagetom Anbennar Submod
 		}
 		else = { add_church_power = 25 }
 	}
@@ -6031,37 +6032,63 @@ dwarven_pantheon_auirikus_secondary_effects = {
 	if = {
 		limit = { has_dwarven_pantheon_deity = { deity = derzobrazan } }
 		custom_tooltip = dwarven_pantheon_ritual_has_derzobrazan_tooltip
-		if = {
-			limit = { has_estate = estate_burghers }
-			add_estate_influence_modifier = { estate = estate_burghers influence = -5 duration = 1825 desc = auirikus_derzobrazan_modifier }
-		}
+		#BomjSBagetom Anbennar Submod
+		#if = {
+		#	limit = { has_estate = estate_burghers }
+		#	add_estate_influence_modifier = { estate = estate_burghers influence = -5 duration = 1825 desc = auirikus_derzobrazan_modifier }
+		#}
 		else = { add_church_power = 25 }
+		define_advisor = {	#BomjSBagetom Anbennar Submod
+			type = army_reformer
+			skill = 2
+			cost_multiplier = 0.5			
+			religion = dwarven_pantheon
+			culture = ROOT
+		}
 	}
 	#bervinazan
 	if = {
 		limit = { has_dwarven_pantheon_deity = { deity = bervinazan } }
 		custom_tooltip = dwarven_pantheon_ritual_has_bervinazan_tooltip
-		if = {
-			limit = { has_estate = estate_church }
-			add_estate_influence_modifier = { estate = estate_church influence = -5 duration = 1825 desc = auirikus_bervinazan_modifier }
+		#BomjSBagetom Anbennar Submod
+		#if = {
+		#	limit = { has_estate = estate_church }
+		#	add_estate_influence_modifier = { estate = estate_church influence = -5 duration = 1825 desc = auirikus_bervinazan_modifier }
+		#}
+		#else = { add_church_power = 25 }
+		random_list = {	#BomjSBagetom Anbennar Submod
+			975 = {
+
+			}
+			25 = {
+				capital_scope = {
+					change_trade_goods = mithril
+				}
+			}
 		}
-		else = { add_church_power = 25 }
 	}
 	#karazlov
 	if = {
 		limit = { has_dwarven_pantheon_deity = { deity = karazlov } }
 		custom_tooltip = dwarven_pantheon_ritual_has_karazlov_tooltip
-		if = {
-			limit = { num_of_subjects = 1 }
-			random_subject_country = { add_liberty_desire = -5 }
+		#BomjSBagetom Anbennar Submod
+		#if = {
+		#	limit = { num_of_subjects = 1 }
+		#	random_subject_country = { add_liberty_desire = -5 }
+		#}
+		#else = { add_church_power = 25 }
+		capital_scope = {	#BomjSBagetom Anbennar Submod
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
 		}
-		else = { add_church_power = 25 }
 	}
 	#grimthar
 	if = {
 		limit = { has_dwarven_pantheon_deity = { deity = grimthar } }
 		custom_tooltip = dwarven_pantheon_ritual_has_grimthar_tooltip
-		create_conquistador = { tradition = 40 }
+		#create_conquistador = { tradition = 40 }	#BomjSBagetom Anbennar Submod
+		create_conquistador = { tradition = 80 }	#BomjSBagetom Anbennar Submod
 	}
 	#verdrik
 	if = {
@@ -6069,7 +6096,8 @@ dwarven_pantheon_auirikus_secondary_effects = {
 		custom_tooltip = dwarven_pantheon_ritual_has_verdrik_tooltip
 		if = {
 			limit = { OR = { current_age = age_of_absolutism current_age = age_of_revolutions } }
-			add_absolutism = 2
+			#add_absolutism = 2		#BomjSBagetom Anbennar Submod
+			add_absolutism = 15		#BomjSBagetom Anbennar Submod
 		}
 		else = { add_church_power = 25 }
 	}
@@ -6079,7 +6107,8 @@ dwarven_pantheon_auirikus_secondary_effects = {
 		custom_tooltip = dwarven_pantheon_ritual_has_thyrfen_tooltip
 		if = {
 			limit = { corruption = 0.1 }
-			add_corruption = -0.5
+			#add_corruption = -0.5		#BomjSBagetom Anbennar Submod
+			add_corruption = -2			#BomjSBagetom Anbennar Submod
 		}
 		else = { add_church_power = 25 }
 	}
@@ -6090,7 +6119,8 @@ dwarven_pantheon_auirikus_secondary_effects = {
 		define_advisor = {
 			type = trader
 			skill = 2
-			cost_multiplier = 0.75
+			#cost_multiplier = 0.75		#BomjSBagetom Anbennar Submod
+			cost_multiplier = 0.5		#BomjSBagetom Anbennar Submod
 			religion = dwarven_pantheon
 			culture = ROOT
 		}
@@ -6099,13 +6129,15 @@ dwarven_pantheon_auirikus_secondary_effects = {
 	if = {
 		limit = { has_dwarven_pantheon_deity = { deity = lorgrim } }
 		custom_tooltip = dwarven_pantheon_ritual_has_lorgrim_tooltip
-		change_government_reform_progress = 20
+		#change_government_reform_progress = 20		#BomjSBagetom Anbennar Submod
+		change_government_reform_progress = 25		#BomjSBagetom Anbennar Submod
 	}
 	#lorgram
 	if = {
 		limit = { has_dwarven_pantheon_deity = { deity = lorgram } }
 		custom_tooltip = dwarven_pantheon_ritual_has_lorgram_tooltip
-		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
+		#add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }		#BomjSBagetom Anbennar Submod
+		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }		#BomjSBagetom Anbennar Submod
 	}
 	#grobilazk
 	if = {

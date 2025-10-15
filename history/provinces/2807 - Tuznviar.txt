@@ -1,0 +1,25 @@
+
+# No previous file for Altagracia
+#BomjSBagetom Anbennar Submod
+owner = H35
+controller = H35
+add_core = H35
+
+
+culture = castellyrian		#BomjSBagetom Anbennar Submod
+religion = regent_court		#BomjSBagetom Anbennar Submod
+capital = ""
+is_city = yes				#BomjSBagetom Anbennar Submod
+
+hre = no
+
+base_tax = 3				#BomjSBagetom Anbennar Submod
+base_production = 3			#BomjSBagetom Anbennar Submod
+base_manpower = 3			#BomjSBagetom Anbennar Submod
+
+#trade_goods = unknown		#BomjSBagetom Anbennar Submod
+trade_goods = ivory			#BomjSBagetom Anbennar Submod
+
+#native_size = 22			#BomjSBagetom Anbennar Submod
+#native_ferocity = 6		#BomjSBagetom Anbennar Submod
+#native_hostileness = 6		#BomjSBagetom Anbennar Submod

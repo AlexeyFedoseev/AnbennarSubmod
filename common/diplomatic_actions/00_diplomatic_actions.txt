@@ -4191,7 +4191,9 @@ warsubsidy = {
 			} 
 		}
 		allow = { 
-			has_country_flag = hoardcurse_happened
+			FROM = {
+				has_country_flag = hoardcurse_happened
+			}
 		}
 	}
 }

@@ -1252,19 +1252,23 @@ remnant_army = {
 	global_trade_goods_size_modifier = 0.1
 	global_colonial_growth = 15
 	global_tax_income = 24
+	land_forcelimit = 10		#BomjSBagetom Anbennar Submod
 }
 
 remnant_dig_small = {
 	development_cost = -0.05
+	tax_income = 12		#BomjSBagetom Anbennar Submod
 }
 
 remnant_colonial_small = {
 	global_colonial_growth = 15
+	tax_income = 12		#BomjSBagetom Anbennar Submod
 }
 
 remnant_army_small = {
 	land_morale = 0.1
 	land_maintenance_modifier = -0.15
+	tax_income = 12		#BomjSBagetom Anbennar Submod
 }
 
 remnant_direct_investment = {

@@ -1350,21 +1350,22 @@ merc_command_wolf_army = {
 		ai = no
 		OR = { #BomjSBagetom Anbennar Submod
 			AND = {
-				mission_completed = R62_supply_the_kikunin
+				OR = {
+					has_country_flag = R62_unlocked_wolf_merc
+					mission_completed = R62_supply_the_kikunin
+				}
 				has_estate = estate_wolf_command
 			}
 			has_country_flag = ab_age1_Rajnadhaga_bonus_flag
 		}
 		
 	}
-	#cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
-	cost_modifier = 0.5		#BomjSBagetom Anbennar Submod
+	cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
 	modifier = {
 	land_attrition = -0.25
 		movement_speed = 0.1
 		reinforce_speed = 0.25
 	}
-	counts_towards_force_limit = no		#BomjSBagetom Anbennar Submod
 }
 merc_command_boar_army = {
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
@@ -1377,20 +1378,21 @@ merc_command_boar_army = {
 		ai = no 
 		OR = { #BomjSBagetom Anbennar Submod
 			AND = {
-				mission_completed = R62_supply_the_kikunin 
+				OR = {
+					has_country_flag = R62_unlocked_boar_merc
+					mission_completed = R62_supply_the_kikunin
+				}
 				has_estate = estate_boar_command 
 			}
 			has_country_flag = ab_age1_Rajnadhaga_bonus_flag
 		}
 	}
-	#cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
-	cost_modifier = 0.5		#BomjSBagetom Anbennar Submod
+	cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
 	modifier = {
 		discipline = 0.05
 		shock_damage = 0.1
 		fire_damage = 0.1
 	}
-	counts_towards_force_limit = no		#BomjSBagetom Anbennar Submod
 }
 merc_command_lion_army = {
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
@@ -1403,20 +1405,21 @@ merc_command_lion_army = {
 		ai = no 
 		OR = { #BomjSBagetom Anbennar Submod
 			AND = {
-				mission_completed = R62_supply_the_kikunin
+				OR = {
+					has_country_flag = R62_unlocked_lion_merc
+					mission_completed = R62_supply_the_kikunin
+				}
 				has_estate = estate_lion_command
 			}
 			has_country_flag = ab_age1_Rajnadhaga_bonus_flag
 		}
 		 
 	}
-	#cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
-	cost_modifier = 0.5		#BomjSBagetom Anbennar Submod
+	cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
 	modifier = {
 		land_morale = 0.2
 		recover_army_morale_speed = 0.2
 	}
-	counts_towards_force_limit = no		#BomjSBagetom Anbennar Submod
 }
 merc_command_dragon_army = {
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
@@ -1425,8 +1428,7 @@ merc_command_dragon_army = {
 	artillery_weight = 0.5
 	sprites = { asiangfx_sprite_pack } 
 	trigger = { ai = no mission_completed = R62_supply_the_kikunin has_estate = estate_dragon_command }
-	#cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
-	cost_modifier = 0.5		#BomjSBagetom Anbennar Submod
+	cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
 	modifier = {
 		backrow_artillery_damage = 0.25
 		fire_damage = 0.1
@@ -1434,7 +1436,6 @@ merc_command_dragon_army = {
 		may_recruit_female_generals = yes
 		female_advisor_chance = 0.5
 	}
-	counts_towards_force_limit = no		#BomjSBagetom Anbennar Submod
 }
 merc_command_elephant_army = {
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
@@ -1444,14 +1445,12 @@ merc_command_elephant_army = {
 	artillery_weight = 0.41
 	sprites = { indiangfx_sprite_pack } 
 	trigger = { ai = no mission_completed = R62_supply_the_kikunin has_estate = estate_elephant_command }
-	#cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
-	cost_modifier = 0.5		#BomjSBagetom Anbennar Submod
+	cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
 	modifier = {
 		shock_damage_received = -0.2
 		fire_damage_received = -0.2
 		reserves_organisation = 0.5
 	}
-	counts_towards_force_limit = no		#BomjSBagetom Anbennar Submod
 }
 merc_command_tiger_army = {
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
@@ -1461,14 +1460,12 @@ merc_command_tiger_army = {
 	artillery_weight = 0.33
 	sprites = { harimari_sprite_pack } 
 	trigger = { ai = no mission_completed = R62_supply_the_kikunin has_estate = estate_tiger_command }
-	#cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
-	cost_modifier = 0.5		#BomjSBagetom Anbennar Submod
+	cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
 	modifier = {
 		shock_damage = 0.1
 		infantry_power = 0.1
 		infantry_shock = 0.3
 	}
-	counts_towards_force_limit = no		#BomjSBagetom Anbennar Submod
 }
 
 # Giantsharks - Mountainshark MT

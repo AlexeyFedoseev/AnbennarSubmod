@@ -484,7 +484,7 @@ age_of_discovery = {
 				colony_development_boost = 1
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				# TODO  - open 2 mercs
 			}
 			ai_will_do = {
@@ -510,7 +510,7 @@ age_of_discovery = {
 				tag = A17
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				# TODO - create merc
 			}
 			ai_will_do = {
@@ -524,7 +524,7 @@ age_of_discovery = {
 				#todo - explore dalaire and no countries on colonized provinces
 			}
 			modifier = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - colonize 4 provinces in dalaire
 			}
 			ai_will_do = {
@@ -553,7 +553,7 @@ age_of_discovery = {
 				#todo - finished last quest, wex emperor, wex is not a player
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - steal emperorship
 				add_prestige = 100
 				add_power_projection = {
@@ -572,7 +572,7 @@ age_of_discovery = {
 				#todo - 200 relationship, 100 thrust with emperor
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - outher countries cant declare war on you
 				# add modifier with 
 				# development_cost = -0.2
@@ -590,7 +590,7 @@ age_of_discovery = {
 				#todo - country has 15 cities
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				# todo - clear all ae
 			}
 			ai_will_do = {
@@ -619,7 +619,7 @@ age_of_discovery = {
 				artillery_cost = -0.5
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - spawn 10 cannons
 			}
 			ai_will_do = {
@@ -658,7 +658,7 @@ age_of_discovery = {
 				tag = A77
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - enables forcemarch untill the end of the game
 			}
 			ai_will_do = {
@@ -671,7 +671,7 @@ age_of_discovery = {
 				tag = A48
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - all forts upgrades to lvl 2
 			}
 			ai_will_do = {
@@ -684,7 +684,7 @@ age_of_discovery = {
 				tag = A48
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - gain bonusses according of current focus(adm, dip, mil), only for this age
 			}
 			ai_will_do = {
@@ -697,7 +697,7 @@ age_of_discovery = {
 				tag = Z26
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#every province with old alenic culture will get 1 mil and 1 dip dev
 			}
 			ai_will_do = {
@@ -713,7 +713,7 @@ age_of_discovery = {
 				}
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - gain cores on central escann
 			}
 			ai_will_do = {
@@ -727,7 +727,7 @@ age_of_discovery = {
 				#todo - do all knights swears
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo all swears bonuses untill the end of the game
 				#also check what u dont loot same bonus twice
 			}
@@ -766,7 +766,7 @@ age_of_discovery = {
 				#todo - vampires does not exist in cannor
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo 20 morale untill the end of the game
 			}
 			ai_will_do = {
@@ -803,7 +803,7 @@ age_of_discovery = {
 				tag = F23
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				# todo - 1 flagman untill the end of the game
 			}
 			ai_will_do = {
@@ -833,7 +833,7 @@ age_of_discovery = {
 				# todo - have 200 church power
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				# todo - gain 1500 gold, -200 church power, 100 devastation in all sosednie provki
 			}
 			ai_will_do = {
@@ -847,7 +847,7 @@ age_of_discovery = {
 				#todo - start ruler alive, starting incident finished on max points
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				# todo - integrate all starting vassals
 			}
 			ai_will_do = {
@@ -874,7 +874,7 @@ age_of_discovery = {
 				#todo - 99 army traditions
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - adm advisor cost not scaled with lvl higher than 5
 			}
 			ai_will_do = {
@@ -946,7 +946,7 @@ age_of_discovery = {
 				tag = F46
 			}
 			modifier = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - discussed
 			}
 			ai_will_do = {
@@ -995,7 +995,7 @@ age_of_discovery = {
 				tag = F71
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - afted dev exploit gain 5% local missionary str on 5 years
 			}
 			ai_will_do = {
@@ -1008,7 +1008,7 @@ age_of_discovery = {
 				tag = L29
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - -2 army tradition decay untull the end of the game
 			}
 			ai_will_do = {
@@ -1021,7 +1021,7 @@ age_of_discovery = {
 				technology_group = tech_vyzemby
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - unlock sunchaser ships untill the end of the game
 			}
 			ai_will_do = {
@@ -1034,7 +1034,7 @@ age_of_discovery = {
 				tag = S84
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - devclick in gold provinces make twice
 			}
 			ai_will_do = {
@@ -1072,7 +1072,7 @@ age_of_discovery = {
 				#todo - be a raja
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - completeion raja disaster, -30 dip annex cost, annexion does not taken dip rep, +1 diplomat
 			}
 			ai_will_do = {
@@ -1126,7 +1126,7 @@ age_of_discovery = {
 				#todo - 100 professionalism
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - +1 every max general pips
 			}
 			ai_will_do = {
@@ -1152,7 +1152,7 @@ age_of_discovery = {
 				#todo - finished last quest
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				# todo - gains new ruler - HARIMAR 6-6-6 immortal strict
 			}
 			ai_will_do = {
@@ -1223,7 +1223,7 @@ age_of_discovery = {
 				#todo - generates 13 mana of every type each mounth
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - 20 cav to inf ration untill the end of the game
 			}
 			ai_will_do = {
@@ -1237,7 +1237,7 @@ age_of_discovery = {
 				#todo - no dwarf countries in west dwarowar
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo 15 morale damage until the end of the game
 			}
 			ai_will_do = {
@@ -1287,7 +1287,7 @@ age_of_discovery = {
 				#todo - have 50k mp
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - +2 vampires priveledge slots untill the end of the game, -50k mp
 			}
 			ai_will_do = {
@@ -1301,7 +1301,7 @@ age_of_discovery = {
 				#todo - have 25 prov in deepwoods
 			}
 			effect = {
-				todo_tt
+				custom_tooltip = todo_tt
 				#todo - 0.3 infantry fire, 10 inf power until the end of the game
 			}
 			ai_will_do = {

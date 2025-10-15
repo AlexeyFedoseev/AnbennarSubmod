@@ -1,0 +1,24 @@
+#BomjSBagetom Anbennar Submod
+#culture = sochar_centaur
+#religion = irdaeos_worship
+culture = khamgunai
+religion = enuuk_followers
+is_city = yes
+
+hre = no
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 4
+native_ferocity = 5
+native_hostileness = 6
+
+#trade_goods = unknown		#BomjSBagetom Anbennar Submod
+trade_goods = fur			#BomjSBagetom Anbennar Submod
+#BomjSBagetom Anbennar Submod
+owner = J52
+controller = J52
+add_core = J52
+
+capital = ""

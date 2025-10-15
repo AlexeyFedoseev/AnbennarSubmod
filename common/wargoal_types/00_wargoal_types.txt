@@ -3419,7 +3419,7 @@ humiliate_cyranvar = {
 		
 		peace_options = {
 			po_gold
-			po_humiliate
+			#po_humiliate	#BomjSBagetom Anbennar Submod
 			po_revoke_cores
 			po_trade_power
 			po_annul_treaties
@@ -3443,7 +3443,7 @@ humiliate_cyranvar = {
 		
 		peace_options = {
 			po_gold
-			po_humiliate
+			#po_humiliate	#BomjSBagetom Anbennar Submod
 			po_revoke_cores
 			po_trade_power
 			po_annul_treaties

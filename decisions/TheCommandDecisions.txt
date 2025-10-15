@@ -139,7 +139,14 @@ country_decisions = {
 	command_army_powers = {
 		potential = {
 			tag = R62
-			mission_completed = R62_supply_the_kikunin
+			#mission_completed = R62_supply_the_kikunin		#BomjSBagetom Anbennar Submod
+			OR = { 		#BomjSBagetom Anbennar Submod
+				mission_completed = R62_supply_the_kikunin	
+				has_country_flag = R62_unlocked_wolf_merc
+				has_country_flag = R62_unlocked_boar_merc
+				has_country_flag = R62_unlocked_lion_merc
+			}
+			
 		}
 		provinces_to_highlight = {
 			R62 = {

@@ -1,0 +1,23 @@
+
+# No previous file for Banten 115
+#BomjSBagetom Anbennar Submod
+#owner = R07
+#controller = R07
+#add_core = R07
+owner = R11
+controller = R11
+add_core = R11
+culture = shandibad
+religion = high_philosophy
+
+hre = no
+
+base_tax = 5
+base_production = 4
+base_manpower = 4
+
+trade_goods = dyes
+
+capital = ""
+
+is_city = yes

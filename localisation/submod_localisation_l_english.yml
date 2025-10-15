@@ -79,6 +79,30 @@
  submod_enterance_to_sir_rebellion_tt: "§R! ! ! ATTENTION ! ! !§!\nWe will §Rjoin§! to war against §YThe Command§! in 180 days"
  submod_no_enterance_to_sir_rebellion_tt: "§R! ! ! ATTENTION ! ! !§!\nWe will §Rnot join§! to war against §YThe Command§!"
 
+ the_command_submod.0.t: "The Call of the War Banner"
+ the_command_submod.0.desc: "The Grand Marchal demands new claws and fangs for his army! The forges smoke, and the drums beat in time with the forging of steel. It is time to decide which of the great command armies will lead our next wave of conquests. Choose whose steel we shall temper first!"
+ the_command_submod.0.a: "Swift Wolves"
+ the_command_submod.0.a_tt: "Unlock the mercenary company §JWolf Command Kikun§! to recruit"
+ the_command_submod.0.b: "Sturdy Boars"
+ the_command_submod.0.b_tt: "Unlock the mercenary company §JBoar Command Kikun§! to recruit"
+ the_command_submod.0.c: "Proud Lions"
+ the_command_submod.0.c_tt: "Unlock the mercenary company §JLion Command Kikun§! to recruit"
+ the_command_submod.0.d: "AI pick"
+
+ diplomat_advisor_reward: "Diplomat"
+ trader_advisor_reward: "Trader"
+ court_mage_boost: "Court Mage"
+ court_mage_submod_event.t: "$COURT_MAGE$"
+ court_mage_submod_event.desc: "Our enemies rely on brute force, but $COURT_MAGE$ wields the art to turn their might into dust. While they make their plans, a single spell from them can reduce armies to ash or a commander's mind to chaos."
+ court_mage_submod_event.a: "[Root.Adm_Advisor.GetHerHisCap] efforts will be admired throughout the nation."
+ court_mage_submod_event.b: "[Root.Adm_Advisor.GetHerHisCap] reputation will reach further than our borders."
+
+ anvelind_grimthar_modifier: "§TGrimthar's Blessing§!: Control"
+ anvelind_thyrfen_modifier: "§TThyrfen's Blessing§!: Prosperity"
+ azmirethazin_grobilazk_modifier: "§TGrobilazk's Blessing§!: Ruby"
+ 
+ feyrealm_treadmill: "Feyrealm Treadmill"
+
  #-----------------------ADVISORS----------------------
  adm_advisor_price_increase_lvl_6:0 "Additional price for the 6th level Adm. Advisor"
  adm_advisor_price_increase_lvl_7:0 "Additional price for the 7th level Adm. Advisor"

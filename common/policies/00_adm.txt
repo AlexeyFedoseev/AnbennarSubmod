@@ -612,28 +612,28 @@ the_witchcraft_act = {
 }
 
 
-the_education_act = {
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = innovativeness_ideas
-		has_idea_group = plutocracy_ideas
-	}
-	
-	allow = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = plutocracy_ideas
-	}
-
-	prestige = 0.5
-	advisor_cost = -0.1
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 0.8
-	}
-}
+#the_education_act = {		#BomjSBagetom Anbennar Submod
+#	monarch_power = ADM
+#
+#	potential = {
+#		has_idea_group = innovativeness_ideas
+#		has_idea_group = plutocracy_ideas
+#	}
+#	
+#	allow = {
+#		full_idea_group = innovativeness_ideas
+#		full_idea_group = plutocracy_ideas
+#	}
+#
+#	prestige = 0.5
+#	advisor_cost = -0.1
+#
+#	effect = {}
+#	removed_effect = {}
+#	ai_will_do = {
+#		factor = 0.8
+#	}
+#}
 
 
 policy_of_calculate_delay = {

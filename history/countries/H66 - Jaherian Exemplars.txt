@@ -37,4 +37,5 @@ capital = 2333
 	}
 	add_ruler_personality = mage_personality
 	exile_ruler_as = { name = ilvisar }
+	set_country_flag = rezankand_jaherian_landing_flag		#BomjSBagetom Anbennar Submod
 }

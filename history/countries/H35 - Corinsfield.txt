@@ -1,0 +1,26 @@
+
+government = theocracy
+add_government_reform = peasants_theocracy_reform
+government_rank = 1
+primary_culture = castellyrian	
+#religion = corinite	#BomjSBagetom Anbennar Submod
+religion = regent_court	#BomjSBagetom Anbennar Submod
+technology_group = tech_ynnsmen
+capital = 2807
+
+1000.1.1 = { set_country_flag = banned_magic }
+
+1444.11.11 = {	#BomjSBagetom Anbennar Submod
+	set_country_flag = h35_godwin_alive
+	monarch = {
+		name = "Godwin"
+		dynasty = "of Escerton"
+		adm = 4
+		dip = 5
+		mil = 2
+		birth_date = 1397.11.11
+		claim = 95
+	}
+	set_ruler_flag = h35_godwin_alive_ruler
+	clr_country_flag = h35_godwin_alive
+}

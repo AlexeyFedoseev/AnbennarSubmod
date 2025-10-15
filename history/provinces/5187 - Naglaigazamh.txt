@@ -1,0 +1,23 @@
+#BomjSBagetom Anbennar Submod
+#owner = I80
+#controller = I80
+#add_core = I80
+#add_core = I50
+owner = J50
+controller = J50
+add_core = J50
+#BomjSBagetom Anbennar Submod
+#culture = plain_centaur
+#religion = irdaeos_worship
+culture = metsamic
+religion = yukel_followers
+capital = ""
+is_city = yes
+
+hre = no
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+trade_goods = grain

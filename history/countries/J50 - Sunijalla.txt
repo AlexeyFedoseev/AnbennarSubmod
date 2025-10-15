@@ -1,0 +1,30 @@
+setup_vision = yes		#BomjSBagetom Anbennar Submod
+government = republic
+primary_culture = metsamic
+add_government_reform = lake_republic
+religion = yukel_followers
+technology_group = tech_triunic
+#capital = 5253		#BomjSBagetom Anbennar Submod
+capital = 5188		#BomjSBagetom Anbennar Submod
+fixed_capital = 5253
+1430.1.1 = {
+	add_country_modifier = {
+		name = lake_federation_member
+		duration = -1
+	}
+	set_variable = {
+		which = FederationPoints
+		value = 6
+	}
+}
+
+1444.11.11 = {	#BomjSBagetom Anbennar Submod
+	monarch = {
+		name = "Vihta"
+		dynasty = "Anbiin"
+		adm = 4
+		dip = 6
+		mil = 6
+		birth_date = 1414.11.11
+	}
+}

@@ -1073,8 +1073,178 @@ province_event = {
 
 
 #Corinsfield - Ynn East
-province_event = {
-	id = aelantirspawnables.6
+#province_event = {		#BomjSBagetom Anbennar Submod
+#	id = aelantirspawnables.6
+#	title = aelantirspawnables.6.t
+#	desc = aelantirspawnables.6.d
+#	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+#	goto = spawn_province
+#	
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		has_global_flag = new_world_discovered
+#		current_age = age_of_reformation
+#		is_religion_enabled = corinite
+#		NOT = { has_global_flag = delete_north_aelantir_region }
+#		corinsfield_area = {
+#			is_empty = yes
+#			
+#			#has_discovered = ROOT
+#			
+#			has_empty_adjacent_province = yes
+#		}
+#	}
+#
+#	
+#	immediate = {
+#		hidden_effect = {
+#			random_province = {
+#				limit = {
+#					OR = {
+#						region = veykoda_region
+#						province_group = sarda_eastern_lands
+#					}
+#					is_empty = yes
+#					
+#					has_empty_adjacent_province = yes
+#					
+#				}
+#				
+#				save_event_target_as = spawn_province
+#			}
+#			random_province = {
+#				limit = {
+#					OR = { 
+#						area = corinsfield_area
+#						area = aryamer_area
+#						area = atarylnn_area
+#						area = arverynn_area
+#					}
+#					NOT = { has_terrain = woods } #it's CorinsFIELD
+#					is_empty = yes
+#					
+#					has_empty_adjacent_province = yes
+#					
+#				}
+#				
+#				save_event_target_as = spawn_province
+#			}
+#
+#			random_province = {
+#				limit = {
+#					province_id = 2807 #Tuznviar
+#					is_empty = yes
+#					
+#					has_empty_adjacent_province = yes
+#				}
+#				
+#				save_event_target_as = spawn_province
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = aelantirspawnables.1.a 
+#		
+#		H35 = {
+#			event_target:spawn_province = {
+#				create_colony = 1000
+#				add_core = H35
+#			}
+#		}
+#		
+#		hidden_effect = {
+#			H35 = {
+#				country_event = { 
+#					id = anb_miscevents.7
+#					days = 7
+#				}
+#				country_event = { id = anb_miscevents.22 } # new country setup
+#			}
+#
+#			1133 = { owner = { country_event = { id = ynn_events.22 } } } #Cannorian traders in Adbrabohvi
+#		}
+#		
+#		owner = {
+#			adventurer_spawnable_starting_bonus = { tag = H35 }
+#		}
+#		hidden_effect = {
+#			H35 = {
+#				set_country_flag = h35_godwin_alive
+#				define_ruler = {
+#					name = "Godwin"
+#					dynasty = "of Escerton"
+#					adm = 4
+#					dip = 5
+#					mil = 2
+#					age = 47
+#					claim = 95
+#				}
+#				set_ruler_flag = h35_godwin_alive_ruler
+#				clr_country_flag = h35_godwin_alive
+#			}
+#		}
+#	}
+#	
+#	option = { # play as the settlers
+#		name = aelantirspawnables.1.b
+#		H35 = {
+#			event_target:spawn_province = {
+#				create_colony = 1000
+#				add_core = H35
+#			}
+#		}
+#		
+#		hidden_effect = {
+#			H35 = {
+#				country_event = { 
+#					id = anb_miscevents.7
+#					days = 7
+#				}
+#				country_event = { id = anb_miscevents.22 } # new country setup
+#			}
+#
+#			1133 = { owner = { country_event = { id = ynn_events.22 } } } #Cannorian traders in Adbrabohvi
+#		}
+#		
+#		owner = { 
+#			adventurer_spawnable_starting_bonus = { tag = H35 }
+#			switch_tag = H35
+#		}
+#		H35 = {
+#			country_event = {
+#				id = flavour_corinsfield.87
+#				days = 10
+#			}
+#			hidden_effect = {
+#				set_country_flag = h35_godwin_alive
+#				define_ruler = {
+#					name = "Godwin"
+#					dynasty = "of Escerton"
+#					adm = 4
+#					dip = 5
+#					mil = 2
+#					age = 47
+#					claim = 95
+#				}
+#				set_ruler_flag = h35_godwin_alive_ruler
+#				clr_country_flag = h35_godwin_alive
+#			}
+#		}
+#	}
+#	
+#	after = { 
+#		hidden_effect = {  
+#			owner = {  country_event = { id = anb_price.53 days = 105 } } 
+#		}
+#	}
+#}
+
+#BomjSBagetom Anbennar Submod
+country_event = {
+	id = aelantirspawnables.602
 	title = aelantirspawnables.6.t
 	desc = aelantirspawnables.6.d
 	picture = CARIBBEAN_PIRATE_FORT_eventPicture
@@ -1082,162 +1252,35 @@ province_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	trigger = {
-		has_global_flag = new_world_discovered
-		current_age = age_of_reformation
-		is_religion_enabled = corinite
-		NOT = { has_global_flag = delete_north_aelantir_region }
-		corinsfield_area = {
-			is_empty = yes
-			
-			#has_discovered = ROOT
-			
-			has_empty_adjacent_province = yes
+		NOT = {
+			is_year = 1445
 		}
-	}
-
-	
-	immediate = {
-		hidden_effect = {
-			random_province = {
-				limit = {
-					OR = {
-						region = veykoda_region
-						province_group = sarda_eastern_lands
-					}
-					is_empty = yes
-					
-					has_empty_adjacent_province = yes
-					
-				}
-				
-				save_event_target_as = spawn_province
-			}
-			random_province = {
-				limit = {
-					OR = { 
-						area = corinsfield_area
-						area = aryamer_area
-						area = atarylnn_area
-						area = arverynn_area
-					}
-					NOT = { has_terrain = woods } #it's CorinsFIELD
-					is_empty = yes
-					
-					has_empty_adjacent_province = yes
-					
-				}
-				
-				save_event_target_as = spawn_province
-			}
-
-			random_province = {
-				limit = {
-					province_id = 2807 #Tuznviar
-					is_empty = yes
-					
-					has_empty_adjacent_province = yes
-				}
-				
-				save_event_target_as = spawn_province
-			}
-		}
+		tag = H35
 	}
 	
 	option = {
 		name = aelantirspawnables.1.a 
-		
-		H35 = {
-			event_target:spawn_province = {
-				create_colony = 1000
-				add_core = H35
-			}
+		ai_chance = { factor = 50 }
+		hidden_effect = { country_event = { id = anb_price.53 days = 3650 random = 36500 } }
+		create_conquistador = {
+			tradition = 50
 		}
-		
+		create_explorer = {
+			tradition = 50
+		}
+		add_country_modifier = { 
+			name = 1444_adventurer_sea_boost
+			duration = 7300 #20 years
+		}
+		add_treasury = 50
 		hidden_effect = {
-			H35 = {
-				country_event = { 
-					id = anb_miscevents.7
-					days = 7
-				}
-				country_event = { id = anb_miscevents.22 } # new country setup
+			country_event = { #new culture event, 100+30 random years
+				id = colonial_culture.1
+				days = 36500
+				random = 10950
 			}
-
-			1133 = { owner = { country_event = { id = ynn_events.22 } } } #Cannorian traders in Adbrabohvi
-		}
-		
-		owner = {
-			adventurer_spawnable_starting_bonus = { tag = H35 }
-		}
-		hidden_effect = {
-			H35 = {
-				set_country_flag = h35_godwin_alive
-				define_ruler = {
-					name = "Godwin"
-					dynasty = "of Escerton"
-					adm = 4
-					dip = 5
-					mil = 2
-					age = 47
-					claim = 95
-				}
-				set_ruler_flag = h35_godwin_alive_ruler
-				clr_country_flag = h35_godwin_alive
-			}
-		}
-	}
-	
-	option = { # play as the settlers
-		name = aelantirspawnables.1.b
-		H35 = {
-			event_target:spawn_province = {
-				create_colony = 1000
-				add_core = H35
-			}
-		}
-		
-		hidden_effect = {
-			H35 = {
-				country_event = { 
-					id = anb_miscevents.7
-					days = 7
-				}
-				country_event = { id = anb_miscevents.22 } # new country setup
-			}
-
-			1133 = { owner = { country_event = { id = ynn_events.22 } } } #Cannorian traders in Adbrabohvi
-		}
-		
-		owner = { 
-			adventurer_spawnable_starting_bonus = { tag = H35 }
-			switch_tag = H35
-		}
-		H35 = {
-			country_event = {
-				id = flavour_corinsfield.87
-				days = 10
-			}
-			hidden_effect = {
-				set_country_flag = h35_godwin_alive
-				define_ruler = {
-					name = "Godwin"
-					dynasty = "of Escerton"
-					adm = 4
-					dip = 5
-					mil = 2
-					age = 47
-					claim = 95
-				}
-				set_ruler_flag = h35_godwin_alive_ruler
-				clr_country_flag = h35_godwin_alive
-			}
-		}
-	}
-	
-	after = { 
-		hidden_effect = {  
-			owner = {  country_event = { id = anb_price.53 days = 105 } } 
 		}
 	}
 }

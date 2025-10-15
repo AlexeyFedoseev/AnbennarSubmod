@@ -31,6 +31,18 @@ the_draft_used = {
 
 }
 
+diplomat_advisor_reward = {
+	country_diplomatic_power = 1
+}
+
+trader_advisor_reward = {
+	global_trade_power = 0.1
+}
+
+court_mage_boost = {
+	all_power_cost = -0.025
+}
+
 cyranvar_draft_used = {
 
 }
@@ -117,6 +129,12 @@ daxugo_disaster_reward_3 = {
 	global_trade_goods_size_modifier = 0.1
 }
 
+feyrealm_treadmill = {
+	picture = "portal_nexus"
+	local_friendly_movement_speed = 10
+	local_hostile_movement_speed = 10
+}
+
 interest_bankruptcy_penalty_1 = {
 	interest = 0.5
 }
@@ -157,16 +175,36 @@ interest_bankruptcy_penalty_10 = {
 	interest = 5
 }
 
-cultural_shift_penalty_1 = { }
-cultural_shift_penalty_2 = { }
-cultural_shift_penalty_3 = { }
-cultural_shift_penalty_4 = { }
-cultural_shift_penalty_5 = { }
-cultural_shift_penalty_6 = { }
-cultural_shift_penalty_7 = { }
-cultural_shift_penalty_8 = { }
-cultural_shift_penalty_9 = { }
-cultural_shift_penalty_10 = { }
+cultural_shift_penalty_1 = {
+
+}
+cultural_shift_penalty_2 = { 
+	governing_capacity_modifier = -0.1
+}
+cultural_shift_penalty_3 = { 
+	governing_capacity_modifier = -0.2
+}
+cultural_shift_penalty_4 = { 
+	governing_capacity_modifier = -0.3
+}
+cultural_shift_penalty_5 = { 
+	governing_capacity_modifier = -0.4
+}
+cultural_shift_penalty_6 = { 
+	governing_capacity_modifier = -0.5
+}
+cultural_shift_penalty_7 = { 
+	governing_capacity_modifier = -0.6
+}
+cultural_shift_penalty_8 = { 
+	governing_capacity_modifier = -0.7
+}
+cultural_shift_penalty_9 = { 
+	governing_capacity_modifier = -0.8
+}
+cultural_shift_penalty_10 = { 
+	governing_capacity_modifier = -0.9
+}
 #---------------------AGES-STUFF--------------------
 ab_age_endurance_1 = {
 	defensiveness = 0.15

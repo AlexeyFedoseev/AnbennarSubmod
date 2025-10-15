@@ -2056,7 +2056,8 @@ mercenary_ideas = { #1.35
 		infantry_power = 0.1
 	}
 	organised_mercenary_recruitment = { 
-		mercenary_manpower = 0.3
+		#mercenary_manpower = 0.3	#BomjSBagetom Anbennar Submod
+		mercenary_manpower = 0.1	#BomjSBagetom Anbennar Submod
 		allow_mercenary_drill = yes
 		#Anbennar
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }

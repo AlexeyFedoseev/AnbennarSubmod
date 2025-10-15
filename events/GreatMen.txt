@@ -1,0 +1,2523 @@
+# Philosopher
+country_event = {
+	id = 4021
+	title = "EVTNAME4021"
+	desc = "EVTDESC4021"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		philosopher = 3
+		#NOT = { has_country_flag = philosopher }		#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = philosopher
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = philosopher
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4021"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		add_prestige_or_monarch_power = {	#BomjSBagetom Anbennar Submod
+			amount = 100
+		}
+		set_country_flag = philosopher
+	}
+		
+	option = {
+		name = "EVTOPTB4021"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		add_prestige_or_monarch_power = {	#BomjSBagetom Anbennar Submod
+			amount = 100
+		}
+		set_country_flag = philosopher
+	}
+}
+
+# Natural Scientist
+country_event = {
+	id = 4022
+	title = "EVTNAME4022"
+	desc = "EVTDESC4022"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		natural_scientist = 3
+		#NOT = { has_country_flag = natural_scientist }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = natural_scientist
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = natural_scientist
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4022"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		add_stability_or_adm_power = yes
+		#add_meritocracy_effect = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "scientific_evolution"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "scientific_evolution"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "scientific_evolution"
+				duration = 2190
+			}
+		}
+		set_country_flag = natural_scientist
+	}
+
+	option = {
+		name = "EVTOPTB4022"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		add_prestige = 50
+		#add_meritocracy_effect = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "scientific_evolution"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "scientific_evolution"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "scientific_evolution"
+				duration = 2190
+			}
+		}
+		set_country_flag = natural_scientist
+	}
+}
+
+
+# Army Reformer
+country_event = {
+	id = 4023
+	title = "EVTNAME4023"
+	desc = "EVTDESC4023"
+	picture = REFORM_eventPicture
+	
+	trigger = {
+		army_reformer = 3
+		#NOT = { has_country_flag = army_reformer }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = army_reformer
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = army_reformer
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4023"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "land_investment"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "land_investment"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "land_investment"
+				duration = 2190
+			}
+		}
+		set_country_flag = army_reformer
+	}
+
+	option = {
+		name = "EVTOPTB4023"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "land_investment"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "land_investment"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "land_investment"
+				duration = 2190
+			}
+		}
+		set_country_flag = army_reformer
+	}
+}
+
+# Naval reformer
+country_event = {
+	id = 4024
+	title = "EVTNAME4024"
+	desc = "EVTDESC4024"
+	picture = REFORM_eventPicture
+	
+	trigger = {
+		naval_reformer = 3
+		#NOT = { has_country_flag = naval_reformer }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = naval_reformer
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = naval_reformer
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4024"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "naval_investment"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "naval_investment"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "naval_investment"
+				duration = 2190
+			}
+		}
+		set_country_flag = naval_reformer
+	}
+		
+	option = {
+		name = "EVTOPTB4024"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "naval_investment"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "naval_investment"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "naval_investment"
+				duration = 2190
+			}
+		}
+		set_country_flag = naval_reformer
+	}
+}
+
+
+# Artist
+country_event = {
+	id = 4025
+	title = "EVTNAME4025"
+	desc = "EVTDESC4025"
+	picture = PAINTER_ARTIST_eventPicture
+	
+	trigger = {
+		artist = 3
+		#NOT = { has_country_flag = artist }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = artist
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = artist
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4025"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "reduced_stability_cost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "reduced_stability_cost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "reduced_stability_cost"
+				duration = 2190
+			}
+		}
+		set_country_flag = artist
+	}
+
+	option = {
+		name = "EVTOPTB4025"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "reduced_stability_cost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "reduced_stability_cost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "reduced_stability_cost"
+				duration = 2190
+			}
+		}
+		set_country_flag = artist
+	}
+}
+
+
+# Treasurer
+country_event = {
+	id = 4026
+	title = "EVTNAME4026"
+	desc = "EVTDESC4026"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		treasurer = 3
+		#NOT = { has_country_flag = treasurer }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = treasurer
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = treasurer
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+	
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4026"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "trading_investment"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "trading_investment"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "trading_investment"
+				duration = 2190
+			}
+		}
+		set_country_flag = treasurer
+	}
+		
+	option = {
+		name = "EVTOPTB4026"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "trading_investment"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "trading_investment"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "trading_investment"
+				duration = 2190
+			}
+		}
+		set_country_flag = treasurer
+	}
+}
+
+
+# Theologian
+country_event = {
+	id = 4027
+	title = "EVTNAME4027"
+	desc = "EVTDESC4027"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		theologian = 3
+		#NOT = { has_country_flag = theologian }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = theologian
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = theologian
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4027"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "theology"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "theology"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "theology"
+				duration = 2190
+			}
+		}
+		set_country_flag = theologian
+	}
+		
+	option = {
+		name = "EVTOPTB4027"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "theology"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "theology"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "theology"
+				duration = 2190
+			}
+		}	
+		set_country_flag = theologian
+	}
+}
+
+
+# Statesman
+country_event = {
+	id = 4028
+	title = "EVTNAME4028"
+	desc = "EVTDESC4028"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		statesman = 3
+		#NOT = { has_country_flag = statesman }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = statesman
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = statesman
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4028"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "government_investment"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "government_investment"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "government_investment"
+				duration = 2190
+			}
+		}
+		set_country_flag = statesman
+	}
+		
+	option = {
+		name = "EVTOPTB4028"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "government_investment"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "government_investment"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "government_investment"
+				duration = 2190
+			}
+		}
+		set_country_flag = statesman
+	}
+}
+
+
+# Colonial Governor
+country_event = {
+	id = 4029
+	title = "EVTNAME4029"
+	desc = "EVTDESC4029"
+	picture = ADVISOR_eventPicture
+	
+	
+	trigger = {
+		colonial_governor = 3
+		#NOT = { has_country_flag = colonial_governor }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = colonial_governor
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = colonial_governor
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4029"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "more_tariffs"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "more_tariffs"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "more_tariffs"
+				duration = 2190
+			}
+		}
+		set_country_flag = colonial_governor
+	}
+
+	option = {
+		name = "EVTOPTB4029"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "more_tariffs"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "more_tariffs"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "more_tariffs"
+				duration = 2190
+			}
+		}
+		set_country_flag = colonial_governor
+	}
+}
+
+
+# Spymaster
+country_event = {
+	id = 4030
+	title = "EVTNAME4030"
+	desc = "EVTDESC4030"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		spymaster = 3
+		#NOT = { has_country_flag = spymaster }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = spymaster
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = spymaster
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4030"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "spy"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "spy"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "spy"
+				duration = 2190
+			}
+		}
+		set_country_flag = spymaster		
+	}
+		
+	option = {
+		name = "EVTOPTB4030"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "spy"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "spy"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "spy"
+				duration = 2190
+			}
+		}
+		set_country_flag = spymaster		
+	}
+}
+
+
+# Diplomat
+country_event = {
+	id = 4031
+	title = "EVTNAME4031"
+	desc = "EVTDESC4031"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		diplomat = 3
+		#NOT = { has_country_flag = diplomat }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = diplomat
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = diplomat
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4031"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_dip_power = 50			#BomjSBagetom Anbennar Submod
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "diplomat_advisor_reward"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "diplomat_advisor_reward"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "diplomat_advisor_reward"
+				duration = 2190
+			}
+		}
+		set_country_flag = diplomat
+	}
+		
+	option = {
+		name = "EVTOPTB4031"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_dip_power = 50			#BomjSBagetom Anbennar Submod
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "diplomat_advisor_reward"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "diplomat_advisor_reward"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "diplomat_advisor_reward"
+				duration = 2190
+			}
+		}
+		set_country_flag = diplomat
+	}
+}
+
+# Trader
+country_event = {
+	id = 4032
+	title = "EVTNAME4032"
+	desc = "EVTDESC4032"
+	picture = ADVISOR_eventPicture
+	
+	
+	trigger = {
+		trader = 3
+		#NOT = { has_country_flag = trader }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = trader
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = trader
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4032"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_dip_power = 25			#BomjSBagetom Anbennar Submod
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "trader_advisor_reward"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "trader_advisor_reward"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "trader_advisor_reward"
+				duration = 2190
+			}
+		}
+		set_country_flag = trader
+	}
+
+	option = {
+		name = "EVTOPTB4032"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_dip_power = 25			#BomjSBagetom Anbennar Submod
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "trader_advisor_reward"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "trader_advisor_reward"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "trader_advisor_reward"
+				duration = 2190
+			}
+		}
+		set_country_flag = trader
+	}
+}
+
+# Master of Mint
+country_event = {
+	id = 4104
+	title = "EVTNAME4104"
+	desc = "EVTDESC4104"
+	picture = ADVISOR_eventPicture	
+	
+	trigger = {
+		master_of_mint = 3
+		#NOT = { has_country_flag = master_of_mint }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = master_of_mint
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = master_of_mint
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4104"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		add_inflation = -2		#BomjSBagetom Anbennar Submod
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "master_of_mint_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "master_of_mint_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "master_of_mint_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = master_of_mint
+	}
+		
+	option = {
+		name = "EVTOPTB4104"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		add_inflation = -2		#BomjSBagetom Anbennar Submod
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "master_of_mint_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "master_of_mint_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "master_of_mint_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = master_of_mint
+	}
+}
+
+
+# navigator
+country_event = {
+	id = 4110
+	title = "EVTNAME4110"
+	desc = "EVTDESC4110"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		navigator = 3
+		#NOT = { has_country_flag = navigator }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = navigator
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = navigator
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4110"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "navigator_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "navigator_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "navigator_boost"
+				duration = 2190
+			}
+		}	
+		set_country_flag = navigator
+	}
+		
+	option = {
+		name = "EVTOPTB4110"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "navigator_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "navigator_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "navigator_boost"
+				duration = 2190
+			}
+		}	
+		set_country_flag = navigator
+	}
+}
+
+
+# grand_captain
+country_event = {
+	id = 4114
+	title = "EVTNAME4114"
+	desc = "EVTDESC4114"
+	picture = ADVISOR_eventPicture	
+	
+	trigger = {
+		grand_captain = 3
+		#NOT = { has_country_flag = grand_captain }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = grand_captain
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = grand_captain
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4114"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "grand_captain_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "grand_captain_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "grand_captain_boost"
+				duration = 2190
+			}
+		}	
+		set_country_flag = grand_captain
+	}
+
+	option = {
+		name = "EVTOPTB4114"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "grand_captain_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "grand_captain_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "grand_captain_boost"
+				duration = 2190
+			}
+		}	
+		set_country_flag = grand_captain
+	}
+}
+
+
+# army_organiser
+country_event = {
+	id = 4115
+	title = "EVTNAME4115"
+	desc = "EVTDESC4115"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		army_organiser = 3
+		#NOT = { has_country_flag = army_organiser }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = army_organiser
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = army_organiser
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4115"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes		
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "army_organiser_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "army_organiser_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "army_organiser_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = army_organiser
+	}
+
+	option = {
+		name = "EVTOPTB4115"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "army_organiser_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "army_organiser_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "army_organiser_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = army_organiser
+	}
+}
+
+
+# commandant
+country_event = {
+	id = 4116
+	title = "EVTNAME4116"
+	desc = "EVTDESC4116"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		commandant = 3
+		#NOT = { has_country_flag = commandant }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = commandant
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = commandant
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4116"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes		
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "commandant_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "commandant_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "commandant_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = commandant
+	}
+
+	option = {
+		name = "EVTOPTB4116"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "commandant_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "commandant_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "commandant_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = commandant
+	}
+}
+
+
+# Quartermaster
+country_event = {
+	id = 4117
+	title = "EVTNAME4117"
+	desc = "EVTDESC4117"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		quartermaster = 3
+		#NOT = { has_country_flag = quartermaster }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = quartermaster
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = quartermaster
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4117"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes	
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "quartermaster_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "quartermaster_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "quartermaster_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = quartermaster
+	}
+
+	option = {
+		name = "EVTOPTB4117"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "quartermaster_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "quartermaster_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "quartermaster_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = quartermaster
+	}
+}
+
+
+# Recruitmaster
+country_event = {
+	id = 4118
+	title = "EVTNAME4118"
+	desc = "EVTDESC4118"
+	picture = ADVISOR_eventPicture	
+	
+	trigger = {
+		recruitmaster = 3
+		#NOT = { has_country_flag = recruitmaster }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = recruitmaster
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = recruitmaster
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4118"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes	
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "recruitmaster_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "recruitmaster_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "recruitmaster_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = recruitmaster
+	}
+		
+	option = {
+		name = "EVTOPTB4118"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "recruitmaster_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "recruitmaster_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "recruitmaster_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = recruitmaster
+	}
+}
+
+
+# Fortification Expert
+country_event = {
+	id = 4119
+	title = "EVTNAME4119"
+	desc = "EVTDESC4119"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		fortification_expert = 3
+		#NOT = { has_country_flag = fortification_expert }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = fortification_expert
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = fortification_expert
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4119"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes		
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "fortification_expert_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "fortification_expert_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "fortification_expert_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = fortification_expert
+	}
+		
+	option = {
+		name = "EVTOPTB4119"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "fortification_expert_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "fortification_expert_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "fortification_expert_boost"
+				duration = 2190
+			}
+		}
+		se
+		set_country_flag = fortification_expert
+	}
+}
+
+
+# Inquisitor
+country_event = {
+	id = 4120
+	title = "EVTNAME4120"
+	desc = "EVTDESC4120"
+	picture = ADVISOR_eventPicture	
+	
+	trigger = {
+		inquisitor = 3
+		#NOT = { has_country_flag = inquisitor }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = inquisitor
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = inquisitor
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4120"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes		
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "inquisitor_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "inquisitor_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "inquisitor_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = inquisitor
+	}
+		
+	option = {
+		name = "EVTOPTB4120"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		#add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		#	name = "inquisitor_boost"
+		#	duration = 2190
+		#}
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "inquisitor_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "inquisitor_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = inquisitor
+	}
+}
+
+#BomjSBagetom Anbennar Submod
+# Court Mage
+country_event = {
+	id = court_mage_submod_event
+	title = court_mage_submod_event.t
+	desc = court_mage_submod_event.desc
+	picture = MAGIC_STUDY_AND_RELAX_eventPicture	
+	
+	trigger = {
+		court_mage = 3
+		#NOT = { has_country_flag = court_mage }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = court_mage
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = court_mage
+				days = 36500
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = court_mage_submod_event.a	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "court_mage_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "court_mage_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = court_mage
+	}
+		
+	option = {
+		name = court_mage_submod_event.b	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		if = {
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "court_mage_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "court_mage_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = court_mage
+	}
+}

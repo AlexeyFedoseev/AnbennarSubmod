@@ -17,6 +17,7 @@ country_decisions = {
 			capital_scope = { continent = europe }
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = adventurer_derived_government }		#BomjSBagetom Anbennar Submod
+			NOT = { has_country_flag = feudal_escann_kingdom }				#BomjSBagetom Anbennar Submod
 		}
 		provinces_to_highlight = {
 			region = west_castanor_region
@@ -94,6 +95,8 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			capital_scope = { continent = europe }
 			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = adventurer_derived_government }		#BomjSBagetom Anbennar Submod
+			NOT = { has_country_flag = feudal_escann_kingdom }				#BomjSBagetom Anbennar Submod
 		}
 		provinces_to_highlight = {
 			region = inner_castanor_region
@@ -167,6 +170,8 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			capital_scope = { continent = europe }
 			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = adventurer_derived_government }		#BomjSBagetom Anbennar Submod
+			NOT = { has_country_flag = feudal_escann_kingdom }				#BomjSBagetom Anbennar Submod
 		}
 		provinces_to_highlight = {
 			region = south_castanor_region

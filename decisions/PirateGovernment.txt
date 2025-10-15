@@ -24,6 +24,7 @@ country_decisions = {
 							NOT = {
 								AND = {
 									has_port = yes
+									province_is_on_an_island = yes
 									#OR = {
 										#region = maghreb_region
 										#province_is_on_an_island = yes
@@ -84,7 +85,10 @@ country_decisions = {
 				NOT = { num_of_subjects = 1 }
 				#NOT = { num_of_cities = 7 }	#BomjSBagetom Anbennar Submod
 				all_owned_province = {		#BomjSBagetom Anbennar Submod
-					has_port = yes
+					OR = {
+						has_port = yes
+						province_is_on_an_island = yes
+					}
 				}
 			}
 			is_bankrupt = no

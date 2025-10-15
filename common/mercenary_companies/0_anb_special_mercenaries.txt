@@ -93,7 +93,8 @@ merc_patrician_guard = {
 
 # The Golden Shield Company
 merc_verkalgulan_the_golden_shield_company = {
-    regiments_per_development = 0.02
+    #regiments_per_development = 0.02		#BomjSBagetom Anbennar Submod
+	regiments_per_development = 0.05		#BomjSBagetom Anbennar Submod
     home_province = 2915 #Hero's Vale
 	cavalry_weight = 0
     artillery_weight = 0.5
@@ -126,13 +127,14 @@ merc_verkalgulan_the_golden_shield_company = {
 	modifier = {
 		infantry_power = 0.2
 		shock_damage_received = -0.1
-		reinforce_speed = -0.5
+		#reinforce_speed = -0.5		#BomjSBagetom Anbennar Submod
 	}
 }
 
 # The Citadel Cannonneers
 merc_verkalgulan_the_citadel_cannonneers = {
-    regiments_per_development = 0.02
+    #regiments_per_development = 0.02		#BomjSBagetom Anbennar Submod
+	regiments_per_development = 0.05		#BomjSBagetom Anbennar Submod
     home_province = 2915 #Hero's Vale
 	cavalry_weight = 0
     artillery_weight = 0.7
@@ -165,13 +167,14 @@ merc_verkalgulan_the_citadel_cannonneers = {
 	modifier = {
 		backrow_artillery_damage = 0.2
 		fire_damage = 0.1
-		reinforce_speed = -0.5
+		#reinforce_speed = -0.5		#BomjSBagetom Anbennar Submod
 	}
 }
 
 # The King's Gate Banners
 merc_verkalgulan_the_kings_gate_banners = {
-    regiments_per_development = 0.03
+    #regiments_per_development = 0.03		#BomjSBagetom Anbennar Submod
+	regiments_per_development = 0.05		#BomjSBagetom Anbennar Submod
     home_province = 2915 #Hero's Vale
 	cavalry_weight = 0
     artillery_weight = 0.5
@@ -204,7 +207,7 @@ merc_verkalgulan_the_kings_gate_banners = {
 	modifier = {
 		land_morale = 0.1
 		discipline = 0.05
-		reinforce_speed = -0.5
+		#reinforce_speed = -0.5		#BomjSBagetom Anbennar Submod
 	}
 }
 
