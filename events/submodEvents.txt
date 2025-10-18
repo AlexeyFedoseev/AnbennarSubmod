@@ -1,15 +1,68 @@
 namespace = submod_custom_events
 
 country_event = {
-	id = sale_titles_event.1
-	title = sale_titles_event.1.t
-	desc = sale_titles_event.1.d
+	id = submod_custom_events.0
+	title = submod_custom_events.0.t
+	desc = submod_custom_events.0.desc
+	picture = LAND_MILITARY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = submod_custom_events.0.a
+
+		set_country_flag = R62_unlocked_wolf_merc
+		custom_tooltip = submod_custom_events.0.a_tt
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = submod_custom_events.0.b
+
+		set_country_flag = R62_unlocked_boar_merc
+		custom_tooltip = submod_custom_events.0.b_tt
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = submod_custom_events.0.c
+
+		set_country_flag = R62_unlocked_lion_merc
+		custom_tooltip = submod_custom_events.0.c_tt
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = submod_custom_events.0.d
+
+		trigger = {
+			ai = yes
+		}
+
+		#nothing
+
+		ai_chance = {
+			factor = 1000
+		}
+	}
+}
+
+country_event = {
+	id = submod_custom_events.1
+	title = submod_custom_events.1.t
+	desc = submod_custom_events.1.desc
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = sale_titles_event.1.a
+		name = submod_custom_events.1.a
 		
 		add_country_modifier = {
 			name = "sale_of_titles_tax_bonus"
@@ -18,7 +71,7 @@ country_event = {
 	}
 
     option = {
-		name = sale_titles_event.1.b
+		name = submod_custom_events.1.b
 		
 		add_country_modifier = {
 			name = "sale_of_titles_production_bonus"
@@ -27,7 +80,7 @@ country_event = {
 	}
 
     option = {
-		name = sale_titles_event.1.c
+		name = submod_custom_events.1.c
 		
 		add_country_modifier = {
 			name = "sale_of_titles_trade_bonus"
@@ -36,7 +89,7 @@ country_event = {
 	}
 
     option = {
-		name = sale_titles_event.1.e
+		name = submod_custom_events.1.d
 		
 		add_country_modifier = {
 			name = "sale_of_titles_goods_bonus"
@@ -46,57 +99,114 @@ country_event = {
 }
 
 country_event = {
-	id = the_command_submod.0
-	title = the_command_submod.0.t
-	desc = the_command_submod.0.desc
-	picture = LAND_MILITARY_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = the_command_submod.0.a
-
-		set_country_flag = R62_unlocked_wolf_merc
-		custom_tooltip = the_command_submod.0.a_tt
-
-		ai_chance = {
-			factor = 1
+	id = submod_custom_events.2
+	title = submod_custom_events.2.t
+	desc = submod_custom_events.2.desc
+	picture = MAGIC_STUDY_AND_RELAX_eventPicture	
+	
+	trigger = {
+		court_mage = 3
+		#NOT = { has_country_flag = court_mage }	#BomjSBagetom Anbennar Submod
+		if = {	#BomjSBagetom Anbennar Submod
+			limit = {
+				administrative_ideas = 7
+			}
+			had_country_flag = {
+				flag = court_mage
+				days = 18250
+			}
+		}
+		else = {
+			had_country_flag = {
+				flag = court_mage
+				days = 36500
+			}
 		}
 	}
-	option = {
-		name = the_command_submod.0.b
-
-		set_country_flag = R62_unlocked_boar_merc
-		custom_tooltip = the_command_submod.0.b_tt
-
-		ai_chance = {
-			factor = 1
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
 		}
 	}
+	
 	option = {
-		name = the_command_submod.0.c
-
-		set_country_flag = R62_unlocked_lion_merc
-		custom_tooltip = the_command_submod.0.c_tt
-
+		name = submod_custom_events.2.a	# His efforts will be admired throughout the nation
 		ai_chance = {
-			factor = 1
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
 		}
+		#add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "court_mage_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "court_mage_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = court_mage
 	}
+		
 	option = {
-		name = the_command_submod.0.d
-
-		trigger = {
-			ai = yes
-		}
-
-		#nothing
-
+		name = submod_custom_events.2.b	# His reputation will reach further than our borders
 		ai_chance = {
-			factor = 100000
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
 		}
+		#add_meritocracy_effect = yes
+		add_prestige = 50
+		if = {
+			limit = {
+				administrative_ideas = 7
+			}
+			add_country_modifier = {
+				name = "court_mage_boost"
+				duration = 3650
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "court_mage_boost"
+				duration = 2190
+			}
+		}
+		set_country_flag = court_mage
 	}
 }
+
+
+
 
 #country_event = {
 #	id = devclick_counter_initalization

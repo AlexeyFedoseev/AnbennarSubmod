@@ -3868,9 +3868,14 @@ slave_raid_pillage_capital_effect = {
 		if = {
 			limit = {
 				has_country_flag = enabled_capital_slave_raid
-				had_country_flag = {	#BomjSBagetom Anbennar Submod
-					flag = slave_raid_pillaged_capital_flag
-					days = 1825
+				OR = {	#BomjSBagetom Anbennar Submod
+					had_country_flag = {	
+						flag = slave_raid_pillaged_capital_flag
+						days = 1825
+					}
+					NOT = {
+						has_country_flag = slave_raid_pillaged_capital_flag
+					}
 				}
 			}
 			add_yearly_manpower = 1

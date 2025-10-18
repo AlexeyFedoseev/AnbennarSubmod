@@ -1489,7 +1489,7 @@ command_revanchism = {
 	army_tradition = 1
 	navy_tradition = 1
 	global_unrest = -5
-	interest = -1
+	#interest = -1		#BomjSBagetom Anbennar Submod
 	horde_unity = 10
 }
 command_looted_chi = {

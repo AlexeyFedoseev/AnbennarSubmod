@@ -75,7 +75,7 @@ country_event = { #Startup Event
 			factor = 1
 		}
 		#add_army_professionalism = 0.2 #BomjSBagetom Anbennar Submod
-		country_event = { id = the_command_submod.0 } #BomjSBagetom Anbennar Submod
+		country_event = { id = submod_custom_events.0 } #BomjSBagetom Anbennar Submod
 		add_country_modifier = { name = no_slacken_mod duration = -1 desc = until_end_of_halessi_magic }
 		
 		custom_tooltip = command_mechanics_hint_tt

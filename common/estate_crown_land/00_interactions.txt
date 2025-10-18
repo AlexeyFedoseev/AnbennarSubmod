@@ -276,7 +276,7 @@ interaction = { # Sale of Titles
 			add_treasury = 1500
 		}
 
-		country_event = { id = sale_titles_event.1 } #BomjSBagetom Anbennar Submod
+		country_event = { id = submod_custom_events.1 } #BomjSBagetom Anbennar Submod
 
 		if = {
 			limit = {

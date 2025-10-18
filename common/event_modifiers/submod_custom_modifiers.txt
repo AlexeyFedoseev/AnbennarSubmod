@@ -31,6 +31,10 @@ the_draft_used = {
 
 }
 
+submod_test_morale_modif = {
+	land_morale = 0.1
+}
+
 diplomat_advisor_reward = {
 	country_diplomatic_power = 1
 }
