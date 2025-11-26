@@ -107,19 +107,22 @@ country_event = {
 	trigger = {
 		court_mage = 3
 		#NOT = { has_country_flag = court_mage }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = court_mage }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = court_mage
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = court_mage
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = court_mage
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = court_mage
+					days = 36500
+				}
 			}
 		}
 	}

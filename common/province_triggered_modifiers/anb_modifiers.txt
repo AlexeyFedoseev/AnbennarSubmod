@@ -2217,7 +2217,6 @@ raheni_school_origin_unbroken_claw = {
 	#BomjSBagetom Anbennar Submod
 	#war_exhaustion = -0.02
 	land_morale = 0.075
-	shock_damage_received = -0.1
 }
 
 raheni_school_origin_ascendant_soul = {

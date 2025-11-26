@@ -3691,7 +3691,7 @@ country_event = {
 
 ##Starting Bonus stagnant claimer
 country_event = {	#BomjSBagetom Anbennar Submod
-	id = diggy_submod.108
+	id = diggy.10888
 	title = diggy.108.t
 	desc = diggy.108.d
 	picture = ARTWORK_eventPicture
@@ -3701,9 +3701,12 @@ country_event = {	#BomjSBagetom Anbennar Submod
 	
 	trigger = {
 		OR = {
-			has_reform = krak_clan_council
-			has_reform = dwarovar_dwarven_clan_reform
-			has_reform = noble_elite_reform
+			tag = H79
+			tag = F47
+			tag = H78
+			tag = H76
+			tag = H77
+			tag = I02
 		}
 		NOT = { has_country_flag = dwarovar_claimer_setup }
 	}

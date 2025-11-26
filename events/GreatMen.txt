@@ -8,19 +8,22 @@ country_event = {
 	trigger = {
 		philosopher = 3
 		#NOT = { has_country_flag = philosopher }		#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = philosopher }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = philosopher
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = philosopher
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = philosopher
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = philosopher
+					days = 36500
+				}
 			}
 		}
 	}
@@ -91,19 +94,22 @@ country_event = {
 	trigger = {
 		natural_scientist = 3
 		#NOT = { has_country_flag = natural_scientist }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = natural_scientist }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = natural_scientist
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = natural_scientist
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = natural_scientist
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = natural_scientist
+					days = 36500
+				}
 			}
 		}
 	}
@@ -207,19 +213,22 @@ country_event = {
 	trigger = {
 		army_reformer = 3
 		#NOT = { has_country_flag = army_reformer }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = army_reformer }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = army_reformer
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = army_reformer
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = army_reformer
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = army_reformer
+					days = 36500
+				}
 			}
 		}
 	}
@@ -322,19 +331,22 @@ country_event = {
 	trigger = {
 		naval_reformer = 3
 		#NOT = { has_country_flag = naval_reformer }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = naval_reformer }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = naval_reformer
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = naval_reformer
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = naval_reformer
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = naval_reformer
+					days = 36500
+				}
 			}
 		}
 	}
@@ -438,19 +450,22 @@ country_event = {
 	trigger = {
 		artist = 3
 		#NOT = { has_country_flag = artist }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = artist }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = artist
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = artist
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = artist
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = artist
+					days = 36500
+				}
 			}
 		}
 	}
@@ -555,19 +570,22 @@ country_event = {
 	trigger = {
 		treasurer = 3
 		#NOT = { has_country_flag = treasurer }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = treasurer }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = treasurer
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = treasurer
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = treasurer
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = treasurer
+					days = 36500
+				}
 			}
 		}
 	}
@@ -672,19 +690,22 @@ country_event = {
 	trigger = {
 		theologian = 3
 		#NOT = { has_country_flag = theologian }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = theologian }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = theologian
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = theologian
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = theologian
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = theologian
+					days = 36500
+				}
 			}
 		}
 	}
@@ -789,19 +810,22 @@ country_event = {
 	trigger = {
 		statesman = 3
 		#NOT = { has_country_flag = statesman }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = statesman }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = statesman
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = statesman
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = statesman
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = statesman
+					days = 36500
+				}
 			}
 		}
 	}
@@ -907,19 +931,22 @@ country_event = {
 	trigger = {
 		colonial_governor = 3
 		#NOT = { has_country_flag = colonial_governor }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = colonial_governor }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = colonial_governor
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = colonial_governor
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = colonial_governor
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = colonial_governor
+					days = 36500
+				}
 			}
 		}
 	}
@@ -1023,19 +1050,22 @@ country_event = {
 	trigger = {
 		spymaster = 3
 		#NOT = { has_country_flag = spymaster }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = spymaster }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = spymaster
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = spymaster
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = spymaster
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = spymaster
+					days = 36500
+				}
 			}
 		}
 	}
@@ -1139,19 +1169,22 @@ country_event = {
 	trigger = {
 		diplomat = 3
 		#NOT = { has_country_flag = diplomat }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = diplomat }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = diplomat
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = diplomat
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = diplomat
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = diplomat
+					days = 36500
+				}
 			}
 		}
 	}
@@ -1257,19 +1290,22 @@ country_event = {
 	trigger = {
 		trader = 3
 		#NOT = { has_country_flag = trader }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = trader }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = trader
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = trader
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = trader
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = trader
+					days = 36500
+				}
 			}
 		}
 	}
@@ -1374,19 +1410,22 @@ country_event = {
 	trigger = {
 		master_of_mint = 3
 		#NOT = { has_country_flag = master_of_mint }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = master_of_mint }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = master_of_mint
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = master_of_mint
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = master_of_mint
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = master_of_mint
+					days = 36500
+				}
 			}
 		}
 	}
@@ -1493,19 +1532,22 @@ country_event = {
 	trigger = {
 		navigator = 3
 		#NOT = { has_country_flag = navigator }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = navigator }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = navigator
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = navigator
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = navigator
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = navigator
+					days = 36500
+				}
 			}
 		}
 	}
@@ -1609,19 +1651,22 @@ country_event = {
 	trigger = {
 		grand_captain = 3
 		#NOT = { has_country_flag = grand_captain }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = grand_captain }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = grand_captain
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = grand_captain
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = grand_captain
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = grand_captain
+					days = 36500
+				}
 			}
 		}
 	}
@@ -1725,19 +1770,22 @@ country_event = {
 	trigger = {
 		army_organiser = 3
 		#NOT = { has_country_flag = army_organiser }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = army_organiser }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = army_organiser
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = army_organiser
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = army_organiser
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = army_organiser
+					days = 36500
+				}
 			}
 		}
 	}
@@ -1841,19 +1889,22 @@ country_event = {
 	trigger = {
 		commandant = 3
 		#NOT = { has_country_flag = commandant }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = commandant }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = commandant
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = commandant
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = commandant
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = commandant
+					days = 36500
+				}
 			}
 		}
 	}
@@ -1958,19 +2009,22 @@ country_event = {
 	trigger = {
 		quartermaster = 3
 		#NOT = { has_country_flag = quartermaster }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = quartermaster }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = quartermaster
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = quartermaster
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = quartermaster
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = quartermaster
+					days = 36500
+				}
 			}
 		}
 	}
@@ -2074,19 +2128,22 @@ country_event = {
 	trigger = {
 		recruitmaster = 3
 		#NOT = { has_country_flag = recruitmaster }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = recruitmaster }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = recruitmaster
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = recruitmaster
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = recruitmaster
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = recruitmaster
+					days = 36500
+				}
 			}
 		}
 	}
@@ -2190,19 +2247,22 @@ country_event = {
 	trigger = {
 		fortification_expert = 3
 		#NOT = { has_country_flag = fortification_expert }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = fortification_expert }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = fortification_expert
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = fortification_expert
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = fortification_expert
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = fortification_expert
+					days = 36500
+				}
 			}
 		}
 	}
@@ -2291,7 +2351,6 @@ country_event = {
 				duration = 2190
 			}
 		}
-		se
 		set_country_flag = fortification_expert
 	}
 }
@@ -2307,19 +2366,22 @@ country_event = {
 	trigger = {
 		inquisitor = 3
 		#NOT = { has_country_flag = inquisitor }	#BomjSBagetom Anbennar Submod
-		if = {	#BomjSBagetom Anbennar Submod
-			limit = {
-				administrative_ideas = 7
+		OR = {
+			NOT = { has_country_flag = inquisitor }
+			if = {	#BomjSBagetom Anbennar Submod
+				limit = {
+					administrative_ideas = 7
+				}
+				had_country_flag = {
+					flag = inquisitor
+					days = 18250
+				}
 			}
-			had_country_flag = {
-				flag = inquisitor
-				days = 18250
-			}
-		}
-		else = {
-			had_country_flag = {
-				flag = inquisitor
-				days = 36500
+			else = {
+				had_country_flag = {
+					flag = inquisitor
+					days = 36500
+				}
 			}
 		}
 	}

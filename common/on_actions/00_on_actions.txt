@@ -39,6 +39,7 @@ on_startup = {
 		anbennar_setup.21		#Achievement setups
 		anbennar_setup.22		#Kills starting units to make adjustments to certain countries' starting army/navy compositions
 		diggy.108				#Dwarovar Claimer event
+		diggy.10888				#BomjSBagetom Anbennar Submod
 		diggy.110				#Dwarovar setup event
 		verkalgulan_events.1		#Verkal Gulan setup
 		jaddari_missions.1000	#AI boost for Jaddari

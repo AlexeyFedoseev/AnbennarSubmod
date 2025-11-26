@@ -134,7 +134,7 @@ jyva_shrine_2 = {
 
 ytrai_shrine_2 = {
 	#global_trade_goods_size_modifier = 0.075		#BomjSBagetom Anbennar Submod
-	global_trade_goods_size_modifier = 0.1			#BomjSBagetom Anbennar Submod
+	global_trade_goods_size_modifier = 0.3			#BomjSBagetom Anbennar Submod
 	religion = yes
 	picture = "shrine_icon"
 }
