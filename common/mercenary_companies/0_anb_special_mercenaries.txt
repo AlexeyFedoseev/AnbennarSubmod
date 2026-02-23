@@ -676,6 +676,7 @@ merc_castanorian_legion_1 = {
 	#BomjSBagetom Anbennar Submod
 	min_size = 40
 	max_size = 80
+	manpower_pool = 300
 }
 # Sword Legion
 merc_castanorian_legion_2 = {
@@ -705,6 +706,7 @@ merc_castanorian_legion_2 = {
 	#BomjSBagetom Anbennar Submod
 	min_size = 40
 	max_size = 80
+	manpower_pool = 300
 }
 # Shield Legion
 merc_castanorian_legion_3 = {
@@ -733,6 +735,7 @@ merc_castanorian_legion_3 = {
 	#BomjSBagetom Anbennar Submod
 	min_size = 40
 	max_size = 80
+	manpower_pool = 300
 }
 # Giantsbane Legion
 merc_castanorian_legion_4 = {
@@ -763,6 +766,7 @@ merc_castanorian_legion_4 = {
 	#BomjSBagetom Anbennar Submod
 	min_size = 40
 	max_size = 80
+	manpower_pool = 300
 }
 # Bridgeburners
 merc_castanorian_legion_5 = {
@@ -789,6 +793,7 @@ merc_castanorian_legion_5 = {
 	#BomjSBagetom Anbennar Submod
 	min_size = 40
 	max_size = 80
+	manpower_pool = 300
 }
 # Thundersworn
 merc_castanorian_legion_6 = {
@@ -818,6 +823,7 @@ merc_castanorian_legion_6 = {
 	#BomjSBagetom Anbennar Submod
 	min_size = 40
 	max_size = 80
+	manpower_pool = 300
 }
 
 # Magebound
@@ -848,6 +854,7 @@ merc_castanorian_legion_7 = {
 	#BomjSBagetom Anbennar Submod
 	min_size = 40
 	max_size = 80
+	manpower_pool = 300
 }
 
 # Hordebreaker
@@ -874,6 +881,7 @@ merc_castanorian_legion_8 = {
 	#BomjSBagetom Anbennar Submod
 	min_size = 40
 	max_size = 80
+	manpower_pool = 300
 }
 
 #Mithril Company, unlocked via "The Mithril Company" mission (I05_prepare_company_title), and expanded later in it.

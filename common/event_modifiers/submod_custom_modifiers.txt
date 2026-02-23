@@ -63,6 +63,26 @@ hierarchy_spoils_of_reconstruction = {
 	artificers_research_time = -0.15
 }
 
+quantum_consolidation_protocol_1 = {
+	allowed_rajput_fraction = 0.1
+}
+
+quantum_consolidation_protocol_2 = {
+	allowed_rajput_fraction = 0.2
+}
+
+quantum_consolidation_protocol_3 = {
+	allowed_rajput_fraction = 0.3
+}
+
+quantum_consolidation_protocol_4 = {
+	allowed_rajput_fraction = 0.4
+}
+
+quantum_consolidation_protocol_5 = {
+	allowed_rajput_fraction = 0.5
+}
+
 1444_adventurer_boost = {
 	global_tax_income = 48 #Cost of a colonist
 	land_forcelimit = 5

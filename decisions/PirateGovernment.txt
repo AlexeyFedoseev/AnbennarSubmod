@@ -82,9 +82,9 @@ country_decisions = {
 					}
 				}
 				navy_size_percentage = 0.9
-				NOT = { num_of_subjects = 1 }
+				#NOT = { num_of_subjects = 1 }	#BomjSBagetom Anbennar Submod
 				#NOT = { num_of_cities = 7 }	#BomjSBagetom Anbennar Submod
-				all_owned_province = {		#BomjSBagetom Anbennar Submod
+				all_owned_province = {			#BomjSBagetom Anbennar Submod
 					OR = {
 						has_port = yes
 						province_is_on_an_island = yes

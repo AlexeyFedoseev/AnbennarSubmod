@@ -7375,7 +7375,17 @@ halessi = {
 						has_church_aspect = hebat_tana_aspect
 					}
 					#add_yearly_manpower = 2.0 #BomjSBagetom Anbennar Submod
-					add_yearly_manpower = 0.5 #BomjSBagetom Anbennar Submod
+					if = {	#BomjSBagetom Anbennar Submod
+						limit = {
+							has_country_modifier = slackening_modifier
+						}
+						add_yearly_manpower = 0.66 
+					}
+					else = {
+						add_yearly_manpower = 2
+					}
+
+
 					hidden_effect = {
 						country_event = {
 							id = mystic_accord_events.201

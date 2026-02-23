@@ -3000,6 +3000,7 @@ age_of_absolutism = {
 			modifier = {
 				imperial_authority_value = 2.5
 			}
+			# also make pashalko effect - change name on gawed and lorent to exort and quas
 			ai_will_do = {
 				factor = 1000
 			}

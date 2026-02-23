@@ -2275,7 +2275,8 @@ decrease_monstrous_50 = {
 	if = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = decrease_monstrous_10_tooltip
-		hidden_effect = { subtract_variable = { monstrousPoints = 50 } }
+		#hidden_effect = { subtract_variable = { monstrousPoints = 50 } }	#BomjSBagetom Anbennar Submod
+		hidden_effect = { subtract_variable = { monstrousPoints = 100 } }	#BomjSBagetom Anbennar Submod
 		if = {
 			limit = {
 				OR = {
@@ -2283,7 +2284,8 @@ decrease_monstrous_50 = {
 					has_estate_privilege = estate_monstrous_tribes_gozlamoir_system
 				}
 			}
-			hidden_effect = { subtract_variable = { monstrousPoints = 10 } }
+			#hidden_effect = { subtract_variable = { monstrousPoints = 10 } }	#BomjSBagetom Anbennar Submod
+			hidden_effect = { subtract_variable = { monstrousPoints = 20 } }	#BomjSBagetom Anbennar Submod
 		}
 		hidden_effect = {
 			country_event = { id = monstrous.3 }
@@ -2296,7 +2298,8 @@ decrease_monstrous_25 = {
 	if = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = decrease_monstrous_10_tooltip
-		hidden_effect = { subtract_variable = { monstrousPoints = 25 } }
+		#hidden_effect = { subtract_variable = { monstrousPoints = 25 } }	#BomjSBagetom Anbennar Submod
+		hidden_effect = { subtract_variable = { monstrousPoints = 50 } }	#BomjSBagetom Anbennar Submod
 		if = {
 			limit = {
 				OR = {
@@ -2305,7 +2308,8 @@ decrease_monstrous_25 = {
 					has_country_flag = took_forced_evolution_reform
 				}
 			}
-			hidden_effect = { subtract_variable = { monstrousPoints = 5 } }
+			#hidden_effect = { subtract_variable = { monstrousPoints = 5 } }	#BomjSBagetom Anbennar Submod
+			hidden_effect = { subtract_variable = { monstrousPoints = 10 } }	#BomjSBagetom Anbennar Submod
 		}
 		hidden_effect = {
 			country_event = { id = monstrous.3 }
@@ -2318,7 +2322,8 @@ decrease_monstrous_20 = {
 	if = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = decrease_monstrous_10_tooltip
-		hidden_effect = { subtract_variable = { monstrousPoints = 20 } }
+		#hidden_effect = { subtract_variable = { monstrousPoints = 20 } }	#BomjSBagetom Anbennar Submod
+		hidden_effect = { subtract_variable = { monstrousPoints = 40 } }	#BomjSBagetom Anbennar Submod
 		if = {
 			limit = {
 				OR = {
@@ -2327,7 +2332,8 @@ decrease_monstrous_20 = {
 					has_country_flag = took_forced_evolution_reform
 				}
 			}
-			hidden_effect = { subtract_variable = { monstrousPoints = 5 } }
+			#hidden_effect = { subtract_variable = { monstrousPoints = 5 } }	#BomjSBagetom Anbennar Submod
+			hidden_effect = { subtract_variable = { monstrousPoints = 10 } }	#BomjSBagetom Anbennar Submod
 		}
 		hidden_effect = {
 			country_event = { id = monstrous.3 }
@@ -2340,7 +2346,8 @@ decrease_monstrous_15 = {
 	if = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = decrease_monstrous_10_tooltip
-		hidden_effect = { subtract_variable = { monstrousPoints = 15 } }
+		#hidden_effect = { subtract_variable = { monstrousPoints = 15 } }	#BomjSBagetom Anbennar Submod
+		hidden_effect = { subtract_variable = { monstrousPoints = 30 } }	#BomjSBagetom Anbennar Submod
 		if = {
 			limit = {
 				OR = {
@@ -2349,7 +2356,8 @@ decrease_monstrous_15 = {
 					has_country_flag = took_forced_evolution_reform
 				}
 			}
-			hidden_effect = { subtract_variable = { monstrousPoints = 5 } }
+			#hidden_effect = { subtract_variable = { monstrousPoints = 5 } }	#BomjSBagetom Anbennar Submod
+			hidden_effect = { subtract_variable = { monstrousPoints = 10 } }	#BomjSBagetom Anbennar Submod
 		}
 		hidden_effect = {
 			country_event = { id = monstrous.3 }
@@ -2362,7 +2370,8 @@ decrease_monstrous_10 = {
 	if = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = decrease_monstrous_10_tooltip
-		hidden_effect = { subtract_variable = { monstrousPoints = 10 } }
+		#hidden_effect = { subtract_variable = { monstrousPoints = 10 } }	#BomjSBagetom Anbennar Submod
+		hidden_effect = { subtract_variable = { monstrousPoints = 20 } }	#BomjSBagetom Anbennar Submod
 		if = {
 			limit = {
 				OR = {
@@ -2371,7 +2380,8 @@ decrease_monstrous_10 = {
 					has_country_flag = took_forced_evolution_reform
 				}
 			}
-			hidden_effect = { subtract_variable = { monstrousPoints = 4 } }
+			#hidden_effect = { subtract_variable = { monstrousPoints = 4 } }	#BomjSBagetom Anbennar Submod
+			hidden_effect = { subtract_variable = { monstrousPoints = 8 } }		#BomjSBagetom Anbennar Submod
 		}
 		hidden_effect = {
 			country_event = { id = monstrous.3 }
@@ -2384,7 +2394,8 @@ decrease_monstrous_8 = {
 	if = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = decrease_monstrous_10_tooltip
-		hidden_effect = { subtract_variable = { monstrousPoints = 8 } }
+		#hidden_effect = { subtract_variable = { monstrousPoints = 8 } }	#BomjSBagetom Anbennar Submod
+		hidden_effect = { subtract_variable = { monstrousPoints = 16 } }	#BomjSBagetom Anbennar Submod
 		if = {
 			limit = {
 				OR = {
@@ -2393,7 +2404,8 @@ decrease_monstrous_8 = {
 					has_country_flag = took_forced_evolution_reform
 				}
 			}
-			hidden_effect = { subtract_variable = { monstrousPoints = 3 } }
+			#hidden_effect = { subtract_variable = { monstrousPoints = 3 } }	#BomjSBagetom Anbennar Submod
+			hidden_effect = { subtract_variable = { monstrousPoints = 6 } }		#BomjSBagetom Anbennar Submod
 		}
 		hidden_effect = {
 			country_event = { id = monstrous.3 }
@@ -2406,7 +2418,8 @@ decrease_monstrous_5 = {
 	if = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = decrease_monstrous_5_tooltip
-		hidden_effect = { subtract_variable = { monstrousPoints = 5 } }
+		#hidden_effect = { subtract_variable = { monstrousPoints = 5 } }	#BomjSBagetom Anbennar Submod
+		hidden_effect = { subtract_variable = { monstrousPoints = 10 } }	#BomjSBagetom Anbennar Submod
 		if = {
 			limit = {
 				OR = {
@@ -2415,7 +2428,8 @@ decrease_monstrous_5 = {
 					has_country_flag = took_forced_evolution_reform
 				}
 			}
-			hidden_effect = { subtract_variable = { monstrousPoints = 3 } }
+			#hidden_effect = { subtract_variable = { monstrousPoints = 3 } }	#BomjSBagetom Anbennar Submod
+			hidden_effect = { subtract_variable = { monstrousPoints = 6 } }		#BomjSBagetom Anbennar Submod
 		}
 		hidden_effect = {
 			country_event = { id = monstrous.3 }
@@ -2428,7 +2442,8 @@ decrease_monstrous_3 = {
 	if = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = decrease_monstrous_3_tooltip
-		hidden_effect = { subtract_variable = { monstrousPoints = 3 } }
+		#hidden_effect = { subtract_variable = { monstrousPoints = 3 } }	#BomjSBagetom Anbennar Submod
+		hidden_effect = { subtract_variable = { monstrousPoints = 6 } }		#BomjSBagetom Anbennar Submod
 		if = {
 			limit = {
 				OR = {
@@ -2437,7 +2452,8 @@ decrease_monstrous_3 = {
 					has_country_flag = took_forced_evolution_reform
 				}
 			}
-			hidden_effect = { subtract_variable = { monstrousPoints = 2 } }
+			#hidden_effect = { subtract_variable = { monstrousPoints = 2 } }	#BomjSBagetom Anbennar Submod
+			hidden_effect = { subtract_variable = { monstrousPoints = 4 } }		#BomjSBagetom Anbennar Submod
 		}
 		hidden_effect = {
 			country_event = { id = monstrous.3 }
@@ -2450,7 +2466,8 @@ decrease_monstrous_2 = {
 	if = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = decrease_monstrous_2_tooltip
-		hidden_effect = { subtract_variable = { monstrousPoints = 2 } }
+		#hidden_effect = { subtract_variable = { monstrousPoints = 2 } }	#BomjSBagetom Anbennar Submod
+		hidden_effect = { subtract_variable = { monstrousPoints = 4 } }		#BomjSBagetom Anbennar Submod
 		if = {
 			limit = {
 				OR = {
@@ -2459,7 +2476,8 @@ decrease_monstrous_2 = {
 					has_country_flag = took_forced_evolution_reform
 				}
 			}
-			hidden_effect = { subtract_variable = { monstrousPoints = 1 } }
+			#hidden_effect = { subtract_variable = { monstrousPoints = 1 } }	#BomjSBagetom Anbennar Submod
+			hidden_effect = { subtract_variable = { monstrousPoints = 2 } }		#BomjSBagetom Anbennar Submod
 		}
 		hidden_effect = {
 			country_event = { id = monstrous.3 }
@@ -2472,7 +2490,8 @@ decrease_monstrous_1 = {
 	if = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = decrease_monstrous_1_tooltip
-		hidden_effect = { subtract_variable = { monstrousPoints = 1 } }
+		#hidden_effect = { subtract_variable = { monstrousPoints = 1 } }	#BomjSBagetom Anbennar Submod
+		hidden_effect = { subtract_variable = { monstrousPoints = 2 } }		#BomjSBagetom Anbennar Submod
 		if = {
 			limit = {
 				OR = {
@@ -2481,7 +2500,8 @@ decrease_monstrous_1 = {
 					has_country_flag = took_forced_evolution_reform
 				}
 			}
-			hidden_effect = { subtract_variable = { monstrousPoints = 1 } }
+			#hidden_effect = { subtract_variable = { monstrousPoints = 1 } }	#BomjSBagetom Anbennar Submod
+			hidden_effect = { subtract_variable = { monstrousPoints = 2 } }		#BomjSBagetom Anbennar Submod
 		}
 		hidden_effect = {
 			country_event = { id = monstrous.3 }
@@ -2495,7 +2515,8 @@ increase_monstrous_8 = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = increase_monstrous_5_tooltip
 		hidden_effect = {
-			change_variable = { monstrousPoints = 8 }
+			#change_variable = { monstrousPoints = 8 }	#BomjSBagetom Anbennar Submod
+			change_variable = { monstrousPoints = 16 }	#BomjSBagetom Anbennar Submod
 			country_event = { id = monstrous.5 }
 		}
 	}
@@ -2506,7 +2527,8 @@ increase_monstrous_5 = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = increase_monstrous_5_tooltip
 		hidden_effect = {
-			change_variable = { monstrousPoints = 5 }
+			#change_variable = { monstrousPoints = 5 }	#BomjSBagetom Anbennar Submod
+			change_variable = { monstrousPoints = 10 }	#BomjSBagetom Anbennar Submod
 			country_event = { id = monstrous.5 }
 		}
 	}
@@ -2517,7 +2539,8 @@ increase_monstrous_3 = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = increase_monstrous_3_tooltip
 		hidden_effect = {
-			change_variable = { monstrousPoints = 3 }
+			#change_variable = { monstrousPoints = 3 }	#BomjSBagetom Anbennar Submod
+			change_variable = { monstrousPoints = 6 }	#BomjSBagetom Anbennar Submod
 			country_event = { id = monstrous.5 }
 		}
 	}
@@ -2528,7 +2551,8 @@ increase_monstrous_2 = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = increase_monstrous_2_tooltip
 		hidden_effect = {
-			change_variable = { monstrousPoints = 2 }
+			#change_variable = { monstrousPoints = 2 }	#BomjSBagetom Anbennar Submod
+			change_variable = { monstrousPoints = 4 }	#BomjSBagetom Anbennar Submod
 			country_event = { id = monstrous.5 }
 		}
 	}
@@ -2539,7 +2563,8 @@ increase_monstrous_1 = {
 		limit = { has_country_flag = removing_monstrous has_country_modifier = monstrous_nation }
 		custom_tooltip = increase_monstrous_1_tooltip
 		hidden_effect = {
-			change_variable = { monstrousPoints = 1 }
+			#change_variable = { monstrousPoints = 1 }	#BomjSBagetom Anbennar Submod
+			change_variable = { monstrousPoints = 2 }	#BomjSBagetom Anbennar Submod
 			country_event = { id = monstrous.5 }
 		}
 	}

@@ -94,6 +94,85 @@ country_decisions = {
 		}
 	}
 
+	inno_to_artif_limit_decision = {
+
+		major = yes
+
+		potential = {
+			has_estate = estate_artificers
+			NOT = { has_country_modifier = quantum_consolidation_protocol_5 }
+		}
+		
+		allow = {
+			innovativeness = 100
+			NOT = { has_country_modifier = quantum_consolidation_protocol_5 }
+		}
+		
+		effect = {
+			change_innovativeness = -20
+			if = {
+				limit = {
+					NOT = { has_country_modifier = quantum_consolidation_protocol_1 }
+					NOT = { has_country_modifier = quantum_consolidation_protocol_2 }
+					NOT = { has_country_modifier = quantum_consolidation_protocol_3 }
+					NOT = { has_country_modifier = quantum_consolidation_protocol_4 }
+					NOT = { has_country_modifier = quantum_consolidation_protocol_5 }
+				}
+				add_country_modifier = {
+					name = quantum_consolidation_protocol_1
+					duration = -1
+				}
+			} 
+			else_if = {
+				limit = {
+					NOT = { has_country_modifier = quantum_consolidation_protocol_2 }
+					NOT = { has_country_modifier = quantum_consolidation_protocol_3 }
+					NOT = { has_country_modifier = quantum_consolidation_protocol_4 }
+					NOT = { has_country_modifier = quantum_consolidation_protocol_5 }
+				}
+				remove_country_modifier = quantum_consolidation_protocol_1
+				add_country_modifier = {
+					name = quantum_consolidation_protocol_2
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_country_modifier = quantum_consolidation_protocol_3 }
+					NOT = { has_country_modifier = quantum_consolidation_protocol_4 }
+					NOT = { has_country_modifier = quantum_consolidation_protocol_5 }
+				}
+				remove_country_modifier = quantum_consolidation_protocol_2
+				add_country_modifier = {
+					name = quantum_consolidation_protocol_3
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_country_modifier = quantum_consolidation_protocol_4 }
+					NOT = { has_country_modifier = quantum_consolidation_protocol_5 }
+				}
+				remove_country_modifier = quantum_consolidation_protocol_3
+				add_country_modifier = {
+					name = quantum_consolidation_protocol_4
+					duration = -1
+				}
+			}
+			else = {
+				remove_country_modifier = quantum_consolidation_protocol_4
+				add_country_modifier = {
+					name = quantum_consolidation_protocol_5
+					duration = -1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	wexonard_nation = { #example - esmarian_nation Z46
 		major = yes
 		potential = {

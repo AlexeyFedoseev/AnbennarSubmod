@@ -1535,7 +1535,8 @@ colonial_governor = {
 	}
 	
 	# Bonus
-	global_tariffs = 0.10
+	#global_tariffs = 0.10			#BomjSBagetom Anbennar Submod
+	global_colonial_growth = 20		#BomjSBagetom Anbennar Submod
 	
 	# skill_scaled_modifier = {
 	# 	trigger = {

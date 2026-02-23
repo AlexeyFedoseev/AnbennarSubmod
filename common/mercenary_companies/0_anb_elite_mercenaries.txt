@@ -1362,9 +1362,10 @@ merc_command_wolf_army = {
 	}
 	cost_modifier = 0.01	#BomjSBagetom Anbennar Submod
 	modifier = {
-	land_attrition = -0.25
+		land_attrition = -0.25
 		movement_speed = 0.1
 		reinforce_speed = 0.25
+		#mercenary_manpower = 3 #BomjSBagetom Anbennar Submod
 	}
 }
 merc_command_boar_army = {
