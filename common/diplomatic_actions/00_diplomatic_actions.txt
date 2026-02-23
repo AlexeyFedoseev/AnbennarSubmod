@@ -4074,20 +4074,11 @@ demand_unlawful_territory_action = {	#BomjSBagetom Anbennar Submod
 			FROM = {
 				is_part_of_hre = yes
 			}
-			#FROM = {
-			#	capital_scope = {
-			#		continent = serpentspine
-			#	}
-			#	culture_group = dwarven
-			#} 
 		}
 		allow = { 
 			NOT = {
 				always = yes
 			}
-			#FROM = {
-			#	has_country_flag = hoardcurse_happened
-			#}
 		}
 	}
 }

@@ -1,0 +1,21 @@
+ovdal_tungr_defence_buff = {
+	potential = {
+		always = yes
+	}
+
+
+	trigger = {
+		controller = {
+			tag = F23
+		}
+	}
+	#picture = "local_hostile_movement_speed"
+	local_hostile_movement_speed = -100
+
+	#Province scope
+	on_activation = {
+	}
+
+	on_deactivation = {
+	}
+}

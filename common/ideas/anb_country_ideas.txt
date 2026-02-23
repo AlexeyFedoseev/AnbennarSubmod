@@ -27237,11 +27237,9 @@ S71_ideas = {
 	free = yes
 
 	S71_unity_of_our_people = { #unity of the Vyzemby in the islands for the first time
-		own_coast_naval_combat_bonus = 1 #BomjSBagetom Anbennar Submod
 		global_unrest = -2
 	}
 	S71_true_to_its_name = { #fahavanosy means summer isles. It is evocative of the inherent natural beauty of the islands, its diverse landscape, flora and fauna.
-		heavy_ship_power = 0.15 #BomjSBagetom Anbennar Submod
 		prestige = 1
 	}
 	S71_the_mihipha_colleges = { #it began with the first Mihipha college in Mihitarab, and soon evolved into a series of Mihipha colleges after unification. These schools help foster a new generation of scholars, educators, and ofc Mihipha. These places teach music, history, philosophy, and many other subjects

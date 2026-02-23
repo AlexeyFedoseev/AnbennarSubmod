@@ -199,6 +199,7 @@ temple = {
 			owner = {
 				add_church_power = 5
 				change_government_reform_progress = 2
+				set_country_flag = submod_aspire_wisdom_aspect_dip_flag		#BomjSBagetom Anbennar Submod
 			}
 		}
 
@@ -296,9 +297,15 @@ temple = {
 		#Drozma Tur
 		if = {	#BomjSBagetom Anbennar Submod
 			limit = {
-				owner = {
-					religion = drozma_tur
-					has_church_aspect = aspire_wisdom_aspect_dip
+				OR = {	#BomjSBagetom Anbennar Submod
+					owner = {
+						religion = drozma_tur
+						has_church_aspect = aspire_wisdom_aspect_dip
+					}
+					owner = {
+						religion = drozma_tur
+						has_country_flag = submod_aspire_wisdom_aspect_dip_flag
+					}
 				}
 			}
 			owner = {
@@ -398,6 +405,7 @@ barracks = {
 			owner = {
 				add_church_power = 5
 			}
+			set_country_flag = submod_aspire_power_aspect_dip_flag	#BomjSBagetom Anbennar Submod
 		}
 		if = {
 			limit = { FROM = { has_estate_privilege = estate_boar_command_war_room_rights } }
@@ -442,9 +450,15 @@ barracks = {
 		#Drozma Tur
 		if = {	#BomjSBagetom Anbennar Submod
 			limit = {
-				owner = {
-					religion = drozma_tur
-					has_church_aspect = aspire_power_aspect_dip
+				OR = {		#BomjSBagetom Anbennar Submod
+					owner = {
+						religion = drozma_tur
+						has_church_aspect = aspire_power_aspect_dip
+					}
+					owner = {
+						religion = drozma_tur
+						has_country_flag = submod_aspire_power_aspect_dip_flag
+					}
 				}
 			}
 			add_base_manpower = -1
@@ -3608,6 +3622,7 @@ soldier_households = {
 			FROM = {
 				add_church_power = 10
 			}
+			set_country_flag = submod_aspire_power_aspect_dip_flag	#BomjSBagetom Anbennar Submod
 		}
 	}
 
@@ -3652,9 +3667,15 @@ soldier_households = {
 		#Drozma Tur
 		if = {
 			limit = {
-				FROM = {
-					religion = drozma_tur
-					has_church_aspect = aspire_power_aspect_dip
+				OR = {		#BomjSBagetom Anbennar Submod
+					owner = {
+						religion = drozma_tur
+						has_church_aspect = aspire_power_aspect_dip
+					}
+					owner = {
+						religion = drozma_tur
+						has_country_flag = submod_aspire_power_aspect_dip_flag
+					}
 				}
 			}
 			add_base_manpower = -2

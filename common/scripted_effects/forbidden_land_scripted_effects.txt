@@ -1852,6 +1852,10 @@ sedentarization_calculate_outpost_cap = {
 		which = sed_outpost_cap
 		which = sed_num_of_colonists
 	}
+	change_variable = {	#BomjSBagetom Anbennar Submod
+		which = sed_outpost_cap
+		value = 2
+	}
 }
 
 sedentarization_deduct_outpost_cost_from_country = {

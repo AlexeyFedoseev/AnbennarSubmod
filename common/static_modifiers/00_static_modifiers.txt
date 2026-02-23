@@ -1939,8 +1939,10 @@ karma_just_right =
 
 	war_exhaustion = -0.03
 	yearly_corruption = -0.1
-	discipline = 0.035
-	ae_impact = -0.1
+	#discipline = 0.035		#BomjSBagetom Anbennar Submod
+	discipline = 0.05		#BomjSBagetom Anbennar Submod
+	#ae_impact = -0.1		#BomjSBagetom Anbennar Submod
+	land_attrition = -0.1	#BomjSBagetom Anbennar Submod
 }
 
 karma_too_high =
