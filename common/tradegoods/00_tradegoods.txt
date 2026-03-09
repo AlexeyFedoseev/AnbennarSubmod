@@ -867,11 +867,6 @@ gold = {
 			factor = 0
 			province_group = effelai_hub_provinces_group
 		}
-		modifier = { #BomjSBagetom Anbennar Submod
-			factor = 3
-			current_age = age_of_reformation
-			FROM = {	has_country_flag = ab_age2_VerkalGulan_bonus_flag	} 
-		}
 	}
 }
 

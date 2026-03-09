@@ -1798,10 +1798,7 @@ province_event = {
 			}
 		}
 		NOT = { #BomjSBagetom Anbennar Submod
-			AND = {
-				current_age = age_of_reformation
-				has_country_flag = ab_age2_Esthil_bonus_flag
-			}	
+			has_country_flag = ab_age2_Esthil_bonus_flag	
 		}
 	}
 	

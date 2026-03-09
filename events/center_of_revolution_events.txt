@@ -150,7 +150,7 @@ province_event = {
 		}
 		#BomjSBagetom Anbennar Submod
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			has_country_flag = ab_age4_Beikdugang_bonus_flag
 		}
 		#Production-based checks

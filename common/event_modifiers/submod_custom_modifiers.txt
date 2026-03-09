@@ -846,7 +846,7 @@ ab_age4_Bulwar_bonus_modif = {
 }
 
 ab_age4_UmojiBaashidi_bonus_modif = {
-	fire_damage_received = -0.33
+	fire_damage_received = -0.20
 	is_marine_modifier = yes
 }
 

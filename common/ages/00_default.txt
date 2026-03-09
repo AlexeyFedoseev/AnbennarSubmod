@@ -1963,16 +1963,44 @@ age_of_reformation = {
 			}
 		}
 
+		ab_age2_GnomishHierarchy_bonus_button = {
+			allow = {
+				tag = A79
+				# trigger - all inventions explored
+			}
+			#modifier = {
+				#
+			#}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO  - +0.2 fire to artificers regiments AND +20 atificers cap
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age2_Kobildzan_bonus_button = {
 			allow = {
 				tag = Z38
-				custom_trigger_tooltip = {
-					tooltip = ab_age2_Kobildzan_bonus_button_tt
-					has_country_flag = kobold_dragon_path
-				}
+				# trigger - aget 9 lvl of HOARD
 			}
-			modifier = {
-				fire_damage = 0.2
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO  - +15 land fire damage until end of the game
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Exwes_bonus_button = {
+			allow = {
+				tag = A40
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO  - unlock decision that change 1 year income for 1 year sailors, cd 5 years, decision unlocks until end of the game
 			}
 			ai_will_do = {
 				factor = 1000
@@ -1983,8 +2011,9 @@ age_of_reformation = {
 			allow = {
 				tag = A23
 			}
-			modifier = {
-				mercenary_discipline = 0.075
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO  - proc witch-king event - daje esli ruler ne mag
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2023,8 +2052,22 @@ age_of_reformation = {
 				tag = A62
 			}
 			effect = {
-				set_country_flag = supporting_artificers
-				custom_tooltip = supporting_artificers_tt
+				custom_tooltip = todo_tt
+				# TODO - upgrade all workshops to courting houses
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Varaine_bonus_button = {
+			allow = {
+				tag = A72
+				#trigger - complete quest - A99_chemical_synthesis
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - 0.5 goods to all provinces untill the end of the game
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2034,9 +2077,51 @@ age_of_reformation = {
 		ab_age2_Konwell_bonus_button = {
 			allow = {
 				tag = A35
+				#trigger - capital(or konwell city?) has 50 dev
 			}
-			modifier = {
-				idea_cost = -0.33
+			effect = {
+				change_innovativeness = 35
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Seinathil_bonus_button = {
+			allow = {
+				tag = A90
+				#trigger - have 5 dip rep
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - for each alliance get +1% of morale
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Themarenn_bonus_button = {
+			allow = {
+				tag = A95
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - +15 morale to marines - untill the end of the AGE
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Giberd_bonus_button = {
+			allow = {
+				tag = A81
+				#trigger - have 100 inno
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - inno 100 inno, get -10 apk
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2055,6 +2140,19 @@ age_of_reformation = {
 			}
 		}
 
+		ab_age2_Pashaine_bonus_button = {
+			allow = {
+				tag = B59
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - -50 estate cooldown interaction until end of the game
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age2_Verne_bonus_button = {
 			allow = {
 				tag = A33
@@ -2067,12 +2165,27 @@ age_of_reformation = {
 			}
 		}
 
+		ab_age2_Arannen_bonus_button = {
+			allow = {
+				tag = A72
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - get to all provinces with salt modif with +tradevalue or trade goods(and make yearly checks)
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age2_Asheniande_bonus_button = {
 			allow = {
 				tag = A60
+				#trigger - only your country in cannor has vampires
 			}
-			modifier = {
-				global_tax_income = 240
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - -15 devcost, -50 spy actions cost untill the end of the game
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2083,9 +2196,135 @@ age_of_reformation = {
 			allow = {
 				tag = A59
 			}
-			effect = { #example flag+tt
-				set_country_flag = ab_age2_Corvuria_bonus_flag
-				custom_tooltip = ab_age2_Corvuria_bonus_tt
+			effect = { 
+				custom_tooltip = todo_tt
+				# TODO - priveledges lose debuffs and abs maluses - until the end of the game
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Covenblad_bonus_button = {
+			allow = {
+				tag = Z37
+			}
+			modifier = {
+				infantry_shock = 0.25
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+	
+		ab_age2_Castellyr_bonus_button = {
+			allow = {
+				tag = B31
+				#trigger - have patricies
+			}
+			effect = { 
+				custom_tooltip = todo_tt
+				# TODO - get burghers
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Esthil_bonus_button = {
+			allow = {
+				tag = B54
+				#trigger - have 100 provs in escann
+			}
+			effect = {
+				set_country_flag = ab_age2_Esthil_bonus_flag
+				custom_tooltip = ab_age2_Esthil_bonus_tt
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Corintar_bonus_button = {
+			allow = {
+				tag = B02
+				religion = corinite
+			}
+			modifier = {
+				shock_damage = 0.3
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Stalbor_bonus_button = {
+			allow = {
+				tag = B47
+			}
+			effect = { 
+				custom_tooltip = todo_tt
+				# TODO - country gets bonuses for each integrated minority - racial_tolerance_dwarf_ruler racial_tolerance_reform
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Luciande_bonus_button = {
+			allow = {
+				tag = B34
+			}
+			effect = { 
+				custom_tooltip = todo_tt
+				# TODO - this bonus litteraly do nothing - gets event for 500 each mana
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Wyvernheart_bonus_button = {
+			allow = {
+				tag = B39
+				#trigger - complete quest A Stronger Escann
+			}
+			effect = { 
+				custom_tooltip = todo_tt
+				# TODO - can form black domain earlier(without wars and age)
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Blademarches_bonus_button = {
+			allow = {
+				tag = B33
+				mission_completed = B33_imperial_blademarches
+			}
+			effect = {
+				add_country_modifier = {
+					name = age2_Blademarches_bonus_modif
+					duration = -1
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Khozrugan_bonus_button = {
+			allow = {
+				tag = Z51
+				num_of_owned_provinces_with = {
+					value = 50
+					superregion = western_cannor_superregion
+				}
+			}
+			modifier = {
+				discipline = 0.05
+				land_morale = 0.10
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2113,92 +2352,8 @@ age_of_reformation = {
 				tag = I46
 			}
 			effect = {
-				custom_tooltip = ab_age2_TugundDarakh_bonus_tt
-				hidden_effect = { country_event = { id = cyranvar.7 } }
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Castellyr_bonus_button = {
-			allow = {
-				tag = B31
-			}
-			modifier = {
-				development_cost = -0.2
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Esthil_bonus_button = {
-			allow = {
-				tag = B54
-			}
-			effect = {
-				set_country_flag = ab_age2_Esthil_bonus_flag
-				custom_tooltip = ab_age2_Esthil_bonus_tt
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Corintar_bonus_button = {
-			allow = {
-				tag = B02
-				religion = corinite
-			}
-			modifier = {
-				shock_damage = 0.2
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Luciande_bonus_button = {
-			allow = {
-				tag = B34
-				ruler_has_mage_personality = yes
-			}
-			effect = {
-				magic_study_level_up_all = yes
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Blademarches_bonus_button = {
-			allow = {
-				tag = B33
-				mission_completed = B33_imperial_blademarches
-			}
-			effect = {
-				add_country_modifier = {
-					name = age2_Blademarches_bonus_modif
-					duration = -1
-				}
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age2_Khozrugan_bonus_button = {
-			allow = {
-				tag = Z51
-				num_of_owned_provinces_with = {
-					value = 30
-					superregion = western_cannor_superregion
-				}
-			}
-			modifier = {
-				discipline = 0.05
-				land_morale = 0.10
+				custom_tooltip = todo_tt
+				# TODO - discussed
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2239,9 +2394,11 @@ age_of_reformation = {
 		ab_age2_Birsartanses_bonus_button = {
 			allow = {
 				tag = F21
+				#trigger - have 7 integrated races
 			}
-			modifier = {
-				advisor_cost = -0.33
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - no more 30% of race need for race change - racial_mil_can_switch_to_selected_race_military_conditions
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2251,9 +2408,11 @@ age_of_reformation = {
 		ab_age2_AzkaSur_bonus_button = {
 			allow = {
 				tag = U20
+				#trigger - no jadd countries
 			}
-			modifier = {
-				manpower_in_true_faith_provinces= 0.33
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - gets jadd orders until end of the game
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2267,6 +2426,119 @@ age_of_reformation = {
 			modifier = {
 				meritocracy = 1
 			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - +15 morale to aakhati regiments
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Irkorzik_bonus_button = {
+			allow = {
+				tag = F69
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - mage towers gives +1 building slots
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Duwarkani_bonus_button = {
+			allow = {
+				tag = F62
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - enable horde ideas
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Vurebindika_bonus_button = {
+			allow = {
+				tag = L30
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - 30 assault for ability untill end of the game
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Isagumze_bonus_button = {
+			allow = {
+				tag = L03
+				#trigger - no lizzard provinces in country
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - every province in taneyas subcontinent gets -25 devcost
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_HisostYamok_bonus_button = {
+			allow = {
+				tag = S23
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - 25% chance for double mp-devclick
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Averilibet_bonus_button = {
+			allow = {
+				tag = S53
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - +5 merc disc until the end of the game
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Shelokmengi_bonus_button = {
+			allow = {
+				OR = {
+					tag = S57
+					was_tag = S57
+				}
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - selling grain, check table
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Naleni_bonus_button = {
+			allow = {
+				tag = S55
+				#trigger - full capacity
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - get 50 capacity untill end of the game
+			}
 			ai_will_do = {
 				factor = 1000
 			}
@@ -2276,8 +2548,9 @@ age_of_reformation = {
 			allow = {
 				tag = I90
 			}
-			modifier = {
-				defensiveness = 1
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - double devckick, check table
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2287,11 +2560,24 @@ age_of_reformation = {
 		ab_age2_Skurkokli_bonus_button = {
 			allow = {
 				tag = J47
+				#trigger - reform religion and have start religion
 			}
-			modifier = {
-				country_admin_power = 1
-				country_diplomatic_power = 1
-				country_military_power = 1
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - give war enemies -10 fort defence and +10 morale damage received
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Ikogshaantus_bonus_button = {
+			allow = {
+				tag = J52
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - each prov with manus gets +2 mil dev
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2304,6 +2590,19 @@ age_of_reformation = {
 			}
 			modifier = {
 				all_power_cost = -0.075
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Pasiragha_bonus_button = {
+			allow = {
+				tag = R61
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - when provs converts to suhan praxis, provs gets +1 each dev
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2344,6 +2643,76 @@ age_of_reformation = {
 			}
 		}
 
+		ab_age2_Bhuvauri_bonus_button = {
+			allow = {
+				tag = R38
+			}
+			modifier = {
+				trade_efficiency = 0.1
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - increase cost of slaves for 50%(1 ducat per good)
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_OneXia_bonus_button = {
+			allow = {
+				tag = Y99
+				#tirgger - complete quest Proclaim XianXia
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - all samurais gets -15 manpower usage until end of the game
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Yuanszi_bonus_button = {
+			allow = {
+				tag = Y89
+				#tirgger - have no allies
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - all samurais gets -15 moral damage recived until end of the game, !!! bonus end if u get ally
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_VerkalOzovar_bonus_button = {
+			allow = {
+				tag = Y63
+			}
+			modifier = {
+				global_manpower = 50
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Arawkelin_bonus_button = {
+			allow = {
+				tag = Y65
+				#tirgger - gnomes integrated
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - gets artificers estate - and something else
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age2_Azjakuma_bonus_button = {
 			allow = {
 				tag = Y01
@@ -2363,27 +2732,16 @@ age_of_reformation = {
 			}
 		}
 
-		ab_age2_VerkalOzovar_bonus_button = {
-			allow = {
-				tag = Y63
-			}
-			modifier = {
-				global_manpower = 50
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
 		ab_age2_BianfangDahui_bonus_button = {
 			allow = {
 				OR = {
 					tag = Y09
 					tag = Z66
 				}
+				#trigger - have 145 discipline
 			}
 			modifier = {
-				governing_capacity_modifier = 0.25
+				military_tactics = 0.15
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2421,15 +2779,45 @@ age_of_reformation = {
 			}
 		}
 
+		ab_age2_ShiningCircle_bonus_button = {
+			allow = {
+				OR = {
+					tag = H44
+					tag = H45
+				}
+			}
+			modifier = {
+				republican_tradition = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age2_Corinsfield_bonus_button = {
+			allow = {
+				tag = H35
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - discussed, check table
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age2_Malacnar_bonus_button = {
 			allow = {
 				tag = G32
+				#trigger - more 100 provinces have cannorian cultures
 			}
 			modifier = {
-				leader_land_fire = 1
-				leader_land_manuever = 1
-				leader_land_shock = 1
-				leader_siege = 1
+				land_morale = 0.1
+				infantry_power = 0.1
+			}
+			effect = {
+				add_splendor = 500
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2451,6 +2839,7 @@ age_of_reformation = {
 						tier = 3
 					}
 				}
+				add_splendor = 500
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2469,13 +2858,14 @@ age_of_reformation = {
 			}
 		}
 
-		ab_age2_VerkalGulan_bonus_button = {
+		ab_age2_Rezankand_bonus_button = {
 			allow = {
-				tag = F47
+				tag = H67
+				#trigger - all jungles are burned
 			}
-			effect = { 
-				set_country_flag = ab_age2_VerkalGulan_bonus_flag
-				custom_tooltip = ab_age2_VerkalGulan_bonus_tt
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - development_cost_in_primary_culture = -0.25 until end of the game
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2511,6 +2901,8 @@ age_of_reformation = {
 				mission_completed = H84_pinnacle_of_innovation
 			}
 			effect = {
+				custom_tooltip = todo_tt
+				# TODO - change to +1 invention slot
 				mission_reward_artifice_points_5 = yes
 				mission_reward_artifice_points_5 = yes
 				mission_reward_artifice_points_5 = yes
@@ -2533,12 +2925,41 @@ age_of_reformation = {
 			}
 		}
 
+		ab_age2_SkeweredDrake_bonus_button = {
+			allow = {
+				tag = H73
+			}
+			modifier = {
+				hussars_cost_modifier = -0.8
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age2_GreedyGrin_bonus_button = {
 			allow = {
 				tag = H82
+				#trigger - have 100+ gold income
 			}
-			modifier = {
-				gold_depletion_chance_modifier = -1
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - gold_depletion_chance_modifier = -1, -30 devcost in gold
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+
+		ab_age2_VerkalGulan_bonus_button = {
+			allow = {
+				tag = F47
+				#trigger - have verkangulan, verkangulan130 dev, verkangulan has any wonder
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - +1 global interest per annum, -1.5 interest for VG, until end of this age
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2971,9 +3392,15 @@ age_of_absolutism = {
 		ab_age3_Ibevar_bonus_button = {
 			allow = {
 				tag = A32
+				#trigger - dont have slacken modifier
 			}
 			modifier = {
 				discipline = 0.1
+				land_morale = 0.15
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - slacken BAN until end of this age
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2984,9 +3411,9 @@ age_of_absolutism = {
 			allow = {
 				tag = Z46
 			}
-			modifier = {
-				development_cost_in_primary_culture = -0.15
-				manpower_in_own_culture_provinces = 0.15
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - enable_development_on_buildings_built until the end of the game
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3000,7 +3427,16 @@ age_of_absolutism = {
 			modifier = {
 				imperial_authority_value = 2.5
 			}
-			# also make pashalko effect - change name on gawed and lorent to exort and quas
+			effect = {
+				hidden_effect = {
+					A01 = {
+						override_country_name = LORENT_EXORTNAME
+					}
+					A13 = {
+						override_country_name = GAWED_QUASNAME
+					}
+				}
+			}
 			ai_will_do = {
 				factor = 1000
 			}
@@ -3009,9 +3445,10 @@ age_of_absolutism = {
 		ab_age3_Eborthil_bonus_button = {
 			allow = {
 				tag = A47
+				num_of_trade_companies = 10
 			}
 			modifier = {
-				max_flagships = 3
+				min_autonomy_in_territories = -0.5
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3025,10 +3462,22 @@ age_of_absolutism = {
 					tag = Z17
 				}
 			}
-			modifier = {
-				country_admin_power = 2
-				country_diplomatic_power = 2
-				country_military_power = 2
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - new dip interaction - check table
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Vaengheim_bonus_button = {
+			allow = {
+				tag = Z88
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - wipe effect - check table
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3038,10 +3487,6 @@ age_of_absolutism = {
 		ab_age3_Grombar_bonus_button = {
 			allow = {
 				tag = Z50
-				custom_trigger_tooltip = {
-					tooltip = ab_age3_Grombar_bonus_button_tt
-					has_country_flag = orc_grombar
-				}
 			}
 			modifier = {
 				land_attrition = -0.33
@@ -3052,28 +3497,13 @@ age_of_absolutism = {
 			}
 		}
 
-		ab_age3_Dostanor_bonus_button = {
+		ab_age3_Rosande_bonus_button = {
 			allow = {
-				tag = Z07
+				tag = Z35
 			}
-			modifier = {
-				monthly_splendor = 10
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age3_Cyranvar_bonus_button = {
-			allow = {
-				tag = I45
-				custom_trigger_tooltip = {
-					tooltip = ab_age3_Cyranvar_bonus_button_tt
-					has_country_flag = cyranvar_open_path
-				}
-			}
-			modifier = {
-				movement_speed = 0.5
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - for every 10 prov with wine within escann gets +1 disc
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3083,6 +3513,7 @@ age_of_absolutism = {
 		ab_age3_Elikhand_bonus_button = {
 			allow = {
 				tag = B38
+				#trigger - all wonders builded
 			}
 			modifier = {
 				land_morale = 0.15
@@ -3097,8 +3528,9 @@ age_of_absolutism = {
 			allow = {
 				tag = Z36
 			}
-			modifier = {
-				fire_damage_received = -0.15
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - i hate boris - check table
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3130,6 +3562,34 @@ age_of_absolutism = {
 				factor = 1000
 			}
 		}
+
+		ab_age3_Cyranvar_bonus_button = {
+			allow = {
+				tag = I45
+				custom_trigger_tooltip = {
+					tooltip = ab_age3_Cyranvar_bonus_button_tt
+					has_country_flag = cyranvar_open_path
+				}
+			}
+			modifier = {
+				movement_speed = 0.5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Dostanor_bonus_button = {
+			allow = {
+				tag = Z07
+			}
+			modifier = {
+				monthly_splendor = 11
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
 		
 		ab_age3_Gelkalis_bonus_button = {
 			allow = {
@@ -3148,7 +3608,10 @@ age_of_absolutism = {
 
 		ab_age3_Siadan_bonus_button = {
 			allow = {
-				tag = F48
+				OR = {
+					tag = F48
+					was_tag = F48
+				}
 			}
 			modifier = {
 				infantry_fire = 0.5
@@ -3160,7 +3623,10 @@ age_of_absolutism = {
 
 		ab_age3_Mulen_bonus_button = {
 			allow = {
-				tag = F50
+				OR = {
+					tag = F50
+					was_tag = F50
+				}
 			}
 			modifier = {
 				infantry_shock = 0.5
@@ -3186,8 +3652,37 @@ age_of_absolutism = {
 			allow = {
 				tag = U04
 			}
-			modifier = {
-				all_power_cost = -0.05
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - unlock decision - for 50 church power get +50 fire damage for mounth
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Konolkhatep_bonus_button = {
+			allow = {
+				tag = F66
+				#trigger - no aaket countries, control armuul, send 30k to aramuul
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - unlock merc 3 artillery with +100 artillery fire
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Khatalashya_bonus_button = {
+			allow = {
+				tag = S81
+				#trigger - controll all mutation provinces
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - i hate boris - check table
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3206,12 +3701,27 @@ age_of_absolutism = {
 			}
 		}
 
+		ab_age3_Zabutodask_bonus_button = {
+			allow = {
+				tag = J53
+				#trigger - lakefed disbanded
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - +1 cavalry fire+50 cossacks limit untill end of the game
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age3_Ghankedhen_bonus_button = {
 			allow = {
 				tag = R74
 			}
-			modifier = {
-				global_trade_goods_size = 1
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - +2 goods to provinces in region of Ghankedhen
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3222,8 +3732,9 @@ age_of_absolutism = {
 			allow = {
 				tag = R73
 			}
-			modifier = {
-				infantry_power = 0.20
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - unlock 2 mercs with manyhands modifiers
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3235,8 +3746,11 @@ age_of_absolutism = {
 				tag = Z62
 			}
 			modifier = {
-				cav_to_inf_ratio = 0.10
-				cavalry_power = 0.15
+				development_cost = 0.15
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - -120 devcost in four main states
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3293,9 +3807,11 @@ age_of_absolutism = {
 		ab_age3_Feiten_bonus_button = {
 			allow = {
 				tag = Y20
+				#trigger - have 200k, no loans
 			}
-			modifier = {
-				infantry_fire = 0.5
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - +1 invention slot, -200k
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3307,6 +3823,7 @@ age_of_absolutism = {
 				tag = H16
 			}
 			effect = {
+				# todo - FIX - ALLIES ALSO GET THIS MODIFIER
 				set_country_flag = ab_age3_Gemradcurt_bonus_flag
 				custom_tooltip = ab_age3_Gemradcurt_bonus_button_tt
 				tooltip = {
@@ -3315,6 +3832,19 @@ age_of_absolutism = {
 						duration = -1
 					}
 				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Eordand_bonus_button = {
+			allow = {
+				tag = H21
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - each season have unique bonuses
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3399,7 +3929,7 @@ age_of_absolutism = {
 				tag = H00
 			}
 			modifier = {
-				cav_to_inf_ratio = 0.3
+				cavalry_power = 0.3
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3418,31 +3948,13 @@ age_of_absolutism = {
 			}
 		}
 
-		ab_age3_Konolkhatep_bonus_button = {
+		ab_age3_Krakdhumvror_bonus_button = {
 			allow = {
-				tag = F66
-			}
-			modifier = {
-				imperial_mandate = 0.4
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age3_VerkalDromak_bonus_button = {
-			allow = {
-				tag = I25
+				tag = I02
 			}
 			effect = {
-				set_country_flag = ab_age3_VerkalDromak_flag
-				custom_tooltip = ab_mention_primary_effect
-				tooltip = {
-					add_country_modifier = {
-						name = age3_VerkalDromak_bonus_modif
-						duration = -1
-					}
-				}
+				custom_tooltip = todo_tt
+				# TODO - unique magic now have no cost in mil power
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3452,11 +3964,30 @@ age_of_absolutism = {
 		ab_age3_OrlazamAzDihr_bonus_button = {
 			allow = {
 				tag = I04
-				mission_completed = ramsteel_mecharam_prototypes
+				#trigger - dont have new tanks invention
+			}
+			modifier = {
+				cavalry_fire = 2
 			}
 			effect = {
-				set_country_flag = unlocked_artifice_invention_prototype_tanks
-				custom_tooltip = ab_age3_OrlazamAzDihr_bonus_tt
+				custom_tooltip = todo_tt
+				# TODO - ban new tanks invention
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_Truedagger_bonus_button = {
+			allow = {
+				OR = {
+					tag = H85
+					was_tag = H85
+				}
+			}
+			modifier = {
+				diplomats = 5
+				spy_offence = 0.3
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3469,6 +4000,7 @@ age_of_absolutism = {
 			}
 			modifier = {
 				max_absolutism_effect = 0.5
+				max_absolutism = 50
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3488,16 +4020,26 @@ age_of_absolutism = {
 			}
 		}
 
-		ab_age3_Truedagger_bonus_button = {
+		ab_age3_ErNatvir_bonus_button = {
 			allow = {
-				OR = {
-					tag = H85
-					was_tag = H85
-				}
+				tag = I06
 			}
-			modifier = {
-				diplomats = 5
-				spy_offence = 0.3
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - all t2 roads change to t3 roads
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age3_ArdOrdstun_bonus_button = {
+			allow = {
+				tag = H76
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - +2.5 morale for each crown piece
 			}
 			ai_will_do = {
 				factor = 1000
@@ -3530,6 +4072,18 @@ age_of_absolutism = {
 			}
 		}
 
+		ab_age3_OvdalAzAn_bonus_button = {
+			allow = {
+				tag = I19
+			}
+			modifier = {
+				church_power_modifier = 0.33
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age3_HulAzKrakazol_bonus_button = {
 			allow = {
 				tag = I20
@@ -3537,20 +4091,26 @@ age_of_absolutism = {
 			modifier = {
 				fire_damage_received = 0.10
 				shock_damage_received = 0.10
-				fire_damage = 0.30
-				shock_damage = 0.30
+				fire_damage = 0.35
+				shock_damage = 0.35
 			}
 			ai_will_do = {
 				factor = 1000
 			}
 		}
-
-		ab_age3_Krakdhumvror_bonus_button = {
+		ab_age3_VerkalDromak_bonus_button = {
 			allow = {
-				tag = I02
+				tag = I25
 			}
-			modifier = {
-				shock_damage_received = -0.2
+			effect = {
+				set_country_flag = ab_age3_VerkalDromak_flag
+				custom_tooltip = ab_mention_primary_effect
+				tooltip = {
+					add_country_modifier = {
+						name = age3_VerkalDromak_bonus_modif
+						duration = -1
+					}
+				}
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4002,7 +4562,8 @@ age_of_revolutions = {
 				tag = Z01
 			}
 			modifier = {
-				fire_damage_received = -0.25
+				fire_damage_received = -0.15
+				global_unrest = -1
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4036,20 +4597,14 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_Karakhanbar_bonus_button = {
+		ab_age4_Castanor_bonus_button = {
 			allow = {
-				tag = Z54
+				tag = B32
 			}
 			modifier = {
-				country_admin_power = 1
-				country_diplomatic_power = 1
-				country_military_power = 1
-				all_power_cost = -0.025
-				global_manpower_modifier = 0.10
-				manpower_recovery_speed = 0.10
-				land_morale = 0.05
-				discipline = 0.05
-				global_trade_goods_size_modifier = 0.1
+				reinforce_speed = 0.5
+				global_attacker_dice_roll_bonus = 1
+				global_defender_dice_roll_bonus = 1
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4069,14 +4624,20 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_Castanor_bonus_button = {
+		ab_age4_Karakhanbar_bonus_button = {
 			allow = {
-				tag = B32
+				tag = Z54
 			}
 			modifier = {
-				reinforce_speed = 0.5
-				global_attacker_dice_roll_bonus = 1
-				global_defender_dice_roll_bonus = 1
+				country_admin_power = 1
+				country_diplomatic_power = 1
+				country_military_power = 1
+				all_power_cost = -0.025
+				global_manpower_modifier = 0.10
+				manpower_recovery_speed = 0.10
+				land_morale = 0.05
+				discipline = 0.05
+				global_trade_goods_size_modifier = 0.1
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4143,6 +4704,25 @@ age_of_revolutions = {
 			}
 		}
 
+		ab_age4_UmojiBaashidi_bonus_button = {
+			allow = {
+				tag = S79
+			}
+			effect = {
+				set_country_flag = ab_age4_UmojiBaashidi_flag
+				custom_tooltip = ab_mention_primary_effect
+				tooltip = {
+					add_country_modifier = {
+						name = ab_age4_UmojiBaashidi_bonus_modif
+						duration = -1
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
 		ab_age4_HarimrajRahenraj_bonus_button = {
 			allow = {
 				OR = {
@@ -4185,8 +4765,9 @@ age_of_revolutions = {
 					tag = Y00
 				}
 			}
-			modifier = {
-				land_morale_constant = 0.75
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO  - BORIS YA TEBYA BLYAT NENAVIZHU - check table
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4223,8 +4804,8 @@ age_of_revolutions = {
 				tag = Y98
 			}
 			effect = {
-				set_country_flag = ab_age4_Daxugo_bonus_flag
-				custom_tooltip = ab_age4_Daxugo_bonus_tt
+				development_cost = -0.15
+				global_trade_goods_size_modifier = 0.15
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4259,9 +4840,9 @@ age_of_revolutions = {
 			allow = {
 				tag = Z43
 			}
-			modifier = {
-				regiment_disembark_speed = 1
-				transport_attrition = -0.5
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - unlock decision - +20 unrest and +100 mpr for 5 years
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4288,11 +4869,8 @@ age_of_revolutions = {
 				}
 			}
 			effect = {
-				coast_of_isobel_area = {
-					add_base_tax = 15
-					add_base_production = 15
-					add_base_manpower = 15
-				}
+				custom_tooltip = todo_tt
+				# TODO - add event for all countryies - country lose dev and isobelin gain dev
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4340,19 +4918,13 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_UmojiBaashidi_bonus_button = {
+		ab_age4_Taychend_bonus_button = {
 			allow = {
-				tag = S79
+				tag = J84
 			}
 			effect = {
-				set_country_flag = ab_age4_UmojiBaashidi_flag
-				custom_tooltip = ab_mention_primary_effect
-				tooltip = {
-					add_country_modifier = {
-						name = ab_age4_UmojiBaashidi_bonus_modif
-						duration = -1
-					}
-				}
+				custom_tooltip = todo_tt
+				# TODO - mil dev exploiting dont losa mil dev
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4363,33 +4935,21 @@ age_of_revolutions = {
 			allow = {
 				tag = I98
 			}
-			modifier = {
-				artillery_cost = -0.7
-				artillery_power = 0.15
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - 10% per devclick gain x10 devclick, 1% make prov to 1-1-1
 			}
 			ai_will_do = {
 				factor = 1000
 			}
 		}
 
-		ab_age4_AulDwarov_bonus_button = {
+		ab_age4_DurVazhatun_bonus_button = {
 			allow = {
-				tag = I24
+				tag = I03
 			}
 			modifier = {
-				state_governing_cost = -0.15
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age4_Roadwarrior_bonus_button = {
-			allow = {
-				tag = H91
-			}
-			modifier = {
-				can_bypass_forts = yes
+				idea_cost = -0.9
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4421,13 +4981,12 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_GorBurad_bonus_button = {
+		ab_age4_Roadwarrior_bonus_button = {
 			allow = {
-				tag = I16
+				tag = H91
 			}
 			modifier = {
-				hostile_attrition = 5
-				max_hostile_attrition = 5
+				can_bypass_forts = yes
 			}
 			ai_will_do = {
 				factor = 1000
@@ -4446,12 +5005,26 @@ age_of_revolutions = {
 			}
 		}
 
-		ab_age4_DurVazhatun_bonus_button = {
+		ab_age4_GorBurad_bonus_button = {
 			allow = {
-				tag = I03
+				tag = I16
 			}
 			modifier = {
-				siege_ability = 0.5
+				hostile_attrition = 5
+				max_hostile_attrition = 5
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_age4_AulDwarov_bonus_button = {
+			allow = {
+				tag = I24
+			}
+			effect = {
+				custom_tooltip = todo_tt
+				# TODO - every hold gets +2 local defender dice bonus with condition controller - aul dwarow
 			}
 			ai_will_do = {
 				factor = 1000
