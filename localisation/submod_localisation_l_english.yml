@@ -81,7 +81,7 @@
  flavor_nuugdan_tsarai.23.d: "Prosperity and industry are the best insurance against rebellion"
  guwaamud_gain_plus1_dev_to_gowon_reg_tt: "All provinces in Gowon region will get §G+1§! base tax, production, and manpower."
  corinite.100.s: "Her might is undeniable. Our blade shall now serve Corin!"
- submod_enterance_to_sir_rebellion_tt: "§R! ! ! ATTENTION ! ! !§!\nWe will §Rjoin§! to war against §YThe Command§! in 180 days"
+ submod_enterance_to_sir_rebellion_tt: "§R! ! ! ATTENTION ! ! !§! \nWe will §Rjoin§! to war against §YThe Command§! in 180 days"
  submod_no_enterance_to_sir_rebellion_tt: "§R! ! ! ATTENTION ! ! !§!\nWe will §Rnot join§! to war against §YThe Command§!"
 
  submod_custom_events.0.t: "The Call of the War Banner"
@@ -109,6 +109,12 @@
  ovdal_tungr_defence_buff:0 "Controlled by Ovdal Tungr"
 
  feyrealm_treadmill: "Feyrealm Treadmill"
+
+ DADV_restoring_the_rail_effect_tt: "Up to 6 §YDwarven Roads§! will be §Grepaired§!"
+ submod_restoring_the_rail_devcost_modif: "Justification of Madness"
+ submod_restoring_the_rail_mana_modif: "Mirage of the Golden Age"
+ submod_DADV_mithril_forge_tt: "Gain §YWeapons Manufactory§! in §YEvery owned Province with Mithril§!."
+ submod_no_khatalashya_form_after_mission: "§R!!! ATTENTION !!!§!\nAfter completing this mission we cannot form §YKhatalashya§!."
 
  #-----------------------ADVISORS----------------------
  adm_advisor_price_increase_lvl_6:0 "Additional price for the 6th level Adm. Advisor"

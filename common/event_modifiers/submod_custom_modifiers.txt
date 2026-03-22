@@ -159,6 +159,17 @@ feyrealm_treadmill = {
 	local_hostile_movement_speed = 10
 }
 
+submod_restoring_the_rail_devcost_modif = {
+	development_cost = -0.05
+}
+
+submod_restoring_the_rail_mana_modif = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+
+
 interest_bankruptcy_penalty_1 = {
 	interest = 0.5
 }

@@ -2207,6 +2207,8 @@ bomdan_azkare = { #Conquer bomdan
 		
 		effect = {
 			add_prestige = 25
+			custom_tooltip = azkare_parliament_change_autonomy_per_rep_effect_tooltip	#BomjSBagetom Anbennar Submod
+			azkare_parliament_change_autonomy_per_rep_effect = { amount = -0.1 }		#BomjSBagetom Anbennar Submod
 		}
 	}
 	
@@ -3169,6 +3171,8 @@ east_thidinkai_azkare = { #Conquer east thidinkai
 			clr_country_flag = azkare_sarisung_gangs_flag
 			clr_country_flag = azkare_capital_of_a_continent_flag
 			country_event = { id = azkare.42 }
+			custom_tooltip = azkare_parliament_change_autonomy_per_rep_effect_tooltip	#BomjSBagetom Anbennar Submod
+			azkare_parliament_change_autonomy_per_rep_effect = { amount = -0.1 }		#BomjSBagetom Anbennar Submod
 		}
 	}
 }
@@ -3551,6 +3555,8 @@ military_1_azkare = { #Improve Military, preperations for Jaerelic Legions
 				name = azkare_modifier_nephrite_platemail
 				duration = 18250 # 50 Years
 			}
+			custom_tooltip = azkare_parliament_change_autonomy_per_rep_effect_tooltip	#BomjSBagetom Anbennar Submod
+			azkare_parliament_change_autonomy_per_rep_effect = { amount = -0.1 }		#BomjSBagetom Anbennar Submod
 		}
 	}
 	
@@ -3897,7 +3903,8 @@ connect_the_continent_azkare = { #Golden Highway, Major ports
 		effect = {
 			custom_tooltip = azkare_parliament_change_autonomy_per_rep_effect_tooltip
 			hidden_effect = {
-				azkare_parliament_change_autonomy_per_rep_effect = { amount = -0.05 }
+				#azkare_parliament_change_autonomy_per_rep_effect = { amount = -0.05 }	#BomjSBagetom Anbennar Submod
+				azkare_parliament_change_autonomy_per_rep_effect = { amount = -0.1 }	#BomjSBagetom Anbennar Submod
 			}
 		}
 	}
@@ -6936,7 +6943,8 @@ legions_azkare = { #Jaerelic legions, conquer Yanshen, Develop rahen
 			add_adm_power = -200
 			custom_tooltip = azkare_parliament_change_autonomy_per_rep_effect_tooltip
 			hidden_effect = {
-				azkare_parliament_change_autonomy_per_rep_effect = { amount = -0.05 }
+				#azkare_parliament_change_autonomy_per_rep_effect = { amount = -0.05 }	#BomjSBagetom Anbennar Submod
+				azkare_parliament_change_autonomy_per_rep_effect = { amount = -0.1 }	#BomjSBagetom Anbennar Submod
 			}
 		}
 	}

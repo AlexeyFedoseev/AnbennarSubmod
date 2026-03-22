@@ -1026,9 +1026,14 @@ karshyr_missions_3 = {
 				}
 			}
 			has_mil_advisor_2 = yes
+			custom_trigger_tooltip = {	#BomjSBagetom Anbennar Submod
+				tooltip = submod_no_khatalashya_form_after_mission
+				always = yes
+			}
 		}
 		
 		effect = {
+			custom_tooltip = submod_no_khatalashya_form_after_mission	#BomjSBagetom Anbennar Submod
 			5898 = {
 				add_devastation = 50
 				add_base_tax = -2

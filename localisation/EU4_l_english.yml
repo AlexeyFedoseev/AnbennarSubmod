@@ -5031,7 +5031,7 @@
  RNW_BLOCKED_BY_MOD:0 "§RRandom New World not allowed by Mod:§! §Y$NAME$§!"
  AGE_X_MONTHS_AFTER:0 "This age will start $MONTH|Y$ months after the following is true:"
  alert_age_ending_soon_instant:0 "$AGENAME|Y$ is ending in $MONTH|Y$ months!"
- alert_age_ending_soon_delayed:0 "The current age is about to end. All Splendor and abilities will be cleared, and a new set of objectives will be available.\n§R!!! ATTENTION !!!§!nIn the new age, you will gain a new modifier that gives you +1% interest per annum. Please manage your loans accordingly."  #BomjSBagetom Anbennar Submod
+ alert_age_ending_soon_delayed:0 "The current age is about to end. All Splendor and abilities will be cleared, and a new set of objectives will be available.\n§R!!! ATTENTION !!!§!\nIn the new age, you will gain a new modifier that gives you +1% interest per annum. Please manage your loans accordingly."  #BomjSBagetom Anbennar Submod
  alert_age_can_spend_splendor_instant:0 "§YCan purchase an ability§!"
  alert_age_can_spend_splendor_delayed:0 "Your level of Splendor is currently high enough to be able to purchase an Ability."
  alert_can_enact_decree_instant:0 "§YCan enact a Decree!§!"

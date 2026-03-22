@@ -535,7 +535,7 @@ country_event = {
 	option = {		
 		name = cyranvar.5.a
 		ai_chance = { factor = 40 }
-		vassalize = FROM
+		#vassalize = FROM	#BomjSBagetom Anbennar Submod
 		FROM = {
 			every_subject_country = {
 				limit = { 
@@ -545,6 +545,7 @@ country_event = {
 				ROOT = { vassalize = PREV }
 			}
 		}
+		inherit = FROM		#BomjSBagetom Anbennar Submod
 	}
 }
 

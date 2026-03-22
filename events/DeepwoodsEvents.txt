@@ -822,7 +822,7 @@ country_event = {
 	option = {
 		name = deepwoods.3.b
 		ai_chance = { factor = 0 }
-		reduce_stability_or_adm_power = yes
+		#reduce_stability_or_adm_power = yes	#BomjSBagetom Anbennar Submod
 		add_prestige = -10
 		remove_country_modifier = deepwoods_verdant_pact
 	}

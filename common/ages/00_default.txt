@@ -3006,7 +3006,7 @@ age_of_absolutism = {
 
 		obj_age3_3_court_and_country = {
 			custom_trigger_tooltip = {
-				tooltip = abj_age3_3_finish_court_and_country_tt
+				tooltip = obj_age3_3_finish_court_and_country_tt
 				has_country_modifier = crushed_local_authority
 			}
 		}
