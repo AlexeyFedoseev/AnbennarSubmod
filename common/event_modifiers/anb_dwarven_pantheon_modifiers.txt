@@ -12,11 +12,10 @@ anvelind_grimthar_modifier = {	#BomjSBagetom Anbennar Submod
 	religion = yes
 	global_autonomy = -0.05	
 }
-anvelind_thyrfen_modifier = {
+anvelind_thyrfen_modifier = {	#BomjSBagetom Anbennar Submod
 	religion = yes
 	global_prosperity_growth = 0.5
 }
-
 anvelind_grobilazk_modifier = {
 	religion = yes
 	#all_estate_influence_modifier = -0.025			#BomjSBagetom Anbennar Submod

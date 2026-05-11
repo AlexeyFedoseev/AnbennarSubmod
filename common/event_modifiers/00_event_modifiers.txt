@@ -3133,16 +3133,16 @@ tur_weakened_the_harem = {
 	yearly_corruption = -0.5
 }
 
-tur_growing_influence_of_the_janissaries = {	#Permanent
-	janissaries_privilege_slots = 1
-}
+# tur_growing_influence_of_the_janissaries = {	#Permanent
+# 	janissaries_privilege_slots = 1
+# }
 
-tur_shattered_the_janissaries = {
-	legitimacy = 1
-	republican_tradition = 0.5
-	max_absolutism = 15
-	janissaries_influence_modifier = -0.5
-}
+# tur_shattered_the_janissaries = {
+# 	legitimacy = 1
+# 	republican_tradition = 0.5
+# 	max_absolutism = 15
+# 	janissaries_influence_modifier = -0.5
+# }
 
 tur_reformation_of_the_ottoman_estates = {
 	all_estate_loyalty_equilibrium = 0.2
@@ -4183,6 +4183,8 @@ diplo_fuax_pas = {
 mercenaries_to_the_standard = {
 	mercenary_manpower = 0.5
 }
+
+bypass_regional_merc_requirements = { } # Just to make the OR trigger for mercenary companies a little more efficient
 
 for_freedom = {
 	land_morale = 0.1
@@ -9961,8 +9963,10 @@ mass_revolutionary_guard_modifier_country = {
 
 vanguard_revolutionary_guard_modifier = {
 	is_revolutionary_guard_modifier = yes
-	shock_damage_received = -0.1
-	fire_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	land_maintenance_modifier = 0.5
 }
 
@@ -10782,7 +10786,8 @@ expelling_heretics = {
 
 anglican_militarized_church_aspect = {
 	land_morale = 0.1
-	shock_damage_received = -0.1
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 # Indian Estates
@@ -11046,8 +11051,10 @@ janissary_mehteran = {
 }
 
 janissary_loyalty_to_the_sultan = {
-	fire_damage_received = -0.1
-	shock_damage_received = -0.1
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	morale_damage_received = -0.2
 	is_janissary_modifier = yes
 }
@@ -11537,30 +11544,30 @@ borgia_diplomacy = {
 
 #Estate Privileges
 
-estate_dhimmi_lighter_dhimmi_taxes_privilege_mod = {
-	religion = yes
-	local_tax_modifier = 0.15
-}
+# estate_dhimmi_lighter_dhimmi_taxes_privilege_mod = {
+# 	religion = yes
+# 	local_tax_modifier = 0.15
+# }
 
-estate_dhimmi_manpower_mod = {
-	religion = yes
-	local_manpower_modifier = 0.2
-}
+# estate_dhimmi_manpower_mod = {
+# 	religion = yes
+# 	local_manpower_modifier = 0.2
+# }
 
-estate_maratha_levies_for_muslims_mod = {
-	local_manpower_modifier = 0.3
-}
+# estate_maratha_levies_for_muslims_mod = {
+# 	local_manpower_modifier = 0.3
+# }
 
-estate_dhimmi_guaranteed_autonomy_mod = {
-	religion = yes
-	local_religious_unity_contribution = -1
-	local_missionary_strength = -1
-}
+# estate_dhimmi_guaranteed_autonomy_mod = {
+# 	religion = yes
+# 	local_religious_unity_contribution = -1
+# 	local_missionary_strength = -1
+# }
 
-estate_dhimmi_millet_system_mod = {
-	local_development_cost = -0.05
-	religion = yes
-}
+# estate_dhimmi_millet_system_mod = {
+# 	local_development_cost = -0.05
+# 	religion = yes
+# }
 
 estate_burghers_guaranteed_autonomy_mod = {
 	religion = yes
@@ -11599,41 +11606,41 @@ estate_burghers_monopoly_of_paper_mod = {
 	local_production_efficiency = -10
 }
 
-estate_vaisyas_monopoly_of_textiles_mod = {
-	local_production_efficiency = -10
-}
+# estate_vaisyas_monopoly_of_textiles_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_vaisyas_monopoly_of_dyes_mod = {
-	local_production_efficiency = -10
-}
+# estate_vaisyas_monopoly_of_dyes_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_vaisyas_monopoly_of_glass_mod = {
-	local_production_efficiency = -10
-}
+# estate_vaisyas_monopoly_of_glass_mod = {
+# 	local_production_efficiency = -10
+# }
 
 selanik_jews = {
 	local_production_efficiency = 0.2
 }
 
-estate_vaisyas_monopoly_of_paper_mod = {
-	local_production_efficiency = -10
-}
+# estate_vaisyas_monopoly_of_paper_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_jains_monopoly_of_textiles_mod = {
-	local_production_efficiency = -10
-}
+# estate_jains_monopoly_of_textiles_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_jains_monopoly_of_dyes_mod = {
-	local_production_efficiency = -10
-}
+# estate_jains_monopoly_of_dyes_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_jains_monopoly_of_glass_mod = {
-	local_production_efficiency = -10
-}
+# estate_jains_monopoly_of_glass_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_jains_monopoly_of_paper_mod = {
-	local_production_efficiency = -10
-}
+# estate_jains_monopoly_of_paper_mod = {
+# 	local_production_efficiency = -10
+# }
 
 estate_church_monopoly_of_incense_mod = {
 	local_production_efficiency = -10
@@ -11671,29 +11678,29 @@ estate_nobles_monopoly_of_gems_mod = {
 	local_production_efficiency = -10
 }
 
-estate_rajput_monopoly_of_metals_mod = {
-	local_production_efficiency = -10
-}
+# estate_rajput_monopoly_of_metals_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_rajput_monopoly_of_livestock_mod = {
-	local_production_efficiency = -10
-}
+# estate_rajput_monopoly_of_livestock_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_rajput_monopoly_of_gems_mod = {
-	local_production_efficiency = -10
-}
+# estate_rajput_monopoly_of_gems_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_maratha_monopoly_of_metals_mod = {
-	local_production_efficiency = -10
-}
+# estate_maratha_monopoly_of_metals_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_maratha_monopoly_of_livestock_mod = {
-	local_production_efficiency = -10
-}
+# estate_maratha_monopoly_of_livestock_mod = {
+# 	local_production_efficiency = -10
+# }
 
-estate_maratha_monopoly_of_gems_mod = {
-	local_production_efficiency = -10
-}
+# estate_maratha_monopoly_of_gems_mod = {
+# 	local_production_efficiency = -10
+# }
 
 estate_janissary_professional_soldiers_mod = {
 	drill_decay_modifier = -0.25
@@ -11758,22 +11765,22 @@ estate_cossacks_freedom_of_the_steppes_mod = {
 estate_nomadic_tribes_freedom_of_the_steppes_mod = {
 	local_development_cost = -0.05
 }
-estate_dhimmi_development_of_communities_mod = {
-	local_development_cost = -0.05
-	religion = yes
-}
-estate_maratha_development_of_marathi_lands_mod = {
-	local_development_cost = -0.1
-}
-estate_rajput_development_of_rajput_lands_mod = {
-	local_development_cost = -0.1
-}
-estate_vaisyas_development_of_cities_mod = {
-	local_development_cost = -0.05
-}
-estate_jains_development_of_cities_mod = {
-	local_development_cost = -0.05
-}
+# estate_dhimmi_development_of_communities_mod = {
+# 	local_development_cost = -0.05
+# 	religion = yes
+# }
+# estate_maratha_development_of_marathi_lands_mod = {
+# 	local_development_cost = -0.1
+# }
+# estate_rajput_development_of_rajput_lands_mod = {
+# 	local_development_cost = -0.1
+# }
+# estate_vaisyas_development_of_cities_mod = {
+# 	local_development_cost = -0.05
+# }
+# estate_jains_development_of_cities_mod = {
+# 	local_development_cost = -0.05
+# }
 
 recently_repealed_elective_monarchy_timer = { }
 recently_force_converted_protagonist_timer = { }
@@ -11797,16 +11804,16 @@ agenda_hinduist_rallying = {
 	local_missionary_strength = -0.1
 }
 
-agenda_dhimmi_rallying = {
-	local_missionary_strength = -0.1
-}
+# agenda_dhimmi_rallying = {
+# 	local_missionary_strength = -0.1
+# }
 
-agenda_dhimmi_get_a_church = {
-	local_missionary_strength = -0.05
-}
-agenda_brahmins_get_a_church = {
-	local_missionary_strength = -0.05
-}
+# agenda_dhimmi_get_a_church = {
+# 	local_missionary_strength = -0.05
+# }
+# agenda_brahmins_get_a_church = {
+# 	local_missionary_strength = -0.05
+# }
 
 recent_converted_province_mission_timer = { }
 
@@ -12145,7 +12152,8 @@ utraquist_moderates = {
 }
 
 war_wagons = {
-	shock_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	shock_damage = -0.05
 }
 
@@ -12810,10 +12818,10 @@ mal_nobles_take_over = {
 	local_unrest = 2
 }
 
-mal_radical_clergy = {
-	tolerance_heathen = -3
-	dhimmi_loyalty_modifier = -0.2
-}
+# mal_radical_clergy = {
+# 	tolerance_heathen = -3
+# 	dhimmi_loyalty_modifier = -0.2
+# }
 
 mal_radical_dhimmi = {
 	tolerance_own = -3
@@ -13311,7 +13319,8 @@ civic_republicanism_focus_naval = {
 #}
 
 the_cawa_regiments_reform_modifier = {
-	fire_damage_received = -0.1
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	is_cawa_modifier = yes
 }
 
@@ -13605,22 +13614,22 @@ ASK_FOR_CONTRIBUTION_BURGHERS_level_4 = {
 	naval_maintenance_modifier = -0.1
 	build_cost = -0.1
 }
-ASK_FOR_CONTRIBUTION_VAISYAS_level_1 = {
-	naval_maintenance_modifier = -0.025
-	build_cost = -0.025
-}
-ASK_FOR_CONTRIBUTION_VAISYAS_level_2 = {
-	naval_maintenance_modifier = -0.05
-	build_cost = -0.05
-}
-ASK_FOR_CONTRIBUTION_VAISYAS_level_3 = {
-	naval_maintenance_modifier = -0.075
-	build_cost = -0.075
-}
-ASK_FOR_CONTRIBUTION_VAISYAS_level_4 = {
-	naval_maintenance_modifier = -0.1
-	build_cost = -0.1
-}
+# ASK_FOR_CONTRIBUTION_VAISYAS_level_1 = {
+# 	naval_maintenance_modifier = -0.025
+# 	build_cost = -0.025
+# }
+# ASK_FOR_CONTRIBUTION_VAISYAS_level_2 = {
+# 	naval_maintenance_modifier = -0.05
+# 	build_cost = -0.05
+# }
+# ASK_FOR_CONTRIBUTION_VAISYAS_level_3 = {
+# 	naval_maintenance_modifier = -0.075
+# 	build_cost = -0.075
+# }
+# ASK_FOR_CONTRIBUTION_VAISYAS_level_4 = {
+# 	naval_maintenance_modifier = -0.1
+# 	build_cost = -0.1
+# }
 
 estate_church_donation_right_scaling = {
 	missionary_maintenance_cost = -1
@@ -13636,22 +13645,22 @@ estate_burghers_promote_burgher_bookkeeping_scaling = {
 	state_maintenance_modifier = -0.25
 }
 
-estate_dhimmi_protected_communities_scaling = {
-	religious_unity = 0.33
-}
+# estate_dhimmi_protected_communities_scaling = {
+# 	religious_unity = 0.33
+# }
 
-DEMAND_CONTRIBUTION_DHIMMI_level_1 = {
-	local_unrest = 1
-}
-DEMAND_CONTRIBUTION_DHIMMI_level_2 = {
-	local_unrest = 2
-}
-DEMAND_CONTRIBUTION_DHIMMI_level_3 = {
-	local_unrest = 3
-}
-DEMAND_CONTRIBUTION_DHIMMI_level_4 = {
-	local_unrest = 4
-}
+# DEMAND_CONTRIBUTION_DHIMMI_level_1 = {
+# 	local_unrest = 1
+# }
+# DEMAND_CONTRIBUTION_DHIMMI_level_2 = {
+# 	local_unrest = 2
+# }
+# DEMAND_CONTRIBUTION_DHIMMI_level_3 = {
+# 	local_unrest = 3
+# }
+# DEMAND_CONTRIBUTION_DHIMMI_level_4 = {
+# 	local_unrest = 4
+# }
 
 CONTRIBUTE_WARRIORS_NOMADIC_TRIBES_level_1 = {
 	land_maintenance_modifier = -0.025
@@ -13800,25 +13809,25 @@ overhauling_the_court = {
 	prestige_decay = -0.01
 }
 
-rise_of_the_ottomans = {
-	monthly_ottoman_decadence = -1
-	ottoman_decadence_gain_modifier = -0.5
-}
+# rise_of_the_ottomans = {
+# 	monthly_ottoman_decadence = -1
+# 	ottoman_decadence_gain_modifier = -0.5
+# }
 
-zenith_of_the_ottomans = {
-	monthly_ottoman_decadence = -0.5
-	ottoman_decadence_gain_modifier = -0.25
-}
+# zenith_of_the_ottomans = {
+# 	monthly_ottoman_decadence = -0.5
+# 	ottoman_decadence_gain_modifier = -0.25
+# }
 
-twilight_of_the_ottomans = {
-	monthly_ottoman_decadence = 0.1
-	ottoman_decadence_gain_modifier = 0.5
-}
+# twilight_of_the_ottomans = {
+# 	monthly_ottoman_decadence = 0.1
+# 	ottoman_decadence_gain_modifier = 0.5
+# }
 
-decline_of_the_ottomans = {
-	monthly_ottoman_decadence = 0.25
-	ottoman_decadence_gain_modifier = 1
-}
+# decline_of_the_ottomans = {
+# 	monthly_ottoman_decadence = 0.25
+# 	ottoman_decadence_gain_modifier = 1
+# }
 
 #Diplo actions
 dissolve_protectorate_timer = {} #Timer
@@ -13862,16 +13871,16 @@ per_muzaffarid_centre_of_admin_modifier = {
 	trade_goods_size_modifier = 0.1
 	local_tax_modifier = 0.5
 }
-per_sponsorship_of_christian_armenians_modifier = {
-	tolerance_heathen = 1
-	manpower_recovery_speed = 0.1
-	qizilbash_loyalty_modifier = -0.1
-}
-per_elitist_caste_modifier = {
-	same_culture_advisor_cost = -0.2
-	culture_conversion_cost = -0.2 
-	qizilbash_loyalty_modifier = 0.1
-}
+# per_sponsorship_of_christian_armenians_modifier = {
+# 	tolerance_heathen = 1
+# 	manpower_recovery_speed = 0.1
+# 	qizilbash_loyalty_modifier = -0.1
+# }
+# per_elitist_caste_modifier = {
+# 	same_culture_advisor_cost = -0.2
+# 	culture_conversion_cost = -0.2 
+# 	qizilbash_loyalty_modifier = 0.1
+# }
 per_turkmen_recruits_modifier = {
 	local_manpower_modifier = 0.33 
 }
@@ -13898,11 +13907,13 @@ per_swift_horses3_modifier = {
 	movement_speed = 0.05
 }
 per_mount_discipline_modifier = {
-	fire_damage_received = -0.05
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	is_qizilbash_modifier = yes
 }
 per_mount_discipline2_modifier = {
-	fire_damage_received = -0.025
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	is_qizilbash_modifier = yes
 }
 per_horse_population_boom_modifier = {

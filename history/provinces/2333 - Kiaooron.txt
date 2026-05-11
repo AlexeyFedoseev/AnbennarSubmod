@@ -7,7 +7,6 @@ controller = H66
 add_core = H66
 culture = sun_elf
 religion = bulwari_sun_cult
-trade_goods = livestock
 is_city = yes
 
 capital = ""
@@ -18,7 +17,8 @@ base_tax = 5			#BomjSBagetom Anbennar Submod
 base_production = 4		#BomjSBagetom Anbennar Submod
 base_manpower = 3		#BomjSBagetom Anbennar Submod
 
-#trade_goods = unknown
+#trade_goods = unknown	#BomjSBagetom Anbennar Submod
+trade_goods = livestock	#BomjSBagetom Anbennar Submod
 
 native_size = 6
 native_ferocity = 1

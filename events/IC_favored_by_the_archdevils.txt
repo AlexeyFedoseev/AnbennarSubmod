@@ -103,7 +103,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.2
 	title = "favoured_IC.2.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.2.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -115,7 +115,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.2.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = { 
 			name = IC_emulant_kazraiel_1
@@ -131,7 +131,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.3
 	title = "favoured_IC.3.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.3.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -143,7 +143,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.3.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_kazraiel_2
@@ -253,7 +253,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.5
 	title = "favoured_IC.5.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.5.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -265,7 +265,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.5.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_hedine_1
@@ -281,7 +281,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.6
 	title = "favoured_IC.6.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.6.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -293,7 +293,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.6.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_hedine_2
@@ -406,7 +406,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.8
 	title = "favoured_IC.8.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.8.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -418,7 +418,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.8.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_forsara_1
@@ -434,7 +434,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.9
 	title = "favoured_IC.9.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.9.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -446,7 +446,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.9.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_forsara_2
@@ -555,7 +555,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.11
 	title = "favoured_IC.11.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.11.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -567,7 +567,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.11.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_canturian_1
@@ -583,7 +583,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.12
 	title = "favoured_IC.12.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.12.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -595,7 +595,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.12.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_canturian_2
@@ -712,7 +712,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.14
 	title = "favoured_IC.14.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.14.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -724,7 +724,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.14.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_ibberal_1
@@ -740,7 +740,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.15
 	title = "favoured_IC.15.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.15.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -752,7 +752,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.15.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_ibberal_2
@@ -810,11 +810,23 @@ country_event = {
 			duration = 1825
 		}
 		custom_tooltip = favoured_ic_tt
-		tooltip = {
-			#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
-			add_country_modifier = { 
-				name = IC_emulant_ildran_1
-				duration = -1
+		if = {
+			limit = { ruler_has_personality = obsessive_perfectionist_personality }
+			tooltip = {
+				#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
+				add_country_modifier = { 
+					name = IC_emulant_ildran_1
+					duration = -1
+				}
+			}
+		}
+		else = {
+			tooltip = {
+				#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
+				add_country_modifier = { 
+					name = IC_emulant_ildran_1_alt
+					duration = -1
+				}
 			}
 		}
 		hidden_effect = {
@@ -868,7 +880,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.17
 	title = "favoured_IC.17.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.17.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -880,9 +892,9 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.17.a"
 		trigger = {
-			ruler_has_personality = obsessive_perfectionist
+			ruler_has_personality = obsessive_perfectionist_personality
 		}
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
@@ -895,9 +907,9 @@ country_event = {
 	}
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.17.a"
 		trigger = {
-			NOT = { ruler_has_personality = obsessive_perfectionist }
+			NOT = { ruler_has_personality = obsessive_perfectionist_personality }
 		}
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
@@ -914,7 +926,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.18
 	title = "favoured_IC.18.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.18.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -926,7 +938,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.18.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_ildran_2
@@ -1037,7 +1049,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.20
 	title = "favoured_IC.20.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.20.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -1049,7 +1061,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.20.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_mesner_1
@@ -1065,7 +1077,7 @@ country_event = {
 country_event = {
 	id = favoured_IC.21
 	title = "favoured_IC.21.t"
-	desc = "favoured_IC.tempend.d"
+	desc = "favoured_IC.21.d"
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -1077,7 +1089,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "favoured_IC.temp.a"
+		name = "favoured_IC.21.a"
 		#add_ruler_modifier = { #BomjSBagetom Anbennar Submod
 		add_country_modifier = {
 			name = IC_emulant_mesner_2

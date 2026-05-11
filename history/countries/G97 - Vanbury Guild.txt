@@ -1,5 +1,5 @@
 
-setup_vision = yes
+setup_vision_north_aelantir = yes		#BomjSBagetom Anbennar Submod
 government = republic
 add_government_reform = aelantiri_corporate_state_reform
 add_government_reform = aelantir_branch_reform

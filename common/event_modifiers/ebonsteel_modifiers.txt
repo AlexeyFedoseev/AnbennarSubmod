@@ -50,8 +50,8 @@ ebonsteel_offensive_focus = {
 ebonsteel_defensive_focus = {
 	is_carolean_modifier = yes
 	morale_damage_received = -0.1
-	#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	land_maintenance_modifier = 0.5
 }
 

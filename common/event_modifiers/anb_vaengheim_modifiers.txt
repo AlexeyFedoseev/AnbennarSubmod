@@ -188,10 +188,10 @@ Z88_elkaesals_blessing = {
 
 Z88_ebonsteel_spirit = {
 	is_carolean_modifier = yes
-	#fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0375		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0375		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0375		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0375		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 Z88_warriors_of_legend = {
@@ -274,8 +274,8 @@ Z88_gray_orc_seat = {
 }
 
 Z88_tarik_seat = {
-	#shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	trade_goods_size = 0.01
 }
 

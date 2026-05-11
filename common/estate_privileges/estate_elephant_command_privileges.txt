@@ -645,8 +645,8 @@ estate_elephant_command_ghavaanaji_training_mental = {
 
 	benefits = {
 		shock_damage = 0.05
-		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 
 	penalties = {

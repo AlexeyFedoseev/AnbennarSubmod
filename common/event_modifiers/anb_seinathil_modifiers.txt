@@ -11,8 +11,8 @@ A90_sandur_lampman = {
 }
 
 A90_artorian_chandler = {
-	#shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 A90_obran_wotwocket = {

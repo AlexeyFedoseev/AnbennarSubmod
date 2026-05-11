@@ -16,8 +16,8 @@ L55_high_authority = {
 }
 L55_the_sirens_one = {
 	is_marine_modifier = yes
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	morale_damage = 0.1
 }
 L55_the_sirens_ships_one = {
@@ -25,10 +25,10 @@ L55_the_sirens_ships_one = {
 }
 L55_the_sirens_two = {
 	is_marine_modifier = yes
-	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	morale_damage = 0.10
 }
 L55_the_sirens_ships_two = {
@@ -37,10 +37,10 @@ L55_the_sirens_ships_two = {
 }
 L55_the_sirens_three = {
 	is_marine_modifier = yes
-	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	morale_damage = 0.10
 	discipline = 0.05
 }

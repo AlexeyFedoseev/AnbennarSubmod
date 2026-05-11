@@ -275,8 +275,8 @@ estate_boar_command_iron_drills = {
 	}
 	
 	benefits = {
-		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 	
 	ai_will_do = {

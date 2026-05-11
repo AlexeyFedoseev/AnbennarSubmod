@@ -26,8 +26,8 @@ mythical_cavalry_griffon_knight = {
 mythical_cavalry_steel_griffon = {
 	is_hussars_modifier = yes
 	cavalry_power = 0.35
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	shock_damage = 0.1
 	reinforce_speed = -0.25
 }
@@ -35,8 +35,8 @@ mythical_cavalry_steel_griffon = {
 mythical_cavalry_griffon_sky_lancer = {
 	is_hussars_modifier = yes
 	cavalry_power = 0.35
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	shock_damage = 0.3
 	reinforce_speed = -0.25
 }
@@ -46,8 +46,8 @@ mythical_cavalry_wyvern = {
     cavalry_shock = 0.5
     shock_damage = 0.25
     morale_damage = 0.2
-    #shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+    #shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
     cavalry_flanking = 0.5
     reinforce_speed = -0.25
     global_regiment_cost = 0.5
@@ -56,8 +56,8 @@ mythical_cavalry_wyvern = {
 mythical_cavalry_zamukaras = {
 	is_hussars_modifier = yes
 	cavalry_shock = 0.3
-	#shock_damage_received = -0.3	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.3	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	reinforce_speed = -0.25
 }
 
@@ -69,7 +69,16 @@ mythical_cavalry_demoncollar_hyena = {
 	reinforce_speed = -0.25
 	reinforce_cost_modifier = 0.25
 }
-
+mythical_cavalry_hawks = {
+	is_hussars_modifier = yes
+	cavalry_flanking = 1
+	cavalry_fire = 2
+	cavalry_shock = -1
+	#shock_damage_received = -0.25	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	reinforce_speed = -0.25
+    global_regiment_cost = 0.5
+}
 
 
 

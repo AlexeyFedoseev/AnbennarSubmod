@@ -1,14 +1,18 @@
 
-setup_vision = yes
+setup_vision_south_aelantir = yes		#BomjSBagetom Anbennar Submod
 government = theocracy
 add_government_reform = aelantir_adventurer_reform
 government_rank = 1
 primary_culture = sun_elf
 religion = bulwari_sun_cult
 technology_group = tech_east_elven
-capital = 2333
+#capital = 2512		#BomjSBagetom Anbennar Submod
+capital = 2333		#BomjSBagetom Anbennar Submod
 
-1000.1.1 = { set_estate_privilege = estate_mages_organization_religious }
+1000.1.1 = { 
+	initialise_custom_spell_list = { group = bulwar }	
+	set_estate_privilege = estate_mages_organization_magi_clans 
+}
 
 #BomjSBagetom Anbennar Submod
 #1430.1.1 = {
@@ -27,6 +31,7 @@ capital = 2333
 
 #BomjSBagetom Anbennar Submod
 1444.11.11 = {
+	set_country_flag = block_ecaris_death_event #This is because on_monarch is triggered when ecaris is defined, thus the death event fired
 	monarch = {
 		name = "Ecaris"
 		dynasty = "Ecarizuir"
@@ -35,7 +40,12 @@ capital = 2333
 		mil = 5
 		birth_date = 1349.11.30
 	}
+	define_powerful_mage = {
+		type = ruler
+		evocation = 3
+		abjuration = 2
+	}
 	add_ruler_personality = mage_personality
-	exile_ruler_as = { name = ilvisar }
-	set_country_flag = rezankand_jaherian_landing_flag		#BomjSBagetom Anbennar Submod
+	set_ruler_flag = long_lived_ruler
+	add_ruler_personality = renowned_adventurer_personality
 }

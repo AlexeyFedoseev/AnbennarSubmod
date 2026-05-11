@@ -275,7 +275,7 @@ guiTypes = {
 		listboxType = 
 		{
 			name ="objectives"
-			position = { x = 138 y = 225 } #BomjSBagetom Anbennar Submod
+			position = { x = 140 y = 223 } #BomjSBagetom Anbennar Submod
 			backGround=""
 			size = { x = 570 y = 440 } #BomjSBagetom Anbennar Submod
 			Orientation = "UPPER_LEFT"
@@ -318,15 +318,13 @@ guiTypes = {
 		verticalBorder= ""
 		fullScreen = no
 
-		### ?
 		iconType =
 		{
 			name = "_entry_bg"
 			spriteType = "GFX_age_objective_bg"
-			position = { x=7 y=3 }  # was 7 1
+			position = { x=5 y=4 }
 			Orientation = "UPPER_LEFT"
 		}
-		###
 
 		iconType = 
 		{

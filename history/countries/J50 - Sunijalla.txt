@@ -1,4 +1,4 @@
-setup_vision = yes		#BomjSBagetom Anbennar Submod
+setup_vision_haless = yes		#BomjSBagetom Anbennar Submod
 government = republic
 primary_culture = metsamic
 add_government_reform = lake_republic

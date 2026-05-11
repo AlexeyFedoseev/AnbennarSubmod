@@ -9,7 +9,7 @@ add_core = H33
 culture = east_damerian
 religion = regent_court
 is_city = yes
-trade_goods = cotton
+
 
 #culture = boek
 #religion = dotimism
@@ -18,15 +18,15 @@ capital = ""
 
 hre = no
 
+#base_tax = 1			#BomjSBagetom Anbennar Submod
+#base_production = 1	#BomjSBagetom Anbennar Submod
+#base_manpower = 1		#BomjSBagetom Anbennar Submod
 base_tax = 3			#BomjSBagetom Anbennar Submod
 base_production = 3		#BomjSBagetom Anbennar Submod
 base_manpower = 3		#BomjSBagetom Anbennar Submod
 
-#base_tax = 1
-#base_production = 1
-#base_manpower = 1
-
-#trade_goods = unknown
+#trade_goods = unknown	#BomjSBagetom Anbennar Submod
+trade_goods = cotton	#BomjSBagetom Anbennar Submod
 
 #native_size = 22
 #native_ferocity = 4

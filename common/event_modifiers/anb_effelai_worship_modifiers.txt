@@ -8,8 +8,8 @@ effelai_claw_visited = {
 	infantry_power = 0.1
 }
 effelai_desacration_visited = {
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 effelai_spine_visited = {
 	global_monthly_devastation = -0.1
@@ -182,14 +182,14 @@ effelai_laii_bone_weaponry = {
 	shock_damage = 0.025
 }
 effelai_laii_bone_armor = {
-	#fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 effelai_laii_bone_arsenal = {
 	infantry_shock = 0.1
 	infantry_power = 0.05
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	leader_land_shock = 1
 	prestige_from_land = 0.5
 }
@@ -240,8 +240,8 @@ effelai_construct_the_heart = {
 effelai_confederation_of_the_tribes_parura = {
 	infantry_power = 0.05
 	shock_damage = 0.05
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	garrison_size = 0.05
 }
 effelai_confederation_of_the_tribes_soruinic = {
@@ -254,21 +254,21 @@ effelai_confederation_of_the_tribes_effei = {
 	infantry_power = 0.05
 	shock_damage = 0.05
 	land_morale = 0.05
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 effelai_confederation_of_the_tribes_laii = {
 	shock_damage = 0.05
 	land_morale = 0.05
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	garrison_size = 0.05
 }
 effelai_confederation_of_the_tribes_thavoi = {
 	infantry_power = 0.05
 	land_morale = 0.05
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	garrison_size = 0.05
 }
 effelai_bloom_reward = {
@@ -285,7 +285,7 @@ effelai_deffenders_of_the_jungle = { #G15
 effelai_a_new_song = { #G16
 	global_unrest = -2
 }
-effelai_godesses_gardens = { #G17
+effelai_goddesses_gardens = { #G17
 	global_trade_goods_size = 0.1
 }
 effelai_hunters_rest = { #G18

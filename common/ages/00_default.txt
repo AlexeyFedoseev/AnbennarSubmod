@@ -859,9 +859,8 @@ age_of_discovery = {
 			allow = {
 				tag = F42
 			}
-			effect = {
-				custom_tooltip = add_magic_study_modifier_25_tt
-				update_magic_study_experience_modifier = { value = 25 }
+			modifier = {
+				mages_ruler_experience_mod = 0.25
 			}
 			ai_will_do = {
 				factor = 1000
@@ -1432,8 +1431,12 @@ age_of_reformation = {
 							is_incident_happened = incident_silent_as_the_grave
 							is_incident_happened = incident_rise_of_artificery
 							is_incident_happened = incident_spread_of_ravelianism
-							is_incident_happened = incident_teachings_szal_fazil
+							is_incident_happened = incident_rebirth_magic
 							is_incident_happened = incident_half_a_king
+							is_incident_happened = incident_whisper_shadows
+							is_incident_happened = incident_trapped_in_shadows
+							is_incident_happened = incident_one_sun
+							is_incident_happened = incident_F80_kings_queens_kneeling
 						}
 					}
 				}
@@ -3013,7 +3016,10 @@ age_of_absolutism = {
 
 		obj_age3_4_witchking_or_666 = {
 			OR = {
-				has_ruler_modifier = witch_king_modifier
+				has_ruler_modifier = witch_king_hoard_modifier
+				has_ruler_modifier = witch_king_thorns_modifier
+				has_ruler_modifier = witch_king_armies_modifier
+				has_ruler_modifier = witch_king_skill_modifier
 				AND = {
 					adm = 6
 					dip = 6

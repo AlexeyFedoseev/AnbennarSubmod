@@ -206,6 +206,10 @@ koroshesh_league_bankruptcy = {
 	build_time = 0.5
 }
 
+koroshesh_kheteratan_cultures_modifier = {
+	num_accepted_cultures = 6
+}
+
 
 #################################################
 ######################Ahati######################
@@ -218,10 +222,10 @@ estate_ahati_meritocratic_recruitment_modifier = {
 }
 
 estate_ahati_state_equipment_modifier = {
-	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	is_janissary_modifier = yes
 }
 
@@ -426,9 +430,9 @@ mandate_mt_aakheta = {
 mandate_mt_aakhets_empire = {
 	imperial_mandate = 0.1
 	max_general_fire = 1
-	max_general_shock = 1
 	max_general_maneuver = 1
 	max_general_siege = 1
+	max_general_shock = 1
 	years_of_nationalism = -5
 }
 mandate_mt_koroshesh = {

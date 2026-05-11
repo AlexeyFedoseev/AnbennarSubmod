@@ -18,6 +18,7 @@ base_tax = 4				#BomjSBagetom Anbennar Submod
 base_production = 4			#BomjSBagetom Anbennar Submod
 base_manpower = 3			#BomjSBagetom Anbennar Submod
 
+#trade_goods = unknown		#BomjSBagetom Anbennar Submod
 trade_goods = cotton		#BomjSBagetom Anbennar Submod
 
 #native_size = 20			#BomjSBagetom Anbennar Submod

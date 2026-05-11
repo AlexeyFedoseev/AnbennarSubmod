@@ -126,8 +126,8 @@ wise_leopard_inflexible_major = {
 		beast_memory_has_dip_aspect_scripted_trigger = no
 	}
 	modifier = {
-		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 	effect = {
 		set_country_flag = beast_memory_wise_leopard_aspect_flag
@@ -334,8 +334,8 @@ wise_leopard_inflexible_minor = {
 		beast_memory_has_dip_aspect_scripted_trigger = no
 	}
 	modifier = {
-		#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
-		shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+		#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 	effect = {
 		set_country_flag = beast_memory_wise_leopard_aspect_flag

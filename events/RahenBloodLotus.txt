@@ -98,11 +98,25 @@ country_event = { # 1 The Blood Lotus Rebellion
 				days = 1250 # ~3.5 years
 				random = 365 # +-1 year
 			}
+
+			if = {
+				limit = { is_or_was_tag = { tag = R36 } }
+				set_country_flag = blood_lotus_fixed_emancipation
+				country_event = { id = flavour_endhuvi.62 }
+			}
+
+			if = {
+				limit = { tag = R77 }
+				set_country_flag = blood_lotus_fixed_oppression
+			}
 		}
 	}
 
 	option = { #Rebel Negotiation
 		name = blood_lotus_rebellion.1.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -130,6 +144,9 @@ country_event = { # 1 The Blood Lotus Rebellion
 	
 	option = { #Hardline Stance
 		name = blood_lotus_rebellion.1.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -204,6 +221,11 @@ country_event = { #The Blood Lotus Rebellion Ends
 		
 		every_known_country = {
 			clr_country_flag = blood_lotus_closed_borders
+		}
+
+		if = {
+			limit = { has_country_modifier = vanrahar_die_cast }
+			country_event = { id = vanrahar.17 }
 		}
 	}
 }
@@ -282,6 +304,31 @@ country_event = { # Peace with the Blood Lotus: Lower Castes
 		remove_country_modifier = blood_lotus_rebel_negotiation
 		remove_country_modifier = blood_lotus_hardline_stance
 		set_country_flag = ab_age4_HarimrajRahenraj_bonus_button_flag #BomjSBagetom Anbennar Submod
+
+		# Parusahan Saya MT
+		hidden_effect = {
+			if = {
+				limit = { is_or_was_tag = { tag = R54 } }
+
+				if = {
+					limit = { blood_lotus_hardline_stance_harimari = yes }
+					set_country_flag = R54_BLR_hardline_harimari
+				}
+				else_if = {
+					limit = { blood_lotus_hardline_stance_human = yes }
+					set_country_flag = R54_BLR_hardline_human
+				}
+				else_if = {
+					limit = { blood_lotus_hardline_stance_neutral = yes }
+					set_country_flag = R54_BLR_neutral
+				}
+
+				country_event = {
+					id = flavor_parusahan_saya.19
+					days = 365
+				}
+			}
+		}
 	}
 	
 	after = {
@@ -934,6 +981,10 @@ country_event = { # Sympathizers in [blood_lotus_sympathizers.GetName] want to n
 	
 	option = { #Grant them their request
 		name = blood_lotus_rebellion.5.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -956,6 +1007,9 @@ country_event = { # Sympathizers in [blood_lotus_sympathizers.GetName] want to n
 	}
 	option = { #Refuse
 		name = blood_lotus_rebellion.5.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -974,6 +1028,33 @@ country_event = { # Sympathizers in [blood_lotus_sympathizers.GetName] want to n
 		
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 	}
+	option = { #Once things have settled we can discuss this.
+		name = blood_lotus_rebellion.5.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
+		ai_chance = {
+			factor = 1
+		}
+		goto = negotiating_sympathizers
+		
+		reduce_legitimacy_small_effect = yes
+		add_manpower = 2
+		event_target:negotiating_sympathizers = {
+			add_local_autonomy = 40
+			remove_province_modifier = blood_lotus_sympathizers
+			hidden_effect = {
+				remove_province_modifier = blood_lotus_guerrillas_hidden
+				remove_province_modifier = blood_lotus_guerrillas
+			}
+			add_province_modifier = {
+				name = blood_lotus_dissuaded_sympathizers
+				duration = 365 # one year
+			}
+		}
+		
+		blood_lotus_hardline_stance_change_small = { neutral = yes }
+	}
 }
 
 country_event = { # A general offers his service
@@ -991,9 +1072,9 @@ country_event = { # A general offers his service
 		}
 		define_general = {
 			name = "Salar Black-Claw"
-			shock = 7
-			fire = 3
-			manuever = 4
+			shock = 6
+			fire = 4
+			manuever = 5
 			siege = 5
 		}
 	}
@@ -1572,6 +1653,9 @@ country_event = { # 200 DONE - One Time Economy
 	
 	option = {
 		name = blood_lotus_rebellion.200.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_medium = { harimarihardline = yes }
 		
 		add_country_modifier = {
@@ -1582,6 +1666,9 @@ country_event = { # 200 DONE - One Time Economy
 	
 	option = {
 		name = blood_lotus_rebellion.200.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_medium = { neutral = yes }
 		
 		add_country_modifier = {
@@ -1592,6 +1679,10 @@ country_event = { # 200 DONE - One Time Economy
 	
 	option = {
 		name = blood_lotus_rebellion.200.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_medium = { humanhardline = yes }
 		
 		add_country_modifier = {
@@ -1622,6 +1713,9 @@ country_event = { # 201 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.201.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_medium = { harimarihardline = yes }
 		
 		add_country_modifier = {
@@ -1632,6 +1726,9 @@ country_event = { # 201 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.201.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_medium = { neutral = yes }
 		
 		add_country_modifier = {
@@ -1642,6 +1739,10 @@ country_event = { # 201 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.201.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_medium = { humanhardline = yes }
 		
 		add_country_modifier = {
@@ -1676,6 +1777,9 @@ country_event = { # 202 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.202.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		event_target:target_province = {
@@ -1694,6 +1798,9 @@ country_event = { # 202 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.202.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		event_target:target_province = {
@@ -1706,6 +1813,10 @@ country_event = { # 202 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.202.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		event_target:target_province = {
@@ -1739,6 +1850,9 @@ country_event = { # 203 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.203.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		event_target:target_province = {
@@ -1748,6 +1862,9 @@ country_event = { # 203 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.203.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		event_target:target_province = {
@@ -1766,6 +1883,10 @@ country_event = { # 203 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.203.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_years_of_income = -0.1
@@ -1797,6 +1918,9 @@ country_event = { # 204 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.204.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		add_legitimacy = -10
@@ -1806,6 +1930,9 @@ country_event = { # 204 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.204.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		event_target:target_province = {
@@ -1815,6 +1942,10 @@ country_event = { # 204 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.204.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		event_target:target_province = {
@@ -1855,6 +1986,9 @@ country_event = { # 205 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.205.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		event_target:target_province = {
@@ -1873,6 +2007,9 @@ country_event = { # 205 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.205.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_yearly_manpower = -0.2
@@ -1880,6 +2017,10 @@ country_event = { # 205 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.205.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_years_of_income = -0.1
@@ -1915,6 +2056,9 @@ country_event = { # 206 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.206.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		add_yearly_manpower = -0.1
@@ -1925,6 +2069,9 @@ country_event = { # 206 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.206.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		event_target:target_province_1 = {
@@ -1946,6 +2093,10 @@ country_event = { # 206 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.206.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_yearly_manpower = -0.1
@@ -1981,6 +2132,9 @@ country_event = { # 207 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.207.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		event_target:target_province = {
@@ -1995,6 +2149,9 @@ country_event = { # 207 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.207.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_country_modifier = {
@@ -2007,6 +2164,10 @@ country_event = { # 207 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.207.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_legitimacy = -10
@@ -2041,6 +2202,9 @@ country_event = { # 208 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.208.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		event_target:target_province = {
@@ -2058,6 +2222,9 @@ country_event = { # 208 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.208.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		event_target:target_province = {
@@ -2070,6 +2237,10 @@ country_event = { # 208 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.208.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		event_target:target_province = {
@@ -2098,6 +2269,9 @@ country_event = { # 209 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.209.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		kill_ruler = yes
@@ -2110,6 +2284,9 @@ country_event = { # 209 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.209.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_legitimacy = -30
@@ -2122,6 +2299,10 @@ country_event = { # 209 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.209.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_stability = -1
@@ -2165,16 +2346,26 @@ country_event = { # 210 DENIED
 	
 	option = {
 		name = blood_lotus_rebellion.210.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.210.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.210.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 	}
 }
@@ -2196,16 +2387,26 @@ country_event = { # 211 DENIED
 	
 	option = {
 		name = blood_lotus_rebellion.211.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.211.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.211.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 	}
 }
@@ -2234,6 +2435,9 @@ country_event = { # 212 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.212.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		event_target:target_province = {
@@ -2249,6 +2453,9 @@ country_event = { # 212 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.212.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		event_target:target_province = {
@@ -2265,6 +2472,10 @@ country_event = { # 212 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.212.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		event_target:target_province = {
@@ -2293,6 +2504,9 @@ country_event = { # 213 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.213.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		random_list = {
@@ -2309,6 +2523,9 @@ country_event = { # 213 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.213.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		random_list = {
@@ -2325,6 +2542,10 @@ country_event = { # 213 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.213.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_yearly_manpower = -0.1
@@ -2348,16 +2569,26 @@ country_event = { # 214 DENIED
 	
 	option = {
 		name = blood_lotus_rebellion.214.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.214.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.214.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 	}
 }
@@ -2379,16 +2610,26 @@ country_event = { # 215 DENIED
 	
 	option = {
 		name = blood_lotus_rebellion.215.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.215.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.215.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 	}
 }
@@ -2410,16 +2651,26 @@ country_event = { # 216 DENIED
 	
 	option = {
 		name = blood_lotus_rebellion.216.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.216.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.216.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 	}
 }
@@ -2441,16 +2692,26 @@ country_event = { # 217 DENIED
 	
 	option = {
 		name = blood_lotus_rebellion.217.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.217.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 	}
 	
 	option = {
 		name = blood_lotus_rebellion.217.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 	}
 }
@@ -2478,6 +2739,9 @@ country_event = { # 218 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.218.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		event_target:target_province = {
@@ -2492,6 +2756,9 @@ country_event = { # 218 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.218.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_yearly_manpower = -0.25
@@ -2499,6 +2766,10 @@ country_event = { # 218 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.218.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_years_of_income = -0.1
@@ -2538,6 +2809,9 @@ country_event = { # 219 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.219.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		add_country_modifier = {
@@ -2552,6 +2826,9 @@ country_event = { # 219 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.219.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_country_modifier = {
@@ -2566,6 +2843,10 @@ country_event = { # 219 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.219.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_years_of_income = -0.25
@@ -2597,6 +2878,9 @@ country_event = { # 220 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.220.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		add_country_modifier = {
@@ -2609,6 +2893,9 @@ country_event = { # 220 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.220.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_country_modifier = {
@@ -2619,6 +2906,10 @@ country_event = { # 220 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.220.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_prestige = -20
@@ -2643,6 +2934,9 @@ country_event = { # 221 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.221.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		add_yearly_manpower = -0.25
@@ -2651,6 +2945,9 @@ country_event = { # 221 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.221.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_yearly_manpower = -0.10
@@ -2659,6 +2956,10 @@ country_event = { # 221 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.221.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_country_modifier = {
@@ -2686,6 +2987,9 @@ country_event = { # 222 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.222.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		add_years_of_income = -0.5
@@ -2694,6 +2998,9 @@ country_event = { # 222 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.222.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_stability = -1
@@ -2701,6 +3008,10 @@ country_event = { # 222 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.222.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		create_general = { tradition = 20 }
@@ -2737,6 +3048,9 @@ country_event = { # 223 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.223.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		add_opinion = {
@@ -2759,6 +3073,9 @@ country_event = { # 223 DONE
 	
 	option = { # Try negotiating
 		name = blood_lotus_rebellion.223.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		event_target:target_country = {
@@ -2768,6 +3085,10 @@ country_event = { # 223 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.223.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		every_owned_province = {
 			limit = {
@@ -2994,6 +3315,9 @@ country_event = { # 226 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.226.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		kill_leader = {
@@ -3004,6 +3328,9 @@ country_event = { # 226 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.226.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_prestige = -10
@@ -3011,6 +3338,10 @@ country_event = { # 226 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.226.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_country_modifier = {
@@ -3050,6 +3381,9 @@ country_event = { # 227 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.227.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		every_owned_province = {
@@ -3073,6 +3407,9 @@ country_event = { # 227 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.227.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_country_modifier = {
@@ -3083,6 +3420,10 @@ country_event = { # 227 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.227.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		change_government_reform_progress = 50
@@ -3246,6 +3587,9 @@ country_event = { # 230 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.230.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		random_owned_province = {
@@ -3266,6 +3610,9 @@ country_event = { # 230 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.230.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_treasury = 25
@@ -3277,6 +3624,10 @@ country_event = { # 230 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.230.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		custom_tooltip = blood_lotus_rebellion_consequences_tt
@@ -3332,6 +3683,9 @@ country_event = { # 231 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.231.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		event_target:target_province_1 = {
@@ -3348,6 +3702,9 @@ country_event = { # 231 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.231.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		event_target:target_province_1 = {
@@ -3364,6 +3721,10 @@ country_event = { # 231 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.231.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		if = {
@@ -3463,6 +3824,9 @@ country_event = { # 234 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.234.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		event_target:target_province = {
@@ -3477,6 +3841,9 @@ country_event = { # 234 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.234.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_legitimacy = 10
@@ -3486,6 +3853,10 @@ country_event = { # 234 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.234.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		add_country_modifier = {
@@ -3520,6 +3891,9 @@ country_event = { # 235 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.235.a
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+		}
 		blood_lotus_hardline_stance_change_small = { harimarihardline = yes }
 		
 		add_legitimacy = 10
@@ -3529,6 +3903,9 @@ country_event = { # 235 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.235.b
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { neutral = yes }
 		
 		add_country_modifier = {
@@ -3541,6 +3918,10 @@ country_event = { # 235 DONE
 	
 	option = {
 		name = blood_lotus_rebellion.235.c
+		trigger = {
+			NOT = { has_country_flag = blood_lotus_fixed_emancipation }
+			NOT = { has_country_flag = blood_lotus_fixed_oppression }
+		}
 		blood_lotus_hardline_stance_change_small = { humanhardline = yes }
 		
 		event_target:target_province = {

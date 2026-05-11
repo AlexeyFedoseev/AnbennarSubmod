@@ -1189,8 +1189,10 @@ the_best_defense_policy = {
 		full_idea_group = innovativeness_ideas
 	}
 
-	shock_damage_received = -0.05
-	fire_damage_received = -0.05
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	
 	effect = {}
 	removed_effect = {}

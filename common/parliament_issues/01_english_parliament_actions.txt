@@ -1904,8 +1904,8 @@ army_reform_acts = {
 	}
 	
 	modifier = {
-		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+		#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 	
 	chance = {

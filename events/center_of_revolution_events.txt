@@ -81,7 +81,8 @@ province_event = {
 			owner = { 
 				NOT = { 
 					has_estate = estate_burghers 
-					has_estate = estate_middlecastes	#Anbennar
+					# ANBENNAR
+					has_estate = estate_middlecastes
 				} 
 			}
 		}
@@ -163,10 +164,11 @@ province_event = {
 			owner = {
 				OR = {
 					has_estate = estate_burghers
-					has_estate = estate_middlecastes	# ANBENNAR
-					has_estate = estate_jains
-					has_estate = estate_vaisyas
-					has_estate = estate_castonath_patricians # ANBENNAR
+					# has_estate = estate_jains
+					# has_estate = estate_vaisyas
+					# ANBENNAR
+					has_estate = estate_middlecastes
+					has_estate = estate_castonath_patricians
 				}
 				OR = {
 					AND = {
@@ -176,25 +178,25 @@ province_event = {
 								influence = 20
 							}
 						}
+						# NOT = {
+						# 	estate_influence = {
+						# 		estate = estate_jains
+						# 		influence = 20
+						# 	}
+						# }
+						# NOT = {
+						# 	estate_influence = {
+						# 		estate = estate_vaisyas
+						# 		influence = 20
+						# 	}
+						# }
+						# ANBENNAR
 						NOT = {
 							estate_influence = {
 								estate = estate_middlecastes
 								influence = 20
 							}
 						}
-						NOT = {
-							estate_influence = {
-								estate = estate_jains
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_vaisyas
-								influence = 20
-							}
-						}
-						# ANBENNAR
 						NOT = {
 							estate_influence = {
 								estate = estate_castonath_patricians
@@ -209,25 +211,25 @@ province_event = {
 								loyalty = 25
 							}
 						}
+						# NOT = {
+						# 	estate_loyalty = {
+						# 		estate = estate_jains
+						# 		loyalty = 25
+						# 	}
+						# }
+						# NOT = {
+						# 	estate_loyalty = {
+						# 		estate = estate_vaisyas
+						# 		loyalty = 25
+						# 	}
+						# }
+						# ANBENNAR
 						NOT = {
 							estate_loyalty = {
 								estate = estate_middlecastes
 								loyalty = 25
 							}
 						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_jains
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_vaisyas
-								loyalty = 25
-							}
-						}
-						# ANBENNAR
 						NOT = {
 							estate_loyalty = {
 								estate = estate_castonath_patricians
@@ -261,10 +263,11 @@ province_event = {
 				}
 				OR = {
 					has_estate = estate_burghers
+					# has_estate = estate_jains
+					# has_estate = estate_vaisyas
+					# ANBENNAR
 					has_estate = estate_middlecastes
-					has_estate = estate_jains
-					has_estate = estate_vaisyas
-					has_estate = estate_castonath_patricians # ANBENNAR
+					has_estate = estate_castonath_patricians
 				}
 				OR = {
 					AND = {
@@ -274,25 +277,26 @@ province_event = {
 								influence = 20
 							}
 						}
+						
+						# NOT = {
+						# 	estate_influence = {
+						# 		estate = estate_jains
+						# 		influence = 20
+						# 	}
+						# }
+						# NOT = {
+						# 	estate_influence = {
+						# 		estate = estate_vaisyas
+						# 		influence = 20
+						# 	}
+						# }
+						# ANBENNAR
 						NOT = {
 							estate_influence = {
 								estate = estate_middlecastes
 								influence = 20
 							}
 						}
-						NOT = {
-							estate_influence = {
-								estate = estate_jains
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_vaisyas
-								influence = 20
-							}
-						}
-						# ANBENNAR
 						NOT = {
 							estate_influence = {
 								estate = estate_castonath_patricians
@@ -307,21 +311,22 @@ province_event = {
 								loyalty = 25
 							}
 						}
+						# NOT = {
+						# 	estate_loyalty = {
+						# 		estate = estate_jains
+						# 		loyalty = 25
+						# 	}
+						# }
+						# NOT = {
+						# 	estate_loyalty = {
+						# 		estate = estate_vaisyas
+						# 		loyalty = 25
+						# 	}
+						# }
+						# ANBENNAR
 						NOT = {
 							estate_loyalty = {
 								estate = estate_middlecastes
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_jains
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_vaisyas
 								loyalty = 25
 							}
 						}
@@ -555,6 +560,7 @@ province_event = {
 			owner = { 
 				NOT = { 
 					has_estate = estate_burghers 
+					# ANBENNAR
 					has_estate = estate_middlecastes 
 				} 
 			}
@@ -599,10 +605,11 @@ province_event = {
 			owner = {
 				OR = {
 					has_estate = estate_burghers
+					# has_estate = estate_jains
+					# has_estate = estate_vaisyas
+					# ANBENNAR
 					has_estate = estate_middlecastes
-					has_estate = estate_jains
-					has_estate = estate_vaisyas
-					has_estate = estate_castonath_patricians # ANBENNAR
+					has_estate = estate_castonath_patricians
 				}
 				OR = {
 					AND = {
@@ -612,25 +619,26 @@ province_event = {
 								influence = 20
 							}
 						}
+						
+						# NOT = {
+						# 	estate_influence = {
+						# 		estate = estate_jains
+						# 		influence = 20
+						# 	}
+						# }
+						# NOT = {
+						# 	estate_influence = {
+						# 		estate = estate_vaisyas
+						# 		influence = 20
+						# 	}
+						# }
+						# ANBENNAR
 						NOT = {
 							estate_influence = {
 								estate = estate_middlecastes
 								influence = 20
 							}
 						}
-						NOT = {
-							estate_influence = {
-								estate = estate_jains
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_vaisyas
-								influence = 20
-							}
-						}
-						# ANBENNAR
 						NOT = {
 							estate_influence = {
 								estate = estate_castonath_patricians
@@ -645,25 +653,25 @@ province_event = {
 								loyalty = 25
 							}
 						}
+						# NOT = {
+						# 	estate_loyalty = {
+						# 		estate = estate_jains
+						# 		loyalty = 25
+						# 	}
+						# }
+						# NOT = {
+						# 	estate_loyalty = {
+						# 		estate = estate_vaisyas
+						# 		loyalty = 25
+						# 	}
+						# }
+						# ANBENNAR
 						NOT = {
 							estate_loyalty = {
 								estate = estate_middlecastes
 								loyalty = 25
 							}
 						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_jains
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_vaisyas
-								loyalty = 25
-							}
-						}
-						# ANBENNAR
 						NOT = {
 							estate_loyalty = {
 								estate = estate_castonath_patricians
@@ -697,9 +705,10 @@ province_event = {
 				}
 				OR = {
 					has_estate = estate_burghers
+					# has_estate = estate_jains
+					# has_estate = estate_vaisyas
+					# ANBENNAR
 					has_estate = estate_middlecastes
-					has_estate = estate_jains
-					has_estate = estate_vaisyas
 				}
 				OR = {
 					AND = {
@@ -709,21 +718,23 @@ province_event = {
 								influence = 20
 							}
 						}
+						
+						# NOT = {
+						# 	estate_influence = {
+						# 		estate = estate_jains
+						# 		influence = 20
+						# 	}
+						# }
+						# NOT = {
+						# 	estate_influence = {
+						# 		estate = estate_vaisyas
+						# 		influence = 20
+						# 	}
+						# }
+						# ANBENNAR
 						NOT = {
 							estate_influence = {
 								estate = estate_middlecastes
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_jains
-								influence = 20
-							}
-						}
-						NOT = {
-							estate_influence = {
-								estate = estate_vaisyas
 								influence = 20
 							}
 						}
@@ -735,21 +746,22 @@ province_event = {
 								loyalty = 25
 							}
 						}
+						# NOT = {
+						# 	estate_loyalty = {
+						# 		estate = estate_jains
+						# 		loyalty = 25
+						# 	}
+						# }
+						# NOT = {
+						# 	estate_loyalty = {
+						# 		estate = estate_vaisyas
+						# 		loyalty = 25
+						# 	}
+						# }
+						# ANBENNAR
 						NOT = {
 							estate_loyalty = {
 								estate = estate_middlecastes
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_jains
-								loyalty = 25
-							}
-						}
-						NOT = {
-							estate_loyalty = {
-								estate = estate_vaisyas
 								loyalty = 25
 							}
 						}
@@ -1264,6 +1276,7 @@ country_event = {
 		}
 		OR = {
 		has_estate = estate_burghers
+			# ANBENNAR
 			has_estate = estate_middlecastes
 		}
 		OR = {
@@ -1274,15 +1287,16 @@ country_event = {
 				}
 			}
 			NOT = {
-				estate_influence = {
-					estate = estate_middlecastes
-					influence = 20
-				}
-			}
-			NOT = {
 				estate_loyalty = {
 					estate = estate_burghers
 					loyalty = 25
+				}
+			}
+			# ANBENNAR
+			NOT = {
+				estate_influence = {
+					estate = estate_middlecastes
+					influence = 20
 				}
 			}
 			NOT = {

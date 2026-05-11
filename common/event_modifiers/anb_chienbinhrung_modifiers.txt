@@ -15,8 +15,8 @@ Y72_arcane_oversight = {
 }
 
 Y72_brave_the_sands = {
-	#shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 Y72_gateway_to_forest = {
@@ -80,8 +80,8 @@ Y72_the_boldest = {
 }
 
 Y72_reformed_lamellar_armor = {
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 Y72_dishonorable_pertrification = {

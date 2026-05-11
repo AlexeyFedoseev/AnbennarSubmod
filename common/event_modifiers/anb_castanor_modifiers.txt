@@ -79,10 +79,11 @@ castanor_dominion_for_subject_modifier = {
 	mil_tech_cost_modifier = -0.1
 }
 castanor_dominion_for_overlord_modifier = {
-	#shock_damage_received = -0.01		#BomjSBagetom Anbennar Submod
-	#fire_damage_received = -0.01		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.005		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.005		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.01		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.005		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.001		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.005		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	
 	land_forcelimit = 5
 	naval_forcelimit = 5
 	range = 0.05
@@ -273,8 +274,8 @@ castanor_all_roads_lead_to_castonath = {
 	placed_merchant_power = 10
 }
 castanor_desperate_times_castanor = {
-	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	diplomatic_upkeep = -1
 }
 castanor_desperate_times_lake_fed = {
@@ -485,7 +486,7 @@ castanor_castellos_grand_work_corinite = {
 	land_morale = 0.025
 	global_missionary_strength = 0.01
 }
-castanor_castellos_grand_work_regent_court= {
+castanor_castellos_grand_work_regent_court = {
 	legitimacy = 0.5
 	tolerance_heathen = 0.5
 	tolerance_heretic = 0.5
@@ -813,7 +814,7 @@ castanor_auxilaries_mod_castanor = {
 castanor_integrate_dominion = {
 	administrative_efficiency = -0.10
 }
-castanor_sucession_war_patrician_helper = {
+castanor_succession_war_patrician_helper = {
 	land_maintenance_modifier = -0.25
 	land_morale = 0.2
 	mercenary_cost = -0.33

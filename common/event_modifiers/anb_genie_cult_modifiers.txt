@@ -33,8 +33,8 @@ perfection_of_home = {
 }
 
 blaze_of_glory = {
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 fire_wall = {
@@ -123,4 +123,8 @@ ardimyan_rites = {
 }
 
 genie_cult_cooldown_mod = {
+}
+
+AYN_no_migration_genie_cult_usage = {
+	migration_cost = 100
 }

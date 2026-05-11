@@ -347,24 +347,24 @@ feiten_refused_peaceful_accord_of_yanshen = {
 feiten_nonviolence_max = {
 	siege_ability = -0.05
 	fire_damage = -0.05
-	#fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	movement_speed = -0.05
 	allowed_rajput_fraction = -1
 }
 feiten_nonviolence_50 = {
 	siege_ability = -0.1
 	fire_damage = -0.1
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	movement_speed = -0.1
 	allowed_rajput_fraction = -1
 }
 feiten_nonviolence_0 = {
 	siege_ability = -0.15
 	fire_damage = -0.15
-	#fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0375	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0375		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	movement_speed = -0.15
 	allowed_rajput_fraction = -1
 
@@ -372,8 +372,8 @@ feiten_nonviolence_0 = {
 feiten_nonviolence_below = {
 	siege_ability = -0.2
 	fire_damage = -0.2
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	movement_speed = -0.2
 	allowed_rajput_fraction = -1
 }
@@ -400,14 +400,14 @@ feiten_long_rockets_mod_upgraded = {
 }
 feiten_electroplated_armor_mod = {
 	is_rajput_modifier = yes
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	land_morale = 0.05
 }
 feiten_electroplated_armor_mod_upgraded = {
 	is_rajput_modifier = yes
-	#fire_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.15		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	land_morale = 0.1
 }
 feiten_bluesteel_rudders_mod = {
@@ -503,8 +503,8 @@ feiten_discovered_the_lake_fed = {
 }
 feiten_mithril_trade_deal_own = {
 	global_foreign_trade_power = -0.2
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	shock_damage = 0.1
 }
 feiten_mithril_trade_deal_ally = {
@@ -514,16 +514,16 @@ feiten_mithril_trade_deal_ally = {
 }
 feiten_rigid_body_diagram_armor_focus = {
 	is_rajput_modifier = yes
-	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	trade_efficiency = 0.1
 	reinforce_speed = -0.2 # Doesn't work?
 	land_maintenance_modifier = 1
 }
 feiten_rigid_body_diagram_weapons_focus = {
 	is_rajput_modifier = yes
-	#fire_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.15		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	infantry_power = 0.05
 	reinforce_speed = -0.2 # Doesn't work?
 	land_maintenance_modifier = 1
@@ -543,32 +543,32 @@ feiten_discovery_of_hydrogen_3 = {
 feiten_shuimu_regiments_below_cap = {
 	is_rajput_modifier = yes
 	fire_damage = 0.2
-	#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	movement_speed = 0.2
 	infantry_cost = 0.5 # Don't think this works yet
 }
 feiten_shuimu_regiments_slightly_above_cap = {
 	is_rajput_modifier = yes
 	fire_damage = 0.15
-	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	movement_speed = 0.15
 	infantry_cost = 0.5 # Don't think this works yet
 }
 feiten_shuimu_regiments_above_cap = {
 	is_rajput_modifier = yes
 	fire_damage = 0.1
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	movement_speed = 0.1
 	infantry_cost = 0.5 # Don't think this works yet
 }
 feiten_shuimu_regiments_way_over_cap = {
 	is_rajput_modifier = yes
 	fire_damage = 0.05
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	movement_speed = 0.05
 	infantry_cost = 0.5 # Don't think this works yet
 }
@@ -644,10 +644,10 @@ feiten_the_steam_engine_ironclads = {
 	global_prosperity_growth = 0.1
 	trade_company_investment_cost = -0.2
 	ship_durability = 0.15
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 feiten_the_steam_engine_factories = {
 	global_prosperity_growth = 0.1

@@ -1,5 +1,5 @@
 
-# No previous file for Banten
+# No previous file for Banten 191
 
 #BomjSBagetom Anbennar Submod
 #owner = R62
@@ -9,7 +9,6 @@
 owner = R85
 controller = R85
 add_core = R85
-
 culture = shamadhan
 religion = high_philosophy
 

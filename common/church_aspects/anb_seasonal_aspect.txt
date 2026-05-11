@@ -40,8 +40,8 @@ mil_spring_living_mud = {
 	}
 	monarch_power = mil
 	modifier = {
-		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+		#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 	ai_will_do = {
 		factor = 1
@@ -130,6 +130,7 @@ dip_spring_morning_glory_vine = {
 			has_church_aspect = dip_spring_morning_glory_vine
 			has_no_fey_dip_aspect = yes
 		}
+		NOT = { has_country_flag = H14_war_for_domandrod_complete }
 	}
 	effect = {
 		hidden_effect = {
@@ -151,6 +152,7 @@ adm_spring_old_man_archive = {
 		has_country_flag = spring_influencer_unlocked
 		has_country_flag = strong_influencer_unlocked
 		NOT = { has_country_modifier = spring_old_man_festival }
+		NOT = { has_country_flag = H14_war_for_domandrod_complete }
 		OR = {
 			has_church_aspect = adm_spring_old_man_archive
 			has_no_fey_adm_aspect = yes
@@ -278,6 +280,7 @@ dip_summer_drag_wave = {
 			has_church_aspect = dip_summer_drag_wave
 			has_no_fey_dip_aspect = yes
 		}
+		NOT = { has_country_flag = H14_war_for_domandrod_complete }
 	}
 	effect = {
 		hidden_effect = {
@@ -456,6 +459,7 @@ mil_autumn_gloamknight = {
 			has_church_aspect = mil_autumn_gloamknight
 			has_no_fey_mil_aspect = yes
 		}
+		NOT = { has_country_flag = H14_war_for_domandrod_complete }
 	}
 	effect = {
 		hidden_effect = {
@@ -611,6 +615,7 @@ adm_winter_everfrost = {
 			has_church_aspect = adm_winter_everfrost
 			has_no_fey_adm_aspect = yes
 		}
+		NOT = { has_country_flag = H14_war_for_domandrod_complete }
 	}
 	effect = {
 		hidden_effect = {
@@ -727,8 +732,8 @@ adm_eordellon_gladewarden = {
 	monarch_power = adm
 	modifier = {
 		manpower_recovery_speed = -0.10 
-		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+		#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 	ai_will_do = {
 		factor = 1
@@ -768,6 +773,7 @@ adm_eordellon_unthronedqueen = {
 			has_church_aspect = adm_eordellon_unthronedqueen
 			has_no_fey_adm_aspect = yes
 		}
+		NOT = { has_country_flag = H14_war_for_domandrod_complete }
 	}
 	effect = {
 		hidden_effect = {
@@ -1077,5 +1083,63 @@ mil_neutral_faeriedragons = {
 		factor = 1
 	}
 }
+
+#Cult of Rot
+adm_rot_amber_princess = {
+	cost = 150
+	potential = {
+		has_country_flag = H14_praise_be
+	}
+	effect = {
+		hidden_effect = {
+			set_country_flag = seasonal_adm_autumn_aspect
+		}
+	}
+	monarch_power = adm
+	modifier = {
+		development_cost = 0.1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+dip_rot_whispering_woods = {
+	cost = 100
+	potential = {
+		has_country_flag = H14_praise_be
+	}
+	effect = {
+		hidden_effect = {
+			set_country_flag = seasonal_dip_autumn_aspect
+		}
+	}
+	monarch_power = dip
+	modifier = {
+		manpower_recovery_speed = 0.25
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+mil_rot_husk_knight = {
+	cost = 150
+	potential = {
+		has_country_flag = H14_praise_be
+		NOT = { has_leader = "The Husk Knight" }
+	}
+	effect = {
+		hidden_effect = {
+			set_country_flag = seasonal_mil_autumn_aspect
+		}
+	}
+	monarch_power = mil
+	modifier = {
+		drill_gain_modifier = 0.50
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
 
 #

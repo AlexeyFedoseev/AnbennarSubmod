@@ -7,6 +7,7 @@ merc_aldresian_knights = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			is_emperor = yes
@@ -16,7 +17,8 @@ merc_aldresian_knights = {
 	}
 	cost_modifier = 0.8
 	modifier = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		land_morale = 0.1
 	}
 }
@@ -32,6 +34,7 @@ merc_battlemages = {
 			has_estate_privilege = estate_mages_battlemage_academies
 			has_estate_privilege = estate_mages_maidens_of_mists
 		}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 	}
     modifier = {
@@ -52,6 +55,7 @@ merc_onyx_legion = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = {
@@ -59,8 +63,7 @@ merc_onyx_legion = {
 					continent = europe
 				}
 			}
-			has_country_modifier = mercenaries_to_the_standard
-			has_country_modifier = glut_of_mercs
+			has_country_modifier = bypass_regional_merc_requirements
 		}
 		has_personal_deity = nerat
 		NOT = { has_global_flag = remove_merc_onyx_legion }
@@ -82,6 +85,7 @@ merc_patrician_guard = {
     trigger = {
 		has_estate = estate_castonath_patricians
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		castonath_area = { owned_by = ROOT }
 	}
@@ -126,7 +130,8 @@ merc_verkalgulan_the_golden_shield_company = {
 	cost_modifier = 0.75
 	modifier = {
 		infantry_power = 0.2
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		#reinforce_speed = -0.5		#BomjSBagetom Anbennar Submod
 	}
 }
@@ -223,7 +228,7 @@ merc_sugamber_flamemarked_gnoll = {
 	}
 	cost_modifier = 0.70 #They take and sell slaves instead of your gold
 	modifier = {
-		infantry_power = 0.2 #Successors of the Third Xhaz
+		infantry_power = 0.2 #Successors of the Drowned Xhaz
 		movement_speed = 0.2 #Used to moving quickly through marshy Folly
 		land_morale = -0.1 #Quick to break if no superiority
 		discipline = -0.025 #Unruly Gnolls
@@ -284,6 +289,7 @@ merc_joglik_ut_band = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = {  superregion = forbidden_lands_superregion }
 		any_known_country = {
@@ -294,7 +300,8 @@ merc_joglik_ut_band = {
 	cost_modifier = 0.5
 	modifier = {
 		discipline = 0.1
-		shock_damage_received = -0.25
+		#shock_damage_received = -0.25	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 }
 
@@ -307,6 +314,7 @@ merc_tlaric_gangs = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = {  superregion = forbidden_lands_superregion }
 		5304 = { has_province_modifier = tlar }
@@ -327,6 +335,7 @@ merc_westmarchers = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = {  superregion = forbidden_lands_superregion }
 	}
@@ -345,6 +354,7 @@ merc_heartland_guard = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = {  superregion = forbidden_lands_superregion }
 	}
@@ -363,6 +373,7 @@ merc_bright_wolves = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = {  superregion = forbidden_lands_superregion }
 	}
@@ -382,6 +393,7 @@ merc_eastmen = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = {  superregion = forbidden_lands_superregion }
 	}
@@ -400,6 +412,7 @@ merc_amber_band = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = {  superregion = forbidden_lands_superregion }
 	}
@@ -417,6 +430,7 @@ merc_hired_bandits = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = {  superregion = forbidden_lands_superregion }
 	}
@@ -438,6 +452,7 @@ merc_reformed_pinklady_band = {
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		has_unlocked_merc_company = { merc_company = merc_reformed_pinklady_band }
 		owns_core_province = 280
@@ -445,7 +460,8 @@ merc_reformed_pinklady_band = {
 	cost_modifier = 1.2
 	modifier = {
 		shock_damage = 0.2		#ferocious
-		shock_damage_received = -0.2		#hardened
+		#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 }
 
@@ -458,6 +474,7 @@ merc_bloody_tusks = {
 	sprites = { bom_sprite_pack }
 	trigger = {
 		NOT = { has_global_flag = bloody_tusks_unavailable }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 	}
 	cost_modifier = 0.9
@@ -478,6 +495,7 @@ merc_stone_army = {
 	sprites = { yan_sprite_pack }
 	trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		NOT = { has_global_flag = remove_stone_army }
 		NOT = { has_country_flag = gushuokguan_stone_army_tier_2 }
@@ -486,7 +504,8 @@ merc_stone_army = {
 	modifier = {
 		discipline = 0.05
 		land_morale = 0.1
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 }
 
@@ -499,6 +518,7 @@ merc_sirtani_raiders = {
 	sprites = { sirtana_sprite_pack }
 	trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 	}
 	cost_modifier = 0.7
@@ -517,6 +537,7 @@ merc_wandering_wind = {
 	sprites = { xia_sprite_pack }
 	trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			religion = accretive_path
@@ -538,6 +559,7 @@ merc_guvira_chonri = {
 	home_province = 4848
 	sprites = { asiangfx_sprite_pack }
 	trigger = {
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		religion = devouring_path
 	}
@@ -561,6 +583,7 @@ merc_dishonoured = {
 		NOT = { has_global_flag = ronin_executed }
 		}
 		NOT = { tag = R62 }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 	}
 	cost_modifier = 1.4
@@ -727,8 +750,10 @@ merc_castanorian_legion_3 = {
 	}
 	cost_modifier = 0
 	modifier = {
-		fire_damage_received = -0.3
-		shock_damage_received = -0.3
+		#fire_damage_received = -0.3		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.15		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		#shock_damage_received = -0.3	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		movement_speed = -0.1
 		reinforce_speed = -0.5
 	}
@@ -758,7 +783,8 @@ merc_castanorian_legion_4 = {
 	modifier = {
 		discipline = 0.10
 		land_attrition = -0.2
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		cavalry_power = -0.15
 		artillery_power = -0.10
 		reinforce_speed = -0.5
@@ -845,8 +871,10 @@ merc_castanorian_legion_7 = {
 	cost_modifier = 0
 	modifier = {
 		infantry_shock = 0.2
-		fire_damage_received = -0.1
-		shock_damage_received = -0.1
+		#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		land_morale = -0.1
 		discipline = 0.05
 		reinforce_speed = -0.5
@@ -874,7 +902,8 @@ merc_castanorian_legion_8 = {
 	}
 	cost_modifier = 0
 	modifier = {
-		shock_damage_received = -0.3
+		#shock_damage_received = -0.3	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		fire_damage_received = 0.1
 		land_morale = 0.1
 	}
@@ -962,7 +991,8 @@ merc_mithril_company = {
 	cost_modifier = 0.45
 	modifier = {
 		shock_damage = 0.05
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		reinforce_speed = -0.5
 	}
 }
@@ -976,6 +1006,7 @@ merc_order_of_the_zenith = {
     artillery_weight = 0.2
 	sprites = { muslimgfx_sprite_pack }
     trigger = {
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		religion = bulwari_sun_cult
 		has_country_flag = order_of_the_zenith
@@ -1033,6 +1064,7 @@ merc_elizna_elven_legionnaires = {
     artillery_weight = 0
 	sprites = { sun_elf_sprite_pack }
     trigger = {
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		has_unlocked_merc_company = { merc_company = merc_elizna_elven_legionnaires }
 		owns_core_province = 496
@@ -1045,59 +1077,6 @@ merc_elizna_elven_legionnaires = {
 	}
 }
 
-merc_esthil_wightknights = {
-	regiments_per_development = 0.005
-	cavalry_weight = 1
-	sprites = { castanor_sprite_pack }
-	trigger = {
-		hidden_trigger = { ai = no } # necessary as the AI crashes when attempting to disband mercs with cost_modifier of 0
-		has_unlocked_merc_company = { merc_company = merc_esthil_wightknights }
-	}
-	cost_modifier = 0
-	modifier = {
-		cav_to_inf_ratio = 1.0
-		cavalry_shock = 0.2
-		cavalry_flanking = 0.50
-		shock_damage_received = -0.2
-		land_morale = 0.1
-		reinforce_speed = -0.30
-	}
-}
-
-merc_esthil_dread_legion = {
-	regiments_per_development = 0.1
-	cavalry_weight = 0
-	sprites = { castanor_sprite_pack }
-	trigger = {
-		hidden_trigger = { ai = no } # necessary as the AI crashes when attempting to disband mercs with cost_modifier of 0
-		has_unlocked_merc_company = { merc_company = merc_esthil_dread_legion }
-	}
-	cost_modifier = 0
-	modifier = {
-		fire_damage = 0.10
-		land_morale = 0.2
-		reinforce_speed = -0.20
-		discipline = 0.05
-	}
-}
-
-merc_esthil_pale_legion = {
-	regiments_per_development = 0.001
-	cavalry_weight = 0
-	sprites = { castanor_sprite_pack }
-	trigger = {
-		hidden_trigger = { ai = no } # necessary as the AI crashes when attempting to disband mercs with cost_modifier of 0
-		has_unlocked_merc_company = { merc_company = merc_esthil_pale_legion }
-	}
-	cost_modifier = 0
-	modifier = {
-		# siege_ability = 0.10 # This doesn't work for mercs
-		shock_damage_received = -0.5
-		fire_damage_received = -0.5
-		reinforce_speed = -0.9
-		discipline = 0.10
-	}
-}
 #Eordand Disaster Elven Warriors
 merc_wood_elven_hunters = {
 	regiments_per_development = 0.02
@@ -1111,7 +1090,8 @@ merc_wood_elven_hunters = {
 	}
 	cost_modifier = 0.75
 	modifier = {
-		fire_damage_received = -0.1
+		#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		movement_speed = 0.1
 		reinforce_speed = -0.5	#long-lived
 	}
@@ -1151,7 +1131,8 @@ merc_kazraiel_1 = {
 	}
 	cost_modifier = 0
 	modifier = {
-		fire_damage_received = -0.5
+		#fire_damage_received = -0.5		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.25		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		shock_damage = 0.5
 		discipline = -0.1
 	}
@@ -1171,7 +1152,8 @@ merc_kazraiel_2 = {
 	}
 	cost_modifier = 0
 	modifier = {
-		fire_damage_received = -0.5
+		#fire_damage_received = -0.5		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.25		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		shock_damage = 0.5
 		discipline = -0.1
 	}
@@ -1191,7 +1173,8 @@ merc_kazraiel_3 = {
 	}
 	cost_modifier = 0
 	modifier = {
-		fire_damage_received = -0.5
+		#fire_damage_received = -0.5		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.25		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		shock_damage = 0.5
 		discipline = -0.1
 	}
@@ -1338,8 +1321,10 @@ merc_mesner_1 = {
 	cost_modifier = 0
 	modifier = {
 		recover_army_morale_speed = 0.5
-		shock_damage_received = -0.5
-		fire_damage_received = -0.5
+		#shock_damage_received = -0.5	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.25	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		#fire_damage_received = -0.5		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.25		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		shock_damage = -0.1
 		fire_damage = -0.1
 	}
@@ -1360,8 +1345,10 @@ merc_mesner_2 = {
 	cost_modifier = 0
 	modifier = {
 		recover_army_morale_speed = 0.5
-		shock_damage_received = -0.5
-		fire_damage_received = -0.5
+		#shock_damage_received = -0.5	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.25	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		#fire_damage_received = -0.5		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.25		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		shock_damage = -0.1
 		fire_damage = -0.1
 	}
@@ -1382,8 +1369,10 @@ merc_mesner_3 = {
 	cost_modifier = 0
 	modifier = {
 		recover_army_morale_speed = 0.5
-		shock_damage_received = -0.5
-		fire_damage_received = -0.5
+		#shock_damage_received = -0.5	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.25	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		#fire_damage_received = -0.5		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.25		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		shock_damage = -0.1
 		fire_damage = -0.1
 	}
@@ -1593,7 +1582,8 @@ merc_sunlight_lancers = {
 		cav_to_inf_ratio = 1.0
 		cavalry_power = 0.35 #Elite knights
 		movement_speed = 0.1 #Elite cav
-		shock_damage_received = -0.1 #Armour
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		shock_damage = 0.1 #Armour
 	}
 }
@@ -1727,7 +1717,8 @@ merc_bloodfists = {
 	modifier = {
 		shock_damage = 0.4 #elite brown orcs
 		fire_damage = -0.2 #melee boys
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		loot_amount = 0.4 #best looters in the world
 	}
 }
@@ -1768,7 +1759,8 @@ merc_golden_lancers = {
 		cav_to_inf_ratio = 1.0
 		cavalry_power = 0.35 #Elite knights
 		movement_speed = 0.1 #Elite cav
-		shock_damage_received = -0.1 #Armour
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		shock_damage = 0.1 #Armour
 	}
 }
@@ -1785,8 +1777,10 @@ veykodan_guard_merc = { #Veykodan Guard for Arverynn
 	cost_modifier = 1
 	modifier = {
 		infantry_shock = 0.25
-		shock_damage_received = -0.1
-		fire_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 }
 
@@ -1885,7 +1879,8 @@ merc_landshark_flamemarked_gnoll = {
 	modifier = {
 		infantry_power = 0.1
 		movement_speed = 0.2
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
         may_recruit_female_generals = yes
         female_advisor_chance = 0.5
 	}
@@ -1915,6 +1910,33 @@ merc_steam_baron_engineering_corps = {
 	max_size = 4
 }
 
+#Gor Vazumbrog Dauvek Veker
+merc_dauvek_veker = {
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+    regiments_per_development = 0.1
+	cavalry_weight = 0
+	cavalry_cap = 0
+    artillery_weight = 0
+	home_province = 4217 #Gor Vazumbrog
+	sprites = { group_dwarves_sprite_pack }
+    trigger = {
+		OR = {
+			tag = I14 #Gor Vazumbrog
+			was_tag = I14
+		}
+		has_unlocked_merc_company = { merc_company = merc_dauvek_veker }
+		NOT = { has_country_flag = gor_vazumbrog_dauvek_veker_mercenaries_disabled }
+	}
+	cost_modifier = 0.25
+	modifier = {
+		movement_speed = 0.15
+		land_attrition = -0.3
+		land_morale = 0.1
+	}
+
+	max_size = 10
+}
+
 # Corintari Mercs - Wood Elf gov reform
 merc_corintari = {
 	regiments_per_development = 0.03
@@ -1927,7 +1949,8 @@ merc_corintari = {
 	}
 	cost_modifier = 0.50
 	modifier = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		mercenary_manpower = 0.5
 		manpower_recovery_speed = 0.5
 		reinforce_speed = 0.33
@@ -1945,7 +1968,8 @@ merc_deepwoods_orc_rangers = {
 	}
 	cost_modifier = 0.50
 	modifier = {
-		shock_damage_received = -0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		movement_speed = 0.2
 	}
 }
@@ -1998,8 +2022,10 @@ merc_eordand_glacial_elemental = {
 		shock_damage = -0.1
 		fire_damage = -0.1
 		morale_damage_received = -0.20
-		shock_damage_received = -0.20 
-		fire_damage_received = -0.20 
+		#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		#fire_damage_received = -0.2		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.1			#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	} 
 }
 
@@ -2064,7 +2090,8 @@ merc_border_guards = {
 	}
 	cost_modifier = 0.50
 	modifier = {
-		shock_damage_received = -0.15
+		#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 		movement_speed = 0.2
 	}
 }
@@ -2140,4 +2167,144 @@ merc_heroes_of_the_folly = {
 		discipline = 0.10
 	}
 	max_size = 52
+}
+
+merc_haasananthu = {
+	regiments_per_development = 0.05
+	home_province = 3035 #Spiked Log Capital
+	cavalry_weight = 0
+	cavalry_cap = 0
+	artillery_weight = 0
+	sprites = { harpy_sprite_pack }
+	trigger = {
+		has_country_flag = unlocked_merc_haasananthu
+	}
+	cost_modifier = 1
+	modifier = {
+		fire_damage = 0.1
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		morale_damage_received = 0.1
+	}
+	max_size = 20
+}
+
+#Great Storm
+merc_khaashalgi_centaurs = {
+	regiments_per_development = 0
+	home_province = 5378
+	cavalry_weight = 1
+	cavalry_cap = 0
+	artillery_weight = 0
+	sprites = { centaur_sprite_pack } #Must be centaur sprite pack
+	trigger = {
+		has_country_flag = I80_khaashalg_support
+	}
+	cost_modifier = 0.3
+	modifier = {
+		cavalry_shock = 0.2
+	}
+	no_additional_manpower_from_max_size = yes
+	min_size = 10
+	max_size = 10
+}
+
+#Planetouched Adventurers
+merc_planetouched_free_company = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0.1
+	artillery_weight = 0.1
+	cavalry_cap = 2
+	home_province = 349
+	sprites = { binwarji_units_pack }
+    trigger = {
+		has_estate_privilege = estate_planetouched_scattered_guilds
+		has_estate_privilege = estate_adventurers_free_company_rosters
+	}
+	cost_modifier = 0.75
+	modifier = {
+		land_morale = 0.1
+	}
+}
+
+
+
+#Shadowdreamer
+merc_goblin_chain_band = {
+	regiments_per_development = 0.1
+	home_province = 4086 #Greedy Grin Capital
+	cavalry_weight = 0
+	cavalry_cap = 0
+	artillery_weight = 0.2
+	sprites = { goblin_sprite_pack }
+	trigger = {
+		has_country_flag = H83_goblin_chain_gang
+	}
+	cost_modifier = 0.5
+	modifier = {
+		land_morale = -0.1
+		discipline = -0.05
+	}
+	min_size = 16
+	max_size = 80
+}
+
+merc_troll_chain_band = {
+	regiments_per_development = 0.07
+	home_province = 4095 #Grizehud Capital
+	cavalry_weight = 0
+	cavalry_cap = 0
+	artillery_weight = 0
+	sprites = { troll_sprite_pack }
+	trigger = {
+		has_country_flag = H83_troll_chain_gang
+	}
+	cost_modifier = 1.5
+	modifier = {
+		#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		infantry_shock = 0.5
+	}
+	min_size = 8
+	max_size = 50
+}
+
+merc_drakon_company = {
+	regiments_per_development = 0.07
+	home_province = 4228 #Drakons
+	cavalry_weight = 1
+	artillery_weight = 0
+	trigger = {
+		has_country_flag = H83_drakon_company
+	}
+	cost_modifier = 0.75
+	modifier = {
+		cav_to_inf_ratio = 1
+		morale_damage_received = -0.1
+		reinforce_speed = -0.4
+		cavalry_shock = 0.25
+	}
+	min_size = 8
+	max_size = 50
+}
+
+#Zerat
+merc_ashhana_berserkers = {
+	regiments_per_development = 0.05
+	home_province = 6685
+	cavalry_weight = 0
+	cavalry_cap = 0
+	artillery_weight = 0
+	sprites = { centaur_sprafricangfx_sprite_packite_pack } #Must be centaur sprite pack
+	trigger = {
+		has_country_flag = zerat_ashhanna_berserkers
+	}
+	cost_modifier = 0.5
+	modifier = {
+		infantry_shock = 0.5
+		shock_damage = 0.25
+		infantry_fire = -0.5
+	}
 }

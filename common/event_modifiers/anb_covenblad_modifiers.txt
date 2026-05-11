@@ -233,8 +233,8 @@ covenblad_origins_of_the_art = {
 }
 
 covenblad_heroes_of_our_time = {
-	#fire_damage_received = -0.10	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.10		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	diplomats = 1
 }
 

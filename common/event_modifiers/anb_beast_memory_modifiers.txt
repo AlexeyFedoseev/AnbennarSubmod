@@ -86,8 +86,8 @@ wise_leopard_calculating_modifier = {
 
 wise_leopard_inflexible_modifier = {
 	religion = yes
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 noble_elephant_loyal_modifier = {

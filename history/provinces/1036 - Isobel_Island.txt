@@ -16,8 +16,17 @@ is_city = yes
 
 hre = no
 
+#base_tax = 4			#BomjSBagetom Anbennar Submod
+#base_production = 2	#BomjSBagetom Anbennar Submod
+#base_manpower = 1		#BomjSBagetom Anbennar Submod
 base_tax = 6			#BomjSBagetom Anbennar Submod
 base_production = 4		#BomjSBagetom Anbennar Submod
 base_manpower = 3		#BomjSBagetom Anbennar Submod
+
+#trade_goods = coffee	#BomjSBagetom Anbennar Submod
+
+#native_size = 11		#BomjSBagetom Anbennar Submod
+#native_ferocity = 4	#BomjSBagetom Anbennar Submod
+#native_hostileness = 6	#BomjSBagetom Anbennar Submod
 
 center_of_trade = 1

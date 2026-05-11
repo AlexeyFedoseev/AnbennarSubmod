@@ -69,28 +69,28 @@ krak_icecraft_equipment_3 = {
 krak_icecraft_equipment_4 = {
 	fire_damage = 0.025
 	shock_damage = 0.025
-	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	reinforce_cost_modifier = 0.75
 }
 krak_icecraft_equipment_5 = {
 	fire_damage = 0.05
 	shock_damage = 0.05
-	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	reinforce_cost_modifier = 0.75
 }
 krak_icecraft_equipment_6 = {
 	fire_damage = 0.1
 	shock_damage = 0.1
-	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	reinforce_cost_modifier = 1
 }
 krak_icecraft_drills_1 = {
@@ -776,7 +776,7 @@ I25_hold_mazes = {
 }
 
 ###################
-##Orlazam-az-Dihr##
+##Orlazam-az-dihr##
 ###################
 ramsteel_vale_block = {
 	local_defensiveness = 0.1
@@ -907,8 +907,8 @@ ramsteel_fire_2 = {
 }
 ramsteel_fire_3 = {
 	cavalry_fire = 0.75
-	#fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	cav_to_inf_ratio = 0.25
 	cavalry_power = 0.05
 }
@@ -929,16 +929,16 @@ ramsteel_shock_3 = {
 ramsteel_mecharam_1 = {
 	cavalry_flanking = 0.75
 	cavalry_fire = 1
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	movement_speed = 0.1
 	cavalry_power = 0.15
 }
 ramsteel_mecharam_2 = {
 	cavalry_flanking = 0.75
 	cavalry_fire = 1
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	cavalry_cost = -0.1
 	cavalry_power = 0.15
 }
@@ -957,16 +957,16 @@ ramsteel_mecharam_4 = {
 ramsteel_mecharam_5 = {
 	cav_to_inf_ratio = 0.50
 	cavalry_fire = 1
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	movement_speed = 0.1
 	cavalry_power = 0.15
 }
 ramsteel_mecharam_6 = {
 	cav_to_inf_ratio = 0.50
 	cavalry_fire = 1
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	cavalry_cost = -0.1
 	cavalry_power = 0.15
 }
@@ -1000,10 +1000,10 @@ ovdalkanzad_the_uzthrun_forge = {
 	trade_goods_size = 3
 }
 ovdalkanzad_defense_is_the_best_offense = {
-	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	#fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 ovdalkanzad_a_new_god_of_the_battlefield = {
 	fire_damage = 0.05
@@ -1194,10 +1194,10 @@ mithradhum_tactics = {
 	idea_cost = -0.1
 }
 mithradhum_mithril_armory = {
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	reserves_organisation = 0.1
 }
 mithradhum_grandiose = {
@@ -1338,10 +1338,10 @@ lodhum_elf_lessons = {
 	movement_speed = 0.05
 }
 lodhum_dwarf_lessons = {
-	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 lodhum_tolerance_modifier = {
 	tolerance_heathen = 3
@@ -1681,8 +1681,8 @@ orldhum_polished_regiments = {
 	infantry_power = 0.1
 }
 orldhum_platinum_augments = {
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	fire_damage = 0.05
 }
 orldhum_world_class_warsuits = {
@@ -1991,13 +1991,13 @@ seghdihr_tenacity_attrition = {
 	global_regiment_cost = 0.05
 }
 seghdihr_tenacity_fire = {
-	#fire_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.15		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	global_regiment_cost = 0.05
 }
 seghdihr_tenacity_shock = {
-	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	global_regiment_cost = 0.05
 }
 seghdihr_segamlavad_gulan_modifier = {
@@ -2367,10 +2367,10 @@ krakazol_drinking_province_debuff_3 = {
 krakazol_drinking_iron_perm = {
 	land_morale = 0.1
 	defensiveness = 0.25
-	#fire_damage_received = -0.075	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0375	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0375	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0375		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0375	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 krakazol_drinking_dark_perm = {
 	idea_cost = -0.15
@@ -2447,26 +2447,26 @@ krakazol_drinking_iron_4 = {
 krakazol_drinking_iron_5 = {
 	land_morale = 0.08
 	defensiveness = 0.15
-	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0125		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 krakazol_drinking_iron_6 = {
 	land_morale = 0.1
 	defensiveness = 0.18
-	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 krakazol_drinking_iron_7 = {
 	land_morale = 0.1
 	defensiveness = 0.25
-	#fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0375		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0375		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0375		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0375		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 krakazol_drinking_dark_1 = {
 	idea_cost = -0.025
@@ -2790,17 +2790,17 @@ krakazol_drinking_ancestor_4 = {
 krakazol_drinking_ancestor_5 = {
 	advisor_cost = -0.1
 	all_power_cost = -0.03
-	#study_speed = 0.1
+	mages_ruler_experience_mod = 0.1
 }
 krakazol_drinking_ancestor_6 = {
 	advisor_cost = -0.1
 	all_power_cost = -0.04
-	#study_speed = 0.2
+	mages_ruler_experience_mod = 0.2
 }
 krakazol_drinking_ancestor_7 = {
 	advisor_cost = -0.1
 	all_power_cost = -0.05
-	#study_speed = 0.3
+	mages_ruler_experience_mod = 0.3
 }
 
 #drinking province mods
@@ -3207,38 +3207,38 @@ roadwarrior_training_5 = {
 }
 roadwarrior_portable_arena_1 = {
 	army_tradition = 0.05
-	#shock_damage_received = -0.005	#BomjSBagetom Anbennar Submod
-	#fire_damage_received = -0.005	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0025	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.005	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.005		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 roadwarrior_portable_arena_2 = {
 	army_tradition = 0.1
-	#shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod
-	#fire_damage_received = -0.01	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.005	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.005	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.005	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.01		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.005		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 roadwarrior_portable_arena_3 = {
 	army_tradition = 0.2
-	#shock_damage_received = -0.015	#BomjSBagetom Anbennar Submod
-	#fire_damage_received = -0.015	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0075	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0075	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.015	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.015		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 roadwarrior_portable_arena_4 = {
 	army_tradition = 0.5
-	#shock_damage_received = -0.02	#BomjSBagetom Anbennar Submod
-	#fire_damage_received = -0.02	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.01	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.02	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.02		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.01		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 roadwarrior_portable_arena_5 = {
 	army_tradition = 1
-	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	#fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 roadwarrior_breaker_1 = {
 	siege_ability = 0.05
@@ -3816,8 +3816,8 @@ orlghelovar_adapting_to_weapons = {
 	discipline = -0.05
 }
 orlghelovar_protective_gear = {
-	#fire_damage_received = -0.10	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 orlghelovar_adapting_to_gear = {
 	army_tradition_decay = 0.05
@@ -3841,8 +3841,8 @@ orlghelovar_university_filling = {
 	all_power_cost = 0.05
 }
 orlghelovar_appease_mages = {
-	#shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.10	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 orlghelovar_uprising_prevented = {
 	mages_influence_modifier = -0.10
@@ -3858,8 +3858,8 @@ orlghelovar_future_research = {
 	idea_cost = 0.20
 }
 orlghelovar_black_damestear_facility = {
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 orlghelovar_researching_damestear = {
 	global_trade_goods_size_modifier = -0.10
@@ -3935,8 +3935,8 @@ orlghelovar_drained_supply = {
 	trade_goods_size_modifier = -10
 }
 orlghelovar_secured_damestear = {
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 orlghelovar_lad = {
 	prestige = 1
@@ -3952,8 +3952,8 @@ orlghelovar_early_medicine = {
 	manpower_recovery_speed = 0.10
 }
 orlghelovar_shatterproof_armor = {
-	#fire_damage_received = -0.10	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	is_rajput_modifier = yes
 }
 orlghelovar_advanced_laser_research = {
@@ -4014,7 +4014,6 @@ shaz_aqatbar_wannabe_hold = {
 shaz_evran_beat = {
 	prestige = 1
 	land_morale = 0.1
-	morale_damage = 0.01
 }
 
 shaz_colonial_mod = {
@@ -4279,8 +4278,8 @@ shaz_anbenncost_div = {
 }
 
 shaz_port_jaher_div = {
-	#fire_damage_received = -0.10	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	global_ship_cost = -0.1
 }
 
@@ -4367,6 +4366,7 @@ chaingrasper_freed_from_mortal_concerns = {
 
 chaingrasper_pursuing_immortal = {
 	global_tax_modifier = -0.25
+	necromancy_experience_mod = 0.5
 }
 
 chaingrasper_raheni_knowledge = {
@@ -4455,9 +4455,13 @@ chaingrasper_frontline_hold = {
 	trade_goods_size_modifier = -0.25
 }
 
+chaingrasper_apprentices_mod = {
+	mages_ruler_experience_mod = 0.1
+}
+
 chaingrasper_experimental_laboratory = {
 	local_unrest = 3
-	#Magic study XP is updated in mission effect
+	mages_ruler_experience_mod = 0.2
 }
 
 chaingrasper_auxiliaries = {
@@ -4513,8 +4517,8 @@ chaingrasper_plentiful_food = {
 }
 
 chaingrasper_magical_support_battalions = {
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 chaingrasper_sustained_wards = {
@@ -4629,8 +4633,8 @@ truedagger_to_amldihr = {
 	land_morale = 0.15
 }
 truedagger_nothing_more_than_orcs = {
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 truedagger_blood_games = {
 	global_unrest = -1
@@ -5047,8 +5051,8 @@ H89_reconstruction_efforts = {
 }
 
 H89_dwarven_armor = {
-	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 H89_illegal_drugs = {
@@ -5058,7 +5062,7 @@ H89_illegal_drugs = {
 
 H89_on_the_edge = {
 	monarch_lifespan = -0.25
-	# +50% Study Speed
+	mages_ruler_experience_mod = 0.5
 }
 
 H89_doped_military_1 = {
@@ -5530,8 +5534,8 @@ I98_dealers_point = {
 I98_freezeflame = {
 	is_rajput_modifier = yes
 	infantry_fire = 0.2
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 I98_province_nuked = {
@@ -5661,8 +5665,8 @@ I98_new_and_improved = {
 
 I98_mithril_tempering = {
 	is_rajput_modifier = yes
-	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 I98_rail_logistics = {
@@ -6568,6 +6572,953 @@ gor_burad_BR_warlust = {
 	shock_damage = 0.05
 }
 
+
+#######################
+#### Gor Vazumbrog ####
+#######################
+
+gor_vazumbrog_drakon_hunting_grounds = {
+	local_tax_modifier = -0.5
+	local_production_efficiency = -0.5
+	adventurers_loyalty_modifier = 0.1
+	army_tradition_decay = -0.01
+	picture = "dwarovar_unique_monster"
+}
+
+gor_vazumbrog_drakon_infestation = {
+	local_development_cost = 2.0
+	picture = "dwarovar_unique_monster"
+}
+
+gor_vazumbrog_lack_of_water_sources = {
+	local_development_cost = 0.2
+	local_monthly_devastation = 0.1
+}
+
+gor_vazumbrog_unstable_foundations = {
+	local_development_cost = 0.3
+}
+
+gor_vazumbrog_surrounded_by_death = {
+	stability_cost_modifier = 0.25
+}
+
+gor_vazumbrog_railyard_logistics = {
+	movement_speed = 0.1
+	land_attrition = -0.15
+}
+
+gor_vazumbrog_tunnels_secured = {	
+	colonist_placement_chance = 0.1
+	global_colonial_growth = 50
+}
+
+gor_vazumbrog_king_on_pilgrimage = {
+	country_admin_power = -1
+	country_diplomatic_power = -1
+	country_military_power = -1
+}
+
+gor_vazumbrog_fighting_back = {
+	leader_land_shock = 1
+	army_tradition_from_battle = 1
+}
+
+gor_vazumbrog_united_in_grief = {
+	all_estate_loyalty_equilibrium = 0.2
+	yearly_corruption = -0.1
+}
+
+gor_vazumbrog_valour_and_discipline = {
+	drill_gain_modifier = 1
+	yearly_army_professionalism = 0.005
+}
+
+gor_vazumbrog_runes_and_grenades = {
+	fire_damage = 0.1
+	leader_land_fire = 1
+}
+
+gor_vazumbrog_aakhet_military_knowledge = {
+	mil_tech_cost_modifier = -0.1
+}
+
+gor_vazumbrog_silk_production_diverted = {
+	trade_goods_size_modifier = -1
+}
+
+gor_vazumbrog_hybrid_bullet = {
+	fire_damage = 0.1
+}
+
+gor_vazumbrog_sealed_and_secured = {
+	development_cost = -0.1
+	mercantilism_cost = -0.5
+}
+
+gor_vazumbrog_dragonguard = {
+	morale_damage_received = -0.1
+	military_tactics = 0.1
+	reserves_organisation = 0.1
+}
+
+gor_vazumbrog_rapid_hold_expansion = {
+	local_build_cost = -0.5
+	local_build_time = -0.5
+	local_development_cost = -0.5
+}
+
+gor_vazumbrog_dragonslayer = {
+	all_power_cost = -0.05
+	land_morale = 0.15
+	siege_ability = 0.2
+	core_creation = -0.2
+}
+
+gor_vazumbrog_legacy_of_rule = {
+	governing_capacity = 100
+}
+
+gor_vazumbrog_logistics_corps = {
+	movement_speed = 0.1
+	envoy_travel_time = -0.5
+}
+
+gor_vazumbrog_worthy_successors = {
+	diplomatic_reputation = 2
+	chance_to_inherit = 0.5
+}
+
+gor_vazumbrog_black_damestear_workshop = {
+	local_development_cost = -0.3
+	mages_loyalty_modifier = 0.05
+	trade_value_modifier = 0.15
+	picture = "black_damestear"
+}
+
+gor_vazumbrog_halanna_breath_vent = {
+	local_development_cost = -0.3
+	trade_goods_size = 3
+	global_missionary_strength = 0.01
+}
+
+gor_vazumbrog_fast_growing_fungi = {
+	trade_goods_size = 2
+	manpower_recovery_speed = 0.05
+}
+
+gor_vazumbrog_steamlight_show = {
+	local_tax_modifier = 0.5
+	trade_value_modifier = 0.5
+	stability_cost_modifier = -0.1
+}
+
+gor_vazumbrog_dauvek_veker_secure_road = {
+	local_colonist_placement_chance = 1
+}
+
+gor_vazumbrog_dauvek_veker_caves_cleared = {
+	local_colony_cost_modifier = -0.5
+}
+
+gor_vazumbrog_building_material_influx = {
+	build_cost = -0.25
+}
+
+gor_vazumbrog_recent_hunt = {
+	army_tradition_decay = -0.02
+}
+
+gor_vazumbrog_recent_vault_delve = {
+	innovativeness_gain = 0.25
+}
+
+gor_vazumbrog_vault_delve_in_progress = {
+	innovativeness_gain = 0.25
+}
+
+gor_vazumbrog_crown_of_dominion = {
+	governing_capacity_modifier = 0.2
+	no_stability_loss_on_monarch_death = yes
+}
+
+gor_vazumbrog_codex_of_infinite_tactics = {
+	leader_land_fire = 1
+	leader_land_shock = 1
+	leader_land_manuever = 1
+	leader_siege = 1
+}
+
+gor_vazumbrog_shadowweave_scouts = {
+	spy_offence = 2.0
+}
+
+gor_vazumbrog_vault_language_of_stone_downside = {
+	envoy_travel_time = 0.1
+	local_friendly_movement_speed = -0.50 # slower
+	attrition = 2
+}
+
+vault_earthshaper_sphere_cooldown = {}
+gor_vazumbrog_vault_codex_of_infinite_tactics_cooldown = {}
+
+gor_vazumbrog_vault_codex_of_infinite_tactics_downside = {
+	army_tradition_decay = 0.01
+}
+gor_vazumbrog_vault_codex_of_infinite_tactics_downside_2 = {
+	army_tradition_decay = 0.02
+}
+gor_vazumbrog_singing_glyphs = {
+	local_friendly_movement_speed = 1 # faster
+	local_monthly_devastation = -0.5
+	supply_limit_modifier = 1
+}
+gor_vazumbrog_singing_glyphs_2 = {
+	local_friendly_movement_speed = 1 # faster
+	local_monthly_devastation = -0.5
+	supply_limit_modifier = 1
+	yearly_corruption = 0.01
+}
+gor_vazumbrog_endless_ledger = {
+	inflation_reduction = 0.10
+	global_trade_goods_size_modifier = 0.10
+}
+gor_vazumbrog_endless_ledger_2 = {
+	inflation_reduction = 0.10
+	global_trade_goods_size_modifier = 0.10
+	interest = 1
+	tolerance_own = -1
+}
+gor_vazumbrog_vault_duskgold_cache = {
+	local_tax_modifier = 10 # 1000%	increase
+}
+vault_hearthstone_engine_mod = {
+	local_development_cost = -0.80
+	trade_goods_size_modifier = 0.20
+	local_prosperity_growth = 5
+}
+vault_hearthstone_engine_mod_investigate = {
+	local_development_cost = -0.40
+	trade_goods_size_modifier = 0.10
+	local_prosperity_growth = 2.5
+}
+vault_hearthstone_engine_mushrooms = {
+	global_monthly_devastation = 0.05
+}
+vault_hearthstone_engine_lazy_workers = {
+	local_monthly_devastation = 0.05
+	trade_goods_size_modifier = 0.20
+}
+vault_hearthstone_engine_deep_dwarves = {
+	global_monthly_devastation = 0.10
+	global_spy_defence = 0.25
+}
+
+
+
+
+#golems
+
+gor_vazumbrog_work_golems_1 = {
+	global_trade_goods_size_modifier = 0.025
+	production_efficiency = 0.025
+	global_unrest = 1
+}
+
+gor_vazumbrog_work_golems_2 = {
+	global_trade_goods_size_modifier = 0.05
+	production_efficiency = 0.05
+	global_unrest = 2
+}
+
+gor_vazumbrog_work_golems_3 = {
+	global_trade_goods_size_modifier = 0.075
+	production_efficiency = 0.075
+	global_unrest = 3
+}
+
+gor_vazumbrog_work_golems_4 = {
+	global_trade_goods_size_modifier = 0.1
+	production_efficiency = 0.1
+	global_unrest = 4
+}
+
+gor_vazumbrog_work_golems_5 = {
+	global_trade_goods_size_modifier = 0.125
+	production_efficiency = 0.125
+	global_unrest = 3
+}
+
+gor_vazumbrog_work_golems_6 = {
+	global_trade_goods_size_modifier = 0.15
+	production_efficiency = 0.15
+	global_unrest = 2
+}
+
+gor_vazumbrog_work_golems_7 = {
+	global_trade_goods_size_modifier = 0.175
+	production_efficiency = 0.175
+	global_unrest = 1
+}
+
+gor_vazumbrog_work_golems_8 = {
+	global_trade_goods_size_modifier = 0.2
+	production_efficiency = 0.2
+}
+
+gor_vazumbrog_golemancy = {
+	is_rajput_modifier = yes
+	regiment_manpower_usage = -0.4
+	land_attrition = -0.2
+	infantry_power = 0.15
+	infantry_cost = 0.5
+}
+
+gor_vazumbrog_army_golems_1 = {
+	allowed_rajput_fraction = 0.025
+	global_unrest = 1
+}
+
+gor_vazumbrog_army_golems_2 = {
+	allowed_rajput_fraction = 0.05
+	global_unrest = 2
+}
+
+gor_vazumbrog_army_golems_3 = {
+	allowed_rajput_fraction = 0.075
+	global_unrest = 3
+}
+
+gor_vazumbrog_army_golems_4 = {
+	allowed_rajput_fraction = 0.1
+	global_unrest = 4
+}
+
+gor_vazumbrog_army_golems_5 = {
+	allowed_rajput_fraction = 0.125
+	global_unrest = 5
+}
+
+gor_vazumbrog_army_golems_6 = {
+	allowed_rajput_fraction = 0.15
+	global_unrest = 6
+}
+
+gor_vazumbrog_army_golems_7 = {
+	allowed_rajput_fraction = 0.175
+	global_unrest = 5
+}
+
+gor_vazumbrog_army_golems_8 = {
+	allowed_rajput_fraction = 0.2
+	global_unrest = 4
+}
+
+gor_vazumbrog_army_golems_9 = {
+	allowed_rajput_fraction = 0.225
+	global_unrest = 3
+}
+
+gor_vazumbrog_army_golems_10 = {
+	allowed_rajput_fraction = 0.25
+	global_unrest = 2
+}
+
+gor_vazumbrog_army_golems_11 = {
+	allowed_rajput_fraction = 0.275
+	global_unrest = 1
+}
+
+gor_vazumbrog_army_golems_12 = {
+	allowed_rajput_fraction = 0.3
+}
+
+gor_vazumbrog_army_golem_quality_1 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_2 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_3 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0375	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0375		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_4 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_5 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0625	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0625		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_6 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.15		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_7 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.175	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0825	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.175		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0875		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_8 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.2		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_9 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.225	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.1125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.225		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.1125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_10 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.25	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.25		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_11 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.275	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.1375	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.275		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.1375		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+gor_vazumbrog_army_golem_quality_12 = {
+	is_rajput_modifier = yes
+	#shock_damage_received = -0.3	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#fire_damage_received = -0.3		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.15		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+}
+
+#citadels
+gor_vazumbrog_citadel_bogig_vazumbrog_basic_none = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_vazumbrog_basic_defensiveness = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.75
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_vazumbrog_basic_attrition = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_vazumbrog_basic_counterattack = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_vazumbrog_basic_garrison = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 1
+	local_garrison_damage = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_vazumbrog_upgraded_none = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_vazumbrog_upgraded_defensiveness = {
+	local_development_cost = -0.6
+	local_defensiveness = 1.25
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_vazumbrog_upgraded_attrition = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_vazumbrog_upgraded_counterattack = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_vazumbrog_upgraded_garrison = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1.5
+	local_garrison_damage = 1.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+
+gor_vazumbrog_citadel_mushroom_basic_none = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_mushroom_basic_defensiveness = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.75
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_mushroom_basic_attrition = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_mushroom_basic_counterattack = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_mushroom_basic_garrison = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 1
+	local_garrison_damage = 0.5
+	trade_goods_size = 0.002
+	picture = "gor_vazumbrog_citadel"
+}
+gor_vazumbrog_citadel_mushroom_upgraded_none = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_mushroom_upgraded_defensiveness = {
+	local_development_cost = -0.6
+	local_defensiveness = 1.25
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_mushroom_upgraded_attrition = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_mushroom_upgraded_counterattack = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_mushroom_upgraded_garrison = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1.5
+	local_garrison_damage = 1.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+
+gor_vazumbrog_citadel_bogig_ozumbrog_basic_none = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_ozumbrog_basic_defensiveness = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.75
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_ozumbrog_basic_attrition = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_ozumbrog_basic_counterattack = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_ozumbrog_basic_garrison = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 1
+	local_garrison_damage = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_ozumbrog_upgraded_none = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_ozumbrog_upgraded_defensiveness = {
+	local_development_cost = -0.6
+	local_defensiveness = 1.25
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_ozumbrog_upgraded_attrition = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_ozumbrog_upgraded_counterattack = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_bogig_ozumbrog_upgraded_garrison = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1.5
+	local_garrison_damage = 1.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+
+gor_vazumbrog_citadel_forest_basic_none = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.3
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_forest_basic_defensiveness = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.55
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_forest_basic_attrition = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.3
+	local_garrison_size = 0.5
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_forest_basic_counterattack = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.3
+	local_garrison_size = 0.5
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_forest_basic_garrison = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.3
+	local_garrison_size = 1
+	local_garrison_damage = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_forest_upgraded_none = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.6
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_forest_upgraded_defensiveness = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.85
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_forest_upgraded_attrition = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.6
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_forest_upgraded_counterattack = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.6
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_forest_upgraded_garrison = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.6
+	local_garrison_size = 1.5
+	local_garrison_damage = 1.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+
+gor_vazumbrog_citadel_desert_basic_none = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.3
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_desert_basic_defensiveness = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.55
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_desert_basic_attrition = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.3
+	local_garrison_size = 0.5
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_desert_basic_counterattack = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.3
+	local_garrison_size = 0.5
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_desert_basic_garrison = {
+	local_development_cost = -0.15
+	local_defensiveness = 0.3
+	local_garrison_size = 1
+	local_garrison_damage = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_desert_upgraded_none = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.6
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_desert_upgraded_defensiveness = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.85
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_desert_upgraded_attrition = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.6
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_desert_upgraded_counterattack = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.6
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_desert_upgraded_garrison = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.6
+	local_garrison_size = 1.5
+	local_garrison_damage = 1.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_outer_basic_none = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_outer_basic_defensiveness = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.75
+	local_garrison_size = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_outer_basic_attrition = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_outer_basic_counterattack = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 0.5
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_outer_basic_garrison = {
+	local_development_cost = -0.3
+	local_defensiveness = 0.5
+	local_garrison_size = 1
+	local_garrison_damage = 0.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_outer_upgraded_none = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_outer_upgraded_defensiveness = {
+	local_development_cost = -0.6
+	local_defensiveness = 1.25
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_outer_upgraded_attrition = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_hostile_attrition = 2
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_outer_upgraded_counterattack = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1
+	local_garrison_damage = 1
+	local_defender_dice_roll_bonus = 1
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+gor_vazumbrog_citadel_outer_upgraded_garrison = {
+	local_development_cost = -0.6
+	local_defensiveness = 1
+	local_garrison_size = 1.5
+	local_garrison_damage = 1.5
+	trade_goods_size = 0.002
+	picture = "obsidian_walls"
+}
+
+gor_vazumbrog_enlarged_barracks = {
+	supply_limit_modifier = 0.5
+}
+
 #########
 #MIREMAW#
 #########
@@ -6747,8 +7698,8 @@ miremaw_bird_meals = {
 
 miremaw_orcish_ferocity = {
 	infantry_power = 0.1
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 miremaw_feasted_on_dwarves = {
@@ -6872,8 +7823,8 @@ H76_sponsoring_artisans = {
 
 H76_blinding_brilliance = {
 	morale_damage = 0.1
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 H76_inward_perfection = {
@@ -6944,8 +7895,8 @@ H76_grim_resolve = {
 	land_forcelimit = 60
 	land_maintenance_modifier = -0.5
 	land_morale = 0.2
-	#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 H76_the_last_eastern_hold = {
@@ -7051,10 +8002,10 @@ skewered_drake_reignited_industry = {
 }
 
 skewered_drake_blackened_armor = {
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	land_maintenance_modifier = 0.25
 	is_hussars_modifier = yes
 }
@@ -7262,8 +8213,8 @@ undergrowth_green_gate = {
 
 spiderwretch_lightland_claimer = {
 	land_morale = 0.1
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	manpower_recovery_speed = 0.5
 	global_manpower = 10
 	land_forcelimit = 10
@@ -7364,8 +8315,8 @@ spiderwretch_spidersilk_connections = {
 }
 
 spiderwretch_ogre_spider_collab = {
-	#shock_damage_received = -0.15		#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.15		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.075		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	land_forcelimit_modifier = 0.1
 	manpower_recovery_speed = 0.1
 }
@@ -7435,8 +8386,8 @@ spiderwretch_caravanserais = {
 }
 
 spiderwretch_hardened_silk = {
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 spiderwretch_toxic_webtraps = {
@@ -7587,7 +8538,7 @@ spiderwretch_local_fortifications = {
 }
 
 ################
-##Gr�nstunad##
+##Gronstunad##
 ################
 
 gronstunad_new_ambassadors = {
@@ -8066,11 +9017,11 @@ az_an_veterans_teaching_active = {
 az_an_veterans_teaching_inactive = {
 }
 
-az_an_overshadowing_the_segbandel_1 = { discipline = 0.02 trade_efficiency = 0.02 }
-az_an_overshadowing_the_segbandel_2 = { discipline = 0.04 trade_efficiency = 0.04 }
-az_an_overshadowing_the_segbandel_3 = { discipline = 0.06 trade_efficiency = 0.06 }
-az_an_overshadowing_the_segbandel_4 = { discipline = 0.08 trade_efficiency = 0.08 }
-az_an_overshadowing_the_segbandel_5 = { discipline = 0.10 trade_efficiency = 0.10 }
+az_an_overshadowing_the_segbandal_1 = { discipline = 0.02 trade_efficiency = 0.02 }
+az_an_overshadowing_the_segbandal_2 = { discipline = 0.04 trade_efficiency = 0.04 }
+az_an_overshadowing_the_segbandal_3 = { discipline = 0.06 trade_efficiency = 0.06 }
+az_an_overshadowing_the_segbandal_4 = { discipline = 0.08 trade_efficiency = 0.08 }
+az_an_overshadowing_the_segbandal_5 = { discipline = 0.10 trade_efficiency = 0.10 }
 
 az_an_righteous_crusade = {
 	## extra_manpower_at_religious_war = yes ## If you see this, Balance told me to remove this modifier.  But oh no, seems I left the code in...
@@ -8134,6 +9085,7 @@ az_an_argrastun_cathedral = {
 az_an_the_moons_hand = {
 	mages_loyalty_modifier = 0.1
 	mages_influence_modifier = 0.15
+	mages_estate_experience_mod = 0.25
 }
 az_an_amateur_runework = {
 	local_defensiveness = 0.15
@@ -8151,8 +9103,8 @@ az_an_better_with_a_brew = {
 	trade_goods_size_modifier = 0.15
 }
 az_an_enhanced_logistics = {
-	supply_limit_modifier = 0.5
-	attrition = -1
+	global_supply_limit_modifier = 0.5
+	land_attrition = -0.1
 }
 
 # Deity Shrines

@@ -9,7 +9,8 @@ religion = xhazobkult
 
 is_city = yes
 capital = ""
-trade_goods = slaves
+#trade_goods = unknown	#BomjSBagetom Anbennar Submod
+trade_goods = slaves	#BomjSBagetom Anbennar Submod
 hre = no
 base_tax = 5			#BomjSBagetom Anbennar Submod
 base_production = 5		#BomjSBagetom Anbennar Submod
@@ -17,3 +18,7 @@ base_manpower = 3		#BomjSBagetom Anbennar Submod
 native_size = 0
 native_ferocity = 0
 native_hostileness = 0
+
+1444.11.11 = {
+	change_province_name = "Ilzin Mykx"
+}

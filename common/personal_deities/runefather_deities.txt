@@ -488,8 +488,8 @@ amlruzskappa_2 = {
 }
 amlruzskappa_3 = {
 	production_efficiency = 0.1
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	
 	potential = {
 		religion = runefather_worship
@@ -519,8 +519,8 @@ amlruzskappa_3 = {
 }
 amlruzskappa_4 = {
 	production_efficiency = 0.15
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	
 	potential = {
 		religion = runefather_worship
@@ -550,8 +550,8 @@ amlruzskappa_4 = {
 }
 amlruzskappa_5 = {
 	production_efficiency = 0.15
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	gold_depletion_chance_modifier = -0.25
 	
 	potential = {

@@ -87,8 +87,8 @@ lenient_teachings = {
 }
 
 protective_teachings = {
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	defensiveness = 0.15
 	
     potential = { 
@@ -248,8 +248,8 @@ lenient_teachings_improved = {
 }
 
 protective_teachings_improved = {
-	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.15	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.075	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	defensiveness = 0.25
 	
     potential = { 

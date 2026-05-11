@@ -10,7 +10,8 @@ religion = regent_court
 
 is_city = yes
 capital = ""
-trade_goods = livestock
+#trade_goods = unknown	#BomjSBagetom Anbennar Submod
+trade_goods = livestock	#BomjSBagetom Anbennar Submod
 hre = no
 base_tax = 5			#BomjSBagetom Anbennar Submod
 base_production = 4		#BomjSBagetom Anbennar Submod

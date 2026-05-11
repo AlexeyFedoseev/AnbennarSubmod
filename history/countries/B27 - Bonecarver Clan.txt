@@ -1,5 +1,5 @@
 
-setup_vision = yes
+setup_vision_cannor = yes
 government = tribal
 add_government_reform = greentide_horde
 government_rank = 1
@@ -23,8 +23,14 @@ capital = 730
 	add_ruler_personality = patron_of_arts_personality
 	add_ruler_personality = obsessive_perfectionist_personality
 	
+	set_country_flag = count_wars_won
+	set_ruler_flag = B27_azukor_bonecarver
 }
 
 1444.11.11 = { #BomjSBagetom Anbennar Submod
 	B27 = { change_government_reform_progress = 100 }
+	add_country_modifier = {	#BomjSBagetom Anbennar Submod
+		name = monstrous_nation
+		duration = -1
+	}
 }

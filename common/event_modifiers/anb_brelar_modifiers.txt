@@ -1,7 +1,7 @@
 
 g27_mountain_training = {
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	drill_gain_modifier = 0.25
 }
 
@@ -45,8 +45,8 @@ g27_malacynn_canal = {
 }
 
 g27_great_forge = {
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	local_production_efficiency = 0.25
 }
 
@@ -444,8 +444,8 @@ g27_information_trade = {
 }
 
 g27_new_brelari_endurance = {
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	war_exhaustion = -0.03
 }
 

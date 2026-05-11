@@ -145,73 +145,73 @@ dt_recognised_nationalism = {
 }
 
 dt_gydkanecy_ambition_1 = {
-	#fire_damage_received = -0.01	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.005	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.005	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.01		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.005		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.005	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 dt_gydkanecy_ambition_2 = {
-	#fire_damage_received = -0.02	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.02	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.01	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.02		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.01		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.02	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 dt_gydkanecy_ambition_3 = {
-	#fire_damage_received = -0.03	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.03	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.015	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.015	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.03		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.015		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.03	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.015	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 dt_gydkanecy_ambition_4 = {
-	#fire_damage_received = -0.04	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.04	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.02	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.02	#BomjSBagetom Anbennar Submod
+	##fire_damage_received = -0.04		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.02		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.04	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.02	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 dt_gydkanecy_ambition_5 = {
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 dt_gydkanecy_ambition_6 = {
-	#fire_damage_received = -0.06	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.06	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.03	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.03	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.06		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.03		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.06	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.03	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 dt_gydkanecy_ambition_7 = {
-	#fire_damage_received = -0.07	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.07	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.035	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.035	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.07		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.035		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.07	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.035	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 dt_gydkanecy_ambition_8 = {
-	#fire_damage_received = -0.08	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.08	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.04	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.04	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.08		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.04		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.08	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.04	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 dt_gydkanecy_ambition_9 = {
-	#fire_damage_received = -0.09	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.09	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.045	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.045	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.09		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.045		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.09	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.045	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 dt_gydkanecy_ambition_10 = {
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 dt_avarkavalky_authority_1 = {

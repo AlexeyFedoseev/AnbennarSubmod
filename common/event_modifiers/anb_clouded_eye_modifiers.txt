@@ -36,8 +36,8 @@ anti_marrodic_fortifications = {
 
 orcish_knights = { #Will lose upon getting special monarchy
 	land_morale = 0.1
-	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 food_for_our_troops = {

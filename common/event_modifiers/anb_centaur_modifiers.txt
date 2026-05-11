@@ -177,8 +177,14 @@ centaur_southern_domination = {
 	reduced_liberty_desire_on_same_continent = 20
 }
 
-centaur_expansion = {
+centaur_expansion_early = {
 	colonists = 1
+	global_colonial_growth = 10
+}
+
+centaur_expansion = {
+	colonists = 2
+	global_colonial_growth = 20
 	caravan_power = 0.2
 }
 
@@ -216,8 +222,8 @@ centaur_battle_ogre = {
 }
 
 centaur_battle_gnome = {
-	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 centaur_battle_elf = {
@@ -229,8 +235,8 @@ centaur_battle_kobold = {
 }
 
 centaur_battle_dwarf = {
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 centaur_battle_harimari = {
@@ -243,8 +249,8 @@ centaur_battle_human = {
 }
 
 centaur_battle_hobgoblin = {
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 centaur_zeal_timer = {
@@ -530,14 +536,22 @@ base_nomadic_zone_of_control = {
 	local_autonomy = -0.1
 }
 
-#base_centaur_nomadic_zone_of_control = {
-#	local_manpower_modifier = 0.1
-#}
+base_nomadic_zone_of_control_double = {
+	local_defensiveness = 0.2
+	local_core_creation = -0.3
+	local_autonomy = -0.2
+}
 
 base_noncentaur_nomadic_zone_of_control = {
 	local_tax_modifier = 0.15
 	local_institution_spread = 0.25
 	province_trade_power_modifier = 0.10
+}
+
+base_noncentaur_nomadic_zone_of_control_double = {
+	local_tax_modifier = 0.3
+	local_institution_spread = 0.5
+	province_trade_power_modifier = 0.2
 }
 
 #base_nomadic_zone_of_control_unowned = {

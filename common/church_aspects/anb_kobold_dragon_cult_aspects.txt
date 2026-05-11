@@ -1514,8 +1514,8 @@ red_dragon_3_upgraded= {
     monarch_power = mil
     modifier = {
 		inflation_reduction = 0.1
-		#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-		fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+		#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
     }
     ai_will_do = {
         factor = 15

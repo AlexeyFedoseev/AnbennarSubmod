@@ -1661,7 +1661,10 @@ spriteTypes = {
 	
 	
 	# Age of Discovery Abilities
-
+	spriteType = {
+		name = "GFX_ab_allow_feudal_de_jure_law"
+		texturefile = "gfx/interface/ages/ab_allow_feudal_de_jure_law.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_ab_claim_duration"
@@ -1863,8 +1866,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ab_rival_change"
-		texturefile = "gfx/interface/ages/ab_rival_change.dds"
+		name = "GFX_ab_core_cost"
+		texturefile = "gfx/interface/ages/ab_core_cost.dds"
 	}
 	
 	spriteType = {
@@ -1992,8 +1995,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ab_same_contine_lib_desire"
-		texturefile = "gfx/interface/ages/ab_same_contine_lib_desire.dds"
+		name = "GFX_ab_core_cost_2"
+		texturefile = "gfx/interface/ages/ab_core_cost_2.dds"
 	}
 	
 	spriteType = {

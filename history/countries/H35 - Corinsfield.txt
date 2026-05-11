@@ -1,4 +1,5 @@
 
+setup_vision_north_aelantir = yes		#BomjSBagetom Anbennar Submod
 government = theocracy
 add_government_reform = peasants_theocracy_reform
 government_rank = 1

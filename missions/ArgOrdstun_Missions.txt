@@ -406,7 +406,6 @@ H76_3_first = {
 		trigger = {
 			army_size_percentage = 0.95
 			has_mil_advisor = yes
-			have_cast_scry_dissidents = yes
 		}
 
 		effect = {
@@ -2403,7 +2402,13 @@ H76_3_second = {
 				estate = estate_nobles
 				loyalty = 60
 			}
+			if = {
+				limit = { tag = I24 }
+				I24_ideas = 3
+			}
+			else = {
 			H76_ideas = 3
+			}
 			OR = {
 				mil_tech = 11
 				national_focus = MIL
@@ -3000,7 +3005,7 @@ H76_4_second = {
 			}
 			if = {
 				limit = { has_estate = estate_mages }
-				have_cast_aid_construction = yes
+				diggy_diggy_st_magically_helping_construction = yes
 			}
 			else = {
 				years_of_income = 0.5
@@ -3194,7 +3199,7 @@ H76_5_second = {
 			}
 			if = {
 				limit = { has_estate = estate_mages }
-				have_cast_magnificent_feast = yes
+				has_cast_enchanting_envoy_embassy = yes
 			}
 			else = {
 				years_of_income = 0.5

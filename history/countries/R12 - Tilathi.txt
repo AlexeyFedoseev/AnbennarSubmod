@@ -1,5 +1,5 @@
 
-setup_vision = yes
+setup_vision_haless = yes
 government = monarchy
 add_government_reform = heroic_realm_reform
 government_rank = 1
@@ -30,6 +30,7 @@ capital = 4509
 		mil = 4
 		culture = royal_harimari
 	}
+	#BomjSBagetom Anbennar Submod
 	add_truce_with = R78
 	add_truce_with = R79
 	add_truce_with = R80

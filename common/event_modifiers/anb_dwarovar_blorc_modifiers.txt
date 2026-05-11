@@ -21,8 +21,8 @@ black_orc_trophy_orlazam_az_dihr = {
 	development_cost = -0.05
 }
 black_orc_trophy_mithradhum = {
-	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.0125	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 black_orc_trophy_er_natvir = {
 	movement_speed = 0.05
@@ -67,8 +67,8 @@ black_orc_trophy_gor_ozumbrog = {
 	caravan_power = 0.15
 }
 black_orc_trophy_ovdal_kanzad = {
-	#fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.0125	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.0125		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 black_orc_trophy_grozumdihr = {
 	reform_progress_growth = 0.1
@@ -374,8 +374,8 @@ blorc_hold_magma_forge = {
 	picture = "hold_magma_forge_plundered"
 	global_trade_goods_size_modifier = 0.05
 	fire_damage = 0.1
-	#fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 }
 
 blorc_hold_city = {

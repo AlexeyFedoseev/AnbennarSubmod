@@ -1,5 +1,5 @@
 
-setup_vision = yes
+setup_vision_cannor = yes
 government = theocracy
 add_government_reform = leading_clergy_reform
 government_rank = 1
@@ -22,7 +22,8 @@ fixed_capital = 97
 		female = yes
 		culture = roilsardi
 	}
-	dd_historical_friend = A16		#BomjSBagetom Anbennar Submod
+	add_ruler_personality = silver_tongue_personality
+	add_historical_friend = A16		#BomjSBagetom Anbennar Submod
 }
 
 set_country_flag = owns_cannorian_holy_site

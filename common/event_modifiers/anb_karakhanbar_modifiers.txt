@@ -161,8 +161,8 @@ karakhanbar_prototype_smelters = {
 
 karakhanbar_indomitable_orcish_spirit = {
 	land_morale = 0.1
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	manpower_recovery_speed = 0.1
 }
 
@@ -238,8 +238,8 @@ karakhanbar_the_blackened_prince_himself = {
 	global_manpower = 100
 	global_unrest = -100
 	religious_unity = 1
-	#fire_damage_received = -0.1	#BomjSBagetom Anbennar Submod
-	fire_damage_received = -0.05	#BomjSBagetom Anbennar Submod
+	#fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
     land_maintenance_modifier = -0.8
 }
 

@@ -965,8 +965,8 @@ dolurazan_mil_aspect = {
 		}
 	}
 	modifier = {
-		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod
-		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod
+		#shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.025	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
 	}
 	monarch_power = mil
 	ai_will_do = {
