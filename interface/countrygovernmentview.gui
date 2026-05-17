@@ -131,6 +131,11 @@ guiTypes = {
 		}
 		
 		#Gronstunad Gov Mechanic
+		windowType = {
+			name = "gronstunad_authority_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
+
         iconType = {
             name = "gronstunad_authority_bg"
             position = { x= 29 y = 229 }
@@ -138,7 +143,6 @@ guiTypes = {
             scripted = yes
         }
 
-        #Gronstunad Crown Gems
         iconType = {
             name = "gronstunad_authority_gem_peridot"
             position = { x= 144 y = 244 } # +115/+15
@@ -187,6 +191,7 @@ guiTypes = {
             quadTextureSprite = "GFX_gronstunad_authority_gem_amber" 
             scripted = yes
         }
+		}
 
 		#Konolkhatep Gov Mechanic
 		
@@ -250,6 +255,12 @@ guiTypes = {
 
 		#Corinsfield Gov Mechanic
 		
+		windowType = {
+			name = "corinsfield_paranoia_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
+			Orientation = "UPPER_LEFT"
+
         iconType = {
             name = "corinsfield_paranoia_bg"
             position = { x= 8 y = 218 }
@@ -277,6 +288,7 @@ guiTypes = {
             quadTextureSprite = "GFX_corinsfield_paranoia_chicken_3" 
             scripted = yes
         }
+		}
 		
 		#Wyvernheart Gov Mechanic
         iconType = {
@@ -310,7 +322,7 @@ guiTypes = {
             scripted = yes
         }
 
-		#Lelanàn Gov Mechanic
+		#Lelanan Gov Mechanic
 		
         iconType = {
             name = "lelanan_bg"
@@ -2014,6 +2026,11 @@ guiTypes = {
 		}
 
 		# ALLCLAN
+		windowType = {
+			name = "gob_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
+			Orientation = "UPPER_LEFT"
 
 		iconType = {
 			name = "gob_background_ui"
@@ -2039,9 +2056,16 @@ guiTypes = {
 			position = { x = 823 y = 179 }
 			quadTextureSprite = "GFX_allclan_button_3"
 			scripted = yes
+			}
 		}
 
 		#HARPYLEN
+
+		windowType = {
+			name = "harpy_queendom_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
+			Orientation = "UPPER_LEFT"
 
 		iconType = {
 			name = "harpy_queendom_ui"
@@ -2058,6 +2082,7 @@ guiTypes = {
 			scripted = yes
 			clicksound = back_click
 		}
+
 		guiButtonType = {
 			name = "harpylen_button_2"
 			position = { x = 150 y = 232 }
@@ -2065,15 +2090,22 @@ guiTypes = {
 			scripted = yes
 			clicksound = back_click
 		}
+			
 		guiButtonType = {
 			name = "harpylen_button_3"
 			position = { x = 250 y = 232 }
 			quadTextureSprite = "GFX_harpylen_queendom_claim_button_3"
 			scripted = yes
 			clicksound = back_click
+			}
 		}
 
 		#Effelai Gov Buttons
+		windowType = {
+			name = "effelai_government_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
+			Orientation = "UPPER_LEFT"
 
 		guiButtonType = {
 			name = "effelai_button_1"
@@ -2095,9 +2127,16 @@ guiTypes = {
 			quadTextureSprite = "GFX_effelai_government_fist_button"
 			scripted = yes
 			clicksound = back_click
+			}
 		}
 		
 		#Konolkhatep Buttons
+		
+		windowType = {
+			name = "konolkhatep_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
+			Orientation = "UPPER_LEFT"
 		
 		guiButtonType = {
 			name = "konolkhatep_governors"
@@ -2137,9 +2176,16 @@ guiTypes = {
 			quadTextureSprite = "GFX_konolkhatep_medasi" 
 			scripted = yes
 			clicksound = back_click
+			}
 		}
 		
 		#Taychendi Vainglory Buttons
+		
+		windowType = {
+			name = "taychendi_vainglory_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
+			Orientation = "UPPER_LEFT"
 		
 		guiButtonType = {
 			name = "taychendi_vainglory_spoils_of_war"
@@ -2180,8 +2226,15 @@ guiTypes = {
 			scripted = yes
 			clicksound = back_click
 		}
+		}
 		
-		#Lelanàn Love Buttons
+		#Lelanan�n Love Buttons
+		
+		windowType = {
+			name = "lelanan_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
+			Orientation = "UPPER_LEFT"
 		
 		guiButtonType = {
 			name = "lelanan_tales"
@@ -2221,6 +2274,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_lelanan_enahelibe" 
 			scripted = yes
 			clicksound = back_click
+			}
 		}
 		
 		#Yezel Mora Misery buttons
@@ -2321,30 +2375,6 @@ guiTypes = {
 				clicksound = back_click
 			}
 		}
-		
-		#guiButtonType = {
-		#	name = "corinsfield_paranoia_be_good_to_your_neighbour"
-		#	position = { x= 55 y = 290 }
-		#	quadTextureSprite = "GFX_corinsfield_paranoia_be_good_to_your_neighbour" 
-		#	scripted = yes
-		#	clicksound = back_click
-		#}
-		
-		#guiButtonType = {
-		#	name = "corinsfield_paranoia_trust_no_one"
-		#	position = { x= 147 y = 290 }
-		#	quadTextureSprite = "GFX_corinsfield_paranoia_trust_no_one" 
-		#	scripted = yes
-		#	clicksound = back_click
-		#}
-		
-		#guiButtonType = {
-		#	name = "corinsfield_paranoia_witch_hunt"
-		#	position = { x= 239 y = 290 }
-		#	quadTextureSprite = "GFX_corinsfield_paranoia_witch_hunt" 
-		#	scripted = yes
-		#	clicksound = back_click
-		#}
 
 		windowType = { # Ashhana Blood Curse Control "backgrounds" (which need to be in front)
 			name = "ashhana_blood_curse_bg_window"

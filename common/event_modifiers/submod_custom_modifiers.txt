@@ -149,7 +149,7 @@ daxugo_disaster_reward_2 = {
 }
 
 daxugo_disaster_reward_3 = {
-	development_cost = -0.1
+	development_cost = -0.05
 	global_trade_goods_size_modifier = 0.1
 }
 

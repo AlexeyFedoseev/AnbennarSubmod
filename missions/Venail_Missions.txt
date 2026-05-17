@@ -345,6 +345,7 @@ venail_3 = {
 					colonial_region = colonial_endralliande
 					colonial_region = colonial_isles
 					colonial_region = colonial_dalaire
+					colonial_region = colonial_noruin		#BomjSBagetom Anbennar Submod
 					province_id = 927
 				}
 				development = 15
