@@ -3369,7 +3369,8 @@ merc_honored_fire_children = {
 ####Conjuration Mercs
 merc_feral_animals = {
 	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
-	regiments_per_development = 0.1
+	#regiments_per_development = 0.1	#BomjSBagetom Anbennar Submod
+	regiments_per_development = 0.05	#BomjSBagetom Anbennar Submod
 	cost_modifier = 0.01
 	cavalry_weight = 0.2
 	artillery_weight = 0
@@ -3391,7 +3392,8 @@ merc_feral_animals = {
 }
 merc_elemental_animals = {
 	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
-	regiments_per_development = 0.1
+	#regiments_per_development = 0.1	#BomjSBagetom Anbennar Submod
+	regiments_per_development = 0.05	#BomjSBagetom Anbennar Submod
 	cost_modifier = 0.01
 	cavalry_weight = 0.2
 	artillery_weight = 0

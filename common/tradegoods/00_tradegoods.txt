@@ -3346,8 +3346,9 @@ mithril = {
 	}
 	province = {
 		#shock_damage_received = -0.01		#BomjSBagetom Anbennar Submod
-		shock_damage = 0.01					#BomjSBagetom Anbennar Submod
+		#shock_damage = 0.01				#BomjSBagetom Anbennar Submod
 		fire_damage = 0.01					#BomjSBagetom Anbennar Submod
+		artillery_fire = 0.05				#BomjSBagetom Anbennar Submod
 	}
 	chance = {
 		factor = 1

@@ -27,6 +27,10 @@ submod_forsight_effect = {
 	picture = "mages_loyalty_modifier"
 }
 
+submod_forsight_effect_buffed = {
+	picture = "mages_loyalty_modifier"
+}
+
 the_draft_used = {
 
 }
@@ -169,6 +173,15 @@ submod_restoring_the_rail_mana_modif = {
 	country_military_power = 1
 }
 
+submod_splintering_early_buff = {
+	cavalry_cost = -0.3
+	cavalry_power = 0.1
+	cavalry_shock = 0.25
+	cav_to_inf_ratio = 0.5
+	cavalry_flanking = 0.5
+	movement_speed = 0.3
+	global_manpower = 15
+}
 
 interest_bankruptcy_penalty_1 = {
 	interest = 0.5
@@ -804,13 +817,27 @@ age1_navy_group_modif = {
 	is_marine_modifier = yes
 }
 
+ab_age1_Beepeck_bonus_modif = {
+	development_cost = -0.2
+	trade_efficiency = 0.2
+}
+
 age1_Adshaw_bonus_modif = {
 	land_morale = 0.1
+}
+
+age2_Kobildzan_bonus_modif = {
+	fire_damage = 0.15
 }
 
 age2_Arbaran_bonus_modif = {
 	morale_damage_received = -0.15
 	prestige_decay = -0.02
+}
+
+ab_age2_Themarenn_bonus_modif = {
+	is_marine_modifier = yes
+	land_morale = 0.15
 }
 
 age2_Blademarches_bonus_modif = {

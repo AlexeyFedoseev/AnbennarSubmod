@@ -484,8 +484,9 @@ age_of_discovery = {
 				colony_development_boost = 1
 			}
 			effect = {
-				custom_tooltip = todo_tt
-				# TODO  - open 2 mercs
+				custom_tooltip = ab_mention_primary_effect
+				custom_tooltip = ab_age1_Venail_bonus_tt
+				set_country_flag = ab_age1_Venail_bonus_flag
 			}
 			ai_will_do = {
 				factor = 1000
@@ -510,8 +511,9 @@ age_of_discovery = {
 				tag = A17
 			}
 			effect = {
-				custom_tooltip = todo_tt
-				# TODO - create merc
+				custom_tooltip = ab_mention_bonus_effect
+				custom_tooltip = ab_age1_GreatOrding_bonus_tt
+				set_country_flag = ab_age1_GreatOrding_bonus_flag
 			}
 			ai_will_do = {
 				factor = 1000
@@ -550,11 +552,17 @@ age_of_discovery = {
 		ab_age1_Wesdam_bonus_button = {
 			allow = {
 				tag = A04
-				#todo - finished last quest, wex emperor, wex is not a player
+				OR = {
+					mission_completed = A04_bring_down_the_goliath
+					mission_completed = A04_damesear_occupation
+				}
+				A30 = {
+					is_emperor = yes
+					ai = yes
+				}
 			}
 			effect = {
-				custom_tooltip = todo_tt
-				#todo - steal emperorship
+				set_emperor = yes
 				add_prestige = 100
 				add_power_projection = {
 					type = 25_permanent_power_projection
@@ -569,15 +577,26 @@ age_of_discovery = {
 		ab_age1_Beepeck_bonus_button = {
 			allow = {
 				tag = A12
-				#todo - 200 relationship, 100 thrust with emperor
+				is_at_war = no
+				emperor = {
+					trust = {
+						who = A12
+						value = 100
+					}
+					has_opinion = {
+						who = A12
+						value = 200
+					}
+				}
 			}
 			effect = {
-				custom_tooltip = todo_tt
-				#todo - outher countries cant declare war on you
-				# add modifier with 
-				# development_cost = -0.2
-				# trade_efficiency = 0.2
-				# also lost this modifier, when DoW someone
+				custom_tooltip = ab_mention_primary_effect
+				custom_tooltip = ab_age1_Beepeck_bonus_tt
+				set_country_flag = ab_age1_Beepeck_bonus_flag
+				add_country_modifier = {
+					name = ab_age1_Beepeck_bonus_modif
+					duration = -1
+				}
 			}
 			ai_will_do = {
 				factor = 1000
@@ -1081,7 +1100,10 @@ age_of_discovery = {
 
 		ab_age1_Rajnadhaga_bonus_button = {
 			allow = {
-				tag = R07
+				OR = {
+					tag = R07
+					tag = R11
+				}
 				NOT = {
 					exists = R62
 				}
@@ -1089,18 +1111,6 @@ age_of_discovery = {
 			effect = {
 				set_country_flag = ab_age1_Rajnadhaga_bonus_flag
 				custom_tooltip = ab_age1_Rajnadhaga_bonus_tt
-			}
-			ai_will_do = {
-				factor = 1000
-			}
-		}
-
-		ab_age1_Khadisrapur_bonus_button = {
-			allow = {
-				tag = R11
-			}
-			modifier = {
-				global_trade_goods_size_modifier = 0.33
 			}
 			ai_will_do = {
 				factor = 1000
@@ -1986,11 +1996,23 @@ age_of_reformation = {
 		ab_age2_Kobildzan_bonus_button = {
 			allow = {
 				tag = Z38
-				# trigger - aget 9 lvl of HOARD
+				custom_trigger_tooltip = {
+					tooltip = ab_age2_Kobildzan_bonus_tt
+					OR = {
+						189 = { has_province_modifier = kobold_hoard_9 }
+						189 = { has_province_modifier = kobold_hoard_10 }
+						189 = { has_province_modifier = kobold_hoard_11 }
+						189 = { has_province_modifier = kobold_hoard_12 }
+					}
+				}
+				
 			}
 			effect = {
-				custom_tooltip = todo_tt
-				# TODO  - +15 land fire damage until end of the game
+				custom_tooltip = ab_mention_bonus_effect
+				add_country_modifier = {
+					name = age2_Kobildzan_bonus_modif
+					duration = -1
+				}
 			}
 			ai_will_do = {
 				factor = 1000
@@ -2109,8 +2131,12 @@ age_of_reformation = {
 				tag = A95
 			}
 			effect = {
-				custom_tooltip = todo_tt
-				# TODO - +15 morale to marines - untill the end of the AGE
+				custom_tooltip = ab_mention_primary_effect
+				set_country_flag = ab_age2_Themarenn_bonus_flag
+				add_country_modifier = {
+					name = ab_age2_Themarenn_bonus_modif
+					duration = -1
+				}
 			}
 			ai_will_do = {
 				factor = 1000

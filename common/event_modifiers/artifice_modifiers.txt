@@ -110,22 +110,20 @@ artifice_bioartificed_ascension = {
 	is_rajput_modifier = yes
 
 	#fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
-	fire_damage_received = -0.025		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	DONT TOUCH
 	morale_damage_received = -0.15
 }
 
 artifice_personal_mageshields = {
 	is_rajput_modifier = yes
 
-	#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
-	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	DONT TOUCH
 }
 
 artifice_portable_turrets = {
 	is_rajput_modifier = yes
 
-	#shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
-	shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	shock_damage_received = -0.1	#BomjSBagetom Anbennar Submod	DONT TOUCH
 }
 
 artifice_arcane_blaster = {

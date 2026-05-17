@@ -1,0 +1,19 @@
+
+type = cavalry
+unit_type = tech_triunic
+
+maneuver = 2
+offensive_morale = 2
+defensive_morale = 0
+offensive_fire = 0
+defensive_fire = 0
+offensive_shock = 2
+defensive_shock = 2
+
+trigger = {
+	OR = {
+		tag = J50
+		tag = J52
+		tag = J53
+	}
+}
