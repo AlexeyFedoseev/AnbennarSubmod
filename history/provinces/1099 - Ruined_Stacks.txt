@@ -1,0 +1,22 @@
+
+# No previous file for Socotra
+owner = J98					#BomjSBagetom Anbennar Submod
+controller = J98			#BomjSBagetom Anbennar Submod
+add_core = J98				#BomjSBagetom Anbennar Submod
+culture = nathalairey		#BomjSBagetom Anbennar Submod
+religion = regent_court		#BomjSBagetom Anbennar Submod
+
+#capital = ""				#BomjSBagetom Anbennar Submod
+capital = "Port Palegold"	#BomjSBagetom Anbennar Submod
+#trade_goods = unknown		#BomjSBagetom Anbennar Submod
+trade_goods = coffee		#BomjSBagetom Anbennar Submod
+hre = no
+#base_tax = 3 				#BomjSBagetom Anbennar Submod
+#base_production = 2		#BomjSBagetom Anbennar Submod
+#base_manpower = 1			#BomjSBagetom Anbennar Submod
+base_tax = 5 				#BomjSBagetom Anbennar Submod
+base_production = 4			#BomjSBagetom Anbennar Submod
+base_manpower = 3			#BomjSBagetom Anbennar Submod
+native_size = 0
+native_ferocity = 0
+native_hostileness = 0

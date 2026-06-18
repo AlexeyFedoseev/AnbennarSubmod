@@ -7604,7 +7604,7 @@ blademarches_might_of_the_empire = {
 	infantry_fire = -0.15
 	infantry_shock = 0.2
 	movement_speed = 0.1
-	artillery_power = -0.1
+	#artillery_power = -0.1 BomjSBagetom Anbennar Submod
 	administrative_efficiency = 0.05
 }
 

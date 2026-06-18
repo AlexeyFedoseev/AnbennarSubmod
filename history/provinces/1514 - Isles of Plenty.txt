@@ -1,0 +1,3 @@
+
+# No previous file for Northern Coast of Patagonia
+discovered_by = J95	#BomjSBagetom Anbennar Submod

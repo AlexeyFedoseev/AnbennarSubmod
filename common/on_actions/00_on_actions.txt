@@ -1092,14 +1092,6 @@ on_religion_change = {
 		}
 		country_event = { id = tsukqiao.200 }
 	}
-	#BomjSBagetom Anbennar Submod
-	every_owned_province = {
-		remove_province_modifier = chi_wellspring_1
-		remove_province_modifier = chi_wellspring_2
-		remove_province_modifier = chi_wellspring_3
-		remove_province_modifier = chi_wellspring_4
-		remove_province_modifier = chi_wellspring_5
-	}
 }
 
 # country.
@@ -9784,6 +9776,26 @@ on_monthly_pulse = {
 		}
 	}
 
+	if = { 	#BomjSBagetom Anbennar Submod
+		limit = { 
+			has_country_flag = ab_age1_Beepeck_bonus_flag  
+		}
+		if = {
+			limit = {
+				NOT = {	current_age = age_of_discovery	}
+			}
+			remove_country_modifier = ab_age1_Beepeck_bonus_modif
+		}
+	}
+
+	if = {		#BomjSBagetom Anbennar Submod
+		limit = {
+			has_country_modifier = ab_age1_Beepeck_bonus_modif
+			is_at_war = yes
+		}
+		remove_country_modifier = ab_age1_Beepeck_bonus_modif
+	}
+
 	#BomjSBagetom Anbennar Submod
 	if = {
 		limit = {
@@ -9798,6 +9810,18 @@ on_monthly_pulse = {
 		}
 		else = {
 			remove_country_modifier = age1_Adshaw_bonus_modif
+		}
+	}
+
+	if = { 	#BomjSBagetom Anbennar Submod
+		limit = { 
+			has_country_flag = ab_age2_Themarenn_bonus_flag  
+		}
+		if = {
+			limit = {
+				NOT = {	current_age = age_of_reformation }
+			}
+			remove_country_modifier = ab_age2_Themarenn_bonus_modif
 		}
 	}
 
@@ -31929,6 +31953,13 @@ on_war_ended = { #ROOT - Winer FROM - Loser
 		}
 		remove_country_modifier = U09_conquest_of_the_sorrow
 	}
+
+	if = {		#BomjSBagetom Anbennar Submod
+		limit = {
+			has_country_modifier = ab_age1_Beepeck_bonus_modif
+		}
+		remove_country_modifier = ab_age1_Beepeck_bonus_modif
+	}
 }
 
 on_alliance_broken = { #ROOT - Original alliance creator, FROM - Alliance accepter
@@ -32110,8 +32141,19 @@ on_heir_disinherited = {
 }		
 on_overrun = { #ROOT - winner, FROM - loser, on stackwipe
 	if = { #Black Herd
-		limit = { has_estate_privilege = estate_mages_black_herd_shockshroud_mages }
+		#limit = { has_estate_privilege = estate_mages_black_herd_shockshroud_mages }	#BomjSBagetom Anbennar Submod
+		limit = {	#BomjSBagetom Anbennar Submod
+			has_estate_privilege = estate_mages_black_herd_shockshroud_mages
+			OR = {
+				NOT = { has_country_flag = submod_shockshroud_mages_cd }
+				had_country_flag = {
+					flag = submod_shockshroud_mages_cd
+					days = 365
+				}
+			}
+		}
 		change_mana = { amount = 1.5 }
+		set_country_flag = submod_shockshroud_mages_cd
 	}
 	if = { #Gasha
 		limit = { has_country_modifier = L76_khagaarsa }

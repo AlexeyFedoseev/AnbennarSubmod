@@ -550,7 +550,7 @@ harpy_military = {
 	
 	#Negatives
 	artillery_power = -0.1				#-1 A / they don't like fighting with heavy cumbersome weapons that reduce mobility
-	#morale_damage_received = 0.1		#BomjSBagetom Anbennar Submod		#-2 B / harder to reform as its very easy to run
+	morale_damage_received = 0.1			#-2 B / harder to reform as its very easy to run
 	defensiveness = -0.10					#-1 B / not really defensive, they have always opted to flee and fly rather than hold ground
 	fort_maintenance_modifier = 0.1			#they don't build stuff well
 	naval_morale = -0.05				#-1 A / they arent really naval
@@ -1137,10 +1137,8 @@ mechanim_military = {
 	#Gameplay: TBD
 
 	#Positives
-	#fire_damage_received = -0.2		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
-	fire_damage_received = -0.1		#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
-	#shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
-	shock_damage_received = -0.01	#BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+	fire_damage_received = -0.2		#BomjSBagetom Anbennar Submod	DONT TOUCH
+	shock_damage_received = -0.2	#BomjSBagetom Anbennar Submod	DONT TOUCH
 	land_attrition = -0.33
 	regiment_manpower_usage = -0.1
 	defensiveness = 0.2
@@ -1175,17 +1173,21 @@ undead_military = {
 
 	land_forcelimit = 10				#BomjSBagetom Anbennar Submod
 	artillery_cost = -0.25 				#BomjSBagetom Anbennar Submod
+	land_morale = 0.1					#BomjSBagetom Anbennar Submod
 	
 	#Modifiers to enable overstacking a province
 	reinforce_speed = 1
 	#reserves_organisation = 4			#BomjSBagetom Anbennar Submod
+	reserves_organisation = 0.33		#BomjSBagetom Anbennar Submod
 	land_attrition = -0.60
 	war_exhaustion = -0.03
 	
 	#Combat penalties for individual units
 	movement_speed = -0.15
  	drill_gain_modifier = -0.5
- 	discipline = -0.2
+ 	#discipline = -0.2					#BomjSBagetom Anbennar Submod
+	shock_damage = -0.3					#BomjSBagetom Anbennar Submod
+	fire_damage = -0.3					#BomjSBagetom Anbennar Submod
 	
 	#Flavor
 	mercenary_manpower = -0.5

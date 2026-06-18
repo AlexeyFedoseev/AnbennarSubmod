@@ -472,6 +472,17 @@ declarewar = {
 		}
 	}
 	
+	condition = {	#BomjSBagetom Anbennar Submod
+		tooltip = ab_age1_Beepeck_bonus_cant_dow_tt
+		potential = { 
+			FROM = {
+				has_country_modifier = ab_age1_Beepeck_bonus_modif
+			} 
+		}
+		allow = {
+			always = no
+		}
+	}
 
 	condition = {
 		tooltip = COMMAND_ACTIVE_SUBORDINATION_CRISIS

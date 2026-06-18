@@ -251,7 +251,10 @@ country_decisions = {
 			is_at_war = no
 			capital_scope = { superregion = forbidden_lands_superregion }
 			#NOT = { is_year = 1600 }	#BomjSBagetom Anbennar Submod
-			has_reform = centaur_horde		#BomjSBagetom Anbennar Submod
+			OR = {	#BomjSBagetom Anbennar Submod
+				has_reform = centaur_horde
+				has_reform = I55_magocratic_caehnate
+			}
 		}
 		effect = {
 			form_crimson_caehnate = yes

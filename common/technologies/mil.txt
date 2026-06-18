@@ -240,6 +240,8 @@ technology = {
 	enable = dunesole_ogre_1_ogre_clubmen
 	enable = holohana_1_holohana
 	enable = holohana_1_artillery
+
+	enable = triunic_1_orachav_chavans	#BomjSBagetom Anbennar Submod
 }
 
 technology = {

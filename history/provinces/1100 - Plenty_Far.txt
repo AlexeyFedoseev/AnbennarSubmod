@@ -1,0 +1,23 @@
+
+# No previous file for Mahe
+
+owner = J95					#BomjSBagetom Anbennar Submod
+controller = J95			#BomjSBagetom Anbennar Submod
+add_core = J95				#BomjSBagetom Anbennar Submod
+culture = high_lorentish	#BomjSBagetom Anbennar Submod
+religion = elven_forebears	#BomjSBagetom Anbennar Submod
+
+#capital = ""				#BomjSBagetom Anbennar Submod
+capital = "Rhasáil"			#BomjSBagetom Anbennar Submod
+#trade_goods = unknown		#BomjSBagetom Anbennar Submod
+trade_goods = tobacco		#BomjSBagetom Anbennar Submod
+hre = no
+#base_tax = 2				#BomjSBagetom Anbennar Submod
+#base_production = 2		#BomjSBagetom Anbennar Submod
+#base_manpower = 1			#BomjSBagetom Anbennar Submod
+base_tax = 4				#BomjSBagetom Anbennar Submod
+base_production = 4			#BomjSBagetom Anbennar Submod
+base_manpower = 3			#BomjSBagetom Anbennar Submod
+native_size = 0
+native_ferocity = 0
+native_hostileness = 0

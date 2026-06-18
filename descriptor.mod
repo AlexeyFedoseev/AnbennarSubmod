@@ -1,14 +1,12 @@
-version="0.1"
+version="v1.37.5.0"
 tags={
 	"Balance"
-	"Gameplay"
-	"National Ideas"
 	"Religion"
+	"National Ideas"
+	"Gameplay"
 }
 dependencies={
 	"Anbennar: A Fantasy Total Conversion"
 }
-name="BomjSBagetom Anbennar Submod"
-picture="thumbnail.png"
+name="bsbsubmodnato"
 supported_version="v1.37.5.0"
-remote_file_id="2997979750"

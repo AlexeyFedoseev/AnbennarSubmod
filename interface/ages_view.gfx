@@ -916,10 +916,6 @@ spriteTypes = {
         name = "GFX_ab_age1_Rajnadhaga_bonus_button"
         texturefile = "gfx/interface/ages/ab_age1_Rajnadhaga_bonus_icon.dds"
     }
-	spriteType = {
-        name = "GFX_ab_age1_Khadisrapur_bonus_button"
-        texturefile = "gfx/interface/ages/ab_age1_Khadisrapur_bonus_icon.dds"
-    }
     spriteType = {
         name = "GFX_ab_age1_LotDekkhang_bonus_button"
         texturefile = "gfx/interface/ages/ab_age1_LotDekkhang_bonus_icon.dds"
@@ -1169,6 +1165,10 @@ spriteTypes = {
         name = "GFX_ab_age2_Skurkokli_bonus_button"
         texturefile = "gfx/interface/ages/placeholder2.dds"
     }
+	spriteType = {
+        name = "GFX_ab_age2_Ikogshaantus_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
     spriteType = {
         name = "GFX_ab_age2_Kalsyto_bonus_button"
         texturefile = "gfx/interface/ages/placeholder2.dds"
@@ -1255,6 +1255,10 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_ab_age2_Shazstundihr_bonus_button"
+        texturefile = "gfx/interface/ages/placeholder2.dds"
+    }
+	spriteType = {
+        name = "GFX_ab_age2_SkeweredDrake_bonus_button"
         texturefile = "gfx/interface/ages/placeholder2.dds"
     }
     spriteType = {

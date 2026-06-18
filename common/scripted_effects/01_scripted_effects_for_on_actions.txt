@@ -15731,19 +15731,19 @@ on_province_owner_change_effect = {
 	}
 
 	#Command
-	if = { #Command feeding land to Azjakuma
-		limit = {
-			owner = {
-				tag = Y01
-				is_subject_of_type_with_overlord = {
-					who = R62
-					type = slave_state
-				}
-			}
-			NOT = { region = demon_hills_region }
-		}
-		R62 = { country_event = { id = the_command.102 days = 1 } }
-	}
+	#if = { #Command feeding land to Azjakuma		#BomjSBagetom Anbennar Submod
+	#	limit = {
+	#		owner = {
+	#			tag = Y01
+	#			is_subject_of_type_with_overlord = {
+	#				who = R62
+	#				type = slave_state
+	#			}
+	#		}
+	#		NOT = { region = demon_hills_region }
+	#	}
+	#	R62 = { country_event = { id = the_command.102 days = 1 } }
+	#}
 	if = {
 		limit = { owner = { tag = R62 } }
 		if = { #Command Post-Edict-of-X Laws of Ninun

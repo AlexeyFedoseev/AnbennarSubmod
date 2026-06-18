@@ -6,7 +6,8 @@ government_rank = 1
 primary_culture = drakeclaw_orc
 religion = old_dookan
 technology_group = tech_black_orcish
-capital = 4229
+#capital = 4229	#BomjSBagetom Anbennar Submod
+capital = 4222	#BomjSBagetom Anbennar Submod
 historical_rival = H73 #skewered drake
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 

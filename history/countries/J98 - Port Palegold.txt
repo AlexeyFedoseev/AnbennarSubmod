@@ -1,0 +1,51 @@
+setup_vision_north_aelantir = yes	#BomjSBagetom Anbennar Submod
+government = republic
+add_government_reform = pirate_republic_reform
+government_rank = 1
+primary_culture = nathalairey
+religion = regent_court
+technology_group = tech_cannorian
+capital = 1099
+
+1000.1.1 = { 
+	set_country_flag = RSP_ban_colonial_formables
+	set_country_flag = has_pirate_sprites
+	set_estate_privilege = estate_mages_organization_guilds
+}
+
+1444.1.1 = {		#BomjSBagetom Anbennar Submod
+	monarch = {
+		name = "Adeline"
+		dynasty = "of Thiefgallows"
+		birth_date = 1420.1.1
+		claim = 100
+		adm = 2
+		dip = 6
+		mil = 3
+		culture = nathalairey
+		religion = regent_court
+		female = yes
+	}
+	define_admiral = {
+		name = "Maurise síl Ebenaire"
+		shock = 4
+		fire = 3
+		manuever = 5
+		siege = 2
+	}
+	add_ruler_personality = legendary_pirate_personality			
+	add_ruler_personality = craven_personality
+	add_ruler_personality = secretive_personality		
+	hidden_effect = { country_event = { id = anb_price.53 days = 3650 random = 36500 } }
+	create_conquistador = {
+		tradition = 50
+	}
+	create_explorer = {
+		tradition = 50
+	}
+	add_country_modifier = { 
+		name = 1444_adventurer_sea_boost
+		duration = 7300 #20 years
+	}
+	add_treasury = 50
+}
