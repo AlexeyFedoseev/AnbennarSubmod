@@ -520,12 +520,21 @@ marrhold_two = {
 		
 		provinces_to_highlight = {
 			province_id = 895
-			NOT = { has_building = university }
+			NOT = { 
+				OR {
+					has_building = university
+					development = 30 #BomjSBagetom Anbennar Submod
+				} 
+			}
 		}
 		
 		trigger = {
 			895 = {
-				has_building = university
+				OR {
+					has_building = university
+					development = 30 #BomjSBagetom Anbennar Submod
+				}
+				
 			}
 			OR = {
 				army_organiser = 3
@@ -539,6 +548,7 @@ marrhold_two = {
 		}
 		
 		effect = {
+			unlock_artificery = yes #BomjSBagetom Anbennar Submod
 			add_country_modifier = {
 				name = marrhold_feather_academy
 				duration = 9125 #25 years
