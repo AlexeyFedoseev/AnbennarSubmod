@@ -23,6 +23,13 @@ cyranvar_1 = {
 				type = all
 				owned_by = ROOT
 			}
+			# OG numbers for all quests of that type: #BomjSBagetom Anbennar Submod
+			#   limit = { ai = no } 
+			#	years_of_income = 1
+			#	NOT = { num_of_loans = 1 }
+			#	adm_power = 100
+			#	dip_power = 100
+		    #   mil_power = 100
 			if = { #BomjSBagetom Anbennar Submod
 				limit = { ai = no }  
 				years_of_income = 0.75

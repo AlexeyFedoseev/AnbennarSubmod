@@ -272,7 +272,7 @@ marrhold = {
 		}
 		
 		trigger = {
-			#is_institution_enabled = manufactories BomjSBagetom Anbennar Submod
+			#is_institution_enabled = manufactories #BomjSBagetom Anbennar Submod
 			has_estate = estate_artificers
 			estate_loyalty = {
 				estate = estate_artificers
