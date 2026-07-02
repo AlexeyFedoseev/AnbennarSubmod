@@ -91,7 +91,8 @@ cyranvar_only_the_best = {
 	discipline = 0.05
 	infantry_power = 0.15
 	land_maintenance_modifier = 0.25
-	global_manpower_modifier = -0.25
+	#global_manpower_modifier = -0.25 #BomjSBagetom Anbennar Submod
+	global_manpower_modifier = -0.1   #BomjSBagetom Anbennar Submod
 	manpower_recovery_speed = -0.2
 }
 
