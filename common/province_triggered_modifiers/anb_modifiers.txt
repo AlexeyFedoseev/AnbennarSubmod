@@ -2115,8 +2115,7 @@ raheni_school_origin_starry_eye = {
 		religion_group = raheni #BomjSBagetom Anbennar Submod
 	}
 	#BomjSBagetom Anbennar Submod
-	#advisor_cost = -0.1
-	advisor_cost = -0.2
+	advisor_cost = -0.1
 }
 
 raheni_school_origin_golden_palace = {

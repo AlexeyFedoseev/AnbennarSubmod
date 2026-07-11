@@ -21905,18 +21905,18 @@ on_center_of_trade_upgrade = {
 		add_base_production = 1 
 	}
 
-	#Pashaine
-	if = {
-		limit = { 
-			owner = {
-				OR = { 
-					has_country_modifier = pashaine_closed_markets 
-					has_country_modifier = pashaine_businori_trade_expertise 
-				}
-			}
-		}
-		add_base_production = 1
-	}
+	#Pashaine #BomjSBagetom Anbennar Submod
+	#if = {
+	#	limit = { 
+	#		owner = {
+	#			OR = { 
+	#				has_country_modifier = pashaine_closed_markets 
+	#				has_country_modifier = pashaine_businori_trade_expertise 
+	#			}
+	#		}
+	#	}
+	#	add_base_production = 1
+	#}
 
 	#Accretive Path
 	owner = { accretive_path_gain_chi = { aspect = river_flows_in_you category = dip amount = 25 } }
