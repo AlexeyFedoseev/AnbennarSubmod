@@ -1631,9 +1631,8 @@ pashaine_1_post_prelude = {
 		} 
 
 		effect = {  
-			# country_event = { id = flavour_pashaine.23 } #Not Better Than Them #BomjSBagetom Anbennar Submod
+			country_event = { id = flavour_pashaine.23 } #Not Better Than Them
 			clr_country_flag = pashaine_uncovering_rot #No longer need clues
-			add_prestige = 1 #BomjSBagetom Anbennar Submod
 		} 
 	}
 

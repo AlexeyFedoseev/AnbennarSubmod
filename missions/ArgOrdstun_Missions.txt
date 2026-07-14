@@ -3244,13 +3244,18 @@ H76_5_second = {
 
 		trigger = {
 			diplomatic_reputation = 4
-			calc_true_if = {
-				amount = 4
-				all_known_country = {
-					is_part_of_hre = yes
-					has_opinion = {
-						who = PREV
-						value = 100
+			if = {
+				limit = {
+					hre_size = 5
+				}
+				calc_true_if = {
+					amount = 4
+					all_known_country = {
+						is_part_of_hre = yes
+						has_opinion = {
+							who = PREV
+							value = 100
+						}
 					}
 				}
 			}

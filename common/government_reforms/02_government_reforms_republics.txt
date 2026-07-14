@@ -3513,7 +3513,7 @@ concord_administration_reform = {
 	modifiers = {
 		diplomats = 1
 		national_focus_years = -10
-		governing_capacity_modifier = -0.25
+		#governing_capacity_modifier = -0.25	#BomjSBagetom Anbennar Submod
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -5707,7 +5707,7 @@ trollsbayer_pluralism_reform = {
 	}
 	custom_attributes = {
 		has_parliament = yes
-		cannot_ally_non_republics = yes
+		#cannot_ally_non_republics = yes	#BomjSBagetom Anbennar Submod
 		anb_special_elections = yes
 		cannot_become_dictatorship = yes
 		disabled_expelling_halfling = yes

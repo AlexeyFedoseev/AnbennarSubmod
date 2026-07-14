@@ -4122,6 +4122,7 @@ eordand_5 = {
 			broken_isles_region = {
 				limit = { province_has_center_of_trade_of_level = 1 }
 				add_center_of_trade_level = 1
+				custom_tooltip = submod_eord_5_repair_broken_sea_tt	#BomjSBagetom Anbennar Submod
 				add_province_modifier = { name = eord_broken_sea duration = -1 }
 			}
 		}

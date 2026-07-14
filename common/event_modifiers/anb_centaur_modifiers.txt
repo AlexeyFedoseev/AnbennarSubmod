@@ -89,7 +89,7 @@ subjugated_horde = {
 }
 
 centaur_pride_of_the_new_horde = {
-	land_maintenance_modifier = -0.5
+	#land_maintenance_modifier = -0.5	#BomjSBagetom Anbennar Submod
 }
 
 #recently_integrated_horde = {

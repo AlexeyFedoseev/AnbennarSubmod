@@ -123,6 +123,11 @@
  submod_DADV_mithril_forge_tt: "Gain §YWeapons Manufactory§! in §YEvery owned Province with Mithril§!."
  submod_no_khatalashya_form_after_mission: "§R!!! ATTENTION !!!§!\nAfter completing this mission we cannot form §YKhatalashya§!."
 
+ war_of_the_black_trees_submod_tt:0 "The conflict is inevitable and you WILL face consequences of your actions" 
+
+ submod_eord_5_repair_broken_sea_tt: "\nEvery province with Center of Trade in §YBroken Isles§! Region will get teh following modifier:"
+
+ H33_concord_in_trollsbay_submod_tt: "\nAlso you will gain claims on every province non-allyed settler nation in §YTrollsbay§! region."
  #-----------------------ADVISORS----------------------
  adm_advisor_price_increase_lvl_6:0 "Additional price for the 6th level Adm. Advisor"
  adm_advisor_price_increase_lvl_7:0 "Additional price for the 7th level Adm. Advisor"

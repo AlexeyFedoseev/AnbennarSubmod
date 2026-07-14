@@ -114,7 +114,8 @@ war_of_the_black_trees = {
 		modifier = { #BomjSBagetom Anbennar Submod
 			factor = 5
 			custom_trigger_tooltip = {
-				tooltip = BomjSBagetom_Anbennar_Submod.tt
+				tooltip = war_of_the_black_trees_submod_tt
+				always = yes
 			}
 		}
 	}
