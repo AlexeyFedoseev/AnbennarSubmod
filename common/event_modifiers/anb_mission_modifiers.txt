@@ -9037,6 +9037,7 @@ marrhold_sky_lords_dlc = {
 }
 
 marrhold_griffon_empire_alt = {
+	amount_of_hussars = 40 #BomjSBagetom Anbennar Submod
 	leader_land_manuever = 1
 	movement_speed = 0.1
 }

@@ -5010,7 +5010,8 @@ country_event = { #Lichdom 2 - Phylactery 1 - Constructing the Container
 		
 		if = {
 			limit = { has_ruler_modifier = pursuing_lichdom }
-			add_treasury = -100
+			#add_treasury = -100        #BomjSBagetom Anbennar Submod
+			add_years_of_income = -0.33 #BomjSBagetom Anbennar Submod
 			country_event = { id = magic_project_lichdom.3 days = 1095 random = 365 } #3-4 years
 			set_ruler_flag = lichdom_stage_2
 		}
@@ -5022,7 +5023,8 @@ country_event = { #Lichdom 2 - Phylactery 1 - Constructing the Container
 		
 		if = {
 			limit = { has_ruler_modifier = pursuing_lichdom }
-			add_treasury = -200
+			#add_treasury = -200          #BomjSBagetom Anbennar Submod
+			add_years_of_income = -0.66   #BomjSBagetom Anbennar Submod
 			country_event = { id = magic_project_lichdom.3 days = 730 random = 365 } #2-3 years
 			set_ruler_flag = lichdom_stage_2
 		}
@@ -5174,7 +5176,8 @@ country_event = { #Lichdom 5 - Potion 1 - Collecting Reagents 1
 		
 		if = {
 			limit = { has_ruler_modifier = pursuing_lichdom }
-			add_treasury = -100
+			#add_treasury = -100        #BomjSBagetom Anbennar Submod
+			add_years_of_income = -0.33	#BomjSBagetom Anbennar Submod
 			country_event = { id = magic_project_lichdom.6 days = 1095 random = 365 } #3-4 years
 			set_ruler_flag = lichdom_stage_5
 		}
@@ -5186,7 +5189,8 @@ country_event = { #Lichdom 5 - Potion 1 - Collecting Reagents 1
 		
 		if = {
 			limit = { has_ruler_modifier = pursuing_lichdom }
-			add_treasury = -200
+			#add_treasury = -200        #BomjSBagetom Anbennar Submod
+			add_years_of_income = -0.66	#BomjSBagetom Anbennar Submod
 			country_event = { id = magic_project_lichdom.6 days = 730 random = 365 } #2-3 years
 			set_ruler_flag = lichdom_stage_5
 		}
@@ -5198,7 +5202,8 @@ country_event = { #Lichdom 5 - Potion 1 - Collecting Reagents 1
 		
 		if = {
 			limit = { has_ruler_modifier = pursuing_lichdom }
-			add_treasury = -300
+			#add_treasury = -300        #BomjSBagetom Anbennar Submod
+			add_years_of_income = -1	#BomjSBagetom Anbennar Submod
 			country_event = { id = magic_project_lichdom.6 days = 365 random = 365 } #1-2 years
 			set_ruler_flag = lichdom_stage_5
 		}
@@ -5231,7 +5236,8 @@ country_event = { #Lichdom 6 - Potion 2 - Collecting Reagents 2
 		
 		if = {
 			limit = { has_ruler_modifier = pursuing_lichdom }
-			add_treasury = -100
+			#add_treasury = -100        #BomjSBagetom Anbennar Submod
+			add_years_of_income = -0.33	#BomjSBagetom Anbennar Submod
 			country_event = { id = magic_project_lichdom.7 days = 1095 random = 365 } #3-4 years
 			set_ruler_flag = lichdom_stage_6
 		}
@@ -5243,7 +5249,8 @@ country_event = { #Lichdom 6 - Potion 2 - Collecting Reagents 2
 		
 		if = {
 			limit = { has_ruler_modifier = pursuing_lichdom }
-			add_treasury = -200
+			#add_treasury = -200        #BomjSBagetom Anbennar Submod
+			add_years_of_income = -0.66	#BomjSBagetom Anbennar Submod
 			country_event = { id = magic_project_lichdom.7 days = 730 random = 365 } #2-3 years
 			set_ruler_flag = lichdom_stage_6
 		}
@@ -5255,7 +5262,8 @@ country_event = { #Lichdom 6 - Potion 2 - Collecting Reagents 2
 		
 		if = {
 			limit = { has_ruler_modifier = pursuing_lichdom }
-			add_treasury = -300
+			#add_treasury = -300        #BomjSBagetom Anbennar Submod
+			add_years_of_income = -1	#BomjSBagetom Anbennar Submod
 			country_event = { id = magic_project_lichdom.7 days = 365 random = 365 } #1-2 years
 			set_ruler_flag = lichdom_stage_6
 		}
@@ -5318,7 +5326,8 @@ country_event = { #Lichdom 7 - Potion 3 - Getting the vessel
 		
 		if = {
 			limit = { has_ruler_modifier = pursuing_lichdom }
-			add_treasury = -100
+			#add_treasury = -100        #BomjSBagetom Anbennar Submod
+			add_years_of_income = -0.33 #BomjSBagetom Anbennar Submod
 			increase_ruler_witch_king_points = { size = medium }
 			country_event = { id = magic_project_lichdom.8 days = 1095 random = 365 } #3-4 years
 			set_ruler_flag = lichdom_stage_7

@@ -6142,6 +6142,7 @@ griffon_empire_reform = {
 	nation_designer_cost = 40
 	fixed_rank = 3
 	modifiers = {
+		amount_of_hussars = 40 #BomjSBagetom Anbennar Submod
 		leader_land_manuever = 2
 		nobles_influence_modifier = 0.1
 		nobles_loyalty_modifier = 0.2
@@ -10291,7 +10292,8 @@ orders_of_surael_reform = {
 		has_dlc = "Golden Century"
 	}
 	modifiers = {
-		establish_order_cost = -0.5
+		establish_order_cost = -0.5  #BomjSBagetom Anbennar Submod
+		establish_order_cost = -0.25 #BomjSBagetom Anbennar Submod
 		tolerance_own = 1
 		church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.05
