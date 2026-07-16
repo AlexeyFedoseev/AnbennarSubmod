@@ -305,13 +305,13 @@ declarewar = {
 		}
 		allow = {
 			is_at_war = no
-			OR = {
-				AND = {
-					has_country_modifier = federation_war_mandat
-					FROM = { has_country_modifier = lake_federation_member }
-				}
-				FROM = { NOT = { has_country_modifier = lake_federation_member } }
-			}
+			#OR = {	#BomjSBagetom Anbennar Submod
+			#	AND = {
+			#		has_country_modifier = federation_war_mandat
+			#		FROM = { has_country_modifier = lake_federation_member }
+			#	}
+			#	FROM = { NOT = { has_country_modifier = lake_federation_member } }
+			#}
 		}
 	}
 	

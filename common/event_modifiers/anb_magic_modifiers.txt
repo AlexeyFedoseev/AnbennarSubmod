@@ -905,7 +905,8 @@ conjuration_2_greater_summon_elementals_mod = {
 conjuration_2_aid_construction_mod = {
 	build_cost = -0.2
 	build_time = -0.1
-	picture = "conjuration_mod_icon_spell_modifier"
+	#picture = "conjuration_mod_icon_spell_modifier"	#BomjSBagetom Anbennar Submod
+	picture = "illusion_mod_icon_spell_modifier"		#BomjSBagetom Anbennar Submod
 }
 conjuration_2_aid_construction_mod_buffed = {
 	build_cost = -0.2
@@ -1083,7 +1084,8 @@ illusion_2_shadows_in_the_night_cooldown_mod = {
 }
 illusion_2_shadows_in_the_night_sabotage_mod = {
 	defensiveness = -0.25
-	picture = "illusion_mod_icon_spell_modifier"
+	#picture = "illusion_mod_icon_spell_modifier"	#BomjSBagetom Anbennar Submod
+	picture = "conjuration_mod_icon_spell_modifier"	#BomjSBagetom Anbennar Submod
 }
 illusion_3_lead_the_crowds_mod = {
 	core_creation = -0.1

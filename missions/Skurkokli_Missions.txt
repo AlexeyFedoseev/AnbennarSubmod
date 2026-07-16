@@ -2833,6 +2833,9 @@ skurkokli_horde_marches_three = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
+			NOT = {	#BomjSBagetom Anbennar Submod
+				has_country_modifier = submod_skurkokli_burn_land_cooldown
+			}
 		}
 		
 		effect = {
@@ -2913,6 +2916,10 @@ skurkokli_horde_marches_three = {
 				set_country_flag = horde_settles
 				swap_non_generic_missions = yes	
 			}
+			add_country_modifier = {	#BomjSBagetom Anbennar Submod
+				name = submod_skurkokli_burn_land_cooldown
+				duration = 60
+			}	
 		}
 	}	
 
@@ -3903,6 +3910,9 @@ skurkokli_horde_marches_four = {
 				region = alenic_reach_region
 				value = 30
 			}
+			NOT = {	#BomjSBagetom Anbennar Submod
+				has_country_modifier = submod_skurkokli_burn_land_cooldown
+			}
 		}	
 		
 		effect = {
@@ -3943,6 +3953,10 @@ skurkokli_horde_marches_four = {
 			}
 			country_event = { id = ogre.24 days = 3 }
 			custom_tooltip = ogre_consume_reach
+			add_country_modifier = {	#BomjSBagetom Anbennar Submod
+				name = submod_skurkokli_burn_land_cooldown
+				duration = 60
+			}	
 		}
 	}
 
@@ -4747,6 +4761,9 @@ skurkokli_fed_war_b_five = {
 				type = all
 				owned_by = ROOT
 			}
+			NOT = {	#BomjSBagetom Anbennar Submod
+				has_country_modifier = submod_skurkokli_burn_land_cooldown
+			}
 		}	
 		
 		effect = {
@@ -4772,6 +4789,11 @@ skurkokli_fed_war_b_five = {
 
 			country_event = { id = ogre.27 days = 3 }
 			custom_tooltip = ogre_consume_northmen
+
+			add_country_modifier = {	#BomjSBagetom Anbennar Submod
+				name = submod_skurkokli_burn_land_cooldown
+				duration = 60
+			}			
 		}
 	}
 }

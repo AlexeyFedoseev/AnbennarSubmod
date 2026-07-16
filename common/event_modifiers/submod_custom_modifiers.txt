@@ -896,3 +896,7 @@ age4_navy_group_modif = {
 	land_morale = 0.2
 	is_marine_modifier = yes
 }
+
+submod_skurkokli_burn_land_cooldown = {
+	picture = "hehe-hiha"
+}
