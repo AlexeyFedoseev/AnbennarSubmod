@@ -8686,10 +8686,9 @@ dauloph_mercenary_system_reform = {
         mercenary_cost = -0.3
         #merc_maintenance_modifier = -0.3 #BomjSBagetom Anbennar Submod
 		merc_maintenance_modifier = -0.1 #BomjSBagetom Anbennar Submod
-        mercenary_discipline = 0.05
+        #mercenary_discipline = 0.05 #BomjSBagetom Anbennar Submod
         #mercenary_manpower = 0.3 #BomjSBagetom Anbennar Submod
-		mercenary_manpower = 0.15 #BomjSBagetom Anbennar Submod
-        global_manpower_modifier = -0.25
+        #global_manpower_modifier = -0.25 #BomjSBagetom Anbennar Submod
         #yearly_army_professionalism = -0.05
         reinforce_speed = 0.10
     }
@@ -15575,6 +15574,7 @@ council_of_the_coast = {
 		burghers_loyalty_modifier = 0.1
 		burghers_influence_modifier = 0.1
 		max_possible_parliament_seats = 1
+		discipline = 0.05
 	}
 }
 

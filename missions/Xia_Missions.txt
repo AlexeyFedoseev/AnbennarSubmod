@@ -606,13 +606,13 @@ xia_consolidation_2 = {
 				name = xia_training_recruits
 				duration = 3650
 			}
-			define_general = {	#BomjSBagetom Anbennar Submod
-				fire = 0
-				shock = 0
-				manuever = 0
-				siege = 3
-				name = "Ne-Gle-Boss - V'Achivkah Path"
-			}
+			#define_general = {	#BomjSBagetom Anbennar Submod
+			#	fire = 0
+			#	shock = 0
+			#	manuever = 0
+			#	siege = 3
+			#	name = "Ne-Gle-Boss - V'Achivkah Path"
+			#}
 		}
 	}
 	

@@ -761,6 +761,10 @@ jaddari_westward_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = { #BomjSBagetom Anbennar Submod
+				name = jaddari_cannorian_unity
+				duration = -1
+			}
 		}
 	}
 	
@@ -2407,6 +2411,10 @@ jaddari_the_jadd_2 = {
 			if = {
 				limit = { has_reform = jadd_empire NOT = { has_country_flag = jaddari_static_court } }
 				country_event = { id = jadd_empire.1 }
+			}
+			add_country_modifier = { #BomjSBagetom Anbennar Submod
+				name = jaddari_the_shining_capital
+				duration = -1 
 			}
 		}
 	}
@@ -4736,7 +4744,8 @@ jaddari_eastward_3 = {
 		effect = {
 			add_country_modifier = {
 				name = jaddari_the_bedouin_legion
-				duration = 9125 #25 years
+				#duration = 9125 #25 years #BomjSBagetom Anbennar Submod
+				duration = -1 #BomjSBagetom Anbennar Submod
 			}
 		}
 	}
@@ -4745,8 +4754,32 @@ jaddari_eastward_3 = {
 		icon = mission_desert_rider
 		required_missions = { jaddari_summon_the_bedouin_legion }
 		position = 10
-		
-		trigger = {
+		trigger = { 
+			if = { #BomjSBagetom Anbennar Submod
+				limit = { has_dlc = "Golden Century" }
+				if = {
+					limit = { has_country_flag = the_jadd_holy_order_reformed }
+					num_of_owned_provinces_with = {
+						value = 50
+						superregion = bulwar_superregion
+						holy_order = militant_jadd_order_upgraded
+					}
+				}
+				else = {
+					num_of_owned_provinces_with = {
+						value = 50
+						superregion = bulwar_superregion
+						holy_order = militant_jadd_order
+					}
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					value = 100
+					superregion = bulwar_superregion
+					religion = the_jadd
+				}
+			}
 			num_of_cavalry = 40
 			army_tradition = 60
 			if = {
@@ -4759,9 +4792,11 @@ jaddari_eastward_3 = {
 		}
 
 		effect = {
+			remove_country_modifier = jaddari_the_bedouin_legion #BomjSBagetom Anbennar Submod 
 			add_country_modifier = {
 				name = jaddari_the_desert_phoenix
-				duration = 9125 #25 years
+				#duration = 9125 #25 years #BomjSBagetom Anbennar Submod 
+				duration = -1 #BomjSBagetom Anbennar Submod
 			}
 		}
 	}
@@ -5288,6 +5323,10 @@ jaddari_eastward_6 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { #BomjSBagetom Anbennar Submod
+				name = jaddari_light_in_the_jungle
+				duration = -1
 			}
 		}
 	}

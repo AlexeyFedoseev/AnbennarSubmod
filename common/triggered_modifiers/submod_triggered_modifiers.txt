@@ -83,10 +83,17 @@ ab_age4_religion_triggered_mod1 = {
 		has_country_flag = age_ability_age4_religion_flag
 	}
 	trigger = {
-		is_in_war = {
-			defenders = ROOT
+		AND = {
+			is_in_war = {
+				defenders = ROOT
+			}
+			any_war_enemy_country = {
+				any_owned_province = {
+					controlled_by = root
+				}	
+			}
+			NOT = {	has_country_modifier = ab_age4_religion_triggered_mod2 }
 		}
-		NOT = {	has_country_modifier = ab_age4_religion_triggered_mod2 }
 	}
 	discipline = 0.05
 }
@@ -97,10 +104,18 @@ ab_age4_religion_triggered_mod2 = {
 		has_country_flag = age_ability_age4_religion_flag
 	}
 	trigger = {
-		is_in_war = {
-			attackers = ROOT
+		AND = {
+			is_in_war = {
+				attackers = ROOT
+			}
+			any_war_enemy_country = {
+				any_owned_province = {
+					controlled_by = root
+				}	
+			}
+			NOT = {	has_country_modifier = ab_age4_religion_triggered_mod1 }
 		}
-		NOT = {	has_country_modifier = ab_age4_religion_triggered_mod1 }
+		
 	}
 	land_morale = 0.10
 }

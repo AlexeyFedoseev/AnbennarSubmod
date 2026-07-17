@@ -499,43 +499,83 @@ country_event = {
 		ai_chance = { factor = 50 }
 		if = {
 			limit = { has_country_flag = casna_army has_country_flag = casna_mage has_country_flag = casna_administrative }
-			capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_1 duration = -1 } }
+			#capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_1 duration = -1 } } #BomjSBagetom Anbennar Submod
+			add_country_modifier = { 
+				name = ibevar_casna_aesa_1
+				duration = -1
+			} #BomjSBagetom Anbennar Submod
 		}
 		else_if = {
 			limit = { has_country_flag = casna_army has_country_flag = casna_mage has_country_flag = casna_royal }
-			capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_2 duration = -1 } }
+			#capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_2 duration = -1 } } #BomjSBagetom Anbennar Submod
+			add_country_modifier = { 
+				name = ibevar_casna_aesa_2
+				duration = -1
+			} #BomjSBagetom Anbennar Submod
 		}
 		else_if = {
 			limit = { has_country_flag = casna_army has_country_flag = casna_mage has_country_flag = casna_trade }
-			capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_3 duration = -1 } }
+			#capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_3 duration = -1 } } #BomjSBagetom Anbennar Submod
+			add_country_modifier = { 
+				name = ibevar_casna_aesa_3
+				duration = -1
+			} #BomjSBagetom Anbennar Submod
 		}
 		else_if = {
 			limit = { has_country_flag = casna_army has_country_flag = casna_royal has_country_flag = casna_trade }
-			capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_4 duration = -1 } }
+			#capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_4 duration = -1 } } #BomjSBagetom Anbennar Submod
+			add_country_modifier = { 
+				name = ibevar_casna_aesa_4
+				duration = -1
+			} #BomjSBagetom Anbennar Submod
 		}
 		else_if = {
 			limit = { has_country_flag = casna_army has_country_flag = casna_administrative has_country_flag = casna_trade }
-			capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_5 duration = -1 } }
+			#capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_5 duration = -1 } } #BomjSBagetom Anbennar Submod
+			add_country_modifier = { 
+				name = ibevar_casna_aesa_5
+				duration = -1
+			} #BomjSBagetom Anbennar Submod
 		}
 		else_if = {
 			limit = { has_country_flag = casna_army has_country_flag = casna_administrative has_country_flag = casna_royal }
-			capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_6 duration = -1 } }
+			#capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_6 duration = -1 } } #BomjSBagetom Anbennar Submod
+			add_country_modifier = { 
+				name = ibevar_casna_aesa_6
+				duration = -1
+			} #BomjSBagetom Anbennar Submod
 		}
 		else_if = {
 			limit = { has_country_flag = casna_mage has_country_flag = casna_administrative has_country_flag = casna_royal }
-			capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_7 duration = -1 } }
+			#capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_7 duration = -1 } } #BomjSBagetom Anbennar Submod
+			add_country_modifier = { 
+				name = ibevar_casna_aesa_7
+				duration = -1
+			} #BomjSBagetom Anbennar Submod
 		}
 		else_if = {
 			limit = { has_country_flag = casna_mage has_country_flag = casna_administrative has_country_flag = casna_trade }
-			capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_8 duration = -1 } }
+			#capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_8 duration = -1 } } #BomjSBagetom Anbennar Submod
+			add_country_modifier = { 
+				name = ibevar_casna_aesa_8
+				duration = -1
+			} #BomjSBagetom Anbennar Submod
 		}
 		else_if = {
 			limit = { has_country_flag = casna_mage has_country_flag = casna_royal has_country_flag = casna_trade }
-			capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_9 duration = -1 } }
+			#capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_9 duration = -1 } } #BomjSBagetom Anbennar Submod
+			add_country_modifier = { 
+				name = ibevar_casna_aesa_9
+				duration = -1
+			} #BomjSBagetom Anbennar Submod
 		}
 		else_if = {
 			limit = { has_country_flag = casna_administrative has_country_flag = casna_royal has_country_flag = casna_trade }
-			capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_10 duration = -1 } }
+			#capital_scope = { add_permanent_province_modifier = { name = ibevar_casna_aesa_10 duration = -1 } } #BomjSBagetom Anbennar Submod
+			add_country_modifier = { 
+				name = ibevar_casna_aesa_10
+				duration = -1
+			} #BomjSBagetom Anbennar Submod
 		}
 	}
 }

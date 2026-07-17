@@ -35,7 +35,8 @@ anb_adventurer_unity = {
 						value = 100
 					}
 				}
-				mil_power = 50
+				#mil_power = 50 #BomjSBagetom Anbennar Submod
+				mil_power = 25
 				if = {
 					limit = { ai = yes }
 					mil_power = 700
@@ -62,7 +63,8 @@ anb_adventurer_unity = {
 				}
 			}
 			effect = {
-				mil_power_cost = 50
+				#mil_power_cost = 50 #BomjSBagetom Anbennar Submod
+				mil_power_cost = 25
 				add_government_power = {
 					mechanic_type = anb_adventurer_unity
 					power_type = adventurer_unity
