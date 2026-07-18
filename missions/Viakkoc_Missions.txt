@@ -28,7 +28,8 @@ U07_viakkoc_slot_1 = {
 					}
 					trust = {
 						who = ROOT
-						value = 75
+						#value = 75 #BomjSBagetom Anbennar Submod
+						value = 60 #BomjSBagetom Anbennar Submod
 					}
 					NOT = { total_development = ROOT }
 				}
@@ -46,7 +47,8 @@ U07_viakkoc_slot_1 = {
 						}
 						trust = {
 							who = ROOT
-							value = 75
+							#value = 75 #BomjSBagetom Anbennar Submod
+							value = 60 #BomjSBagetom Anbennar Submod
 						}
 						NOT = { total_development = ROOT }
 					}

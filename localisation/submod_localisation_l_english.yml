@@ -129,6 +129,10 @@
 
  H33_concord_in_trollsbay_submod_tt: "\nAlso you will gain claims on every province non-allyed settler nation in §YTrollsbay§! region."
  submod_skurkokli_burn_land_cooldown: "Ogre-Gorging Cooldown"
+
+ jaddari_the_shining_capital:0 "The Shining Capital"
+ jaddari_cannorian_unity:0 "Cannor United"
+ jaddari_light_in_the_jungle:0 "Light in the Jungle"
  #-----------------------ADVISORS----------------------
  adm_advisor_price_increase_lvl_6:0 "Additional price for the 6th level Adm. Advisor"
  adm_advisor_price_increase_lvl_7:0 "Additional price for the 7th level Adm. Advisor"

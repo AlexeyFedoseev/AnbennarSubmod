@@ -31975,6 +31975,7 @@ S15_ideas = {
 	}
 	S15_mausoleum_of_the_venerable = {
 		prestige = 1
+		morale_damage = 0.15 #BomjSBagetom Anbennar Submod
 	}
 	S15_the_anonymous_of_karshyr = {
 		diplomatic_reputation = 1

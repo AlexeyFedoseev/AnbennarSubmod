@@ -900,3 +900,15 @@ age4_navy_group_modif = {
 submod_skurkokli_burn_land_cooldown = {
 	picture = "hehe-hiha"
 }
+
+jaddari_the_shining_capital = {
+	land_morale = 0.1
+}
+
+jaddari_cannorian_unity = {
+	fire_damage = 0.075
+}
+
+jaddari_light_in_the_jungle = {
+	land_morale = 0.075
+}

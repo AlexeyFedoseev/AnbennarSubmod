@@ -2231,7 +2231,8 @@ jaddari_fortified_pass = {
 
 jaddari_cash_influx = {
 	global_regiment_cost = -0.25
-	build_cost = -0.25
+	#build_cost = -0.25 #BomjSBagetom Anbennar Submod
+	build_cost = -0.10 #BomjSBagetom Anbennar Submod
 	missionary_maintenance_cost = -0.5
 }
 
