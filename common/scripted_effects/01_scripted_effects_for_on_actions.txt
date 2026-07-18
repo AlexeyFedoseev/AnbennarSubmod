@@ -9223,6 +9223,17 @@ on_adm_development_effect = {
 		}
 	}
 
+	random_list = {	#BomjSBagetom Anbennar Submod
+		999 = {
+			#none
+		}
+		1 = {
+			owner = {
+				play_sound = hehe_hiha_sound
+			}
+		}
+	}
+
 	if = {
 		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
 		random_list = {
@@ -9409,6 +9420,18 @@ on_dip_development_effect = {
 			value = 1
 		}
 	}
+
+	random_list = {	#BomjSBagetom Anbennar Submod
+		999 = {
+			#none
+		}
+		1 = {
+			owner = {
+				play_sound = goblin_hehe_sound
+			}
+		}
+	}
+
 	if = {
 		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
 		random_list = {
@@ -9603,6 +9626,18 @@ on_mil_development_effect = {
 			value = 1
 		}
 	}
+
+	random_list = {	#BomjSBagetom Anbennar Submod
+		999 = {
+			#none
+		}
+		1 = {
+			owner = {
+				play_sound = hog_rider_sound
+			}
+		}
+	}
+
 	if = {
 		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
 		random_list = {

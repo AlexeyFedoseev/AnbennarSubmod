@@ -206,11 +206,12 @@ country_decisions = {
 			NOT = { has_global_flag = emerald_orcs_enabled }
 			capital_scope = { superregion = deepwoods_superregion }
 			total_development = 100
+			NOT = { tag = I46 } #BomjSBagetom Anbennar Submod
 			## tags with MTs that form it don't exist
 			NOT = { tag = I41 }
 			NOT = { tag = I43 }
 			NOT = { tag = I40 }
-			NOT = { tag = I46 } #BomjSBagetom Anbennar Submod
+			
 		}
 		provinces_to_highlight = {
 			province_group = deepwoods_feytouched_gladeways

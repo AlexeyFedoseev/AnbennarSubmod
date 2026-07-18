@@ -16,12 +16,25 @@
 1590 = 250
 1589 = 190
 
-1413 = 20  #BomjSBagetom Anbennar Submod
-1424 = 350 #BomjSBagetom Anbennar Submod
-1416 = 25  #BomjSBagetom Anbennar Submod
-1692 = 25  #BomjSBagetom Anbennar Submod
+#south
+1374 = 330		#BomjSBagetom Anbennar Submod
+1413 = 30  		#BomjSBagetom Anbennar Submod
+1424 = 355 		#BomjSBagetom Anbennar Submod
+1416 = 10  		#BomjSBagetom Anbennar Submod
+1692 = 25  		#BomjSBagetom Anbennar Submod
+1740 = 30		#BomjSBagetom Anbennar Submod
+1427 = 10		#BomjSBagetom Anbennar Submod
+1425 = 350		#BomjSBagetom Anbennar Submod
 
-1716 = 150 #BomjSBagetom Anbennar Submod
-1430 = 180 #BomjSBagetom Anbennar Submod
-1428 = 180 #BomjSBagetom Anbennar Submod
-1415 = 240 #BomjSBagetom Anbennar Submod
+#middle
+1690 = 350		#BomjSBagetom Anbennar Submod
+
+
+#north
+#1716 = 140 	#BomjSBagetom Anbennar Submod
+1733 = 175		#BomjSBagetom Anbennar Submod
+1430 = 180 		#BomjSBagetom Anbennar Submod
+1428 = 175 		#BomjSBagetom Anbennar Submod
+#1668 = 230	#BomjSBagetom Anbennar Submod
+1415 = 180 		#BomjSBagetom Anbennar Submod
+1376 = 185		#BomjSBagetom Anbennar Submod

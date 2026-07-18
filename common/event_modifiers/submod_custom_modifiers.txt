@@ -912,3 +912,11 @@ jaddari_cannorian_unity = {
 jaddari_light_in_the_jungle = {
 	land_morale = 0.075
 }
+
+disabled_edicts_cd_mod = {
+
+}
+
+enable_edicts_cd_mod = {
+
+}

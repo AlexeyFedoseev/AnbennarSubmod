@@ -208,7 +208,145 @@ country_event = {
 #	}
 #}
 
+country_event = {
+	id = submod_custom_events.3
+	title = submod_custom_events.3.t
+	desc = submod_custom_events.3.desc
+	picture = ADVENTURERS_ESTATE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = submod_custom_events.3.a
+		remove_country_modifier = enable_edicts_cd_mod
+	}
 
+    option = {
+		name = submod_custom_events.3.b
+		custom_tooltip = enable_edicts_in_all_states_devcost_edict_tt
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = age_ability_age4_edicts_flag
+				}
+			}
+			every_owned_province = {
+				if = {
+					limit = { is_state = yes }
+					set_state_edict = edict_encourage_development
+				}
+			}
+		} else = {
+			every_owned_province = {
+				if = {
+					limit = { is_state = yes }
+					set_state_edict = edict_encourage_development_2
+				}
+			}
+		}
+		
+	}
+
+    option = {
+		name = submod_custom_events.3.c
+		custom_tooltip = enable_edicts_in_all_states_manpower_edict_tt
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = age_ability_age4_edicts_flag
+				}
+			}
+			every_owned_province = {
+				if = {
+					limit = { is_state = yes }
+					set_state_edict = edict_promote_military_recruitment
+				}
+			}
+		} else = {
+			every_owned_province = {
+				if = {
+					limit = { is_state = yes }
+					set_state_edict = edict_promote_military_recruitment_2
+				}
+			}
+		}
+	}
+
+    option = {
+		name = submod_custom_events.3.d
+		custom_tooltip = enable_edicts_in_all_states_defensive_edict_tt
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = age_ability_age4_edicts_flag
+				}
+			} 
+			every_owned_province = {
+				if = {
+					limit = { is_state = yes }
+					set_state_edict = edict_defensive_edict
+				}
+			}
+		} else = {
+			every_owned_province = {
+				if = {
+					limit = { is_state = yes }
+					set_state_edict = edict_defensive_edict_2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = submod_custom_events.3.e
+		custom_tooltip = enable_edicts_in_all_states_institution_edict_tt
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = age_ability_age4_edicts_flag
+				}
+			}
+			every_owned_province = {
+				if = {
+					limit = { is_state = yes }
+					set_state_edict = edict_advancement_effort
+				}
+			}
+		} else = {
+			every_owned_province = {
+				if = {
+					limit = { is_state = yes }
+					set_state_edict = edict_advancement_effort_2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = submod_custom_events.3.f
+		custom_tooltip = enable_edicts_in_all_states_missionary_edict_tt
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = age_ability_age4_edicts_flag
+				}
+			}
+			every_owned_province = {
+				if = {
+					limit = { is_state = yes }
+					set_state_edict = edict_religious_unity
+				}
+			}
+		} else = {
+			every_owned_province = {
+				if = {
+					limit = { is_state = yes }
+					set_state_edict = edict_religious_unity_2
+				}
+			}
+		}
+	}
+}
 
 
 #country_event = {

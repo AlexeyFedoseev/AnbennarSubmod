@@ -69,6 +69,71 @@ country_decisions = {
 		}
 	}
 
+	disable_all_edicts_decision = {
+
+		color = { 128 0 128 }
+
+		potential = {
+			ai = no
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		allow = {
+			NOT = {
+				has_country_modifier = disabled_edicts_cd_mod
+			}
+		}
+
+		effect = {
+			custom_tooltip = disable_all_edicts_tt
+			hidden_effect = {
+				every_owned_province = {
+					if = {
+						limit = { is_state = yes }
+						set_state_edict = revoke_state_edict
+					}
+				}
+			}
+			add_country_modifier = {
+				name = disabled_edicts_cd_mod
+				duration = 3650
+			}
+		}
+	}
+
+	enable_edicts_in_all_states_decision = {
+
+		color = { 128 0 128 }
+
+		potential = {
+			ai = no
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		allow = {
+			NOT = {
+				has_country_modifier = enable_edicts_cd_mod
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = submod_custom_events.3
+				days = 1
+			}
+			add_country_modifier = {
+				name = enable_edicts_cd_mod
+				duration = 3650
+			}
+		}
+	}
+
 	old_proffesionalism_decision = {
 
 		major = yes

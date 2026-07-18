@@ -62,6 +62,33 @@
  sale_of_titles_goods_bonus:0 "Sale of titles Goods bonus"
 
 
+ #--------------------EDICTS-DECISIONS-----------------
+ disable_all_edicts_decision_title: "Disable ALL §YState Edicts§!"
+ disable_all_edicts_decision_desc: "Even the most patient rulers grow weary of their own bureaucracy. An order to revoke every decree and ordinance at once is a gesture of exhaustion — or dire necessity — when the center finds it simpler to fall silent than to keep addressing every corner of the realm."
+ 
+ enable_edicts_in_all_states_decision_title: "Enable §YState Edicts§! in ALL states"
+ enable_edicts_in_all_states_decision_desc: "The central authority proclaims a new policy mandatory for all lands of the empire. One decree, one order — from now on, no province shall evade the ruler's will, and the capital's scribes are already preparing copies for every region."
+
+ disabled_edicts_cd_mod: "Disable ALL State Edicts cooldown"
+ enable_edicts_cd_mod: "Enable State Edicts in ALL states cooldown"
+
+ disable_all_edicts_tt: "This decision disable ALL §YState Edicts§! in ALL states.\n"
+
+ submod_custom_events.3.t: "Choose State Edict type"
+ submod_custom_events.3.desc: "The grand throne hall trembles with the rumble of councillors' voices, but the ruler's word is law. After long debates and the whispers of chroniclers, a decision has been made that will echo across all lands. Whether it be the ancient forests of the elves, the rocky wastes of the dwarves, or the sunken swamps of the orcs — henceforth, a single decree shall apply to every corner of the realm. Winds of change already stir the banners, and couriers on dragons and hippogriffs race in all directions to proclaim the new will. The ancient tablets of law are inscribed with another line, and no viceroy dares disobey, for the ruler's word strikes like thunder in a clear sky."
+ submod_custom_events.3.a: "No Changes"
+ submod_custom_events.3.b: "Ecourage Development"
+ submod_custom_events.3.c: "Increased Enlistment"
+ submod_custom_events.3.d: "Defensive Edict"
+ submod_custom_events.3.e: "Advancement Effort"
+ submod_custom_events.3.f: "Enforce Religious Unity"
+
+ enable_edicts_in_all_states_devcost_edict_tt: "This option enables §Ydevelopment edict§! in all states."
+ enable_edicts_in_all_states_manpower_edict_tt: "This option enables §Ymanpower edict§! in all states."
+ enable_edicts_in_all_states_defensive_edict_tt: "This option enables §Ydefensive edict§! in all states."
+ enable_edicts_in_all_states_institution_edict_tt: "This option enables §Yinstitution edict§! in all states."
+ enable_edicts_in_all_states_missionary_edict_tt: "This option enables §Ymissionary edict§! in all states."
+
  #--------------------CONTENT-REWORK-------------------
  ameion_conquerers_reform_post_laskaris:0 "Post-Laskaris Conqueror's Council"
  ameion_conquerers_reform_post_laskaris_desc: "Under the successors of the late Laskaris the Conqueror, Ameion has seen a transformative shift in governance. Taychend remains the center of power, where strategic decisions are made by the ruling elite. Regional councils manage day-to-day affairs, fostering cultural diversity within the empire. While military victories secure stability, dissent brews over the neglect of republican values, challenging the balance between military might and civil governance for continued legitimacy and stability."
