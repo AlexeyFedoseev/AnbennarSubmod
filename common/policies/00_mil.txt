@@ -1908,7 +1908,7 @@ plutocratic_rule_act = { 		#BomjSBagetom Anbennar Submod
 		full_idea_group = plutocracy_ideas 
 	}
 	
-	backrow_artillery_damage = 0.10
+	backrow_artillery_damage = 0.15
 
 	effect = {}
 	removed_effect = {}
@@ -1954,8 +1954,8 @@ the_education_act = {		#BomjSBagetom Anbennar Submod
 		full_idea_group = plutocracy_ideas
 	}
 
-	infantry_shock = 0.1
-	infantry_fire = 0.1
+	infantry_shock = 0.15
+	infantry_fire = 0.15
 
 	effect = {}
 	removed_effect = {}

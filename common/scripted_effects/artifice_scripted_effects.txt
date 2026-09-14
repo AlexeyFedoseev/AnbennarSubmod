@@ -780,7 +780,8 @@ set_up_artifice_system = {
 			OR = {
 				is_artificery_culture_government = yes
 				AND = {
-					has_institution = manufactories
+					#has_institution = manufactories		#BomjSBagetom Anbennar Submod
+					has_institution = printing_press		#BomjSBagetom Anbennar Submod
 					OR = {
 						NOT = { religion = bulwari_sun_cult }
 						is_chosen_country = no
@@ -5583,6 +5584,163 @@ artifice_magic_switch_to_artificery_only_mode = {
 					id = magic_artificery_setup.3
 				}
 			}
+			
+			#BomjSBagetom Anbennar Submod
+			#clear all projects
+			remove_country_modifier = magical_fortress_prestige_mod
+			remove_country_modifier = magical_fortress_splendor_mod
+			remove_country_modifier = magical_fortress_mana_regen_mod
+			remove_country_modifier = magical_fortress_mod_1
+			remove_country_modifier = magical_fortress_mod_2
+			remove_country_modifier = magical_fortress_mod_3
+			remove_country_modifier = artifact_of_enthrallment_crown
+			remove_country_modifier = artifact_of_enthrallment_crown_a
+			remove_country_modifier = artifact_of_enthrallment_crown_a_1
+			remove_country_modifier = artifact_of_enthrallment_crown_a_2
+			remove_country_modifier = artifact_of_enthrallment_crown_b
+			remove_country_modifier = artifact_of_enthrallment_crown_b_1
+			remove_country_modifier = artifact_of_enthrallment_crown_b_2
+			remove_country_modifier = artifact_of_enthrallment_scepter
+			remove_country_modifier = artifact_of_enthrallment_scepter_a
+			remove_country_modifier = artifact_of_enthrallment_scepter_a_1
+			remove_country_modifier = artifact_of_enthrallment_scepter_a_2
+			remove_country_modifier = artifact_of_enthrallment_scepter_b
+			remove_country_modifier = artifact_of_enthrallment_scepter_b_1
+			remove_country_modifier = artifact_of_enthrallment_scepter_b_2
+			remove_country_modifier = artifact_of_enthrallment_ring
+			remove_country_modifier = artifact_of_enthrallment_ring_a
+			remove_country_modifier = artifact_of_enthrallment_ring_a_1
+			remove_country_modifier = artifact_of_enthrallment_ring_a_2
+			remove_country_modifier = artifact_of_enthrallment_ring_b
+			remove_country_modifier = artifact_of_enthrallment_ring_b_1
+			remove_country_modifier = artifact_of_enthrallment_ring_b_2
+			remove_country_modifier = studying_battlemage_academy_mod_1
+			remove_country_modifier = studying_battlemage_academy_mod_2
+			remove_country_modifier = battlemage_academy_underwear_1
+			remove_country_modifier = battlemage_academy_underwear_2
+			remove_country_modifier = battlemage_academy_underwear_3
+			remove_country_modifier = battlemage_academy_graffiti_1
+			remove_country_modifier = battlemage_academy_graffiti_2
+			remove_country_modifier = battlemage_academy_graffiti_3
+			remove_country_modifier = battlemage_academy_outhouse_1
+			remove_country_modifier = battlemage_academy_outhouse_2
+			remove_country_modifier = battlemage_academy_outhouse_3
+			remove_country_modifier = battlemage_academy_combined_un_graf_out
+			remove_country_modifier = battlemage_academy_combined_un_out_graf
+			remove_country_modifier = battlemage_academy_combined_graf_un_out
+			remove_country_modifier = battlemage_academy_combined_graf_out_un
+			remove_country_modifier = battlemage_academy_combined_out_un_graf
+			remove_country_modifier = battlemage_academy_combined_out_graf_un
+			remove_country_modifier = theatre_just_bonus
+			remove_country_modifier = theatre_righteous_bonus
+			remove_country_modifier = theatre_tolerant_bonus
+			remove_country_modifier = theatre_kind_hearted_bonus
+			remove_country_modifier = theatre_free_thinker_bonus
+			remove_country_modifier = theatre_well_connected_bonus
+			remove_country_modifier = theatre_calm_bonus
+			remove_country_modifier = theatre_careful_bonus
+			remove_country_modifier = theatre_secretive_bonus
+			remove_country_modifier = theatre_intricate_web_weaver_bonus
+			remove_country_modifier = theatre_benevolent_bonus
+			remove_country_modifier = theatre_zealot_bonus
+			remove_country_modifier = theatre_pious_bonus
+			remove_country_modifier = theatre_lawgiver_bonus
+			remove_country_modifier = theatre_midas_touched_bonus
+			remove_country_modifier = theatre_incorruptible_bonus
+			remove_country_modifier = theatre_architectural_visionary_bonus
+			remove_country_modifier = theatre_scholar_bonus
+			remove_country_modifier = theatre_entrepreneur_bonus
+			remove_country_modifier = theatre_industrious_bonus
+			remove_country_modifier = theatre_expansionist_bonus
+			remove_country_modifier = theatre_charismatic_negotiator_bonus
+			remove_country_modifier = theatre_silver_tongue_bonus
+			remove_country_modifier = theatre_conqueror_bonus
+			remove_country_modifier = theatre_tactical_genius_bonus
+			remove_country_modifier = theatre_bold_fighter_bonus
+			remove_country_modifier = theatre_strict_bonus
+			remove_country_modifier = theatre_inspiring_leader_bonus
+			remove_country_modifier = theatre_martial_educator_bonus
+			remove_country_modifier = theatre_navigator_bonus
+			remove_country_modifier = theatre_fierce_negotiator_bonus
+			remove_country_modifier = theatre_reformist_bonus
+			remove_country_modifier = theatre_legendary_pirate_bonus
+			remove_country_modifier = theatre_humane_bonus
+			remove_country_modifier = theatre_legendary_conqueror_bonus
+			remove_country_modifier = theatre_great_engineer_bonus
+			remove_country_modifier = theatre_patron_of_arts_bonus
+			remove_country_modifier = theatre_fu_papal_puppetmaster_bonus
+			remove_country_modifier = theatre_iron_crowned_bonus
+			remove_country_modifier = theatre_peasant_revolt_leader_bonus
+			remove_country_modifier = theatre_abjuration_bonus
+			remove_country_modifier = theatre_conjuration_bonus
+			remove_country_modifier = theatre_divination_bonus
+			remove_country_modifier = theatre_enchantment_bonus
+			remove_country_modifier = theatre_evocation_bonus
+			remove_country_modifier = theatre_illusion_bonus
+			remove_country_modifier = theatre_necromancy_bonus
+			remove_country_modifier = theatre_transmutation_bonus
+			if = {
+				limit = { has_country_modifier = undead_military }
+				disband_all_regiments = yes
+				remove_country_modifier = undead_military
+				undead_mil_remove_special_mods = yes
+			}
+			remove_country_modifier = homunculus_study
+			remove_country_modifier = homunculus_training
+			remove_country_modifier = homunculus_operating_theatre
+			remove_country_modifier = homunculus_eminence_grise
+			remove_country_modifier = homunculus_attendant
+			remove_country_modifier = homunculus_constitutional_custodian
+			remove_country_modifier = homunculus_consort_f
+			remove_country_modifier = homunculus_consort_m
+			remove_country_modifier = homunculus_court_unrest
+			remove_country_modifier = artist_homunculus
+			remove_country_modifier = inquisitor_homunculus
+			remove_country_modifier = master_of_mint_homunculus
+			remove_country_modifier = philosopher_homunculus
+			remove_country_modifier = natural_scientist_homunculus
+			remove_country_modifier = theologian_homunculus
+			remove_country_modifier = treasurer_homunculus
+			remove_country_modifier = colonial_governor_homunculus
+			remove_country_modifier = diplomat_homunculus
+			remove_country_modifier = naval_reformer_homunculus
+			remove_country_modifier = navigator_homunculus
+			remove_country_modifier = spymaster_homunculus
+			remove_country_modifier = statesman_homunculus
+			remove_country_modifier = trader_homunculus
+			remove_country_modifier = army_organiser_homunculus
+			remove_country_modifier = army_reformer_homunculus
+			remove_country_modifier = commandant_homunculus
+			remove_country_modifier = grand_captain_homunculus
+			remove_country_modifier = recruitmaster_homunculus
+			remove_country_modifier = fortification_expert_homunculus
+			remove_country_modifier = quartermaster_homunculus
+			clr_country_flag = summon_extraplanars_angels_base
+			clr_country_flag = summon_extraplanars_eldritch_base
+			clr_country_flag = summon_extraplanars_devils_base
+			clr_country_flag = summon_extraplanars_angels_defense
+			clr_country_flag = summon_extraplanars_angels_offense
+			clr_country_flag = summon_extraplanars_eldritch_fast
+			clr_country_flag = summon_extraplanars_eldritch_mass
+			clr_country_flag = summon_extraplanars_devils_frontline
+			clr_country_flag = summon_extraplanars_devils_backline
+			clr_country_flag = summon_extraplanars_angels_defense_2
+			clr_country_flag = summon_extraplanars_angels_offense_2
+			clr_country_flag = summon_extraplanars_eldritch_fast_2
+			clr_country_flag = summon_extraplanars_eldritch_mass_2
+			clr_country_flag = summon_extraplanars_devils_frontline_2
+			clr_country_flag = summon_extraplanars_devils_backline_2
+			set_variable = {	which = magical_fortress_project_level	value = 0	}
+			set_variable = {	which = summon_extraplanars_project_level	value = 0	}
+			set_variable = {	which = orb_of_omniscience_project_level	value = 0	}
+			set_variable = {	which = artifact_of_enthrallment_project_level	value = 0	}
+			set_variable = {	which = battlemage_academy_project_level	value = 0	}
+			set_variable = {	which = theatre_of_simulacra_project_level	value = 0	}
+			set_variable = {	which = army_of_the_dead_project_level	value = 0	}
+			set_variable = {	which = homunculus_project_level	value = 0	}
+			set_variable = {	which = magic_projects_completed	value = 0	}
+
+
 			#unlocks artificery if you havent by now
 			if = {
 				limit = { 

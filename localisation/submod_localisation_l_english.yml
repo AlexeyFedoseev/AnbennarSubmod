@@ -16,6 +16,10 @@
  umoji_colonist_bonus:0 "Umoji Baashidi Colonist bonus"
  rajnadhaga_break_the_chimera:0 "Break the Chimera"
  daxugo_military_reform_zeal:0 "Military Reform Zeal"
+ from_beyond_submod_cd:0 "From Beyond Cooldown"
+ accretive_path_liberation_adm_submod_modif:0 "Ascension of Mind Reward"
+ accretive_path_liberation_dip_submod_modif:0 "Ascension of Soul Reward"
+ accretive_path_liberation_mil_submod_modif:0 "Ascension of Body Reward"
 
  player_age2_debuff:0 "Age of reformation debuff"
  player_age3_debuff:0 "Age of absolutism debuff"

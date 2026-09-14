@@ -166,6 +166,7 @@ country_decisions = {
 		potential = {
 			has_estate = estate_artificers
 			NOT = { has_country_modifier = quantum_consolidation_protocol_5 }
+			always = no
 		}
 		
 		allow = {

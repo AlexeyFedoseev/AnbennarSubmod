@@ -7026,7 +7026,13 @@ halessi = {
 							custom_tooltip = accretive_path_liberation_of_the_mind_effect_tt
 							trigger_switch = {
 								on_trigger = adm
-								5 = { add_adm_power = 75 }
+								#5 = { add_adm_power = 75 }	#BomjSBagetom Anbennar Submod
+								5 = {
+									add_ruler_modifier = {
+										name = accretive_path_liberation_adm_submod_modif
+										duration = 3060
+									}
+								}
 								4 = { change_adm = 1 }
 								3 = { change_adm = 2 }
 								2 = { change_adm = 3 }
@@ -7067,7 +7073,13 @@ halessi = {
 							custom_tooltip = accretive_path_liberation_of_the_soul_effect_tt
 							trigger_switch = {
 								on_trigger = dip
-								5 = { add_dip_power = 75 }
+								#5 = { add_dip_power = 75 }	#BomjSBagetom Anbennar Submod
+								5 = {
+									add_ruler_modifier = {
+										name = accretive_path_liberation_dip_submod_modif
+										duration = 3060
+									}
+								}
 								4 = { change_dip = 1 }
 								3 = { change_dip = 2 }
 								2 = { change_dip = 3 }
@@ -7100,7 +7112,13 @@ halessi = {
 							custom_tooltip = accretive_path_liberation_of_the_body_effect_tt
 							trigger_switch = {
 								on_trigger = mil
-								5 = { add_mil_power = 75 }
+								#5 = { add_mil_power = 75 }	#BomjSBagetom Anbennar Submod
+								5 = {
+									add_ruler_modifier = {
+										name = accretive_path_liberation_mil_submod_modif
+										duration = 3060
+									}
+								}
 								4 = { change_mil = 1 }
 								3 = { change_mil = 2 }
 								2 = { change_mil = 3 }
@@ -7207,7 +7225,8 @@ halessi = {
 		country = {
 			religious_unity = 0.33
 			shock_damage = 0.1
-			church_power_modifier = -1
+			#church_power_modifier = -1			#BomjSBagetom Anbennar Submod
+			church_power_modifier = -0.5		#BomjSBagetom Anbennar Submod
 			reverse_relation_with_heretic_religion = -25
 		}
 		country_as_secondary = {

@@ -920,3 +920,19 @@ disabled_edicts_cd_mod = {
 enable_edicts_cd_mod = {
 
 }
+
+from_beyond_submod_cd = {
+
+}
+
+accretive_path_liberation_adm_submod_modif = {
+	adm_power = 1
+}
+
+accretive_path_liberation_adm_submod_modif = {
+	dip_power = 1
+}
+
+accretive_path_liberation_adm_submod_modif = {
+	mil_power = 1
+}

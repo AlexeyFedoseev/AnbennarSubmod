@@ -177,6 +177,8 @@ plutocracy_ideas = {
 	free_cities = {
 		caravan_power = 0.25
 		development_cost = -0.05
+		infantry_fire = 0.1		#BomjSBagetom Anbennar Submod
+		infantry_shock = 0.1	#BomjSBagetom Anbennar Submod
 		effect = { on_idea_taken_effect = yes }
 		removed_effect = { on_idea_removed_effect = yes }
 	}

@@ -172,13 +172,23 @@ advocation_of_chi_stealers = {
 
 from_beyond = {
 	cost = 200
-	trigger = { custom_trigger_tooltip = { tooltip = devouring_path_need_one_aspect_tt num_of_aspects = 1 } }
+	#trigger = { custom_trigger_tooltip = { tooltip = devouring_path_need_one_aspect_tt num_of_aspects = 1 } }	#BomjSBagetom Anbennar Submod
+	trigger = {
+		custom_trigger_tooltip = { tooltip = devouring_path_need_one_aspect_tt num_of_aspects = 1 }
+		NOT = {
+			has_country_modifier = from_beyond_submod_cd #BomjSBagetom Anbennar Submod
+		}
+	}
 
 	effect = { 
 		set_country_flag = devouring_path_damestear_bypass_flag 
 		country_event = { id = damestear.4 }
 		hidden_effect = {
 			red_citadel_give_50_chi = yes
+			add_country_modifier = {
+				name = from_beyond_submod_cd
+				duration = 7300
+			}
 		}		 
 	}
 
@@ -430,7 +440,8 @@ the_dead_serve_the_living = {
 	effect = {
 		if = { #Gets you a proper tooltip this way
 			limit = { has_country_modifier = slackening_modifier }
-			add_yearly_manpower = 1.5
+			#add_yearly_manpower = 1.5		#BomjSBagetom Anbennar Submod
+			add_yearly_manpower = 1			#BomjSBagetom Anbennar Submod
 		}
 		else = {
 			add_yearly_manpower = 3

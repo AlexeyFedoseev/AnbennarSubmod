@@ -17896,7 +17896,8 @@ anb_on_exploit_effect = {
 	}
 	if = {
 		limit = { owner = { religion = devouring_path } }
-		owner = { add_church_power = 15 }
+		#owner = { add_church_power = 15 }		#BomjSBagetom Anbennar Submod
+		owner = { add_church_power = 10 }		#BomjSBagetom Anbennar Submod
 	}
 	if = {
 		limit = {

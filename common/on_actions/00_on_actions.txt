@@ -28049,10 +28049,11 @@ on_pillaged_capital = {
 			value = 1
 		}
 	}
-	if = {
-		limit = { religion = devouring_path }
-		add_church_power = 50
-	}
+	#BomjSBagetom Anbennar Submod
+	#if = {
+	#	limit = { religion = devouring_path }
+	#	add_church_power = 50
+	#}
 	if = {
 		limit = { mission_completed = yuanszi_burn_heart }
 		4559 = { add_or_extend_province_modifier_effect = { MODIFIER = yuanszi_fires_conviction DURATION = 1825 } }
@@ -28657,7 +28658,8 @@ on_institution_embracement = {
 	}
 	if = { #Artificery start general
 		limit = {
-			has_institution = manufactories
+			#has_institution = manufactories		#BomjSBagetom Anbennar Submod
+			has_institution = printing_press		#BomjSBagetom Anbennar Submod
 			NOT = {
 				has_country_flag = artificery_unlocked
 			}
