@@ -244,12 +244,15 @@ estate_mages_organization_religious_loyal = {
 
 estate_mages_development_of_mage_towers_mod = {
 	local_governing_cost_increase = -10
-	min_local_autonomy = 5
+	#min_local_autonomy = 5		#BomjSBagetom Anbennar Submod
+	min_local_autonomy = 10		#BomjSBagetom Anbennar Submod
 }
 
 estate_mages_development_of_mage_towers_improved_mod = {
 	local_governing_cost_increase = -10
-	statewide_governing_cost = -0.05
+	min_local_autonomy = 10					#BomjSBagetom Anbennar Submod
+	#statewide_governing_cost = -0.05		#BomjSBagetom Anbennar Submod
+	local_governing_cost = -0.05			#BomjSBagetom Anbennar Submod
 }
 
 estate_mages_land_grant_academies_land_scaling = {
@@ -845,21 +848,22 @@ abjuration_1_protected_journey_mod = {
 }
 abjuration_2_mass_ward_cooldown_mod = {}
 abjuration_2_mage_armor_mod = {
-	fire_damage_received = -0.05
-	shock_damage_received = -0.1
+	fire_damage_received = -0.05		#BomjSBagetom Anbennar Submod - submod discuss - https://discord.com/channels/550037316538990592/1136669361776640150/1549489145875923004
+	shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod - submod discuss link above
 	picture = "war_magic"
 }
 abjuration_2_mage_armor_mod_buffed = {
-	fire_damage_received = -0.1
-	shock_damage_received = -0.1
+	fire_damage_received = -0.1			#BomjSBagetom Anbennar Submod - submod discuss link above
+	shock_damage_received = -0.1		#BomjSBagetom Anbennar Submod - submod discuss link above
 	picture = "war_magic"
 }
 abjuration_3_field_of_forbiddance_cooldown_mod = {}
 abjuration_3_field_of_forbiddance_local_mod = {
 	min_local_autonomy = -40
 	local_manpower_modifier = 1
-	local_tax_modifier = 2
-	local_development_cost = -0.1
+	#local_tax_modifier = 2				#BomjSBagetom Anbennar Submod
+	local_tax_modifier = 3				#BomjSBagetom Anbennar Submod
+	#local_development_cost = -0.1		#BomjSBagetom Anbennar Submod
 	picture = "abjuration_mod_icon_spell_modifier"
 }
 
