@@ -1,14 +1,11 @@
-version="0.1"
+version="1.0"
 tags={
+	"Alternative History"
+	"Fixes"
+	"Events"
 	"Balance"
-	"Gameplay"
-	"National Ideas"
-	"Religion"
+	"Expansion"
 }
-dependencies={
-	"Anbennar: A Fantasy Total Conversion"
-}
-name="BomjSBagetom Anbennar Submod"
-picture="thumbnail.png"
+name="BSB FORK"
 supported_version="v1.37.5.0"
-remote_file_id="2997979750"
+remote_file_id="3810663980"
