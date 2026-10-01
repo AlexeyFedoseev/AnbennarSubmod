@@ -65,6 +65,7 @@ country_decisions = {
 	soyzkaru_cartel_nation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = has_formed_cyranvar_flag } #BomjSBagetom Anbennar Submod
 			primary_culture = forest_goblin
 			NOT = { exists = Z86 }
 			NOT = { religion = pactseeker }
@@ -141,6 +142,7 @@ country_decisions = {
 	forest_goblin_pactseeker_nation = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = has_formed_cyranvar_flag } #BomjSBagetom Anbennar Submod
 			primary_culture = forest_goblin
 			NOT = { exists = Z87 }
 			religion = pactseeker
@@ -202,6 +204,7 @@ country_decisions = {
 	deepwoods_orc_nation_choice = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = has_formed_cyranvar_flag } #BomjSBagetom Anbennar Submod
 			primary_culture = green_orc
 			NOT = { has_global_flag = emerald_orcs_enabled }
 			capital_scope = { superregion = deepwoods_superregion }
@@ -249,6 +252,7 @@ country_decisions = {
 	deepwoods_orc_reform_karakhanbar = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = has_formed_cyranvar_flag } #BomjSBagetom Anbennar Submod
 			culture_is_orcish = yes
 			NOT = { exists = Z54 }
 			NOT = { exists = I46 }
@@ -302,6 +306,7 @@ country_decisions = {
 	deepwoods_orc_reform_tugund_darakh = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = has_formed_cyranvar_flag } #BomjSBagetom Anbennar Submod
 			culture_is_orcish = yes
 			NOT = { exists = Z54 }
 			NOT = { exists = I46 }

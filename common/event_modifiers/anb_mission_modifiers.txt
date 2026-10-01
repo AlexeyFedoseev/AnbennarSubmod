@@ -36163,7 +36163,7 @@ khadisrapur_support_heroic_realms = {
 	manpower_recovery_speed = 0.2
 }
 khadisrapur_supporting_independence = {
-	liberty_desire = 50
+	#liberty_desire = 50 #BomjSBagetom Anbennar Submod
 }
 khadisrapur_free_manufactory = {
 	allowed_num_of_manufactories = 1
