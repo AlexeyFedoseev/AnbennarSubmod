@@ -14046,7 +14046,8 @@ elikhand_followers = {
 	diplomatic_reputation = 1
 }
 elikhander_cannor = {
-	infantry_fire = 0.05
+	#infantry_fire = 0.05 #BomjSBagetom Anbennar Submod
+	infantry_fire = 0.5 #BomjSBagetom Anbennar Submod
 }
 elikhand_zeal = {
 	missionaries = 1
@@ -14130,8 +14131,10 @@ elikhand_renouncer = {
 	castonath_patricians_influence_modifier = 0.05
 }
 elikhand_swift_battle = { #4
-	cavalry_cost = -0.2
-	cavalry_power = 0.2
+	#cavalry_cost = -0.2 #BomjSBagetom Anbennar Submod
+	infantry_cost = -0.2 #BomjSBagetom Anbennar Submod
+	#cavalry_power = 0.2 #BomjSBagetom Anbennar Submod
+	infantry_power = 0.2 #BomjSBagetom Anbennar Submod
 	movement_speed = 0.1
 }
 elikhand_early_army = {
