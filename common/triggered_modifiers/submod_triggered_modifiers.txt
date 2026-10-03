@@ -130,9 +130,11 @@ ab_age3_Gemradcurt_triggered_mod = {
 		OR = {
 			is_in_war = {
 				attackers = H16
+				defenders = root
 			}
 			is_in_war = {
 				defenders = H16
+				attackers = root
 			}
 		}
 		

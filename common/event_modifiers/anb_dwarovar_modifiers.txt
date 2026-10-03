@@ -606,11 +606,12 @@ serpent_cure = {
 }
 
 serpentspine_defender = {
-	land_morale = 0.15
-	prestige = 1
-	mil_advisor_cost = -0.2
-	monthly_splendor = 1
-	infantry_power = 0.1
+	#land_morale = 0.15 #BomjSBagetom Anbennar Submod
+	land_morale = 0.10 #BomjSBagetom Anbennar Submod
+	#prestige = 1 #BomjSBagetom Anbennar Submod
+	monthly_splendor = 1 #BomjSBagetom Anbennar Submod
+	#infantry_power = 0.1 #BomjSBagetom Anbennar Submod
+	global_manpower_modifier = 0.1 #BomjSBagetom Anbennar Submod
 }
 
 the_reformist = {
@@ -629,11 +630,13 @@ cure_bringer = {
 }
 
 onyx_breaker = {
-	prestige = 1
+	# prestige = 1 #BomjSBagetom Anbennar Submod
 	# power_projection_from_insults = 0.2
-	free_mil_policy = 1
-	land_morale = 0.1
+	# free_mil_policy = 1 #BomjSBagetom Anbennar Submod
+	# land_morale = 0.1 #BomjSBagetom Anbennar Submod
 	infantry_power = 0.1
+	cavalry_power = 0.1 #BomjSBagetom Anbennar Submod
+	land_forcelimit_modifier = 0.1 #BomjSBagetom Anbennar Submod
 }
 
 dwarovar_claimer = {

@@ -9,8 +9,8 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	
 	mean_time_to_happen = {
-		years = 20
-
+		#years = 20 #BomjsBagetom Anbennar submod
+		years = 10 #BomjsBagetom Anbennar submod
 	}
 	
 	trigger = {
@@ -1521,8 +1521,8 @@ country_event = {
 	
 	hidden = yes
 	mean_time_to_happen = {
-		years = 3
-		
+		#years = 3 #BomjsBagetom Anbennar submod
+		months = 18 #BomjsBagetom Anbennar submod
 		modifier = {
 			factor = 0.7
 			
