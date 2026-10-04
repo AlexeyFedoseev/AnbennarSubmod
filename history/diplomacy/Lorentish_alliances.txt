@@ -96,12 +96,12 @@ union = {
 #}	#	BomjsBagetom Anbennar Submod
 
 #Lorent - Wex Royal Marraige
-royal_marriage = {
-    first = A01
-    second = A30
-    start_date = 1422.1.1
-    end_date = 1500.1.1
-}
+#royal_marriage = { #	BomjsBagetom Anbennar Submod
+#    first = A01
+#    second = A30
+#    start_date = 1422.1.1
+#    end_date = 1500.1.1
+#} #	BomjsBagetom Anbennar Submod
 
 
 #Rubenaire - Eilisin alliance
