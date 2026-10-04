@@ -832,7 +832,12 @@
  ab_age4_GorBurad_bonus_button: "Borborduz"
  ab_age4_AulDwarov_bonus_button: "Protect the Crown"
  
- 
+ #---------------------Diplomatic Actions----------------------
+ minors_mod_saySorry_action:0 "Send an Apology"
+ minors_mod_saySorry_action_title:0 "Send an Apology"
+ minors_mod_saySorry_action_desc:0 "Do you wish to send our delegation with official apologies to §Y[From.GetName]§! court?\nOnce he gone, we loses §R500§! gold, but reduces our aggressive  expansion relation with §Y[From.GetName]§! by §G50§!."
+ minors_mod_saySorry_action_tooltip:0 "Do you wish to send our delegation with official apologies to §Y[From.GetName]§! court?\nOnce he gone, we loses §R500§! gold, but reduces our aggressive expansion relation with §Y[From.GetName]§! by §G50§!."
+ minors_mod_saySorry_action_alert_tooltip:0 "Send an Apology"
  
  
 

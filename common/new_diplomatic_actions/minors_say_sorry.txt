@@ -1,0 +1,26 @@
+minors_mod_saySorry_action = {
+	category = relation
+
+	require_acceptance = no
+
+	is_allowed = {
+		ROOT = { is_in_deficit = no }
+		ROOT = { treasury = 500 }
+		ROOT = { NOT = { num_of_loans = 6 } }
+	}
+
+	is_visible = {
+		always = yes
+    }
+
+	on_accept = {
+		ROOT = { add_treasury = -500 }
+		FROM = {
+			add_aggressive_expansion = { who = ROOT value = -50 apply_calc = no }
+		}
+	}
+
+	ai_will_do = {
+		always = no
+	}
+}
