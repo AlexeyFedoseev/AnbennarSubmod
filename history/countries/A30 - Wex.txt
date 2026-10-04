@@ -62,7 +62,7 @@ historical_rival = A13 #Gawed
 }
 
 1444.11.11 = {	# BomjsBagetom Anbennar submod
-	hidden_effect = { country_event = { id = submod_custom_events.4 days = 3650 random = 1825} }.
+	hidden_effect = { country_event = { id = submod_custom_events.4 days = 3650 random = 1825} }
 } # BomjsBagetom Anbennar submod
 
 # How many effective levels do they have, between ruler and estate?
