@@ -10,7 +10,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		years = 20
-
 	}
 	
 	trigger = {
@@ -222,7 +221,8 @@ country_event = {
 		#add_years_of_income = -1
 		custom_tooltip = pay_year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.7  days = 720 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.7  days = 720 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.7  days = 360 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 	#Arrest on proof
 	option = {
@@ -231,11 +231,13 @@ country_event = {
 		#add_years_of_income = -1
 		custom_tooltip = pay_year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.7  days = 450 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.7  days = 450 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.7  days = 225 random = 50 } } #BomjsBagetom Anbennar submod
 		hidden_effect = {
 			random = {
 				chance = 50
-				country_event = { id = hoardcurse.8  days = 300 random = 40 }
+				#country_event = { id = hoardcurse.8  days = 300 random = 40 } #BomjsBagetom Anbennar submod
+				country_event = { id = hoardcurse.8  days = 150 random = 20 } #BomjsBagetom Anbennar submod
 			}
 		}
 	}
@@ -247,8 +249,10 @@ country_event = {
 		#add_years_of_income = -1
 		custom_tooltip = pay_year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.7  days = 265 random = 100 } }
-		hidden_effect = { country_event = { id = hoardcurse.8  days = 100 random = 30 } }
+		#hidden_effect = { country_event = { id = hoardcurse.7  days = 265 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.7  days = 133 random = 50 } } #BomjsBagetom Anbennar submod
+		#hidden_effect = { country_event = { id = hoardcurse.8  days = 100 random = 30 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.8  days = 50 random = 15 } } #BomjsBagetom Anbennar submod
 	}
 	#Go back
 	option = {
@@ -348,7 +352,8 @@ country_event = {
 		#add_years_of_income = -3
 		custom_tooltip = pay_3year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=3YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.10  days = 250 random = 50 } }
+		#hidden_effect = { country_event = { id = hoardcurse.10  days = 250 random = 50 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.10  days = 125 random = 25 } } #BomjsBagetom Anbennar submod
 	}
 	option = {
         name = hoardcurse.9.khug
@@ -360,14 +365,16 @@ country_event = {
 		}
 		highlight = yes
         ai_chance = { factor = 90 }
-		hidden_effect = { country_event = { id = hoardcurse.60  days = 250 random = 50 } }
+		#hidden_effect = { country_event = { id = hoardcurse.60  days = 250 random = 50 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.60  days = 125 random = 25 } } #BomjsBagetom Anbennar submod
 	}
 	#Force them to collect their debt
 	option = {
         name = hoardcurse.9.b
         ai_chance = { factor = 10 }
 		reduce_stability_or_adm_power = yes
-		hidden_effect = { country_event = { id = hoardcurse.11  days = 250 random = 50 } }
+		#hidden_effect = { country_event = { id = hoardcurse.11  days = 250 random = 50 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.11  days = 125 random = 25 } } #BomjsBagetom Anbennar submod
 	}
 	#Go back
 	option = {
@@ -399,7 +406,8 @@ country_event = {
 		#add_years_of_income = -2
 		custom_tooltip = pay_2year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=2YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.12  days = 250 random = 50 } }
+		#hidden_effect = { country_event = { id = hoardcurse.12  days = 250 random = 50 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.12  days = 125 random = 25 } } #BomjsBagetom Anbennar submod
 	}
 	#Assume the consequences
 	option = {
@@ -408,7 +416,8 @@ country_event = {
 		add_stability = -3
 		add_corruption = 10
 		add_inflation = 10
-		hidden_effect = { country_event = { id = hoardcurse.12  days = 365 random = 50 } }
+		#hidden_effect = { country_event = { id = hoardcurse.12  days = 365 random = 50 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.12  days = 125 random = 25 } } #BomjsBagetom Anbennar submod
 	}
 }
 #People riot
@@ -434,7 +443,8 @@ country_event = {
 		#add_years_of_income = -5
 		custom_tooltip = pay_5year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=5YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.12  days = 250 random = 50 } }
+		#hidden_effect = { country_event = { id = hoardcurse.12  days = 250 random = 50 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.12  days = 125 random = 25 } } #BomjsBagetom Anbennar submod
 	}
 	#Fuck off
 	option = {
@@ -467,7 +477,8 @@ country_event = {
 				}
 			}
 		}
-		hidden_effect = { country_event = { id = hoardcurse.12  days = 365 random = 50 } }
+		#hidden_effect = { country_event = { id = hoardcurse.12  days = 365 random = 50 } }
+		hidden_effect = { country_event = { id = hoardcurse.12  days = 125 random = 25 } } #BomjsBagetom Anbennar submod
 		hidden_effect = { 
 			every_owned_province = {
 				limit = { has_province_flag = hoard_spawned_rebels }
@@ -524,7 +535,8 @@ country_event = {
 		remove_government_reform = khug_asra_reform_monarchy
 		remove_government_reform = khug_asra_reform_republic
 		currency_effect = { currency=treasury takeFrom=ROOT which=3YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.61  days = 250 random = 50 } }
+		#hidden_effect = { country_event = { id = hoardcurse.61  days = 250 random = 50 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.61  days = 125 random = 25 } } #BomjsBagetom Anbennar submod
 		hidden_effect = { set_country_flag = khug_bank_out }
 	}
 	#Kick them out!
@@ -535,7 +547,8 @@ country_event = {
 		add_inflation = 15
 		remove_government_reform = khug_asra_reform_monarchy
 		remove_government_reform = khug_asra_reform_republic
-		hidden_effect = { country_event = { id = hoardcurse.61  days = 365 random = 50 } }
+		#hidden_effect = { country_event = { id = hoardcurse.61  days = 365 random = 50 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.61  days = 183 random = 25 } } #BomjsBagetom Anbennar submod
 		hidden_effect = { set_country_flag = khug_bank_out }
 	}
 }
@@ -589,7 +602,8 @@ country_event = {
 		#add_years_of_income = -1
 		custom_tooltip = pay_year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.14 days = 165 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.14 days = 165 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.14 days = 83 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 	#Food monopolies
 	option = {
@@ -599,7 +613,8 @@ country_event = {
 		#add_years_of_income = -1
 		custom_tooltip = pay_year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.15 days = 165 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.15 days = 165 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.15 days = 83 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 	#Textile monopolies
 	option = {
@@ -609,7 +624,8 @@ country_event = {
 		#add_years_of_income = -1
 		custom_tooltip = pay_year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.16 days = 165 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.16 days = 165 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.16 days = 83 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 	#All done
 	option = {
@@ -778,7 +794,8 @@ country_event = {
 		event_target:target_province = {
 			anti_tax_rebels = 2
 		}
-		hidden_effect = { country_event = { id = hoardcurse.114 days = 165 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.114 days = 165 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.114 days = 83 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 	#Lords and Slaves
 	option = {
@@ -786,7 +803,8 @@ country_event = {
         ai_chance = { factor = 90 }
 		trigger = { NOT = { has_country_flag = hoard_monopolies_food } }
 		add_stability = -1
-		hidden_effect = { country_event = { id = hoardcurse.115 days = 165 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.115 days = 165 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.115 days = 83 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 	#Belligerent Overseers
 	option = {
@@ -796,7 +814,8 @@ country_event = {
 		#add_years_of_income = -1
 		custom_tooltip = pay_year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.116 days = 165 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.116 days = 165 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.116 days = 83 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 	#All done!
 	option = {
@@ -967,7 +986,8 @@ country_event = {
 		#add_years_of_income = -1
 		custom_tooltip = pay_year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.18 days = 365 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.18 days = 365 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.18 days = 165 random = 50 } } #BomjsBagetom Anbennar submod
 		custom_tooltip = permanent_reform_tooltip
 		tooltip = {
 			add_country_modifier = {
@@ -983,7 +1003,8 @@ country_event = {
 		#add_years_of_income = -1
 		custom_tooltip = pay_year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=YearOfIncome }
-		hidden_effect = { country_event = { id = hoardcurse.19 days = 365 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.19 days = 365 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.19 days = 183 random = 50 } } #BomjsBagetom Anbennar submod
 		custom_tooltip = permanent_reform_tooltip
 		tooltip = {
 			add_country_modifier = {
@@ -1028,7 +1049,8 @@ country_event = {
 			name = adequate_remuneration
 			duration = -1
 		}
-		hidden_effect = { country_event = { id = hoardcurse.20 days = 165 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.20 days = 165 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.20 days = 83 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 }
 
@@ -1060,7 +1082,8 @@ country_event = {
 			name = adequate_labour
 			duration = -1
 		}
-		hidden_effect = { country_event = { id = hoardcurse.20 days = 165 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.20 days = 165 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.20 days = 83 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 }
 #Abolishing slave contract
@@ -1119,7 +1142,8 @@ country_event = {
 		custom_tooltip = pay_year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=YearOfIncome }
 		add_prestige = -15
-		hidden_effect = { country_event = { id = hoardcurse.118 days = 365 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.118 days = 365 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.118 days = 183 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 
 	#Go back
@@ -1161,7 +1185,8 @@ country_event = {
 				duration = -1
 			}
 		}
-		hidden_effect = { country_event = { id = hoardcurse.120 days = 265 random = 100 } }
+		#hidden_effect = { country_event = { id = hoardcurse.120 days = 265 random = 100 } } #BomjsBagetom Anbennar submod
+		hidden_effect = { country_event = { id = hoardcurse.120 days = 132 random = 50 } } #BomjsBagetom Anbennar submod
 	}
 
 	#Break them
@@ -1210,7 +1235,8 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			 country_event = { id = hoardcurse.119 days = 265 random = 100 } 
+			 #country_event = { id = hoardcurse.119 days = 265 random = 100 } #BomjsBagetom Anbennar submod
+			 country_event = { id = hoardcurse.119 days = 132 random = 50 } #BomjsBagetom Anbennar submod
 		}
 	}
 }
@@ -1521,8 +1547,8 @@ country_event = {
 	
 	hidden = yes
 	mean_time_to_happen = {
-		years = 3
-		
+		#years = 3 #BomjsBagetom Anbennar submod
+		months = 18 #BomjsBagetom Anbennar submod
 		modifier = {
 			factor = 0.7
 			
