@@ -386,7 +386,7 @@ country_event = {
 #	}
 #}
 
- country_event = { # ?????? 10-15 ??? ?? ?????? ?????????
+country_event = { # death of a ruler
 	id = submod_custom_events.4
 	title = submod_custom_events.4.t
 	desc = submod_custom_events.4.desc
@@ -394,11 +394,7 @@ country_event = {
 	hidden = yes
 	is_triggered_only = yes
 	immediate = {
-		country_event = {
-			id = submod_custom_events.5
-			days = 3650
-			random_days = 1825
-		}
+		kill_ruler = yes
 	}
 	option = {
 		name = submod_custom_events.4.a
@@ -406,22 +402,4 @@ country_event = {
 			factor = 1
 		}
 	}
- }
- 
- country_event = { # ?????? ?????????
-	id = submod_custom_events.5
-	title = submod_custom_events.5.t
-	desc = submod_custom_events.5.desc
-	picture = DIET_eventPicture
-	hidden = yes
-	is_triggered_only = yes
-	immediate = {
-		kill_ruler = yes
-	}
-	option = {
-		name = submod_custom_events.5.a
-		ai_chance = {
-			factor = 1
-		}
-	}
- }
+}
