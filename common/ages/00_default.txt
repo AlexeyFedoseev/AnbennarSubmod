@@ -3025,7 +3025,7 @@ age_of_absolutism = {
 	objectives = {
 		obj_age3_1_universities = {
 			all_owned_province = {
-				limit = { is_core = root }
+				limit = { is_core = root}
 				has_building = university
 			}
 		}
