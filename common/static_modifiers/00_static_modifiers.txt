@@ -315,8 +315,11 @@ patriarch_authority_local = {
 patriarch_authority_global = {
 	shock_damage = 0.2
 	tolerance_heathen = -3
-	raze_power_gain = 0.25
-	technology_cost = 0.1
+	#raze_power_gain = 0.25 #BomjSBagetom Anbennar Submod
+	available_province_loot = 2 #BomjSBagetom Anbennar Submod
+	#technology_cost = 0.1 #BomjSBagetom Anbennar Submod
+	all_power_cost = 0.1 #BomjSBagetom Anbennar Submod
+	global_trade_goods_size_modifier = 0.25 #BomjSBagetom Anbennar Submod
 	yearly_patriarch_authority = -0.04
 }
 

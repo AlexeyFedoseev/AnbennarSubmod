@@ -222,6 +222,8 @@ gnollish_military = {
 	#Gameplay: hit hard and fast and always be on the offensive.
 
 	#Positives
+	global_manpower = 10					#BomjSBagetom Anbennar Submod
+	cavalry_shock = 0.3						#BomjSBagetom Anbennar Submod
 	movement_speed = 0.1					#1 C / hyenas are fast ig
 	shock_damage = 0.1						#1 C / best defense is good offense
 	#shock_damage_received = -0.1			#1 C / enemy too busy running to fight back
@@ -235,7 +237,8 @@ gnollish_military = {
 	
 	
 	#Negatives
-	fire_damage_received = 0.1				#-1 A / big, hairy, and reckless
+	#fire_damage_received = 0.1				#-1 A / big, hairy, and reckless
+	fire_damage_received = 0.15				#BomjSBagetom Anbennar Submod
 	defensiveness = -0.1					#-1 B / not big on fortifications
 	ship_durability = -0.1					#-1 A / wet dog
 	navy_tradition_decay = 0.01				#-1 B / wet dog

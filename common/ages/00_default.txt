@@ -3025,6 +3025,7 @@ age_of_absolutism = {
 	objectives = {
 		obj_age3_1_universities = {
 			all_owned_province = {
+				limit = { is_core = root }
 				has_building = university
 			}
 		}
@@ -3066,9 +3067,9 @@ age_of_absolutism = {
 			allow = {
 				has_estate = estate_mages
 			}
-			estate_influence = {
-				estate = estate_mages
-				influence = 67
+			or = {
+				has_country_modifier = magical_infrastructure_3
+				has_country_modifier = magical_infrastructure_4
 			}
 		}
 
@@ -3100,11 +3101,7 @@ age_of_absolutism = {
 		}
 
 		obj_age3_7_low_unrest = {
-			NOT = {
-				any_owned_province = {
-					unrest = 0
-				}
-			}
+			num_of_trading_bonuses = 3
 		}
 
 		obj_age3_8_have_15k = {
@@ -3116,7 +3113,7 @@ age_of_absolutism = {
 
 		obj_age3_9_low_autonomy = {
 			NOT = {
-				average_autonomy = 5
+				average_autonomy_above_min = 5
 			}
 		}
 
