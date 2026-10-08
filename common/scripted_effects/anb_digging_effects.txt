@@ -3358,7 +3358,7 @@ change_party_manpower = {
 					NOT = { check_variable = { partyManpower = 10000 } }
 					infantry_in_province = 1
 					infantry_in_province = owner
-					NOT = {num_of_mercenaries = 1} #BomjsBagetom Anbennar submod
+					NOT = { owner = { num_of_mercenaries = 1 }} #BomjsBagetom Anbennar submod
 				}
 				kill_units = { who = owner type = infantry amount = 1 }
 				change_variable = { partyManpower = 1000 }
