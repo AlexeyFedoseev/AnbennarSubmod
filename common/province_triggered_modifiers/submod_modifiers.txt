@@ -7,6 +7,7 @@ ovdal_tungr_defence_buff = {
 	trigger = {
 		controller = {
 			tag = F23
+			controls = 526
 		}
 	}
 	#picture = "local_hostile_movement_speed"

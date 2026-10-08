@@ -3569,6 +3569,7 @@ manufactory = {
 	time = 60
 	modifier = {
 		trade_goods_size = 1.0
+		local_warscore_cost_modifier = -0.15 #BomjSBagetom Anbennar Submod
 	}
 }
 
