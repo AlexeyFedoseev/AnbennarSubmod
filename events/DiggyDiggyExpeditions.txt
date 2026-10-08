@@ -519,6 +519,7 @@ province_event = {
 			infantry_in_province = 1
 			infantry_in_province = owner
 			NOT = { check_variable = { partyManpower = 10000 } }
+			NOT = { num_of_mercenaries = 1} #BomjsBagetom Anbennar submod
 		}
 		change_party_manpower = { add_expedition = 1 }
 		custom_tooltip = manpower_desc_tooltip
@@ -557,6 +558,7 @@ province_event = {
 			infantry_in_province = 1
 			infantry_in_province = owner
 			NOT = { check_variable = { partyManpower = 10000 } }
+			NOT = { num_of_mercenaries = 1} #BomjsBagetom Anbennar submod
 		}
 		change_party_manpower = { add_expedition = 5 }
 		custom_tooltip = manpower_desc_tooltip
@@ -595,6 +597,7 @@ province_event = {
 			infantry_in_province = 1
 			infantry_in_province = owner
 			NOT = { check_variable = { partyManpower = 10000 } }
+			NOT = { num_of_mercenaries = 1} #BomjsBagetom Anbennar submod
 		}
 		change_party_manpower = { add_expedition = 10 }
 		custom_tooltip = manpower_desc_tooltip
