@@ -165,7 +165,7 @@
  jaddari_cannorian_unity:0 "Cannor United"
  jaddari_light_in_the_jungle:0 "Light in the Jungle"
 
- submod_mercenary_expedition_tooltip:0 "§R! ! ! ATTENTION ! ! !§!\nWe will §Rnot be able§! to send §Ymanpower to an expedition§! because we already have mercenary company in our country."
+ submod_mercenary_expedition_tooltip:0 "§R! ! ! ATTENTION ! ! !§!\nWe are §Rnot able§! to send §Ymanpower§! to an expedition because we have a §Ymercenary company§! hired in our country."
  #-----------------------ADVISORS----------------------
  adm_advisor_price_increase_lvl_6:0 "Additional price for the 6th level Adm. Advisor"
  adm_advisor_price_increase_lvl_7:0 "Additional price for the 7th level Adm. Advisor"
