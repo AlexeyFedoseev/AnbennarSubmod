@@ -22,6 +22,14 @@ historical_rival = B08 #Leaders don't like one another.
 	}
 	add_ruler_personality = strict_personality
 	add_ruler_personality = drunkard_personality
+	leader = { #BomjsBagetom Anbennar Submod
+		name = "Urion Davmor"
+		type = general
+		fire = 2
+		shock = 6
+		manuever = 3
+		siege = 5
+	} #BomjsBagetom Anbennar Submod
 }
 
 1444.11.11 = { #BomjSBagetom Anbennar Submod

@@ -18,9 +18,12 @@ historical_rival = B03 #Gawedi Cobalt Company
 	monarch = {
 		name = "Maugunia"
 		dynasty = "of Ording"
-		adm = 3
-		dip = 3
-		mil = 5
+		#adm = 3 #BomjsBagetom Anbennar Submod
+		adm = 6
+		#dip = 3
+		dip = 4
+		#mil = 5
+		mil = 6 #BomjsBagetom Anbennar Submod
 		female = yes
 		birth_date = 1410.10.12
 	}
