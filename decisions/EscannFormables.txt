@@ -1062,7 +1062,6 @@ country_decisions = {
 						is_or_was_tag = {tag = B29}
 						is_or_was_tag = {tag = B30}
 					} #BomjsBagetom Anbennar Submod
-				}
 			}
 			has_institution = feudalism
 			adm_tech = 7	#1505
