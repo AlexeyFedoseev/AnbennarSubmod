@@ -805,6 +805,7 @@ country_decisions = {
 	I23_nation = {
 		major = yes
 		potential = {
+			culture_group = dwarven #BomjsBagetom Anbennar Submod
 			Or = { #BomjsBagetom Anbennar submod
 				tag = H94
 				religion = runefather_worship #BomjsBagetom Anbennar submod
