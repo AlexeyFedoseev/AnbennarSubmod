@@ -1008,6 +1008,18 @@ country_decisions = {
 			OR = {
 				primary_culture = green_orc
 				primary_culture = gray_orc
+				OR = {	#BomjsBagetom Anbennar Submod
+					is_or_was_tag = {tag = B21}
+					is_or_was_tag = {tag = B22}
+					is_or_was_tag = {tag = B23}
+					is_or_was_tag = {tag = B24}
+					is_or_was_tag = {tag = B25}
+					is_or_was_tag = {tag = B26}
+					is_or_was_tag = {tag = B27}
+					is_or_was_tag = {tag = B28}
+					is_or_was_tag = {tag = B29}
+					is_or_was_tag = {tag = B30}
+				} #BomjsBagetom Anbennar Submod
 			}
 			NOT = { exists = Z51 }
 			NOT = { tag = Z18 }
