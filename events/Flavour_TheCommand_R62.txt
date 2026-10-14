@@ -8192,6 +8192,7 @@ country_event = { #Sir Revolt End - Command Victory
 			add_treasury = 500
 			change_adm = 1 #BomjSBagetom Anbennar Submod
 			change_mil = 2 #BomjSBagetom Anbennar Submod
+			add_country_modifier = { name = command_afterwar_modifier duration = 3650 } #BomjsBagetom Anbennar Submod
 			R11 = {  #BomjSBagetom Anbennar Submod
 				kill_leader = { type = "Chiyi Kwaeng" }
 			}

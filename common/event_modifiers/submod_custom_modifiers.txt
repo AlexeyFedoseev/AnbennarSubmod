@@ -936,3 +936,9 @@ accretive_path_liberation_adm_submod_modif = {
 accretive_path_liberation_adm_submod_modif = {
 	mil_power = 1
 }
+command_afterwar_modifier = {
+	monthly_korashi_reserves = 0.5
+}
+tearfall_cooldown = {
+	
+}

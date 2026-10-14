@@ -2028,6 +2028,7 @@ evocation_2_meteor_swarm_effect = { # Meteor Swarm
 }
 evocation_2_tearfall_effect = { # Tearfall
 	custom_tooltip = evocation_2_tearfall_spell_effect_tt
+	add_country_modifier = { name = tearfall_cooldown duration = 5475} #BomjsBagetom Anbennar Submod
 	if = {
 		limit = { is_month = 11 }
 		evocation_2_tearfall_sub_effect = { days = 304 days_2 = 302 }
