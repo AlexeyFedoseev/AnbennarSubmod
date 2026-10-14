@@ -520,7 +520,10 @@ country_event = {
 		if = {
 			limit = { has_church_aspect = adm_neutral_fairies }
 			#add_years_of_income = 1	#BomjSBagetom Anbennar Submod
-			add_years_of_income = 0.5	#BomjSBagetom Anbennar Submod
+			add_or_extend_country_modifier = { #BomjSBagetom Anbennar Submod
+				name = neutral_fairies_festival
+				duration = 1825
+			}	#BomjSBagetom Anbennar Submod
 		}
 		if = {
 			limit = { has_church_aspect = dip_neutral_greatstag }
@@ -767,8 +770,9 @@ country_event = {
 		if = {
 			limit = { has_church_aspect = dip_summer_Nereid }
 			add_years_of_trade_income = {
-				years = 1
-				custom_tooltip = eordellon.summer.festival.tooltip.1
+				#years = 1 #BomjsBagetom Anbennar Submod
+				years = 0.5 #BomjsBagetom Anbennar Submod
+				custom_tooltip = eordellon.summer.festival.tooltip.submod05
 			}
 		}
 		if = {

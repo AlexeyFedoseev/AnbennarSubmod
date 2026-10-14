@@ -22,6 +22,7 @@
  accretive_path_liberation_mil_submod_modif:0 "Ascension of Body Reward"
  command_afterwar_modifier:0 "Korashi supply from defeated enemy"
  tearfall_cooldown:0 "Tearfall spell is on 15 years cooldown"
+ neutral_fairies_festival:0 "Fairies have blessed our people"
 
  player_age2_debuff:0 "Age of reformation debuff"
  player_age3_debuff:0 "Age of absolutism debuff"
@@ -119,6 +120,7 @@
  corinite.100.s: "Her might is undeniable. Our blade shall now serve Corin!"
  submod_enterance_to_sir_rebellion_tt: "§R! ! ! ATTENTION ! ! !§! \nWe will §Rjoin§! to war against §YThe Command§! in 180 days"
  submod_no_enterance_to_sir_rebellion_tt: "§R! ! ! ATTENTION ! ! !§!\nWe will §Rnot join§! to war against §YThe Command§!"
+ eordellon.summer.festival.tooltip.submod05:0 "Gain 6 months of trade income"
 
  triunic_1_orachav_chavans:0 "@J53 Orachav Chavans"
  triunic_1_orachav_chavansDESCR:0 "Orachav Chavans — which in their language translates to Orachav Riders — are steppe hunters for whom a centaur is not an ally, but game. Using Orachav mobility and knowledge of the terrain, these bands track and destroy the four-legged inhabitants of the prairies methodically and mercilessly. No negotiations, no taming — only lassos, lances, and scorched earth. Their tactics: drive a herd into a ravine, shoot them down with bows, then finish off the rest with flanking charges. It is thanks to such bands that the steppe gradually becomes safe for Orachav settlements."

@@ -5022,12 +5022,12 @@ anb_on_development_effect = {
 			limit = { religion = corinite }
 			add_karma = 0.1
 		}
-		if = {
-			limit = {
-				religion = summer_court
-			}
-			add_church_power = 4
-		}
+		#if = { #BomjsBagetom Anbennar Submod
+		#	limit = {
+		#		religion = summer_court
+		#	}
+		#	add_church_power = 4
+		#} #BomjsBagetom Anbennar Submod
 		update_nekhei_dev_modifier = yes
 	}
 

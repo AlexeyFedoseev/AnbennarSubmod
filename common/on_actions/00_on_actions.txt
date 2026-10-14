@@ -15670,7 +15670,8 @@ on_five_year_pulse_2 = {
 		100 = eunuchs_estate_anb_events.11 #Bonus
 
 		#Vampires
-		500 = vampires_estate_events.1 #Vampire Emigres upgrade
+		#500 = vampires_estate_events.1 #Vampire Emigres upgrade
+		1500 = vampires_estate_events.1 #BomjsBagetom Anbennar Submod
 		50 = vampires_estate_events.2 #Vampire Lord Emerges
 		500 = vampires_estate_events.3 #Masquerade Upgrade
 		150 = vampires_estate_events.5 #Vampire Hunters

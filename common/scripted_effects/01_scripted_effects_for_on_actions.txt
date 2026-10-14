@@ -9331,12 +9331,12 @@ on_adm_development_effect = {
 		development = tax
 	}
 	owner = {
-		if = {
-			limit = {
-				religion = winter_court
-			}
-			add_church_power = 4
-		}
+		#if = { #BomjsBagetom Anbennar Submod
+		#	limit = {
+		#		religion = winter_court
+		#	}
+		#	add_church_power = 4
+		#} #BomjsBagetom Anbennar Submod
 	}
 	#Isobelin urban renewal
 	if = {
@@ -9514,12 +9514,12 @@ on_dip_development_effect = {
 		isobelin_scripted_effect_inscrease_comissioners_plan_variable = yes
 	}
 	owner = {
-		if = {
-			limit = {
-				religion = spring_court
-			}
-			add_church_power = 4
-		}
+		#if = { #BomjsBagetom Anbennar Submod
+		#	limit = {
+		#		religion = spring_court
+		#	}
+		#	add_church_power = 4
+		#} #BomjsBagetom Anbennar Submod
 	}
 	owner = { #Empkeios variable setup/update - will only fire if player-controlled
 			country_event = {
@@ -9719,12 +9719,12 @@ on_mil_development_effect = {
 		isobelin_scripted_effect_inscrease_comissioners_plan_variable = yes
 	}
 	owner = {
-		if = {
-			limit = {
-				religion = autumn_court
-			}
-			add_church_power = 4
-		}
+		#if = {	#BomjsBagetom Anbennar Submod
+		#	limit = {
+		#		religion = autumn_court
+		#	}
+		#	add_church_power = 4
+		#}	#BomjsBagetom Anbennar Submod
 	}
 	if = {
 		limit = {
