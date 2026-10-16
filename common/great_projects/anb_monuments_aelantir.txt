@@ -323,9 +323,13 @@ dobondotimveb = {
 
 		on_upgraded = {
 			if = {
-				limit = { owner = { religion = dotimism } }
+				limit = { 
+					owner = { religion = dotimism }
+					has_not_upgraded_this_project = { projectname = dobondotimveb tier = 0 } #BomjsBagetom Anbennar Submod
+					}
 				owner = {
 					add_church_power = 50
+					set_upgraded_this_project = { projectname = dobondotimveb tier = 0 } #BomjsBagetom Anbennar Submod
 				}
 			}
 		}
@@ -355,9 +359,13 @@ dobondotimveb = {
 
 		on_upgraded = {
 			if = {
-				limit = { owner = { religion = dotimism } }
+				limit = { 
+					owner = { religion = dotimism }
+					has_not_upgraded_this_project = { projectname = dobondotimveb tier = 1  } #BomjsBagetom Anbennar Submod
+					}
 				owner = {
 					add_church_power = 50
+					set_upgraded_this_project = { projectname = dobondotimveb tier = 1 } #BomjsBagetom Anbennar Submod
 				}
 			}
 		}
@@ -391,12 +399,14 @@ dobondotimveb = {
 
 		
 		on_upgraded = {
-			if = {
-				limit = { owner = { religion = dotimism } }
+			limit = { 
+					owner = { religion = dotimism }
+					has_not_upgraded_this_project = { projectname = dobondotimveb tier = 2 } #BomjsBagetom Anbennar Submod
+					}
 				owner = {
 					add_church_power = 50
+					set_upgraded_this_project = { projectname = dobondotimveb tier = 2 } #BomjsBagetom Anbennar Submod
 				}
-			}
 		}
 	}
 
@@ -1995,10 +2005,16 @@ ynnic_grand_temple_svemel = {
 		}
 
 		on_upgraded = {
-			1191 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
+			if = {
+				limit = { 
+					has_not_upgraded_this_project = { projectname = ynnic_grand_temple_svemel tier = 2 } #BomjsBagetom Anbennar Submod
+				}
+				set_upgraded_this_project = { projectname = ynnic_grand_temple_svemel tier = 2 } #BomjsBagetom Anbennar Submod
+				1191 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
 			}
 		}
 	}
@@ -2028,10 +2044,16 @@ ynnic_grand_temple_svemel = {
 		}
 
 		on_upgraded = {
-			1191 = {
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
+			if = {
+				limit = { 
+					has_not_upgraded_this_project = { projectname = ynnic_grand_temple_svemel tier = 3 } #BomjsBagetom Anbennar Submod
+				}
+				set_upgraded_this_project = { projectname = ynnic_grand_temple_svemel tier = 3 } #BomjsBagetom Anbennar Submod
+				1191 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
 			}
 		}
 	}
@@ -2758,20 +2780,26 @@ heart_of_the_effelai = {
 		on_upgraded = {
 			custom_tooltip = effelai_bloom_monument_tier_1_event_tt
 			custom_tooltip = effelai_bloom_monument_tier_1_tt
-			hidden_effect = {
-				owner = {
-					country_event = {
-						id = effelai_bloom.370
-					}
-					every_owned_province = {
-						limit = {
-							is_effelai_network_hub = yes
+			if = {
+				limit = { 
+					has_not_upgraded_this_project = { projectname = heart_of_the_effelai tier = 1 } #BomjsBagetom Anbennar Submod
+				}
+				set_upgraded_this_project = { projectname = heart_of_the_effelai tier = 1 } #BomjsBagetom Anbennar Submod
+				hidden_effect = {
+					owner = {
+						country_event = {
+							id = effelai_bloom.370
 						}
+						every_owned_province = {
+							limit = {
+								is_effelai_network_hub = yes
+							}
+							add_base_tax = 1
+						}
+					}
+					2378 = {
 						add_base_tax = 1
 					}
-				}
-				2378 = {
-					add_base_tax = 1
 				}
 			}
 		}
@@ -2806,22 +2834,28 @@ heart_of_the_effelai = {
 		on_upgraded = {
 			custom_tooltip = effelai_bloom_monument_tier_2_event_tt
 			custom_tooltip = effelai_bloom_monument_tier_2_tt
-			hidden_effect = {
-				owner = {
-					country_event = {
-						id = effelai_bloom.371
-					}
-					every_owned_province = {
-						limit = {
-							is_effelai_network_hub = yes
+			if = {
+				limit = { 
+					has_not_upgraded_this_project = { projectname = heart_of_the_effelai tier = 2 } #BomjsBagetom Anbennar Submod
+				}
+				set_upgraded_this_project = { projectname = heart_of_the_effelai tier = 2 } #BomjsBagetom Anbennar Submod
+				hidden_effect = {
+					owner = {
+						country_event = {
+							id = effelai_bloom.371
 						}
+						every_owned_province = {
+							limit = {
+								is_effelai_network_hub = yes
+							}
+							add_base_production = 1
+							add_base_manpower = 1
+						}
+					}
+					2378 = {
 						add_base_production = 1
 						add_base_manpower = 1
 					}
-				}
-				2378 = {
-					add_base_production = 1
-					add_base_manpower = 1
 				}
 			}
 		}
@@ -4479,10 +4513,14 @@ mteibhar_monastery_tsharab = {
 
 		on_upgraded = {
 			if = {
-				limit = { owner = { religion_group = devandi } }
+				limit = { 
+					owner = { religion_group = devandi } 
+					has_not_upgraded_this_project = { projectname = mteibhar_monastery_tsharab tier = 2 } #BomjsBagetom Anbennar Submod
+				}
 				owner = {
 					add_church_power = 200
 				}
+				set_upgraded_this_project = { projectname = mteibhar_monastery_tsharab tier = 2 } #BomjsBagetom Anbennar Submod
 			}
 		}
 	}
@@ -4631,11 +4669,15 @@ degalistea = {
 		
 		on_upgraded = {
 			custom_tooltip = degalistea_2_tt
-			owner = { 
-				innovativeness_per_type_advisor_level_effect = { type = adm }
-				innovativeness_per_type_advisor_level_effect = { type = dip }
-				innovativeness_per_type_advisor_level_effect = { type = mil }
-				hidden_effect = { set_country_flag = force_reelection_5_year_cooldown }
+			if={
+				limit = { has_not_upgraded_this_project = { projectname = degalistea tier = 2}} #Bomjsbagetom Anbennar Submod
+				set_upgraded_this_project = { projectname = degalistea tier = 2} #Bomjsbagetom Anbennar Submod
+					owner = { 
+					innovativeness_per_type_advisor_level_effect = { type = adm }
+					innovativeness_per_type_advisor_level_effect = { type = dip }
+					innovativeness_per_type_advisor_level_effect = { type = mil }
+					hidden_effect = { set_country_flag = force_reelection_5_year_cooldown }
+				}
 			}
 		}
 	}
