@@ -173,8 +173,8 @@
 
  submod_mercenary_expedition_tooltip:0 "§R! ! ! ATTENTION ! ! !§!\nWe are §Rnot able§! to send §Ymanpower§! to an expedition because we have a §Ymercenary company§! hired in our country."
  
- ramsteel_razam_hq_tt_owns_lake_no:0  "\n£no£ If we complete this mission while controlling Salt Grass Lake, we will receive:"
- ramsteel_razam_hq_tt_owns_lake_yes:0 "\n£yes£ If we complete this mission while controlling Salt Grass Lake, we will receive:"
+ ramsteel_razam_hq_tt_owns_lake_no:0  "\n£no£ If we complete this mission while owning Salt Grass Lake, we will receive:"
+ ramsteel_razam_hq_tt_owns_lake_yes:0 "\n£yes£ If we complete this mission while owning Salt Grass Lake, we will receive:"
  #-----------------------ADVISORS----------------------
  adm_advisor_price_increase_lvl_6:0 "Additional price for the 6th level Adm. Advisor"
  adm_advisor_price_increase_lvl_7:0 "Additional price for the 7th level Adm. Advisor"
