@@ -1012,7 +1012,7 @@ country_decisions = {
 			OR = {	#BomjsBagetom Anbennar Submod
 				is_or_was_tag = {tag = B21}
 				is_or_was_tag = {tag = B22}
-				is_or_was_tag = {tag = B23}`
+				is_or_was_tag = {tag = B23}
 				is_or_was_tag = {tag = B24}
 				is_or_was_tag = {tag = B25}
 				is_or_was_tag = {tag = B26}

@@ -97,7 +97,7 @@
  desc_dip_neutral_nymphs:0 "Doubles the diplomatic reputation modifier upon holding a festival."
  adm_neutral_fairies:0 "§gFairies§!"
  #desc_adm_neutral_fairies:0 "Gives one year of income upon holding a festival." #BomjsBagetom Anbennar Submod
- desc_adm_neutral_fairies:0 "Gives a fairies blessing upon holding a festival." #BomjsBagetom Anbennar Submod
+ desc_adm_neutral_fairies:0 "Gives a fairies blessing increasing our tax, trade and production efficiency by §G10%§! upon holding a festival." #BomjsBagetom Anbennar Submod
  dip_neutral_greatstag:0 "§gThe Great Stag§!"
  desc_dip_neutral_greatstag:0 "Gain extra prestige when holding a festival."
  adm_neutral_dryads:0 "§gDryads§!"

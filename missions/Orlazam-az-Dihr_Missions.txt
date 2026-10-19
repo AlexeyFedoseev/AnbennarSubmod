@@ -913,18 +913,55 @@ ramsteel_3_cavalry = {
 				duration = -1
 			}
 			if = {	#BomjsBagetom Anbennar submod
-				limit = { 	#BomjsBagetom Anbennar submod
-					province_id = 4182	#BomjsBagetom Anbennar submod
-					owned_by = ROOT	#BomjsBagetom Anbennar submod
-					}	#BomjsBagetom Anbennar submod 
-				hidden_respite_area = {
+				limit = { 	
+					province_id = 4182	
+					owned_by = ROOT	
+					}	
+				custom_tooltip = ramsteel_razam_hq_tt_owns_lake_yes
+				tooltip = {
+					hidden_respite_area = {
 					add_permanent_province_modifier = {
 						name = ramsteel_razam_headquarters_province
 						duration = -1
 					}
 					add_base_production = 1
 					add_base_manpower = 2
-				}	
+				}
+				}
+			}	#BomjsBagetom Anbennar submod
+			if = {	
+				limit = { 
+					NOT = {	
+					province_id = 4182	
+					owned_by = ROOT}	
+					}	
+				custom_tooltip = ramsteel_razam_hq_tt_owns_lake_no
+				tooltip = {
+					hidden_respite_area = {
+					add_permanent_province_modifier = {
+						name = ramsteel_razam_headquarters_province
+						duration = -1
+					}
+					add_base_production = 1
+					add_base_manpower = 2
+				}
+				}
+			}	#BomjsBagetom Anbennar submod
+			hidden_effect = {
+				if = {	
+					limit = { 	
+						province_id = 4182	
+						owned_by = ROOT	
+						}	
+					hidden_respite_area = {
+					add_permanent_province_modifier = {
+						name = ramsteel_razam_headquarters_province
+						duration = -1
+					}
+					add_base_production = 1
+					add_base_manpower = 2
+					}
+				}
 			}	#BomjsBagetom Anbennar submod
 		}
 	}

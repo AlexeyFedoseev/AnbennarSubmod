@@ -114,7 +114,3 @@ add_or_upgrade_age_bonus = {
         set_country_flag = flag_ab_purchased_$abilityName$
     }
 }
-
-set_upgraded_this_project = {
-     set_global_flag =  upgraded_$projectname$_$tier$
-}
