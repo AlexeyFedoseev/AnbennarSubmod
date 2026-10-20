@@ -3194,7 +3194,6 @@ custom_text_box = { #Spellbook Menu XP Regen Text
 		}
 		trigger = {
 			evocation_2_tearfall_trigger = { player = yes }
-			NOT = { has_country_modifier = tearfall_cooldown} #BomjsBagetom Anbennar Submod
 		}
 		effect = {
 			generic_cast_spell = { school = evocation level = 2 id = tearfall }
