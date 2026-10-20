@@ -5948,8 +5948,7 @@ artifice_invention_antimagic_field_generator = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		#shock_damage_received = -0.05 #BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
-		shock_damage_received = -0.025 #BomjSBagetom Anbennar Submod	GREAT RECEIVED WAR
+		shock_damage_received = -0.05	#BomjSBagetom Anbennar Submod DONT TOUCH
 		global_spy_defence = 0.1
 		harsh_treatment_cost = -0.1
 		tec_technomancy_influence = 0.06

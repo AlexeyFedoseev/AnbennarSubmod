@@ -712,7 +712,11 @@ hall_of_endless_debate = {
 		on_upgraded = {
 			owner = { accretive_path_gain_chi = { aspect = the_second_ascension category = adm amount = 100 } }
 			owner = { if = { limit = { has_reform = tsukqiao_throne_of_lies_reform } add_legitimacy = 10 } }
-			owner = { change_government_reform_progress = 50 }
+			if ={
+				limit = has_not_upgraded_this_project = {projectname = hall_of_endless_debate tier = 2} #BomjsBagetom Anbennar Submod
+				owner = { change_government_reform_progress = 50 }
+				set_upgraded_this_project ={ projectname = hall_of_endless_debate tier = 2} #BomjsBagetom Anbennar Submod
+			}
 		}
 	}
 
@@ -747,7 +751,11 @@ hall_of_endless_debate = {
 		on_upgraded = {
 			owner = { accretive_path_gain_chi = { aspect = the_second_ascension category = adm amount = 100 } }
 			owner = { if = { limit = { has_reform = tsukqiao_throne_of_lies_reform } add_legitimacy = 10 } }
-			owner = { change_government_reform_progress = 50 }
+			if ={
+				limit = has_not_upgraded_this_project = {projectname = hall_of_endless_debate tier = 3} #BomjsBagetom Anbennar Submod
+				owner = { change_government_reform_progress = 50 }
+				set_upgraded_this_project ={ projectname = hall_of_endless_debate tier = 3} #BomjsBagetom Anbennar Submod
+			}
 		}
 	}
 }

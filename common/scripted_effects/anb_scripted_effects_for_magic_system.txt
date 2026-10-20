@@ -202,7 +202,8 @@ update_spell_tooltips = {
 	else = { export_to_variable = { which = feral_animals_reg value = total_development } }
 	set_variable = { which = leashed_elementals_reg which = feral_animals_reg }
 
-	multiply_variable = { feral_animals_reg = 0.1 } #Reg per dev
+	#multiply_variable = { feral_animals_reg = 0.1 } #Reg per dev #BomjsBagetom Anbennar submod
+	multiply_variable = { feral_animals_reg = 0.05 } #Reg per dev #BomjsBagetom Anbennar submod
 	if = {
 		limit = { NOT = { check_variable = { feral_animals_reg = 4 } } }
 		set_variable = { feral_animals_reg = 4 } #Minimum of 4 regiments

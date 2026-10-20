@@ -805,7 +805,9 @@ country_decisions = {
 	I23_nation = {
 		major = yes
 		potential = {
-			tag = H94
+			culture_group = dwarven #BomjsBagetom Anbennar Submod
+			#tag = H94	#BomjsBagetom Anbennar submod
+			religion = runefather_worship #BomjsBagetom Anbennar submod
 		}
 		provinces_to_highlight = {
 			province_group = hold_province
@@ -821,11 +823,13 @@ country_decisions = {
 			OR = {
 				NOT = { is_core = ROOT }
 				NOT = { owned_by = ROOT }
+				NOT = { religion = runefather_worship } #BomjsBagetom Anbennar Submod
 				is_city = no
 			}
 		}
 		allow = {
-			tag = H94 # allow is checked regardless of potential
+			#tag = H94 # allow is checked regardless of potential #BomjsBagetom Anbennar submod
+			religion = runefather_worship #BomjsBagetom Anbennar submod
 			is_free_or_tributary_trigger = yes
 			is_at_war = no				
 			num_of_owned_provinces_with = {
@@ -833,6 +837,7 @@ country_decisions = {
 				is_core = ROOT
 				is_city = yes
 				province_group = hold_province
+				religion = runefather_worship #BomjsBagetom Anbennar submod
 			}
 			dwarovar_special_formation_trigger = yes
 		}

@@ -50,3 +50,9 @@ can_keep_fort_trigger = {
 		}
 	}
 }
+
+#Upgraded great project flag checking
+
+has_not_upgraded_this_project = {
+		NOT = { has_global_flag = upgraded_$projectname$_$tier$ }
+}

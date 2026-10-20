@@ -1,0 +1,3 @@
+set_upgraded_this_project = {
+     set_global_flag =  upgraded_$projectname$_$tier$
+}

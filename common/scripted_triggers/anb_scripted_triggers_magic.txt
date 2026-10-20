@@ -3248,6 +3248,7 @@ evocation_2_meteor_swarm_local_trigger = { #Meteor Swarm local trigger
 evocation_2_tearfall_trigger = { # Tearfall
 	is_overall_evocation_level_2_minimum = yes
 	[[player] has_mana_to_cast_spell = { school = evocation level = 2 id = tearfall } ]
+	NOT = { has_country_modifier = tearfall_cooldown} #BomjsBagetom Anbennar Submod
 	custom_trigger_tooltip = {
 		tooltip = evocation_2_tearfall_spell_trigger_tt
 		NOT = { has_country_modifier = evocation_2_tearfall_cooldown_mod }

@@ -14848,7 +14848,7 @@ on_five_year_pulse = {
 		100 = ideagroups.2020
 		100 = ideagroups.2021
 		100 = ideagroups.1603
-		100 = ideagroups.1604
+		#100 = ideagroups.1604 #BomjsBagetom Anbennar Submod
 		100 = ideagroups.1610
 		100 = ideagroups.2025
 		100 = ideagroups.2026
@@ -15670,7 +15670,8 @@ on_five_year_pulse_2 = {
 		100 = eunuchs_estate_anb_events.11 #Bonus
 
 		#Vampires
-		500 = vampires_estate_events.1 #Vampire Emigres upgrade
+		#500 = vampires_estate_events.1 #Vampire Emigres upgrade
+		1500 = vampires_estate_events.1 #BomjsBagetom Anbennar Submod
 		50 = vampires_estate_events.2 #Vampire Lord Emerges
 		500 = vampires_estate_events.3 #Masquerade Upgrade
 		150 = vampires_estate_events.5 #Vampire Hunters

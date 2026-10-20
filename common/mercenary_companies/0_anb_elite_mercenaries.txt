@@ -137,7 +137,8 @@ merc_jaddaresas_chosen = {
 # The Suraelic Guard
 merc_suraelic_guard = {
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
-    regiments_per_development = 0.01
+    #regiments_per_development = 0.01 #BombjSBagetom Anbennar Submod
+	regiments_per_development = 0.05 #BombjSBagetom Anbennar Submod
     home_province = 625 # Jaddanzar (Sareyand)
 	cavalry_weight = 0.1
 	cavalry_cap = 4
