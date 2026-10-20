@@ -3067,7 +3067,7 @@ age_of_absolutism = {
 			}
 		}
 
-		obj_age3_6_mage_influence = {
+		obj_age3_6_magic_infrastructure = {
 			allow = {
 				has_estate = estate_mages
 			}
@@ -3104,7 +3104,7 @@ age_of_absolutism = {
 			}
 		}
 
-		obj_age3_7_low_unrest = {
+		obj_age3_7_trading_bonuses = {
 			num_of_trading_bonuses = 3
 		}
 

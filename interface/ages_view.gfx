@@ -349,8 +349,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_emperor.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age3_6_mage_influence"
-		texturefile = "gfx/interface/ages/obj_age3_6_mage_influence.dds"
+		name = "GFX_obj_age3_6_magic_infrastructure"
+		texturefile = "gfx/interface/ages/obj_age3_6_magic_infrastructure.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_age3_6_artificers_capacity"
@@ -361,8 +361,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_age3_6_manage_cultures.dds"
 	}
 	spriteType = {
-		name = "GFX_obj_age3_7_low_unrest"
-		texturefile = "gfx/interface/ages/obj_age3_7_low_unrest.dds"
+		name = "GFX_obj_age3_7_trading_bonuses"
+		texturefile = "gfx/interface/ages/obj_age3_7_trading_bonuses.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_age3_8_have_15k"
