@@ -12771,9 +12771,11 @@ H47_ideas = {
 	}
 	J50_regal_courts = {
 		diplomatic_reputation = 2
+		discipline = 0.05 #BomjsBagetom Anbennar Submod
 	}
 	J50_zealous_march = {
-		morale_damage = 0.1
+		#morale_damage = 0.1 #BomjsBagetom Anbennar Submod
+		morale_damage = 0.2 #BomjsBagetom Anbennar Submod
 	}
 	J50_glorious_reign = {
 		prestige = 1
