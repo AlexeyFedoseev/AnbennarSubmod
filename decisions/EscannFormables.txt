@@ -579,8 +579,9 @@ country_decisions = {
 	adenica_nation = {
 		major = yes
 		potential = {
+			has_reform = adventurer_reform #BomjSBagetom Anbennar Submod
 			capital_scope = {
-				region = west_castanor_region
+				region = west_castanor_region	
 			}
 			OR = { 
 				culture_group = escanni
@@ -649,7 +650,7 @@ country_decisions = {
 		
 		allow = {
 			owns_core_province = 774	#Taranton
-			adm_tech = 7
+			#adm_tech = 7 #BomjSBagetom Anbennar Submod
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			if = {
@@ -1855,7 +1856,6 @@ country_decisions = {
 			}
 			if = { #Esthil
 				limit = { tag = B20 ai = no }
-				adm_tech = 7	#BomjSBagetom Anbennar Submod
 				any_owned_province = {
 					OR = {
 						area = castonath_area
@@ -1885,7 +1885,6 @@ country_decisions = {
 			}
 			if = { #Covenblad
 				limit = { tag = B19 ai = no }
-				adm_tech = 7	#BomjSBagetom Anbennar Submod
 				any_owned_province = {
 					OR = {
 						area = castonath_area
